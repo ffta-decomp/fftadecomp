@@ -4,7 +4,7 @@ Public recovery statistics and resource-address metadata for **Final Fantasy Tac
 
 Snapshot: **2026-10-20**. This is a standalone progress-data project, not an official Square Enix project or a fork of another similarly named repository.
 
-[**Open the Recovery Atlas →**](https://hitsmaxft.github.io/fftadecomp/)
+[**Open the Recovery Atlas →**](https://gh.bhee.online/fftadecomp/)
 
 ## Recovery snapshot
 
