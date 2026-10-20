@@ -1,0 +1,30 @@
+{
+  "snapshot_date": "2026-10-20",
+  "game": "Final Fantasy Tactics Advance",
+  "reference_region": "USA",
+  "reference_game_code": "AFXE",
+  "rom_size_bytes": 16777216,
+  "resource_inventory": {
+    "selected_spans": 4987,
+    "span_bytes": 9289571,
+    "resource_bytes_excluding_padding": 9247442,
+    "embedded_padding_bytes": 42129,
+    "resource_bytes_as_percent_of_rom": 55.119,
+    "total_resource_denominator": null
+  },
+  "source_assembly": {
+    "selected_modules": 4187,
+    "span_bytes": 1038226,
+    "span_bytes_as_percent_of_rom": 6.1883,
+    "total_executable_byte_denominator": null
+  },
+  "limitations": [
+    "Published address spans are selected reconstructed resource ranges, not a complete catalog of every game asset.",
+    "Resource spans may represent shared resources or collections; they are not distinct in-game object counts.",
+    "Address ends are exclusive. Embedded padding positions are not described by this summary.",
+    "Resource IDs identify this snapshot and are not stable game IDs.",
+    "ASM module spans may include instruction bytes, literals and alignment; modules are not function counts.",
+    "ROM shares are storage measurements, not gameplay or semantic completion.",
+    "Raw assets, code, implementation details and private working material are not distributed."
+  ]
+}
