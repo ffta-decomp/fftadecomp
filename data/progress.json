@@ -13,9 +13,12 @@
     "total_resource_denominator": null
   },
   "source_assembly": {
-    "selected_modules": 4187,
-    "span_bytes": 1038226,
-    "span_bytes_as_percent_of_rom": 6.1883,
+    "selected_modules": 4183,
+    "span_bytes": 1035700,
+    "span_bytes_as_percent_of_rom": 6.1733,
+    "instruction_bytes": 910202,
+    "literal_table_bytes": 117688,
+    "alignment_padding_bytes": 7810,
     "total_executable_byte_denominator": null
   },
   "limitations": [
@@ -23,8 +26,27 @@
     "Resource spans may represent shared resources or collections; they are not distinct in-game object counts.",
     "Address ends are exclusive. Embedded padding positions are not described by this summary.",
     "Resource IDs identify this snapshot and are not stable game IDs.",
-    "ASM module spans may include instruction bytes, literals and alignment; modules are not function counts.",
+    "ASM spans contain 910,202 instruction bytes, 117,688 literal/table bytes and 7,810 alignment/padding bytes; module counts are not function counts.",
+    "C rewrite spans report selected source-module output: 26,568 bytes match retail exactly and 64,144 bytes have pinned differences; this is not the percentage of all executable code rewritten.",
     "ROM shares are storage measurements, not gameplay or semantic completion.",
     "Raw assets, code, implementation details and private working material are not distributed."
-  ]
+  ],
+  "c_rewrite": {
+    "selected_modules": 716,
+    "compiled_function_entries": 777,
+    "selected_span_bytes": 90712,
+    "selected_span_bytes_as_percent_of_rom": 0.5407,
+    "exact_match_bytes": 26568,
+    "exact_match_function_bodies": 516,
+    "nonmatching_span_bytes": 64144,
+    "nonmatching_function_entries": 261,
+    "same_offset_match_bytes": 9637,
+    "pinned_difference_bytes": 54507,
+    "total_executable_byte_denominator": null
+  },
+  "verification": {
+    "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "candidate_rom_sha256": "b779c815be52fc98a6e9279daaf59eefa57dab58fea93e38b54bdfba6f242a2e",
+    "build_report_sha256": "71cf4ea31c169a3cbefb58c47fce6aebc7eb030439e6da6a0ae2b85a053acd56"
+  }
 }

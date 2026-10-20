@@ -8,7 +8,7 @@ Snapshot: **2026-10-20**. This is a standalone progress-data project, not an off
 
 ## Recovery snapshot
 
-[![FFTA recovery snapshot: reconstructed resources and source ASM storage coverage](assets/recovery-snapshot.svg)](data/progress.json)
+[![FFTA recovery snapshot: reconstructed resources, source ASM and readable C rewrite progress](assets/recovery-snapshot.svg)](data/progress.json)
 
 <details>
 <summary>Exact figures and measurement definitions</summary>
@@ -18,12 +18,18 @@ Snapshot: **2026-10-20**. This is a standalone progress-data project, not an off
 | Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
 | Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 1,038,226 B | 6.1883% of the ROM; total executable-code size is not established |
-| Selected ASM modules | 4,187 | Modules are not functions; spans may include literals and alignment |
+| Selected source ASM spans | 1,035,700 B | 6.1733% of the ROM; total executable-code size is not established |
+| ASM instruction bytes | 910,202 B | Included in the span total above |
+| ASM literals/tables | 117,688 B | Included in the span total above |
+| ASM alignment/padding | 7,810 B | Included in the span total above |
+| Selected ASM modules | 4,183 | Modules are not function counts |
+| Selected readable C rewrite spans | 90,712 B | 716 C modules / 777 compiled entries; 0.5407% of ROM storage, not a code-completion percentage |
+| C output matching retail exactly | 26,568 B | 516 function bodies match every byte |
+| C output with pinned differences | 64,144 B | 261 entries; 9,637 same-offset matches and 54,507 differing byte positions |
 
 </details>
 
-These are reconstruction and storage measurements. They do **not** describe gameplay completion, complete semantic understanding, or the percentage of code rewritten in C. Detailed code-rewriting progress is not published here.
+These are reconstruction and storage measurements. The C figures distinguish exact output from readable C output that still differs from retail; pinned differences are byte-comparison results, not claims that behavior is complete. The total executable-code denominator is unknown, so the C span share must not be read as the percentage of code rewritten or gameplay completed. Relocated C bodies and retained assembly suffixes are accounted for separately.
 
 ## Data
 
@@ -33,7 +39,7 @@ These are reconstruction and storage measurements. They do **not** describe game
 
 Resource tables expose only synthetic snapshot IDs, ROM offsets, GBA addresses, exclusive end offsets and byte counts. They contain no resource payloads, filenames, decoding rules or function addresses. GBA addresses use base `0x08000000`. The table covers selected reconstructed spans only; omitted ranges must not be assumed unused or unknown. IDs are snapshot identifiers, not original game IDs.
 
-Counts were reconciled against a validated reconstruction report and the selected resource inventory. Address spans were checked for overlap; resource bytes plus embedded padding equal their listed spans. Public data alone does not reproduce the private build validation.
+Counts were reconciled against a validated reconstruction report and the selected source/resource inventories. The C counts are tied to the pinned retail input, candidate image and build-report hashes in `data/progress.json`; they distinguish exact C output from nonmatching C output with pinned byte differences. Address spans were checked for overlap; resource bytes plus embedded padding equal their listed spans. Public data alone does not reproduce the private build validation.
 
 ## Publication boundary
 
