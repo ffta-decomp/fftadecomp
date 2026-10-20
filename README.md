@@ -1,10 +1,17 @@
 # fftadecomp
 
-Public recovery statistics and resource-address metadata for **Final Fantasy Tactics Advance (USA / AFXE)**. This repository publishes data only. It does not contain the game, extracted assets, decompiled code, build tools or implementation designs.
+Public recovery statistics and resource-address metadata for **Final Fantasy Tactics Advance (USA / AFXE)**. This repository publishes recovery data and its static presentation. It does not contain the game, extracted assets, decompiled code, build tools or implementation designs.
 
 Snapshot: **2026-10-20**. This is a standalone progress-data project, not an official Square Enix project or a fork of another similarly named repository.
 
+[**Open the Recovery Atlas →**](https://hitsmaxft.github.io/fftadecomp/)
+
 ## Recovery snapshot
+
+[![FFTA recovery snapshot: reconstructed resources and source ASM storage coverage](assets/recovery-snapshot.svg)](data/progress.json)
+
+<details>
+<summary>Exact figures and measurement definitions</summary>
 
 | Measurement | Verified snapshot | Denominator / interpretation |
 | --- | ---: | --- |
@@ -13,6 +20,8 @@ Snapshot: **2026-10-20**. This is a standalone progress-data project, not an off
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
 | Selected source ASM spans | 1,038,226 B | 6.1883% of the ROM; total executable-code size is not established |
 | Selected ASM modules | 4,187 | Modules are not functions; spans may include literals and alignment |
+
+</details>
 
 These are reconstruction and storage measurements. They do **not** describe gameplay completion, complete semantic understanding, or the percentage of code rewritten in C. Detailed code-rewriting progress is not published here.
 
@@ -28,8 +37,12 @@ Counts were reconciled against a validated reconstruction report and the selecte
 
 ## Publication boundary
 
-Only aggregate recovery statistics and resource-address metadata are included. Source code, ASM listings, ROMs, graphics, audio, dialogue, saves, design documents, private paths, conversations, prompts and task records are excluded. This repository starts with an independent history.
+Published recovery content consists of aggregate statistics, system inventory counts and resource-address metadata. The static dashboard also includes presentation files and attributed third-party title artwork; see [display credits](assets/ATTRIBUTION.md). Game source code, ASM listings, ROMs, extracted graphics, audio, dialogue, saves, design documents, private paths, conversations, prompts and task records are excluded. This repository starts with an independent history.
 
 ## License
 
 The original documentation and published metadata in this repository are available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This license does not grant rights to the game or its assets.
+
+## Daily updates
+
+Update the verified files in `data/` and the README snapshot together. Pushes deploy the dashboard automatically; a daily scheduled deployment republishes the committed snapshot without changing its date. No private repository is connected. Reference categories follow the [FFSKY FFTA guide](http://ffta.ffsky.cn/); ROM record counts are not playable-content counts.

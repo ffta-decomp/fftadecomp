@@ -1,0 +1,126 @@
+{
+  "snapshot_date": "2026-10-20",
+  "measurement": "Selected data inventories, not gameplay completion. Reference catalog categories do not supply recovery denominators.",
+  "systems": [
+    {
+      "id": "missions",
+      "title": "Missions & story",
+      "recovered": 512,
+      "total": 512,
+      "unit": "definition records",
+      "catalog": "001\u2013300 + Rare",
+      "reference": "http://ffta.ffsky.cn/questlist.htm",
+      "note": "The selected definition bank is rebuilt. Records are not distinct playable missions; the player-facing mission join remains unverified."
+    },
+    {
+      "id": "jobs",
+      "title": "Jobs & races",
+      "recovered": 116,
+      "total": 116,
+      "unit": "definition records",
+      "catalog": "5 race groups",
+      "reference": "http://ffta.ffsky.cn/job_intro.htm",
+      "note": "Definition records include more than the playable job roster. The player-facing roster mapping is still under review."
+    },
+    {
+      "id": "abilities",
+      "title": "Abilities",
+      "recovered": 347,
+      "total": 347,
+      "unit": "definition records",
+      "catalog": "Action \u00b7 Reaction \u00b7 Support \u00b7 Combo",
+      "reference": "http://ffta.ffsky.cn/ability.htm",
+      "note": "The selected ability definition bank is rebuilt. This does not establish complete behavior or a unique player-facing skill count."
+    },
+    {
+      "id": "items",
+      "title": "Equipment & items",
+      "recovered": 376,
+      "total": 376,
+      "unit": "definition records",
+      "catalog": "Weapons \u00b7 Armor \u00b7 Accessories \u00b7 Items",
+      "reference": "http://ffta.ffsky.cn/Equipments.htm",
+      "note": "The selected item bank is rebuilt. Inventory, equipment and acquisition behavior are separate verification work."
+    },
+    {
+      "id": "maps",
+      "title": "World map",
+      "recovered": null,
+      "total": null,
+      "unit": "locations",
+      "catalog": "Placement & treasure",
+      "reference": "http://ffta.ffsky.cn/worldmap.htm",
+      "note": "Location counts and their public recovery denominator have not yet been reconciled."
+    },
+    {
+      "id": "laws",
+      "title": "Laws & status",
+      "recovered": null,
+      "total": null,
+      "unit": "rules",
+      "catalog": "Judges \u00b7 Laws \u00b7 Status effects",
+      "reference": "http://ffta.ffsky.cn/worldlaw1.htm",
+      "note": "A complete public rule inventory is not yet established."
+    },
+    {
+      "id": "monsters",
+      "title": "Monsters",
+      "recovered": null,
+      "total": null,
+      "unit": "species",
+      "catalog": "Enemies & monster bank",
+      "reference": "http://ffta.ffsky.cn/enemy.htm",
+      "note": "Sprite resource IDs are not monster species counts. Identity mapping remains unverified."
+    },
+    {
+      "id": "link",
+      "title": "Link play",
+      "recovered": null,
+      "total": null,
+      "unit": "features",
+      "catalog": "Multiplayer & exchanges",
+      "reference": "http://ffta.ffsky.cn/research.htm",
+      "note": "Entry classification is in progress. No end-to-end link-play completion is claimed."
+    },
+    {
+      "id": "text",
+      "title": "Text & fonts",
+      "recovered": 3175,
+      "total": null,
+      "unit": "cataloged glyphs",
+      "catalog": "Dialogue & menus",
+      "reference": "http://ffta.ffsky.cn/basic.htm",
+      "note": "Cataloged glyphs are not translated lines or a measure of dialogue completion."
+    },
+    {
+      "id": "graphics",
+      "title": "Sprites & animation",
+      "recovered": 199,
+      "total": 199,
+      "unit": "animation roots",
+      "catalog": "Shared graphics",
+      "reference": "http://ffta.ffsky.cn/charactor2.htm",
+      "note": "The selected root inventory is rebuilt. Shared roots do not count characters or enemies."
+    },
+    {
+      "id": "audio",
+      "title": "Audio",
+      "recovered": 285,
+      "total": 285,
+      "unit": "PCM samples",
+      "catalog": "Music & sound",
+      "reference": "http://ffta.ffsky.cn/index.htm",
+      "note": "The selected PCM sample inventory is serialized. Playback validation is a separate measure."
+    },
+    {
+      "id": "saves",
+      "title": "Save & progression",
+      "recovered": null,
+      "total": null,
+      "unit": "flows",
+      "catalog": "Persistence",
+      "reference": "http://ffta.ffsky.cn/basic.htm",
+      "note": "No complete public save-flow denominator has been established."
+    }
+  ]
+}
