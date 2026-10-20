@@ -18,14 +18,16 @@ Snapshot: **2026-10-20**. This is a standalone progress-data project, not an off
 | Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
 | Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 1,035,700 B | 6.1733% of the ROM; total executable-code size is not established |
-| ASM instruction bytes | 910,202 B | Included in the span total above |
-| ASM literals/tables | 117,688 B | Included in the span total above |
-| ASM alignment/padding | 7,810 B | Included in the span total above |
-| Selected ASM modules | 4,183 | Modules are not function counts |
-| Selected readable C rewrite spans | 90,712 B | 716 C modules / 777 compiled entries; 0.5407% of ROM storage, not a code-completion percentage |
+| Selected source ASM spans | 1,015,004 B | 6.0499% of the ROM; total executable-code size is not established |
+| ASM instruction bytes | 895,286 B | Included in the span total above |
+| ASM literals/tables | 112,112 B | Included in the span total above |
+| ASM alignment/padding | 7,606 B | Included in the span total above |
+| Selected ASM modules | 4,180 | Modules are not function counts |
+| Selected readable C rewrite spans | 96,136 B | 718 C modules / 779 compiled entries; 0.573% of ROM storage, not a code-completion percentage |
 | C output matching retail exactly | 26,568 B | 516 function bodies match every byte |
-| C output with pinned differences | 64,144 B | 261 entries; 9,637 same-offset matches and 54,507 differing byte positions |
+| C output with pinned differences | 69,568 B | 263 entries; 9,895 same-offset matches and 59,673 differing byte positions |
+| Mixed C/ASM spans | 10,276 B | Five modules / six generated entries; 20 ASM instruction bytes, separately counted from pure C |
+| Original-byte dependencies | 336,261 B | Includes retained suffixes, data and padding; not unknown executable bytes |
 
 </details>
 
