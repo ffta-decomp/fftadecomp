@@ -8,7 +8,7 @@
       "recovered": 512,
       "total": 512,
       "unit": "definition records",
-      "catalog": "001–300 + Rare",
+      "catalog": "001\u2013300 + Rare",
       "reference": "http://ffta.ffsky.cn/questlist.htm",
       "note": "The selected definition bank is rebuilt. Records are not distinct playable missions; the player-facing mission join remains unverified."
     },
@@ -28,7 +28,7 @@
       "recovered": 347,
       "total": 347,
       "unit": "definition records",
-      "catalog": "Action · Reaction · Support · Combo",
+      "catalog": "Action \u00b7 Reaction \u00b7 Support \u00b7 Combo",
       "reference": "http://ffta.ffsky.cn/ability.htm",
       "note": "The selected ability definition bank is rebuilt. This does not establish complete behavior or a unique player-facing skill count."
     },
@@ -38,7 +38,7 @@
       "recovered": 376,
       "total": 376,
       "unit": "definition records",
-      "catalog": "Weapons · Armor · Accessories · Items",
+      "catalog": "Weapons \u00b7 Armor \u00b7 Accessories \u00b7 Items",
       "reference": "http://ffta.ffsky.cn/Equipments.htm",
       "note": "The selected item bank is rebuilt. Inventory, equipment and acquisition behavior are separate verification work."
     },
@@ -58,7 +58,7 @@
       "recovered": null,
       "total": null,
       "unit": "rules",
-      "catalog": "Judges · Laws · Status effects",
+      "catalog": "Judges \u00b7 Laws \u00b7 Status effects",
       "reference": "http://ffta.ffsky.cn/worldlaw1.htm",
       "note": "A complete public rule inventory is not yet established."
     },
@@ -123,6 +123,6 @@
       "note": "No complete public save-flow denominator has been established."
     }
   ],
-  "snapshot_revision": "2026-10-21-04",
+  "snapshot_revision": "2026-10-21-05",
   "implementation_progress": "submodules.json"
 }

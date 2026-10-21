@@ -48,7 +48,7 @@
     "candidate_rom_sha256": "d140c9fc942502a6ad065d111da280969e9cf647cb0b93a91c47334aed409bfc",
     "build_report_sha256": "f7b44547fca5e3b3304a5ff99fe8e3c0ac10ed3c992263a3f3fabfd94197ce8c"
   },
-  "snapshot_revision": "2026-10-21-04",
+  "snapshot_revision": "2026-10-21-05",
   "mixed_rewrite": {
     "selected_modules": 7,
     "compiled_function_entries": 9,
@@ -80,10 +80,17 @@
   "active_work": [
     {
       "title": "Local method build and indexing service",
-      "status": "Tool implementation and bounded integration validation",
-      "scope": "Per-method C/ASM comparison, dependency-bound caches, automatic manifest indexing and bounded parallel requests; no full-ROM disassembly dependency.",
+      "status": "Integrated and running; 90 focused tests passed. Measured warm comparison: 0.408 s; separate daemon client plus strict preflight: 1.463 s.",
+      "scope": "Per-method C/ASM comparison, dependency-bound caches, automatic manifest indexing, stale-input checks and two parallel requests. Local iteration has no full-ROM disassembly dependency; independent behavior and final ROM acceptance remain separate.",
       "target_speedup": ">5x",
-      "verified_whole_workflow_speedup": null
+      "verified_whole_workflow_speedup": null,
+      "verification": {
+        "focused_tests_passed": 90,
+        "warm_local_comparison_seconds": 0.408,
+        "client_plus_strict_preflight_seconds": 1.463,
+        "parallel_build_limit": 2,
+        "whole_rom_build_required_for_local_comparison": false
+      }
     }
   ]
 }
