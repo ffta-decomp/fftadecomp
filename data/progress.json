@@ -13,12 +13,12 @@
     "total_resource_denominator": null
   },
   "source_assembly": {
-    "selected_modules": 3976,
-    "span_bytes": 965084,
-    "span_bytes_as_percent_of_rom": 5.7523,
-    "instruction_bytes": 852784,
-    "literal_table_bytes": 105032,
-    "alignment_padding_bytes": 7268,
+    "selected_modules": 3967,
+    "span_bytes": 937514,
+    "span_bytes_as_percent_of_rom": 5.588,
+    "instruction_bytes": 829252,
+    "literal_table_bytes": 101184,
+    "alignment_padding_bytes": 7078,
     "total_executable_byte_denominator": null
   },
   "limitations": [
@@ -26,40 +26,40 @@
     "Resource spans may represent shared resources or collections; they are not distinct in-game object counts.",
     "Address ends are exclusive. Embedded padding positions are not described by this summary.",
     "Resource IDs identify this snapshot and are not stable game IDs.",
-    "ASM spans contain 852,784 instruction bytes, 105,032 literal/table bytes and 7,268 alignment/padding bytes; module counts are not function counts.",
-    "Pure C spans: 28,320 exact bytes and 117,350 bytes with pinned differences. Mixed spans are separate; none is a percentage of all executable code rewritten.",
+    "ASM spans contain 829,252 instruction bytes, 101,184 literal/table bytes and 7,078 alignment/padding bytes; module counts are not function counts.",
+    "Pure C spans: 28,376 exact bytes and 139,258 bytes with pinned differences. Mixed spans are separate; none is a percentage of all executable code rewritten.",
     "ROM shares are storage measurements, not gameplay or semantic completion.",
     "Raw assets, code, implementation details and private working material are not distributed."
   ],
   "c_rewrite": {
-    "selected_modules": 922,
-    "compiled_function_entries": 988,
-    "selected_span_bytes": 145670,
-    "selected_span_bytes_as_percent_of_rom": 0.8683,
-    "exact_match_bytes": 28320,
-    "exact_match_function_bodies": 596,
-    "nonmatching_span_bytes": 117350,
-    "nonmatching_function_entries": 392,
-    "same_offset_match_bytes": 15987,
-    "pinned_difference_bytes": 101363,
+    "selected_modules": 933,
+    "compiled_function_entries": 1020,
+    "selected_span_bytes": 167634,
+    "selected_span_bytes_as_percent_of_rom": 0.9992,
+    "exact_match_bytes": 28376,
+    "exact_match_function_bodies": 597,
+    "nonmatching_span_bytes": 139258,
+    "nonmatching_function_entries": 423,
+    "same_offset_match_bytes": 17510,
+    "pinned_difference_bytes": 121748,
     "total_executable_byte_denominator": null
   },
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "9a7e5a981af23993da53bae2bf9cd03e53260efc060329893315cf06f81e1a47",
-    "build_report_sha256": "36c2e6fd75bfe0b7dfb43da426e9223418a01c9f484b583fad1c3eb8dab312c6"
+    "candidate_rom_sha256": "feb28e3bcadbe0ce9f09f0e1fedf63b566033021625ab12ef257727cd28b3a25",
+    "build_report_sha256": "049b564d2f4a22fabc68a4c8784c319dec8311995e542a79c1f33c4c168a1bd3"
   },
-  "snapshot_revision": "2026-10-21-01",
+  "snapshot_revision": "2026-10-21-02",
   "mixed_rewrite": {
-    "selected_modules": 6,
-    "compiled_function_entries": 7,
-    "selected_span_bytes": 10360,
-    "assembly_instruction_bytes": 24,
-    "instruction_bytes": 8336,
+    "selected_modules": 7,
+    "compiled_function_entries": 9,
+    "selected_span_bytes": 10520,
+    "assembly_instruction_bytes": 26,
+    "instruction_bytes": 8492,
     "total_executable_byte_denominator": null
   },
   "original_byte_dependency": {
-    "span_bytes": 358715,
+    "span_bytes": 364873,
     "total_executable_byte_denominator": null,
     "note": "Includes retained original suffixes, code, data, assets and padding; not the number of unknown code bytes."
   }

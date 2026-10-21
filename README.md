@@ -18,16 +18,16 @@ Snapshot: **2026-10-21**. This is a standalone progress-data project, not an off
 | Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
 | Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 965,084 B | 5.7523% of the ROM; total executable-code size is not established |
-| ASM instruction bytes | 852,784 B | Included in the span total above |
-| ASM literals/tables | 105,032 B | Included in the span total above |
-| ASM alignment/padding | 7,268 B | Included in the span total above |
-| Selected ASM modules | 3,976 | Modules are not function counts |
-| Selected readable C rewrite spans | 145,670 B | 922 C modules / 988 compiled entries; 0.8683% of ROM storage, not a code-completion percentage |
-| C output matching retail exactly | 28,320 B | 596 function bodies match every byte |
-| C output with pinned differences | 117,350 B | 392 entries; 15,987 same-offset matches and 101,363 differing byte positions |
-| Mixed C/ASM spans | 10,360 B | Six modules / seven generated entries; 24 ASM instruction bytes, separately counted from pure C |
-| Original-byte dependencies | 358,715 B | Includes retained suffixes, data and padding; not unknown executable bytes |
+| Selected source ASM spans | 937,514 B | 5.5880% of the ROM; total executable-code size is not established |
+| ASM instruction bytes | 829,252 B | Included in the span total above |
+| ASM literals/tables | 101,184 B | Included in the span total above |
+| ASM alignment/padding | 7,078 B | Included in the span total above |
+| Selected ASM modules | 3,967 | Modules are not function counts |
+| Selected readable C rewrite spans | 167,634 B | 933 C modules / 1,020 compiled entries; 0.9992% of ROM storage, not a code-completion percentage |
+| C output matching retail exactly | 28,376 B | 597 function bodies match every byte |
+| C output with pinned differences | 139,258 B | 423 entries; 17,510 same-offset matches and 121,748 differing byte positions |
+| Mixed C/ASM spans | 10,520 B | Seven modules / nine generated entries; 26 ASM instruction bytes, separately counted from pure C |
+| Original-byte dependencies | 364,873 B | Includes retained suffixes, data and padding; not unknown executable bytes |
 
 </details>
 
