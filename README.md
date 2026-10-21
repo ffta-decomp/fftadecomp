@@ -18,24 +18,31 @@ Snapshot: **2026-10-21**. This is a standalone progress-data project, not an off
 | Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
 | Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 937,514 B | 5.5880% of the ROM; total executable-code size is not established |
-| ASM instruction bytes | 829,252 B | Included in the span total above |
-| ASM literals/tables | 101,184 B | Included in the span total above |
-| ASM alignment/padding | 7,078 B | Included in the span total above |
-| Selected ASM modules | 3,967 | Modules are not function counts |
-| Selected readable C rewrite spans | 167,634 B | 933 C modules / 1,020 compiled entries; 0.9992% of ROM storage, not a code-completion percentage |
-| C output matching retail exactly | 28,376 B | 597 function bodies match every byte |
-| C output with pinned differences | 139,258 B | 423 entries; 17,510 same-offset matches and 121,748 differing byte positions |
+| Selected source ASM spans | 936,516 B | 5.5821% of the ROM; total executable-code size is not established |
+| ASM instruction bytes | 828,260 B | Included in the span total above |
+| ASM literals/tables | 101,180 B | Included in the span total above |
+| ASM alignment/padding | 7,076 B | Included in the span total above |
+| Selected ASM modules | 3,961 | Modules are not function counts |
+| Selected readable C rewrite spans | 168,590 B | 939 C modules / 1,026 compiled entries; 1.0049% of ROM storage, not a code-completion percentage |
+| C output matching retail exactly | 28,432 B | 599 function bodies match every byte |
+| C output with pinned differences | 140,158 B | 427 entries; 17,599 same-offset matches and 122,559 differing byte positions |
 | Mixed C/ASM spans | 10,520 B | Seven modules / nine generated entries; 26 ASM instruction bytes, separately counted from pure C |
-| Original-byte dependencies | 364,873 B | Includes retained suffixes, data and padding; not unknown executable bytes |
+| Original-byte dependencies | 364,915 B | Includes retained suffixes, data and padding; not unknown executable bytes |
 
 </details>
 
 These are reconstruction and storage measurements. The C figures distinguish exact output from readable C output that still differs from retail; pinned differences are byte-comparison results, not claims that behavior is complete. The total executable-code denominator is unknown, so the C span share must not be read as the percentage of code rewritten or gameplay completed. Relocated C bodies and retained assembly suffixes are accounted for separately.
 
+## Latest integrated milestone
+
+Battle route setup and pending-state lifecycle adds six original entries: 956 pure C bytes within 998 original bytes, with 42 retained suffix bytes. Seventy bounded scenarios / 74 invocations per image pass, including actual setup/progression/pending compositions. Natural battle paths and physical hardware remain unproved.
+
+Submodule rows distinguish integrated code, remaining ASM, bounded verification and unresolved gameplay. Current effect-transaction and verification-tool work is excluded from the verified totals. The >5x workflow-efficiency goal has no verified end-to-end result yet.
+
 ## Data
 
 - [Progress summary](data/progress.json)
+- [Submodule implementation progress](data/submodules.json) — 37 disjoint groups with C/mixed counts, verified scope and remaining work
 - [Resource address table — CSV](data/resource-addresses.csv)
 - [Resource address table — JSON](data/resource-addresses.json)
 

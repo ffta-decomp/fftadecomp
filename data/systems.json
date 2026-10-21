@@ -122,5 +122,7 @@
       "reference": "http://ffta.ffsky.cn/basic.htm",
       "note": "No complete public save-flow denominator has been established."
     }
-  ]
+  ],
+  "snapshot_revision": "2026-10-21-03",
+  "implementation_progress": "submodules.json"
 }

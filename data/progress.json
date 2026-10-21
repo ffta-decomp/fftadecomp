@@ -13,12 +13,12 @@
     "total_resource_denominator": null
   },
   "source_assembly": {
-    "selected_modules": 3967,
-    "span_bytes": 937514,
-    "span_bytes_as_percent_of_rom": 5.588,
-    "instruction_bytes": 829252,
-    "literal_table_bytes": 101184,
-    "alignment_padding_bytes": 7078,
+    "selected_modules": 3961,
+    "span_bytes": 936516,
+    "span_bytes_as_percent_of_rom": 5.5821,
+    "instruction_bytes": 828260,
+    "literal_table_bytes": 101180,
+    "alignment_padding_bytes": 7076,
     "total_executable_byte_denominator": null
   },
   "limitations": [
@@ -26,30 +26,30 @@
     "Resource spans may represent shared resources or collections; they are not distinct in-game object counts.",
     "Address ends are exclusive. Embedded padding positions are not described by this summary.",
     "Resource IDs identify this snapshot and are not stable game IDs.",
-    "ASM spans contain 829,252 instruction bytes, 101,184 literal/table bytes and 7,078 alignment/padding bytes; module counts are not function counts.",
-    "Pure C spans: 28,376 exact bytes and 139,258 bytes with pinned differences. Mixed spans are separate; none is a percentage of all executable code rewritten.",
+    "ASM spans contain 828,260 instruction bytes, 101,180 literal/table bytes and 7,076 alignment/padding bytes; module counts are not function counts.",
+    "Pure C spans: 28,432 exact bytes and 140,158 bytes with pinned differences. Mixed spans are separate; none is a percentage of all executable code rewritten.",
     "ROM shares are storage measurements, not gameplay or semantic completion.",
     "Raw assets, code, implementation details and private working material are not distributed."
   ],
   "c_rewrite": {
-    "selected_modules": 933,
-    "compiled_function_entries": 1020,
-    "selected_span_bytes": 167634,
-    "selected_span_bytes_as_percent_of_rom": 0.9992,
-    "exact_match_bytes": 28376,
-    "exact_match_function_bodies": 597,
-    "nonmatching_span_bytes": 139258,
-    "nonmatching_function_entries": 423,
-    "same_offset_match_bytes": 17510,
-    "pinned_difference_bytes": 121748,
+    "selected_modules": 939,
+    "compiled_function_entries": 1026,
+    "selected_span_bytes": 168590,
+    "selected_span_bytes_as_percent_of_rom": 1.0049,
+    "exact_match_bytes": 28432,
+    "exact_match_function_bodies": 599,
+    "nonmatching_span_bytes": 140158,
+    "nonmatching_function_entries": 427,
+    "same_offset_match_bytes": 17599,
+    "pinned_difference_bytes": 122559,
     "total_executable_byte_denominator": null
   },
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "feb28e3bcadbe0ce9f09f0e1fedf63b566033021625ab12ef257727cd28b3a25",
-    "build_report_sha256": "049b564d2f4a22fabc68a4c8784c319dec8311995e542a79c1f33c4c168a1bd3"
+    "candidate_rom_sha256": "5558c631913d3d33ce742c76581e3629fa4579924a60c7d973c4e0d41bc8daa6",
+    "build_report_sha256": "eb0649a8b1ad47a9a6df917ff8342508281429d4c833d36afa735defea917213"
   },
-  "snapshot_revision": "2026-10-21-02",
+  "snapshot_revision": "2026-10-21-03",
   "mixed_rewrite": {
     "selected_modules": 7,
     "compiled_function_entries": 9,
@@ -59,8 +59,35 @@
     "total_executable_byte_denominator": null
   },
   "original_byte_dependency": {
-    "span_bytes": 364873,
+    "span_bytes": 364915,
     "total_executable_byte_denominator": null,
     "note": "Includes retained original suffixes, code, data, assets and padding; not the number of unknown code bytes."
-  }
+  },
+  "latest_milestone": {
+    "title": "Battle route setup and pending-state lifecycle",
+    "original_entries": 6,
+    "original_span_bytes": 998,
+    "pure_c_bytes": 956,
+    "exact_c_bytes": 56,
+    "retained_suffix_bytes": 42,
+    "bounded_scenarios": 70,
+    "fixture_invocations_per_image": 74,
+    "instruction_negative_controls_rejected": 1,
+    "summary": "Route setup, record progression and pending-state decisions execute together in bounded checks.",
+    "remaining": "Natural route/list domains, complete battle interaction and physical hardware behavior remain unproved."
+  },
+  "active_work": [
+    {
+      "title": "Battle effect transaction",
+      "status": "In progress; excluded from verified totals",
+      "scope": "Remaining application, resolution and reaction gates."
+    },
+    {
+      "title": "Verification workflow",
+      "status": "Measurement and tool improvement",
+      "scope": "Reuse validated evidence and reduce repeated integration work.",
+      "target_speedup": ">5x",
+      "verified_whole_workflow_speedup": null
+    }
+  ]
 }

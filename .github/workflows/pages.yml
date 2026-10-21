@@ -28,6 +28,7 @@ jobs:
           cp -R assets data _site/
           python3 -m json.tool data/progress.json > /dev/null
           python3 -m json.tool data/systems.json > /dev/null
+          python3 -m json.tool data/submodules.json > /dev/null
           python3 -m json.tool data/resource-addresses.json > /dev/null
       - uses: actions/upload-pages-artifact@v4
         with:

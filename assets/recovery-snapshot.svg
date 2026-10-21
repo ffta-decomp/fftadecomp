@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
 <title id="title">FFTA recovery snapshot · 2026-10-21</title>
-<desc id="desc">Resources: 9,247,442 bytes across 4,987 selected spans, 55.12 percent of ROM storage. Source assembly spans: 937,514 bytes across 3,967 modules, with 829,252 instruction bytes, 101,184 literal/table bytes and 7,078 alignment/padding bytes. Readable C rewrite spans: 167,634 bytes across 933 modules and 1,020 compiled entries; 28,376 bytes match exactly across 597 function bodies, while 139,258 nonmatching bytes have 121,748 differing byte positions pinned. C spans are 1.00 percent of ROM storage, not a code completion percentage. Total executable-code denominator is unknown.</desc>
+<desc id="desc">Resources: 9,247,442 bytes across 4,987 selected spans, 55.12 percent of ROM storage. Source assembly spans: 936,516 bytes across 3,961 modules, with 828,260 instruction bytes, 101,180 literal/table bytes and 7,076 alignment/padding bytes. Readable C rewrite spans: 168,590 bytes across 939 modules and 1,026 compiled entries; 28,432 bytes match exactly across 599 function bodies, while 140,158 nonmatching bytes have 122,559 differing byte positions pinned. C spans are 1.00 percent of ROM storage, not a code completion percentage. Total executable-code denominator is unknown.</desc>
 <rect width="1000" height="600" rx="2" fill="#e5ddc7"/>
 <g font-family="Arial, Helvetica, sans-serif">
 <rect x="32" y="32" width="6" height="42" rx="3" fill="#997330"/>
@@ -20,22 +20,22 @@
 <rect x="56" y="316" width="224.886" height="12" rx="6" fill="#997330"/>
 <text x="56" y="357" fill="#66614f" font-size="12">Resource bytes exclude 42,129 B of embedded padding.</text>
 <text x="536" y="175" fill="#4b6075" font-size="12" font-weight="700" letter-spacing="1.5">SELECTED SOURCE ASM SPANS</text>
-<text x="536" y="230" fill="#343a49" font-size="42" font-weight="700">937,514<tspan font-size="18" fill="#66614f"> B</tspan></text>
-<text x="536" y="259" fill="#66614f" font-size="15">3,967 selected assembly modules</text>
+<text x="536" y="230" fill="#343a49" font-size="42" font-weight="700">936,516<tspan font-size="18" fill="#66614f"> B</tspan></text>
+<text x="536" y="259" fill="#66614f" font-size="15">3,961 selected assembly modules</text>
 <text x="536" y="300" fill="#66614f" font-size="13">Share of ROM storage</text>
-<text x="944" y="300" fill="#4b6075" font-size="19" font-weight="700" text-anchor="end">5.59%</text>
+<text x="944" y="300" fill="#4b6075" font-size="19" font-weight="700" text-anchor="end">5.58%</text>
 <rect x="536" y="316" width="408" height="12" rx="6" fill="#d7ceb8"/>
-<rect x="536" y="316" width="22.799" height="12" rx="6" fill="#4b6075"/>
-<text x="536" y="357" fill="#66614f" font-size="12">829,252 instruction bytes</text>
-<text x="536" y="377" fill="#66614f" font-size="12">101,184 literals/tables · 7,078 alignment/padding</text>
+<rect x="536" y="316" width="22.774" height="12" rx="6" fill="#4b6075"/>
+<text x="536" y="357" fill="#66614f" font-size="12">828,260 instruction bytes</text>
+<text x="536" y="377" fill="#66614f" font-size="12">101,180 literals/tables · 7,076 alignment/padding</text>
 <rect x="32" y="405" width="936" height="112" rx="2" fill="#f5efd9" stroke="#b5a889"/>
 <text x="56" y="433" fill="#8b7040" font-size="12" font-weight="700" letter-spacing="1.5">READABLE C REWRITE SPANS</text>
-<text x="56" y="474" fill="#343a49" font-size="30" font-weight="700">167,634 B</text>
-<text x="56" y="498" fill="#66614f" font-size="12">933 C modules · 1,020 compiled entries · 1.00% of ROM storage</text>
-<text x="424" y="450" fill="#66614f" font-size="14">28,376 B exact across 597 function bodies</text>
-<text x="424" y="476" fill="#66614f" font-size="14">139,258 B nonmatching across 423 entries</text>
-<text x="424" y="501" fill="#66614f" font-size="12">17,510 same-offset matches · 121,748 differing bytes pinned</text>
-<text x="32" y="537" fill="#66614f" font-size="12">Mixed: 10,520 B (7 modules) · Original-byte dependencies: 364,873 B · Both separate from pure C.</text>
+<text x="56" y="474" fill="#343a49" font-size="30" font-weight="700">168,590 B</text>
+<text x="56" y="498" fill="#66614f" font-size="12">939 C modules · 1,026 compiled entries · 1.00% of ROM storage</text>
+<text x="424" y="450" fill="#66614f" font-size="14">28,432 B exact across 599 function bodies</text>
+<text x="424" y="476" fill="#66614f" font-size="14">140,158 B nonmatching across 427 entries</text>
+<text x="424" y="501" fill="#66614f" font-size="12">17,599 same-offset matches · 122,559 differing bytes pinned</text>
+<text x="32" y="537" fill="#66614f" font-size="12">Mixed: 10,520 B (7 modules) · Original-byte dependencies: 364,915 B · Both separate from pure C.</text>
 <line x1="32" y1="557" x2="968" y2="557" stroke="#b5a889"/>
 <text x="32" y="578" fill="#66614f" font-size="13" font-weight="700">Exact byte agreement is not gameplay completion; total executable-code denominator remains unknown.</text>
 </g></svg>
