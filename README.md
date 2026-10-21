@@ -18,14 +18,14 @@ Snapshot: **2026-10-21**. This is a standalone progress-data project, not an off
 | Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
 | Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 935,448 B | 5.5757% of the ROM; total executable-code size is not established |
-| ASM instruction bytes | 827,240 B | Included in the span total above |
-| ASM literals/tables | 101,140 B | Included in the span total above |
-| ASM alignment/padding | 7,068 B | Included in the span total above |
-| Selected ASM modules | 3,950 | Modules are not function counts |
-| Selected readable C rewrite spans | 169,968 B | 952 C modules / 1,039 compiled entries; 1.0131% of ROM storage, not a code-completion percentage |
-| C output matching retail exactly | 28,448 B | 600 function bodies match every byte |
-| C output with pinned differences | 141,520 B | 439 entries; 17,911 same-offset matches and 123,609 differing byte positions |
+| Selected source ASM spans | 934,254 B | 5.5720% of the ROM; total executable-code size is not established |
+| ASM instruction bytes | 826,122 B | Included in the span total above |
+| ASM literals/tables | 101,072 B | Included in the span total above |
+| ASM alignment/padding | 7,060 B | Included in the span total above |
+| Selected ASM modules | 3,945 | Modules are not function counts |
+| Selected readable C rewrite spans | 171,162 B | 957 C modules / 1,044 compiled entries; 1.0202% of ROM storage, not a code-completion percentage |
+| C output matching retail exactly | 29,592 B | 604 function bodies match every byte |
+| C output with pinned differences | 141,570 B | 440 entries; 17,950 same-offset matches and 123,620 differing byte positions |
 | Mixed C/ASM spans | 10,520 B | Seven modules / nine generated entries; 26 ASM instruction bytes, separately counted from pure C |
 | Original-byte dependencies | 365,357 B | Includes retained suffixes, data and padding; not unknown executable bytes |
 
@@ -35,14 +35,16 @@ These are reconstruction and storage measurements. The C figures distinguish exa
 
 ## Latest integrated milestone
 
-Battle effect application, resolution and pending-reaction roots add eleven original entries. Generated C prefixes total 1,106 bytes; selected spans total 1,378 bytes including 272 linker-veneer bytes. The 442 retained original suffix bytes remain explicit. The milestone passes 144 bounded scenarios and one instruction negative control. Natural battle paths and physical hardware remain unproved.
+Four complete C methods / **1,144 bytes** are integrated with exact retail equality. The milestone adds 572 newly recovered semantic C bytes, increases selected pure C by 588 bytes and removes 16 known original literal dependencies. Twenty-four actual-image cases pass; eight controlled cases and a wrong-width control are reused through exact code/dependency/input identity. Natural gameplay and physical hardware remain unproved.
 
-Submodule rows distinguish integrated code, remaining ASM, bounded verification and unresolved gameplay. Current local-build and indexing-tool work is excluded from game recovery totals. The >5x workflow-efficiency goal has no verified end-to-end result yet.
+The complete local-recovery-to-integration pipeline delivered **514.03 exact C B/hour** over 8,012.002 seconds, with **257.01 new semantic C B/hour**. Integration alone delivered 4,643.01 exact B/hour over 887.011 seconds; this is a different measurement and cannot stand in for end-to-end recovery speed. No >5x workflow speedup is claimed.
+
+The next bounded scope contains three mission-progression policy methods / 1,176 original bytes. Implementation and independent cases proceed concurrently; it has no new acceptance credit yet. Submodule rows distinguish integrated code, bounded evidence and unresolved gameplay.
 
 ## Data
 
 - [Progress summary](data/progress.json)
-- [Submodule implementation progress](data/submodules.json) — 37 disjoint groups with C/mixed counts, verified scope and remaining work
+- [Submodule implementation progress](data/submodules.json) — 39 disjoint groups with C/mixed counts, verified scope and remaining work
 - [Resource address table — CSV](data/resource-addresses.csv)
 - [Resource address table — JSON](data/resource-addresses.json)
 

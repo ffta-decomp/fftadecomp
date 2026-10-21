@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-10-21",
-  "snapshot_revision": "2026-10-21-05",
+  "snapshot_revision": "2026-10-21-07",
   "measurement": "Disjoint selected C/mixed implementation groups. No whole-system denominator or gameplay completion percentage is established.",
   "groups": [
     {
@@ -201,6 +201,23 @@
       "mixed_entries": 0,
       "verified": "Two dispatch roots and 68 callback bodies are integrated.",
       "remaining": "Six table callbacks retain ASM; dynamic selector domains remain unproved.",
+      "system_completion_percent": null
+    },
+    {
+      "id": "turn-selection-and-order-storage",
+      "system": "battle",
+      "title": "Turn selection and order storage",
+      "status": "integrated-bounded",
+      "selected_c_modules": 4,
+      "pure_c_bytes": 622,
+      "exact_c_bytes": 572,
+      "nonmatching_c_bytes": 50,
+      "compiled_c_entries": 4,
+      "mixed_bytes": 0,
+      "mixed_modules": 0,
+      "mixed_entries": 0,
+      "verified": "Three complete functions /572 bytes now match retail exactly. All24 final-image cases pass, including independent fixtures and real initializer/manager continuations.",
+      "remaining": "Natural battle reachability and complete state domains remain open. The former16 literal bytes are now generated C.",
       "system_completion_percent": null
     },
     {
@@ -661,18 +678,36 @@
       "verified": "Earlier recovered helpers, accessors and library routines are retained as one accounting group.",
       "remaining": "Responsibility has not been reconciled per system for this remainder; no semantic completion claim.",
       "system_completion_percent": null
+    },
+    {
+      "id": "unit-node-derived-flags",
+      "system": "battle",
+      "title": "Unit-node derived flags",
+      "status": "integrated-bounded",
+      "selected_c_modules": 1,
+      "pure_c_bytes": 572,
+      "exact_c_bytes": 572,
+      "nonmatching_c_bytes": 0,
+      "compiled_c_entries": 1,
+      "mixed_bytes": 0,
+      "mixed_modules": 0,
+      "mixed_entries": 0,
+      "verified": "One complete572-byte function matches retail exactly. Eight independent controlled cases and a wrong-width control are reused by code/dependency/input identity in the accepted final image.",
+      "remaining": "Natural gameplay, full predicate combinations and physical hardware behavior remain unproved.",
+      "system_completion_percent": null
     }
   ],
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "d140c9fc942502a6ad065d111da280969e9cf647cb0b93a91c47334aed409bfc",
-    "build_report_sha256": "f7b44547fca5e3b3304a5ff99fe8e3c0ac10ed3c992263a3f3fabfd94197ce8c"
+    "candidate_rom_sha256": "e83a65116a6d0faeeafd17ea2841fb319823c4a1ddb6d8340c75580999ee4dff",
+    "build_report_sha256": "1dd4b9ee085125db4dd20429a8ab26e3bb7111e5e6959f28a6edf611bbe6b551",
+    "actual_image_acceptance_sha256": "a3f1c683905e4d3f9e03fb2e8cd9df20cbf1f438ccd845d051fc3942ba267770"
   },
   "totals": {
-    "pure_c_bytes": 169968,
+    "pure_c_bytes": 171162,
     "mixed_bytes": 10520,
-    "compiled_c_entries": 1039,
-    "selected_c_modules": 952
+    "compiled_c_entries": 1044,
+    "selected_c_modules": 957
   },
   "limitations": [
     "Generated entry counts exclude compiler placeholders and can include split/forwarding entries; they are not original-function or gameplay counts.",

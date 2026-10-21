@@ -13,12 +13,12 @@
     "total_resource_denominator": null
   },
   "source_assembly": {
-    "selected_modules": 3950,
-    "span_bytes": 935448,
-    "span_bytes_as_percent_of_rom": 5.5757,
-    "instruction_bytes": 827240,
-    "literal_table_bytes": 101140,
-    "alignment_padding_bytes": 7068,
+    "selected_modules": 3945,
+    "span_bytes": 934254,
+    "span_bytes_as_percent_of_rom": 5.5686,
+    "instruction_bytes": 826122,
+    "literal_table_bytes": 101072,
+    "alignment_padding_bytes": 7060,
     "total_executable_byte_denominator": null
   },
   "limitations": [
@@ -31,24 +31,25 @@
     "Pure C selected spans include non-additive linker veneers. Storage accounting is distinct from recovered original functions and gameplay completion."
   ],
   "c_rewrite": {
-    "selected_modules": 952,
-    "compiled_function_entries": 1039,
-    "selected_span_bytes": 169968,
-    "selected_span_bytes_as_percent_of_rom": 1.0131,
-    "exact_match_bytes": 28448,
-    "exact_match_function_bodies": 600,
-    "nonmatching_span_bytes": 141520,
-    "nonmatching_function_entries": 439,
-    "same_offset_match_bytes": 17911,
-    "pinned_difference_bytes": 123609,
+    "selected_modules": 957,
+    "compiled_function_entries": 1044,
+    "selected_span_bytes": 171162,
+    "selected_span_bytes_as_percent_of_rom": 1.0202,
+    "exact_match_bytes": 29592,
+    "exact_match_function_bodies": 604,
+    "nonmatching_span_bytes": 141570,
+    "nonmatching_function_entries": 440,
+    "same_offset_match_bytes": 17950,
+    "pinned_difference_bytes": 123620,
     "total_executable_byte_denominator": null
   },
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "d140c9fc942502a6ad065d111da280969e9cf647cb0b93a91c47334aed409bfc",
-    "build_report_sha256": "f7b44547fca5e3b3304a5ff99fe8e3c0ac10ed3c992263a3f3fabfd94197ce8c"
+    "candidate_rom_sha256": "e83a65116a6d0faeeafd17ea2841fb319823c4a1ddb6d8340c75580999ee4dff",
+    "build_report_sha256": "1dd4b9ee085125db4dd20429a8ab26e3bb7111e5e6959f28a6edf611bbe6b551",
+    "actual_image_acceptance_sha256": "a3f1c683905e4d3f9e03fb2e8cd9df20cbf1f438ccd845d051fc3942ba267770"
   },
-  "snapshot_revision": "2026-10-21-05",
+  "snapshot_revision": "2026-10-21-07",
   "mixed_rewrite": {
     "selected_modules": 7,
     "compiled_function_entries": 9,
@@ -63,21 +64,23 @@
     "note": "Includes retained original suffixes, code, data, assets and padding; not the number of unknown code bytes."
   },
   "latest_milestone": {
-    "title": "Battle effect application, resolution and pending reaction",
-    "original_entries": 11,
-    "original_span_bytes": 1068,
-    "pure_c_bytes": 1106,
-    "selected_c_span_bytes": 1378,
-    "linker_veneer_bytes": 272,
-    "exact_c_bytes": 16,
-    "retained_suffix_bytes": 442,
-    "bounded_scenarios": 144,
-    "fixture_invocations_per_image": 144,
-    "instruction_negative_controls_rejected": 1,
-    "summary": "Application root and eight callbacks, resolution root and pending-reaction root are integrated. All 92 application callback targets now use C; two body/forwarder pairs do not add original functions.",
-    "remaining": "Natural battle reachability, full dynamic domains and physical hardware remain unproved."
+    "title": "Four complete exact C methods integrated",
+    "original_entries": 4,
+    "original_span_bytes": 1144,
+    "pure_c_bytes": 1144,
+    "selected_c_span_bytes": 1144,
+    "linker_veneer_bytes": 0,
+    "exact_c_bytes": 1144,
+    "new_semantic_c_bytes": 572,
+    "net_pure_c_increase_bytes": 588,
+    "retained_suffix_bytes": 0,
+    "bounded_scenarios": 32,
+    "fixture_invocations_per_image": 24,
+    "identity_reused_scenarios": 8,
+    "summary": "Turn ordering, selected-record copyback, collection and live unit-node derived flags now reproduce four complete retail function spans exactly. Twenty-four final-image cases pass; eight controlled cases are reused by code, dependency and input identity.",
+    "remaining": "Natural gameplay, unrestricted state domains and physical hardware behavior remain unproved. Exact agreement is not whole-game completion."
   },
-  "active_work": [
+  "tooling_history": [
     {
       "title": "Local method build and indexing service",
       "status": "Integrated and running; 90 focused tests passed. Measured warm comparison: 0.408 s; separate daemon client plus strict preflight: 1.463 s.",
@@ -91,6 +94,50 @@
         "parallel_build_limit": 2,
         "whole_rom_build_required_for_local_comparison": false
       }
+    },
+    {
+      "title": "Measured production build throughput",
+      "status": "Integrated tooling: warm full build 88.332 s to 49.651 s (1.78x); 131 focused tests passed. Identical accepted image.",
+      "scope": "11,006 cached modules; same inputs and toolchain. Input and artifact validation remain enabled. This timing is full-build execution, not end-to-end game recovery throughput.",
+      "target_speedup": ">5x",
+      "verified_whole_workflow_speedup": null,
+      "verification": {
+        "focused_tests_passed": 131,
+        "baseline_warm_seconds": 88.3316641250276,
+        "optimized_warm_seconds": 49.650725832994794,
+        "warm_build_speedup": 1.7790608826573862,
+        "module_cache_hits": 11006,
+        "module_cache_misses": 0,
+        "final_population_seconds": 899.6252217500005,
+        "same_output_rom": true,
+        "cold_four_method_speedup_established": false,
+        "final_population_isolated": false
+      }
     }
-  ]
+  ],
+  "active_work": [
+    {
+      "title": "Mission progression and pending-event policy",
+      "status": "Three source-backed methods / 1,176 original bytes assigned; implementation and independent fixture preparation run concurrently. No new acceptance credit yet.",
+      "scope": "Recover persistent mission counters/flags, pending-event selection and their direct record-update policy. One final integration batch follows accepted methods."
+    },
+    {
+      "title": "Measured C delivery",
+      "scope": "Latest completed pipeline integrates 1,144 unique whole-function exact C bytes, including 572 newly recovered semantic bytes.",
+      "status": "Full pipeline: 8,012.002 seconds; 514.03 exact B/hour and 257.01 new semantic C B/hour. Integration stage alone: 887.011 seconds / 4,643.01 exact B/hour. These denominators differ; >5x whole-workflow gain remains unproved."
+    }
+  ],
+  "delivery_metrics": {
+    "integrated_exact_bytes": 1144,
+    "integrated_original_methods": 4,
+    "new_semantic_C_bytes": 572,
+    "pure_C_net_increase_bytes": 588,
+    "original_literal_dependencies_removed_bytes": 16,
+    "pipeline_elapsed_seconds": 8012.002212,
+    "pipeline_exact_bytes_per_hour": 514.0288146490591,
+    "pipeline_new_semantic_C_bytes_per_hour": 257.01440732452954,
+    "integration_elapsed_seconds": 887.010928,
+    "integration_exact_bytes_per_hour": 4643.009313634972,
+    "whole_workflow_speedup": null
+  }
 }
