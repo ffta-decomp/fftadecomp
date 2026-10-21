@@ -13,12 +13,12 @@
     "total_resource_denominator": null
   },
   "source_assembly": {
-    "selected_modules": 3961,
-    "span_bytes": 936516,
-    "span_bytes_as_percent_of_rom": 5.5821,
-    "instruction_bytes": 828260,
-    "literal_table_bytes": 101180,
-    "alignment_padding_bytes": 7076,
+    "selected_modules": 3950,
+    "span_bytes": 935448,
+    "span_bytes_as_percent_of_rom": 5.5757,
+    "instruction_bytes": 827240,
+    "literal_table_bytes": 101140,
+    "alignment_padding_bytes": 7068,
     "total_executable_byte_denominator": null
   },
   "limitations": [
@@ -26,30 +26,29 @@
     "Resource spans may represent shared resources or collections; they are not distinct in-game object counts.",
     "Address ends are exclusive. Embedded padding positions are not described by this summary.",
     "Resource IDs identify this snapshot and are not stable game IDs.",
-    "ASM spans contain 828,260 instruction bytes, 101,180 literal/table bytes and 7,076 alignment/padding bytes; module counts are not function counts.",
-    "Pure C spans: 28,432 exact bytes and 140,158 bytes with pinned differences. Mixed spans are separate; none is a percentage of all executable code rewritten.",
     "ROM shares are storage measurements, not gameplay or semantic completion.",
-    "Raw assets, code, implementation details and private working material are not distributed."
+    "Raw assets, code, implementation details and private working material are not distributed.",
+    "Pure C selected spans include non-additive linker veneers. Storage accounting is distinct from recovered original functions and gameplay completion."
   ],
   "c_rewrite": {
-    "selected_modules": 939,
-    "compiled_function_entries": 1026,
-    "selected_span_bytes": 168590,
-    "selected_span_bytes_as_percent_of_rom": 1.0049,
-    "exact_match_bytes": 28432,
-    "exact_match_function_bodies": 599,
-    "nonmatching_span_bytes": 140158,
-    "nonmatching_function_entries": 427,
-    "same_offset_match_bytes": 17599,
-    "pinned_difference_bytes": 122559,
+    "selected_modules": 952,
+    "compiled_function_entries": 1039,
+    "selected_span_bytes": 169968,
+    "selected_span_bytes_as_percent_of_rom": 1.0131,
+    "exact_match_bytes": 28448,
+    "exact_match_function_bodies": 600,
+    "nonmatching_span_bytes": 141520,
+    "nonmatching_function_entries": 439,
+    "same_offset_match_bytes": 17911,
+    "pinned_difference_bytes": 123609,
     "total_executable_byte_denominator": null
   },
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "5558c631913d3d33ce742c76581e3629fa4579924a60c7d973c4e0d41bc8daa6",
-    "build_report_sha256": "eb0649a8b1ad47a9a6df917ff8342508281429d4c833d36afa735defea917213"
+    "candidate_rom_sha256": "d140c9fc942502a6ad065d111da280969e9cf647cb0b93a91c47334aed409bfc",
+    "build_report_sha256": "f7b44547fca5e3b3304a5ff99fe8e3c0ac10ed3c992263a3f3fabfd94197ce8c"
   },
-  "snapshot_revision": "2026-10-21-03",
+  "snapshot_revision": "2026-10-21-04",
   "mixed_rewrite": {
     "selected_modules": 7,
     "compiled_function_entries": 9,
@@ -59,33 +58,30 @@
     "total_executable_byte_denominator": null
   },
   "original_byte_dependency": {
-    "span_bytes": 364915,
+    "span_bytes": 365357,
     "total_executable_byte_denominator": null,
     "note": "Includes retained original suffixes, code, data, assets and padding; not the number of unknown code bytes."
   },
   "latest_milestone": {
-    "title": "Battle route setup and pending-state lifecycle",
-    "original_entries": 6,
-    "original_span_bytes": 998,
-    "pure_c_bytes": 956,
-    "exact_c_bytes": 56,
-    "retained_suffix_bytes": 42,
-    "bounded_scenarios": 70,
-    "fixture_invocations_per_image": 74,
+    "title": "Battle effect application, resolution and pending reaction",
+    "original_entries": 11,
+    "original_span_bytes": 1068,
+    "pure_c_bytes": 1106,
+    "selected_c_span_bytes": 1378,
+    "linker_veneer_bytes": 272,
+    "exact_c_bytes": 16,
+    "retained_suffix_bytes": 442,
+    "bounded_scenarios": 144,
+    "fixture_invocations_per_image": 144,
     "instruction_negative_controls_rejected": 1,
-    "summary": "Route setup, record progression and pending-state decisions execute together in bounded checks.",
-    "remaining": "Natural route/list domains, complete battle interaction and physical hardware behavior remain unproved."
+    "summary": "Application root and eight callbacks, resolution root and pending-reaction root are integrated. All 92 application callback targets now use C; two body/forwarder pairs do not add original functions.",
+    "remaining": "Natural battle reachability, full dynamic domains and physical hardware remain unproved."
   },
   "active_work": [
     {
-      "title": "Battle effect transaction",
-      "status": "In progress; excluded from verified totals",
-      "scope": "Remaining application, resolution and reaction gates."
-    },
-    {
-      "title": "Verification workflow",
-      "status": "Measurement and tool improvement",
-      "scope": "Reuse validated evidence and reduce repeated integration work.",
+      "title": "Local method build and indexing service",
+      "status": "Tool implementation and bounded integration validation",
+      "scope": "Per-method C/ASM comparison, dependency-bound caches, automatic manifest indexing and bounded parallel requests; no full-ROM disassembly dependency.",
       "target_speedup": ">5x",
       "verified_whole_workflow_speedup": null
     }

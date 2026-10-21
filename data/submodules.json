@@ -1,6 +1,6 @@
 {
   "snapshot_date": "2026-10-21",
-  "snapshot_revision": "2026-10-21-03",
+  "snapshot_revision": "2026-10-21-04",
   "measurement": "Disjoint selected C/mixed implementation groups. No whole-system denominator or gameplay completion percentage is established.",
   "groups": [
     {
@@ -174,16 +174,16 @@
       "system": "battle",
       "title": "Effect application",
       "status": "integrated-bounded",
-      "selected_c_modules": 84,
-      "pure_c_bytes": 5482,
-      "exact_c_bytes": 42,
-      "nonmatching_c_bytes": 5440,
-      "compiled_c_entries": 84,
+      "selected_c_modules": 93,
+      "pure_c_bytes": 6072,
+      "exact_c_bytes": 58,
+      "nonmatching_c_bytes": 6014,
+      "compiled_c_entries": 93,
       "mixed_bytes": 0,
       "mixed_modules": 0,
       "mixed_entries": 0,
-      "verified": "84 callback C bodies are integrated: 63 nontrivial bodies and 21 no-ops.",
-      "remaining": "The root and eight callbacks retain exact ASM: 594 bytes in this declared residual scope.",
+      "verified": "Application, resolution and pending-reaction continuations are integrated; the shared transaction milestone passes 144 bounded scenarios and one instruction negative control.",
+      "remaining": "Natural battle reachability, complete dynamic domains and physical hardware remain unproved; relocated bodies retain explicit original suffixes.",
       "system_completion_percent": null
     },
     {
@@ -208,16 +208,16 @@
       "system": "battle",
       "title": "Effect rates and unit normalization",
       "status": "integrated-bounded",
-      "selected_c_modules": 34,
-      "pure_c_bytes": 1264,
+      "selected_c_modules": 36,
+      "pure_c_bytes": 1680,
       "exact_c_bytes": 816,
-      "nonmatching_c_bytes": 448,
-      "compiled_c_entries": 34,
+      "nonmatching_c_bytes": 864,
+      "compiled_c_entries": 36,
       "mixed_bytes": 0,
       "mixed_modules": 0,
       "mixed_entries": 0,
-      "verified": "32 rate callbacks and two unit consumers are integrated.",
-      "remaining": "The 252-byte root remains exact ASM; complete runtime selector domains remain open.",
+      "verified": "Application, resolution and pending-reaction continuations are integrated; the shared transaction milestone passes 144 bounded scenarios and one instruction negative control.",
+      "remaining": "Natural battle reachability, complete dynamic domains and physical hardware remain unproved; relocated bodies retain explicit original suffixes.",
       "system_completion_percent": null
     },
     {
@@ -225,16 +225,16 @@
       "system": "battle",
       "title": "Reaction eligibility",
       "status": "integrated-bounded",
-      "selected_c_modules": 2,
-      "pure_c_bytes": 892,
+      "selected_c_modules": 4,
+      "pure_c_bytes": 1264,
       "exact_c_bytes": 0,
-      "nonmatching_c_bytes": 892,
-      "compiled_c_entries": 2,
+      "nonmatching_c_bytes": 1264,
+      "compiled_c_entries": 4,
       "mixed_bytes": 0,
       "mixed_modules": 0,
       "mixed_entries": 0,
-      "verified": "Fifteen-rule policy and target gate are integrated.",
-      "remaining": "The 222-byte three-slot pending gate remains ASM; natural equipment-output bounds remain open.",
+      "verified": "Application, resolution and pending-reaction continuations are integrated; the shared transaction milestone passes 144 bounded scenarios and one instruction negative control.",
+      "remaining": "Natural battle reachability, complete dynamic domains and physical hardware remain unproved; relocated bodies retain explicit original suffixes.",
       "system_completion_percent": null
     },
     {
@@ -665,14 +665,14 @@
   ],
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "5558c631913d3d33ce742c76581e3629fa4579924a60c7d973c4e0d41bc8daa6",
-    "build_report_sha256": "eb0649a8b1ad47a9a6df917ff8342508281429d4c833d36afa735defea917213"
+    "candidate_rom_sha256": "d140c9fc942502a6ad065d111da280969e9cf647cb0b93a91c47334aed409bfc",
+    "build_report_sha256": "f7b44547fca5e3b3304a5ff99fe8e3c0ac10ed3c992263a3f3fabfd94197ce8c"
   },
   "totals": {
-    "pure_c_bytes": 168590,
+    "pure_c_bytes": 169968,
     "mixed_bytes": 10520,
-    "compiled_c_entries": 1026,
-    "selected_c_modules": 939
+    "compiled_c_entries": 1039,
+    "selected_c_modules": 952
   },
   "limitations": [
     "Generated entry counts exclude compiler placeholders and can include split/forwarding entries; they are not original-function or gameplay counts.",
