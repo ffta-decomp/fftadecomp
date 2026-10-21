@@ -35,7 +35,7 @@
 <text x="424" y="450" fill="#66614f" font-size="14">28,320 B exact across 596 function bodies</text>
 <text x="424" y="476" fill="#66614f" font-size="14">117,350 B nonmatching across 392 entries</text>
 <text x="424" y="501" fill="#66614f" font-size="12">15,987 same-offset matches · 101,363 differing bytes pinned</text>
-<text x="32" y="537" fill="#66614f" font-size="12">Mixed: 10,360 B (5 modules) · Original-byte dependencies: 358,715 B · Both separate from pure C.</text>
+<text x="32" y="537" fill="#66614f" font-size="12">Mixed: 10,360 B (6 modules) · Original-byte dependencies: 358,715 B · Both separate from pure C.</text>
 <line x1="32" y1="557" x2="968" y2="557" stroke="#b5a889"/>
 <text x="32" y="578" fill="#66614f" font-size="13" font-weight="700">Exact byte agreement is not gameplay completion; total executable-code denominator remains unknown.</text>
 </g></svg>
