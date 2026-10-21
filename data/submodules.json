@@ -1,6 +1,6 @@
 {
-  "snapshot_date": "2026-10-21",
-  "snapshot_revision": "2026-10-21-07",
+  "snapshot_date": "2026-10-22",
+  "snapshot_revision": "2026-10-22-01",
   "measurement": "Disjoint selected C/mixed implementation groups. No whole-system denominator or gameplay completion percentage is established.",
   "groups": [
     {
@@ -695,19 +695,36 @@
       "verified": "One complete572-byte function matches retail exactly. Eight independent controlled cases and a wrong-width control are reused by code/dependency/input identity in the accepted final image.",
       "remaining": "Natural gameplay, full predicate combinations and physical hardware behavior remain unproved.",
       "system_completion_percent": null
+    },
+    {
+      "id": "mission-progression-policy",
+      "system": "missions",
+      "title": "Mission progression and candidate policy",
+      "status": "integrated-bounded",
+      "selected_c_modules": 6,
+      "pure_c_bytes": 3556,
+      "exact_c_bytes": 140,
+      "nonmatching_c_bytes": 3416,
+      "compiled_c_entries": 6,
+      "mixed_bytes": 0,
+      "mixed_modules": 0,
+      "mixed_entries": 0,
+      "verified": "Six integrated methods cover bounded counter/flag progression, pending-event and queue decisions, candidate collection and replacement. One 140-byte method is whole-function exact. Latest 1,412-byte method passes 22 actual-image cases.",
+      "remaining": "The other five methods are not whole-function exact. Natural mission/story progression and complete persistence domains remain open.",
+      "system_completion_percent": null
     }
   ],
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "e83a65116a6d0faeeafd17ea2841fb319823c4a1ddb6d8340c75580999ee4dff",
-    "build_report_sha256": "1dd4b9ee085125db4dd20429a8ab26e3bb7111e5e6959f28a6edf611bbe6b551",
-    "actual_image_acceptance_sha256": "a3f1c683905e4d3f9e03fb2e8cd9df20cbf1f438ccd845d051fc3942ba267770"
+    "candidate_rom_sha256": "afea6a86a1de5f4d34fb0d07c54b1e10309ff55c666c498eda133b09f9bffd73",
+    "build_report_sha256": "566476a161f9731bee92cd0f5ebeaa8e6bbe7a45433cdc99a5a307987de58ca8",
+    "actual_image_acceptance_sha256": "48f2ced98cec31c9995e6e795bcca789370be953242573e8387c0cbba81ad26f"
   },
   "totals": {
-    "pure_c_bytes": 171162,
+    "pure_c_bytes": 174718,
     "mixed_bytes": 10520,
-    "compiled_c_entries": 1044,
-    "selected_c_modules": 957
+    "compiled_c_entries": 1050,
+    "selected_c_modules": 963
   },
   "limitations": [
     "Generated entry counts exclude compiler placeholders and can include split/forwarding entries; they are not original-function or gameplay counts.",

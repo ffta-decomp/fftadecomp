@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-21",
+  "snapshot_date": "2026-10-22",
   "game": "Final Fantasy Tactics Advance",
   "reference_region": "USA",
   "reference_game_code": "AFXE",
@@ -13,12 +13,12 @@
     "total_resource_denominator": null
   },
   "source_assembly": {
-    "selected_modules": 3945,
-    "span_bytes": 934254,
-    "span_bytes_as_percent_of_rom": 5.5686,
-    "instruction_bytes": 826122,
-    "literal_table_bytes": 101072,
-    "alignment_padding_bytes": 7060,
+    "selected_modules": 3939,
+    "span_bytes": 930522,
+    "span_bytes_as_percent_of_rom": 5.5463,
+    "instruction_bytes": 822766,
+    "literal_table_bytes": 100720,
+    "alignment_padding_bytes": 7036,
     "total_executable_byte_denominator": null
   },
   "limitations": [
@@ -31,25 +31,25 @@
     "Pure C selected spans include non-additive linker veneers. Storage accounting is distinct from recovered original functions and gameplay completion."
   ],
   "c_rewrite": {
-    "selected_modules": 957,
-    "compiled_function_entries": 1044,
-    "selected_span_bytes": 171162,
-    "selected_span_bytes_as_percent_of_rom": 1.0202,
-    "exact_match_bytes": 29592,
-    "exact_match_function_bodies": 604,
-    "nonmatching_span_bytes": 141570,
-    "nonmatching_function_entries": 440,
-    "same_offset_match_bytes": 17950,
-    "pinned_difference_bytes": 123620,
+    "selected_modules": 963,
+    "compiled_function_entries": 1050,
+    "selected_span_bytes": 174718,
+    "selected_span_bytes_as_percent_of_rom": 1.0414,
+    "exact_match_bytes": 29732,
+    "exact_match_function_bodies": 605,
+    "nonmatching_span_bytes": 144986,
+    "nonmatching_function_entries": 445,
+    "same_offset_match_bytes": 18221,
+    "pinned_difference_bytes": 126765,
     "total_executable_byte_denominator": null
   },
   "verification": {
     "reference_rom_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-    "candidate_rom_sha256": "e83a65116a6d0faeeafd17ea2841fb319823c4a1ddb6d8340c75580999ee4dff",
-    "build_report_sha256": "1dd4b9ee085125db4dd20429a8ab26e3bb7111e5e6959f28a6edf611bbe6b551",
-    "actual_image_acceptance_sha256": "a3f1c683905e4d3f9e03fb2e8cd9df20cbf1f438ccd845d051fc3942ba267770"
+    "candidate_rom_sha256": "afea6a86a1de5f4d34fb0d07c54b1e10309ff55c666c498eda133b09f9bffd73",
+    "build_report_sha256": "566476a161f9731bee92cd0f5ebeaa8e6bbe7a45433cdc99a5a307987de58ca8",
+    "actual_image_acceptance_sha256": "48f2ced98cec31c9995e6e795bcca789370be953242573e8387c0cbba81ad26f"
   },
-  "snapshot_revision": "2026-10-21-07",
+  "snapshot_revision": "2026-10-22-01",
   "mixed_rewrite": {
     "selected_modules": 7,
     "compiled_function_entries": 9,
@@ -59,31 +59,31 @@
     "total_executable_byte_denominator": null
   },
   "original_byte_dependency": {
-    "span_bytes": 365357,
+    "span_bytes": 365533,
     "total_executable_byte_denominator": null,
     "note": "Includes retained original suffixes, code, data, assets and padding; not the number of unknown code bytes."
   },
   "latest_milestone": {
-    "title": "Four complete exact C methods integrated",
-    "original_entries": 4,
-    "original_span_bytes": 1144,
-    "pure_c_bytes": 1144,
-    "selected_c_span_bytes": 1144,
+    "title": "Mission candidate collection and replacement integrated",
+    "original_entries": 1,
+    "original_span_bytes": 1452,
+    "pure_c_bytes": 1412,
+    "selected_c_span_bytes": 1412,
     "linker_veneer_bytes": 0,
-    "exact_c_bytes": 1144,
-    "new_semantic_c_bytes": 572,
-    "net_pure_c_increase_bytes": 588,
-    "retained_suffix_bytes": 0,
-    "bounded_scenarios": 32,
-    "fixture_invocations_per_image": 24,
-    "identity_reused_scenarios": 8,
-    "summary": "Turn ordering, selected-record copyback, collection and live unit-node derived flags now reproduce four complete retail function spans exactly. Twenty-four final-image cases pass; eight controlled cases are reused by code, dependency and input identity.",
-    "remaining": "Natural gameplay, unrestricted state domains and physical hardware behavior remain unproved. Exact agreement is not whole-game completion."
+    "exact_c_bytes": 0,
+    "new_semantic_c_bytes": 1412,
+    "net_pure_c_increase_bytes": 1412,
+    "retained_suffix_bytes": 40,
+    "bounded_scenarios": 22,
+    "fixture_invocations_per_image": 22,
+    "identity_reused_scenarios": 0,
+    "summary": "Twenty-two actual-image cases pass, including two independently derived counterexamples that rejected the earlier implementation. The accepted C preserves the original state ownership and distinct replacement continuations.",
+    "remaining": "The method is behavior-accepted for controlled cases and integrated, but not a whole-function exact match. Natural mission lifecycle, unrestricted producer domains and physical hardware remain unproved."
   },
   "tooling_history": [
     {
       "title": "Local method build and indexing service",
-      "status": "Integrated and running; 90 focused tests passed. Measured warm comparison: 0.408 s; separate daemon client plus strict preflight: 1.463 s.",
+      "status": "Historical tooling acceptance: 90 focused tests passed. Warm comparison 0.408 s; separate client plus strict preflight 1.463 s. These are stage measurements, not current whole-method delivery rates.",
       "scope": "Per-method C/ASM comparison, dependency-bound caches, automatic manifest indexing, stale-input checks and two parallel requests. Local iteration has no full-ROM disassembly dependency; independent behavior and final ROM acceptance remain separate.",
       "target_speedup": ">5x",
       "verified_whole_workflow_speedup": null,
@@ -117,17 +117,29 @@
   ],
   "active_work": [
     {
-      "title": "Mission progression and pending-event policy",
-      "status": "Three source-backed methods / 1,176 original bytes assigned; implementation and independent fixture preparation run concurrently. No new acceptance credit yet.",
-      "scope": "Recover persistent mission counters/flags, pending-event selection and their direct record-update policy. One final integration batch follows accepted methods."
+      "title": "Source-structure matching in two disjoint lanes",
+      "scope": "Source-backed layout and control-flow refinements continue on two separate mission methods under one fixed O2 candidate profile.",
+      "status": "Candidates are excluded from integrated and whole-function exact totals. Existing accepted historical artifacts retain their original compiler provenance."
     },
     {
       "title": "Measured C delivery",
-      "scope": "Latest completed pipeline integrates 1,144 unique whole-function exact C bytes, including 572 newly recovered semantic bytes.",
-      "status": "Full pipeline: 8,012.002 seconds; 514.03 exact B/hour and 257.01 new semantic C B/hour. Integration stage alone: 887.011 seconds / 4,643.01 exact B/hour. These denominators differ; >5x whole-workflow gain remains unproved."
+      "scope": "Latest method integrated 1,412 C bytes from 1,452 original bytes; 40 original suffix bytes retained.",
+      "status": "Complete method pipeline 13,022.564 seconds, 390.34 accepted/integrated C B/hour, 0 new exact B/hour. No greater-than-fivefold delivery gain established."
     }
   ],
   "delivery_metrics": {
+    "accepted_integrated_C_bytes": 1412,
+    "integrated_original_methods": 1,
+    "integrated_exact_bytes": 0,
+    "retained_original_suffix_bytes": 40,
+    "pipeline_elapsed_seconds": 13022.563933,
+    "pipeline_new_semantic_C_bytes_per_hour": 390.3378801711121,
+    "pipeline_exact_bytes_per_hour": 0,
+    "whole_workflow_speedup": null,
+    "scope": "This one method; gross13:49:45UTC to17:26:47UTC includes repair, failures, profile transition and handoff gaps. Historical exact milestone has its own denominator."
+  },
+  "snapshot_utc": "2026-10-21T17:30:34.861221+00:00",
+  "historical_exact_delivery_metrics": {
     "integrated_exact_bytes": 1144,
     "integrated_original_methods": 4,
     "new_semantic_C_bytes": 572,

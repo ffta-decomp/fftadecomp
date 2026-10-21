@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-10-21",
+  "snapshot_date": "2026-10-22",
   "measurement": "Selected data inventories, not gameplay completion. Reference catalog categories do not supply recovery denominators.",
   "systems": [
     {
@@ -123,6 +123,6 @@
       "note": "No complete public save-flow denominator has been established."
     }
   ],
-  "snapshot_revision": "2026-10-21-07",
+  "snapshot_revision": "2026-10-22-01",
   "implementation_progress": "submodules.json"
 }
