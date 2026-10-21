@@ -2,7 +2,7 @@
 
 Public recovery statistics and resource-address metadata for **Final Fantasy Tactics Advance (USA / AFXE)**. This repository publishes recovery data and its static presentation. It does not contain the game, extracted assets, decompiled code, build tools or implementation designs.
 
-Snapshot: **2026-10-20**. This is a standalone progress-data project, not an official Square Enix project or a fork of another similarly named repository.
+Snapshot: **2026-10-21**. This is a standalone progress-data project, not an official Square Enix project or a fork of another similarly named repository.
 
 [**Open the Recovery Atlas →**](https://gh.bhee.online/fftadecomp/)
 
@@ -18,16 +18,16 @@ Snapshot: **2026-10-20**. This is a standalone progress-data project, not an off
 | Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
 | Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
 | Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 1,015,004 B | 6.0499% of the ROM; total executable-code size is not established |
-| ASM instruction bytes | 895,286 B | Included in the span total above |
-| ASM literals/tables | 112,112 B | Included in the span total above |
-| ASM alignment/padding | 7,606 B | Included in the span total above |
-| Selected ASM modules | 4,180 | Modules are not function counts |
-| Selected readable C rewrite spans | 96,136 B | 718 C modules / 779 compiled entries; 0.573% of ROM storage, not a code-completion percentage |
-| C output matching retail exactly | 26,568 B | 516 function bodies match every byte |
-| C output with pinned differences | 69,568 B | 263 entries; 9,895 same-offset matches and 59,673 differing byte positions |
-| Mixed C/ASM spans | 10,276 B | Five modules / six generated entries; 20 ASM instruction bytes, separately counted from pure C |
-| Original-byte dependencies | 336,261 B | Includes retained suffixes, data and padding; not unknown executable bytes |
+| Selected source ASM spans | 965,084 B | 5.7523% of the ROM; total executable-code size is not established |
+| ASM instruction bytes | 852,784 B | Included in the span total above |
+| ASM literals/tables | 105,032 B | Included in the span total above |
+| ASM alignment/padding | 7,268 B | Included in the span total above |
+| Selected ASM modules | 3,976 | Modules are not function counts |
+| Selected readable C rewrite spans | 145,670 B | 922 C modules / 988 compiled entries; 0.8683% of ROM storage, not a code-completion percentage |
+| C output matching retail exactly | 28,320 B | 596 function bodies match every byte |
+| C output with pinned differences | 117,350 B | 392 entries; 15,987 same-offset matches and 101,363 differing byte positions |
+| Mixed C/ASM spans | 10,360 B | Six modules / seven generated entries; 24 ASM instruction bytes, separately counted from pure C |
+| Original-byte dependencies | 358,715 B | Includes retained suffixes, data and padding; not unknown executable bytes |
 
 </details>
 
