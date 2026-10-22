@@ -17,6 +17,7 @@ async function start(){
  document.querySelector('#performance').innerHTML=d.performance.map(row=>`<tr class="${row.id==='team'?'team':''}"><td class="${row.id==='team'?'':'lane'}">${esc(names[row.id]||row.id)}</td><td>${fmt(row.exact_B_per_hour)}</td><td>${fmt(row.previous_exact_B_per_hour)}</td><td>${fmt(row.exact_methods_last_hour)}</td><td>${fmt(row.peer_exact_B_per_hour)}</td><td>${fmt(row.integrated_exact_B_per_hour)}</td><td>${fmt(row.median_seconds)} / ${fmt(row.p90_seconds)} s</td></tr>`).join('');
  const o=d.overview;
  document.querySelector('#overview').innerHTML=[
+  ['C match / known ASM',d.c_match?.percent == null ? 'Unknown' : d.c_match.percent.toFixed(3),'%',d.c_match?.percent == null ? 'Original ASM catalogue unavailable' : `${fmt(d.c_match.matched_asm_bytes)} / ${fmt(d.c_match.total_asm_bytes)} original ASM span bytes; includes migrated code`],
   ['Exact C available',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
   ['Readable C in ROM',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
   ['Exact C not yet in ROM',fmt(o.pending_exact_bytes),'B',`${fmt(o.pending_peer_exact_bytes)} independently accepted bytes`],
