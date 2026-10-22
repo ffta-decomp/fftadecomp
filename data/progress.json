@@ -118,7 +118,7 @@
   "active_work": [
     {
       "title": "Concurrent core recovery",
-      "scope": "3 active tasks across three implementation lanes; 93 ready tasks.",
+      "scope": "2 active tasks across three implementation lanes; 125 ready tasks.",
       "status": "Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals."
     }
   ],
@@ -148,20 +148,20 @@
     "whole_workflow_speedup": null
   },
   "live_recovery": {
-    "as_of": "2026-10-22T05:09:09.208326+00:00",
+    "as_of": "2026-10-22T05:26:38.567682+00:00",
     "data": "data/workflow.json",
     "totals": {
-      "tasks": 137,
-      "original_backlog_span_bytes": 73166,
+      "tasks": 177,
+      "original_backlog_span_bytes": 96782,
       "states": {
-        "ready": 93,
-        "active": 3,
-        "frozen": 39,
-        "blocked": 2
+        "ready": 125,
+        "active": 2,
+        "frozen": 45,
+        "blocked": 5
       },
       "classification": {
         "mapped": 96,
-        "provisional": 41,
+        "provisional": 81,
         "unmapped": 0
       },
       "gates": {
@@ -192,27 +192,27 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 29,
-            "original_bytes": 3222,
-            "generated_bytes": 3222
+            "functions": 35,
+            "original_bytes": 3758,
+            "generated_bytes": 3758
           },
           "since_epoch": {
-            "functions": 29,
-            "original_bytes": 3222,
-            "generated_bytes": 3222
+            "functions": 35,
+            "original_bytes": 3758,
+            "generated_bytes": 3758
           },
-          "cumulative_original_B_per_hour": 1271.268805825538,
+          "cumulative_original_B_per_hour": 1329.811471959805,
           "last_hour": {
             "functions": 25,
-            "original_bytes": 2142,
-            "generated_bytes": 2142,
-            "original_B_per_hour": 2142.0
+            "original_bytes": 2128,
+            "generated_bytes": 2128,
+            "original_B_per_hour": 2128.0
           },
           "previous_hour": {
-            "functions": 3,
-            "original_bytes": 710,
-            "generated_bytes": 710,
-            "original_B_per_hour": 710.0
+            "functions": 8,
+            "original_bytes": 1000,
+            "generated_bytes": 1000,
+            "original_B_per_hour": 1000.0
           }
         },
         "peer_semantic": {
@@ -318,7 +318,1088 @@
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 29,
+      "pending_peer_exact": 35,
+      "pending_integration_exact": 0,
+      "exact_rounds_without_local_credit": 0
+    }
+  },
+  "dashboard": {
+    "schema_version": 2,
+    "as_of": "2026-10-22T05:26:38.567682+00:00",
+    "integrated_rom_sha256": "afea6a86a1de5f4d34fb0d07c54b1e10309ff55c666c498eda133b09f9bffd73",
+    "overview": {
+      "integrated_c_bytes": 174718,
+      "integrated_exact_bytes": 29732,
+      "mixed_bytes": 10520,
+      "pending_exact_bytes": 3758,
+      "pending_peer_exact_bytes": 0,
+      "exact_available_bytes": 33490,
+      "tasks": 177,
+      "states": {
+        "ready": 125,
+        "active": 2,
+        "frozen": 45,
+        "blocked": 5
+      }
+    },
+    "performance": [
+      {
+        "id": "team",
+        "active_tasks": 2,
+        "exact_methods_last_hour": 25,
+        "exact_B_per_hour": 2128.0,
+        "previous_exact_B_per_hour": 1000.0,
+        "peer_exact_B_per_hour": 0.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 44.468331,
+        "p90_seconds": 99.420277
+      },
+      {
+        "id": "main",
+        "active_tasks": 1,
+        "exact_methods_last_hour": 16,
+        "exact_B_per_hour": 1470.0,
+        "previous_exact_B_per_hour": 602.0,
+        "peer_exact_B_per_hour": 0.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 57.748188999999996,
+        "p90_seconds": 164.311635
+      },
+      {
+        "id": "worker2",
+        "active_tasks": 1,
+        "exact_methods_last_hour": 0,
+        "exact_B_per_hour": 0.0,
+        "previous_exact_B_per_hour": 0.0,
+        "peer_exact_B_per_hour": 0.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 54.217413,
+        "p90_seconds": 169.128596
+      },
+      {
+        "id": "worker3",
+        "active_tasks": 0,
+        "exact_methods_last_hour": 9,
+        "exact_B_per_hour": 658.0,
+        "previous_exact_B_per_hour": 398.0,
+        "peer_exact_B_per_hour": 0.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 29.719091,
+        "p90_seconds": 69.660972
+      }
+    ],
+    "systems": [
+      {
+        "id": "battle",
+        "title": "Battle",
+        "integrated_c_bytes": 68228,
+        "integrated_exact_bytes": 3148,
+        "mixed_bytes": 268,
+        "pending_exact_bytes": 2840,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 5988,
+        "tasks": 90,
+        "states": {
+          "ready": 48,
+          "active": 2,
+          "frozen": 37,
+          "blocked": 3
+        },
+        "modules": [
+          {
+            "id": "ai-ability-selection",
+            "system": "battle",
+            "title": "AI ability selection",
+            "integrated_c_bytes": 854,
+            "integrated_exact_bytes": 124,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 124
+          },
+          {
+            "id": "action-calculation",
+            "system": "battle",
+            "title": "Action calculation",
+            "integrated_c_bytes": 904,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 2,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "action-preparation-and-continuation",
+            "system": "battle",
+            "title": "Action preparation and continuation",
+            "integrated_c_bytes": 6920,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 24,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "action-record-updates",
+            "system": "battle",
+            "title": "Action record updates",
+            "integrated_c_bytes": 464,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 1
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "action-result-consumption",
+            "system": "battle",
+            "title": "Action result consumption",
+            "integrated_c_bytes": 3912,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 2,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "battle-activation",
+            "system": "battle",
+            "title": "Battle activation",
+            "integrated_c_bytes": 972,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "battle-phase-control",
+            "system": "battle",
+            "title": "Battle phase control",
+            "integrated_c_bytes": 22152,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 84,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "direction-selection",
+            "system": "battle",
+            "title": "Direction selection",
+            "integrated_c_bytes": 960,
+            "integrated_exact_bytes": 56,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 56
+          },
+          {
+            "id": "effect-application",
+            "system": "battle",
+            "title": "Effect application",
+            "integrated_c_bytes": 6072,
+            "integrated_exact_bytes": 58,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 1326,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 37,
+            "states": {
+              "ready": 14,
+              "active": 2,
+              "frozen": 19,
+              "blocked": 2
+            },
+            "last_hour_exact_B_per_hour": 548.0,
+            "exact_available_bytes": 1384
+          },
+          {
+            "id": "effect-predicates-and-values",
+            "system": "battle",
+            "title": "Effect predicates and values",
+            "integrated_c_bytes": 2924,
+            "integrated_exact_bytes": 894,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 1230,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 16,
+            "states": {
+              "ready": 2,
+              "active": 0,
+              "frozen": 14,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 1230.0,
+            "exact_available_bytes": 2124
+          },
+          {
+            "id": "turn-selection-and-order-storage",
+            "system": "battle",
+            "title": "Turn selection and order storage",
+            "integrated_c_bytes": 622,
+            "integrated_exact_bytes": 572,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 572
+          },
+          {
+            "id": "effect-rates-and-unit-normalization",
+            "system": "battle",
+            "title": "Effect rates and unit normalization",
+            "integrated_c_bytes": 1680,
+            "integrated_exact_bytes": 816,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 284,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 2,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 62.0,
+            "exact_available_bytes": 1100
+          },
+          {
+            "id": "reaction-eligibility",
+            "system": "battle",
+            "title": "Reaction eligibility",
+            "integrated_c_bytes": 1264,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 2,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "record-interaction-and-selection",
+            "system": "battle",
+            "title": "Record interaction and selection",
+            "integrated_c_bytes": 6888,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 160,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "record-progression",
+            "system": "battle",
+            "title": "Record progression",
+            "integrated_c_bytes": 2692,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "route-setup-and-pending-state",
+            "system": "battle",
+            "title": "Route setup and pending state",
+            "integrated_c_bytes": 956,
+            "integrated_exact_bytes": 56,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 56
+          },
+          {
+            "id": "target-record-production",
+            "system": "battle",
+            "title": "Target record production",
+            "integrated_c_bytes": 2552,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "target-resolution",
+            "system": "battle",
+            "title": "Target resolution",
+            "integrated_c_bytes": 4868,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 1,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "unit-node-derived-flags",
+            "system": "battle",
+            "title": "Unit-node derived flags",
+            "integrated_c_bytes": 572,
+            "integrated_exact_bytes": 572,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 572
+          },
+          {
+            "id": "unassigned-battle",
+            "system": "battle",
+            "title": "Unassigned submodule",
+            "integrated_c_bytes": 0,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 26,
+            "states": {
+              "ready": 26,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          }
+        ]
+      },
+      {
+        "id": "missions",
+        "title": "Missions & story",
+        "integrated_c_bytes": 18632,
+        "integrated_exact_bytes": 140,
+        "mixed_bytes": 9996,
+        "pending_exact_bytes": 630,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 770,
+        "tasks": 22,
+        "states": {
+          "ready": 18,
+          "active": 0,
+          "frozen": 4,
+          "blocked": 0
+        },
+        "modules": [
+          {
+            "id": "mission-and-event-control",
+            "system": "missions",
+            "title": "Mission and event control",
+            "integrated_c_bytes": 10452,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "mission-queue-and-reward-selection",
+            "system": "missions",
+            "title": "Mission queue and reward selection",
+            "integrated_c_bytes": 3080,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 630,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 5,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 4,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 630
+          },
+          {
+            "id": "progression-and-reward-control",
+            "system": "missions",
+            "title": "Progression and reward control",
+            "integrated_c_bytes": 0,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 9996,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "rewards-and-live-record-outcomes",
+            "system": "missions",
+            "title": "Rewards and live-record outcomes",
+            "integrated_c_bytes": 1544,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 2,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "mission-progression-policy",
+            "system": "missions",
+            "title": "Mission progression and candidate policy",
+            "integrated_c_bytes": 3556,
+            "integrated_exact_bytes": 140,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 140
+          },
+          {
+            "id": "unassigned-missions",
+            "system": "missions",
+            "title": "Unassigned submodule",
+            "integrated_c_bytes": 0,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 15,
+            "states": {
+              "ready": 15,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          }
+        ]
+      },
+      {
+        "id": "jobs",
+        "title": "Jobs & unit model",
+        "integrated_c_bytes": 5466,
+        "integrated_exact_bytes": 242,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 288,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 530,
+        "tasks": 34,
+        "states": {
+          "ready": 28,
+          "active": 0,
+          "frozen": 4,
+          "blocked": 2
+        },
+        "modules": [
+          {
+            "id": "job-eligibility",
+            "system": "jobs",
+            "title": "Job eligibility",
+            "integrated_c_bytes": 480,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 1,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "job-state-updates",
+            "system": "jobs",
+            "title": "Job state updates",
+            "integrated_c_bytes": 264,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 1,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "job-change-control",
+            "system": "jobs",
+            "title": "Job-change control",
+            "integrated_c_bytes": 3380,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 1,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "shared-unit-model",
+            "system": "jobs",
+            "title": "Shared unit model",
+            "integrated_c_bytes": 1342,
+            "integrated_exact_bytes": 242,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 288,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 9,
+            "states": {
+              "ready": 3,
+              "active": 0,
+              "frozen": 4,
+              "blocked": 2
+            },
+            "last_hour_exact_B_per_hour": 288.0,
+            "exact_available_bytes": 530
+          },
+          {
+            "id": "unassigned-jobs",
+            "system": "jobs",
+            "title": "Unassigned submodule",
+            "integrated_c_bytes": 0,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 22,
+            "states": {
+              "ready": 22,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          }
+        ]
+      },
+      {
+        "id": "items",
+        "title": "Items & equipment",
+        "integrated_c_bytes": 14200,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 0,
+        "tasks": 18,
+        "states": {
+          "ready": 18,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "modules": [
+          {
+            "id": "acquisition-and-inventory-commit",
+            "system": "items",
+            "title": "Acquisition and inventory commit",
+            "integrated_c_bytes": 4188,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 3,
+            "states": {
+              "ready": 3,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "equipment-changes",
+            "system": "items",
+            "title": "Equipment changes",
+            "integrated_c_bytes": 6836,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 2,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "item-removal-and-staging",
+            "system": "items",
+            "title": "Item removal and staging",
+            "integrated_c_bytes": 3176,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 1,
+            "states": {
+              "ready": 1,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "unassigned-items",
+            "system": "items",
+            "title": "Unassigned submodule",
+            "integrated_c_bytes": 0,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 12,
+            "states": {
+              "ready": 12,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          }
+        ]
+      },
+      {
+        "id": "saves",
+        "title": "Save & reload",
+        "integrated_c_bytes": 7536,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 0,
+        "tasks": 13,
+        "states": {
+          "ready": 13,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "modules": [
+          {
+            "id": "save-and-restore-controllers",
+            "system": "saves",
+            "title": "Save and restore controllers",
+            "integrated_c_bytes": 5928,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 2,
+            "states": {
+              "ready": 2,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "save-image-policy",
+            "system": "saves",
+            "title": "Save-image policy",
+            "integrated_c_bytes": 1608,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 5,
+            "states": {
+              "ready": 5,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "unassigned-saves",
+            "system": "saves",
+            "title": "Unassigned submodule",
+            "integrated_c_bytes": 0,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 6,
+            "states": {
+              "ready": 6,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          }
+        ]
+      },
+      {
+        "id": "engine",
+        "title": "Scene & engine",
+        "integrated_c_bytes": 6266,
+        "integrated_exact_bytes": 222,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 222,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "modules": [
+          {
+            "id": "memory-allocation",
+            "system": "engine",
+            "title": "Memory allocation",
+            "integrated_c_bytes": 942,
+            "integrated_exact_bytes": 66,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 66
+          },
+          {
+            "id": "resource-task-consumers",
+            "system": "engine",
+            "title": "Resource task consumers",
+            "integrated_c_bytes": 2192,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "scene-contexts",
+            "system": "engine",
+            "title": "Scene contexts",
+            "integrated_c_bytes": 544,
+            "integrated_exact_bytes": 112,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 112
+          },
+          {
+            "id": "scene-entity-consumers",
+            "system": "engine",
+            "title": "Scene entity consumers",
+            "integrated_c_bytes": 1064,
+            "integrated_exact_bytes": 44,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 44
+          },
+          {
+            "id": "scene-interpreter",
+            "system": "engine",
+            "title": "Scene interpreter",
+            "integrated_c_bytes": 276,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          },
+          {
+            "id": "scene-placement",
+            "system": "engine",
+            "title": "Scene placement",
+            "integrated_c_bytes": 1248,
+            "integrated_exact_bytes": 0,
+            "mixed_bytes": 0,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 0
+          }
+        ]
+      },
+      {
+        "id": "shared",
+        "title": "Shared / earlier recovery",
+        "integrated_c_bytes": 54390,
+        "integrated_exact_bytes": 25980,
+        "mixed_bytes": 256,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 25980,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "modules": [
+          {
+            "id": "earlier-and-shared-routines",
+            "system": "shared",
+            "title": "Earlier and shared routines",
+            "integrated_c_bytes": 54390,
+            "integrated_exact_bytes": 25980,
+            "mixed_bytes": 256,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
+            "tasks": 0,
+            "states": {
+              "ready": 0,
+              "active": 0,
+              "frozen": 0,
+              "blocked": 0
+            },
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 25980
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "mapped": 96,
+      "provisional": 81,
+      "unmapped": 0
+    },
+    "unlocated_exact_records": 0,
+    "windows": {
+      "last_hour": {
+        "start_exclusive": "2026-10-22T04:26:38.567682+00:00",
+        "end_inclusive": "2026-10-22T05:26:38.567682+00:00",
+        "observed_seconds": 3600.0,
+        "partial": false
+      },
+      "previous_hour": {
+        "start_exclusive": "2026-10-22T03:26:38.567682+00:00",
+        "end_inclusive": "2026-10-22T04:26:38.567682+00:00",
+        "observed_seconds": 3600.0,
+        "partial": false
+      }
+    },
+    "recording_gaps": {
+      "pending_peer_exact": 35,
       "pending_integration_exact": 0,
       "exact_rounds_without_local_credit": 0
     }

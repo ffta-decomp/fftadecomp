@@ -214,6 +214,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "ai-ability-selection",
+        "system": "battle",
+        "title": "AI ability selection",
+        "integrated_c_bytes": 854,
+        "integrated_exact_bytes": 124,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 124
       }
     },
     {
@@ -397,6 +416,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "action-calculation",
+        "system": "battle",
+        "title": "Action calculation",
+        "integrated_c_bytes": 904,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 2,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -580,6 +618,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "action-preparation-and-continuation",
+        "system": "battle",
+        "title": "Action preparation and continuation",
+        "integrated_c_bytes": 6920,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 24,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -601,10 +658,10 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 1,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "classification": {
           "mapped": 2,
@@ -763,6 +820,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "action-record-updates",
+        "system": "battle",
+        "title": "Action record updates",
+        "integrated_c_bytes": 464,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 1
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -946,6 +1022,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "action-result-consumption",
+        "system": "battle",
+        "title": "Action result consumption",
+        "integrated_c_bytes": 3912,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 2,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -1129,6 +1224,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "battle-activation",
+        "system": "battle",
+        "title": "Battle activation",
+        "integrated_c_bytes": 972,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -1312,6 +1426,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "battle-phase-control",
+        "system": "battle",
+        "title": "Battle phase control",
+        "integrated_c_bytes": 22152,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 84,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -1495,6 +1628,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "direction-selection",
+        "system": "battle",
+        "title": "Direction selection",
+        "integrated_c_bytes": 960,
+        "integrated_exact_bytes": 56,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 56
       }
     },
     {
@@ -1516,10 +1668,10 @@
       "activity": {
         "tasks": 37,
         "states": {
-          "ready": 18,
+          "ready": 14,
           "active": 2,
-          "frozen": 16,
-          "blocked": 1
+          "frozen": 19,
+          "blocked": 2
         },
         "classification": {
           "mapped": 37,
@@ -1554,27 +1706,27 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 11,
-              "original_bytes": 1066,
-              "generated_bytes": 1066
+              "functions": 14,
+              "original_bytes": 1326,
+              "generated_bytes": 1326
             },
             "since_epoch": {
-              "functions": 11,
-              "original_bytes": 1066,
-              "generated_bytes": 1066
+              "functions": 14,
+              "original_bytes": 1326,
+              "generated_bytes": 1326
             },
-            "cumulative_original_B_per_hour": 420.59979733396136,
+            "cumulative_original_B_per_hour": 469.22033310769064,
             "last_hour": {
-              "functions": 10,
-              "original_bytes": 838,
-              "generated_bytes": 838,
-              "original_B_per_hour": 838.0
+              "functions": 7,
+              "original_bytes": 548,
+              "generated_bytes": 548,
+              "original_B_per_hour": 548.0
             },
             "previous_hour": {
-              "functions": 1,
-              "original_bytes": 228,
-              "generated_bytes": 228,
-              "original_B_per_hour": 228.0
+              "functions": 7,
+              "original_bytes": 778,
+              "generated_bytes": 778,
+              "original_B_per_hour": 778.0
             }
           },
           "peer_semantic": {
@@ -1678,6 +1830,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "effect-application",
+        "system": "battle",
+        "title": "Effect application",
+        "integrated_c_bytes": 6072,
+        "integrated_exact_bytes": 58,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 1326,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 37,
+        "states": {
+          "ready": 14,
+          "active": 2,
+          "frozen": 19,
+          "blocked": 2
+        },
+        "last_hour_exact_B_per_hour": 548.0,
+        "exact_available_bytes": 1384
       }
     },
     {
@@ -1699,9 +1870,9 @@
       "activity": {
         "tasks": 16,
         "states": {
-          "ready": 5,
+          "ready": 2,
           "active": 0,
-          "frozen": 11,
+          "frozen": 14,
           "blocked": 0
         },
         "classification": {
@@ -1737,21 +1908,21 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 10,
-              "original_bytes": 954,
-              "generated_bytes": 954
+              "functions": 13,
+              "original_bytes": 1230,
+              "generated_bytes": 1230
             },
             "since_epoch": {
-              "functions": 10,
-              "original_bytes": 954,
-              "generated_bytes": 954
+              "functions": 13,
+              "original_bytes": 1230,
+              "generated_bytes": 1230
             },
-            "cumulative_original_B_per_hour": 376.4091994902431,
+            "cumulative_original_B_per_hour": 435.24963025826503,
             "last_hour": {
-              "functions": 10,
-              "original_bytes": 954,
-              "generated_bytes": 954,
-              "original_B_per_hour": 954.0
+              "functions": 13,
+              "original_bytes": 1230,
+              "generated_bytes": 1230,
+              "original_B_per_hour": 1230.0
             },
             "previous_hour": {
               "functions": 0,
@@ -1861,6 +2032,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "effect-predicates-and-values",
+        "system": "battle",
+        "title": "Effect predicates and values",
+        "integrated_c_bytes": 2924,
+        "integrated_exact_bytes": 894,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 1230,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 16,
+        "states": {
+          "ready": 2,
+          "active": 0,
+          "frozen": 14,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 1230.0,
+        "exact_available_bytes": 2124
       }
     },
     {
@@ -2044,6 +2234,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "turn-selection-and-order-storage",
+        "system": "battle",
+        "title": "Turn selection and order storage",
+        "integrated_c_bytes": 622,
+        "integrated_exact_bytes": 572,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 572
       }
     },
     {
@@ -2112,7 +2321,7 @@
               "original_bytes": 284,
               "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 112.05473024657132,
+            "cumulative_original_B_per_hour": 100.49666259621729,
             "last_hour": {
               "functions": 1,
               "original_bytes": 62,
@@ -2227,6 +2436,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "effect-rates-and-unit-normalization",
+        "system": "battle",
+        "title": "Effect rates and unit normalization",
+        "integrated_c_bytes": 1680,
+        "integrated_exact_bytes": 816,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 284,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 2,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 62.0,
+        "exact_available_bytes": 1100
       }
     },
     {
@@ -2410,6 +2638,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "reaction-eligibility",
+        "system": "battle",
+        "title": "Reaction eligibility",
+        "integrated_c_bytes": 1264,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 2,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -2593,6 +2840,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "record-interaction-and-selection",
+        "system": "battle",
+        "title": "Record interaction and selection",
+        "integrated_c_bytes": 6888,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 160,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -2776,6 +3042,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "record-progression",
+        "system": "battle",
+        "title": "Record progression",
+        "integrated_c_bytes": 2692,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -2959,6 +3244,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "route-setup-and-pending-state",
+        "system": "battle",
+        "title": "Route setup and pending state",
+        "integrated_c_bytes": 956,
+        "integrated_exact_bytes": 56,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 56
       }
     },
     {
@@ -3142,6 +3446,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "target-record-production",
+        "system": "battle",
+        "title": "Target record production",
+        "integrated_c_bytes": 2552,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -3325,6 +3648,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "target-resolution",
+        "system": "battle",
+        "title": "Target resolution",
+        "integrated_c_bytes": 4868,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 1,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -3508,6 +3850,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "mission-and-event-control",
+        "system": "missions",
+        "title": "Mission and event control",
+        "integrated_c_bytes": 10452,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -3576,7 +3937,7 @@
               "original_bytes": 630,
               "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 248.57211287091525,
+            "cumulative_original_B_per_hour": 222.93273744935527,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -3584,10 +3945,10 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260,
-              "original_B_per_hour": 260.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             }
           },
           "peer_semantic": {
@@ -3691,6 +4052,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "mission-queue-and-reward-selection",
+        "system": "missions",
+        "title": "Mission queue and reward selection",
+        "integrated_c_bytes": 3080,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 630,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 5,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 4,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 630
       }
     },
     {
@@ -3874,6 +4254,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "progression-and-reward-control",
+        "system": "missions",
+        "title": "Progression and reward control",
+        "integrated_c_bytes": 0,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 9996,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -4057,6 +4456,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "rewards-and-live-record-outcomes",
+        "system": "missions",
+        "title": "Rewards and live-record outcomes",
+        "integrated_c_bytes": 1544,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 2,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -4240,6 +4658,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "job-eligibility",
+        "system": "jobs",
+        "title": "Job eligibility",
+        "integrated_c_bytes": 480,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 1,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -4423,6 +4860,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "job-state-updates",
+        "system": "jobs",
+        "title": "Job state updates",
+        "integrated_c_bytes": 264,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 1,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -4606,6 +5062,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "job-change-control",
+        "system": "jobs",
+        "title": "Job-change control",
+        "integrated_c_bytes": 3380,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 1,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -4628,9 +5103,9 @@
         "tasks": 9,
         "states": {
           "ready": 3,
-          "active": 1,
+          "active": 0,
           "frozen": 4,
-          "blocked": 1
+          "blocked": 2
         },
         "classification": {
           "mapped": 9,
@@ -4674,7 +5149,7 @@
               "original_bytes": 288,
               "generated_bytes": 288
             },
-            "cumulative_original_B_per_hour": 113.63296588384698,
+            "cumulative_original_B_per_hour": 101.91210854827669,
             "last_hour": {
               "functions": 4,
               "original_bytes": 288,
@@ -4789,6 +5264,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "shared-unit-model",
+        "system": "jobs",
+        "title": "Shared unit model",
+        "integrated_c_bytes": 1342,
+        "integrated_exact_bytes": 242,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 288,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 9,
+        "states": {
+          "ready": 3,
+          "active": 0,
+          "frozen": 4,
+          "blocked": 2
+        },
+        "last_hour_exact_B_per_hour": 288.0,
+        "exact_available_bytes": 530
       }
     },
     {
@@ -4972,6 +5466,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "acquisition-and-inventory-commit",
+        "system": "items",
+        "title": "Acquisition and inventory commit",
+        "integrated_c_bytes": 4188,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 3,
+        "states": {
+          "ready": 3,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -5155,6 +5668,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "equipment-changes",
+        "system": "items",
+        "title": "Equipment changes",
+        "integrated_c_bytes": 6836,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 2,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -5338,6 +5870,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "item-removal-and-staging",
+        "system": "items",
+        "title": "Item removal and staging",
+        "integrated_c_bytes": 3176,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 1,
+        "states": {
+          "ready": 1,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -5521,6 +6072,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "save-and-restore-controllers",
+        "system": "saves",
+        "title": "Save and restore controllers",
+        "integrated_c_bytes": 5928,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 2,
+        "states": {
+          "ready": 2,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -5704,6 +6274,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "save-image-policy",
+        "system": "saves",
+        "title": "Save-image policy",
+        "integrated_c_bytes": 1608,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 5,
+        "states": {
+          "ready": 5,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -5887,6 +6476,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "memory-allocation",
+        "system": "engine",
+        "title": "Memory allocation",
+        "integrated_c_bytes": 942,
+        "integrated_exact_bytes": 66,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 66
       }
     },
     {
@@ -6070,6 +6678,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "resource-task-consumers",
+        "system": "engine",
+        "title": "Resource task consumers",
+        "integrated_c_bytes": 2192,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -6253,6 +6880,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "scene-contexts",
+        "system": "engine",
+        "title": "Scene contexts",
+        "integrated_c_bytes": 544,
+        "integrated_exact_bytes": 112,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 112
       }
     },
     {
@@ -6436,6 +7082,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "scene-entity-consumers",
+        "system": "engine",
+        "title": "Scene entity consumers",
+        "integrated_c_bytes": 1064,
+        "integrated_exact_bytes": 44,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 44
       }
     },
     {
@@ -6619,6 +7284,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "scene-interpreter",
+        "system": "engine",
+        "title": "Scene interpreter",
+        "integrated_c_bytes": 276,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -6802,6 +7486,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "scene-placement",
+        "system": "engine",
+        "title": "Scene placement",
+        "integrated_c_bytes": 1248,
+        "integrated_exact_bytes": 0,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 0
       }
     },
     {
@@ -6985,6 +7688,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "earlier-and-shared-routines",
+        "system": "shared",
+        "title": "Earlier and shared routines",
+        "integrated_c_bytes": 54390,
+        "integrated_exact_bytes": 25980,
+        "mixed_bytes": 256,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 25980
       }
     },
     {
@@ -7168,6 +7890,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "unit-node-derived-flags",
+        "system": "battle",
+        "title": "Unit-node derived flags",
+        "integrated_c_bytes": 572,
+        "integrated_exact_bytes": 572,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 572
       }
     },
     {
@@ -7351,6 +8092,25 @@
             }
           }
         }
+      },
+      "current": {
+        "id": "mission-progression-policy",
+        "system": "missions",
+        "title": "Mission progression and candidate policy",
+        "integrated_c_bytes": 3556,
+        "integrated_exact_bytes": 140,
+        "mixed_bytes": 0,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
+        "tasks": 0,
+        "states": {
+          "ready": 0,
+          "active": 0,
+          "frozen": 0,
+          "blocked": 0
+        },
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 140
       }
     }
   ],
@@ -7372,6 +8132,6 @@
     "Shared routines are assigned once for accounting; callers do not duplicate their bytes.",
     "Source paths, function addresses and implementation artifacts are excluded."
   ],
-  "activity_as_of": "2026-10-22T05:09:09.208326+00:00",
+  "activity_as_of": "2026-10-22T05:26:38.567682+00:00",
   "activity_data": "data/workflow.json"
 }

@@ -1,70 +1,14 @@
-# fftadecomp
+# FFTA Recovery Dashboard
 
-Public recovery statistics and resource-address metadata for **Final Fantasy Tactics Advance (USA / AFXE)**. This repository publishes recovery data and its static presentation. It does not contain the game, extracted assets, decompiled code, build tools or implementation designs.
+[Open the dashboard](https://gh.bhee.online/fftadecomp/)
 
-Snapshot: **2026-10-22**. This is a standalone progress-data project, not an official Square Enix project or a fork of another similarly named repository.
+Automatic hourly reporting for Final Fantasy Tactics Advance (USA): delivery speed first, followed by unified system and module progress.
 
-[**Open the Recovery Atlas →**](https://gh.bhee.online/fftadecomp/)
+- [Unified progress](data/progress.json): `dashboard` is the single source for the page, including overview, lane efficiency and all module rows.
+- [Submodules](data/submodules.json): each `current` record uses the same accounting.
+- [Activity ledger aggregates](data/workflow.json): separate local, independent and integration gates.
+- [Resource spans](data/resource-addresses.csv).
 
-## Recovery snapshot
+Exact C combines the validated ROM snapshot and registered local exact spans after range deduplication. Local results do not automatically become integrated C. Bytes include constants/alignment; they are not game-completion percentages. The task tool publishes without an LLM; updates may be delayed while its host is offline.
 
-[![FFTA recovery snapshot: reconstructed resources, source ASM and readable C rewrite progress](assets/recovery-snapshot.svg)](data/progress.json)
-
-<details>
-<summary>Exact figures and measurement definitions</summary>
-
-| Measurement | Verified snapshot | Denominator / interpretation |
-| --- | ---: | --- |
-| Reconstructed resource bytes | 9,247,442 B | 55.1190% of the 16,777,216-byte ROM; total resource size is not established |
-| Selected resource spans | 4,987 | May contain shared resources or collections; not an in-game object count |
-| Resource-span storage | 9,289,571 B | Includes 42,129 B of embedded padding, excluded from resource bytes above |
-| Selected source ASM spans | 930,522 B | 5.5463% of the ROM; total executable-code size is not established |
-| ASM instruction bytes | 822,766 B | Included in the span total above |
-| ASM literals/tables | 100,720 B | Included in the span total above |
-| ASM alignment/padding | 7,036 B | Included in the span total above |
-| Selected ASM modules | 3,939 | Modules are not function counts |
-| Selected readable C rewrite spans | 174,718 B | 963 C modules / 1,050 compiled entries; 1.0414% of ROM storage, not a code-completion percentage |
-| C output matching retail exactly | 29,732 B | 605 function bodies match every byte |
-| C output with pinned differences | 144,986 B | 445 entries; 18,221 same-offset matches and 126,765 differing byte positions |
-| Mixed C/ASM spans | 10,520 B | Seven modules / nine generated entries; 26 ASM instruction bytes, separately counted from pure C |
-| Original-byte dependencies | 365,533 B | Includes retained suffixes, data and padding; not unknown executable bytes |
-
-</details>
-
-These are reconstruction and storage measurements. The C figures distinguish exact output from readable C output that still differs from retail; pinned differences are byte-comparison results, not claims that behavior is complete. The total executable-code denominator is unknown, so the C span share must not be read as the percentage of code rewritten or gameplay completed. Relocated C bodies and retained assembly suffixes are accounted for separately.
-
-## Latest integrated milestone
-
-Mission candidate collection and replacement now integrates **1,412 C bytes** from a 1,452-byte original method, with 40 original suffix bytes retained. Twenty-two actual-image cases pass, including two independent counterexamples that rejected the earlier implementation. This method has **zero whole-function exact-match credit**. Natural gameplay and physical hardware remain unproved.
-
-Since the previous snapshot, six mission-policy methods add 3,556 integrated C bytes, including one 140-byte whole-function exact method. The new mission-progression submodule separates this bounded implementation evidence from unresolved natural story, mission and persistence coverage.
-
-The latest method took 13,022.564 seconds from the original work start through verified integration: **390.34 accepted/integrated C B/hour and zero new exact B/hour**. Failed attempts, source repair, profile transition and handoff gaps remain included. The earlier four-method exact milestone delivered 514.03 exact B/hour over its own 8,012.002-second pipeline; these are distinct cohorts and denominators. No >5x workflow speedup is claimed.
-
-Source-structure matching continues in three disjoint implementation lanes under fixed O2 for new candidates. Older accepted images retain their recorded provenance and are not rebuilt merely to change the profile. Pending candidates are excluded from integrated totals.
-
-## Data
-
-- [Automatic task activity and delivery speed](data/workflow.json) — hourly aggregates, stable system/submodule IDs, separate local/peer/integrated gates
-- [Progress summary](data/progress.json)
-- [Submodule implementation progress](data/submodules.json) — 40 disjoint groups with C/mixed counts, verified scope and remaining work
-- [Resource address table — CSV](data/resource-addresses.csv)
-- [Resource address table — JSON](data/resource-addresses.json)
-
-Resource tables expose only synthetic snapshot IDs, ROM offsets, GBA addresses, exclusive end offsets and byte counts. They contain no resource payloads, filenames, decoding rules or function addresses. GBA addresses use base `0x08000000`. The table covers selected reconstructed spans only; omitted ranges must not be assumed unused or unknown. IDs are snapshot identifiers, not original game IDs.
-
-Counts were reconciled against a validated reconstruction report and the selected source/resource inventories. The C counts are tied to the pinned retail input, candidate image and build-report hashes in `data/progress.json`; they distinguish exact C output from nonmatching C output with pinned byte differences. Address spans were checked for overlap; resource bytes plus embedded padding equal their listed spans. Public data alone does not reproduce the private build validation.
-
-## Publication boundary
-
-Published recovery content consists of aggregate statistics, system inventory counts and resource-address metadata. The static dashboard also includes presentation files and attributed third-party title artwork; see [display credits](assets/ATTRIBUTION.md). Game source code, ASM listings, ROMs, extracted graphics, audio, dialogue, saves, design documents, private paths, conversations, prompts and task records are excluded. This repository starts with an independent history.
-
-## License
-
-The original documentation and published metadata in this repository are available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This license does not grant rights to the game or its assets.
-
-## Automatic activity updates
-
-The local task tool exports and publishes aggregate activity every hour without an LLM. `data/workflow.json` contains task-state counts, delivery rates, iteration latency and system/submodule mappings. `data/progress.json.live_recovery` links that activity; `data/submodules.json` attaches it by stable submodule ID. Provisional system-only classifications remain explicitly unassigned to a submodule. Original task records, code, evidence paths, credentials and conversations are excluded.
-
-Publication preserves the independently dated verified ROM totals; local exact results are not added to integrated counts. Backfills use actual acceptance time. Zero means no registered credit, not proof that no unregistered result exists. Pushes deploy automatically; a daily deployment alone does not advance either data timestamp. No private repository is connected to GitHub Actions. Reference categories follow the [FFSKY FFTA guide](http://ffta.ffsky.cn/); ROM record counts are not playable-content counts.
+This public repository contains aggregate metadata and presentation files, not game code, ROMs, extracted assets, private task records or evidence. Historical display artwork credits remain in [assets/ATTRIBUTION.md](assets/ATTRIBUTION.md). The project is unofficial. Original documentation and metadata are [CC BY 4.0](LICENSE).

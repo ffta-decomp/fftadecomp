@@ -1,30 +1,47 @@
-const fmt=n=>n.toLocaleString('en-US');
-const esc=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-async function load(path){const r=await fetch(path);if(!r.ok)throw new Error(`Could not load ${path}`);return r.json()}
-Promise.all(['progress','systems','resource-addresses','submodules'].map(n=>load(`data/${n}.json`))).then(([p,s,a,sub])=>{
- document.querySelector('#date').textContent=p.snapshot_revision;
- const r=p.resource_inventory,b=p.source_assembly,c=p.c_rewrite,m=p.mixed_rewrite,o=p.original_byte_dependency;
- document.querySelector('#metrics').innerHTML=[["Reconstructed resources",r.resource_bytes_excluding_padding,`${fmt(r.selected_spans)} selected spans · excludes embedded padding`],["Source assembly",b.span_bytes,`${fmt(b.selected_modules)} modules · includes literals and alignment`],["Readable C rewrites",c.selected_span_bytes,`${fmt(c.selected_modules)} modules · ${fmt(c.compiled_function_entries)} compiled entries`],["Mixed C / ASM",m.selected_span_bytes,`${fmt(m.selected_modules)} modules · ${fmt(m.assembly_instruction_bytes)} ASM instruction bytes; separate from pure C`],["Original-byte dependencies",o.span_bytes,"Includes retained code suffixes, data and padding; not unknown code size"]].map(([name,bytes,note],i)=>`<article class="metric"><div class="metric-label">${name}</div><div class="number">${fmt(bytes)} <small>bytes</small></div><p>${note}</p>${i===2?`<p class="metric-detail">${fmt(c.exact_match_bytes)} exact · ${fmt(c.nonmatching_span_bytes)} nonmatching; ${fmt(c.pinned_difference_bytes)} differing bytes pinned</p>`:''}<div class="bar"><span style="width:${bytes/p.rom_size_bytes*100}%"></span></div><div class="bar-label"><span>${(bytes/p.rom_size_bytes*100).toFixed(2)}% of ROM storage</span><span>16 MiB denominator</span></div></article>`).join('');
-
- const milestone=p.latest_milestone;
- document.querySelector('#latest').innerHTML=`<article><p class="eyebrow">LATEST VERIFIED MILESTONE</p><h3>${esc(milestone.title)}</h3><p>${fmt(milestone.original_entries)} original entries · ${fmt(milestone.pure_c_bytes)} C bytes · ${fmt(milestone.retained_suffix_bytes)} retained suffix bytes</p>${milestone.linker_veneer_bytes?`<p>${fmt(milestone.selected_c_span_bytes)} selected bytes include ${fmt(milestone.linker_veneer_bytes)} linker-veneer bytes; forwarding/body pairs do not add original functions.</p>`:''}<p>${fmt(milestone.bounded_scenarios)} bounded scenarios / ${fmt(milestone.fixture_invocations_per_image)} invocations per image. ${esc(milestone.summary)}</p><p class="note">${esc(milestone.remaining)}</p></article><article><p class="eyebrow">WORK UNDERWAY · EXCLUDED FROM TOTALS</p>${p.active_work.map(x=>`<h3>${esc(x.title)}</h3><p>${esc(x.scope)}</p><p class="note">${esc(x.status)}${x.target_speedup?` · ${esc(x.target_speedup)} target; measured whole-workflow gain not yet established.`:''}</p>`).join('')}</article>`;
- function renderSubmodules(query='') {
-  const normalized=query.trim().toLowerCase();
-  const visible=sub.submodules.filter(x=>[x.title,x.system,x.verified,x.remaining].join(' ').toLowerCase().includes(normalized));
-  document.querySelector('#module-summary').textContent=`${visible.length} of ${sub.submodules.length} groups · ${fmt(visible.reduce((n,x)=>n+x.pure_c_bytes,0))} C bytes · ${fmt(visible.reduce((n,x)=>n+x.mixed_bytes,0))} mixed bytes shown`;
-  document.querySelector('#submodules').innerHTML=sub.groups.map(group=>{
-   const items=visible.filter(x=>x.system===group.id);
-   if(!items.length)return '';
-   const cbytes=items.reduce((n,x)=>n+x.pure_c_bytes,0);
-   return `<details class="system-progress" ${normalized||group.id==='battle'?'open':''}><summary><span>${esc(group.title)}</span><small>${items.length} groups · ${fmt(cbytes)} C bytes</small></summary><div class="table-scroll"><table class="module-table"><caption class="sr-only">${esc(group.title)} implementation progress</caption><thead><tr><th scope="col">Submodule / evidence</th><th scope="col">C bytes</th><th scope="col">Exact C</th><th scope="col">Mixed bytes</th><th scope="col">C entries</th></tr></thead><tbody>${items.map(x=>`<tr><td><details class="module-evidence"><summary>${esc(x.title)}</summary><p><strong>Integrated:</strong> ${fmt(x.selected_c_modules)} C modules; ${fmt(x.mixed_modules)} mixed modules / ${fmt(x.mixed_entries)} mixed entries. ${fmt(x.nonmatching_c_bytes)} C bytes have pinned differences.</p><p><strong>Verified scope:</strong> ${esc(x.verified)}</p><p><strong>Remaining:</strong> ${esc(x.remaining)}</p><p class="scope-limit">System completion: unknown. Bounded checks do not establish natural gameplay or physical hardware behavior.</p></details></td><td>${fmt(x.pure_c_bytes)}</td><td>${fmt(x.exact_c_bytes)}</td><td>${x.mixed_bytes?fmt(x.mixed_bytes):'—'}</td><td>${fmt(x.compiled_c_entries)}</td></tr>`).join('')}</tbody></table></div></details>`;
-  }).join('')||'<p>No matching submodules.</p>';
+'use strict';
+const fmt = value => value == null ? '—' : Number(value).toLocaleString('en-US',{maximumFractionDigits:1});
+const esc = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const compact = value => value >= 1e6 ? `${(value/1e6).toFixed(2)} MB` : `${(value/1e3).toFixed(1)} kB`;
+const status = states => `${states.active ? `<b><span class="dot"></span>${states.active} active</b> · ` : ''}${states.ready} ready · ${states.frozen} frozen${states.blocked ? ` · ${states.blocked} blocked` : ''}`;
+const metricCells = row => `<td>${fmt(row.integrated_c_bytes)}</td><td class="exact">${fmt(row.exact_available_bytes)}</td><td class="pending">${row.pending_exact_bytes ? fmt(row.pending_exact_bytes) : '—'}</td><td>${fmt(row.last_hour_exact_B_per_hour)}</td><td class="status">${status(row.states)}</td>`;
+function aggregate(rows){
+ const out={integrated_c_bytes:0,exact_available_bytes:0,pending_exact_bytes:0,last_hour_exact_B_per_hour:0,states:{ready:0,active:0,frozen:0,blocked:0}};
+ for(const row of rows){for(const key of ['integrated_c_bytes','exact_available_bytes','pending_exact_bytes','last_hour_exact_B_per_hour'])out[key]+=row[key]||0;for(const state of Object.keys(out.states))out.states[state]+=row.states[state];}return out;
+}
+async function start(){
+ const response=await fetch('data/progress.json',{cache:'no-cache'});if(!response.ok)throw new Error('Could not load current progress');
+ const payload=await response.json(),d=payload.dashboard;if(d?.schema_version!==2)throw new Error('Unified progress snapshot unavailable');
+ const age=(Date.now()-Date.parse(d.as_of))/3600000;
+ document.querySelector('#updated').textContent=`${new Date(d.as_of).toLocaleString()}${age>2?' · update delayed':''}`;
+ const names={team:'All lanes',main:'Main',worker2:'Worker 2',worker3:'Worker 3',other:'Other'};
+ document.querySelector('#performance').innerHTML=d.performance.map(row=>`<tr class="${row.id==='team'?'team':''}"><td class="${row.id==='team'?'':'lane'}">${esc(names[row.id]||row.id)}</td><td>${fmt(row.exact_B_per_hour)}</td><td>${fmt(row.previous_exact_B_per_hour)}</td><td>${fmt(row.exact_methods_last_hour)}</td><td>${fmt(row.peer_exact_B_per_hour)}</td><td>${fmt(row.integrated_exact_B_per_hour)}</td><td>${fmt(row.median_seconds)} / ${fmt(row.p90_seconds)} s</td></tr>`).join('');
+ const o=d.overview;
+ document.querySelector('#overview').innerHTML=[
+  ['Exact C available',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
+  ['Readable C in ROM',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
+  ['Exact C not yet in ROM',fmt(o.pending_exact_bytes),'B',`${fmt(o.pending_peer_exact_bytes)} independently accepted bytes`],
+  ['Tasks in progress',fmt(o.states.active),'',`${fmt(o.states.ready)} ready · ${fmt(o.states.frozen)} frozen · ${fmt(o.states.blocked)} blocked`]
+ ].map(([label,value,unit,note])=>`<article class="card"><div class="card-label">${label}</div><div class="card-value">${value}<small>${unit}</small></div><p>${note}</p></article>`).join('');
+ document.querySelector('#inventory').textContent=`Reconstructed resources ${compact(payload.resource_inventory.resource_bytes_excluding_padding)} · Source ASM ${compact(payload.source_assembly.span_bytes)} · Original-byte dependencies ${compact(payload.original_byte_dependency.span_bytes)}`;
+ const all=d.systems.flatMap(x=>x.modules);
+ document.querySelector('#scope').textContent=`${all.length} groups · ${o.tasks} tasks`;
+ document.querySelector('#system').innerHTML='<option value="all">All systems</option>'+d.systems.map(x=>`<option value="${esc(x.id)}">${esc(x.title)}</option>`).join('');
+ let activeOnly=false,sortExact=false;
+ function render(){
+  const query=document.querySelector('#search').value.trim().toLowerCase(),system=document.querySelector('#system').value;
+  const selected=d.systems.filter(x=>system==='all'||x.id===system).map(group=>({...group,modules:group.modules.filter(row=>(!activeOnly||row.states.active>0)&&`${row.title} ${group.title}`.toLowerCase().includes(query))})).filter(x=>x.modules.length);
+  const visible=selected.flatMap(x=>x.modules);
+  let html='';
+  if(sortExact){html=[...visible].sort((a,b)=>b.exact_available_bytes-a.exact_available_bytes).map(row=>`<tr class="module"><td>${esc(row.title)}</td>${metricCells(row)}</tr>`).join('');}
+  else{html=selected.map(group=>`<tr class="group"><td>${esc(group.title)}</td>${metricCells(aggregate(group.modules))}</tr>`+group.modules.map(row=>`<tr class="module"><td>${esc(row.title)}</td>${metricCells(row)}</tr>`).join('')).join('');}
+  document.querySelector('#modules').innerHTML=html||'<tr><td colspan="6">No matching modules</td></tr>';
+  document.querySelector('#module-total').innerHTML=`<tr><td>${visible.length===all.length?'Total':'Filtered total'}</td>${metricCells(aggregate(visible))}</tr>`;
+  document.querySelector('#filtered').textContent=`${visible.length} of ${all.length} groups shown · all byte columns are deduplicated; exact total includes local results.`;
  }
- renderSubmodules();
- document.querySelector('#module-search').addEventListener('input',e=>renderSubmodules(e.target.value));
- function renderSystems(filter='all'){document.querySelector('#systems').innerHTML=s.systems.filter(x=>filter==='all'||(filter==='counted'?x.total!==null:x.total===null)).map((x,i)=>`<article class="card"><span class="card-index">◆</span><h3>${x.title}</h3><div class="catalog">${x.catalog}</div><div class="count">${x.recovered===null?'Not established':fmt(x.recovered)}${x.total!==null?` <small>/ ${fmt(x.total)}</small>`:''}</div><div class="unit">${x.unit}</div>${x.total!==null?`<div class="bar"><span style="width:${x.recovered/x.total*100}%"></span></div><div class="status">${(x.recovered/x.total*100).toFixed(0)}% OF LISTED INVENTORY</div>`:'<div class="status">COMPLETE DENOMINATOR UNKNOWN</div>'}<p class="note">${x.note}</p><a href="${x.reference}">Game reference · FFSKY ↗</a></article>`).join('')}
- renderSystems();document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(t=>{t.classList.toggle('active',t===b);t.setAttribute('aria-pressed',t===b)});renderSystems(b.dataset.filter)});
- const canvas=document.querySelector('#map'),ctx=canvas.getContext('2d');ctx.fillStyle='#b78f46';for(const x of a.resources){let start=parseInt(x.rom_offset,16)/p.rom_size_bytes*1024,end=parseInt(x.end_rom_offset_exclusive,16)/p.rom_size_bytes*1024;ctx.fillRect(start,0,Math.max(.3,end-start),100)}
- let page=0,filtered=a.resources;const size=12;
- function rows(){const pages=Math.max(1,Math.ceil(filtered.length/size));page=Math.min(page,pages-1);document.querySelector('#rows').innerHTML=filtered.slice(page*size,(page+1)*size).map(x=>`<tr><td>${x.resource_id}</td><td>${x.rom_offset}</td><td>${x.gba_address}</td><td>${fmt(x.resource_bytes)}</td></tr>`).join('')||'<tr><td colspan="4">No matching spans.</td></tr>';document.querySelector('#page').textContent=`${fmt(filtered.length)} spans · ${page+1} / ${pages}`;document.querySelector('#prev').disabled=page===0;document.querySelector('#next').disabled=page===pages-1}
- document.querySelector('#search').oninput=e=>{let q=e.target.value.trim().toLowerCase();filtered=a.resources.filter(x=>[x.resource_id,x.rom_offset,x.gba_address].some(v=>v.toLowerCase().includes(q)));page=0;rows()};document.querySelector('#prev').onclick=()=>{page--;rows()};document.querySelector('#next').onclick=()=>{page++;rows()};rows();
-}).catch(e=>{document.querySelector('#error').textContent=e.message;document.querySelector('#date').textContent='Unavailable'});
+ document.querySelector('#search').addEventListener('input',render);document.querySelector('#system').addEventListener('change',render);
+ document.querySelector('#active-only').addEventListener('click',event=>{activeOnly=!activeOnly;event.currentTarget.setAttribute('aria-pressed',String(activeOnly));render();});
+ document.querySelector('#sort').addEventListener('click',event=>{sortExact=!sortExact;event.currentTarget.textContent=sortExact?'Sort: exact bytes':'Sort: system';render();});
+ document.querySelector('#data-scope').textContent=`ROM snapshot ${payload.snapshot_revision}; current activity ${d.as_of}. ${d.classification.provisional} tasks have provisional system-only classification. Window observation: ${fmt(d.windows.last_hour.observed_seconds/60)} / ${fmt(d.windows.previous_hour.observed_seconds/60)} minutes (current / previous).`;
+ render();
+}
+start().catch(error=>{document.querySelector('#error').textContent=error.message;document.querySelector('#updated').textContent='Unavailable';});
