@@ -1668,9 +1668,9 @@
       "activity": {
         "tasks": 37,
         "states": {
-          "ready": 14,
-          "active": 2,
-          "frozen": 19,
+          "ready": 12,
+          "active": 3,
+          "frozen": 20,
           "blocked": 2
         },
         "classification": {
@@ -1706,21 +1706,21 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 14,
-              "original_bytes": 1326,
-              "generated_bytes": 1326
+              "functions": 15,
+              "original_bytes": 1414,
+              "generated_bytes": 1414
             },
             "since_epoch": {
-              "functions": 14,
-              "original_bytes": 1326,
-              "generated_bytes": 1326
+              "functions": 15,
+              "original_bytes": 1414,
+              "generated_bytes": 1414
             },
-            "cumulative_original_B_per_hour": 469.22033310769064,
+            "cumulative_original_B_per_hour": 495.75091171910236,
             "last_hour": {
-              "functions": 7,
-              "original_bytes": 548,
-              "generated_bytes": 548,
-              "original_B_per_hour": 548.0
+              "functions": 8,
+              "original_bytes": 636,
+              "generated_bytes": 636,
+              "original_B_per_hour": 636.0
             },
             "previous_hour": {
               "functions": 7,
@@ -1838,17 +1838,17 @@
         "integrated_c_bytes": 6072,
         "integrated_exact_bytes": 58,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1326,
+        "pending_exact_bytes": 1414,
         "pending_peer_exact_bytes": 0,
         "tasks": 37,
         "states": {
-          "ready": 14,
-          "active": 2,
-          "frozen": 19,
+          "ready": 12,
+          "active": 3,
+          "frozen": 20,
           "blocked": 2
         },
-        "last_hour_exact_B_per_hour": 548.0,
-        "exact_available_bytes": 1384
+        "last_hour_exact_B_per_hour": 636.0,
+        "exact_available_bytes": 1472
       }
     },
     {
@@ -1917,7 +1917,7 @@
               "original_bytes": 1230,
               "generated_bytes": 1230
             },
-            "cumulative_original_B_per_hour": 435.24963025826503,
+            "cumulative_original_B_per_hour": 431.24018487588114,
             "last_hour": {
               "functions": 13,
               "original_bytes": 1230,
@@ -2321,7 +2321,7 @@
               "original_bytes": 284,
               "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 100.49666259621729,
+            "cumulative_original_B_per_hour": 99.5709044754067,
             "last_hour": {
               "functions": 1,
               "original_bytes": 62,
@@ -3937,7 +3937,7 @@
               "original_bytes": 630,
               "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 222.93273744935527,
+            "cumulative_original_B_per_hour": 220.87911908276837,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -5149,7 +5149,7 @@
               "original_bytes": 288,
               "generated_bytes": 288
             },
-            "cumulative_original_B_per_hour": 101.91210854827669,
+            "cumulative_original_B_per_hour": 100.97331158069412,
             "last_hour": {
               "functions": 4,
               "original_bytes": 288,
@@ -8132,6 +8132,6 @@
     "Shared routines are assigned once for accounting; callers do not duplicate their bytes.",
     "Source paths, function addresses and implementation artifacts are excluded."
   ],
-  "activity_as_of": "2026-10-22T05:26:38.567682+00:00",
+  "activity_as_of": "2026-10-22T05:28:13.155298+00:00",
   "activity_data": "data/workflow.json"
 }

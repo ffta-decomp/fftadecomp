@@ -118,7 +118,7 @@
   "active_work": [
     {
       "title": "Concurrent core recovery",
-      "scope": "2 active tasks across three implementation lanes; 125 ready tasks.",
+      "scope": "3 active tasks across three implementation lanes; 123 ready tasks.",
       "status": "Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals."
     }
   ],
@@ -148,15 +148,15 @@
     "whole_workflow_speedup": null
   },
   "live_recovery": {
-    "as_of": "2026-10-22T05:26:38.567682+00:00",
+    "as_of": "2026-10-22T05:28:13.155298+00:00",
     "data": "data/workflow.json",
     "totals": {
       "tasks": 177,
       "original_backlog_span_bytes": 96782,
       "states": {
-        "ready": 125,
-        "active": 2,
-        "frozen": 45,
+        "ready": 123,
+        "active": 3,
+        "frozen": 46,
         "blocked": 5
       },
       "classification": {
@@ -192,21 +192,21 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 35,
-            "original_bytes": 3758,
-            "generated_bytes": 3758
+            "functions": 36,
+            "original_bytes": 3846,
+            "generated_bytes": 3846
           },
           "since_epoch": {
-            "functions": 35,
-            "original_bytes": 3758,
-            "generated_bytes": 3758
+            "functions": 36,
+            "original_bytes": 3846,
+            "generated_bytes": 3846
           },
-          "cumulative_original_B_per_hour": 1329.811471959805,
+          "cumulative_original_B_per_hour": 1348.4144317338528,
           "last_hour": {
-            "functions": 25,
-            "original_bytes": 2128,
-            "generated_bytes": 2128,
-            "original_B_per_hour": 2128.0
+            "functions": 26,
+            "original_bytes": 2216,
+            "generated_bytes": 2216,
+            "original_B_per_hour": 2216.0
           },
           "previous_hour": {
             "functions": 8,
@@ -318,47 +318,47 @@
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 35,
+      "pending_peer_exact": 36,
       "pending_integration_exact": 0,
       "exact_rounds_without_local_credit": 0
     }
   },
   "dashboard": {
     "schema_version": 2,
-    "as_of": "2026-10-22T05:26:38.567682+00:00",
+    "as_of": "2026-10-22T05:28:13.155298+00:00",
     "integrated_rom_sha256": "afea6a86a1de5f4d34fb0d07c54b1e10309ff55c666c498eda133b09f9bffd73",
     "overview": {
       "integrated_c_bytes": 174718,
       "integrated_exact_bytes": 29732,
       "mixed_bytes": 10520,
-      "pending_exact_bytes": 3758,
+      "pending_exact_bytes": 3846,
       "pending_peer_exact_bytes": 0,
-      "exact_available_bytes": 33490,
+      "exact_available_bytes": 33578,
       "tasks": 177,
       "states": {
-        "ready": 125,
-        "active": 2,
-        "frozen": 45,
+        "ready": 123,
+        "active": 3,
+        "frozen": 46,
         "blocked": 5
       }
     },
     "performance": [
       {
         "id": "team",
-        "active_tasks": 2,
-        "exact_methods_last_hour": 25,
-        "exact_B_per_hour": 2128.0,
+        "active_tasks": 3,
+        "exact_methods_last_hour": 26,
+        "exact_B_per_hour": 2216.0,
         "previous_exact_B_per_hour": 1000.0,
         "peer_exact_B_per_hour": 0.0,
         "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 44.468331,
+        "median_seconds": 44.4596435,
         "p90_seconds": 99.420277
       },
       {
         "id": "main",
         "active_tasks": 1,
-        "exact_methods_last_hour": 16,
-        "exact_B_per_hour": 1470.0,
+        "exact_methods_last_hour": 17,
+        "exact_B_per_hour": 1558.0,
         "previous_exact_B_per_hour": 602.0,
         "peer_exact_B_per_hour": 0.0,
         "integrated_exact_B_per_hour": 0.0,
@@ -373,12 +373,12 @@
         "previous_exact_B_per_hour": 0.0,
         "peer_exact_B_per_hour": 0.0,
         "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 54.217413,
+        "median_seconds": 53.532708,
         "p90_seconds": 169.128596
       },
       {
         "id": "worker3",
-        "active_tasks": 0,
+        "active_tasks": 1,
         "exact_methods_last_hour": 9,
         "exact_B_per_hour": 658.0,
         "previous_exact_B_per_hour": 398.0,
@@ -395,14 +395,14 @@
         "integrated_c_bytes": 68228,
         "integrated_exact_bytes": 3148,
         "mixed_bytes": 268,
-        "pending_exact_bytes": 2840,
+        "pending_exact_bytes": 2928,
         "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 5988,
+        "exact_available_bytes": 6076,
         "tasks": 90,
         "states": {
-          "ready": 48,
-          "active": 2,
-          "frozen": 37,
+          "ready": 46,
+          "active": 3,
+          "frozen": 38,
           "blocked": 3
         },
         "modules": [
@@ -565,17 +565,17 @@
             "integrated_c_bytes": 6072,
             "integrated_exact_bytes": 58,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1326,
+            "pending_exact_bytes": 1414,
             "pending_peer_exact_bytes": 0,
             "tasks": 37,
             "states": {
-              "ready": 14,
-              "active": 2,
-              "frozen": 19,
+              "ready": 12,
+              "active": 3,
+              "frozen": 20,
               "blocked": 2
             },
-            "last_hour_exact_B_per_hour": 548.0,
-            "exact_available_bytes": 1384
+            "last_hour_exact_B_per_hour": 636.0,
+            "exact_available_bytes": 1472
           },
           {
             "id": "effect-predicates-and-values",
@@ -1386,20 +1386,20 @@
     "unlocated_exact_records": 0,
     "windows": {
       "last_hour": {
-        "start_exclusive": "2026-10-22T04:26:38.567682+00:00",
-        "end_inclusive": "2026-10-22T05:26:38.567682+00:00",
+        "start_exclusive": "2026-10-22T04:28:13.155298+00:00",
+        "end_inclusive": "2026-10-22T05:28:13.155298+00:00",
         "observed_seconds": 3600.0,
         "partial": false
       },
       "previous_hour": {
-        "start_exclusive": "2026-10-22T03:26:38.567682+00:00",
-        "end_inclusive": "2026-10-22T04:26:38.567682+00:00",
+        "start_exclusive": "2026-10-22T03:28:13.155298+00:00",
+        "end_inclusive": "2026-10-22T04:28:13.155298+00:00",
         "observed_seconds": 3600.0,
         "partial": false
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 35,
+      "pending_peer_exact": 36,
       "pending_integration_exact": 0,
       "exact_rounds_without_local_credit": 0
     }
