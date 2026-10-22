@@ -13,7 +13,7 @@ async function start(){
  const payload=await response.json(),d=payload.dashboard;if(d?.schema_version!==2)throw new Error('Unified progress snapshot unavailable');
  const age=(Date.now()-Date.parse(d.as_of))/3600000;
  document.querySelector('#updated').textContent=`${new Date(d.as_of).toLocaleString()}${age>2?' · update delayed':''}`;
- const names={team:'All lanes',main:'Main',worker2:'Worker 2',worker3:'Worker 3',sol_a:'Sol A',sol_b:'Sol B',sol_c:'Sol C',other:'Other actors'};
+ const names={team:'All lanes',main:'Main',worker2:'Worker 2',worker3:'Worker 3',sol_a:'Sol A',sol_b:'Sol B',sol_c:'Sol C',astra_handoff:'Astra handoff',other:'Other actors'};
  document.querySelector('#performance').innerHTML=d.performance.map(row=>`<tr class="${row.id==='team'?'team':''}"><td class="${row.id==='team'?'':'lane'}">${esc(names[row.id]||row.id)}</td><td>${fmt(row.exact_B_per_hour)}</td><td>${fmt(row.previous_exact_B_per_hour)}</td><td>${fmt(row.exact_methods_last_hour)}</td><td>${fmt(row.peer_exact_B_per_hour)}</td><td>${fmt(row.integrated_exact_B_per_hour)}</td><td>${fmt(row.median_seconds)} / ${fmt(row.p90_seconds)} s</td></tr>`).join('');
  const o=d.overview,m=d.asm_rewrite||d.c_match;
  document.querySelector('#overview').innerHTML=[
