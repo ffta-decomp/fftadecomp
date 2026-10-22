@@ -13,14 +13,14 @@ async function start(){
  const payload=await response.json(),d=payload.dashboard;if(d?.schema_version!==2)throw new Error('Unified progress snapshot unavailable');
  const age=(Date.now()-Date.parse(d.as_of))/3600000;
  document.querySelector('#updated').textContent=`${new Date(d.as_of).toLocaleString()}${age>2?' · update delayed':''}`;
- const names={team:'All lanes',main:'Main',worker2:'Worker 2',worker3:'Worker 3',other:'Other'};
+ const names={team:'All lanes',main:'Main',worker2:'Worker 2',worker3:'Worker 3',sol_a:'Sol A',sol_b:'Sol B',sol_c:'Sol C',other:'Other actors'};
  document.querySelector('#performance').innerHTML=d.performance.map(row=>`<tr class="${row.id==='team'?'team':''}"><td class="${row.id==='team'?'':'lane'}">${esc(names[row.id]||row.id)}</td><td>${fmt(row.exact_B_per_hour)}</td><td>${fmt(row.previous_exact_B_per_hour)}</td><td>${fmt(row.exact_methods_last_hour)}</td><td>${fmt(row.peer_exact_B_per_hour)}</td><td>${fmt(row.integrated_exact_B_per_hour)}</td><td>${fmt(row.median_seconds)} / ${fmt(row.p90_seconds)} s</td></tr>`).join('');
- const o=d.overview;
+ const o=d.overview,m=d.asm_rewrite||d.c_match;
  document.querySelector('#overview').innerHTML=[
-  ['C match / known ASM',d.c_match?.percent == null ? 'Unknown' : d.c_match.percent.toFixed(3),'%',d.c_match?.percent == null ? 'Original ASM catalogue unavailable' : `${fmt(d.c_match.matched_asm_bytes)} / ${fmt(d.c_match.total_asm_bytes)} original ASM span bytes; includes migrated code`],
-  ['Exact C available',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
-  ['Readable C in ROM',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
-  ['Exact C not yet in ROM',fmt(o.pending_exact_bytes),'B',`${fmt(o.pending_peer_exact_bytes)} independently accepted bytes`],
+  ['Original ASM rewritten',m?.percent == null ? 'Unknown' : m.percent.toFixed(3),'%',m?.percent == null ? 'Original ASM catalogue unavailable' : `${fmt(m.rewritten_original_asm_bytes??m.matched_asm_bytes)} / ${fmt(m.known_original_asm_bytes??m.total_asm_bytes)} known original ASM bytes`],
+  ['Original ASM matched',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
+  ['Generated C in ROM',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
+  ['Matched ASM awaiting integration',fmt(o.pending_exact_bytes),'B',`${fmt(o.pending_peer_exact_bytes)} independently accepted bytes`],
   ['Tasks in progress',fmt(o.states.active),'',`${fmt(o.states.ready)} ready · ${fmt(o.states.frozen)} frozen · ${fmt(o.states.blocked)} blocked`]
  ].map(([label,value,unit,note])=>`<article class="card"><div class="card-label">${label}</div><div class="card-value">${value}<small>${unit}</small></div><p>${note}</p></article>`).join('');
  document.querySelector('#inventory').textContent=`Reconstructed resources ${compact(payload.resource_inventory.resource_bytes_excluding_padding)} · Source ASM ${compact(payload.source_assembly.span_bytes)} · Original-byte dependencies ${compact(payload.original_byte_dependency.span_bytes)}`;
