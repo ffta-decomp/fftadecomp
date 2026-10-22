@@ -117,14 +117,9 @@
   ],
   "active_work": [
     {
-      "title": "Source-structure matching in two disjoint lanes",
-      "scope": "Source-backed layout and control-flow refinements continue on two separate mission methods under one fixed O2 candidate profile.",
-      "status": "Candidates are excluded from integrated and whole-function exact totals. Existing accepted historical artifacts retain their original compiler provenance."
-    },
-    {
-      "title": "Measured C delivery",
-      "scope": "Latest method integrated 1,412 C bytes from 1,452 original bytes; 40 original suffix bytes retained.",
-      "status": "Complete method pipeline 13,022.564 seconds, 390.34 accepted/integrated C B/hour, 0 new exact B/hour. No greater-than-fivefold delivery gain established."
+      "title": "Concurrent core recovery",
+      "scope": "3 active tasks across three implementation lanes; 93 ready tasks.",
+      "status": "Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals."
     }
   ],
   "delivery_metrics": {
@@ -153,15 +148,15 @@
     "whole_workflow_speedup": null
   },
   "live_recovery": {
-    "as_of": "2026-10-22T05:08:42.462966+00:00",
+    "as_of": "2026-10-22T05:09:09.208326+00:00",
     "data": "data/workflow.json",
     "totals": {
       "tasks": 137,
       "original_backlog_span_bytes": 73166,
       "states": {
-        "ready": 94,
+        "ready": 93,
         "active": 3,
-        "frozen": 38,
+        "frozen": 39,
         "blocked": 2
       },
       "classification": {
@@ -197,21 +192,21 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 28,
-            "original_bytes": 2898,
-            "generated_bytes": 2898
+            "functions": 29,
+            "original_bytes": 3222,
+            "generated_bytes": 3222
           },
           "since_epoch": {
-            "functions": 28,
-            "original_bytes": 2898,
-            "generated_bytes": 2898
+            "functions": 29,
+            "original_bytes": 3222,
+            "generated_bytes": 3222
           },
-          "cumulative_original_B_per_hour": 1146.7932953021063,
+          "cumulative_original_B_per_hour": 1271.268805825538,
           "last_hour": {
-            "functions": 24,
-            "original_bytes": 1818,
-            "generated_bytes": 1818,
-            "original_B_per_hour": 1818.0
+            "functions": 25,
+            "original_bytes": 2142,
+            "generated_bytes": 2142,
+            "original_B_per_hour": 2142.0
           },
           "previous_hour": {
             "functions": 3,
@@ -323,7 +318,7 @@
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 28,
+      "pending_peer_exact": 29,
       "pending_integration_exact": 0,
       "exact_rounds_without_local_credit": 0
     }

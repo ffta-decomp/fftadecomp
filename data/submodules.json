@@ -1516,8 +1516,8 @@
       "activity": {
         "tasks": 37,
         "states": {
-          "ready": 19,
-          "active": 1,
+          "ready": 18,
+          "active": 2,
           "frozen": 16,
           "blocked": 1
         },
@@ -1563,7 +1563,7 @@
               "original_bytes": 1066,
               "generated_bytes": 1066
             },
-            "cumulative_original_B_per_hour": 421.83631911388727,
+            "cumulative_original_B_per_hour": 420.59979733396136,
             "last_hour": {
               "functions": 10,
               "original_bytes": 838,
@@ -1700,8 +1700,8 @@
         "tasks": 16,
         "states": {
           "ready": 5,
-          "active": 1,
-          "frozen": 10,
+          "active": 0,
+          "frozen": 11,
           "blocked": 0
         },
         "classification": {
@@ -1737,21 +1737,21 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 9,
-              "original_bytes": 630,
-              "generated_bytes": 630
+              "functions": 10,
+              "original_bytes": 954,
+              "generated_bytes": 954
             },
             "since_epoch": {
-              "functions": 9,
-              "original_bytes": 630,
-              "generated_bytes": 630
+              "functions": 10,
+              "original_bytes": 954,
+              "generated_bytes": 954
             },
-            "cumulative_original_B_per_hour": 249.30289028306657,
+            "cumulative_original_B_per_hour": 376.4091994902431,
             "last_hour": {
-              "functions": 9,
-              "original_bytes": 630,
-              "generated_bytes": 630,
-              "original_B_per_hour": 630.0
+              "functions": 10,
+              "original_bytes": 954,
+              "generated_bytes": 954,
+              "original_B_per_hour": 954.0
             },
             "previous_hour": {
               "functions": 0,
@@ -2112,7 +2112,7 @@
               "original_bytes": 284,
               "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 112.38416006411255,
+            "cumulative_original_B_per_hour": 112.05473024657132,
             "last_hour": {
               "functions": 1,
               "original_bytes": 62,
@@ -3576,7 +3576,7 @@
               "original_bytes": 630,
               "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 249.30289028306657,
+            "cumulative_original_B_per_hour": 248.57211287091525,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -4674,7 +4674,7 @@
               "original_bytes": 288,
               "generated_bytes": 288
             },
-            "cumulative_original_B_per_hour": 113.96703555797329,
+            "cumulative_original_B_per_hour": 113.63296588384698,
             "last_hour": {
               "functions": 4,
               "original_bytes": 288,
@@ -7372,6 +7372,6 @@
     "Shared routines are assigned once for accounting; callers do not duplicate their bytes.",
     "Source paths, function addresses and implementation artifacts are excluded."
   ],
-  "activity_as_of": "2026-10-22T05:08:42.462966+00:00",
+  "activity_as_of": "2026-10-22T05:09:09.208326+00:00",
   "activity_data": "data/workflow.json"
 }
