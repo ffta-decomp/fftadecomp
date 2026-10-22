@@ -118,7 +118,7 @@
   "active_work": [
     {
       "title": "Concurrent core recovery",
-      "scope": "2 active tasks across three implementation lanes; 112 ready tasks.",
+      "scope": "5 active tasks across assigned implementation lanes; 91 ready tasks.",
       "status": "Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals."
     }
   ],
@@ -148,20 +148,20 @@
     "whole_workflow_speedup": null
   },
   "live_recovery": {
-    "as_of": "2026-10-22T09:24:07.673639+00:00",
+    "as_of": "2026-10-22T11:19:29.530741+00:00",
     "data": "data/workflow.json",
     "totals": {
-      "tasks": 244,
-      "original_backlog_span_bytes": 121834,
+      "tasks": 306,
+      "original_backlog_span_bytes": 127650,
       "states": {
-        "ready": 112,
-        "active": 2,
-        "frozen": 93,
-        "blocked": 37
+        "ready": 91,
+        "active": 5,
+        "frozen": 155,
+        "blocked": 55
       },
       "classification": {
         "mapped": 96,
-        "provisional": 148,
+        "provisional": 210,
         "unmapped": 0
       },
       "gates": {
@@ -192,27 +192,27 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 66,
-            "original_bytes": 9198,
-            "generated_bytes": 9198
+            "functions": 115,
+            "original_bytes": 14400,
+            "generated_bytes": 14400
           },
           "since_epoch": {
-            "functions": 66,
-            "original_bytes": 9198,
-            "generated_bytes": 9198
+            "functions": 115,
+            "original_bytes": 14400,
+            "generated_bytes": 14400
           },
-          "cumulative_original_B_per_hour": 1355.827375355941,
+          "cumulative_original_B_per_hour": 1653.8820885721784,
           "last_hour": {
-            "functions": 3,
-            "original_bytes": 530,
-            "generated_bytes": 530,
-            "original_B_per_hour": 530.0
+            "functions": 40,
+            "original_bytes": 3628,
+            "generated_bytes": 3628,
+            "original_B_per_hour": 3628.0
           },
           "previous_hour": {
-            "functions": 8,
-            "original_bytes": 1804,
-            "generated_bytes": 1804,
-            "original_B_per_hour": 1804.0
+            "functions": 10,
+            "original_bytes": 1658,
+            "generated_bytes": 1658,
+            "original_B_per_hour": 1658.0
           }
         },
         "peer_semantic": {
@@ -242,176 +242,209 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 18,
-            "original_bytes": 2176,
-            "generated_bytes": 2176
+            "functions": 69,
+            "original_bytes": 8950,
+            "generated_bytes": 8950
           },
           "since_epoch": {
-            "functions": 18,
-            "original_bytes": 2176,
-            "generated_bytes": 2176
+            "functions": 69,
+            "original_bytes": 8950,
+            "generated_bytes": 8950
           },
-          "cumulative_original_B_per_hour": 320.7523775575699,
+          "cumulative_original_B_per_hour": 1027.9336592167358,
           "last_hour": {
-            "functions": 16,
-            "original_bytes": 2014,
-            "generated_bytes": 2014,
-            "original_B_per_hour": 2014.0
+            "functions": 34,
+            "original_bytes": 5050,
+            "generated_bytes": 5050,
+            "original_B_per_hour": 5050.0
           },
           "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 17,
+            "original_bytes": 1724,
+            "generated_bytes": 1724,
+            "original_B_per_hour": 1724.0
           }
         },
         "integrated": {
           "retained": {
-            "functions": 3,
-            "original_bytes": 422,
-            "generated_bytes": 422
+            "functions": 57,
+            "original_bytes": 8294,
+            "generated_bytes": 8294
           },
           "since_epoch": {
-            "functions": 3,
-            "original_bytes": 422,
-            "generated_bytes": 422
+            "functions": 57,
+            "original_bytes": 8294,
+            "generated_bytes": 8294
           },
-          "cumulative_original_B_per_hour": 62.20473498588902,
+          "cumulative_original_B_per_hour": 952.5901418484477,
           "last_hour": {
-            "functions": 3,
-            "original_bytes": 422,
-            "generated_bytes": 422,
-            "original_B_per_hour": 422.0
+            "functions": 25,
+            "original_bytes": 4580,
+            "generated_bytes": 4580,
+            "original_B_per_hour": 4580.0
           },
           "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 29,
+            "original_bytes": 3292,
+            "generated_bytes": 3292,
+            "original_B_per_hour": 3292.0
           }
         },
         "integrated_exact": {
           "retained": {
-            "functions": 3,
-            "original_bytes": 422,
-            "generated_bytes": 422
+            "functions": 57,
+            "original_bytes": 8294,
+            "generated_bytes": 8294
           },
           "since_epoch": {
-            "functions": 3,
-            "original_bytes": 422,
-            "generated_bytes": 422
+            "functions": 57,
+            "original_bytes": 8294,
+            "generated_bytes": 8294
           },
-          "cumulative_original_B_per_hour": 62.20473498588902,
+          "cumulative_original_B_per_hour": 952.5901418484477,
           "last_hour": {
-            "functions": 3,
-            "original_bytes": 422,
-            "generated_bytes": 422,
-            "original_B_per_hour": 422.0
+            "functions": 25,
+            "original_bytes": 4580,
+            "generated_bytes": 4580,
+            "original_B_per_hour": 4580.0
           },
           "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 29,
+            "original_bytes": 3292,
+            "generated_bytes": 3292,
+            "original_B_per_hour": 3292.0
           }
         }
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 48,
-      "pending_integration_exact": 15,
+      "pending_peer_exact": 46,
+      "pending_integration_exact": 12,
       "exact_rounds_without_local_credit": 0
     }
   },
   "dashboard": {
     "schema_version": 2,
-    "as_of": "2026-10-22T09:24:07.673639+00:00",
-    "integrated_rom_sha256": "aa7279a16dce232ddba9f71083c4acc11ed57377ede007a51ccd648ab762d273",
+    "as_of": "2026-10-22T11:19:29.530741+00:00",
+    "integrated_rom_sha256": "6d2d4ddfb34b973e5e3672c363c2028b11a7fe2a6ed07e1c8439f58ca8a6baa3",
     "overview": {
-      "integrated_c_bytes": 174746,
-      "integrated_exact_bytes": 30154,
+      "integrated_c_bytes": 178378,
+      "integrated_exact_bytes": 38026,
       "mixed_bytes": 10520,
-      "pending_exact_bytes": 8776,
-      "pending_peer_exact_bytes": 1754,
-      "exact_available_bytes": 38930,
-      "tasks": 244,
+      "pending_exact_bytes": 6106,
+      "pending_peer_exact_bytes": 656,
+      "exact_available_bytes": 44132,
+      "tasks": 306,
       "states": {
-        "ready": 112,
-        "active": 2,
-        "frozen": 93,
-        "blocked": 37
+        "ready": 91,
+        "active": 5,
+        "frozen": 155,
+        "blocked": 55
       }
     },
     "performance": [
       {
         "id": "team",
-        "active_tasks": 2,
-        "exact_methods_last_hour": 3,
-        "exact_B_per_hour": 530.0,
-        "previous_exact_B_per_hour": 1804.0,
-        "peer_exact_B_per_hour": 2014.0,
-        "integrated_exact_B_per_hour": 422.0,
-        "median_seconds": 51.657277,
-        "p90_seconds": 181.756748
+        "active_tasks": 5,
+        "exact_methods_last_hour": 40,
+        "exact_B_per_hour": 3628.0,
+        "previous_exact_B_per_hour": 1658.0,
+        "peer_exact_B_per_hour": 5050.0,
+        "integrated_exact_B_per_hour": 4580.0,
+        "median_seconds": 33.130891500000004,
+        "p90_seconds": 60.386305
       },
       {
         "id": "main",
-        "active_tasks": 0,
-        "exact_methods_last_hour": 0,
-        "exact_B_per_hour": 0.0,
-        "previous_exact_B_per_hour": 796.0,
-        "peer_exact_B_per_hour": 2014.0,
-        "integrated_exact_B_per_hour": 260.0,
-        "median_seconds": 69.80119400000001,
-        "p90_seconds": 198.798022
+        "active_tasks": 1,
+        "exact_methods_last_hour": 6,
+        "exact_B_per_hour": 442.0,
+        "previous_exact_B_per_hour": 396.0,
+        "peer_exact_B_per_hour": 0.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 39.904608499999995,
+        "p90_seconds": 62.892172
       },
       {
         "id": "worker2",
         "active_tasks": 1,
-        "exact_methods_last_hour": 1,
-        "exact_B_per_hour": 138.0,
-        "previous_exact_B_per_hour": 800.0,
-        "peer_exact_B_per_hour": 0.0,
-        "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 63.605342,
-        "p90_seconds": 195.771592
+        "exact_methods_last_hour": 10,
+        "exact_B_per_hour": 1490.0,
+        "previous_exact_B_per_hour": 1178.0,
+        "peer_exact_B_per_hour": 4394.0,
+        "integrated_exact_B_per_hour": 4394.0,
+        "median_seconds": 43.752897,
+        "p90_seconds": 67.529147
       },
       {
         "id": "worker3",
         "active_tasks": 1,
-        "exact_methods_last_hour": 2,
-        "exact_B_per_hour": 392.0,
-        "previous_exact_B_per_hour": 208.0,
+        "exact_methods_last_hour": 7,
+        "exact_B_per_hour": 636.0,
+        "previous_exact_B_per_hour": 84.0,
         "peer_exact_B_per_hour": 0.0,
-        "integrated_exact_B_per_hour": 162.0,
-        "median_seconds": 42.143387000000004,
-        "p90_seconds": 94.627628
+        "integrated_exact_B_per_hour": 186.0,
+        "median_seconds": 51.329562,
+        "p90_seconds": 72.902772
+      },
+      {
+        "id": "sol_a",
+        "active_tasks": 1,
+        "exact_methods_last_hour": 5,
+        "exact_B_per_hour": 312.0,
+        "previous_exact_B_per_hour": 0.0,
+        "peer_exact_B_per_hour": 312.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 18.453468,
+        "p90_seconds": 34.299024
+      },
+      {
+        "id": "sol_b",
+        "active_tasks": 1,
+        "exact_methods_last_hour": 8,
+        "exact_B_per_hour": 508.0,
+        "previous_exact_B_per_hour": 0.0,
+        "peer_exact_B_per_hour": 188.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 19.656274,
+        "p90_seconds": 33.291665
+      },
+      {
+        "id": "sol_c",
+        "active_tasks": 0,
+        "exact_methods_last_hour": 4,
+        "exact_B_per_hour": 240.0,
+        "previous_exact_B_per_hour": 0.0,
+        "peer_exact_B_per_hour": 156.0,
+        "integrated_exact_B_per_hour": 0.0,
+        "median_seconds": 19.018038500000003,
+        "p90_seconds": 26.008702
       }
     ],
     "systems": [
       {
         "id": "battle",
         "title": "Battle",
-        "integrated_c_bytes": 68228,
-        "integrated_exact_bytes": 3310,
+        "integrated_c_bytes": 71146,
+        "integrated_exact_bytes": 9576,
         "mixed_bytes": 268,
-        "pending_exact_bytes": 5604,
-        "pending_peer_exact_bytes": 1168,
-        "exact_available_bytes": 8914,
-        "tasks": 104,
+        "pending_exact_bytes": 2220,
+        "pending_peer_exact_bytes": 314,
+        "exact_available_bytes": 11796,
+        "tasks": 130,
         "states": {
-          "ready": 35,
-          "active": 0,
-          "frozen": 60,
-          "blocked": 9
+          "ready": 32,
+          "active": 3,
+          "frozen": 83,
+          "blocked": 12
         },
         "modules": [
           {
             "id": "ai-ability-selection",
             "system": "battle",
             "title": "AI ability selection",
-            "integrated_c_bytes": 854,
-            "integrated_exact_bytes": 124,
+            "integrated_c_bytes": 1042,
+            "integrated_exact_bytes": 312,
             "mixed_bytes": 0,
             "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
@@ -423,16 +456,16 @@
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 124
+            "exact_available_bytes": 312
           },
           {
             "id": "action-calculation",
             "system": "battle",
             "title": "Action calculation",
-            "integrated_c_bytes": 904,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 1218,
+            "integrated_exact_bytes": 1006,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 724,
+            "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
@@ -442,7 +475,7 @@
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 724
+            "exact_available_bytes": 1006
           },
           {
             "id": "action-preparation-and-continuation",
@@ -467,8 +500,8 @@
             "id": "action-record-updates",
             "system": "battle",
             "title": "Action record updates",
-            "integrated_c_bytes": 464,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 552,
+            "integrated_exact_bytes": 88,
             "mixed_bytes": 0,
             "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
@@ -480,14 +513,14 @@
               "blocked": 2
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 88
           },
           {
             "id": "action-result-consumption",
             "system": "battle",
             "title": "Action result consumption",
-            "integrated_c_bytes": 3912,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 4994,
+            "integrated_exact_bytes": 1082,
             "mixed_bytes": 0,
             "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
@@ -499,7 +532,7 @@
               "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 1082
           },
           {
             "id": "battle-activation",
@@ -524,8 +557,8 @@
             "id": "battle-phase-control",
             "system": "battle",
             "title": "Battle phase control",
-            "integrated_c_bytes": 22152,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 22694,
+            "integrated_exact_bytes": 542,
             "mixed_bytes": 84,
             "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
@@ -537,7 +570,7 @@
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 542
           },
           {
             "id": "direction-selection",
@@ -562,11 +595,11 @@
             "id": "effect-application",
             "system": "battle",
             "title": "Effect application",
-            "integrated_c_bytes": 6072,
-            "integrated_exact_bytes": 220,
+            "integrated_c_bytes": 6120,
+            "integrated_exact_bytes": 2110,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 2678,
-            "pending_peer_exact_bytes": 598,
+            "pending_exact_bytes": 788,
+            "pending_peer_exact_bytes": 0,
             "tasks": 37,
             "states": {
               "ready": 0,
@@ -581,11 +614,11 @@
             "id": "effect-predicates-and-values",
             "system": "battle",
             "title": "Effect predicates and values",
-            "integrated_c_bytes": 2924,
-            "integrated_exact_bytes": 894,
+            "integrated_c_bytes": 2978,
+            "integrated_exact_bytes": 1516,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1380,
-            "pending_peer_exact_bytes": 286,
+            "pending_exact_bytes": 758,
+            "pending_peer_exact_bytes": 0,
             "tasks": 16,
             "states": {
               "ready": 0,
@@ -619,11 +652,11 @@
             "id": "effect-rates-and-unit-normalization",
             "system": "battle",
             "title": "Effect rates and unit normalization",
-            "integrated_c_bytes": 1680,
-            "integrated_exact_bytes": 816,
+            "integrated_c_bytes": 1718,
+            "integrated_exact_bytes": 1100,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 284,
-            "pending_peer_exact_bytes": 284,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
               "ready": 0,
@@ -657,8 +690,8 @@
             "id": "record-interaction-and-selection",
             "system": "battle",
             "title": "Record interaction and selection",
-            "integrated_c_bytes": 6888,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 7256,
+            "integrated_exact_bytes": 368,
             "mixed_bytes": 160,
             "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
@@ -670,7 +703,7 @@
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 368
           },
           {
             "id": "record-progression",
@@ -733,8 +766,8 @@
             "id": "target-resolution",
             "system": "battle",
             "title": "Target resolution",
-            "integrated_c_bytes": 4868,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 5064,
+            "integrated_exact_bytes": 196,
             "mixed_bytes": 0,
             "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
@@ -746,7 +779,7 @@
               "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 196
           },
           {
             "id": "unit-node-derived-flags",
@@ -774,34 +807,34 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 538,
-            "pending_peer_exact_bytes": 0,
-            "tasks": 40,
+            "pending_exact_bytes": 674,
+            "pending_peer_exact_bytes": 314,
+            "tasks": 66,
             "states": {
-              "ready": 35,
-              "active": 0,
-              "frozen": 3,
-              "blocked": 2
+              "ready": 32,
+              "active": 3,
+              "frozen": 26,
+              "blocked": 5
             },
-            "last_hour_exact_B_per_hour": 138.0,
-            "exact_available_bytes": 538
+            "last_hour_exact_B_per_hour": 894.0,
+            "exact_available_bytes": 674
           }
         ]
       },
       {
         "id": "missions",
         "title": "Missions & story",
-        "integrated_c_bytes": 18660,
-        "integrated_exact_bytes": 400,
+        "integrated_c_bytes": 18722,
+        "integrated_exact_bytes": 770,
         "mixed_bytes": 9996,
-        "pending_exact_bytes": 1166,
-        "pending_peer_exact_bytes": 370,
-        "exact_available_bytes": 1566,
-        "tasks": 31,
+        "pending_exact_bytes": 1500,
+        "pending_peer_exact_bytes": 0,
+        "exact_available_bytes": 2270,
+        "tasks": 38,
         "states": {
-          "ready": 16,
-          "active": 0,
-          "frozen": 14,
+          "ready": 12,
+          "active": 1,
+          "frozen": 24,
           "blocked": 1
         },
         "modules": [
@@ -828,11 +861,11 @@
             "id": "mission-queue-and-reward-selection",
             "system": "missions",
             "title": "Mission queue and reward selection",
-            "integrated_c_bytes": 3108,
-            "integrated_exact_bytes": 260,
+            "integrated_c_bytes": 3170,
+            "integrated_exact_bytes": 630,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 370,
-            "pending_peer_exact_bytes": 370,
+            "pending_exact_bytes": 0,
+            "pending_peer_exact_bytes": 0,
             "tasks": 5,
             "states": {
               "ready": 0,
@@ -907,35 +940,35 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 796,
+            "pending_exact_bytes": 1500,
             "pending_peer_exact_bytes": 0,
-            "tasks": 24,
+            "tasks": 31,
             "states": {
-              "ready": 16,
-              "active": 0,
-              "frozen": 8,
+              "ready": 12,
+              "active": 1,
+              "frozen": 18,
               "blocked": 0
             },
-            "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 796
+            "last_hour_exact_B_per_hour": 308.0,
+            "exact_available_bytes": 1500
           }
         ]
       },
       {
         "id": "jobs",
         "title": "Jobs & unit model",
-        "integrated_c_bytes": 5466,
-        "integrated_exact_bytes": 242,
+        "integrated_c_bytes": 6118,
+        "integrated_exact_bytes": 1478,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1226,
-        "pending_peer_exact_bytes": 216,
-        "exact_available_bytes": 1468,
-        "tasks": 68,
+        "pending_exact_bytes": 1128,
+        "pending_peer_exact_bytes": 200,
+        "exact_available_bytes": 2606,
+        "tasks": 87,
         "states": {
-          "ready": 51,
-          "active": 1,
-          "frozen": 11,
-          "blocked": 5
+          "ready": 40,
+          "active": 0,
+          "frozen": 31,
+          "blocked": 16
         },
         "modules": [
           {
@@ -961,10 +994,10 @@
             "id": "job-state-updates",
             "system": "jobs",
             "title": "Job state updates",
-            "integrated_c_bytes": 264,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 304,
+            "integrated_exact_bytes": 240,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 240,
+            "pending_exact_bytes": 0,
             "pending_peer_exact_bytes": 0,
             "tasks": 1,
             "states": {
@@ -999,11 +1032,11 @@
             "id": "shared-unit-model",
             "system": "jobs",
             "title": "Shared unit model",
-            "integrated_c_bytes": 1342,
-            "integrated_exact_bytes": 242,
+            "integrated_c_bytes": 1954,
+            "integrated_exact_bytes": 1238,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 586,
-            "pending_peer_exact_bytes": 216,
+            "pending_exact_bytes": 200,
+            "pending_peer_exact_bytes": 0,
             "tasks": 9,
             "states": {
               "ready": 0,
@@ -1012,7 +1045,7 @@
               "blocked": 2
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 828
+            "exact_available_bytes": 1438
           },
           {
             "id": "unassigned-jobs",
@@ -1021,17 +1054,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 400,
-            "pending_peer_exact_bytes": 0,
-            "tasks": 56,
+            "pending_exact_bytes": 928,
+            "pending_peer_exact_bytes": 200,
+            "tasks": 75,
             "states": {
-              "ready": 51,
-              "active": 1,
-              "frozen": 2,
-              "blocked": 2
+              "ready": 40,
+              "active": 0,
+              "frozen": 22,
+              "blocked": 13
             },
-            "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 400
+            "last_hour_exact_B_per_hour": 1948.0,
+            "exact_available_bytes": 928
           }
         ]
       },
@@ -1041,15 +1074,15 @@
         "integrated_c_bytes": 14200,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 516,
-        "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 516,
-        "tasks": 25,
+        "pending_exact_bytes": 926,
+        "pending_peer_exact_bytes": 142,
+        "exact_available_bytes": 926,
+        "tasks": 31,
         "states": {
-          "ready": 2,
+          "ready": 1,
           "active": 0,
-          "frozen": 4,
-          "blocked": 19
+          "frozen": 9,
+          "blocked": 21
         },
         "modules": [
           {
@@ -1116,17 +1149,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 516,
-            "pending_peer_exact_bytes": 0,
-            "tasks": 19,
+            "pending_exact_bytes": 926,
+            "pending_peer_exact_bytes": 142,
+            "tasks": 25,
             "states": {
-              "ready": 2,
+              "ready": 1,
               "active": 0,
-              "frozen": 2,
-              "blocked": 15
+              "frozen": 7,
+              "blocked": 17
             },
-            "last_hour_exact_B_per_hour": 308.0,
-            "exact_available_bytes": 516
+            "last_hour_exact_B_per_hour": 410.0,
+            "exact_available_bytes": 926
           }
         ]
       },
@@ -1136,15 +1169,15 @@
         "integrated_c_bytes": 7536,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 264,
+        "pending_exact_bytes": 332,
         "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 264,
-        "tasks": 16,
+        "exact_available_bytes": 332,
+        "tasks": 20,
         "states": {
-          "ready": 8,
+          "ready": 6,
           "active": 1,
-          "frozen": 4,
-          "blocked": 3
+          "frozen": 8,
+          "blocked": 5
         },
         "modules": [
           {
@@ -1192,17 +1225,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 84,
+            "pending_exact_bytes": 152,
             "pending_peer_exact_bytes": 0,
-            "tasks": 9,
+            "tasks": 13,
             "states": {
-              "ready": 8,
+              "ready": 6,
               "active": 1,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 4,
+              "blocked": 2
             },
-            "last_hour_exact_B_per_hour": 84.0,
-            "exact_available_bytes": 84
+            "last_hour_exact_B_per_hour": 68.0,
+            "exact_available_bytes": 152
           }
         ]
       },
@@ -1378,30 +1411,90 @@
         ]
       }
     ],
+    "asm_rewrite": {
+      "status": "known_catalogue",
+      "basis": "original_asm_spans",
+      "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c",
+      "rewritten_original_asm_bytes": 44132,
+      "known_original_asm_bytes": 1158864,
+      "integrated_original_asm_bytes": 38026,
+      "denominator_id": "b1ec3182f6dfc312686bc222f96e6d30f41cbe66062c505f1654b11e56d61b42",
+      "total_asm_bytes": 1158864,
+      "matched_asm_bytes": 44132,
+      "integrated_matched_asm_bytes": 38026,
+      "exact_bytes_outside_catalogue": 0,
+      "percent": 3.808212180204062,
+      "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue."
+    },
+    "c_match": {
+      "status": "known_catalogue",
+      "basis": "original_asm_spans",
+      "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c",
+      "rewritten_original_asm_bytes": 44132,
+      "known_original_asm_bytes": 1158864,
+      "integrated_original_asm_bytes": 38026,
+      "denominator_id": "b1ec3182f6dfc312686bc222f96e6d30f41cbe66062c505f1654b11e56d61b42",
+      "total_asm_bytes": 1158864,
+      "matched_asm_bytes": 44132,
+      "integrated_matched_asm_bytes": 38026,
+      "exact_bytes_outside_catalogue": 0,
+      "percent": 3.808212180204062,
+      "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue."
+    },
     "classification": {
       "mapped": 96,
-      "provisional": 148,
+      "provisional": 210,
       "unmapped": 0
     },
     "unlocated_exact_records": 0,
     "windows": {
       "last_hour": {
-        "start_exclusive": "2026-10-22T08:24:07.673639+00:00",
-        "end_inclusive": "2026-10-22T09:24:07.673639+00:00",
+        "start_exclusive": "2026-10-22T10:19:29.530741+00:00",
+        "end_inclusive": "2026-10-22T11:19:29.530741+00:00",
         "observed_seconds": 3600.0,
         "partial": false
       },
       "previous_hour": {
-        "start_exclusive": "2026-10-22T07:24:07.673639+00:00",
-        "end_inclusive": "2026-10-22T08:24:07.673639+00:00",
+        "start_exclusive": "2026-10-22T09:19:29.530741+00:00",
+        "end_inclusive": "2026-10-22T10:19:29.530741+00:00",
         "observed_seconds": 3600.0,
         "partial": false
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 48,
-      "pending_integration_exact": 15,
+      "pending_peer_exact": 46,
+      "pending_integration_exact": 12,
       "exact_rounds_without_local_credit": 0
     }
+  },
+  "c_match": {
+    "status": "known_catalogue",
+    "basis": "original_asm_spans",
+    "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c",
+    "rewritten_original_asm_bytes": 44132,
+    "known_original_asm_bytes": 1158864,
+    "integrated_original_asm_bytes": 38026,
+    "denominator_id": "b1ec3182f6dfc312686bc222f96e6d30f41cbe66062c505f1654b11e56d61b42",
+    "total_asm_bytes": 1158864,
+    "matched_asm_bytes": 44132,
+    "integrated_matched_asm_bytes": 38026,
+    "exact_bytes_outside_catalogue": 0,
+    "percent": 3.808212180204062,
+    "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue."
+  },
+  "asm_rewrite": {
+    "status": "known_catalogue",
+    "basis": "original_asm_spans",
+    "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c",
+    "rewritten_original_asm_bytes": 44132,
+    "known_original_asm_bytes": 1158864,
+    "integrated_original_asm_bytes": 38026,
+    "denominator_id": "b1ec3182f6dfc312686bc222f96e6d30f41cbe66062c505f1654b11e56d61b42",
+    "total_asm_bytes": 1158864,
+    "matched_asm_bytes": 44132,
+    "integrated_matched_asm_bytes": 38026,
+    "exact_bytes_outside_catalogue": 0,
+    "percent": 3.808212180204062,
+    "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue."
   }
 }

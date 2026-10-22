@@ -219,8 +219,8 @@
         "id": "ai-ability-selection",
         "system": "battle",
         "title": "AI ability selection",
-        "integrated_c_bytes": 854,
-        "integrated_exact_bytes": 124,
+        "integrated_c_bytes": 1042,
+        "integrated_exact_bytes": 312,
         "mixed_bytes": 0,
         "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
@@ -232,7 +232,7 @@
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 124
+        "exact_available_bytes": 312
       }
     },
     {
@@ -301,7 +301,7 @@
               "original_bytes": 724,
               "generated_bytes": 724
             },
-            "cumulative_original_B_per_hour": 106.72091973882381,
+            "cumulative_original_B_per_hour": 83.15351611987897,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -342,21 +342,21 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 83.15351611987897,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724,
+              "original_B_per_hour": 724.0
             },
             "previous_hour": {
               "functions": 0,
@@ -367,21 +367,21 @@
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 83.15351611987897,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724,
+              "original_B_per_hour": 724.0
             },
             "previous_hour": {
               "functions": 0,
@@ -392,21 +392,21 @@
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 83.15351611987897,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724,
+              "original_B_per_hour": 724.0
             },
             "previous_hour": {
               "functions": 0,
@@ -421,10 +421,10 @@
         "id": "action-calculation",
         "system": "battle",
         "title": "Action calculation",
-        "integrated_c_bytes": 904,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 1218,
+        "integrated_exact_bytes": 1006,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 724,
+        "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
@@ -434,7 +434,7 @@
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 724
+        "exact_available_bytes": 1006
       }
     },
     {
@@ -825,8 +825,8 @@
         "id": "action-record-updates",
         "system": "battle",
         "title": "Action record updates",
-        "integrated_c_bytes": 464,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 552,
+        "integrated_exact_bytes": 88,
         "mixed_bytes": 0,
         "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
@@ -838,7 +838,7 @@
           "blocked": 2
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 88
       }
     },
     {
@@ -1027,8 +1027,8 @@
         "id": "action-result-consumption",
         "system": "battle",
         "title": "Action result consumption",
-        "integrated_c_bytes": 3912,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 4994,
+        "integrated_exact_bytes": 1082,
         "mixed_bytes": 0,
         "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
@@ -1040,7 +1040,7 @@
           "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 1082
       }
     },
     {
@@ -1431,8 +1431,8 @@
         "id": "battle-phase-control",
         "system": "battle",
         "title": "Battle phase control",
-        "integrated_c_bytes": 22152,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 22694,
+        "integrated_exact_bytes": 542,
         "mixed_bytes": 84,
         "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
@@ -1444,7 +1444,7 @@
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 542
       }
     },
     {
@@ -1715,7 +1715,7 @@
               "original_bytes": 2840,
               "generated_bytes": 2840
             },
-            "cumulative_original_B_per_hour": 418.6290221799166,
+            "cumulative_original_B_per_hour": 326.18230080173515,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -1756,77 +1756,77 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 7,
-              "original_bytes": 760,
-              "generated_bytes": 760
+              "functions": 20,
+              "original_bytes": 2052,
+              "generated_bytes": 2052
             },
             "since_epoch": {
-              "functions": 7,
-              "original_bytes": 760,
-              "generated_bytes": 760
+              "functions": 20,
+              "original_bytes": 2052,
+              "generated_bytes": 2052
             },
-            "cumulative_original_B_per_hour": 112.02748480871007,
+            "cumulative_original_B_per_hour": 235.67819762153542,
             "last_hour": {
-              "functions": 5,
-              "original_bytes": 598,
-              "generated_bytes": 598,
-              "original_B_per_hour": 598.0
+              "functions": 2,
+              "original_bytes": 314,
+              "generated_bytes": 314,
+              "original_B_per_hour": 314.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 11,
+              "original_bytes": 978,
+              "generated_bytes": 978,
+              "original_B_per_hour": 978.0
             }
           },
           "integrated": {
             "retained": {
-              "functions": 2,
-              "original_bytes": 162,
-              "generated_bytes": 162
+              "functions": 20,
+              "original_bytes": 2052,
+              "generated_bytes": 2052
             },
             "since_epoch": {
-              "functions": 2,
-              "original_bytes": 162,
-              "generated_bytes": 162
+              "functions": 20,
+              "original_bytes": 2052,
+              "generated_bytes": 2052
             },
-            "cumulative_original_B_per_hour": 23.8795428144882,
+            "cumulative_original_B_per_hour": 235.67819762153542,
             "last_hour": {
               "functions": 2,
-              "original_bytes": 162,
-              "generated_bytes": 162,
-              "original_B_per_hour": 162.0
+              "original_bytes": 314,
+              "generated_bytes": 314,
+              "original_B_per_hour": 314.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 16,
+              "original_bytes": 1576,
+              "generated_bytes": 1576,
+              "original_B_per_hour": 1576.0
             }
           },
           "integrated_exact": {
             "retained": {
-              "functions": 2,
-              "original_bytes": 162,
-              "generated_bytes": 162
+              "functions": 20,
+              "original_bytes": 2052,
+              "generated_bytes": 2052
             },
             "since_epoch": {
-              "functions": 2,
-              "original_bytes": 162,
-              "generated_bytes": 162
+              "functions": 20,
+              "original_bytes": 2052,
+              "generated_bytes": 2052
             },
-            "cumulative_original_B_per_hour": 23.8795428144882,
+            "cumulative_original_B_per_hour": 235.67819762153542,
             "last_hour": {
               "functions": 2,
-              "original_bytes": 162,
-              "generated_bytes": 162,
-              "original_B_per_hour": 162.0
+              "original_bytes": 314,
+              "generated_bytes": 314,
+              "original_B_per_hour": 314.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 16,
+              "original_bytes": 1576,
+              "generated_bytes": 1576,
+              "original_B_per_hour": 1576.0
             }
           }
         }
@@ -1835,11 +1835,11 @@
         "id": "effect-application",
         "system": "battle",
         "title": "Effect application",
-        "integrated_c_bytes": 6072,
-        "integrated_exact_bytes": 220,
+        "integrated_c_bytes": 6120,
+        "integrated_exact_bytes": 2110,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 2678,
-        "pending_peer_exact_bytes": 598,
+        "pending_exact_bytes": 788,
+        "pending_peer_exact_bytes": 0,
         "tasks": 37,
         "states": {
           "ready": 0,
@@ -1917,7 +1917,7 @@
               "original_bytes": 1380,
               "generated_bytes": 1380
             },
-            "cumulative_original_B_per_hour": 203.41832767897355,
+            "cumulative_original_B_per_hour": 158.4970334881671,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -1958,77 +1958,77 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 4,
-              "original_bytes": 286,
-              "generated_bytes": 286
+              "functions": 8,
+              "original_bytes": 622,
+              "generated_bytes": 622
             },
             "since_epoch": {
-              "functions": 4,
-              "original_bytes": 286,
-              "generated_bytes": 286
+              "functions": 8,
+              "original_bytes": 622,
+              "generated_bytes": 622
             },
-            "cumulative_original_B_per_hour": 42.157711388540896,
+            "cumulative_original_B_per_hour": 71.4385179924927,
             "last_hour": {
-              "functions": 4,
-              "original_bytes": 286,
-              "generated_bytes": 286,
-              "original_B_per_hour": 286.0
-            },
-            "previous_hour": {
               "functions": 0,
               "original_bytes": 0,
               "generated_bytes": 0,
               "original_B_per_hour": 0.0
+            },
+            "previous_hour": {
+              "functions": 4,
+              "original_bytes": 336,
+              "generated_bytes": 336,
+              "original_B_per_hour": 336.0
             }
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 8,
+              "original_bytes": 622,
+              "generated_bytes": 622
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 8,
+              "original_bytes": 622,
+              "generated_bytes": 622
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 71.4385179924927,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 3,
+              "original_bytes": 186,
+              "generated_bytes": 186,
+              "original_B_per_hour": 186.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 5,
+              "original_bytes": 436,
+              "generated_bytes": 436,
+              "original_B_per_hour": 436.0
             }
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 8,
+              "original_bytes": 622,
+              "generated_bytes": 622
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 8,
+              "original_bytes": 622,
+              "generated_bytes": 622
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 71.4385179924927,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 3,
+              "original_bytes": 186,
+              "generated_bytes": 186,
+              "original_B_per_hour": 186.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 5,
+              "original_bytes": 436,
+              "generated_bytes": 436,
+              "original_B_per_hour": 436.0
             }
           }
         }
@@ -2037,11 +2037,11 @@
         "id": "effect-predicates-and-values",
         "system": "battle",
         "title": "Effect predicates and values",
-        "integrated_c_bytes": 2924,
-        "integrated_exact_bytes": 894,
+        "integrated_c_bytes": 2978,
+        "integrated_exact_bytes": 1516,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1380,
-        "pending_peer_exact_bytes": 286,
+        "pending_exact_bytes": 758,
+        "pending_peer_exact_bytes": 0,
         "tasks": 16,
         "states": {
           "ready": 0,
@@ -2321,7 +2321,7 @@
               "original_bytes": 284,
               "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 41.86290221799166,
+            "cumulative_original_B_per_hour": 32.61823008017352,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -2371,12 +2371,12 @@
               "original_bytes": 284,
               "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 41.86290221799166,
+            "cumulative_original_B_per_hour": 32.61823008017352,
             "last_hour": {
-              "functions": 2,
-              "original_bytes": 284,
-              "generated_bytes": 284,
-              "original_B_per_hour": 284.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             },
             "previous_hour": {
               "functions": 0,
@@ -2387,16 +2387,16 @@
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 32.61823008017352,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -2404,24 +2404,24 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284,
+              "original_B_per_hour": 284.0
             }
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 32.61823008017352,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -2429,10 +2429,10 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284,
+              "original_B_per_hour": 284.0
             }
           }
         }
@@ -2441,11 +2441,11 @@
         "id": "effect-rates-and-unit-normalization",
         "system": "battle",
         "title": "Effect rates and unit normalization",
-        "integrated_c_bytes": 1680,
-        "integrated_exact_bytes": 816,
+        "integrated_c_bytes": 1718,
+        "integrated_exact_bytes": 1100,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 284,
-        "pending_peer_exact_bytes": 284,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
           "ready": 0,
@@ -2845,8 +2845,8 @@
         "id": "record-interaction-and-selection",
         "system": "battle",
         "title": "Record interaction and selection",
-        "integrated_c_bytes": 6888,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 7256,
+        "integrated_exact_bytes": 368,
         "mixed_bytes": 160,
         "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
@@ -2858,7 +2858,7 @@
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 368
       }
     },
     {
@@ -3653,8 +3653,8 @@
         "id": "target-resolution",
         "system": "battle",
         "title": "Target resolution",
-        "integrated_c_bytes": 4868,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 5064,
+        "integrated_exact_bytes": 196,
         "mixed_bytes": 0,
         "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
@@ -3666,7 +3666,7 @@
           "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 196
       }
     },
     {
@@ -3937,7 +3937,7 @@
               "original_bytes": 630,
               "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 92.86488872300967,
+            "cumulative_original_B_per_hour": 72.3573413750328,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -3987,12 +3987,12 @@
               "original_bytes": 630,
               "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 92.86488872300967,
+            "cumulative_original_B_per_hour": 72.3573413750328,
             "last_hour": {
-              "functions": 2,
-              "original_bytes": 630,
-              "generated_bytes": 630,
-              "original_B_per_hour": 630.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             },
             "previous_hour": {
               "functions": 0,
@@ -4003,52 +4003,52 @@
           },
           "integrated": {
             "retained": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630
             },
             "since_epoch": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 38.325192171400815,
+            "cumulative_original_B_per_hour": 72.3573413750328,
             "last_hour": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260,
-              "original_B_per_hour": 260.0
-            },
-            "previous_hour": {
               "functions": 0,
               "original_bytes": 0,
               "generated_bytes": 0,
               "original_B_per_hour": 0.0
+            },
+            "previous_hour": {
+              "functions": 1,
+              "original_bytes": 370,
+              "generated_bytes": 370,
+              "original_B_per_hour": 370.0
             }
           },
           "integrated_exact": {
             "retained": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630
             },
             "since_epoch": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 38.325192171400815,
+            "cumulative_original_B_per_hour": 72.3573413750328,
             "last_hour": {
-              "functions": 1,
-              "original_bytes": 260,
-              "generated_bytes": 260,
-              "original_B_per_hour": 260.0
-            },
-            "previous_hour": {
               "functions": 0,
               "original_bytes": 0,
               "generated_bytes": 0,
               "original_B_per_hour": 0.0
+            },
+            "previous_hour": {
+              "functions": 1,
+              "original_bytes": 370,
+              "generated_bytes": 370,
+              "original_B_per_hour": 370.0
             }
           }
         }
@@ -4057,11 +4057,11 @@
         "id": "mission-queue-and-reward-selection",
         "system": "missions",
         "title": "Mission queue and reward selection",
-        "integrated_c_bytes": 3108,
-        "integrated_exact_bytes": 260,
+        "integrated_c_bytes": 3170,
+        "integrated_exact_bytes": 630,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 370,
-        "pending_peer_exact_bytes": 370,
+        "pending_exact_bytes": 0,
+        "pending_peer_exact_bytes": 0,
         "tasks": 5,
         "states": {
           "ready": 0,
@@ -4745,7 +4745,7 @@
               "original_bytes": 240,
               "generated_bytes": 240
             },
-            "cumulative_original_B_per_hour": 35.37710046590844,
+            "cumulative_original_B_per_hour": 27.564701476202973,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -4786,16 +4786,16 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 27.564701476202973,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -4803,24 +4803,24 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240,
+              "original_B_per_hour": 240.0
             }
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 27.564701476202973,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -4828,24 +4828,24 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240,
+              "original_B_per_hour": 240.0
             }
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 27.564701476202973,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -4853,10 +4853,10 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240,
+              "original_B_per_hour": 240.0
             }
           }
         }
@@ -4865,10 +4865,10 @@
         "id": "job-state-updates",
         "system": "jobs",
         "title": "Job state updates",
-        "integrated_c_bytes": 264,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 304,
+        "integrated_exact_bytes": 240,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 240,
+        "pending_exact_bytes": 0,
         "pending_peer_exact_bytes": 0,
         "tasks": 1,
         "states": {
@@ -5149,7 +5149,7 @@
               "original_bytes": 586,
               "generated_bytes": 586
             },
-            "cumulative_original_B_per_hour": 86.37908697092645,
+            "cumulative_original_B_per_hour": 67.30381277106225,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -5190,41 +5190,41 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 3,
-              "original_bytes": 216,
-              "generated_bytes": 216
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386
             },
             "since_epoch": {
-              "functions": 3,
-              "original_bytes": 216,
-              "generated_bytes": 216
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386
             },
-            "cumulative_original_B_per_hour": 31.8393904193176,
+            "cumulative_original_B_per_hour": 44.33322820755978,
             "last_hour": {
-              "functions": 3,
-              "original_bytes": 216,
-              "generated_bytes": 216,
-              "original_B_per_hour": 216.0
-            },
-            "previous_hour": {
               "functions": 0,
               "original_bytes": 0,
               "generated_bytes": 0,
               "original_B_per_hour": 0.0
+            },
+            "previous_hour": {
+              "functions": 1,
+              "original_bytes": 170,
+              "generated_bytes": 170,
+              "original_B_per_hour": 170.0
             }
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 44.33322820755978,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -5232,24 +5232,24 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386,
+              "original_B_per_hour": 386.0
             }
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 44.33322820755978,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -5257,10 +5257,10 @@
               "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 4,
+              "original_bytes": 386,
+              "generated_bytes": 386,
+              "original_B_per_hour": 386.0
             }
           }
         }
@@ -5269,11 +5269,11 @@
         "id": "shared-unit-model",
         "system": "jobs",
         "title": "Shared unit model",
-        "integrated_c_bytes": 1342,
-        "integrated_exact_bytes": 242,
+        "integrated_c_bytes": 1954,
+        "integrated_exact_bytes": 1238,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 586,
-        "pending_peer_exact_bytes": 216,
+        "pending_exact_bytes": 200,
+        "pending_peer_exact_bytes": 0,
         "tasks": 9,
         "states": {
           "ready": 0,
@@ -5282,7 +5282,7 @@
           "blocked": 2
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 828
+        "exact_available_bytes": 1438
       }
     },
     {
@@ -6159,7 +6159,7 @@
               "original_bytes": 180,
               "generated_bytes": 180
             },
-            "cumulative_original_B_per_hour": 26.532825349431334,
+            "cumulative_original_B_per_hour": 20.673526107152227,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -8132,6 +8132,6 @@
     "Shared routines are assigned once for accounting; callers do not duplicate their bytes.",
     "Source paths, function addresses and implementation artifacts are excluded."
   ],
-  "activity_as_of": "2026-10-22T09:24:07.673639+00:00",
+  "activity_as_of": "2026-10-22T11:19:29.530741+00:00",
   "activity_data": "data/workflow.json"
 }
