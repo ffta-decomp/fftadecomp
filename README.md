@@ -41,10 +41,11 @@ Since the previous snapshot, six mission-policy methods add 3,556 integrated C b
 
 The latest method took 13,022.564 seconds from the original work start through verified integration: **390.34 accepted/integrated C B/hour and zero new exact B/hour**. Failed attempts, source repair, profile transition and handoff gaps remain included. The earlier four-method exact milestone delivered 514.03 exact B/hour over its own 8,012.002-second pipeline; these are distinct cohorts and denominators. No >5x workflow speedup is claimed.
 
-Source-structure matching continues in two disjoint implementation lanes under fixed O2 for new candidates. Older accepted images retain their recorded provenance and are not rebuilt merely to change the profile. Pending candidates are excluded from integrated totals.
+Source-structure matching continues in three disjoint implementation lanes under fixed O2 for new candidates. Older accepted images retain their recorded provenance and are not rebuilt merely to change the profile. Pending candidates are excluded from integrated totals.
 
 ## Data
 
+- [Automatic task activity and delivery speed](data/workflow.json) — hourly aggregates, stable system/submodule IDs, separate local/peer/integrated gates
 - [Progress summary](data/progress.json)
 - [Submodule implementation progress](data/submodules.json) — 40 disjoint groups with C/mixed counts, verified scope and remaining work
 - [Resource address table — CSV](data/resource-addresses.csv)
@@ -62,6 +63,8 @@ Published recovery content consists of aggregate statistics, system inventory co
 
 The original documentation and published metadata in this repository are available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). This license does not grant rights to the game or its assets.
 
-## Daily updates
+## Automatic activity updates
 
-Update the verified files in `data/` and the README snapshot together. Pushes deploy the dashboard automatically; a daily scheduled deployment republishes the committed snapshot without changing its date. No private repository is connected. Reference categories follow the [FFSKY FFTA guide](http://ffta.ffsky.cn/); ROM record counts are not playable-content counts.
+The local task tool exports and publishes aggregate activity every hour without an LLM. `data/workflow.json` contains task-state counts, delivery rates, iteration latency and system/submodule mappings. `data/progress.json.live_recovery` links that activity; `data/submodules.json` attaches it by stable submodule ID. Provisional system-only classifications remain explicitly unassigned to a submodule. Original task records, code, evidence paths, credentials and conversations are excluded.
+
+Publication preserves the independently dated verified ROM totals; local exact results are not added to integrated counts. Backfills use actual acceptance time. Zero means no registered credit, not proof that no unregistered result exists. Pushes deploy automatically; a daily deployment alone does not advance either data timestamp. No private repository is connected to GitHub Actions. Reference categories follow the [FFSKY FFTA guide](http://ffta.ffsky.cn/); ROM record counts are not playable-content counts.

@@ -151,5 +151,181 @@
     "integration_elapsed_seconds": 887.010928,
     "integration_exact_bytes_per_hour": 4643.009313634972,
     "whole_workflow_speedup": null
+  },
+  "live_recovery": {
+    "as_of": "2026-10-22T05:08:42.462966+00:00",
+    "data": "data/workflow.json",
+    "totals": {
+      "tasks": 137,
+      "original_backlog_span_bytes": 73166,
+      "states": {
+        "ready": 94,
+        "active": 3,
+        "frozen": 38,
+        "blocked": 2
+      },
+      "classification": {
+        "mapped": 96,
+        "provisional": 41,
+        "unmapped": 0
+      },
+      "gates": {
+        "local_semantic": {
+          "retained": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "since_epoch": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "cumulative_original_B_per_hour": 0.0,
+          "last_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          },
+          "previous_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          }
+        },
+        "local_exact": {
+          "retained": {
+            "functions": 28,
+            "original_bytes": 2898,
+            "generated_bytes": 2898
+          },
+          "since_epoch": {
+            "functions": 28,
+            "original_bytes": 2898,
+            "generated_bytes": 2898
+          },
+          "cumulative_original_B_per_hour": 1146.7932953021063,
+          "last_hour": {
+            "functions": 24,
+            "original_bytes": 1818,
+            "generated_bytes": 1818,
+            "original_B_per_hour": 1818.0
+          },
+          "previous_hour": {
+            "functions": 3,
+            "original_bytes": 710,
+            "generated_bytes": 710,
+            "original_B_per_hour": 710.0
+          }
+        },
+        "peer_semantic": {
+          "retained": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "since_epoch": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "cumulative_original_B_per_hour": 0.0,
+          "last_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          },
+          "previous_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          }
+        },
+        "peer_exact": {
+          "retained": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "since_epoch": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "cumulative_original_B_per_hour": 0.0,
+          "last_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          },
+          "previous_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          }
+        },
+        "integrated": {
+          "retained": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "since_epoch": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "cumulative_original_B_per_hour": 0.0,
+          "last_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          },
+          "previous_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          }
+        },
+        "integrated_exact": {
+          "retained": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "since_epoch": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0
+          },
+          "cumulative_original_B_per_hour": 0.0,
+          "last_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          },
+          "previous_hour": {
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
+          }
+        }
+      }
+    },
+    "recording_gaps": {
+      "pending_peer_exact": 28,
+      "pending_integration_exact": 0,
+      "exact_rounds_without_local_credit": 0
+    }
   }
 }

@@ -24,9 +24,10 @@ jobs:
       - name: Prepare public site
         run: |
           mkdir _site
-          cp index.html style.css app.js _site/
+          cp index.html style.css app.js workflow.js _site/
           cp -R assets data _site/
           python3 -m json.tool data/progress.json > /dev/null
+          python3 -m json.tool data/workflow.json > /dev/null
           python3 -m json.tool data/systems.json > /dev/null
           python3 -m json.tool data/submodules.json > /dev/null
           python3 -m json.tool data/resource-addresses.json > /dev/null
