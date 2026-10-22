@@ -254,9 +254,9 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
+          "frozen": 2,
           "blocked": 0
         },
         "classification": {
@@ -292,16 +292,16 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 724,
+              "generated_bytes": 724
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 106.72091973882381,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -424,17 +424,17 @@
         "integrated_c_bytes": 904,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
+        "pending_exact_bytes": 724,
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
+          "frozen": 2,
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 724
       }
     },
     {
@@ -658,10 +658,10 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 1
+          "blocked": 2
         },
         "classification": {
           "mapped": 2,
@@ -832,10 +832,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 1
+          "blocked": 2
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -860,10 +860,10 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "classification": {
           "mapped": 2,
@@ -1034,10 +1034,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -1668,10 +1668,10 @@
       "activity": {
         "tasks": 37,
         "states": {
-          "ready": 12,
-          "active": 3,
-          "frozen": 20,
-          "blocked": 2
+          "ready": 0,
+          "active": 0,
+          "frozen": 34,
+          "blocked": 3
         },
         "classification": {
           "mapped": 37,
@@ -1706,27 +1706,27 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 15,
-              "original_bytes": 1414,
-              "generated_bytes": 1414
+              "functions": 28,
+              "original_bytes": 2840,
+              "generated_bytes": 2840
             },
             "since_epoch": {
-              "functions": 15,
-              "original_bytes": 1414,
-              "generated_bytes": 1414
+              "functions": 28,
+              "original_bytes": 2840,
+              "generated_bytes": 2840
             },
-            "cumulative_original_B_per_hour": 495.75091171910236,
+            "cumulative_original_B_per_hour": 418.6290221799166,
             "last_hour": {
-              "functions": 8,
-              "original_bytes": 636,
-              "generated_bytes": 636,
-              "original_B_per_hour": 636.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 7,
-              "original_bytes": 778,
-              "generated_bytes": 778,
-              "original_B_per_hour": 778.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             }
           },
           "peer_semantic": {
@@ -1756,21 +1756,21 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 7,
+              "original_bytes": 760,
+              "generated_bytes": 760
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 7,
+              "original_bytes": 760,
+              "generated_bytes": 760
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 112.02748480871007,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 5,
+              "original_bytes": 598,
+              "generated_bytes": 598,
+              "original_B_per_hour": 598.0
             },
             "previous_hour": {
               "functions": 0,
@@ -1781,21 +1781,21 @@
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 162,
+              "generated_bytes": 162
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 162,
+              "generated_bytes": 162
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 23.8795428144882,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 2,
+              "original_bytes": 162,
+              "generated_bytes": 162,
+              "original_B_per_hour": 162.0
             },
             "previous_hour": {
               "functions": 0,
@@ -1806,21 +1806,21 @@
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 162,
+              "generated_bytes": 162
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 162,
+              "generated_bytes": 162
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 23.8795428144882,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 2,
+              "original_bytes": 162,
+              "generated_bytes": 162,
+              "original_B_per_hour": 162.0
             },
             "previous_hour": {
               "functions": 0,
@@ -1836,19 +1836,19 @@
         "system": "battle",
         "title": "Effect application",
         "integrated_c_bytes": 6072,
-        "integrated_exact_bytes": 58,
+        "integrated_exact_bytes": 220,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1414,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 2678,
+        "pending_peer_exact_bytes": 598,
         "tasks": 37,
         "states": {
-          "ready": 12,
-          "active": 3,
-          "frozen": 20,
-          "blocked": 2
+          "ready": 0,
+          "active": 0,
+          "frozen": 34,
+          "blocked": 3
         },
-        "last_hour_exact_B_per_hour": 636.0,
-        "exact_available_bytes": 1472
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 2898
       }
     },
     {
@@ -1870,9 +1870,9 @@
       "activity": {
         "tasks": 16,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 14,
+          "frozen": 16,
           "blocked": 0
         },
         "classification": {
@@ -1908,21 +1908,21 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 13,
-              "original_bytes": 1230,
-              "generated_bytes": 1230
+              "functions": 14,
+              "original_bytes": 1380,
+              "generated_bytes": 1380
             },
             "since_epoch": {
-              "functions": 13,
-              "original_bytes": 1230,
-              "generated_bytes": 1230
+              "functions": 14,
+              "original_bytes": 1380,
+              "generated_bytes": 1380
             },
-            "cumulative_original_B_per_hour": 431.24018487588114,
+            "cumulative_original_B_per_hour": 203.41832767897355,
             "last_hour": {
-              "functions": 13,
-              "original_bytes": 1230,
-              "generated_bytes": 1230,
-              "original_B_per_hour": 1230.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             },
             "previous_hour": {
               "functions": 0,
@@ -1958,21 +1958,21 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 4,
+              "original_bytes": 286,
+              "generated_bytes": 286
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 4,
+              "original_bytes": 286,
+              "generated_bytes": 286
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 42.157711388540896,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 4,
+              "original_bytes": 286,
+              "generated_bytes": 286,
+              "original_B_per_hour": 286.0
             },
             "previous_hour": {
               "functions": 0,
@@ -2040,17 +2040,17 @@
         "integrated_c_bytes": 2924,
         "integrated_exact_bytes": 894,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1230,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 1380,
+        "pending_peer_exact_bytes": 286,
         "tasks": 16,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 14,
+          "frozen": 16,
           "blocked": 0
         },
-        "last_hour_exact_B_per_hour": 1230.0,
-        "exact_available_bytes": 2124
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 2274
       }
     },
     {
@@ -2321,18 +2321,18 @@
               "original_bytes": 284,
               "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 99.5709044754067,
+            "cumulative_original_B_per_hour": 41.86290221799166,
             "last_hour": {
-              "functions": 1,
-              "original_bytes": 62,
-              "generated_bytes": 62,
-              "original_B_per_hour": 62.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             },
             "previous_hour": {
-              "functions": 1,
-              "original_bytes": 222,
-              "generated_bytes": 222,
-              "original_B_per_hour": 222.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             }
           },
           "peer_semantic": {
@@ -2362,21 +2362,21 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 41.86290221799166,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 2,
+              "original_bytes": 284,
+              "generated_bytes": 284,
+              "original_B_per_hour": 284.0
             },
             "previous_hour": {
               "functions": 0,
@@ -2445,7 +2445,7 @@
         "integrated_exact_bytes": 816,
         "mixed_bytes": 0,
         "pending_exact_bytes": 284,
-        "pending_peer_exact_bytes": 0,
+        "pending_peer_exact_bytes": 284,
         "tasks": 2,
         "states": {
           "ready": 0,
@@ -2453,7 +2453,7 @@
           "frozen": 2,
           "blocked": 0
         },
-        "last_hour_exact_B_per_hour": 62.0,
+        "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 1100
       }
     },
@@ -3486,10 +3486,10 @@
       "activity": {
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "classification": {
           "mapped": 1,
@@ -3660,10 +3660,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -3890,9 +3890,9 @@
       "activity": {
         "tasks": 5,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
-          "frozen": 4,
+          "frozen": 5,
           "blocked": 0
         },
         "classification": {
@@ -3937,7 +3937,7 @@
               "original_bytes": 630,
               "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 220.87911908276837,
+            "cumulative_original_B_per_hour": 92.86488872300967,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -3978,21 +3978,21 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 92.86488872300967,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 2,
+              "original_bytes": 630,
+              "generated_bytes": 630,
+              "original_B_per_hour": 630.0
             },
             "previous_hour": {
               "functions": 0,
@@ -4003,21 +4003,21 @@
           },
           "integrated": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 260,
+              "generated_bytes": 260
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 260,
+              "generated_bytes": 260
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 38.325192171400815,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 260,
+              "generated_bytes": 260,
+              "original_B_per_hour": 260.0
             },
             "previous_hour": {
               "functions": 0,
@@ -4028,21 +4028,21 @@
           },
           "integrated_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 260,
+              "generated_bytes": 260
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 260,
+              "generated_bytes": 260
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 38.325192171400815,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 1,
+              "original_bytes": 260,
+              "generated_bytes": 260,
+              "original_B_per_hour": 260.0
             },
             "previous_hour": {
               "functions": 0,
@@ -4057,16 +4057,16 @@
         "id": "mission-queue-and-reward-selection",
         "system": "missions",
         "title": "Mission queue and reward selection",
-        "integrated_c_bytes": 3080,
-        "integrated_exact_bytes": 0,
+        "integrated_c_bytes": 3108,
+        "integrated_exact_bytes": 260,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 630,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 370,
+        "pending_peer_exact_bytes": 370,
         "tasks": 5,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
-          "frozen": 4,
+          "frozen": 5,
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
@@ -4294,10 +4294,10 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "classification": {
           "mapped": 2,
@@ -4468,10 +4468,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -4496,10 +4496,10 @@
       "activity": {
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "classification": {
           "mapped": 1,
@@ -4670,10 +4670,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -4698,9 +4698,9 @@
       "activity": {
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
+          "frozen": 1,
           "blocked": 0
         },
         "classification": {
@@ -4736,16 +4736,16 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 240,
+              "generated_bytes": 240
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 35.37710046590844,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -4868,17 +4868,17 @@
         "integrated_c_bytes": 264,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
+        "pending_exact_bytes": 240,
         "pending_peer_exact_bytes": 0,
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
+          "frozen": 1,
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 240
       }
     },
     {
@@ -4900,9 +4900,9 @@
       "activity": {
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
+          "frozen": 1,
           "blocked": 0
         },
         "classification": {
@@ -5074,9 +5074,9 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
+          "frozen": 1,
           "blocked": 0
         },
         "last_hour_exact_B_per_hour": 0.0,
@@ -5102,9 +5102,9 @@
       "activity": {
         "tasks": 9,
         "states": {
-          "ready": 3,
+          "ready": 0,
           "active": 0,
-          "frozen": 4,
+          "frozen": 7,
           "blocked": 2
         },
         "classification": {
@@ -5140,21 +5140,21 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 4,
-              "original_bytes": 288,
-              "generated_bytes": 288
+              "functions": 6,
+              "original_bytes": 586,
+              "generated_bytes": 586
             },
             "since_epoch": {
-              "functions": 4,
-              "original_bytes": 288,
-              "generated_bytes": 288
+              "functions": 6,
+              "original_bytes": 586,
+              "generated_bytes": 586
             },
-            "cumulative_original_B_per_hour": 100.97331158069412,
+            "cumulative_original_B_per_hour": 86.37908697092645,
             "last_hour": {
-              "functions": 4,
-              "original_bytes": 288,
-              "generated_bytes": 288,
-              "original_B_per_hour": 288.0
+              "functions": 0,
+              "original_bytes": 0,
+              "generated_bytes": 0,
+              "original_B_per_hour": 0.0
             },
             "previous_hour": {
               "functions": 0,
@@ -5190,21 +5190,21 @@
           },
           "peer_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 3,
+              "original_bytes": 216,
+              "generated_bytes": 216
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 3,
+              "original_bytes": 216,
+              "generated_bytes": 216
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 31.8393904193176,
             "last_hour": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0,
-              "original_B_per_hour": 0.0
+              "functions": 3,
+              "original_bytes": 216,
+              "generated_bytes": 216,
+              "original_B_per_hour": 216.0
             },
             "previous_hour": {
               "functions": 0,
@@ -5272,17 +5272,17 @@
         "integrated_c_bytes": 1342,
         "integrated_exact_bytes": 242,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 288,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 586,
+        "pending_peer_exact_bytes": 216,
         "tasks": 9,
         "states": {
-          "ready": 3,
+          "ready": 0,
           "active": 0,
-          "frozen": 4,
+          "frozen": 7,
           "blocked": 2
         },
-        "last_hour_exact_B_per_hour": 288.0,
-        "exact_available_bytes": 530
+        "last_hour_exact_B_per_hour": 0.0,
+        "exact_available_bytes": 828
       }
     },
     {
@@ -5304,10 +5304,10 @@
       "activity": {
         "tasks": 3,
         "states": {
-          "ready": 3,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 2
         },
         "classification": {
           "mapped": 3,
@@ -5478,10 +5478,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 3,
         "states": {
-          "ready": 3,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 2
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -5506,10 +5506,10 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "classification": {
           "mapped": 2,
@@ -5680,10 +5680,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -5708,10 +5708,10 @@
       "activity": {
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "classification": {
           "mapped": 1,
@@ -5882,10 +5882,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 1,
         "states": {
-          "ready": 1,
+          "ready": 0,
           "active": 0,
           "frozen": 0,
-          "blocked": 0
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -5910,10 +5910,10 @@
       "activity": {
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "classification": {
           "mapped": 2,
@@ -6084,10 +6084,10 @@
         "pending_peer_exact_bytes": 0,
         "tasks": 2,
         "states": {
-          "ready": 2,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 1,
+          "blocked": 1
         },
         "last_hour_exact_B_per_hour": 0.0,
         "exact_available_bytes": 0
@@ -6112,10 +6112,10 @@
       "activity": {
         "tasks": 5,
         "states": {
-          "ready": 5,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 3,
+          "blocked": 2
         },
         "classification": {
           "mapped": 5,
@@ -6150,16 +6150,16 @@
           },
           "local_exact": {
             "retained": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 180,
+              "generated_bytes": 180
             },
             "since_epoch": {
-              "functions": 0,
-              "original_bytes": 0,
-              "generated_bytes": 0
+              "functions": 1,
+              "original_bytes": 180,
+              "generated_bytes": 180
             },
-            "cumulative_original_B_per_hour": 0.0,
+            "cumulative_original_B_per_hour": 26.532825349431334,
             "last_hour": {
               "functions": 0,
               "original_bytes": 0,
@@ -6282,17 +6282,17 @@
         "integrated_c_bytes": 1608,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
+        "pending_exact_bytes": 180,
         "pending_peer_exact_bytes": 0,
         "tasks": 5,
         "states": {
-          "ready": 5,
+          "ready": 0,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 3,
+          "blocked": 2
         },
         "last_hour_exact_B_per_hour": 0.0,
-        "exact_available_bytes": 0
+        "exact_available_bytes": 180
       }
     },
     {
@@ -8132,6 +8132,6 @@
     "Shared routines are assigned once for accounting; callers do not duplicate their bytes.",
     "Source paths, function addresses and implementation artifacts are excluded."
   ],
-  "activity_as_of": "2026-10-22T05:28:13.155298+00:00",
+  "activity_as_of": "2026-10-22T09:24:07.673639+00:00",
   "activity_data": "data/workflow.json"
 }

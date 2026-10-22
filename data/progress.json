@@ -118,7 +118,7 @@
   "active_work": [
     {
       "title": "Concurrent core recovery",
-      "scope": "3 active tasks across three implementation lanes; 123 ready tasks.",
+      "scope": "2 active tasks across three implementation lanes; 112 ready tasks.",
       "status": "Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals."
     }
   ],
@@ -148,20 +148,20 @@
     "whole_workflow_speedup": null
   },
   "live_recovery": {
-    "as_of": "2026-10-22T05:28:13.155298+00:00",
+    "as_of": "2026-10-22T09:24:07.673639+00:00",
     "data": "data/workflow.json",
     "totals": {
-      "tasks": 177,
-      "original_backlog_span_bytes": 96782,
+      "tasks": 244,
+      "original_backlog_span_bytes": 121834,
       "states": {
-        "ready": 123,
-        "active": 3,
-        "frozen": 46,
-        "blocked": 5
+        "ready": 112,
+        "active": 2,
+        "frozen": 93,
+        "blocked": 37
       },
       "classification": {
         "mapped": 96,
-        "provisional": 81,
+        "provisional": 148,
         "unmapped": 0
       },
       "gates": {
@@ -192,27 +192,27 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 36,
-            "original_bytes": 3846,
-            "generated_bytes": 3846
+            "functions": 66,
+            "original_bytes": 9198,
+            "generated_bytes": 9198
           },
           "since_epoch": {
-            "functions": 36,
-            "original_bytes": 3846,
-            "generated_bytes": 3846
+            "functions": 66,
+            "original_bytes": 9198,
+            "generated_bytes": 9198
           },
-          "cumulative_original_B_per_hour": 1348.4144317338528,
+          "cumulative_original_B_per_hour": 1355.827375355941,
           "last_hour": {
-            "functions": 26,
-            "original_bytes": 2216,
-            "generated_bytes": 2216,
-            "original_B_per_hour": 2216.0
+            "functions": 3,
+            "original_bytes": 530,
+            "generated_bytes": 530,
+            "original_B_per_hour": 530.0
           },
           "previous_hour": {
             "functions": 8,
-            "original_bytes": 1000,
-            "generated_bytes": 1000,
-            "original_B_per_hour": 1000.0
+            "original_bytes": 1804,
+            "generated_bytes": 1804,
+            "original_B_per_hour": 1804.0
           }
         },
         "peer_semantic": {
@@ -242,21 +242,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
+            "functions": 18,
+            "original_bytes": 2176,
+            "generated_bytes": 2176
           },
           "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
+            "functions": 18,
+            "original_bytes": 2176,
+            "generated_bytes": 2176
           },
-          "cumulative_original_B_per_hour": 0.0,
+          "cumulative_original_B_per_hour": 320.7523775575699,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 16,
+            "original_bytes": 2014,
+            "generated_bytes": 2014,
+            "original_B_per_hour": 2014.0
           },
           "previous_hour": {
             "functions": 0,
@@ -267,21 +267,21 @@
         },
         "integrated": {
           "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
+            "functions": 3,
+            "original_bytes": 422,
+            "generated_bytes": 422
           },
           "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
+            "functions": 3,
+            "original_bytes": 422,
+            "generated_bytes": 422
           },
-          "cumulative_original_B_per_hour": 0.0,
+          "cumulative_original_B_per_hour": 62.20473498588902,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 3,
+            "original_bytes": 422,
+            "generated_bytes": 422,
+            "original_B_per_hour": 422.0
           },
           "previous_hour": {
             "functions": 0,
@@ -292,21 +292,21 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
+            "functions": 3,
+            "original_bytes": 422,
+            "generated_bytes": 422
           },
           "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
+            "functions": 3,
+            "original_bytes": 422,
+            "generated_bytes": 422
           },
-          "cumulative_original_B_per_hour": 0.0,
+          "cumulative_original_B_per_hour": 62.20473498588902,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 3,
+            "original_bytes": 422,
+            "generated_bytes": 422,
+            "original_B_per_hour": 422.0
           },
           "previous_hour": {
             "functions": 0,
@@ -318,74 +318,74 @@
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 36,
-      "pending_integration_exact": 0,
+      "pending_peer_exact": 48,
+      "pending_integration_exact": 15,
       "exact_rounds_without_local_credit": 0
     }
   },
   "dashboard": {
     "schema_version": 2,
-    "as_of": "2026-10-22T05:28:13.155298+00:00",
-    "integrated_rom_sha256": "afea6a86a1de5f4d34fb0d07c54b1e10309ff55c666c498eda133b09f9bffd73",
+    "as_of": "2026-10-22T09:24:07.673639+00:00",
+    "integrated_rom_sha256": "aa7279a16dce232ddba9f71083c4acc11ed57377ede007a51ccd648ab762d273",
     "overview": {
-      "integrated_c_bytes": 174718,
-      "integrated_exact_bytes": 29732,
+      "integrated_c_bytes": 174746,
+      "integrated_exact_bytes": 30154,
       "mixed_bytes": 10520,
-      "pending_exact_bytes": 3846,
-      "pending_peer_exact_bytes": 0,
-      "exact_available_bytes": 33578,
-      "tasks": 177,
+      "pending_exact_bytes": 8776,
+      "pending_peer_exact_bytes": 1754,
+      "exact_available_bytes": 38930,
+      "tasks": 244,
       "states": {
-        "ready": 123,
-        "active": 3,
-        "frozen": 46,
-        "blocked": 5
+        "ready": 112,
+        "active": 2,
+        "frozen": 93,
+        "blocked": 37
       }
     },
     "performance": [
       {
         "id": "team",
-        "active_tasks": 3,
-        "exact_methods_last_hour": 26,
-        "exact_B_per_hour": 2216.0,
-        "previous_exact_B_per_hour": 1000.0,
-        "peer_exact_B_per_hour": 0.0,
-        "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 44.4596435,
-        "p90_seconds": 99.420277
+        "active_tasks": 2,
+        "exact_methods_last_hour": 3,
+        "exact_B_per_hour": 530.0,
+        "previous_exact_B_per_hour": 1804.0,
+        "peer_exact_B_per_hour": 2014.0,
+        "integrated_exact_B_per_hour": 422.0,
+        "median_seconds": 51.657277,
+        "p90_seconds": 181.756748
       },
       {
         "id": "main",
-        "active_tasks": 1,
-        "exact_methods_last_hour": 17,
-        "exact_B_per_hour": 1558.0,
-        "previous_exact_B_per_hour": 602.0,
-        "peer_exact_B_per_hour": 0.0,
-        "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 57.748188999999996,
-        "p90_seconds": 164.311635
+        "active_tasks": 0,
+        "exact_methods_last_hour": 0,
+        "exact_B_per_hour": 0.0,
+        "previous_exact_B_per_hour": 796.0,
+        "peer_exact_B_per_hour": 2014.0,
+        "integrated_exact_B_per_hour": 260.0,
+        "median_seconds": 69.80119400000001,
+        "p90_seconds": 198.798022
       },
       {
         "id": "worker2",
         "active_tasks": 1,
-        "exact_methods_last_hour": 0,
-        "exact_B_per_hour": 0.0,
-        "previous_exact_B_per_hour": 0.0,
+        "exact_methods_last_hour": 1,
+        "exact_B_per_hour": 138.0,
+        "previous_exact_B_per_hour": 800.0,
         "peer_exact_B_per_hour": 0.0,
         "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 53.532708,
-        "p90_seconds": 169.128596
+        "median_seconds": 63.605342,
+        "p90_seconds": 195.771592
       },
       {
         "id": "worker3",
         "active_tasks": 1,
-        "exact_methods_last_hour": 9,
-        "exact_B_per_hour": 658.0,
-        "previous_exact_B_per_hour": 398.0,
+        "exact_methods_last_hour": 2,
+        "exact_B_per_hour": 392.0,
+        "previous_exact_B_per_hour": 208.0,
         "peer_exact_B_per_hour": 0.0,
-        "integrated_exact_B_per_hour": 0.0,
-        "median_seconds": 29.719091,
-        "p90_seconds": 69.660972
+        "integrated_exact_B_per_hour": 162.0,
+        "median_seconds": 42.143387000000004,
+        "p90_seconds": 94.627628
       }
     ],
     "systems": [
@@ -393,17 +393,17 @@
         "id": "battle",
         "title": "Battle",
         "integrated_c_bytes": 68228,
-        "integrated_exact_bytes": 3148,
+        "integrated_exact_bytes": 3310,
         "mixed_bytes": 268,
-        "pending_exact_bytes": 2928,
-        "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 6076,
-        "tasks": 90,
+        "pending_exact_bytes": 5604,
+        "pending_peer_exact_bytes": 1168,
+        "exact_available_bytes": 8914,
+        "tasks": 104,
         "states": {
-          "ready": 46,
-          "active": 3,
-          "frozen": 38,
-          "blocked": 3
+          "ready": 35,
+          "active": 0,
+          "frozen": 60,
+          "blocked": 9
         },
         "modules": [
           {
@@ -432,17 +432,17 @@
             "integrated_c_bytes": 904,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 724,
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
-              "ready": 2,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
+              "frozen": 2,
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 724
           },
           {
             "id": "action-preparation-and-continuation",
@@ -474,10 +474,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
               "frozen": 0,
-              "blocked": 1
+              "blocked": 2
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -493,10 +493,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
-              "ready": 2,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 1,
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -563,19 +563,19 @@
             "system": "battle",
             "title": "Effect application",
             "integrated_c_bytes": 6072,
-            "integrated_exact_bytes": 58,
+            "integrated_exact_bytes": 220,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1414,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 2678,
+            "pending_peer_exact_bytes": 598,
             "tasks": 37,
             "states": {
-              "ready": 12,
-              "active": 3,
-              "frozen": 20,
-              "blocked": 2
+              "ready": 0,
+              "active": 0,
+              "frozen": 34,
+              "blocked": 3
             },
-            "last_hour_exact_B_per_hour": 636.0,
-            "exact_available_bytes": 1472
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 2898
           },
           {
             "id": "effect-predicates-and-values",
@@ -584,17 +584,17 @@
             "integrated_c_bytes": 2924,
             "integrated_exact_bytes": 894,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1230,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 1380,
+            "pending_peer_exact_bytes": 286,
             "tasks": 16,
             "states": {
-              "ready": 2,
+              "ready": 0,
               "active": 0,
-              "frozen": 14,
+              "frozen": 16,
               "blocked": 0
             },
-            "last_hour_exact_B_per_hour": 1230.0,
-            "exact_available_bytes": 2124
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 2274
           },
           {
             "id": "turn-selection-and-order-storage",
@@ -623,7 +623,7 @@
             "integrated_exact_bytes": 816,
             "mixed_bytes": 0,
             "pending_exact_bytes": 284,
-            "pending_peer_exact_bytes": 0,
+            "pending_peer_exact_bytes": 284,
             "tasks": 2,
             "states": {
               "ready": 0,
@@ -631,7 +631,7 @@
               "frozen": 2,
               "blocked": 0
             },
-            "last_hour_exact_B_per_hour": 62.0,
+            "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 1100
           },
           {
@@ -740,10 +740,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 1,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
               "frozen": 0,
-              "blocked": 0
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -774,35 +774,35 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 538,
             "pending_peer_exact_bytes": 0,
-            "tasks": 26,
+            "tasks": 40,
             "states": {
-              "ready": 26,
+              "ready": 35,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 3,
+              "blocked": 2
             },
-            "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "last_hour_exact_B_per_hour": 138.0,
+            "exact_available_bytes": 538
           }
         ]
       },
       {
         "id": "missions",
         "title": "Missions & story",
-        "integrated_c_bytes": 18632,
-        "integrated_exact_bytes": 140,
+        "integrated_c_bytes": 18660,
+        "integrated_exact_bytes": 400,
         "mixed_bytes": 9996,
-        "pending_exact_bytes": 630,
-        "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 770,
-        "tasks": 22,
+        "pending_exact_bytes": 1166,
+        "pending_peer_exact_bytes": 370,
+        "exact_available_bytes": 1566,
+        "tasks": 31,
         "states": {
-          "ready": 18,
+          "ready": 16,
           "active": 0,
-          "frozen": 4,
-          "blocked": 0
+          "frozen": 14,
+          "blocked": 1
         },
         "modules": [
           {
@@ -828,16 +828,16 @@
             "id": "mission-queue-and-reward-selection",
             "system": "missions",
             "title": "Mission queue and reward selection",
-            "integrated_c_bytes": 3080,
-            "integrated_exact_bytes": 0,
+            "integrated_c_bytes": 3108,
+            "integrated_exact_bytes": 260,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 630,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 370,
+            "pending_peer_exact_bytes": 370,
             "tasks": 5,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
-              "frozen": 4,
+              "frozen": 5,
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
@@ -873,10 +873,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
-              "ready": 2,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 1,
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -907,17 +907,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 796,
             "pending_peer_exact_bytes": 0,
-            "tasks": 15,
+            "tasks": 24,
             "states": {
-              "ready": 15,
+              "ready": 16,
               "active": 0,
-              "frozen": 0,
+              "frozen": 8,
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 796
           }
         ]
       },
@@ -927,15 +927,15 @@
         "integrated_c_bytes": 5466,
         "integrated_exact_bytes": 242,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 288,
-        "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 530,
-        "tasks": 34,
+        "pending_exact_bytes": 1226,
+        "pending_peer_exact_bytes": 216,
+        "exact_available_bytes": 1468,
+        "tasks": 68,
         "states": {
-          "ready": 28,
-          "active": 0,
-          "frozen": 4,
-          "blocked": 2
+          "ready": 51,
+          "active": 1,
+          "frozen": 11,
+          "blocked": 5
         },
         "modules": [
           {
@@ -949,10 +949,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 1,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
               "frozen": 0,
-              "blocked": 0
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -964,17 +964,17 @@
             "integrated_c_bytes": 264,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 240,
             "pending_peer_exact_bytes": 0,
             "tasks": 1,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
+              "frozen": 1,
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 240
           },
           {
             "id": "job-change-control",
@@ -987,9 +987,9 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 1,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
+              "frozen": 1,
               "blocked": 0
             },
             "last_hour_exact_B_per_hour": 0.0,
@@ -1002,17 +1002,17 @@
             "integrated_c_bytes": 1342,
             "integrated_exact_bytes": 242,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 288,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 586,
+            "pending_peer_exact_bytes": 216,
             "tasks": 9,
             "states": {
-              "ready": 3,
+              "ready": 0,
               "active": 0,
-              "frozen": 4,
+              "frozen": 7,
               "blocked": 2
             },
-            "last_hour_exact_B_per_hour": 288.0,
-            "exact_available_bytes": 530
+            "last_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 828
           },
           {
             "id": "unassigned-jobs",
@@ -1021,17 +1021,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 400,
             "pending_peer_exact_bytes": 0,
-            "tasks": 22,
+            "tasks": 56,
             "states": {
-              "ready": 22,
-              "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "ready": 51,
+              "active": 1,
+              "frozen": 2,
+              "blocked": 2
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 400
           }
         ]
       },
@@ -1041,15 +1041,15 @@
         "integrated_c_bytes": 14200,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
+        "pending_exact_bytes": 516,
         "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 0,
-        "tasks": 18,
+        "exact_available_bytes": 516,
+        "tasks": 25,
         "states": {
-          "ready": 18,
+          "ready": 2,
           "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "frozen": 4,
+          "blocked": 19
         },
         "modules": [
           {
@@ -1063,10 +1063,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 3,
             "states": {
-              "ready": 3,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 1,
+              "blocked": 2
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -1082,10 +1082,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
-              "ready": 2,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 1,
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -1101,10 +1101,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 1,
             "states": {
-              "ready": 1,
+              "ready": 0,
               "active": 0,
               "frozen": 0,
-              "blocked": 0
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -1116,17 +1116,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 516,
             "pending_peer_exact_bytes": 0,
-            "tasks": 12,
+            "tasks": 19,
             "states": {
-              "ready": 12,
+              "ready": 2,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 2,
+              "blocked": 15
             },
-            "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "last_hour_exact_B_per_hour": 308.0,
+            "exact_available_bytes": 516
           }
         ]
       },
@@ -1136,15 +1136,15 @@
         "integrated_c_bytes": 7536,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
+        "pending_exact_bytes": 264,
         "pending_peer_exact_bytes": 0,
-        "exact_available_bytes": 0,
-        "tasks": 13,
+        "exact_available_bytes": 264,
+        "tasks": 16,
         "states": {
-          "ready": 13,
-          "active": 0,
-          "frozen": 0,
-          "blocked": 0
+          "ready": 8,
+          "active": 1,
+          "frozen": 4,
+          "blocked": 3
         },
         "modules": [
           {
@@ -1158,10 +1158,10 @@
             "pending_peer_exact_bytes": 0,
             "tasks": 2,
             "states": {
-              "ready": 2,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 1,
+              "blocked": 1
             },
             "last_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 0
@@ -1173,17 +1173,17 @@
             "integrated_c_bytes": 1608,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 180,
             "pending_peer_exact_bytes": 0,
             "tasks": 5,
             "states": {
-              "ready": 5,
+              "ready": 0,
               "active": 0,
-              "frozen": 0,
-              "blocked": 0
+              "frozen": 3,
+              "blocked": 2
             },
             "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "exact_available_bytes": 180
           },
           {
             "id": "unassigned-saves",
@@ -1192,17 +1192,17 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
+            "pending_exact_bytes": 84,
             "pending_peer_exact_bytes": 0,
-            "tasks": 6,
+            "tasks": 9,
             "states": {
-              "ready": 6,
-              "active": 0,
+              "ready": 8,
+              "active": 1,
               "frozen": 0,
               "blocked": 0
             },
-            "last_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0
+            "last_hour_exact_B_per_hour": 84.0,
+            "exact_available_bytes": 84
           }
         ]
       },
@@ -1380,27 +1380,27 @@
     ],
     "classification": {
       "mapped": 96,
-      "provisional": 81,
+      "provisional": 148,
       "unmapped": 0
     },
     "unlocated_exact_records": 0,
     "windows": {
       "last_hour": {
-        "start_exclusive": "2026-10-22T04:28:13.155298+00:00",
-        "end_inclusive": "2026-10-22T05:28:13.155298+00:00",
+        "start_exclusive": "2026-10-22T08:24:07.673639+00:00",
+        "end_inclusive": "2026-10-22T09:24:07.673639+00:00",
         "observed_seconds": 3600.0,
         "partial": false
       },
       "previous_hour": {
-        "start_exclusive": "2026-10-22T03:28:13.155298+00:00",
-        "end_inclusive": "2026-10-22T04:28:13.155298+00:00",
+        "start_exclusive": "2026-10-22T07:24:07.673639+00:00",
+        "end_inclusive": "2026-10-22T08:24:07.673639+00:00",
         "observed_seconds": 3600.0,
         "partial": false
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 36,
-      "pending_integration_exact": 0,
+      "pending_peer_exact": 48,
+      "pending_integration_exact": 15,
       "exact_rounds_without_local_credit": 0
     }
   }
