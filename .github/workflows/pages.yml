@@ -23,6 +23,8 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Prepare public site
         run: |
+          node --check app.js
+          node tests/daily.test.cjs
           mkdir _site
           cp index.html style.css app.js _site/
           cp -R assets data _site/

@@ -1,0 +1,30 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const elements=new Map();
+const element=id=>{
+ if(!elements.has(id))elements.set(id,{textContent:'',innerHTML:'',value:'14',listeners:{},addEventListener(name,fn){this.listeners[name]=fn;},setAttribute(){}});
+ return elements.get(id);
+};
+const payload=JSON.parse(fs.readFileSync('data/progress.json'));
+const context=vm.createContext({console,Date,document:{querySelector:element},fetch:async()=>({ok:true,json:async()=>payload})});
+vm.runInContext(fs.readFileSync('app.js','utf8'),context);
+setImmediate(()=>{
+ assert.equal(element('#error').textContent,'');
+ assert.match(element('#daily-chart').innerHTML,/<svg/);
+ assert.match(element('#daily-rows').innerHTML,/in progress/);
+ assert.match(element('#daily-summary').textContent,/without a local delivery date/);
+ const actual=payload.dashboard.daily;
+ const days=Array.from({length:35},(_,i)=>({...actual.days.at(-1),date:new Date(Date.UTC(2026,8,1+i)).toISOString().slice(0,10)}));
+ context.fixture={...actual,days};vm.runInContext('renderDaily(fixture)',context);
+ assert.equal((element('#daily-rows').innerHTML.match(/<tr>/g)||[]).length,14);
+ element('#daily-range').value='30';element('#daily-range').listeners.change();
+ assert.equal((element('#daily-rows').innerHTML.match(/<tr>/g)||[]).length,30);
+ element('#daily-range').value='all';element('#daily-range').listeners.change();
+ assert.equal((element('#daily-rows').innerHTML.match(/<tr>/g)||[]).length,35);
+ vm.runInContext('renderDaily(undefined)',context);
+ assert.match(element('#daily-summary').textContent,/unavailable/);
+ assert.equal(element('#daily-chart').innerHTML,'');
+ console.log('Daily rendering: boot, chart, partial day, 14/30/all filters and missing-data fallback passed.');
+});

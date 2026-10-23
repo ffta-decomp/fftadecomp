@@ -104,3 +104,14 @@ footer > p { margin-top: 22px; }
   .inventory { line-height: 1.8; }
   footer .links { gap: 12px; }
 }
+
+.daily-chart { background: var(--paper); border: 1px solid var(--line); margin: 12px 0; padding: 12px; overflow-x: auto; }
+.daily-chart svg { display: block; width: 100%; min-width: 520px; }
+.daily-chart text { fill: var(--muted); font: 12px system-ui, sans-serif; }
+.daily-chart .grid { stroke: var(--line); stroke-width: 1; }
+.local-line, .integrated-line { fill: none; stroke-width: 3; }
+.local-line { stroke: var(--blue); }
+.integrated-line { stroke: #996321; stroke-dasharray: 7 5; }
+.local-point { fill: var(--blue); }
+.chart-legend { display: flex; gap: 24px; font-size: 12px; margin: 0 0 0 6%; color: var(--blue); }
+.chart-legend span:last-child { color: #996321; }
