@@ -1,0 +1,24 @@
+{
+  "schema": "public-toolkit-validation-v1",
+  "at": "2026-10-23T16:14:07.935808+00:00",
+  "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "extractor_sha256": "e4217a7c74be4a3e6e3b44d23b4ae0bb606ad7270fc81a5f3d59c2aa87c957dc",
+  "layout_sha256": "014668a362e344cb40e28c558a38d9c79e93d9176ac240d55ffc446674634420",
+  "capstone_version": "5.0.6",
+  "asm_tree_files": 4240,
+  "native_assembly_files_verified": 4236,
+  "interface_only_files": 4,
+  "generated_path_tree_matches_source_inventory": true,
+  "two_clean_generated_source_trees_identical": true,
+  "generated_source_tree_sha256": "c0bd52938ddef4bea0add65c006132184bd3d8fb53e8e85b53e9ee73a657a514",
+  "single_function_compiler_smoke": {
+    "elapsed_seconds": 1.754722,
+    "profile": [
+      "-O2",
+      "-mthumb-interwork"
+    ],
+    "result": "comparison_and_strict_preflight_completed; deliberately synthetic candidate, not game behavior or exact recovery"
+  },
+  "private_material_distributed": false,
+  "scope": "Reference reconstruction/tool validation only. No new recovered C, semantic, exact or integrated game bytes are credited. Formatting/comments are canonical, not historical source text."
+}

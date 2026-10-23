@@ -25,9 +25,14 @@ jobs:
         run: |
           node --check app.js
           node tests/daily.test.cjs
+          node tests/functions.test.cjs
           mkdir _site
-          cp index.html style.css app.js _site/
+          cp index.html style.css app.js contribute.html contribute.js _site/
           cp -R assets data _site/
+          python3 tools/check_public_bundle.py
+          node --check contribute.js
+          python3 -m pip install --disable-pip-version-check -r tools/requirements-extract.txt
+          python3 -m unittest discover -s tests -p "test_*.py"
           python3 -m json.tool data/progress.json > /dev/null
           python3 -m json.tool data/workflow.json > /dev/null
           python3 -m json.tool data/systems.json > /dev/null

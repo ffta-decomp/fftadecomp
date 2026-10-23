@@ -1,0 +1,1047 @@
+{
+  "schema": "gba-asm-to-c-reference-catalog-v1",
+  "collected_at": "2026-10-23T14:33:13.748961+00:00",
+  "source": {
+    "archive": "gba_asm_to_c_resources.zip",
+    "sha256": "c7acead5860089a98c7d00e8ace39c75ca717f909eff627e7b3422ac463c2034",
+    "supplied_date": "2026-10-23",
+    "member_sha256": {
+      "README.md": "51f7441963d63b041d77d81a4b5af93ec8e04e27095d1979ddf7ff320e13fdba",
+      "asm_idioms.md": "7edb0f78892be071824ac033408a4b457dd7449d9132c35ce10310bfae791765",
+      "resources.json": "8abce55991219d58abafcafd829974d7be3cd853dcdaa4e0ae7c96816a7f1b6e",
+      "workflow.md": "13267b7540bbd1d7b23b8c465119839e3297bfd20e364baffd05305c0598a55f"
+    }
+  },
+  "policy": "AGENTS.md/current assignment override general suggestions; fixed O2 and existing gates unchanged. Documented valid compiler constraints are allowed. Reference collection earns no delivery credit.",
+  "counts": {
+    "resources": 47,
+    "unique_github_repositories": 23,
+    "new_checkouts": 19,
+    "existing_preserved": 4
+  },
+  "repositories": [
+    {
+      "repository": "aarant/luvdis",
+      "url": "https://github.com/aarant/luvdis.git",
+      "path": "vendor/luvdis",
+      "revision": "ec3a4e3ee3afe3e9b4a9c7ae8fffc65e1ea2096c",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "CosmicScribe64/eds-decomp",
+      "url": "https://github.com/CosmicScribe64/eds-decomp.git",
+      "path": "vendor/eds-decomp",
+      "revision": "857002acd7a2e3ce98afb2992fe9761144308c9a",
+      "existing_checkout_preserved": true,
+      "clean_at_collection": true,
+      "checkout_scope": "Existing checkout preserved",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "devkitPro/gba-examples",
+      "url": "https://github.com/devkitPro/gba-examples.git",
+      "path": "vendor/gba-examples",
+      "revision": "435346171d820c0a6eb021b90e58032d88d30244",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "devkitPro/libgba",
+      "url": "https://github.com/devkitPro/libgba.git",
+      "path": "vendor/libgba",
+      "revision": "f0e44ce9ed57e1d21f148443223408fddeacfb9d",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "libgba_license.txt"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "devkitPro/libtonc",
+      "url": "https://github.com/devkitPro/libtonc.git",
+      "path": "vendor/libtonc",
+      "revision": "ccc03fa321e56f51aed5e2ee1d6e3df3d1cbc803",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "Dream-Atelier/kl-eod-decomp",
+      "url": "https://github.com/Dream-Atelier/kl-eod-decomp.git",
+      "path": "vendor/kl-eod-decomp",
+      "revision": "45e66dd20f55b637656bc86129b9ba3bd49a01d6",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "encounter/objdiff",
+      "url": "https://github.com/encounter/objdiff.git",
+      "path": "vendor/objdiff",
+      "revision": "9aeec9cbab1a056ade7dc1f1625aacc41b0f8511",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE-APACHE",
+        "LICENSE-MIT"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "felixjones/agbabi",
+      "url": "https://github.com/felixjones/agbabi.git",
+      "path": "vendor/agbabi",
+      "revision": "19d148710a85b9e87f961071fd2fc5ee2b5136a4",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE.md"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "felixjones/gba-toolchain",
+      "url": "https://github.com/felixjones/gba-toolchain.git",
+      "path": "vendor/gba-toolchain",
+      "revision": "9d9269536425972ffc93456ab27d73cfba6774d3",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE.md"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "gbadev-org/gbadoc",
+      "url": "https://github.com/gbadev-org/gbadoc.git",
+      "path": "vendor/gbadoc",
+      "revision": "35a281ae9b03af221e9309b1074658cf2158c196",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE-CC0.txt"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "JRickey/SLaDe-AGBCC",
+      "url": "https://github.com/JRickey/SLaDe-AGBCC.git",
+      "path": "vendor/SLaDe-AGBCC",
+      "revision": "af5aebdb03e72b446e1ead508db0bc63b12f46c8",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "kttalley/ffta-decode-public",
+      "url": "https://github.com/kttalley/ffta-decode-public.git",
+      "path": "vendor/ffta-decode-public",
+      "revision": "d8c2355d953c8844818f53f7e8a93208f4329bd2",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "macabeus/mizuchi",
+      "url": "https://github.com/macabeus/mizuchi.git",
+      "path": "vendor/mizuchi",
+      "revision": "25eaef4214574cc20f376878dbc1b8099e97164e",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "matt-kempster/m2c",
+      "url": "https://github.com/matt-kempster/m2c.git",
+      "path": "vendor/m2c",
+      "revision": "c632946b8cfbe8fce442b522dba92dfa72f1f317",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "mgba-emu/mgba",
+      "url": "https://github.com/mgba-emu/mgba.git",
+      "path": "vendor/mgba",
+      "revision": "33f18f60fcff5b4f9e8abcf8ac1925a714d5f64a",
+      "existing_checkout_preserved": true,
+      "clean_at_collection": true,
+      "checkout_scope": "Existing checkout preserved",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "mstan/gbarecomp",
+      "url": "https://github.com/mstan/gbarecomp.git",
+      "path": "vendor/gbarecomp",
+      "revision": "9266573123fb950dfdee2d19040a2daf5e63e39d",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra.git",
+      "path": "vendor/ghidra",
+      "revision": "164003036607e669226647bd0f7bedaf281e56a6",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Sparse ARM processor and decompiler C++ source plus root metadata",
+      "root_notice_files": [
+        "LICENSE",
+        "NOTICE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "pret/agbcc",
+      "url": "https://github.com/pret/agbcc.git",
+      "path": "vendor/agbcc",
+      "revision": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+      "existing_checkout_preserved": true,
+      "clean_at_collection": true,
+      "checkout_scope": "Existing checkout preserved",
+      "root_notice_files": [],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "pret/pokeemerald",
+      "url": "https://github.com/pret/pokeemerald.git",
+      "path": "vendor/pokeemerald",
+      "revision": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+      "existing_checkout_preserved": true,
+      "clean_at_collection": true,
+      "checkout_scope": "Existing checkout preserved",
+      "root_notice_files": [],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "pudii/gba-ghidra-loader",
+      "url": "https://github.com/pudii/gba-ghidra-loader.git",
+      "path": "vendor/gba-ghidra-loader",
+      "revision": "9bfb2d1fe891aa78bab7093a328feb3a52318ab7",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "simonlindholm/asm-differ",
+      "url": "https://github.com/simonlindholm/asm-differ.git",
+      "path": "vendor/asm-differ",
+      "revision": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "velipso/gvasm",
+      "url": "https://github.com/velipso/gvasm.git",
+      "path": "vendor/gvasm",
+      "revision": "049e786d557b10b0c428121410eef60f1a5b5cfa",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    },
+    {
+      "repository": "WhenGryphonsFly/decomp-permuter-agbcc",
+      "url": "https://github.com/WhenGryphonsFly/decomp-permuter-agbcc.git",
+      "path": "vendor/decomp-permuter-agbcc",
+      "revision": "1f7ef872b12f54db7678ff00e0346abc015410ae",
+      "existing_checkout_preserved": false,
+      "clean_at_collection": true,
+      "checkout_scope": "Shallow depth-one working tree; Git LFS smudge disabled",
+      "root_notice_files": [
+        "LICENSE"
+      ],
+      "scope": "research_reference_only; existing production dependencies keep their own provenance"
+    }
+  ],
+  "resources": [
+    {
+      "id": "R01",
+      "category": "01 ISA / hardware",
+      "priority": "P0",
+      "title": "ARM7TDMI Technical Reference Manual (ARM DDI 0210C)",
+      "url": "https://documentation-service.arm.com/static/5f4786a179ff4c392c0ff819",
+      "tags": [
+        "ARMv4T",
+        "thumb",
+        "isa"
+      ],
+      "purpose": "Official ARM7TDMI instruction, register, exception and timing reference.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R02",
+      "category": "01 ISA / hardware",
+      "priority": "P0",
+      "title": "GBATEK (GBA only)",
+      "url": "https://rust-console.github.io/gbatek-gbaonly/",
+      "tags": [
+        "hardware",
+        "bios",
+        "registers"
+      ],
+      "purpose": "GBA memory, CPU, BIOS and device reference; filter out later-CPU features.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R03",
+      "category": "01 ISA / hardware",
+      "priority": "P0",
+      "title": "Tonc: ARM Assembly",
+      "url": "https://gbadev.net/tonc/asm.html",
+      "tags": [
+        "arm",
+        "thumb",
+        "c-idioms"
+      ],
+      "purpose": "ARM/Thumb assembly, calling patterns and compiler-output examples.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R04",
+      "category": "01 ISA / hardware",
+      "priority": "P0",
+      "title": "Tonc: BIOS Calls",
+      "url": "https://gbadev.net/tonc/swi.html",
+      "tags": [
+        "bios",
+        "swi"
+      ],
+      "purpose": "GBA BIOS service numbers, arguments and ARM-versus-Thumb encoding.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R05",
+      "category": "01 ISA / hardware",
+      "priority": "P0",
+      "title": "Tonc: GBA Hardware",
+      "url": "https://gbadev.net/tonc/hardware.html",
+      "tags": [
+        "memory",
+        "rom"
+      ],
+      "purpose": "Memory regions, bus widths and execution-location context.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R06",
+      "category": "01 ISA / hardware",
+      "priority": "P1",
+      "title": "Tonc: Hardware Interrupts",
+      "url": "https://gbadev.net/tonc/interrupts.html",
+      "tags": [
+        "irq"
+      ],
+      "purpose": "IRQ entry, IWRAM and BIOS interrupt conventions.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R07",
+      "category": "01 ISA / hardware",
+      "priority": "P1",
+      "title": "GBA BIOS Reference (clean-room)",
+      "url": "https://retrointernals.github.io/gba-bios-reference/",
+      "tags": [
+        "swi",
+        "bios"
+      ],
+      "purpose": "Independent BIOS semantic research; cross-check specific service claims.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R08",
+      "category": "01 ISA / hardware",
+      "priority": "P1",
+      "title": "GBAdev documentation library",
+      "url": "https://gbadev.org/docs.php",
+      "tags": [
+        "manual"
+      ],
+      "purpose": "Community index of CPU manuals and historical development documents.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R09",
+      "category": "01 ISA / hardware",
+      "priority": "P1",
+      "title": "GBA CPU documentation",
+      "url": "https://github.com/gbadev-org/gbadoc/blob/main/content/cpu.md",
+      "tags": [
+        "cpu"
+      ],
+      "purpose": "Community CPU and pipeline documentation; inspect the pinned source.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "gbadev-org/gbadoc",
+      "local_checkout": "vendor/gbadoc",
+      "revision": "35a281ae9b03af221e9309b1074658cf2158c196",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R10",
+      "category": "01 ISA / hardware",
+      "priority": "P1",
+      "title": "GBAdev curated resources",
+      "url": "https://gbadev.net/resources",
+      "tags": [
+        "index"
+      ],
+      "purpose": "GBA developer resource directory for targeted discovery.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R11",
+      "category": "02 C SDK / headers",
+      "priority": "P0",
+      "title": "devkitPro/libgba",
+      "url": "https://github.com/devkitPro/libgba",
+      "tags": [
+        "headers",
+        "libgba"
+      ],
+      "purpose": "Hardware and BIOS header reference; not a replacement SDK for matching.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "devkitPro/libgba",
+      "local_checkout": "vendor/libgba",
+      "revision": "f0e44ce9ed57e1d21f148443223408fddeacfb9d",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R12",
+      "category": "02 C SDK / headers",
+      "priority": "P0",
+      "title": "devkitPro/libtonc",
+      "url": "https://github.com/devkitPro/libtonc",
+      "tags": [
+        "headers",
+        "libtonc"
+      ],
+      "purpose": "GBA types, memory map, BIOS and object-attribute reference headers.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "devkitPro/libtonc",
+      "local_checkout": "vendor/libtonc",
+      "revision": "ccc03fa321e56f51aed5e2ee1d6e3df3d1cbc803",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R13",
+      "category": "02 C SDK / headers",
+      "priority": "P1",
+      "title": "libtonc API topics",
+      "url": "https://gbadev.net/libtonc/topics.htm",
+      "tags": [
+        "api"
+      ],
+      "purpose": "libtonc API lookup for BIOS, fixed point, DMA and OAM.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R14",
+      "category": "02 C SDK / headers",
+      "priority": "P1",
+      "title": "devkitPro/gba-examples",
+      "url": "https://github.com/devkitPro/gba-examples",
+      "tags": [
+        "examples"
+      ],
+      "purpose": "Modern libgba examples; compare concepts, not historical code generation.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "devkitPro/gba-examples",
+      "local_checkout": "vendor/gba-examples",
+      "revision": "435346171d820c0a6eb021b90e58032d88d30244",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R15",
+      "category": "02 C SDK / headers",
+      "priority": "P1",
+      "title": "agbabi",
+      "url": "https://github.com/felixjones/agbabi",
+      "tags": [
+        "runtime",
+        "abi"
+      ],
+      "purpose": "Modern arithmetic/memory/ABI helper research; preserve the actual target ABI.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "felixjones/agbabi",
+      "local_checkout": "vendor/agbabi",
+      "revision": "19d148710a85b9e87f961071fd2fc5ee2b5136a4",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R16",
+      "category": "02 C SDK / headers",
+      "priority": "P1",
+      "title": "gba-toolchain",
+      "url": "https://github.com/felixjones/gba-toolchain",
+      "tags": [
+        "build"
+      ],
+      "purpose": "Modern CMake GBA build reference; not our historical matching pipeline.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "felixjones/gba-toolchain",
+      "local_checkout": "vendor/gba-toolchain",
+      "revision": "9d9269536425972ffc93456ab27d73cfba6774d3",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R17",
+      "category": "02 C SDK / headers",
+      "priority": "P2",
+      "title": "Historical GBA SDK overview",
+      "url": "https://www.retroreversing.com/game-boy-advance-sdk",
+      "tags": [
+        "historical",
+        "sdk"
+      ],
+      "purpose": "Historical SDK/compiler background only, without proprietary SDK copies.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R18",
+      "category": "02 C SDK / headers",
+      "priority": "P2",
+      "title": "libgba include/gba.h",
+      "url": "https://github.com/devkitPro/libgba/blob/master/include/gba.h",
+      "tags": [
+        "headers"
+      ],
+      "purpose": "libgba umbrella header and module navigation.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "devkitPro/libgba",
+      "local_checkout": "vendor/libgba",
+      "revision": "f0e44ce9ed57e1d21f148443223408fddeacfb9d",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R19",
+      "category": "02 C SDK / headers",
+      "priority": "P1",
+      "title": "libgba include/gba_base.h",
+      "url": "https://github.com/devkitPro/libgba/blob/master/include/gba_base.h",
+      "tags": [
+        "headers",
+        "memory"
+      ],
+      "purpose": "GBA memory-region and low-level interface macros.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "devkitPro/libgba",
+      "local_checkout": "vendor/libgba",
+      "revision": "f0e44ce9ed57e1d21f148443223408fddeacfb9d",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R20",
+      "category": "03 Compiler / matching",
+      "priority": "P0",
+      "title": "pret/agbcc",
+      "url": "https://github.com/pret/agbcc",
+      "tags": [
+        "gcc",
+        "matching"
+      ],
+      "purpose": "Historical ARM/Thumb compiler source; retain the existing pinned normal build.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "pret/agbcc",
+      "local_checkout": "vendor/agbcc",
+      "revision": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R21",
+      "category": "03 Compiler / matching",
+      "priority": "P0",
+      "title": "pokeemerald Makefile",
+      "url": "https://github.com/pret/pokeemerald/blob/master/Makefile",
+      "tags": [
+        "flags",
+        "matching"
+      ],
+      "purpose": "Concrete external build context; do not import flags into FFTA.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "pret/pokeemerald",
+      "local_checkout": "vendor/pokeemerald",
+      "revision": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R22",
+      "category": "03 Compiler / matching",
+      "priority": "P0",
+      "title": "Klonoa compiler boundaries and learnings",
+      "url": "https://github.com/Dream-Atelier/kl-eod-decomp",
+      "tags": [
+        "old_agbcc",
+        "flags"
+      ],
+      "purpose": "Compiler-boundary and source-shape research with project-specific evidence.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "Dream-Atelier/kl-eod-decomp",
+      "local_checkout": "vendor/kl-eod-decomp",
+      "revision": "45e66dd20f55b637656bc86129b9ba3bd49a01d6",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R23",
+      "category": "03 Compiler / matching",
+      "priority": "P1",
+      "title": "Yu-Gi-Oh! EDS full matching decomp",
+      "url": "https://github.com/CosmicScribe64/eds-decomp",
+      "tags": [
+        "matching",
+        "corpus"
+      ],
+      "purpose": "Whole-match source, discrepancy catalog and allocation/reload tooling study.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "CosmicScribe64/eds-decomp",
+      "local_checkout": "vendor/eds-decomp",
+      "revision": "857002acd7a2e3ce98afb2992fe9761144308c9a",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R24",
+      "category": "03 Compiler / matching",
+      "priority": "P1",
+      "title": "Tonc development environment",
+      "url": "https://gbadev.net/tonc/setup.html",
+      "tags": [
+        "build"
+      ],
+      "purpose": "C/assembly/object/linking development overview.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R25",
+      "category": "03 Compiler / matching",
+      "priority": "P1",
+      "title": "agbcc installer",
+      "url": "https://github.com/pret/agbcc/blob/master/install.sh",
+      "tags": [
+        "compiler"
+      ],
+      "purpose": "Compiler installation and library-output layout reference; do not run setup here.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "pret/agbcc",
+      "local_checkout": "vendor/agbcc",
+      "revision": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R26",
+      "category": "04 Analysis tools",
+      "priority": "P0",
+      "title": "Ghidra ARM/Thumb",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "tags": [
+        "decompiler"
+      ],
+      "purpose": "ARM disassembly, cross-reference, type and decompiler source reference.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "NationalSecurityAgency/ghidra",
+      "local_checkout": "vendor/ghidra",
+      "revision": "164003036607e669226647bd0f7bedaf281e56a6",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R27",
+      "category": "04 Analysis tools",
+      "priority": "P0",
+      "title": "GBA Ghidra Loader",
+      "url": "https://github.com/pudii/gba-ghidra-loader",
+      "tags": [
+        "loader"
+      ],
+      "purpose": "GBA header, memory-map and entry configuration for Ghidra; optional analyzer.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "pudii/gba-ghidra-loader",
+      "local_checkout": "vendor/gba-ghidra-loader",
+      "revision": "9bfb2d1fe891aa78bab7093a328feb3a52318ab7",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R28",
+      "category": "04 Analysis tools",
+      "priority": "P0",
+      "title": "Luvdis",
+      "url": "https://github.com/aarant/luvdis",
+      "tags": [
+        "disassembler",
+        "armv4t"
+      ],
+      "purpose": "GBA disassembly/reassembly research; function boundaries still need evidence.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "aarant/luvdis",
+      "local_checkout": "vendor/luvdis",
+      "revision": "ec3a4e3ee3afe3e9b4a9c7ae8fffc65e1ea2096c",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R29",
+      "category": "04 Analysis tools",
+      "priority": "P0",
+      "title": "m2c",
+      "url": "https://github.com/matt-kempster/m2c",
+      "tags": [
+        "decompiler",
+        "matching"
+      ],
+      "purpose": "Context-driven candidate C with GBA/APCS support; output is an unverified draft.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "matt-kempster/m2c",
+      "local_checkout": "vendor/m2c",
+      "revision": "c632946b8cfbe8fce442b522dba92dfa72f1f317",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R30",
+      "category": "04 Analysis tools",
+      "priority": "P0",
+      "title": "asm-differ",
+      "url": "https://github.com/simonlindholm/asm-differ",
+      "tags": [
+        "diff",
+        "matching"
+      ],
+      "purpose": "Assembly difference display and local matching feedback.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "simonlindholm/asm-differ",
+      "local_checkout": "vendor/asm-differ",
+      "revision": "0dd09af8f8008f1f880327cf0aca3b26d2562ea2",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R31",
+      "category": "04 Analysis tools",
+      "priority": "P0",
+      "title": "objdiff",
+      "url": "https://github.com/encounter/objdiff",
+      "tags": [
+        "diff",
+        "matching"
+      ],
+      "purpose": "Object/function/data comparison and matching-report reference.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "encounter/objdiff",
+      "local_checkout": "vendor/objdiff",
+      "revision": "9aeec9cbab1a056ade7dc1f1625aacc41b0f8511",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R32",
+      "category": "04 Analysis tools",
+      "priority": "P1",
+      "title": "decomp-permuter-agbcc",
+      "url": "https://github.com/WhenGryphonsFly/decomp-permuter-agbcc",
+      "tags": [
+        "search",
+        "matching"
+      ],
+      "purpose": "ARMv4T/agbcc source permutation research; no unbounded search authorization.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "WhenGryphonsFly/decomp-permuter-agbcc",
+      "local_checkout": "vendor/decomp-permuter-agbcc",
+      "revision": "1f7ef872b12f54db7678ff00e0346abc015410ae",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R33",
+      "category": "04 Analysis tools",
+      "priority": "P1",
+      "title": "decomp.me",
+      "url": "https://www.decomp.me/faq",
+      "tags": [
+        "matching",
+        "web"
+      ],
+      "purpose": "Public scratch/compilation service reference; no private upload authorization.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R34",
+      "category": "04 Analysis tools",
+      "priority": "P1",
+      "title": "Mizuchi",
+      "url": "https://github.com/macabeus/mizuchi",
+      "tags": [
+        "agent",
+        "matching"
+      ],
+      "purpose": "Automated compiler/diff orchestration research; not a replacement task runtime.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "macabeus/mizuchi",
+      "local_checkout": "vendor/mizuchi",
+      "revision": "25eaef4214574cc20f376878dbc1b8099e97164e",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R35",
+      "category": "04 Analysis tools",
+      "priority": "P1",
+      "title": "mGBA",
+      "url": "https://mgba.io/",
+      "tags": [
+        "debug",
+        "emulator"
+      ],
+      "purpose": "Emulator execution/debugging reference; reuse the installed executor.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R36",
+      "category": "04 Analysis tools",
+      "priority": "P1",
+      "title": "mGBA command line debugger reference",
+      "url": "https://github.com/mgba-emu/mgba/blob/master/doc/mgba.6",
+      "tags": [
+        "debug"
+      ],
+      "purpose": "Command-line debugger documentation within the preserved mGBA checkout.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "mgba-emu/mgba",
+      "local_checkout": "vendor/mgba",
+      "revision": "33f18f60fcff5b4f9e8abcf8ac1925a714d5f64a",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R37",
+      "category": "04 Analysis tools",
+      "priority": "P2",
+      "title": "gvasm",
+      "url": "https://github.com/velipso/gvasm",
+      "tags": [
+        "assembler"
+      ],
+      "purpose": "GBA assembler reference; its disassembler is explicitly experimental.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "velipso/gvasm",
+      "local_checkout": "vendor/gvasm",
+      "revision": "049e786d557b10b0c428121410eef60f1a5b5cfa",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R38",
+      "category": "04 Analysis tools",
+      "priority": "P1",
+      "title": "Decompedia GBA",
+      "url": "https://decomp.wiki/platforms/game-boy-advance",
+      "tags": [
+        "index"
+      ],
+      "purpose": "Community matching-decompilation navigation.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R39",
+      "category": "05 Decomp projects / corpora",
+      "priority": "P0",
+      "title": "pret/pokeemerald",
+      "url": "https://github.com/pret/pokeemerald",
+      "tags": [
+        "corpus",
+        "matching"
+      ],
+      "purpose": "Mature shared-source, object, callback and build-layout reference corpus.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "pret/pokeemerald",
+      "local_checkout": "vendor/pokeemerald",
+      "revision": "731ad5bfd6e6f265508d0efcca0ba42f9dcf5881",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R40",
+      "category": "05 Decomp projects / corpora",
+      "priority": "P0",
+      "title": "Klonoa: Empire of Dreams",
+      "url": "https://github.com/Dream-Atelier/kl-eod-decomp",
+      "tags": [
+        "corpus",
+        "matching"
+      ],
+      "purpose": "Source-shape and compiler-specific learning corpus; distinguish facts from policy.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "Dream-Atelier/kl-eod-decomp",
+      "local_checkout": "vendor/kl-eod-decomp",
+      "revision": "45e66dd20f55b637656bc86129b9ba3bd49a01d6",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R41",
+      "category": "05 Decomp projects / corpora",
+      "priority": "P0",
+      "title": "Yu-Gi-Oh! The Eternal Duelist Soul",
+      "url": "https://github.com/CosmicScribe64/eds-decomp",
+      "tags": [
+        "corpus",
+        "matching"
+      ],
+      "purpose": "Matching source/ASM corpus; upstream also permits documented FAKEMATCH forms.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "CosmicScribe64/eds-decomp",
+      "local_checkout": "vendor/eds-decomp",
+      "revision": "857002acd7a2e3ce98afb2992fe9761144308c9a",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R42",
+      "category": "05 Decomp projects / corpora",
+      "priority": "P1",
+      "title": "Decomp Academy",
+      "url": "https://decomp-academy.dev/",
+      "tags": [
+        "training"
+      ],
+      "purpose": "Interactive matching exercises for optional focused training.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R43",
+      "category": "05 Decomp projects / corpora",
+      "priority": "P2",
+      "title": "SLaDe-AGBCC",
+      "url": "https://github.com/JRickey/SLaDe-AGBCC",
+      "tags": [
+        "research",
+        "llm"
+      ],
+      "purpose": "Neural matching-decompilation research; no model training or quality claim.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "JRickey/SLaDe-AGBCC",
+      "local_checkout": "vendor/SLaDe-AGBCC",
+      "revision": "af5aebdb03e72b446e1ead508db0bc63b12f46c8",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R44",
+      "category": "06 FFTA-specific",
+      "priority": "P0",
+      "title": "FFTA Decode public research",
+      "url": "https://github.com/kttalley/ffta-decode-public",
+      "tags": [
+        "ffta",
+        "behavioral"
+      ],
+      "purpose": "Behavioral FFTA research, explicitly not a byte-matching GBA rebuild.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "kttalley/ffta-decode-public",
+      "local_checkout": "vendor/ffta-decode-public",
+      "revision": "d8c2355d953c8844818f53f7e8a93208f4329bd2",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R45",
+      "category": "06 FFTA-specific",
+      "priority": "P1",
+      "title": "FFTA static recomp ecosystem",
+      "url": "https://github.com/mstan/gbarecomp",
+      "tags": [
+        "ffta",
+        "recomp"
+      ],
+      "purpose": "Host-native static recompilation research, not original-style GBA C recovery.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "repository": "mstan/gbarecomp",
+      "local_checkout": "vendor/gbarecomp",
+      "revision": "9266573123fb950dfdee2d19040a2daf5e63e39d",
+      "verification": "Pinned checkout available; capability descriptions are research leads, not FFTA validation."
+    },
+    {
+      "id": "R46",
+      "category": "06 FFTA-specific",
+      "priority": "P1",
+      "title": "FFTA project index (unbaked)",
+      "url": "https://unbaked.games/games/final-fantasy-tactics-advance/",
+      "tags": [
+        "ffta",
+        "index"
+      ],
+      "purpose": "FFTA project discovery index; check each project's actual target and evidence.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    },
+    {
+      "id": "R47",
+      "category": "06 FFTA-specific",
+      "priority": "P1",
+      "title": "GBA BIOS asset compression",
+      "url": "https://gbadev.net/tonc/swi.html",
+      "tags": [
+        "ffta",
+        "assets"
+      ],
+      "purpose": "BIOS decompression reference for distinguishing assets from executable code.",
+      "priority_meaning": "Supplied reference reading priority, not runtime task dispatch priority",
+      "verification": "External reference link; not mirrored or exhaustively verified."
+    }
+  ]
+}

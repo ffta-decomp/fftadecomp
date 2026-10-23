@@ -1,0 +1,3 @@
+[submodule "vendor/agbcc"]
+	path = vendor/agbcc
+	url = https://github.com/pret/agbcc.git

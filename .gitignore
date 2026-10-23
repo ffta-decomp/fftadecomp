@@ -1,0 +1,11 @@
+/asm/
+/build/
+/.local/
+/.venv/
+__pycache__/
+*.pyc
+*.gba
+*.sav
+*.sqlite3*
+
+AGENTS.local.md

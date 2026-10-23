@@ -5,3 +5,5 @@ The original documentation and metadata published in this repository are license
 License text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 This notice does not license any third-party game, ROM, code or asset. None is distributed here.
+
+Original software in tools/ and tests/ is available under the MIT license in tools/LICENSE. Third-party dependencies keep their upstream licenses.

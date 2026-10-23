@@ -1,0 +1,42 @@
+name: Group function claim
+description: Request one disjoint native function in the active recovery group.
+title: "[Claim] <group> / <native ID>"
+body:
+  - type: markdown
+    attributes:
+      value: "Check existing claims and CONTRIBUTING.md first. A maintainer must confirm canonical ownership before implementation. Do not upload ROMs, disassembly, assets, personal information or private logs."
+  - type: dropdown
+    id: group
+    attributes:
+      label: Group
+      options: [battle, jobs, abilities, story, missions, items, world, saves, menus, multiplayer, unclassified]
+    validations:
+      required: true
+  - type: input
+    id: native
+    attributes:
+      label: Native ID
+      description: Stable US-offset-size identity from data/functions.csv.
+      placeholder: US-00000000-000000
+    validations:
+      required: true
+  - type: input
+    id: range
+    attributes:
+      label: Address and full original span
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Dependency, evidence and bounded plan
+      description: Describe known callers/ABI, scope and prior claim/budget checks. Do not paste game content or private logs.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Coordination and privacy
+      options:
+        - label: I will wait for canonical ownership confirmation and will not upload private or extracted content.
+          required: true

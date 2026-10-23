@@ -1,0 +1,12 @@
+{
+  "id": "retail-us-public-input-metadata",
+  "description": "Revision metadata only. Prepare a native-method manifest before local comparison; this is not a game source manifest.",
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "size": 16777216,
+  "rom_base": 134217728,
+  "compiler_flags": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "modules": []
+}
