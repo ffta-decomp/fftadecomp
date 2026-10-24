@@ -1,0 +1,10 @@
+# Category text: preserve definitions, then allocation
+
+- Original`54314` is a full five-argument184B method:168 instruction,16 literal,0 alignment. Its156B frame contains one128B icon OUT and one outgoing word; stable decoder/text/BIOS bodies are reused.
+- Keep the icon393/394 branches separate. The selection query consumes signed LOW8 row; its LOW16 result enters signed modulo. Truncate the width product before adding the tile-base halfword at full width. `CpuSet` copies64 halfwords from the local icon to the row, not in reverse.
+- The first fixedO2 source was184/144 same-offset bytes. A full working text ID with common post-join LOW16 extraction restores the original truncation point; it temporarily gives184/121, not a semantic regression claim.
+- Define the actual tile-layer and content-archive objects between their observed left/right shifts. This restores native literal/address order at184/134. References: the existing item-object and scaled-offset lessons plus pinned EDS allocation/lifetime guidance; do not impose this form on different ownership.
+- The category snapshot and late text-ID working copy coexist in originalR5/R0. Initialized empty constraints preserve these real values, with no output-only invention, clobber, volatile or emitted instruction. This yields178/184; no general register-pin recipe is established.
+- Formal byte conversion had moved the glyph shifts before the category's final halfword extraction. Receiving the unchanged stack word and performing its LOW8 conversion at the observed point restores184/184. Public five-argument ABI and consumed widths are unchanged; no flag, helper or instruction island changes.
+- Five source causes/commands use6.267089s total local-tool time; qualification-to-freeze is448.414579s, including build-priority work and analysis. Preserve all earlier failures and the conditional >70% extension. Full-native local identity is not natural-domain, independent-peer or production acceptance.
+- Frozen proof SHA-256:`fc8e23e11ccdd0759aff5e7ee1919a7c2acd42ede6f1b7c213de06cd8b927286`.
