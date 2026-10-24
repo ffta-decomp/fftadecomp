@@ -55,6 +55,19 @@ CREATE TRIGGER events_no_update BEFORE UPDATE ON events BEGIN SELECT RAISE(ABORT
 CREATE TRIGGER events_no_delete BEFORE DELETE ON events BEGIN SELECT RAISE(ABORT,'events are append-only'); END;
 '''
 
+# Additive coordination extension. Existing tasks, clocks, credits and schema
+# version stay intact; old ledgers gain only this table and its indexes.
+LEASE_DDL = '''
+CREATE TABLE IF NOT EXISTS work_leases(
+ id TEXT PRIMARY KEY, kind TEXT NOT NULL, actor TEXT NOT NULL, token TEXT NOT NULL,
+ rom_offset INTEGER, size INTEGER NOT NULL, module TEXT NOT NULL, task_id TEXT,
+ acquired_at TEXT NOT NULL, ended_at TEXT, state TEXT NOT NULL,
+ payload TEXT NOT NULL);
+CREATE INDEX IF NOT EXISTS active_work_leases ON work_leases(state,kind,rom_offset);
+CREATE UNIQUE INDEX IF NOT EXISTS one_source_lease_per_actor
+ ON work_leases(actor) WHERE state='active' AND kind='source';
+'''
+
 
 def encode(value):
     return json.dumps(value, ensure_ascii=False, sort_keys=True, allow_nan=False)
@@ -143,6 +156,83 @@ def evidence(paths):
     return pins
 
 
+class NativeScopeExclusions:
+    """Pinned, database-local admission policy; existing history remains untouched."""
+
+    @staticmethod
+    def path(value):
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError('scope exclusions require a nonempty path')
+        path = Path(value)
+        return path if path.is_absolute() else ROOT / path
+
+    @staticmethod
+    def digest(value):
+        if (not isinstance(value, str) or len(value) != 64
+                or any(c not in '0123456789abcdef' for c in value)):
+            raise ValueError('scope exclusions require a SHA-256 pin')
+        return value
+
+    @classmethod
+    def load(cls, database):
+        config_path = ROOT / '.local/recovery-workflow.json'
+        if not config_path.is_file():
+            return None
+        config = load_json(config_path)
+        if cls.path(config['db']).resolve() != Path(database).resolve():
+            return None
+        if 'scope_exclusions' not in config:
+            return None
+        pin = config['scope_exclusions']
+        if not isinstance(pin, dict):
+            raise ValueError('scope exclusions pin must be an object')
+        path, digest = cls.path(pin.get('path')), cls.digest(pin.get('sha256'))
+        raw = path.read_bytes()
+        if hashlib.sha256(raw).hexdigest() != digest:
+            raise ValueError('scope exclusions registry hash changed')
+        registry = json.loads(raw)
+        if not isinstance(registry, dict) or registry.get('schema') != 'recovery-native-exclusions-v1':
+            raise ValueError('scope exclusions registry schema is invalid')
+        cls.digest(registry.get('retail_sha256'))
+        entries = registry.get('entries')
+        if not isinstance(entries, list):
+            raise ValueError('scope exclusions entries must be a list')
+        for entry in entries:
+            if (not isinstance(entry, dict) or type(entry.get('rom_offset')) is not int
+                    or entry['rom_offset'] < 0 or type(entry.get('original_span_bytes')) is not int
+                    or entry['original_span_bytes'] <= 0
+                    or not isinstance(entry.get('classification'), str) or not entry['classification'].strip()
+                    or not isinstance(entry.get('source'), dict)):
+                raise ValueError('scope exclusions entry is malformed')
+            cls.path(entry['source'].get('path'))
+            cls.digest(entry['source'].get('sha256'))
+        policy = cls()
+        policy.registry = {'path': str(path), 'sha256': digest,
+                           'retail_sha256': registry['retail_sha256']}
+        policy.entries = entries
+        return policy
+
+    def overlaps(self, spec):
+        start, size = spec.get('rom_offset'), spec.get('original_span_bytes')
+        size = nonnegative(size, 'original_span_bytes')
+        if 'rom_offset' in spec:
+            start = nonnegative(start, 'rom_offset')
+        if 'rom_offset' not in spec or size == 0:
+            return []
+        matches = []
+        for entry in self.entries:
+            if start < entry['rom_offset'] + entry['original_span_bytes'] and entry['rom_offset'] < start + size:
+                source = entry['source']
+                if evidence([self.path(source['path'])])[0]['sha256'] != source['sha256']:
+                    raise ValueError('scope exclusions source hash changed')
+                matches.append({'registry': self.registry, 'entry': entry})
+        return matches
+
+    def require_allowed(self, spec):
+        if self.overlaps(spec):
+            raise ValueError('native range excluded by pinned scope policy')
+
+
 class Ledger:
     def __init__(self, path, initialize=False, epoch=None):
         self.path = Path(path)
@@ -164,6 +254,8 @@ class Ledger:
                 self.db.commit()
         if self.db.execute('PRAGMA user_version').fetchone()[0] != SCHEMA:
             raise ValueError('unsupported ledger schema')
+        if not self.db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='work_leases'").fetchone():
+            self.db.executescript('BEGIN IMMEDIATE;\n' + LEASE_DDL + '\nCOMMIT;')
 
     def close(self):
         self.db.close()
@@ -185,6 +277,82 @@ class Ledger:
             raise ValueError('active claim token/actor mismatch; no automatic takeover')
         return task
 
+    @staticmethod
+    def scope_overlaps(start, size, module, other_start, other_size, other_module):
+        if type(start) is int and type(other_start) is int:
+            return size > 0 and other_size > 0 and start < other_start + other_size and other_start < start + size
+        return bool(module) and module == other_module
+
+    def leases(self):
+        return [{k: v for k, v in dict(row).items() if k not in ('token', 'payload')}
+                for row in self.db.execute("SELECT * FROM work_leases WHERE state='active' ORDER BY acquired_at,id")]
+
+    def leases_required(self):
+        row = self.db.execute("SELECT value FROM meta WHERE key='work_coordination'").fetchone()
+        return bool(row and row['value'] == 'required')
+
+    def coordination_audit(self):
+        self.db.execute('BEGIN')
+        try:
+            scopes = [dict(row, phase='lease') for row in self.leases()]
+            for row in self.db.execute("SELECT id,actor,module,original_bytes,spec FROM tasks WHERE state='active'"):
+                spec = json.loads(row['spec'])
+                scopes.append({'id': row['id'], 'actor': row['actor'], 'phase': 'native',
+                               'rom_offset': spec.get('rom_offset'), 'size': row['original_bytes'],
+                               'module': row['module']})
+            conflicts = [{'left': left, 'right': right}
+                         for i, left in enumerate(scopes) for right in scopes[i+1:]
+                         if self.scope_overlaps(left['rom_offset'], left['size'], left['module'],
+                                                right['rom_offset'], right['size'], right['module'])]
+            result = {'ok': not conflicts, 'mode': 'required' if self.leases_required() else 'compatible',
+                      'active_scopes': scopes, 'conflicts': conflicts}
+            self.db.commit()
+            return result
+        except BaseException:
+            self.db.rollback()
+            raise
+
+    def work_lease(self, actor, data, kind='source', administrator=False):
+        pin = data.get('work_lease')
+        if pin is None:
+            return None
+        if not isinstance(pin, dict):
+            raise ValueError('work lease must contain id and token')
+        row = self.db.execute('SELECT * FROM work_leases WHERE id=?', (pin.get('id'),)).fetchone()
+        if (not row or row['state'] != 'active' or row['kind'] != kind
+                or not isinstance(pin.get('token'), str)
+                or not secrets.compare_digest(row['token'], pin['token'])
+                or (row['actor'] != actor and not (administrator and actor == 'administrator'))):
+            raise ValueError('active work lease token/actor mismatch; no automatic takeover')
+        return dict(row)
+
+    def lease_conflict(self, start, size, module, ignore=None):
+        for row in self.leases():
+            if row['id'] != ignore and self.scope_overlaps(
+                    start, size, module, row['rom_offset'], row['size'], row['module']):
+                return row
+        return None
+
+    def native_conflict(self, start, size, module):
+        for row in self.db.execute("SELECT id,actor,module,original_bytes,spec FROM tasks WHERE state='active'"):
+            spec = json.loads(row['spec'])
+            if self.scope_overlaps(start, size, module, spec.get('rom_offset'), row['original_bytes'], row['module']):
+                return {'task_id': row['id'], 'actor': row['actor'], 'module': row['module'],
+                        'rom_offset': spec.get('rom_offset'), 'size': row['original_bytes'], 'state': 'active'}
+        return None
+
+    @staticmethod
+    def require_lease_scope(lease, start, size, module):
+        if lease and not ((type(start) is int and lease['rom_offset'] == start and lease['size'] == size)
+                          or (start is None and lease['rom_offset'] is None and module == lease['module'])):
+            raise ValueError('work lease does not cover the complete native scope')
+
+    def promote_lease(self, lease, task_id, at):
+        if lease:
+            self.db.execute("UPDATE work_leases SET state='promoted',ended_at=?,task_id=? WHERE id=? AND state='active'",
+                            (at, task_id, lease['id']))
+            self.event(lease['actor'], task_id, 'lease_promoted', {'lease_id': lease['id']}, at)
+
     def mutate(self, operation, actor, data, request_id=None):
         if not actor or not actor.strip():
             raise ValueError('actor is required')
@@ -196,8 +364,26 @@ class Ledger:
             if prior:
                 if prior['fingerprint'] != fingerprint:
                     raise ValueError('request-id reused with different input')
+                result = json.loads(prior['result'])
+                if operation == 'lease-claim' and result.get('lease'):
+                    saved = result['lease']
+                    live = self.db.execute('SELECT state,token FROM work_leases WHERE id=?', (saved['id'],)).fetchone()
+                    if not live or live['state'] != 'active' or live['token'] != saved['token']:
+                        raise ValueError('saved lease is no longer active; use a new request-id')
+                if operation in ('claim', 'continue') and result.get('task'):
+                    saved = result['task']
+                    live = self.db.execute('SELECT state,actor,token FROM tasks WHERE id=?', (saved['id'],)).fetchone()
+                    if (not live or live['state'] != 'active' or live['actor'] != saved['actor']
+                            or live['token'] != saved['token']):
+                        raise ValueError('saved native claim is no longer active; use a new request-id')
+                    spec = saved['spec']
+                    if self.lease_conflict(spec.get('rom_offset'), saved['original_bytes'], saved['module']):
+                        raise ValueError('saved native claim conflicts with a current work lease')
+                    policy = NativeScopeExclusions.load(self.path)
+                    if policy:
+                        policy.require_allowed(result['task']['spec'])
                 self.db.commit()
-                return json.loads(prior['result'])
+                return result
             at = timestamp()
             result = self.apply(operation, actor, data, at)
             result.update(ok=True, operation=operation, request_id=request_id)
@@ -209,8 +395,73 @@ class Ledger:
             raise
 
     def apply(self, op, actor, data, at):
-        if op in ('add', 'import-pool', 'requeue', 'import-log', 'schedule', 'continue') and actor != 'administrator':
+        if op in ('add', 'import-pool', 'requeue', 'import-log', 'schedule', 'continue', 'coordination') and actor != 'administrator':
             raise ValueError('administrator operation')
+        policy = NativeScopeExclusions.load(self.path) if op in ('add', 'import-pool', 'claim', 'continue') else None
+        if op == 'coordination':
+            mode = data.get('mode')
+            if mode not in ('required', 'compatible') or not data.get('summary', '').strip():
+                raise ValueError('coordination mode and reason are required')
+            self.db.execute("INSERT INTO meta(key,value) VALUES('work_coordination',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value", (mode,))
+            self.event(actor, None, 'work_coordination', {'mode': mode, 'summary': data['summary']}, at)
+            return {'mode': mode}
+        if op == 'lease-claim':
+            kind = data.get('kind')
+            if kind not in ('source', 'peer') or not data.get('summary', '').strip():
+                raise ValueError('lease requires source/peer kind and a reason')
+            task_id = data.get('task')
+            if kind == 'peer':
+                task = self.task(task_id)
+                gate = data.get('gate') or 'peer_exact'
+                if gate not in ('peer_exact', 'peer_semantic'):
+                    raise ValueError('peer lease gate must be peer_exact or peer_semantic')
+                local = self.db.execute('SELECT actor FROM credits WHERE task_id=? AND gate=? AND revoked=0',
+                                        (task_id, gate.replace('peer_', 'local_'))).fetchone()
+                if task['state'] not in ('frozen', 'blocked') or not local or local['actor'] == actor:
+                    raise ValueError('peer lease requires a frozen local gate and an independent actor')
+                if self.db.execute('SELECT 1 FROM credits WHERE task_id=? AND gate=? AND revoked=0', (task_id, gate)).fetchone():
+                    raise ValueError('peer gate already recorded; no duplicate verification')
+                spec = json.loads(task['spec'])
+                start, size, module = spec.get('rom_offset'), task['original_bytes'], task['module']
+            else:
+                start = nonnegative(data.get('rom_offset'), 'rom_offset')
+                size = nonnegative(data.get('size'), 'size')
+                module = data.get('module') or ''
+                if not size or not isinstance(module, str):
+                    raise ValueError('source lease requires positive size and a valid module')
+            busy = self.lease_conflict(start, size, module)
+            if busy:
+                if (busy['actor'] == actor and busy['kind'] == kind and busy['rom_offset'] == start
+                        and busy['size'] == size and (start is not None or busy['module'] == module)):
+                    row = dict(self.db.execute('SELECT * FROM work_leases WHERE id=?', (busy['id'],)).fetchone())
+                    row.pop('payload')
+                    return {'lease': row, 'resumed': True}
+                return {'lease': None, 'busy': busy}
+            if kind == 'source':
+                other = self.db.execute("SELECT id FROM work_leases WHERE actor=? AND kind='source' AND state='active'", (actor,)).fetchone()
+                if other:
+                    return {'lease': None, 'busy': next(row for row in self.leases() if row['id'] == other['id'])}
+            busy = self.native_conflict(start, size, module)
+            if busy:
+                return {'lease': None, 'busy': busy}
+            ident, token = uuid.uuid4().hex, secrets.token_hex(16)
+            self.db.execute('INSERT INTO work_leases VALUES(?,?,?,?,?,?,?,?,?,?,?,?)',
+                            (ident, kind, actor, token, start, size, module, task_id, at, None, 'active', encode(data)))
+            self.event(actor, task_id if kind == 'peer' else None, 'lease_claimed',
+                       {'lease_id': ident, 'kind': kind, 'rom_offset': start, 'size': size, 'module': module,
+                        'summary': data['summary']}, at)
+            row = dict(self.db.execute('SELECT * FROM work_leases WHERE id=?', (ident,)).fetchone()); row.pop('payload')
+            return {'lease': row, 'resumed': False}
+        if op == 'lease-release':
+            row = self.db.execute('SELECT * FROM work_leases WHERE id=?', (data.get('lease_id'),)).fetchone()
+            if (not row or row['state'] != 'active' or actor not in (row['actor'], 'administrator')
+                    or not isinstance(data.get('token'), str) or not secrets.compare_digest(row['token'], data['token'])):
+                raise ValueError('active work lease token/actor mismatch; no automatic takeover')
+            if not data.get('summary', '').strip():
+                raise ValueError('lease release requires a reason')
+            self.db.execute("UPDATE work_leases SET state='released',ended_at=? WHERE id=?", (at, row['id']))
+            self.event(actor, row['task_id'], 'lease_released', {'lease_id': row['id'], 'summary': data['summary']}, at)
+            return {'lease_id': row['id'], 'state': 'released'}
         if op == 'schedule':
             task = self.task(data['task'])
             if (task['state'] != 'ready' or task['priority'] != data.get('expected_priority')
@@ -240,6 +491,9 @@ class Ledger:
             doc = data['document']
             records = doc.get('records', [doc])
             added = []
+            work = self.work_lease(actor, data, administrator=True)
+            if work and len(records) != 1:
+                raise ValueError('one source lease can register only one native task')
             for index, spec in enumerate(records):
                 task_id, module = spec['task_id'], spec['module']
                 if not isinstance(task_id, str) or not task_id.strip() or not isinstance(module, str) or not module.strip():
@@ -249,10 +503,19 @@ class Ledger:
                     if old != spec:
                         raise ValueError(f'existing task differs: {task_id}; never overwrite live state from a pool')
                     continue
+                state = spec.get('state', 'ready') if op == 'import-pool' else 'ready'
+                if policy and state in ('ready', 'active'):
+                    policy.require_allowed(spec)
                 size = nonnegative(spec['original_span_bytes'], 'original_span_bytes')
+                if self.leases_required() and size > 0 and not work:
+                    raise ValueError('source work lease required for new native registration; use lease-claim and --lease')
                 priority = nonnegative(spec.get('priority', index), 'priority')
                 if 'rom_offset' in spec:
                     nonnegative(spec['rom_offset'], 'rom_offset')
+                self.require_lease_scope(work, spec.get('rom_offset'), size, module)
+                busy_lease = self.lease_conflict(spec.get('rom_offset'), size, module, work['id'] if work else None)
+                if busy_lease:
+                    raise ValueError(f"native registration overlaps work lease held by {busy_lease['actor']}; supply its valid lease")
                 # Native identity is the original ROM envelope, independent of task/module aliases.
                 if size and type(spec.get('rom_offset')) is int:
                     start, end = spec['rom_offset'], spec['rom_offset'] + size
@@ -263,6 +526,10 @@ class Ledger:
                                 and old_start == start and old_start + old_task['original_bytes'] == end):
                             raise ValueError(f'native range already registered by task {old_task["id"]}')
                 reservation = spec.get('owner') or None
+                if work:
+                    if reservation not in (None, work['actor']):
+                        raise ValueError('source lease conflicts with task reservation')
+                    reservation = work['actor']
                 state = spec.get('state', 'ready') if op == 'import-pool' else 'ready'
                 state = state if state in ('ready', 'active', 'blocked') else 'frozen'
                 owner = reservation if state != 'ready' else None
@@ -284,6 +551,8 @@ class Ledger:
                     (task_id, module, size, reservation, state, owner, token, priority, at, started, None, encode(spec)))
                 self.event(actor, task_id, 'imported' if op == 'import-pool' else 'added',
                            {'source': data.get('source'), 'legacy_state': spec.get('state'), 'no_acceptance_credit': True}, at)
+                if state == 'active':
+                    self.promote_lease(work, task_id, at)
                 added.append(task_id)
             return {'added': added}
         if op == 'claim':
@@ -292,14 +561,39 @@ class Ledger:
                 if data.get('task') and data['task'] != current['id']:
                     raise ValueError('finish/release current task before another claim')
                 task = self.task(current['id']); task['spec'] = json.loads(task['spec'])
+                excluded = policy.overlaps(task['spec']) if policy else []
+                if excluded:
+                    return {'task': None, 'resumed': False, 'active_task_preserved': task['id'],
+                            'reason': 'active task excluded by scope; finish/release remains available',
+                            'scope_exclusions': excluded}
                 return {'task': task, 'resumed': True}
             sql = "SELECT * FROM tasks WHERE state='ready' AND (reservation IS NULL OR reservation=?)"
             args = [actor]
             if data.get('task'):
                 sql += ' AND id=?'; args.append(data['task'])
             candidates = self.db.execute(sql + ' ORDER BY priority,id', args).fetchall()
+            excluded = []
+            work = self.work_lease(actor, data)
+            if self.leases_required() and candidates and not work:
+                raise ValueError('source work lease required for a new native claim; use lease-claim and --lease')
+            work_busy = []
             for row in candidates:
                 spec = json.loads(row['spec'])
+                matches = policy.overlaps(spec) if policy else []
+                if matches:
+                    excluded.append({'task_id': row['id'], 'matches': matches})
+                    continue
+                if work:
+                    if not data.get('task') and not self.scope_overlaps(
+                            spec.get('rom_offset'), row['original_bytes'], row['module'],
+                            work['rom_offset'], work['size'], work['module']):
+                        continue
+                    self.require_lease_scope(work, spec.get('rom_offset'), row['original_bytes'], row['module'])
+                lease_busy = self.lease_conflict(spec.get('rom_offset'), row['original_bytes'], row['module'],
+                                                 work['id'] if work else None)
+                if lease_busy:
+                    work_busy.append(lease_busy)
+                    continue
                 busy = False
                 for live in self.db.execute("SELECT module,spec FROM tasks WHERE state='active'"):
                     other = json.loads(live['spec'])
@@ -318,11 +612,19 @@ class Ledger:
                     'canonical_started_at': canonical_start,
                     'episode_started_at': at,
                     'clock_policy': 'preserve_original_start'}, at)
+                self.promote_lease(work, row['id'], at)
                 task = self.task(row['id']); task['spec'] = json.loads(task['spec'])
                 return {'task': task, 'resumed': False}
+            if work_busy:
+                return {'task': None, 'reason': 'native work held by source/peer lease', 'busy': work_busy}
+            if excluded:
+                return {'task': None, 'reason': 'no eligible ready task; scope exclusions skipped',
+                        'scope_exclusions': excluded}
             return {'task': None, 'reason': 'no eligible ready task; reserved/busy work not stolen'}
         if op == 'continue':
             task = self.task(data['task'])
+            if policy:
+                policy.require_allowed(json.loads(task['spec']))
             packet = data.get('continuation_packet')
             if not isinstance(packet, dict):
                 raise ValueError('continuation requires a pinned admission packet')
@@ -444,6 +746,14 @@ class Ledger:
                 raise ValueError('continuation actor already owns active work')
             if not data.get('summary', '').strip():
                 raise ValueError('continuation requires a concrete reason')
+            work = self.work_lease(owner, data)
+            if self.leases_required() and not work:
+                raise ValueError('source work lease required for continuation')
+            self.require_lease_scope(work, spec.get('rom_offset'), task['original_bytes'], task['module'])
+            if self.lease_conflict(spec.get('rom_offset'), task['original_bytes'], task['module'], work['id'] if work else None):
+                raise ValueError('continuation overlaps an active source/peer work lease')
+            if self.native_conflict(spec.get('rom_offset'), task['original_bytes'], task['module']):
+                raise ValueError('continuation overlaps an active native task')
             token = secrets.token_hex(16)
             self.db.execute("UPDATE tasks SET state='active',actor=?,token=?,last_round_at=NULL WHERE id=? AND state='blocked'",
                             (owner, token, task['id']))
@@ -459,6 +769,7 @@ class Ledger:
                 'evidence': pins, 'summary': data['summary'],
                 'clock_policy': 'canonical start retained; episode start recorded'}
             self.event(owner, task['id'], 'continued', continuation_evidence, at)
+            self.promote_lease(work, task['id'], at)
             result_task = self.task(task['id']); result_task['spec'] = json.loads(result_task['spec'])
             return {'task': result_task, 'resumed': True, 'continuation_index': packet['continuation_index']}
         if op in ('record', 'finish', 'release'):
@@ -528,6 +839,22 @@ class Ledger:
             if gate.startswith('local_') and actor != implementer:
                 raise ValueError('local gate belongs to implementer')
             if gate.startswith('peer_'):
+                work = self.work_lease(actor, data, kind='peer')
+                if self.leases_required() and not work:
+                    raise ValueError('peer work lease required; use lease-claim and --lease')
+                if self.leases_required() or work:
+                    scope = json.loads(task['spec'])
+                    if (task['state'] not in ('frozen', 'blocked')
+                            or self.native_conflict(scope.get('rom_offset'), task['original_bytes'], task['module'])):
+                        raise ValueError('peer gate requires frozen scope without active native work')
+                if work:
+                    requested = json.loads(self.db.execute('SELECT payload FROM work_leases WHERE id=?', (work['id'],)).fetchone()[0])
+                    if (requested.get('gate') or 'peer_exact') != gate or work['task_id'] != task['id']:
+                        raise ValueError('peer lease belongs to a different task/gate')
+                spec = json.loads(task['spec'])
+                self.require_lease_scope(work, spec.get('rom_offset'), task['original_bytes'], task['module'])
+                if self.lease_conflict(spec.get('rom_offset'), task['original_bytes'], task['module'], work['id'] if work else None):
+                    raise ValueError('peer credit overlaps an active source/peer work lease')
                 if actor == implementer:
                     raise ValueError('independent peer must differ from implementer')
                 prior = self.db.execute('SELECT * FROM credits WHERE module=? AND gate=? AND revoked=0',
@@ -873,10 +1200,25 @@ def parser():
     p.add_argument('--db', help='SQLite path; otherwise FFTA_WORK_DB or ignored .local/recovery-workflow.json')
     sub = p.add_subparsers(dest='command',required=True)
     init = sub.add_parser('init'); init.add_argument('--epoch')
-    for name in ('add','import-pool','claim','continue','record','finish','release','requeue','schedule','credit','revoke','commit','import-log'):
+    for name in ('add','import-pool','claim','continue','record','finish','release','requeue','schedule','credit','revoke','commit','import-log','lease-claim','lease-release','coordination'):
         cmd = sub.add_parser(name); cmd.add_argument('--actor', required=name not in ('record','finish','release')); cmd.add_argument('--request-id')
         if name in ('add','import-pool','record','credit','import-log','continue'): cmd.add_argument('--file', required=name!='record')
-        if name in ('claim','record','finish','release','requeue','schedule','credit'): cmd.add_argument('--task', required=name in ('requeue','schedule','credit'))
+        if name in ('claim','record','finish','release','requeue','schedule','credit','lease-claim'): cmd.add_argument('--task', required=name in ('requeue','schedule','credit'))
+        if name in ('add','import-pool','claim','continue','credit','lease-release'):
+            cmd.add_argument('--lease',help='Saved work-lease receipt; never a hand-written owner directory')
+        if name == 'lease-claim':
+            cmd.add_argument('--kind',choices=['source','peer'],required=True)
+            cmd.add_argument('--rom-offset',type=lambda value:int(value,0))
+            cmd.add_argument('--size',type=int)
+            cmd.add_argument('--module')
+            cmd.add_argument('--summary',required=True)
+            cmd.add_argument('--gate',choices=['peer_exact','peer_semantic'],help='Peer gate; defaults to peer_exact')
+            cmd.add_argument('--save',help='Atomically save the private lease/token receipt')
+        if name == 'lease-release':
+            cmd.add_argument('--lease-id');cmd.add_argument('--token');cmd.add_argument('--summary',required=True)
+        if name == 'coordination':
+            cmd.add_argument('--mode',choices=['required','compatible'],required=True)
+            cmd.add_argument('--summary',required=True)
         if name == 'schedule':
             cmd.add_argument('--priority',type=int,required=True,help='Lower numbers are claimed first')
             cmd.add_argument('--expected-priority',type=int,required=True)
@@ -906,6 +1248,9 @@ def parser():
             cmd.add_argument('--sha',required=True);cmd.add_argument('--tasks',nargs='+',required=True)
             cmd.add_argument('--evidence',action='append',required=True);cmd.add_argument('--repo',default=str(ROOT))
     show = sub.add_parser('status');show.add_argument('--actor');show.add_argument('--json',action='store_true')
+    leases = sub.add_parser('leases');leases.add_argument('--json',action='store_true')
+    audit = sub.add_parser('coordination-audit');audit.add_argument('--json',action='store_true')
+    audit.add_argument('--require-mode',choices=['required','compatible'])
     hist = sub.add_parser('history');hist.add_argument('--task');hist.add_argument('--limit',type=int,default=50)
     sub.add_parser('stats')
     speed = sub.add_parser('throughput');speed.add_argument('--json', action='store_true')
@@ -923,6 +1268,9 @@ def main(argv=None):
         config=ROOT/'.local/recovery-workflow.json'
         if not path and config.exists():path=load_json(config)['db']
     if not path:raise ValueError('specify --db or configure FFTA_WORK_DB/.local/recovery-workflow.json')
+    # Check before opening/mutating the ledger, not after committing a claim.
+    if args.get('save') and Path(args['save']).resolve() == Path(path).resolve():
+        raise ValueError('claim/lease receipt cannot overwrite database')
     ledger=Ledger(path,initialize=command=='init',epoch=args.get('epoch'))
     try:
         if command=='init':result={'ok':True,'db':str(ledger.path),'schema':SCHEMA}
@@ -934,6 +1282,17 @@ def main(argv=None):
                 return 0
             result=rows
         elif command=='history':result=ledger.history(args['task'],args['limit'])
+        elif command=='coordination-audit':
+            result=ledger.coordination_audit()
+            if args['require_mode'] and result['mode'] != args['require_mode']:
+                result.update(ok=False, error='required coordination mode is not enabled')
+        elif command=='leases':
+            result=ledger.leases()
+            if not args['json']:
+                print('LEASE\tKIND\tACTOR\tROM_OFFSET\tSIZE\tTASK')
+                for row in result:
+                    print('\t'.join(str(row.get(k) or '') for k in ('id','kind','actor','rom_offset','size','task_id')))
+                return 0
         elif command in ('public-export','publish'):
             import recovery_public
             if command=='publish':result=recovery_public.publish(ledger,load_json(args['config']))
@@ -955,6 +1314,18 @@ def main(argv=None):
         else:
             actor=args.pop('actor');key=args.pop('request_id');filename=args.pop('file',None)
             claim_path=args.pop('claim',None);save=args.pop('save',None)
+            lease_path=args.pop('lease',None)
+            if lease_path:
+                leased=load_json(lease_path).get('lease')
+                if not isinstance(leased, dict) or not leased.get('id') or not leased.get('token'):
+                    raise ValueError('saved receipt contains no work lease')
+                if command == 'lease-release':
+                    for field, value in (('lease_id',leased['id']),('token',leased['token'])):
+                        if args.get(field) and args[field] != value:
+                            raise ValueError('lease identity conflicts with CLI')
+                        args[field]=value
+                else:
+                    args['work_lease']={'id':leased['id'],'token':leased['token']}
             if command == 'record':args={k:v for k,v in args.items() if v is not None}
             if claim_path:
                 claimed=load_json(claim_path).get('task')
@@ -991,7 +1362,8 @@ def main(argv=None):
             if save:
                 if Path(save).resolve() == Path(path).resolve():raise ValueError('claim receipt cannot overwrite database')
                 atomic_write(save,json.dumps(result,indent=2,ensure_ascii=False)+'\n')
-        print(json.dumps(result,indent=2,ensure_ascii=False,allow_nan=False));return 0
+        print(json.dumps(result,indent=2,ensure_ascii=False,allow_nan=False))
+        return 1 if command=='coordination-audit' and not result['ok'] else 0
     finally:ledger.close()
 
 

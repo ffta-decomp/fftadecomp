@@ -49,6 +49,97 @@ active spans and module names cannot overlap. `import-pool` accepts the existing
 completed historical states. It does **not** infer acceptance from those labels.
 Existing differing task records are rejected, never overwritten by a later import.
 
+## Lease source qualification and independent verification
+
+Use managed leases before source qualification or peer verification. Leases and
+native claims check the same original ROM ranges, module/task aliases and partial
+overlaps atomically. A different name cannot bypass an occupied range. Start with
+an established original offset and size; if a boundary is unresolved, protect the
+known original range and resolve the missing boundary before extending the work.
+A name-only reservation or a manually created directory is not a managed lease.
+
+A source-to-native handoff uses one saved lease receipt throughout registration
+and claiming:
+
+```sh
+python3 tools/recovery_workflow.py lease-claim --actor worker2 --kind source \
+  --rom-offset 0x10000 --size 120 --module ExampleCoreMethod \
+  --summary 'Qualify the complete original method and its required interfaces.' \
+  --save build/workflow/source-lease.json
+python3 tools/recovery_workflow.py add --actor administrator --file task.json \
+  --lease build/workflow/source-lease.json
+python3 tools/recovery_workflow.py claim --actor worker2 --task CORE-EXAMPLE-01 \
+  --lease build/workflow/source-lease.json --save build/workflow/worker2-claim.json
+```
+
+`--module` is optional on a source lease; the ROM range is not optional.
+`add --lease` preserves the source owner's runtime reservation. `claim --lease`
+promotes ownership to the native claim in one transaction, without releasing the
+source lease first or opening an unowned handoff window. Continue native
+`record`, `credit` and `finish` operations with the saved native claim receipt.
+Existing task identities, original clocks, history and credits remain unchanged;
+a lease grants neither a fresh matching budget nor acceptance credit.
+
+For a frozen package, peer ownership derives its range and aliases from the
+existing task. Acquire the lease, perform the required independent checks and
+submit the actual gate, then release the lease:
+
+```sh
+python3 tools/recovery_workflow.py lease-claim --actor worker3 --kind peer \
+  --task CORE-EXAMPLE-01 --summary 'Verify the frozen whole-method package.' \
+  --save build/workflow/peer-lease.json
+# Verify the frozen evidence, then submit the matching peer gate.
+python3 tools/recovery_workflow.py credit --actor worker3 --task CORE-EXAMPLE-01 \
+  --lease build/workflow/peer-lease.json --file build/example/peer-credit.json
+python3 tools/recovery_workflow.py lease-release --actor worker3 \
+  --lease build/workflow/peer-lease.json --summary 'Verification receipt recorded.'
+python3 tools/recovery_workflow.py leases --json
+```
+
+A peer lease defaults to `--gate peer_exact`. Use `--gate peer_semantic` when
+claiming a semantic verification lease; the submitted credit must match that
+gate and the frozen package.
+
+An abandoned source qualification uses the same `lease-release` command with its
+source lease receipt and a specific disposition. Reentering the same scope as
+the same actor returns the same lease token. Competing actors, aliases and
+partially overlapping source/peer/native work are rejected rather than stolen.
+There is no automatic expiry or timeout takeover. `leases --json` lists only
+active leases and omits tokens; saved lease receipts contain the token and must
+remain private, like native claim receipts.
+
+On a conflict, inspect the active owner and exact range, then choose disjoint
+work or coordinate an explicit handoff. A lease's age alone is not permission to
+remove it. For a confirmed stale lease, an administrator must establish the
+owner's disposition and explicitly release the current lease using its matching
+token-bearing receipt and a reason; a token-free listing or an old token is not
+a release credential. Record the handoff, then let the new actor acquire its own
+lease. Do not delete directories or edit the database to simulate release.
+
+The default coordination mode is `compatible`, preserving existing databases and
+legacy lease-free task workflows. An administrator explicitly selects the mode:
+
+```sh
+python3 tools/recovery_workflow.py coordination --actor administrator \
+  --mode required --summary 'Require managed leases for new coordinated work.'
+# Use --mode compatible only for an explicit compatibility transition.
+```
+
+In `required` mode, new `add`, new `claim` and `continue` operations require
+`--lease lease.json`. Peer credit requires a matching peer lease supplied with
+`--lease` and a frozen task/package. Already-active work may still `record`,
+submit local credit and `finish` normally, so enabling the mode does not strand
+an existing owner. Existing task IDs, original clocks and credits are preserved;
+no reimport or replacement task is needed. The project deployment will enable
+`required`; the lease-free claim examples below describe compatibility mode.
+
+Compatibility is not permission to continue manual `mkdir` coordination.
+Protocol operations still check managed source/peer leases and active native
+ownership. Historical manual lease directories are not a substitute for these
+checks. This is cooperative CLI coordination, not an OS file lock or an access
+control boundary: it cannot prevent direct file reads such as `cat`, or stop a
+caller from bypassing the protocol entirely.
+
 ## Worker loop: claim, record, finish, claim again
 
 Submit each function as soon as its actual gate is reached. Immediately record
@@ -474,3 +565,7 @@ snapshot chronology must agree. Unknown attribution stays unknown. Rates use
 the audit's explicit observation window; an old cohort rate is neither the
 current completed-clock-hour rate nor a whole-workflow speedup. The generated public
 account contains aggregates, not private source paths or raw proof packets.
+
+## Supervisor consistency audit
+
+Run `python3 tools/recovery_workflow.py coordination-audit --json --require-mode required` during the existing scheduled check. It reads source/peer/native scopes from one SQLite snapshot, omits tokens and exits nonzero on overlapping ownership or inactive required mode. Save and act on that result; a sent reminder is not a resolved conflict. The audit does not expire leases or rewrite task/history/credit records.
