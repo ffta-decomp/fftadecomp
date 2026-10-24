@@ -1,41 +1,58 @@
 # Game recovery priorities
 
-## Active campaign: save/load and displayable save contents
+## Active campaign: SAV file format and stored-data associations
 
-Save/load is the current first priority. Finish and deliver already owned
-functions and preserve running integration before changing source scope.
-Contributors claim disjoint complete methods through the existing ownership
-workflow; current maintainers coordinate availability. Historical battle work
-remains valid, with explicit residuals, and is not declared complete.
+Recover the representation used to parse and write a supplied SAV, its logical
+images and persisted field/identifier associations. Preserve running jobs and
+existing evidence, then checkpoint unrelated source work at a safe boundary.
+Do not continue a successful UI or gameplay family merely because it reads saved
+RAM. Existing global recovery credit and original method clocks remain valid.
+A Web editor is outside the current implementation scope.
 
-The goal is source-proven save formats and game-state interpretation sufficient
-for a future tool to display save contents. Recovering a codec alone is not
-complete. Editor implementation is a later task.
+## Three delivery gates
 
-## Current recovery scope
+1. Pin an actual supplied SAV and establish its capacity/container, physical
+   bank/sector layout, slot/header discovery, newest-valid-copy rules, checksum
+   coverage and logical-image assembly. CPU aperture addresses are not host-file
+   offsets; synthetic images do not establish the supplied file's layout.
+2. Decode assembled images and references into a field schema. Reuse the proven
+   item, unit, job, ability and mission catalogues; preserve unknown IDs, spare
+   bits, opaque bytes and alternative slots. Keep file, encoded-image and
+   decoded-image offsets separate.
+3. Prove unchanged-file parse/serialize identity, then a bounded known-field
+   edit with the required checksum/reference/metadata updates. Preserve unrelated
+   bytes and slots and verify acceptance through the game read path. Record the
+   tested version and slot; this does not prove physical flash durability.
 
-- Slot selection, signatures/versions, image lengths, checksum/validation,
-  encode/decode, reference conversions, save/load outcomes and restoration.
-- Units/roster, jobs, levels/stats, abilities/mastery, inventory/equipment and
-  quantities, money, missions/quests and rewards, flags and stored world/story
-  progression, player/clan fields and other actual stored sections.
-- Complete enumerations of stored item, mission, ability/skill, job, unit and
-  other referenced ID domains. Trace table bounds/stride and encoded-index rules,
-  sentinels, validity, associated text IDs/pointers and the original text decoder.
-  Unknown entries remain explicit; guessed names are not resolved identifiers.
+## Scope and classification boundaries
 
-Keep encoded file offsets, decoded-image offsets and live RAM addresses distinct.
-For each field record width, count/stride, endian/signedness, masks, slot/version
-conditions, producer/consumer and source evidence. Catalogue coverage reports
-resolved/total entries separately from matched-code bytes; unknown totals stay
-unknown. Reuse existing decoded tables and recovered methods instead of creating
-new recovery credit for them.
+Every new task must identify the exact SAV byte region, validation/codec step,
+reference conversion or stored-ID association gap and its parser/writer consumer.
+Stored names and option bits are schema data. Naming editors, confirmation
+windows, settings interaction, cursor/render controllers and general gameplay
+calculations are excluded. A call from a save screen is not format evidence.
+Runtime snapshots count as format work only when their serialization or logical
+image role is established, not merely because their inputs are persisted fields.
+Large save/restore-controller matching and physical flash-driver migration are
+not prerequisites for a host-independent format implementation. Reuse existing
+C/ASM and accurate driver interfaces; preserve terminal matching budgets.
 
-Necessary cross-system saved-data dependencies may be recovered early, retaining
-their real semantic owner and counting each native range once. This does not
-expand into independent battle/skill/story gameplay rewriting. Confirmed SDK,
-flash/SRAM drivers and complex engine implementations remain behind accurate
-interfaces. Complexity or a callback label alone does not establish exclusion.
+The reviewed 3,802-original-byte cohort has the following responsibility split.
+This is a classification correction, not new delivery or a whole-SAV denominator.
+
+| Responsibility | Original bytes | SAV-format credit |
+| --- | ---: | --- |
+| Proven format operations | 1,330 | Retained in the format subset |
+| Naming UI: `12A084`, `12A5BC`, `12B59C` | 1,614 | Excluded; owner is menus/naming |
+| Adjacent settings logic | 858 | Excluded; stored option-bit schema is separate |
+
+Preserve all original native identities, credit dates and global totals. Do not
+count UI, runtime snapshot or gameplay results as SAV-format progress. Report
+format evidence, stored-field/ID associations and matched original ASM bytes
+separately. Each checkpoint identifies its actor/task, functional category,
+exact byte region or codec step, concrete artifact, input class (actual SAV,
+controlled image or source-only), reached gate and remaining blocker. No overall
+SAV percentage is supported until its actual file/schema denominator is known.
 
 ## Source anchors and limits
 
@@ -57,7 +74,7 @@ flash durability and physical hardware remain separate evidence.
 
 | Priority | Group |
 | --- | --- |
-| 1 — active | Save/load, saved-field schema and ID/name catalogues |
+| 1 — active | SAV file format, persisted-field schema and stored-ID/name associations |
 | 2 | Battle actions, effects, resolution and turns |
 | 3 | Jobs and job changes |
 | 4 | Abilities, skills and mastery |
@@ -85,10 +102,10 @@ clocks and all failed attempts. Source/data contracts earn no matched-C credit.
 [Throughput](c-recovery-throughput.md) uses unique matched original ASM envelope
 bytes; local, independent and integrated gates are reported separately.
 
-Campaign closure also reconciles every stored section, catalogue mapping,
-text lookup, codec/checksum, reference fixup, version/slot branch and explicit
-unknown tail/padding. Display coverage and natural persistence are distinct from
-code match. Source-only evidence does not claim working editing or hardware.
+Campaign closure requires the three file-format gates and reconciliation of
+stored sections, reference/ID mappings, checksums, versions/slots and unknown
+tails/padding. Reuse frozen source contracts without redoing their catalogues.
+Source-only evidence does not claim working file edits or hardware success.
 Keep ROMs, saves, extracted strings/assets and all personal paths out of public
 content. Publish only portable tools, source-derived format descriptions and
 appropriately licensed methodology through the normal release workflow.
