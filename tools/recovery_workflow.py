@@ -312,6 +312,122 @@ class Ledger:
             self.db.rollback()
             raise
 
+    def legacy_continuation(self, packet, task, identity, history):
+        """One legacy extension; immutable sidecar attribution, never history repair."""
+        def pinned(pin):
+            if (not isinstance(pin, dict) or set(pin) != {'path', 'sha256'}
+                    or not isinstance(pin['path'], str) or not pin['path']
+                    or not isinstance(pin['sha256'], str) or len(pin['sha256']) != 64
+                    or any(c not in '0123456789abcdef' for c in pin['sha256'])):
+                raise ValueError('legacy evidence pin is malformed')
+            raw = Path(pin['path']).read_bytes()
+            if hashlib.sha256(raw).hexdigest() != pin['sha256']:
+                raise ValueError('legacy evidence pin changed')
+            return raw
+
+        pin = packet['legacy_history_sidecar']
+        side = json.loads(pinned(pin))
+        if (side.get('schema') != 'legacy-continuation-v1'
+                or side.get('native_identity') != identity
+                or side.get('canonical_started_at') != task['started_at']
+                or any(row['kind'] == 'continued' for row in history)):
+            raise ValueError('legacy identity/clock changed or extension already used')
+        if json.loads(task['spec']).get('hypotheses') is not None:
+            raise ValueError('legacy path cannot replace known hypothesis metadata')
+        rows = side.get('rounds')
+        original = [row for row in history if row['kind'] == 'round']
+        if not isinstance(rows, list) or len(rows) != len(original) or not original:
+            raise ValueError('legacy history omits or adds old rounds')
+        old_ids, budgets = set(), {}
+        for row, attribution in zip(original, rows):
+            payload = json.loads(row['payload'])
+            if (not isinstance(attribution, dict) or attribution.get('seq') != row['seq']
+                    or attribution.get('payload_sha256') != hashlib.sha256(row['payload'].encode()).hexdigest()):
+                raise ValueError('legacy round seq/payload changed')
+            if payload.get('outcome') == 'diagnostic':
+                if attribution.get('hypothesis_id') is not None:
+                    raise ValueError('legacy diagnostic cannot invent a source cause')
+                continue
+            ident = attribution.get('hypothesis_id')
+            if (not isinstance(ident, str) or not ident or ident in old_ids
+                    or not isinstance(attribution.get('summary'), str)
+                    or not attribution['summary'].strip()):
+                raise ValueError('legacy source cause is unknown or repeated')
+            # Legacy one-round causes are already spent. Never increase old limits.
+            if (type(attribution.get('attempts_used')) is not int or type(attribution.get('attempt_limit')) is not int
+                    or attribution['attempts_used'] != 1 or attribution['attempt_limit'] != 1):
+                raise ValueError('legacy old cause budget must remain exhausted')
+            if not isinstance(attribution.get('evidence'), list) or not attribution['evidence']:
+                raise ValueError('legacy cause needs pinned historical evidence')
+            for item in attribution['evidence']:
+                pinned(item)
+            if not any(item in [{'path': old.get('path'), 'sha256': old.get('sha256')}
+                                for old in payload.get('evidence', [])]
+                       for item in attribution['evidence']):
+                raise ValueError('legacy cause lacks original event evidence')
+            old_ids.add(ident)
+            budgets[ident] = {'attempts_used': 1, 'attempt_limit': 1}
+        if (not 3 <= len(old_ids) < 6
+                or packet.get('effective_matching_causes') != len(old_ids)):
+            raise ValueError('legacy source cause count is unknown or exceeds budget')
+        if packet.get('budgets') != [dict(hypothesis_id=k, known=True, **v) for k, v in budgets.items()]:
+            raise ValueError('legacy budgets must exactly preserve old exhausted causes')
+        cause = packet.get('new_original_asm_cause', {})
+        if not isinstance(cause, dict) or cause.get('cause_id') in old_ids:
+            raise ValueError('legacy extension cannot reuse an old source cause')
+        best = side.get('best', {})
+        report_pin = best.get('report')
+        # The report must be evidence already pinned by an original round event.
+        if not any(report_pin == {'path': item.get('path'), 'sha256': item.get('sha256')}
+                   for row in original for item in json.loads(row['payload']).get('evidence', [])):
+            raise ValueError('legacy best report is not original round evidence')
+        report = json.loads(pinned(report_pin))
+        segments = report.get('segments', [])
+        if len(segments) != 1:
+            raise ValueError('legacy progress requires one complete native segment')
+        segment = segments[0]
+        reference, binary = pinned(best.get('reference')), pinned(best.get('binary'))
+        if (len(reference) != task['original_bytes']
+                or hashlib.sha256(reference).hexdigest() != identity['original_reference_span_sha256']
+                or segment.get('rom_offset') != identity['rom_offset']
+                or segment.get('reference_size') != len(reference)
+                or segment.get('generated_size') != len(binary)):
+            raise ValueError('legacy progress native span changed')
+        # Tie the compared bytes to the report's actual frozen file identities.
+        if (best['binary']['sha256'] != segment.get('binary_sha256')
+                or best['binary']['path'] != segment.get('binary')
+                or best['reference']['path'] != segment.get('reference_binary')):
+            raise ValueError('legacy progress report bytes changed')
+        matching = sum(a == b for a, b in zip(reference, binary))
+        percentage = 100 * matching / len(reference)
+        if (segment.get('matching_bytes') != matching or not 70 < percentage < 100
+                or packet.get('full_method_percent') != percentage):
+            raise ValueError('legacy progress is unproven or not above70')
+        diagnosis = json.loads(pinned(side.get('owner_diagnosis')))
+        if (diagnosis.get('native_identity') != identity
+                or diagnosis.get('canonical_started_at') != task['started_at']
+                or diagnosis.get('owner') != side.get('owner')
+                or diagnosis.get('owner') != packet.get('legacy_owner')
+                or diagnosis.get('new_cause_id') != cause.get('cause_id')
+                or not isinstance(diagnosis.get('falsifiable_prediction'), str)
+                or not diagnosis['falsifiable_prediction'].strip()):
+            raise ValueError('legacy owner diagnosis identity/cause is incomplete')
+        # Three failures near the tail require complete original/C/generated reads.
+        reads = diagnosis.get('complete_reads', {})
+        if set(reads) != {'original', 'c', 'generated'}:
+            raise ValueError('legacy plateau needs full original/C/generated diagnosis')
+        for item in reads.values():
+            pinned(item)
+        if (reads['c'] != {'path': segment.get('source'), 'sha256': segment.get('source_sha256')}
+                or reads['generated']['path'] != segment.get('disassembly')):
+            raise ValueError('legacy diagnosis does not read the best report C/generated ASM')
+        if reads['original'] != identity['original_source']:
+            raise ValueError('legacy full original diagnosis changed')
+        return hashlib.sha256(encode(rows).encode()).hexdigest(), budgets, {
+            'sidecar': pin, 'cause_id': cause.get('cause_id'),
+            'attempt_limit': 1, 'prior_effective_causes': len(old_ids),
+            'near_exact_plateau': percentage >= 95 or len(reference) - matching <= 16}
+
     def work_lease(self, actor, data, kind='source', administrator=False):
         pin = data.get('work_lease')
         if pin is None:
@@ -655,12 +771,15 @@ class Ledger:
                 raise ValueError('continuation native identity changed')
             if not task['started_at'] or timestamp(packet.get('canonical_started_at')) != timestamp(task['started_at']):
                 raise ValueError('continuation canonical start is missing or changed')
+            legacy = packet.get('legacy_history_sidecar') is not None
+            legacy_extension = None
             hypotheses = spec.get('hypotheses')
-            if not isinstance(hypotheses, list):
-                raise ValueError('continuation prior hypothesis history is unknown')
-            prior_hypotheses_hash = hashlib.sha256(encode(hypotheses).encode()).hexdigest()
-            if packet.get('prior_hypotheses_sha256') != prior_hypotheses_hash:
-                raise ValueError('continuation prior hypotheses changed')
+            if not legacy:
+                if not isinstance(hypotheses, list):
+                    raise ValueError('continuation prior hypothesis history is unknown')
+                prior_hypotheses_hash = hashlib.sha256(encode(hypotheses).encode()).hexdigest()
+                if packet.get('prior_hypotheses_sha256') != prior_hypotheses_hash:
+                    raise ValueError('continuation prior hypotheses changed')
             history = [dict(row) for row in self.db.execute(
                 'SELECT seq,at,actor,kind,payload FROM events WHERE task_id=? ORDER BY seq', (task['id'],))]
             history_hash = hashlib.sha256(encode(history).encode()).hexdigest()
@@ -681,33 +800,39 @@ class Ledger:
             causes = packet.get('effective_matching_causes')
             if type(causes) is not int or not 0 <= causes < 6:
                 raise ValueError('continuation requires fewer than six effective matching causes')
-            budget_rows = packet.get('budgets')
-            if not isinstance(budget_rows, list) or not budget_rows:
-                raise ValueError('continuation requires complete known budget history')
-            prior_ids = {item.get('id') for item in hypotheses if isinstance(item, dict)}
-            budgets = {}
-            for item in budget_rows:
-                if not isinstance(item, dict) or item.get('known') is not True:
-                    raise ValueError('continuation budget history contains an unknown budget')
-                ident = item.get('hypothesis_id')
-                used, limit = item.get('attempts_used'), item.get('attempt_limit')
-                if (not isinstance(ident, str) or not ident or ident in budgets
-                        or type(used) is not int or type(limit) is not int or used < 0 or limit <= used):
-                    raise ValueError('continuation budget is exhausted or malformed')
-                budgets[ident] = {'attempts_used': used, 'attempt_limit': limit}
-            if set(budgets) != prior_ids:
-                raise ValueError('continuation budget list does not cover every prior hypothesis')
-            recorded_attempts = {ident: 0 for ident in budgets}
-            for row in self.db.execute("SELECT payload FROM events WHERE task_id=? AND kind='round'", (task['id'],)):
-                round_payload = json.loads(row['payload'])
-                if round_payload.get('outcome') == 'diagnostic':
-                    continue
-                hypothesis_id = round_payload.get('hypothesis_id')
-                if hypothesis_id not in recorded_attempts:
-                    raise ValueError('continuation prior round has unknown hypothesis attribution')
-                recorded_attempts[hypothesis_id] += 1
-            if any(budgets[ident]['attempts_used'] < count for ident, count in recorded_attempts.items()):
-                raise ValueError('continuation budget understates recorded hypothesis attempts')
+            if legacy:
+                if packet.get('legacy_owner') != data.get('owner'):
+                    raise ValueError('legacy diagnosis must belong to implementation owner')
+                prior_hypotheses_hash, budgets, legacy_extension = self.legacy_continuation(
+                    packet, task, identity, history)
+            else:
+                budget_rows = packet.get('budgets')
+                if not isinstance(budget_rows, list) or not budget_rows:
+                    raise ValueError('continuation requires complete known budget history')
+                prior_ids = {item.get('id') for item in hypotheses if isinstance(item, dict)}
+                budgets = {}
+                for item in budget_rows:
+                    if not isinstance(item, dict) or item.get('known') is not True:
+                        raise ValueError('continuation budget history contains an unknown budget')
+                    ident = item.get('hypothesis_id')
+                    used, limit = item.get('attempts_used'), item.get('attempt_limit')
+                    if (not isinstance(ident, str) or not ident or ident in budgets
+                            or type(used) is not int or type(limit) is not int or used < 0 or limit <= used):
+                        raise ValueError('continuation budget is exhausted or malformed')
+                    budgets[ident] = {'attempts_used': used, 'attempt_limit': limit}
+                if set(budgets) != prior_ids:
+                    raise ValueError('continuation budget list does not cover every prior hypothesis')
+                recorded_attempts = {ident: 0 for ident in budgets}
+                for row in self.db.execute("SELECT payload FROM events WHERE task_id=? AND kind='round'", (task['id'],)):
+                    round_payload = json.loads(row['payload'])
+                    if round_payload.get('outcome') == 'diagnostic':
+                        continue
+                    hypothesis_id = round_payload.get('hypothesis_id')
+                    if hypothesis_id not in recorded_attempts:
+                        raise ValueError('continuation prior round has unknown hypothesis attribution')
+                    recorded_attempts[hypothesis_id] += 1
+                if any(budgets[ident]['attempts_used'] < count for ident, count in recorded_attempts.items()):
+                    raise ValueError('continuation budget understates recorded hypothesis attempts')
             cause = packet.get('new_original_asm_cause')
             if (not isinstance(cause, dict) or cause.get('kind') != 'original_asm'
                     or not isinstance(cause.get('cause_id'), str) or not cause['cause_id']
@@ -768,6 +893,8 @@ class Ledger:
                 'budgets': budgets, 'new_original_asm_cause_id': cause['cause_id'],
                 'evidence': pins, 'summary': data['summary'],
                 'clock_policy': 'canonical start retained; episode start recorded'}
+            if legacy_extension:
+                continuation_evidence['legacy_extension'] = legacy_extension
             self.event(owner, task['id'], 'continued', continuation_evidence, at)
             self.promote_lease(work, task['id'], at)
             result_task = self.task(task['id']); result_task['spec'] = json.loads(result_task['spec'])
@@ -789,6 +916,20 @@ class Ledger:
                     for old in self.db.execute("SELECT payload FROM events WHERE task_id=? AND kind='round'", (task['id'],)):
                         if str(json.loads(old['payload'])['round']) == payload['round']:
                             raise ValueError('round already recorded; retry with the same request-id')
+                    legacy_episode = self.db.execute(
+                        "SELECT seq,payload FROM events WHERE task_id=? AND kind='continued' ORDER BY seq DESC LIMIT 1",
+                        (task['id'],)).fetchone()
+                    extension = json.loads(legacy_episode['payload']).get('legacy_extension') if legacy_episode else None
+                    if extension and data.get('outcome') != 'diagnostic':
+                        used = sum(json.loads(row['payload']).get('outcome') != 'diagnostic'
+                                   for row in self.db.execute(
+                                       "SELECT payload FROM events WHERE task_id=? AND kind='round' AND seq>?",
+                                       (task['id'], legacy_episode['seq'])))
+                        if used >= extension['attempt_limit']:
+                            raise ValueError('legacy supported extension budget exhausted')
+                        if data.get('hypothesis_id', extension['cause_id']) != extension['cause_id']:
+                            raise ValueError('legacy round cannot reuse a previous source cause')
+                        payload['hypothesis_id'] = extension['cause_id']
                     for name in ('generated_bytes', 'matching_bytes', 'compile_attempts'):
                         if name in data:
                             nonnegative(data[name], name)
