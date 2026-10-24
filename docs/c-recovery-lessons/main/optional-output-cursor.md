@@ -1,0 +1,12 @@
+# Preserve optional stores and unconditional cursor updates
+
+- **Result:** `CoreRegion_00050CE8`, Thumb entry `0x08050CE9`, matches the complete 104-byte envelope at fixed O2/interwork: 94 instruction bytes, 8 literal bytes and 2 alignment bytes. It is pure C; no retained suffix or instruction island.
+- **Native contract:** Scan sixteen 28-byte records, accepting each nonzero byte at offset20. Return the full count. A non-NULL output receives the accepted record pointers in order; the existing allocation, synchronous sort and release remain interfaces.
+- **Separate two lifetimes:** The original output pointer controls whether to store. A distinct 32-bit cursor advances by four for **every** accepted row, including the NULL-output path. Do not accidentally put both the store and cursor advance inside the output guard.
+- **Preserve the operation domain:** Use an integer address for the observed wrapping cursor; do not introduce C arithmetic on a NULL pointer or invent an output-capacity bound. Keep the signed countdown, record stride and store/update/count order from the original loop.
+- **Failed transfers:** Counter direction and cursor-initialization order improved some scattered bytes but did not match the whole method. The final source correction restored the unconditional update; it was not a register-name or compiler-option permutation.
+- **Evidence boundary:** Five source rounds reached104/104; native claim17:31:48.991123 to local credit17:48:09.003496 UTC on2026-10-24 is980.012373 seconds. That interval excludes earlier qualification and is not a whole-workflow throughput claim. Independent peer and actual-image identity subsequently passed.
+- **Helper correction:** `028C8` adapts count/stride for generic synchronous sorting at `02524`; `050CDD` is a comparator, not an asynchronous completion callback. The frozen interpretation erratum changed no source or binary.
+- **Pins:** Source `db5ef81c34c245529b6b4654b7f156ff87f2c023c3fdce71aaeb7c031de6ab52`; report `18b185717c8008f8448a5a0ae3d90f397f315b680dfff86dce0844fbe912c4a1`; binary `cbcafcbdd347196c758b39672ce79269b199fb10aded6fad68caa65c038b252d`. Agbcc revision `da598c1d918402c42c0c0d7128ba14567f3175e9`. No natural-capacity, gameplay-completion or hardware claim.
+
+See [storage versus working values](../../worker-decomp-strategy.md#1-storage-working-value-call-abi-and-return-width-are-separate) and [source-led mismatch retrieval](../../vendor-matching-playbook.md).
