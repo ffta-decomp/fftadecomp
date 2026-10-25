@@ -96,6 +96,25 @@ Conflicting/present top-level fields, unknown wrappers and ARM-mode assertions
 are rejected. Use the same CAS and path/digest request fields as the alias
 variant. The operation grants no new cause, task claim or compiler start.
 
+`original-thumb-entry-repair-v1` fills only an absent `thumb_entry` when both
+canonical source/reference pins already exist. Include the proposed Thumb entry,
+unchanged `original_source`, matching full reference, separate reference disassembly,
+retail and original report pins, plus the same state/spec CAS fields. The exact
+entry must equal the established offset plus the Thumb mode bit; an existing ABI
+entry, if present, must agree. The historical assembly envelope, explicit Thumb
+source, complete decoded retail bytes and original report entry validation are
+required. Existing entry or ARM mode, changed canonical pins, stale evidence and
+live overlaps fail. Missing mode remains absent; budgets, start-count evidence,
+original reports, credits and runtime state are unchanged. In particular, adding
+this alias does not authenticate an older unpinned compiler-failure assertion or
+grant continuation/compilation authority.
+A terminal objdump ellipsis is supported only for exactly two upper zero bytes
+of the final explicitly addressed `.word` in that same pinned original ASM.
+The literal's complete value must equal the full pinned retail/reference word;
+all preceding bytes must decode contiguously. The receipt records this source
+proof separately. Other omissions, nonzero tails or a mismatched/missing literal
+are rejected; no byte is trimmed or credited by this metadata operation.
+
 `original-reference-placeholder-repair-v1` replaces only the exact known
 historical prose placeholder in `original_reference_span_sha256`. It requires
 an unchanged, already pinned `original_source`, the original assembly envelope
