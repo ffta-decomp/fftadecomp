@@ -108,6 +108,10 @@ match can complete such a mixed method, but does not turn it into pure C.
   call restored the frame; anchoring the initialized payload address at its
   original phase then closed 56/56. This requires both lifetime and copy timing,
   not just a hard-register name. Zero emitted inline instructions.
+- An 80-byte cached-record scan first restored the original base-plus-index
+  address graph, then resolved the supported loop ordinal/offset lifetimes.
+  See [the O2 address-graph transfer](o2-address-graph-loop-lifetimes.md) for the
+  complete success, failed controls and limits; register names do not transfer.
 - These are recalled complete-range results, not a new speedup experiment or
   proof that any register mismatch has the same cause. Local, peer and integrated
   gates remain separate; a near match receives zero whole-exact credit.
