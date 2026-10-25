@@ -66,6 +66,18 @@ function metadata stay unchanged. This operation grants no claim, continuation
 or compiler permission; the worker subsequently uses ordinary lease/continue
 guards. It does not convert disassembly evidence into recovered source credit.
 
+The `original-identity-alias-repair-v1` request variant handles the historical
+workflow label `ASM_to_C_whole_native` without changing it. Its `original_source`
+must equal the existing `source_pin` and contain explicit Thumb declarations;
+the historical report must describe the same original assembly envelope.
+`reference_disassembly` separately pins its complete decoded reference bytes.
+If the report was indirect round evidence, `report_parent` must be the pinned
+`single-function-build-result-v1` summary with the exact report path and digest;
+recursive or unknown wrappers are rejected. Missing old span/retail digest aliases
+are established from this authenticated report and the full retail/reference
+comparison, never from a mode-label guess. Existing contradictory fields still
+fail; all original keys, runtime fields and history remain unchanged.
+
 ## Lease source qualification and independent verification
 
 Use managed leases before source qualification or peer verification. Leases and
