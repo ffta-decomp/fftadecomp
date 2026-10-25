@@ -78,6 +78,14 @@ are established from this authenticated report and the full retail/reference
 comparison, never from a mode-label guess. Existing contradictory fields still
 fail; all original keys, runtime fields and history remain unchanged.
 
+The same alias request also supports an absent `mode` when the unchanged
+specification already pins both full retail and native span digests in
+`rom_identity.sha256` and `rom_identity.span_sha256`. Both must match the
+historical report/reference, with a validated entry, explicit Thumb source and
+an already established top-level `thumb_entry`. Missing mode stays absent;
+unknown/conflicting aliases fail. Only the two missing canonical pins are added.
+
+
 `original-identity-nested-entry-repair-v1` handles three absent top-level
 aliases when the unchanged specification already has `abi.entry` and
 `source_pin`. It copies that exact Thumb entry only after checking its original
