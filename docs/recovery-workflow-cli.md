@@ -113,6 +113,20 @@ The worker must submit normal whole-exact evidence for its new result, followed
 by a fresh independent same-binary gate and asynchronous integration. Omitting
 this explicit scope preserves the previous credited-task rejection.
 
+### Correlate legacy command evidence
+
+For a legacy continuation, an original round may have pinned a successful
+`tools/build_function.py` command rather than its result. The report is
+recognized only when an independently hash-pinned original terminal inventory
+also lists its exact path and digest for that same numbered round and task.
+The command must name the same module and output directory, and the requested
+report must be that directory's `local-build/report.json`. The terminal record
+must retain the original assembly envelope and assert no whole-exact result.
+Unknown/unpinned inventories, changed command or report hashes, cross-task
+records and native-range changes fail closed. No unpinned `summary.json` is
+discovered or trusted. The continuation receipt records both historical anchors;
+all remaining history, budget, source lease and CAS guards are unchanged.
+
 ## Lease source qualification and independent verification
 
 Use managed leases before source qualification or peer verification. Leases and
