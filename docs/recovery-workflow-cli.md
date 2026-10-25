@@ -78,6 +78,31 @@ are established from this authenticated report and the full retail/reference
 comparison, never from a mode-label guess. Existing contradictory fields still
 fail; all original keys, runtime fields and history remain unchanged.
 
+`original-reference-placeholder-repair-v1` replaces only the exact known
+historical prose placeholder in `original_reference_span_sha256`. It requires
+an unchanged, already pinned `original_source`, the original assembly envelope
+in the authenticated report, separate complete `reference_disassembly`, and
+the existing full retail revision in `reference_sha256`. A valid digest, other
+unknown prose, changed source, stale CAS or incomplete reference is rejected.
+The receipt retains the previous placeholder and specification; no gate or
+runtime field changes.
+
+### Refine a semantically accepted method toward exact matching
+
+A worker's existing legacy continuation sidecar may explicitly set
+`"matching_only": true`. The normal source lease, original identity/history,
+reservation, progress, remaining cause budget and atomic claim checks still
+apply. This scope permits retained `local_semantic`/`peer_semantic` gates only;
+any unrevoked exact or integrated gate still prohibits continuation. Every
+retained semantic binary is verified; available supporting pins are checked.
+Missing historical review files are explicitly recorded as unavailable, never
+claimed as revalidated or reused acceptance; changed available evidence fails.
+All original credit records and pins are retained in the new continuation event. Old gates stay bound to their original binaries, without
+revocation, new semantic credit or automatic validation of changed code.
+The worker must submit normal whole-exact evidence for its new result, followed
+by a fresh independent same-binary gate and asynchronous integration. Omitting
+this explicit scope preserves the previous credited-task rejection.
+
 ## Lease source qualification and independent verification
 
 Use managed leases before source qualification or peer verification. Leases and
