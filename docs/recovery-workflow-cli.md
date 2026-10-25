@@ -78,6 +78,16 @@ are established from this authenticated report and the full retail/reference
 comparison, never from a mode-label guess. Existing contradictory fields still
 fail; all original keys, runtime fields and history remain unchanged.
 
+`original-identity-nested-entry-repair-v1` handles three absent top-level
+aliases when the unchanged specification already has `abi.entry` and
+`source_pin`. It copies that exact Thumb entry only after checking its original
+offset, complete assembly/reference envelope, explicit Thumb source and
+authenticated report entry validation. It adds `thumb_entry`, `original_source`
+and `original_reference_span_sha256`; it never invents or changes `mode` or ABI.
+Conflicting/present top-level fields, unknown wrappers and ARM-mode assertions
+are rejected. Use the same CAS and path/digest request fields as the alias
+variant. The operation grants no new cause, task claim or compiler start.
+
 `original-reference-placeholder-repair-v1` replaces only the exact known
 historical prose placeholder in `original_reference_span_sha256`. It requires
 an unchanged, already pinned `original_source`, the original assembly envelope
