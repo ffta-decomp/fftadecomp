@@ -1,0 +1,10 @@
+# Preserved roots, working snapshots and consumed addresses
+
+- The 94-byte actor-selection method keeps an allocated root alive for the final free and a separate cursor for rejected-predicate advances. The default first entry is loaded before the loop ordinal; a nonpositive count still retains that default.
+- An initialized fixed-root operand restored root/selected/ordinal homes but regressed the cursor into repeated indexed address calculations. Restoring the independently observed ordinary mutable cursor closes the whole function; a root binding alone is a negative transfer.
+- The 130-byte target/equipment method needs the actual two-halfword equipment OUT object and a first-item snapshot distinct from the materialized choice flag. After six outgoing stack arguments it consumes the snapshot in the observed register phase.
+- An explicit R7 item local generated a missing callee-save push/pop: 128/130 same bytes was ABI-invalid. The final ordinary item snapshot plus defined choice-flag operand restores both save ABI and all 130 bytes. Never trade a formal save obligation for byte count.
+- The 88-byte slot predicate distinguishes offset, base and the derived pointer consumed by the halfword load. Binding initial offset/base reached 86/88 but still overwrote the wrong address carrier; the actual derived-address definition/use closes the full span.
+- All operands are initialized and instruction-free. Preserve post-callback reloads, zero-count defaults, outgoing argument phases, narrow storage, and independently live roots; no arbitrary clobber or allocator prescription is justified.
+- Local5315/5320/5321 and independent5319/5322/5323 retain original six/seven, five/five and six/seven cause/start histories respectively. No naming compiler or old behavior-bank rerun is added during promotion.
+- Root/cursor and destructive-address signatures need original def-use evidence; a lexical hint cannot safely rewrite them. The missing-save counterexample additionally needs generated use/save sets and entry ABI, so retain it as contextual feedback under existing full-span/entry validation rather than inventing a generic source-only checker rule.
