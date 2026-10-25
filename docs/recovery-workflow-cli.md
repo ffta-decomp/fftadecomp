@@ -85,6 +85,16 @@ historical report/reference, with a validated entry, explicit Thumb source and
 an already established top-level `thumb_entry`. Missing mode stays absent;
 unknown/conflicting aliases fail. Only the two missing canonical pins are added.
 
+`original-identity-source-only-repair-v1` is a separate explicit variant for an
+older record with `source_pin` and top-level `thumb_entry`, but neither `mode`
+nor `rom_identity`. It requires the same original event-bound assembly report,
+validated entry, explicit Thumb source, complete decoded native reference and
+full retail/range comparison. Existing revision aliases must still agree.
+It adds only `original_source` and `original_reference_span_sha256`; absent
+fields stay absent. The ordinary alias variant still rejects this format.
+Runtime state, old events, credits, clocks and budgets remain unchanged; no
+source lease, continuation, task claim or compiler permission is granted.
+
 
 `original-identity-nested-entry-repair-v1` handles three absent top-level
 aliases when the unchanged specification already has `abi.entry` and
