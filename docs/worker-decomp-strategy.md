@@ -23,6 +23,16 @@ obligations are not replaced by a truncated diff. Reuse unchanged guidance and
 contracts after loading them rather than repeatedly filling the context with
 historical text.
 
+## Optional first draft for a nontrivial CFG or stack
+
+At a new owned method, the existing m2c `gba-gcc-c` target can supply block and
+stack-layout hypotheses before hand drafting. See [the short recipe](m2c-gba-first-draft.md).
+Use proven caller/type context and original ASM; inferred ABI/OUT widths remain
+unverified. Fixed O2, whole-native gates and old cause budgets remain unchanged.
+Skip the tool for tiny wrappers and reuse its output rather than generating it
+every round. Measure complete source-to-local time and first-pass yield, not
+just tool execution time.
+
 ## Keep these facts beside the current method
 
 1. Pin the **complete** native entry/mode/span, including all returns, literals,
