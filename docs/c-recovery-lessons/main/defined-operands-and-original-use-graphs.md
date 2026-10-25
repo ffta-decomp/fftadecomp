@@ -1,0 +1,10 @@
+# Defined operands must retain the original use graph
+
+- `12C960` now reproduces all 26 bytes. Separate initialized full-word numeric returns keep the original positive/negative branch definitions; original branch fallthrough still matters. The published numeric-record-flag transfer is a source-backed prerequisite, not a universal Boolean-spelling rule.
+- `C13C8` reproduces all 110 bytes by distinguishing the incoming R0 argument used by the first call, a defined saved R4 unit snapshot used later, and the actual consumed R1 fallback address. These are different uses of related values.
+- Its initial R4 readwrite binding fixed register homes but inserted a first-call reload; changing that operand to readonly produced the same failed 110-byte output. A readonly spelling alone is therefore a negative transfer, not a solution.
+- `13158C` reproduces all 70 bytes after the defined product occupies R0 at the destructive multiply and the shifted output occupies R4. The older R4-only variant matched 68/70 but selected the wrong multiply/shift operands. Context and call arguments are already consumed/preserved before the working carrier is bound.
+- Every empty operand consumes a real C definition and emits zero instructions. Reuse the existing `extend.texi` local-register/input-output rules and Thumb destructive-MUL alternatives; no global allocator/pass claim follows.
+- Do not transfer across a still-live formal/home (`130200`), a narrow readwrite normalization (`1312EC`), an unproved root/cursor lifetime, or unresolved CFG/frame/width differences. No fake value, clobber, opaque barrier or seventh trial is justified.
+- Local5300/5301/5302 and independent5303/5304/5305 close the three bounded native proofs. Original clocks, failed causes and actual starts remain charged. Compiler NOPs outside the native spans are excluded from credit.
+- These specific def-use signatures remain contextual checker inputs, not automatic rewrite rules. Production materialization preserves every nonblank preprocessed line and must reproduce the complete frozen binaries in the normal integration build. No natural-gameplay, job-field naming or hardware claim is added.
