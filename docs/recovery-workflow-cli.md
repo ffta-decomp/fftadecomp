@@ -49,6 +49,23 @@ active spans and module names cannot overlap. `import-pool` accepts the existing
 completed historical states. It does **not** infer acceptance from those labels.
 Existing differing task records are rejected, never overwritten by a later import.
 
+### Repair missing original reference pins
+
+`repair-original-identity --actor administrator --task ORIGINAL_ID --file request.json`
+only fills absent `original_source` and `original_reference_span_sha256` fields
+on a blocked/frozen historical Thumb task. The request schema is
+`original-identity-repair-v1`: include `expected_task` (state, actor, reservation,
+started_at, last_round_at), `expected_spec_sha256`, a reason in `summary`, and
+`report`, `reference`, `original_source`, `retail` path/SHA-256 pins. The report
+must already be direct round evidence. Its full reference and retained
+disassembly must cover the existing envelope exactly and match the pinned
+retail revision. Live overlaps, stale CAS, changed evidence and existing fields
+are rejected. An appended event retains the previous specification and both
+specification hashes. State, owner, clocks, rounds, budgets, gates and selected
+function metadata stay unchanged. This operation grants no claim, continuation
+or compiler permission; the worker subsequently uses ordinary lease/continue
+guards. It does not convert disassembly evidence into recovered source credit.
+
 ## Lease source qualification and independent verification
 
 Use managed leases before source qualification or peer verification. Leases and
