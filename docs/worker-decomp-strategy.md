@@ -58,6 +58,15 @@ The [execution rules](c-recovery-throughput.md) own claims, gates, budgets and
 measurement. This page is the source-writing strategy. Detailed provenance,
 pass experiments and counterexamples remain in the linked references.
 
+Carry newly verified syntax or compiler-shape knowledge in the existing owned
+lesson/promotion handoff: symptom, original/source before-and-after evidence
+pins, applicability and counterexamples, existing checker rule ID or an explicit
+uncovered pattern, and the retained replay path. Reused knowledge needs only its
+existing link. At normal integration, main adds a deterministic checker rule
+with a positive regression and counterexample when supported; otherwise retain
+the uncovered case. No extra per-function report, repeated compile or invented
+general rule is required. Retain the checker replay and its stated limits.
+
 ## Read the source type from its use, not one instruction
 
 ### 1. Storage, working value, call ABI and return width are separate
