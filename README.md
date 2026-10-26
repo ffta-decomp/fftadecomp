@@ -1,6 +1,6 @@
 # FFTA Recovery Atlas and Toolkit
 
-[Open the dashboard](https://gh.bhee.online/fftadecomp/) · [Contributor guide](CONTRIBUTING.md) · [Workflow library](docs/README.md) · [Function catalogue](data/functions.csv) · [Local unpacking](docs/extract-asm.md)
+[Open the dashboard](https://ffta-decomp.github.io/fftadecomp/) · [Contributor guide](CONTRIBUTING.md) · [Workflow library](docs/README.md) · [Function catalogue](data/functions.csv) · [Local unpacking](docs/extract-asm.md)
 
 Daily reporting for Final Fantasy Tactics Advance (USA): delivery speed, daily decompilation history, and unified system and module progress.
 
