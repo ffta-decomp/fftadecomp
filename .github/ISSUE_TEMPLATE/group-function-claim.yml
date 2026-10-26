@@ -1,10 +1,10 @@
 name: Group function claim
 description: Request one disjoint native function in the active recovery group.
-title: "[Claim] <group> / <native ID>"
+title: "[Claim] 0x08XXXXXX — <function name>"
 body:
   - type: markdown
     attributes:
-      value: "Check existing claims and CONTRIBUTING.md first. A maintainer must confirm canonical ownership before implementation. Do not upload ROMs, disassembly, assets, personal information or private logs."
+      value: "Include the function entry address in the title. Agents must ask their user to publish this issue. Post substantive progress at least every 24 hours; more than 24 hours without an update means abandonment. Check existing claims and CONTRIBUTING.md first. A maintainer must confirm canonical ownership before implementation. Do not upload ROMs, disassembly, assets, personal information or private logs."
   - type: dropdown
     id: group
     attributes:
@@ -39,4 +39,6 @@ body:
       label: Coordination and privacy
       options:
         - label: I will wait for canonical ownership confirmation and will not upload private or extracted content.
+          required: true
+        - label: I will update progress at least every 24 hours and understand that inactivity releases this claim.
           required: true

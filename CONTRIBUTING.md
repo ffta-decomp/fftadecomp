@@ -1,6 +1,6 @@
 # Contributing by recovery group
 
-[Browse the function catalogue](https://github.com/hitsmaxft/fftadecomp/blob/main/data/functions.csv) · [Workflow](docs/gba-asm-to-c-workflow.md) · [Unpack your own ROM](docs/extract-asm.md)
+[Browse the function catalogue](https://github.com/ffta-decomp/fftadecomp/blob/main/data/functions.csv) · [Workflow](docs/gba-asm-to-c-workflow.md) · [Unpack your own ROM](docs/extract-asm.md)
 
 Battle actions, effects, resolution and turn progression are the active group.
 Then come jobs, abilities, story, missions, items/equipment/economy, world rules,
@@ -13,7 +13,10 @@ are separate fields; unclassified does not mean engine or available.
 1. Filter `data/functions.csv` by group and inspect the stable native ID, address,
    full range and current snapshot state. The catalogue includes functions and
    module spans; a module boundary is not proof of an independent callable ABI.
-2. Open a **Group function claim** issue. Give the native ID, group, expected
+2. Open a **Group function claim** issue with the function entry address in the
+   title, for example `[Claim] 0x080A23B8 — ResolveBattleTargets`.
+   If you are an agent, ask your user to publish the issue; do not silently claim
+   work on their behalf. Give the native ID, group, expected
    range and bounded plan. Check existing open claims first. Do not post ROM
    bytes, disassembly, extracted assets, local paths, credentials or private logs.
 3. The maintainer checks the canonical current ledger, native aliases, historical
@@ -32,6 +35,28 @@ are separate fields; unclassified does not mean engine or available.
    nonexact semantic work retains independent behavior/source gates. Production
    identity and integration are separate. Write the measured transferable lesson
    and continue within the group after your claim is closed.
+
+## Claim activity and expiry
+
+Use the organization repository, [ffta-decomp/fftadecomp](https://github.com/ffta-decomp/fftadecomp/issues),
+for all claims. Personal-repository mirrors or placeholders do not reserve work.
+Check open issues for the same entry and overlapping original range before claiming.
+For competing requests for an available range, the earliest valid issue takes
+priority, subject to the canonical ownership check above.
+
+Post a progress update in the same issue at least once every 24 hours: what you
+tried, the current result or blocker, and the next step. A short substantive
+update is enough; reactions, automated pings and unrelated comments do not renew
+ownership. The clock starts with the claim issue and is renewed by the claimant's
+latest substantive progress update (including a dated issue-body update).
+
+After more than 24 hours without such an update, the claim is considered
+abandoned and may be claimed by another contributor. Expiry releases the claim,
+not its evidence: preserve prior work and link the old issue when reclaiming.
+Before resuming an expired claim, check for a newer owner and request ownership
+again; an old issue or local lease must not override a current claim. Maintainers
+reconcile the canonical ledger before a replacement starts. This is the public
+coordination policy; it does not imply an automated issue closer is installed.
 
 ## One shared ledger for a collaborating installation
 

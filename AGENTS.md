@@ -23,7 +23,11 @@ upstream work, preserve licenses and prefer submodules for adopted dependencies.
 # Contributor coordination
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) and the public native-function catalogue
-before requesting a disjoint function through a public Issue. A maintainer confirms
+before requesting a disjoint function through a public Issue. Agents must ask
+their user to publish the claim in `ffta-decomp/fftadecomp`, with the function
+entry address in its title. Update progress in that issue at least every 24 hours;
+a claim with more than 24 hours of inactivity is considered abandoned. See
+CONTRIBUTING.md for renewal, collision and reclaim rules. A maintainer confirms
 canonical ownership before implementation. Public metadata is a dated snapshot,
 not a promise that every row is available. Keep local setup, private assignments,
 account/session information and machine paths outside this repository.
