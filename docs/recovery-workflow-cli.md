@@ -183,6 +183,40 @@ content digest. Original files/reports remain untouched; generated-ASM path and
 all other evidence checks remain mandatory. This diagnosis-only snapshot is
 not a build-input provenance override or acceptance of the old binary.
 
+### Explicit user matching-budget exceptions
+
+Only an explicit user instruction may waive matching limits for identified old
+tasks. A maintainer records that instruction through:
+
+```sh
+python3 tools/recovery_workflow.py authorize-matching-budget \
+  --actor administrator --task "$ORIGINAL_TASK" --file "$REQUEST"
+```
+
+The request contains `expected_task` (state, actor, reservation, original
+`started_at`), `expected_token`, `expected_spec_sha256`, and an `authorization`
+path/SHA-256 pin. Keep bearer tokens in private request files. The frozen
+authorization uses schema `explicit-user-unlimited-matching-v1`, a pinned
+`instruction`, a nonempty `reason`, and a `tasks` list containing each exact
+`native_identity` and `canonical_started_at`. Its explicit `limits` are
+`{"source_causes": null, "compiler_starts": null,
+"continuation_minimum_percent": null}`. Here null means authorized unlimited
+matching, not zero attempts or unknown history. Unlisted tasks get no exception.
+
+This appends a `matching_budget_authorized` event without changing the task,
+specification, old rounds, spent budgets, credits, token or original clock.
+Workers keep using ordinary claim/record/finish/continue commands. New receipts
+reference the authorization; source-backed causes and actual compiler starts
+remain recorded. The exception removes only matching cause/attempt ceilings and
+the continuation progress threshold, including the old single-round legacy
+episode ceiling. It does not fabricate an unspent budget or an unexhausted state;
+the continuation records its actual prior terminal flags and spent limits.
+Identity, source/hash evidence, history snapshots, lease/ownership, reservations,
+CAS and completed/credited-task checks still apply. Full-function validation and
+independent/production acceptance are unchanged. Changed authorization or source
+evidence fails closed. Worker-authored sidecar fields cannot grant this scope;
+ordinary tasks retain their existing limits.
+
 ## Lease source qualification and independent verification
 
 Use managed leases before source qualification or peer verification. Leases and
