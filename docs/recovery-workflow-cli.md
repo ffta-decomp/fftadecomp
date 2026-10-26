@@ -164,6 +164,20 @@ records and native-range changes fail closed. No unpinned `summary.json` is
 discovered or trusted. The continuation receipt records both historical anchors;
 all remaining history, budget, source lease and CAS guards are unchanged.
 
+An event-pinned `local-module-build-failure-v1` can prove zero compiler starts
+only for the exact pure-C compiler-data-policy rejection at `compile_module`,
+with no compile substage, timings, artifacts or artifact-copy errors. Native
+output, recorded starts, a native report, other errors or missing/changed proof
+keep the conservative start charge. The failed round and its source cause
+remain spent; this does not discount an unpinned historical failure assertion.
+
+Complete C diagnosis may read a hash-pinned immutable snapshot whose bytes match
+the original authenticated best report's `source_sha256`, even when its old
+working path has changed. The continuation receipt records both paths and the
+content digest. Original files/reports remain untouched; generated-ASM path and
+all other evidence checks remain mandatory. This diagnosis-only snapshot is
+not a build-input provenance override or acceptance of the old binary.
+
 ## Lease source qualification and independent verification
 
 Use managed leases before source qualification or peer verification. Leases and
