@@ -170,6 +170,11 @@ with no compile substage, timings, artifacts or artifact-copy errors. Native
 output, recorded starts, a native report, other errors or missing/changed proof
 keep the conservative start charge. The failed round and its source cause
 remain spent; this does not discount an unpinned historical failure assertion.
+The event-bound single-function result route also recognizes the exact candidate
+allowlist rejection for the five mixed accounting fields (`component`,
+`inline_assembly_bytes`, `instructions_bytes`, `literal_bytes`, `padding_bytes`).
+Unknown field sets, changed proofs and native-output contradictions still fail;
+the candidate schema itself and mixed acceptance policy are unchanged.
 
 Complete C diagnosis may read a hash-pinned immutable snapshot whose bytes match
 the original authenticated best report's `source_sha256`, even when its old
