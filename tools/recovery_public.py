@@ -591,6 +591,23 @@ def check_public(data):
         raise ValueError('private material found in public aggregate')
 
 
+def without_staffing(data):
+    """Public progress exposes aggregate output, never staffing identities/counts."""
+    if isinstance(data, list):
+        return [without_staffing(x) for x in data]
+    if not isinstance(data, dict):
+        return data
+    result = {}
+    for key, value in data.items():
+        if key in {'actors', 'actor', 'workers', 'worker_count', 'active_workers',
+                   'lane_count', 'lanes', 'session_count'}:
+            continue
+        if key == 'performance' and isinstance(value, list):
+            value = [x for x in value if x.get('id') == 'team']
+        result[key] = without_staffing(value)
+    return result
+
+
 def public_files(ledger, public_dir, mapping, baseline=None, migration_audit=None):
     root = Path(public_dir)
     progress = wf.load_json(root/'data/progress.json')
@@ -609,14 +626,14 @@ def public_files(ledger, public_dir, mapping, baseline=None, migration_audit=Non
                                 'totals':snapshot['totals'], 'recording_gaps':snapshot['recording_gaps']}
     if migration_audit is not None:
         progress['live_recovery']['migration_attribution'] = snapshot['migration_attribution']
-    progress['active_work'] = [{'title':'Concurrent core recovery',
-        'scope':f"{snapshot['totals']['states']['active']} active tasks across assigned implementation lanes; {snapshot['totals']['states']['ready']} ready tasks.",
+    progress['active_work'] = [{'title':'Core recovery',
+        'scope':f"{snapshot['totals']['states']['active']} active tasks; {snapshot['totals']['states']['ready']} ready tasks.",
         'status':'Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals.'}]
     catalog['activity_as_of'] = snapshot['as_of']
     catalog['activity_data'] = 'data/workflow.json'
     for item, activity in zip(catalog['submodules'], snapshot['submodules']):
         item['activity'] = {key:activity[key] for key in ('tasks','states','classification','gates')}
-    result = dict(zip(PUBLIC_FILES, (snapshot, progress, catalog)))
+    result = {name:without_staffing(data) for name,data in zip(PUBLIC_FILES, (snapshot, progress, catalog))}
     for data in result.values():check_public(data)
     return {name:json.dumps(data,indent=2,ensure_ascii=False,allow_nan=False)+'\n' for name,data in result.items()}
 

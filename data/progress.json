@@ -117,8 +117,8 @@
   ],
   "active_work": [
     {
-      "title": "Concurrent core recovery",
-      "scope": "0 active tasks across assigned implementation lanes; 0 ready tasks.",
+      "title": "Core recovery",
+      "scope": "2 active tasks; 0 ready tasks.",
       "status": "Automatic activity data separates local exact, peer acceptance and integration. Pending work is excluded from verified ROM totals."
     }
   ],
@@ -148,21 +148,21 @@
     "whole_workflow_speedup": null
   },
   "live_recovery": {
-    "as_of": "2026-10-25T15:55:53.451033+00:00",
+    "as_of": "2026-10-26T04:51:17.414204+00:00",
     "data": "data/workflow.json",
     "totals": {
-      "tasks": 2628,
-      "original_backlog_span_bytes": 726768,
+      "tasks": 2764,
+      "original_backlog_span_bytes": 734512,
       "states": {
         "ready": 0,
-        "active": 0,
-        "frozen": 2038,
-        "blocked": 590
+        "active": 2,
+        "frozen": 2188,
+        "blocked": 574
       },
       "classification": {
         "mapped": 96,
         "provisional": 553,
-        "unmapped": 1979
+        "unmapped": 2115
       },
       "gates": {
         "local_semantic": {
@@ -176,7 +176,7 @@
             "original_bytes": 5610,
             "generated_bytes": 5374
           },
-          "cumulative_original_B_per_hour": 65.75752331889412,
+          "cumulative_original_B_per_hour": 57.10693506761946,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -192,27 +192,27 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 1756,
-            "original_bytes": 187130,
-            "generated_bytes": 187130
+            "functions": 1912,
+            "original_bytes": 199190,
+            "generated_bytes": 199190
           },
           "since_epoch": {
-            "functions": 1756,
-            "original_bytes": 187130,
-            "generated_bytes": 187130
+            "functions": 1912,
+            "original_bytes": 199190,
+            "generated_bytes": 199190
           },
-          "cumulative_original_B_per_hour": 2193.4412368386193,
+          "cumulative_original_B_per_hour": 2027.6524770265812,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
+            "functions": 127,
+            "original_bytes": 6504,
+            "generated_bytes": 6504,
+            "original_B_per_hour": 6504.0
           },
           "previous_hour": {
-            "functions": 2,
-            "original_bytes": 144,
-            "generated_bytes": 144,
-            "original_B_per_hour": 144.0
+            "functions": 1,
+            "original_bytes": 1704,
+            "generated_bytes": 1704,
+            "original_B_per_hour": 1704.0
           }
         },
         "peer_semantic": {
@@ -226,7 +226,7 @@
             "original_bytes": 2496,
             "generated_bytes": 2328
           },
-          "cumulative_original_B_per_hour": 29.25682320926198,
+          "cumulative_original_B_per_hour": 25.408005334898068,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -242,199 +242,122 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 1756,
-            "original_bytes": 187130,
-            "generated_bytes": 187130
+            "functions": 1911,
+            "original_bytes": 197486,
+            "generated_bytes": 197486
           },
           "since_epoch": {
-            "functions": 1756,
-            "original_bytes": 187130,
-            "generated_bytes": 187130
+            "functions": 1911,
+            "original_bytes": 197486,
+            "generated_bytes": 197486
           },
-          "cumulative_original_B_per_hour": 2193.4412368386193,
+          "cumulative_original_B_per_hour": 2010.306627230641,
           "last_hour": {
-            "functions": 2,
-            "original_bytes": 264,
-            "generated_bytes": 264,
-            "original_B_per_hour": 264.0
+            "functions": 8,
+            "original_bytes": 1010,
+            "generated_bytes": 1010,
+            "original_B_per_hour": 1010.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "integrated": {
           "retained": {
-            "functions": 1740,
-            "original_bytes": 186344,
-            "generated_bytes": 186192
+            "functions": 1895,
+            "original_bytes": 196700,
+            "generated_bytes": 196548
           },
           "since_epoch": {
-            "functions": 1740,
-            "original_bytes": 186344,
-            "generated_bytes": 186192
+            "functions": 1895,
+            "original_bytes": 196700,
+            "generated_bytes": 196548
           },
-          "cumulative_original_B_per_hour": 2184.22815068378,
+          "cumulative_original_B_per_hour": 2002.3055486275841,
           "last_hour": {
-            "functions": 2,
-            "original_bytes": 110,
-            "generated_bytes": 110,
-            "original_B_per_hour": 110.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "integrated_exact": {
           "retained": {
-            "functions": 1732,
-            "original_bytes": 184504,
-            "generated_bytes": 184504
+            "functions": 1887,
+            "original_bytes": 194860,
+            "generated_bytes": 194860
           },
           "since_epoch": {
-            "functions": 1732,
-            "original_bytes": 184504,
-            "generated_bytes": 184504
+            "functions": 1887,
+            "original_bytes": 194860,
+            "generated_bytes": 194860
           },
-          "cumulative_original_B_per_hour": 2162.6606207538753,
+          "cumulative_original_B_per_hour": 1983.5752882845504,
           "last_hour": {
-            "functions": 2,
-            "original_bytes": 110,
-            "generated_bytes": 110,
-            "original_B_per_hour": 110.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         }
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 0,
+      "pending_peer_exact": 1,
       "pending_integration_exact": 24,
       "exact_rounds_without_local_credit": 3
     }
   },
   "dashboard": {
     "schema_version": 2,
-    "as_of": "2026-10-25T15:55:53.451033+00:00",
+    "as_of": "2026-10-26T04:51:17.414204+00:00",
     "integrated_rom_sha256": "fe09f20f0639d3cf6e2a43cb318cc662bc7c2a4f869990929b7883bcc9cde2d7",
     "overview": {
       "integrated_c_bytes": 228680,
       "integrated_exact_bytes": 92296,
       "mixed_bytes": 11608,
-      "pending_exact_bytes": 119792,
-      "pending_peer_exact_bytes": 119792,
+      "pending_exact_bytes": 131852,
+      "pending_peer_exact_bytes": 130148,
       "pending_mixed_exact_bytes": 3136,
       "pending_peer_mixed_exact_bytes": 3136,
-      "exact_available_bytes": 216388,
-      "tasks": 2628,
+      "exact_available_bytes": 228448,
+      "tasks": 2764,
       "states": {
         "ready": 0,
-        "active": 0,
-        "frozen": 2038,
-        "blocked": 590
+        "active": 2,
+        "frozen": 2188,
+        "blocked": 574
       },
-      "pure_c_exact_available_bytes": 212088,
+      "pure_c_exact_available_bytes": 224148,
       "integrated_eligible_mixed_exact_bytes": 1164,
-      "completed_exact_original_bytes": 216388
+      "completed_exact_original_bytes": 228448
     },
     "performance": [
       {
         "id": "team",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 1,
-        "exact_B_per_completed_hour": 232.0,
-        "previous_completed_hour_exact_B_per_hour": 144.0,
-        "peer_exact_B_per_completed_hour": 264.0,
-        "integrated_exact_B_per_completed_hour": 110.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "main",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 32.0,
-        "peer_exact_B_per_completed_hour": 32.0,
-        "integrated_exact_B_per_completed_hour": 32.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "worker2",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
+        "active_tasks": 2,
+        "exact_methods_last_completed_hour": 127,
+        "exact_B_per_completed_hour": 6504.0,
+        "previous_completed_hour_exact_B_per_hour": 1704.0,
+        "peer_exact_B_per_completed_hour": 1010.0,
         "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "worker3",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "sol_a",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "sol_b",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "sol_c",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "astra_handoff",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
+        "median_seconds": 75.54153,
+        "p90_seconds": 395.334523
       }
     ],
     "systems": [
@@ -444,17 +367,17 @@
         "integrated_c_bytes": 79300,
         "integrated_exact_bytes": 20254,
         "mixed_bytes": 268,
-        "pending_exact_bytes": 1864,
-        "pending_peer_exact_bytes": 1864,
+        "pending_exact_bytes": 4600,
+        "pending_peer_exact_bytes": 2896,
         "pending_mixed_exact_bytes": 148,
         "pending_peer_mixed_exact_bytes": 148,
-        "exact_available_bytes": 22266,
+        "exact_available_bytes": 25002,
         "tasks": 185,
         "states": {
           "ready": 0,
-          "active": 0,
-          "frozen": 152,
-          "blocked": 33
+          "active": 2,
+          "frozen": 155,
+          "blocked": 28
         },
         "modules": [
           {
@@ -563,9 +486,9 @@
             "tasks": 2,
             "states": {
               "ready": 0,
-              "active": 0,
+              "active": 1,
               "frozen": 1,
-              "blocked": 1
+              "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 1290,
@@ -671,8 +594,8 @@
             "integrated_c_bytes": 4650,
             "integrated_exact_bytes": 3678,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 112,
-            "pending_peer_exact_bytes": 112,
+            "pending_exact_bytes": 182,
+            "pending_peer_exact_bytes": 182,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 16,
@@ -683,8 +606,8 @@
               "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 3790,
-            "pure_c_exact_available_bytes": 3790,
+            "exact_available_bytes": 3860,
+            "pure_c_exact_available_bytes": 3860,
             "integrated_eligible_mixed_exact_bytes": 0
           },
           {
@@ -862,9 +785,9 @@
             "tasks": 1,
             "states": {
               "ready": 0,
-              "active": 0,
+              "active": 1,
               "frozen": 0,
-              "blocked": 1
+              "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 196,
@@ -901,24 +824,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1062,
-            "pending_peer_exact_bytes": 1062,
+            "pending_exact_bytes": 3728,
+            "pending_peer_exact_bytes": 2024,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 121,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 93,
-              "blocked": 28
+              "frozen": 96,
+              "blocked": 25
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 1062,
-            "pure_c_exact_available_bytes": 1062,
+            "exact_available_bytes": 3728,
+            "pure_c_exact_available_bytes": 3728,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 22118,
+        "pure_c_exact_available_bytes": 24854,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -927,17 +850,17 @@
         "integrated_c_bytes": 23228,
         "integrated_exact_bytes": 5276,
         "mixed_bytes": 9996,
-        "pending_exact_bytes": 496,
-        "pending_peer_exact_bytes": 496,
+        "pending_exact_bytes": 572,
+        "pending_peer_exact_bytes": 572,
         "pending_mixed_exact_bytes": 806,
         "pending_peer_mixed_exact_bytes": 806,
-        "exact_available_bytes": 6578,
+        "exact_available_bytes": 6654,
         "tasks": 158,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 140,
-          "blocked": 18
+          "frozen": 138,
+          "blocked": 20
         },
         "modules": [
           {
@@ -1062,24 +985,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 496,
-            "pending_peer_exact_bytes": 496,
+            "pending_exact_bytes": 572,
+            "pending_peer_exact_bytes": 572,
             "pending_mixed_exact_bytes": 806,
             "pending_peer_mixed_exact_bytes": 806,
             "tasks": 151,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 136,
-              "blocked": 15
+              "frozen": 134,
+              "blocked": 17
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 1302,
-            "pure_c_exact_available_bytes": 496,
+            "exact_available_bytes": 1378,
+            "pure_c_exact_available_bytes": 572,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 5772,
+        "pure_c_exact_available_bytes": 5848,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -1088,17 +1011,17 @@
         "integrated_c_bytes": 10064,
         "integrated_exact_bytes": 5624,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 780,
-        "pending_peer_exact_bytes": 780,
+        "pending_exact_bytes": 958,
+        "pending_peer_exact_bytes": 958,
         "pending_mixed_exact_bytes": 388,
         "pending_peer_mixed_exact_bytes": 388,
-        "exact_available_bytes": 6792,
+        "exact_available_bytes": 6970,
         "tasks": 162,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 120,
-          "blocked": 42
+          "frozen": 126,
+          "blocked": 36
         },
         "modules": [
           {
@@ -1200,24 +1123,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 780,
-            "pending_peer_exact_bytes": 780,
+            "pending_exact_bytes": 958,
+            "pending_peer_exact_bytes": 958,
             "pending_mixed_exact_bytes": 388,
             "pending_peer_mixed_exact_bytes": 388,
             "tasks": 150,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 111,
-              "blocked": 39
+              "frozen": 117,
+              "blocked": 33
             },
-            "last_completed_hour_exact_B_per_hour": 232.0,
-            "exact_available_bytes": 1168,
-            "pure_c_exact_available_bytes": 780,
+            "last_completed_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 1346,
+            "pure_c_exact_available_bytes": 958,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 6404,
+        "pure_c_exact_available_bytes": 6582,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -1226,17 +1149,17 @@
         "integrated_c_bytes": 15562,
         "integrated_exact_bytes": 1362,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1484,
-        "pending_peer_exact_bytes": 1484,
+        "pending_exact_bytes": 1940,
+        "pending_peer_exact_bytes": 1940,
         "pending_mixed_exact_bytes": 0,
         "pending_peer_mixed_exact_bytes": 0,
-        "exact_available_bytes": 2846,
+        "exact_available_bytes": 3302,
         "tasks": 87,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 59,
-          "blocked": 28
+          "frozen": 61,
+          "blocked": 26
         },
         "modules": [
           {
@@ -1315,24 +1238,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1484,
-            "pending_peer_exact_bytes": 1484,
+            "pending_exact_bytes": 1940,
+            "pending_peer_exact_bytes": 1940,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 81,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 57,
-              "blocked": 24
+              "frozen": 59,
+              "blocked": 22
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 1484,
-            "pure_c_exact_available_bytes": 1484,
+            "exact_available_bytes": 1940,
+            "pure_c_exact_available_bytes": 1940,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 2846,
+        "pure_c_exact_available_bytes": 3302,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -1341,17 +1264,17 @@
         "integrated_c_bytes": 8892,
         "integrated_exact_bytes": 1528,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 236,
+        "pending_peer_exact_bytes": 236,
         "pending_mixed_exact_bytes": 0,
         "pending_peer_mixed_exact_bytes": 0,
-        "exact_available_bytes": 1528,
+        "exact_available_bytes": 1764,
         "tasks": 54,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 34,
-          "blocked": 20
+          "frozen": 35,
+          "blocked": 19
         },
         "modules": [
           {
@@ -1407,24 +1330,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 236,
+            "pending_peer_exact_bytes": 236,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 47,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 30,
-              "blocked": 17
+              "frozen": 31,
+              "blocked": 16
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0,
-            "pure_c_exact_available_bytes": 0,
+            "exact_available_bytes": 236,
+            "pure_c_exact_available_bytes": 236,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 1528,
+        "pure_c_exact_available_bytes": 1764,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -1594,11 +1517,11 @@
         "integrated_c_bytes": 84448,
         "integrated_exact_bytes": 56442,
         "mixed_bytes": 1344,
-        "pending_exact_bytes": 0,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 332,
+        "pending_peer_exact_bytes": 332,
         "pending_mixed_exact_bytes": 0,
         "pending_peer_mixed_exact_bytes": 0,
-        "exact_available_bytes": 57606,
+        "exact_available_bytes": 57938,
         "tasks": 3,
         "states": {
           "ready": 0,
@@ -1637,8 +1560,8 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 332,
+            "pending_peer_exact_bytes": 332,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 3,
@@ -1649,12 +1572,12 @@
               "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0,
-            "pure_c_exact_available_bytes": 0,
+            "exact_available_bytes": 332,
+            "pure_c_exact_available_bytes": 332,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 56442,
+        "pure_c_exact_available_bytes": 56774,
         "integrated_eligible_mixed_exact_bytes": 1164
       },
       {
@@ -1663,17 +1586,17 @@
         "integrated_c_bytes": 0,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 115168,
-        "pending_peer_exact_bytes": 115168,
+        "pending_exact_bytes": 123214,
+        "pending_peer_exact_bytes": 123214,
         "pending_mixed_exact_bytes": 1794,
         "pending_peer_mixed_exact_bytes": 1794,
-        "exact_available_bytes": 116962,
-        "tasks": 1979,
+        "exact_available_bytes": 125008,
+        "tasks": 2115,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 1530,
-          "blocked": 449
+          "frozen": 1670,
+          "blocked": 445
         },
         "modules": [
           {
@@ -1683,24 +1606,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 115168,
-            "pending_peer_exact_bytes": 115168,
+            "pending_exact_bytes": 123214,
+            "pending_peer_exact_bytes": 123214,
             "pending_mixed_exact_bytes": 1794,
             "pending_peer_mixed_exact_bytes": 1794,
-            "tasks": 1979,
+            "tasks": 2115,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 1530,
-              "blocked": 449
+              "frozen": 1670,
+              "blocked": 445
             },
-            "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 116962,
-            "pure_c_exact_available_bytes": 115168,
+            "last_completed_hour_exact_B_per_hour": 6504.0,
+            "exact_available_bytes": 125008,
+            "pure_c_exact_available_bytes": 123214,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 115168,
+        "pure_c_exact_available_bytes": 123214,
         "integrated_eligible_mixed_exact_bytes": 0
       }
     ],
@@ -1709,17 +1632,17 @@
       "basis": "original_asm_spans",
       "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c_or_eligible_mixed",
       "completion_policy": "c-or-eligible-mixed-r72",
-      "rewritten_original_asm_bytes": 214974,
+      "rewritten_original_asm_bytes": 224114,
       "known_original_asm_bytes": 1159664,
       "integrated_original_asm_bytes": 93460,
       "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
       "total_asm_bytes": 1159664,
-      "matched_asm_bytes": 214974,
+      "matched_asm_bytes": 224114,
       "integrated_matched_asm_bytes": 93460,
-      "exact_bytes_outside_catalogue": 1414,
-      "percent": 18.537610894190042,
+      "exact_bytes_outside_catalogue": 4334,
+      "percent": 19.325770223099106,
       "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue.",
-      "pure_c_original_asm_bytes": 210674,
+      "pure_c_original_asm_bytes": 219814,
       "eligible_mixed_added_original_asm_bytes": 4300
     },
     "c_match": {
@@ -1727,23 +1650,23 @@
       "basis": "original_asm_spans",
       "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c_or_eligible_mixed",
       "completion_policy": "c-or-eligible-mixed-r72",
-      "rewritten_original_asm_bytes": 214974,
+      "rewritten_original_asm_bytes": 224114,
       "known_original_asm_bytes": 1159664,
       "integrated_original_asm_bytes": 93460,
       "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
       "total_asm_bytes": 1159664,
-      "matched_asm_bytes": 214974,
+      "matched_asm_bytes": 224114,
       "integrated_matched_asm_bytes": 93460,
-      "exact_bytes_outside_catalogue": 1414,
-      "percent": 18.537610894190042,
+      "exact_bytes_outside_catalogue": 4334,
+      "percent": 19.325770223099106,
       "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue.",
-      "pure_c_original_asm_bytes": 210674,
+      "pure_c_original_asm_bytes": 219814,
       "eligible_mixed_added_original_asm_bytes": 4300
     },
     "daily": {
       "schema_version": 1,
       "timezone": "Asia/Shanghai",
-      "as_of": "2026-10-25T15:55:53.451033+00:00",
+      "as_of": "2026-10-26T04:51:17.414204+00:00",
       "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
       "known_original_asm_bytes": 1159664,
       "current_exact_asm_bytes_without_local_date": 29258,
@@ -1787,7 +1710,7 @@
         },
         {
           "date": "2026-10-25",
-          "partial": true,
+          "partial": false,
           "new_exact_methods": 347,
           "new_exact_asm_bytes": 40638,
           "new_pure_c_asm_bytes": 40018,
@@ -1796,6 +1719,18 @@
           "cumulative_registered_exact_asm_bytes": 185716,
           "cumulative_registered_integrated_asm_bytes": 183090,
           "registered_percent": 16.01463872294044
+        },
+        {
+          "date": "2026-10-26",
+          "partial": true,
+          "new_exact_methods": 112,
+          "new_exact_asm_bytes": 9140,
+          "new_pure_c_asm_bytes": 9140,
+          "new_eligible_mixed_asm_bytes": 0,
+          "new_integrated_asm_bytes": 7436,
+          "cumulative_registered_exact_asm_bytes": 194856,
+          "cumulative_registered_integrated_asm_bytes": 190526,
+          "registered_percent": 16.8027980518495
         }
       ],
       "scope": "Calendar days in Asia/Shanghai, using original credit occurrence times and currently unrevoked receipts. Range unions deduplicate overlaps within each gate. Cumulative curves cover dated ledger receipts only; the current ROM baseline is never backdated. Missing historical receipts are unknown, not zero recovery. Integration is a separate gate and must not be added to local exact. Current day is partial; no projection. Eligible mixed and pure C remain separate."
@@ -1803,18 +1738,18 @@
     "classification": {
       "mapped": 96,
       "provisional": 553,
-      "unmapped": 1979
+      "unmapped": 2115
     },
     "unlocated_exact_records": 0,
     "windows": {
       "last_hour": {
         "timezone": "Asia/Shanghai",
         "basis": "completed_absolute_clock_hour",
-        "start_inclusive": "2026-10-25T14:00:00.000000+00:00",
-        "end_exclusive": "2026-10-25T15:00:00.000000+00:00",
-        "start_inclusive_local": "2026-10-25T22:00:00.000000+08:00",
-        "end_exclusive_local": "2026-10-25T23:00:00.000000+08:00",
-        "display": "2026-10-25 22:00:00–2026-10-25 22:59:59 Asia/Shanghai (UTC+08:00)",
+        "start_inclusive": "2026-10-26T03:00:00.000000+00:00",
+        "end_exclusive": "2026-10-26T04:00:00.000000+00:00",
+        "start_inclusive_local": "2026-10-26T11:00:00.000000+08:00",
+        "end_exclusive_local": "2026-10-26T12:00:00.000000+08:00",
+        "display": "2026-10-26 11:00:00–2026-10-26 11:59:59 Asia/Shanghai (UTC+08:00)",
         "observed_seconds": 3600.0,
         "partial": false,
         "partial_reason": null
@@ -1822,18 +1757,18 @@
       "previous_hour": {
         "timezone": "Asia/Shanghai",
         "basis": "completed_absolute_clock_hour",
-        "start_inclusive": "2026-10-25T13:00:00.000000+00:00",
-        "end_exclusive": "2026-10-25T14:00:00.000000+00:00",
-        "start_inclusive_local": "2026-10-25T21:00:00.000000+08:00",
-        "end_exclusive_local": "2026-10-25T22:00:00.000000+08:00",
-        "display": "2026-10-25 21:00:00–2026-10-25 21:59:59 Asia/Shanghai (UTC+08:00)",
+        "start_inclusive": "2026-10-26T02:00:00.000000+00:00",
+        "end_exclusive": "2026-10-26T03:00:00.000000+00:00",
+        "start_inclusive_local": "2026-10-26T10:00:00.000000+08:00",
+        "end_exclusive_local": "2026-10-26T11:00:00.000000+08:00",
+        "display": "2026-10-26 10:00:00–2026-10-26 10:59:59 Asia/Shanghai (UTC+08:00)",
         "observed_seconds": 3600.0,
         "partial": false,
         "partial_reason": null
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 0,
+      "pending_peer_exact": 1,
       "pending_integration_exact": 24,
       "exact_rounds_without_local_credit": 3
     }
@@ -1843,17 +1778,17 @@
     "basis": "original_asm_spans",
     "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c_or_eligible_mixed",
     "completion_policy": "c-or-eligible-mixed-r72",
-    "rewritten_original_asm_bytes": 214974,
+    "rewritten_original_asm_bytes": 224114,
     "known_original_asm_bytes": 1159664,
     "integrated_original_asm_bytes": 93460,
     "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
     "total_asm_bytes": 1159664,
-    "matched_asm_bytes": 214974,
+    "matched_asm_bytes": 224114,
     "integrated_matched_asm_bytes": 93460,
-    "exact_bytes_outside_catalogue": 1414,
-    "percent": 18.537610894190042,
+    "exact_bytes_outside_catalogue": 4334,
+    "percent": 19.325770223099106,
     "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue.",
-    "pure_c_original_asm_bytes": 210674,
+    "pure_c_original_asm_bytes": 219814,
     "eligible_mixed_added_original_asm_bytes": 4300
   },
   "asm_rewrite": {
@@ -1861,17 +1796,17 @@
     "basis": "original_asm_spans",
     "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c_or_eligible_mixed",
     "completion_policy": "c-or-eligible-mixed-r72",
-    "rewritten_original_asm_bytes": 214974,
+    "rewritten_original_asm_bytes": 224114,
     "known_original_asm_bytes": 1159664,
     "integrated_original_asm_bytes": 93460,
     "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
     "total_asm_bytes": 1159664,
-    "matched_asm_bytes": 214974,
+    "matched_asm_bytes": 224114,
     "integrated_matched_asm_bytes": 93460,
-    "exact_bytes_outside_catalogue": 1414,
-    "percent": 18.537610894190042,
+    "exact_bytes_outside_catalogue": 4334,
+    "percent": 19.325770223099106,
     "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue.",
-    "pure_c_original_asm_bytes": 210674,
+    "pure_c_original_asm_bytes": 219814,
     "eligible_mixed_added_original_asm_bytes": 4300
   }
 }

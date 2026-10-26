@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-25T15:55:53.451033+00:00",
+  "as_of": "2026-10-26T04:51:17.414204+00:00",
   "epoch": "2026-10-22T02:37:05.095513+00:00",
-  "elapsed_seconds": 307128.35552,
+  "elapsed_seconds": 353652.318691,
   "integrated_snapshot_revision": "2026-10-22-01",
   "mapping_sha256": "98e1c09f3dbbbb2583a274deb3c7370e1f78d3f9f3ac5902d031c3d4dab58932",
   "windows": {
     "last_hour": {
       "timezone": "Asia/Shanghai",
       "basis": "completed_absolute_clock_hour",
-      "start_inclusive": "2026-10-25T14:00:00.000000+00:00",
-      "end_exclusive": "2026-10-25T15:00:00.000000+00:00",
-      "start_inclusive_local": "2026-10-25T22:00:00.000000+08:00",
-      "end_exclusive_local": "2026-10-25T23:00:00.000000+08:00",
-      "display": "2026-10-25 22:00:00–2026-10-25 22:59:59 Asia/Shanghai (UTC+08:00)",
+      "start_inclusive": "2026-10-26T03:00:00.000000+00:00",
+      "end_exclusive": "2026-10-26T04:00:00.000000+00:00",
+      "start_inclusive_local": "2026-10-26T11:00:00.000000+08:00",
+      "end_exclusive_local": "2026-10-26T12:00:00.000000+08:00",
+      "display": "2026-10-26 11:00:00–2026-10-26 11:59:59 Asia/Shanghai (UTC+08:00)",
       "observed_seconds": 3600.0,
       "partial": false,
       "partial_reason": null
@@ -21,11 +21,11 @@
     "previous_hour": {
       "timezone": "Asia/Shanghai",
       "basis": "completed_absolute_clock_hour",
-      "start_inclusive": "2026-10-25T13:00:00.000000+00:00",
-      "end_exclusive": "2026-10-25T14:00:00.000000+00:00",
-      "start_inclusive_local": "2026-10-25T21:00:00.000000+08:00",
-      "end_exclusive_local": "2026-10-25T22:00:00.000000+08:00",
-      "display": "2026-10-25 21:00:00–2026-10-25 21:59:59 Asia/Shanghai (UTC+08:00)",
+      "start_inclusive": "2026-10-26T02:00:00.000000+00:00",
+      "end_exclusive": "2026-10-26T03:00:00.000000+00:00",
+      "start_inclusive_local": "2026-10-26T10:00:00.000000+08:00",
+      "end_exclusive_local": "2026-10-26T11:00:00.000000+08:00",
+      "display": "2026-10-26 10:00:00–2026-10-26 10:59:59 Asia/Shanghai (UTC+08:00)",
       "observed_seconds": 3600.0,
       "partial": false,
       "partial_reason": null
@@ -34,28 +34,28 @@
   "current_incomplete_hour": {
     "timezone": "Asia/Shanghai",
     "basis": "current_incomplete_clock_hour",
-    "start_inclusive": "2026-10-25T15:00:00.000000+00:00",
-    "observed_until_inclusive": "2026-10-25T15:55:53.451033+00:00",
-    "start_inclusive_local": "2026-10-25T23:00:00.000000+08:00",
-    "observed_until_inclusive_local": "2026-10-25T23:55:53.451033+08:00",
-    "display": "2026-10-25 23:00:00–2026-10-25 23:55:53 Asia/Shanghai (UTC+08:00), in progress",
-    "observed_seconds": 3353.451033,
+    "start_inclusive": "2026-10-26T04:00:00.000000+00:00",
+    "observed_until_inclusive": "2026-10-26T04:51:17.414204+00:00",
+    "start_inclusive_local": "2026-10-26T12:00:00.000000+08:00",
+    "observed_until_inclusive_local": "2026-10-26T12:51:17.414204+08:00",
+    "display": "2026-10-26 12:00:00–2026-10-26 12:51:17 Asia/Shanghai (UTC+08:00), in progress",
+    "observed_seconds": 3077.414204,
     "partial": true,
     "comparison_eligible": false
   },
   "totals": {
-    "tasks": 2628,
-    "original_backlog_span_bytes": 726768,
+    "tasks": 2764,
+    "original_backlog_span_bytes": 734512,
     "states": {
       "ready": 0,
-      "active": 0,
-      "frozen": 2038,
-      "blocked": 590
+      "active": 2,
+      "frozen": 2188,
+      "blocked": 574
     },
     "classification": {
       "mapped": 96,
       "provisional": 553,
-      "unmapped": 1979
+      "unmapped": 2115
     },
     "gates": {
       "local_semantic": {
@@ -69,7 +69,7 @@
           "original_bytes": 5610,
           "generated_bytes": 5374
         },
-        "cumulative_original_B_per_hour": 65.75752331889412,
+        "cumulative_original_B_per_hour": 57.10693506761946,
         "last_hour": {
           "functions": 0,
           "original_bytes": 0,
@@ -85,27 +85,27 @@
       },
       "local_exact": {
         "retained": {
-          "functions": 1756,
-          "original_bytes": 187130,
-          "generated_bytes": 187130
+          "functions": 1912,
+          "original_bytes": 199190,
+          "generated_bytes": 199190
         },
         "since_epoch": {
-          "functions": 1756,
-          "original_bytes": 187130,
-          "generated_bytes": 187130
+          "functions": 1912,
+          "original_bytes": 199190,
+          "generated_bytes": 199190
         },
-        "cumulative_original_B_per_hour": 2193.4412368386193,
+        "cumulative_original_B_per_hour": 2027.6524770265812,
         "last_hour": {
-          "functions": 1,
-          "original_bytes": 232,
-          "generated_bytes": 232,
-          "original_B_per_hour": 232.0
+          "functions": 127,
+          "original_bytes": 6504,
+          "generated_bytes": 6504,
+          "original_B_per_hour": 6504.0
         },
         "previous_hour": {
-          "functions": 2,
-          "original_bytes": 144,
-          "generated_bytes": 144,
-          "original_B_per_hour": 144.0
+          "functions": 1,
+          "original_bytes": 1704,
+          "generated_bytes": 1704,
+          "original_B_per_hour": 1704.0
         }
       },
       "peer_semantic": {
@@ -119,7 +119,7 @@
           "original_bytes": 2496,
           "generated_bytes": 2328
         },
-        "cumulative_original_B_per_hour": 29.25682320926198,
+        "cumulative_original_B_per_hour": 25.408005334898068,
         "last_hour": {
           "functions": 0,
           "original_bytes": 0,
@@ -135,77 +135,77 @@
       },
       "peer_exact": {
         "retained": {
-          "functions": 1756,
-          "original_bytes": 187130,
-          "generated_bytes": 187130
+          "functions": 1911,
+          "original_bytes": 197486,
+          "generated_bytes": 197486
         },
         "since_epoch": {
-          "functions": 1756,
-          "original_bytes": 187130,
-          "generated_bytes": 187130
+          "functions": 1911,
+          "original_bytes": 197486,
+          "generated_bytes": 197486
         },
-        "cumulative_original_B_per_hour": 2193.4412368386193,
+        "cumulative_original_B_per_hour": 2010.306627230641,
         "last_hour": {
-          "functions": 2,
-          "original_bytes": 264,
-          "generated_bytes": 264,
-          "original_B_per_hour": 264.0
+          "functions": 8,
+          "original_bytes": 1010,
+          "generated_bytes": 1010,
+          "original_B_per_hour": 1010.0
         },
         "previous_hour": {
-          "functions": 1,
-          "original_bytes": 112,
-          "generated_bytes": 112,
-          "original_B_per_hour": 112.0
+          "functions": 0,
+          "original_bytes": 0,
+          "generated_bytes": 0,
+          "original_B_per_hour": 0.0
         }
       },
       "integrated": {
         "retained": {
-          "functions": 1740,
-          "original_bytes": 186344,
-          "generated_bytes": 186192
+          "functions": 1895,
+          "original_bytes": 196700,
+          "generated_bytes": 196548
         },
         "since_epoch": {
-          "functions": 1740,
-          "original_bytes": 186344,
-          "generated_bytes": 186192
+          "functions": 1895,
+          "original_bytes": 196700,
+          "generated_bytes": 196548
         },
-        "cumulative_original_B_per_hour": 2184.22815068378,
+        "cumulative_original_B_per_hour": 2002.3055486275841,
         "last_hour": {
-          "functions": 2,
-          "original_bytes": 110,
-          "generated_bytes": 110,
-          "original_B_per_hour": 110.0
+          "functions": 0,
+          "original_bytes": 0,
+          "generated_bytes": 0,
+          "original_B_per_hour": 0.0
         },
         "previous_hour": {
-          "functions": 1,
-          "original_bytes": 112,
-          "generated_bytes": 112,
-          "original_B_per_hour": 112.0
+          "functions": 0,
+          "original_bytes": 0,
+          "generated_bytes": 0,
+          "original_B_per_hour": 0.0
         }
       },
       "integrated_exact": {
         "retained": {
-          "functions": 1732,
-          "original_bytes": 184504,
-          "generated_bytes": 184504
+          "functions": 1887,
+          "original_bytes": 194860,
+          "generated_bytes": 194860
         },
         "since_epoch": {
-          "functions": 1732,
-          "original_bytes": 184504,
-          "generated_bytes": 184504
+          "functions": 1887,
+          "original_bytes": 194860,
+          "generated_bytes": 194860
         },
-        "cumulative_original_B_per_hour": 2162.6606207538753,
+        "cumulative_original_B_per_hour": 1983.5752882845504,
         "last_hour": {
-          "functions": 2,
-          "original_bytes": 110,
-          "generated_bytes": 110,
-          "original_B_per_hour": 110.0
+          "functions": 0,
+          "original_bytes": 0,
+          "generated_bytes": 0,
+          "original_B_per_hour": 0.0
         },
         "previous_hour": {
-          "functions": 1,
-          "original_bytes": 112,
-          "generated_bytes": 112,
-          "original_B_per_hour": 112.0
+          "functions": 0,
+          "original_bytes": 0,
+          "generated_bytes": 0,
+          "original_B_per_hour": 0.0
         }
       }
     }
@@ -217,9 +217,9 @@
       "original_backlog_span_bytes": 62838,
       "states": {
         "ready": 0,
-        "active": 0,
-        "frozen": 152,
-        "blocked": 33
+        "active": 2,
+        "frozen": 155,
+        "blocked": 28
       },
       "classification": {
         "mapped": 64,
@@ -254,16 +254,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 127,
+            "original_bytes": 20492,
+            "generated_bytes": 20492
           },
           "since_epoch": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 127,
+            "original_bytes": 20492,
+            "generated_bytes": 20492
           },
-          "cumulative_original_B_per_hour": 208.12666382358,
+          "cumulative_original_B_per_hour": 208.59809508122245,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -272,9 +272,9 @@
           },
           "previous_hour": {
             "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "original_bytes": 1704,
+            "generated_bytes": 1704,
+            "original_B_per_hour": 1704.0
           }
         },
         "peer_semantic": {
@@ -304,16 +304,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 126,
+            "original_bytes": 18788,
+            "generated_bytes": 18788
           },
           "since_epoch": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 126,
+            "original_bytes": 18788,
+            "generated_bytes": 18788
           },
-          "cumulative_original_B_per_hour": 208.12666382358,
+          "cumulative_original_B_per_hour": 191.2522452852824,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -321,60 +321,60 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "integrated": {
           "retained": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 126,
+            "original_bytes": 18788,
+            "generated_bytes": 18788
           },
           "since_epoch": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 126,
+            "original_bytes": 18788,
+            "generated_bytes": 18788
           },
-          "cumulative_original_B_per_hour": 208.12666382358,
+          "cumulative_original_B_per_hour": 191.2522452852824,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 78,
-            "generated_bytes": 78,
-            "original_B_per_hour": 78.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "integrated_exact": {
           "retained": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 126,
+            "original_bytes": 18788,
+            "generated_bytes": 18788
           },
           "since_epoch": {
-            "functions": 121,
-            "original_bytes": 17756,
-            "generated_bytes": 17756
+            "functions": 126,
+            "original_bytes": 18788,
+            "generated_bytes": 18788
           },
-          "cumulative_original_B_per_hour": 208.12666382358,
+          "cumulative_original_B_per_hour": 191.2522452852824,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 78,
-            "generated_bytes": 78,
-            "original_B_per_hour": 78.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         }
       }
@@ -386,8 +386,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 140,
-        "blocked": 18
+        "frozen": 138,
+        "blocked": 20
       },
       "classification": {
         "mapped": 7,
@@ -422,16 +422,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
           "since_epoch": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
-          "cumulative_original_B_per_hour": 266.73408211136444,
+          "cumulative_original_B_per_hour": 232.4181000826894,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -439,10 +439,10 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "peer_semantic": {
@@ -472,21 +472,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
           "since_epoch": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
-          "cumulative_original_B_per_hour": 266.73408211136444,
+          "cumulative_original_B_per_hour": 232.4181000826894,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -497,21 +497,21 @@
         },
         "integrated": {
           "retained": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
           "since_epoch": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
-          "cumulative_original_B_per_hour": 266.73408211136444,
+          "cumulative_original_B_per_hour": 232.4181000826894,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -522,21 +522,21 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
           "since_epoch": {
-            "functions": 99,
-            "original_bytes": 22756,
-            "generated_bytes": 22756
+            "functions": 100,
+            "original_bytes": 22832,
+            "generated_bytes": 22832
           },
-          "cumulative_original_B_per_hour": 266.73408211136444,
+          "cumulative_original_B_per_hour": 232.4181000826894,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -554,8 +554,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 120,
-        "blocked": 42
+        "frozen": 126,
+        "blocked": 36
       },
       "classification": {
         "mapped": 12,
@@ -590,21 +590,21 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
           "since_epoch": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
-          "cumulative_original_B_per_hour": 170.3366005116166,
+          "cumulative_original_B_per_hour": 149.740287851102,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -640,21 +640,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
           "since_epoch": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
-          "cumulative_original_B_per_hour": 170.3366005116166,
+          "cumulative_original_B_per_hour": 149.740287851102,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -665,16 +665,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
           "since_epoch": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
-          "cumulative_original_B_per_hour": 170.3366005116166,
+          "cumulative_original_B_per_hour": 149.740287851102,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -690,16 +690,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
           "since_epoch": {
-            "functions": 79,
-            "original_bytes": 14532,
-            "generated_bytes": 14532
+            "functions": 82,
+            "original_bytes": 14710,
+            "generated_bytes": 14710
           },
-          "cumulative_original_B_per_hour": 170.3366005116166,
+          "cumulative_original_B_per_hour": 149.740287851102,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -722,8 +722,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 59,
-        "blocked": 28
+        "frozen": 61,
+        "blocked": 26
       },
       "classification": {
         "mapped": 6,
@@ -758,16 +758,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -808,16 +808,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -833,16 +833,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -858,16 +858,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -890,8 +890,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 34,
-        "blocked": 20
+        "frozen": 35,
+        "blocked": 19
       },
       "classification": {
         "mapped": 7,
@@ -926,16 +926,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
           "since_epoch": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
-          "cumulative_original_B_per_hour": 55.27851692903826,
+          "cumulative_original_B_per_hour": 50.40883109712149,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -976,16 +976,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
           "since_epoch": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
-          "cumulative_original_B_per_hour": 55.27851692903826,
+          "cumulative_original_B_per_hour": 50.40883109712149,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1001,16 +1001,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
           "since_epoch": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
-          "cumulative_original_B_per_hour": 55.27851692903826,
+          "cumulative_original_B_per_hour": 50.40883109712149,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1026,16 +1026,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
           "since_epoch": {
-            "functions": 27,
-            "original_bytes": 4716,
-            "generated_bytes": 4716
+            "functions": 28,
+            "original_bytes": 4952,
+            "generated_bytes": 4952
           },
-          "cumulative_original_B_per_hour": 55.27851692903826,
+          "cumulative_original_B_per_hour": 50.40883109712149,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1262,16 +1262,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1312,16 +1312,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1337,16 +1337,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1362,16 +1362,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1389,18 +1389,18 @@
     },
     {
       "id": "unclassified",
-      "tasks": 1979,
-      "original_backlog_span_bytes": 406618,
+      "tasks": 2115,
+      "original_backlog_span_bytes": 414362,
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 1530,
-        "blocked": 449
+        "frozen": 1670,
+        "blocked": 445
       },
       "classification": {
         "mapped": 0,
         "provisional": 0,
-        "unmapped": 1979
+        "unmapped": 2115
       },
       "gates": {
         "local_semantic": {
@@ -1414,7 +1414,7 @@
             "original_bytes": 5610,
             "generated_bytes": 5374
           },
-          "cumulative_original_B_per_hour": 65.75752331889412,
+          "cumulative_original_B_per_hour": 57.10693506761946,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1430,21 +1430,21 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
           "since_epoch": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
-          "cumulative_original_B_per_hour": 1403.0381508422438,
+          "cumulative_original_B_per_hour": 1300.3686832937576,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 127,
+            "original_bytes": 6504,
+            "generated_bytes": 6504,
+            "original_B_per_hour": 6504.0
           },
           "previous_hour": {
             "functions": 0,
@@ -1464,7 +1464,7 @@
             "original_bytes": 2496,
             "generated_bytes": 2328
           },
-          "cumulative_original_B_per_hour": 29.25682320926198,
+          "cumulative_original_B_per_hour": 25.408005334898068,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1480,21 +1480,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
           "since_epoch": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
-          "cumulative_original_B_per_hour": 1403.0381508422438,
+          "cumulative_original_B_per_hour": 1300.3686832937576,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 8,
+            "original_bytes": 1010,
+            "generated_bytes": 1010,
+            "original_B_per_hour": 1010.0
           },
           "previous_hour": {
             "functions": 0,
@@ -1505,16 +1505,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 1381,
-            "original_bytes": 118912,
-            "generated_bytes": 118760
+            "functions": 1523,
+            "original_bytes": 126958,
+            "generated_bytes": 126806
           },
           "since_epoch": {
-            "functions": 1381,
-            "original_bytes": 118912,
-            "generated_bytes": 118760
+            "functions": 1523,
+            "original_bytes": 126958,
+            "generated_bytes": 126806
           },
-          "cumulative_original_B_per_hour": 1393.825064687404,
+          "cumulative_original_B_per_hour": 1292.3676046907008,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1530,16 +1530,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 1373,
-            "original_bytes": 117072,
-            "generated_bytes": 117072
+            "functions": 1515,
+            "original_bytes": 125118,
+            "generated_bytes": 125118
           },
           "since_epoch": {
-            "functions": 1373,
-            "original_bytes": 117072,
-            "generated_bytes": 117072
+            "functions": 1515,
+            "original_bytes": 125118,
+            "generated_bytes": 125118
           },
-          "cumulative_original_B_per_hour": 1372.2575347574993,
+          "cumulative_original_B_per_hour": 1273.6373443476668,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1779,7 +1779,7 @@
             "original_bytes": 724,
             "generated_bytes": 724
           },
-          "cumulative_original_B_per_hour": 8.486354168071182,
+          "cumulative_original_B_per_hour": 7.369950265411139,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1829,7 +1829,7 @@
             "original_bytes": 724,
             "generated_bytes": 724
           },
-          "cumulative_original_B_per_hour": 8.486354168071182,
+          "cumulative_original_B_per_hour": 7.369950265411139,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1854,7 +1854,7 @@
             "original_bytes": 724,
             "generated_bytes": 724
           },
-          "cumulative_original_B_per_hour": 8.486354168071182,
+          "cumulative_original_B_per_hour": 7.369950265411139,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -1879,7 +1879,7 @@
             "original_bytes": 724,
             "generated_bytes": 724
           },
-          "cumulative_original_B_per_hour": 8.486354168071182,
+          "cumulative_original_B_per_hour": 7.369950265411139,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -2240,9 +2240,9 @@
       "original_backlog_span_bytes": 4200,
       "states": {
         "ready": 0,
-        "active": 0,
+        "active": 1,
         "frozen": 1,
-        "blocked": 1
+        "blocked": 0
       },
       "classification": {
         "mapped": 2,
@@ -2962,7 +2962,7 @@
             "original_bytes": 3678,
             "generated_bytes": 3678
           },
-          "cumulative_original_B_per_hour": 43.11161689249421,
+          "cumulative_original_B_per_hour": 37.44016170743394,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3012,7 +3012,7 @@
             "original_bytes": 3678,
             "generated_bytes": 3678
           },
-          "cumulative_original_B_per_hour": 43.11161689249421,
+          "cumulative_original_B_per_hour": 37.44016170743394,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3037,7 +3037,7 @@
             "original_bytes": 3678,
             "generated_bytes": 3678
           },
-          "cumulative_original_B_per_hour": 43.11161689249421,
+          "cumulative_original_B_per_hour": 37.44016170743394,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3062,7 +3062,7 @@
             "original_bytes": 3678,
             "generated_bytes": 3678
           },
-          "cumulative_original_B_per_hour": 43.11161689249421,
+          "cumulative_original_B_per_hour": 37.44016170743394,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3122,16 +3122,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
           "since_epoch": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
-          "cumulative_original_B_per_hour": 17.488453617074867,
+          "cumulative_original_B_per_hour": 15.900362312945026,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3139,10 +3139,10 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "peer_semantic": {
@@ -3172,16 +3172,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
           "since_epoch": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
-          "cumulative_original_B_per_hour": 17.488453617074867,
+          "cumulative_original_B_per_hour": 15.900362312945026,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3189,24 +3189,24 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "integrated": {
           "retained": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
           "since_epoch": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
-          "cumulative_original_B_per_hour": 17.488453617074867,
+          "cumulative_original_B_per_hour": 15.900362312945026,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3214,24 +3214,24 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "integrated_exact": {
           "retained": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
           "since_epoch": {
-            "functions": 15,
-            "original_bytes": 1492,
-            "generated_bytes": 1492
+            "functions": 16,
+            "original_bytes": 1562,
+            "generated_bytes": 1562
           },
-          "cumulative_original_B_per_hour": 17.488453617074867,
+          "cumulative_original_B_per_hour": 15.900362312945026,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3239,10 +3239,10 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         }
       }
@@ -3469,7 +3469,7 @@
             "original_bytes": 284,
             "generated_bytes": 284
           },
-          "cumulative_original_B_per_hour": 3.3289013587461547,
+          "cumulative_original_B_per_hour": 2.890974965990005,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3519,7 +3519,7 @@
             "original_bytes": 284,
             "generated_bytes": 284
           },
-          "cumulative_original_B_per_hour": 3.3289013587461547,
+          "cumulative_original_B_per_hour": 2.890974965990005,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3544,7 +3544,7 @@
             "original_bytes": 284,
             "generated_bytes": 284
           },
-          "cumulative_original_B_per_hour": 3.3289013587461547,
+          "cumulative_original_B_per_hour": 2.890974965990005,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -3569,7 +3569,7 @@
             "original_bytes": 284,
             "generated_bytes": 284
           },
-          "cumulative_original_B_per_hour": 3.3289013587461547,
+          "cumulative_original_B_per_hour": 2.890974965990005,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -4437,9 +4437,9 @@
       "original_backlog_span_bytes": 5056,
       "states": {
         "ready": 0,
-        "active": 0,
+        "active": 1,
         "frozen": 0,
-        "blocked": 1
+        "blocked": 0
       },
       "classification": {
         "mapped": 1,
@@ -4821,7 +4821,7 @@
             "original_bytes": 630,
             "generated_bytes": 630
           },
-          "cumulative_original_B_per_hour": 7.384534704260836,
+          "cumulative_original_B_per_hour": 6.413078269625714,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -4871,7 +4871,7 @@
             "original_bytes": 630,
             "generated_bytes": 630
           },
-          "cumulative_original_B_per_hour": 7.384534704260836,
+          "cumulative_original_B_per_hour": 6.413078269625714,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -4896,7 +4896,7 @@
             "original_bytes": 630,
             "generated_bytes": 630
           },
-          "cumulative_original_B_per_hour": 7.384534704260836,
+          "cumulative_original_B_per_hour": 6.413078269625714,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -4921,7 +4921,7 @@
             "original_bytes": 630,
             "generated_bytes": 630
           },
-          "cumulative_original_B_per_hour": 7.384534704260836,
+          "cumulative_original_B_per_hour": 6.413078269625714,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5497,7 +5497,7 @@
             "original_bytes": 240,
             "generated_bytes": 240
           },
-          "cumulative_original_B_per_hour": 2.8131560778136517,
+          "cumulative_original_B_per_hour": 2.4430774360478913,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5547,7 +5547,7 @@
             "original_bytes": 240,
             "generated_bytes": 240
           },
-          "cumulative_original_B_per_hour": 2.8131560778136517,
+          "cumulative_original_B_per_hour": 2.4430774360478913,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5572,7 +5572,7 @@
             "original_bytes": 240,
             "generated_bytes": 240
           },
-          "cumulative_original_B_per_hour": 2.8131560778136517,
+          "cumulative_original_B_per_hour": 2.4430774360478913,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5597,7 +5597,7 @@
             "original_bytes": 240,
             "generated_bytes": 240
           },
-          "cumulative_original_B_per_hour": 2.8131560778136517,
+          "cumulative_original_B_per_hour": 2.4430774360478913,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5835,7 +5835,7 @@
             "original_bytes": 586,
             "generated_bytes": 586
           },
-          "cumulative_original_B_per_hour": 6.868789423328333,
+          "cumulative_original_B_per_hour": 5.965180739683602,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5885,7 +5885,7 @@
             "original_bytes": 586,
             "generated_bytes": 586
           },
-          "cumulative_original_B_per_hour": 6.868789423328333,
+          "cumulative_original_B_per_hour": 5.965180739683602,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5910,7 +5910,7 @@
             "original_bytes": 586,
             "generated_bytes": 586
           },
-          "cumulative_original_B_per_hour": 6.868789423328333,
+          "cumulative_original_B_per_hour": 5.965180739683602,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -5935,7 +5935,7 @@
             "original_bytes": 586,
             "generated_bytes": 586
           },
-          "cumulative_original_B_per_hour": 6.868789423328333,
+          "cumulative_original_B_per_hour": 5.965180739683602,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -6680,7 +6680,7 @@
             "original_bytes": 180,
             "generated_bytes": 180
           },
-          "cumulative_original_B_per_hour": 2.109867058360239,
+          "cumulative_original_B_per_hour": 1.8323080770359184,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -6730,7 +6730,7 @@
             "original_bytes": 180,
             "generated_bytes": 180
           },
-          "cumulative_original_B_per_hour": 2.109867058360239,
+          "cumulative_original_B_per_hour": 1.8323080770359184,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -6755,7 +6755,7 @@
             "original_bytes": 180,
             "generated_bytes": 180
           },
-          "cumulative_original_B_per_hour": 2.109867058360239,
+          "cumulative_original_B_per_hour": 1.8323080770359184,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -6780,7 +6780,7 @@
             "original_bytes": 180,
             "generated_bytes": 180
           },
-          "cumulative_original_B_per_hour": 2.109867058360239,
+          "cumulative_original_B_per_hour": 1.8323080770359184,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8326,8 +8326,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 93,
-        "blocked": 28
+        "frozen": 96,
+        "blocked": 25
       },
       "classification": {
         "mapped": 0,
@@ -8362,16 +8362,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 77,
+            "original_bytes": 14244,
+            "generated_bytes": 14244
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 77,
+            "original_bytes": 14244,
+            "generated_bytes": 14244
           },
-          "cumulative_original_B_per_hour": 135.7113377871936,
+          "cumulative_original_B_per_hour": 144.99664582944234,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8379,10 +8379,10 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 1,
+            "original_bytes": 1704,
+            "generated_bytes": 1704,
+            "original_B_per_hour": 1704.0
           }
         },
         "peer_semantic": {
@@ -8412,16 +8412,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 76,
+            "original_bytes": 12540,
+            "generated_bytes": 12540
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 76,
+            "original_bytes": 12540,
+            "generated_bytes": 12540
           },
-          "cumulative_original_B_per_hour": 135.7113377871936,
+          "cumulative_original_B_per_hour": 127.65079603350232,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8437,21 +8437,21 @@
         },
         "integrated": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 76,
+            "original_bytes": 12540,
+            "generated_bytes": 12540
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 76,
+            "original_bytes": 12540,
+            "generated_bytes": 12540
           },
-          "cumulative_original_B_per_hour": 135.7113377871936,
+          "cumulative_original_B_per_hour": 127.65079603350232,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 78,
-            "generated_bytes": 78,
-            "original_B_per_hour": 78.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8462,21 +8462,21 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 76,
+            "original_bytes": 12540,
+            "generated_bytes": 12540
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 11578,
-            "generated_bytes": 11578
+            "functions": 76,
+            "original_bytes": 12540,
+            "generated_bytes": 12540
           },
-          "cumulative_original_B_per_hour": 135.7113377871936,
+          "cumulative_original_B_per_hour": 127.65079603350232,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 78,
-            "generated_bytes": 78,
-            "original_B_per_hour": 78.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8494,8 +8494,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 136,
-        "blocked": 15
+        "frozen": 134,
+        "blocked": 17
       },
       "classification": {
         "mapped": 0,
@@ -8530,16 +8530,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
           "since_epoch": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
-          "cumulative_original_B_per_hour": 259.3495474071036,
+          "cumulative_original_B_per_hour": 226.00502181306368,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8547,10 +8547,10 @@
             "original_B_per_hour": 0.0
           },
           "previous_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           }
         },
         "peer_semantic": {
@@ -8580,21 +8580,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
           "since_epoch": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
-          "cumulative_original_B_per_hour": 259.3495474071036,
+          "cumulative_original_B_per_hour": 226.00502181306368,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8605,21 +8605,21 @@
         },
         "integrated": {
           "retained": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
           "since_epoch": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
-          "cumulative_original_B_per_hour": 259.3495474071036,
+          "cumulative_original_B_per_hour": 226.00502181306368,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8630,21 +8630,21 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
           "since_epoch": {
-            "functions": 97,
-            "original_bytes": 22126,
-            "generated_bytes": 22126
+            "functions": 98,
+            "original_bytes": 22202,
+            "generated_bytes": 22202
           },
-          "cumulative_original_B_per_hour": 259.3495474071036,
+          "cumulative_original_B_per_hour": 226.00502181306368,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8662,8 +8662,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 111,
-        "blocked": 39
+        "frozen": 117,
+        "blocked": 33
       },
       "classification": {
         "mapped": 0,
@@ -8698,21 +8698,21 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
-          "cumulative_original_B_per_hour": 160.65465501047464,
+          "cumulative_original_B_per_hour": 141.3320296753705,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8748,21 +8748,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
-          "cumulative_original_B_per_hour": 160.65465501047464,
+          "cumulative_original_B_per_hour": 141.3320296753705,
           "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
+            "functions": 0,
+            "original_bytes": 0,
+            "generated_bytes": 0,
+            "original_B_per_hour": 0.0
           },
           "previous_hour": {
             "functions": 0,
@@ -8773,16 +8773,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
-          "cumulative_original_B_per_hour": 160.65465501047464,
+          "cumulative_original_B_per_hour": 141.3320296753705,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8798,16 +8798,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
           "since_epoch": {
-            "functions": 72,
-            "original_bytes": 13706,
-            "generated_bytes": 13706
+            "functions": 75,
+            "original_bytes": 13884,
+            "generated_bytes": 13884
           },
-          "cumulative_original_B_per_hour": 160.65465501047464,
+          "cumulative_original_B_per_hour": 141.3320296753705,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8830,8 +8830,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 57,
-        "blocked": 24
+        "frozen": 59,
+        "blocked": 22
       },
       "classification": {
         "mapped": 0,
@@ -8866,16 +8866,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8916,16 +8916,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8941,16 +8941,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8966,16 +8966,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
           "since_epoch": {
-            "functions": 32,
-            "original_bytes": 7444,
-            "generated_bytes": 7444
+            "functions": 34,
+            "original_bytes": 7900,
+            "generated_bytes": 7900
           },
-          "cumulative_original_B_per_hour": 87.25472434685344,
+          "cumulative_original_B_per_hour": 80.41796560324309,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -8998,8 +8998,8 @@
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 30,
-        "blocked": 17
+        "frozen": 31,
+        "blocked": 16
       },
       "classification": {
         "mapped": 0,
@@ -9034,16 +9034,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
           "since_epoch": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
-          "cumulative_original_B_per_hour": 53.16864987067802,
+          "cumulative_original_B_per_hour": 48.576523020085574,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9084,16 +9084,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
           "since_epoch": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
-          "cumulative_original_B_per_hour": 53.16864987067802,
+          "cumulative_original_B_per_hour": 48.576523020085574,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9109,16 +9109,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
           "since_epoch": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
-          "cumulative_original_B_per_hour": 53.16864987067802,
+          "cumulative_original_B_per_hour": 48.576523020085574,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9134,16 +9134,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
           "since_epoch": {
-            "functions": 26,
-            "original_bytes": 4536,
-            "generated_bytes": 4536
+            "functions": 27,
+            "original_bytes": 4772,
+            "generated_bytes": 4772
           },
-          "cumulative_original_B_per_hour": 53.16864987067802,
+          "cumulative_original_B_per_hour": 48.576523020085574,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9370,16 +9370,16 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9420,16 +9420,16 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9445,16 +9445,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9470,16 +9470,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
           "since_epoch": {
-            "functions": 1,
-            "original_bytes": 228,
-            "generated_bytes": 228
+            "functions": 2,
+            "original_bytes": 560,
+            "generated_bytes": 560
           },
-          "cumulative_original_B_per_hour": 2.6724982739229692,
+          "cumulative_original_B_per_hour": 5.700514017445079,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9497,18 +9497,18 @@
     },
     {
       "system": "unclassified",
-      "tasks": 1979,
-      "original_backlog_span_bytes": 406618,
+      "tasks": 2115,
+      "original_backlog_span_bytes": 414362,
       "states": {
         "ready": 0,
         "active": 0,
-        "frozen": 1530,
-        "blocked": 449
+        "frozen": 1670,
+        "blocked": 445
       },
       "classification": {
         "mapped": 0,
         "provisional": 0,
-        "unmapped": 1979
+        "unmapped": 2115
       },
       "gates": {
         "local_semantic": {
@@ -9522,7 +9522,7 @@
             "original_bytes": 5610,
             "generated_bytes": 5374
           },
-          "cumulative_original_B_per_hour": 65.75752331889412,
+          "cumulative_original_B_per_hour": 57.10693506761946,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9538,21 +9538,21 @@
         },
         "local_exact": {
           "retained": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
           "since_epoch": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
-          "cumulative_original_B_per_hour": 1403.0381508422438,
+          "cumulative_original_B_per_hour": 1300.3686832937576,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 127,
+            "original_bytes": 6504,
+            "generated_bytes": 6504,
+            "original_B_per_hour": 6504.0
           },
           "previous_hour": {
             "functions": 0,
@@ -9572,7 +9572,7 @@
             "original_bytes": 2496,
             "generated_bytes": 2328
           },
-          "cumulative_original_B_per_hour": 29.25682320926198,
+          "cumulative_original_B_per_hour": 25.408005334898068,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9588,21 +9588,21 @@
         },
         "peer_exact": {
           "retained": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
           "since_epoch": {
-            "functions": 1397,
-            "original_bytes": 119698,
-            "generated_bytes": 119698
+            "functions": 1539,
+            "original_bytes": 127744,
+            "generated_bytes": 127744
           },
-          "cumulative_original_B_per_hour": 1403.0381508422438,
+          "cumulative_original_B_per_hour": 1300.3686832937576,
           "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
+            "functions": 8,
+            "original_bytes": 1010,
+            "generated_bytes": 1010,
+            "original_B_per_hour": 1010.0
           },
           "previous_hour": {
             "functions": 0,
@@ -9613,16 +9613,16 @@
         },
         "integrated": {
           "retained": {
-            "functions": 1381,
-            "original_bytes": 118912,
-            "generated_bytes": 118760
+            "functions": 1523,
+            "original_bytes": 126958,
+            "generated_bytes": 126806
           },
           "since_epoch": {
-            "functions": 1381,
-            "original_bytes": 118912,
-            "generated_bytes": 118760
+            "functions": 1523,
+            "original_bytes": 126958,
+            "generated_bytes": 126806
           },
-          "cumulative_original_B_per_hour": 1393.825064687404,
+          "cumulative_original_B_per_hour": 1292.3676046907008,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9638,16 +9638,16 @@
         },
         "integrated_exact": {
           "retained": {
-            "functions": 1373,
-            "original_bytes": 117072,
-            "generated_bytes": 117072
+            "functions": 1515,
+            "original_bytes": 125118,
+            "generated_bytes": 125118
           },
           "since_epoch": {
-            "functions": 1373,
-            "original_bytes": 117072,
-            "generated_bytes": 117072
+            "functions": 1515,
+            "original_bytes": 125118,
+            "generated_bytes": 125118
           },
-          "cumulative_original_B_per_hour": 1372.2575347574993,
+          "cumulative_original_B_per_hour": 1273.6373443476668,
           "last_hour": {
             "functions": 0,
             "original_bytes": 0,
@@ -9659,1256 +9659,6 @@
             "original_bytes": 0,
             "generated_bytes": 0,
             "original_B_per_hour": 0.0
-          }
-        }
-      }
-    }
-  ],
-  "actors": [
-    {
-      "id": "main",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 9,
-            "original_bytes": 3108,
-            "generated_bytes": 3028
-          },
-          "since_epoch": {
-            "functions": 9,
-            "original_bytes": 3108,
-            "generated_bytes": 3028
-          },
-          "cumulative_original_B_per_hour": 36.43037120768679,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 300,
-            "original_bytes": 27538,
-            "generated_bytes": 27538
-          },
-          "since_epoch": {
-            "functions": 300,
-            "original_bytes": 27538,
-            "generated_bytes": 27538
-          },
-          "cumulative_original_B_per_hour": 322.7862169618014,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 6,
-            "original_bytes": 1418,
-            "generated_bytes": 1352
-          },
-          "since_epoch": {
-            "functions": 6,
-            "original_bytes": 1418,
-            "generated_bytes": 1352
-          },
-          "cumulative_original_B_per_hour": 16.62106382641566,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 300,
-            "original_bytes": 27538,
-            "generated_bytes": 27538
-          },
-          "since_epoch": {
-            "functions": 300,
-            "original_bytes": 27538,
-            "generated_bytes": 27538
-          },
-          "cumulative_original_B_per_hour": 322.7862169618014,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 305,
-            "original_bytes": 28884,
-            "generated_bytes": 28818
-          },
-          "since_epoch": {
-            "functions": 305,
-            "original_bytes": 28884,
-            "generated_bytes": 28818
-          },
-          "cumulative_original_B_per_hour": 338.563333964873,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 299,
-            "original_bytes": 27466,
-            "generated_bytes": 27466
-          },
-          "since_epoch": {
-            "functions": 299,
-            "original_bytes": 27466,
-            "generated_bytes": 27466
-          },
-          "cumulative_original_B_per_hour": 321.94227013845733,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 32,
-            "generated_bytes": 32,
-            "original_B_per_hour": 32.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "worker2",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 4,
-            "original_bytes": 1016,
-            "generated_bytes": 972
-          },
-          "since_epoch": {
-            "functions": 4,
-            "original_bytes": 1016,
-            "generated_bytes": 972
-          },
-          "cumulative_original_B_per_hour": 11.909027396077793,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 371,
-            "original_bytes": 38272,
-            "generated_bytes": 38272
-          },
-          "since_epoch": {
-            "functions": 371,
-            "original_bytes": 38272,
-            "generated_bytes": 38272
-          },
-          "cumulative_original_B_per_hour": 448.604622542017,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 2,
-            "original_bytes": 620,
-            "generated_bytes": 608
-          },
-          "since_epoch": {
-            "functions": 2,
-            "original_bytes": 620,
-            "generated_bytes": 608
-          },
-          "cumulative_original_B_per_hour": 7.267319867685267,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 371,
-            "original_bytes": 38272,
-            "generated_bytes": 38272
-          },
-          "since_epoch": {
-            "functions": 371,
-            "original_bytes": 38272,
-            "generated_bytes": 38272
-          },
-          "cumulative_original_B_per_hour": 448.604622542017,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 370,
-            "original_bytes": 38228,
-            "generated_bytes": 38228
-          },
-          "since_epoch": {
-            "functions": 370,
-            "original_bytes": 38228,
-            "generated_bytes": 38228
-          },
-          "cumulative_original_B_per_hour": 448.0888772610845,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 370,
-            "original_bytes": 38228,
-            "generated_bytes": 38228
-          },
-          "since_epoch": {
-            "functions": 370,
-            "original_bytes": 38228,
-            "generated_bytes": 38228
-          },
-          "cumulative_original_B_per_hour": 448.0888772610845,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "worker3",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 448,
-            "original_bytes": 44480,
-            "generated_bytes": 44480
-          },
-          "since_epoch": {
-            "functions": 448,
-            "original_bytes": 44480,
-            "generated_bytes": 44480
-          },
-          "cumulative_original_B_per_hour": 521.3715930881301,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 448,
-            "original_bytes": 44480,
-            "generated_bytes": 44480
-          },
-          "since_epoch": {
-            "functions": 448,
-            "original_bytes": 44480,
-            "generated_bytes": 44480
-          },
-          "cumulative_original_B_per_hour": 521.3715930881301,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 442,
-            "original_bytes": 42692,
-            "generated_bytes": 42692
-          },
-          "since_epoch": {
-            "functions": 442,
-            "original_bytes": 42692,
-            "generated_bytes": 42692
-          },
-          "cumulative_original_B_per_hour": 500.41358030841843,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 442,
-            "original_bytes": 42692,
-            "generated_bytes": 42692
-          },
-          "since_epoch": {
-            "functions": 442,
-            "original_bytes": 42692,
-            "generated_bytes": 42692
-          },
-          "cumulative_original_B_per_hour": 500.41358030841843,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "sol_a",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "since_epoch": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "cumulative_original_B_per_hour": 20.278166727573407,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "since_epoch": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "cumulative_original_B_per_hour": 20.278166727573407,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "since_epoch": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "cumulative_original_B_per_hour": 20.278166727573407,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "since_epoch": {
-            "functions": 19,
-            "original_bytes": 1730,
-            "generated_bytes": 1730
-          },
-          "cumulative_original_B_per_hour": 20.278166727573407,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "sol_b",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 2,
-            "original_bytes": 422,
-            "generated_bytes": 336
-          },
-          "since_epoch": {
-            "functions": 2,
-            "original_bytes": 422,
-            "generated_bytes": 336
-          },
-          "cumulative_original_B_per_hour": 4.946466103489004,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 125,
-            "original_bytes": 17320,
-            "generated_bytes": 17320
-          },
-          "since_epoch": {
-            "functions": 125,
-            "original_bytes": 17320,
-            "generated_bytes": 17320
-          },
-          "cumulative_original_B_per_hour": 203.0160969488852,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 2,
-            "original_bytes": 422,
-            "generated_bytes": 336
-          },
-          "since_epoch": {
-            "functions": 2,
-            "original_bytes": 422,
-            "generated_bytes": 336
-          },
-          "cumulative_original_B_per_hour": 4.946466103489004,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 125,
-            "original_bytes": 17320,
-            "generated_bytes": 17320
-          },
-          "since_epoch": {
-            "functions": 125,
-            "original_bytes": 17320,
-            "generated_bytes": 17320
-          },
-          "cumulative_original_B_per_hour": 203.0160969488852,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 116,
-            "original_bytes": 17376,
-            "generated_bytes": 17290
-          },
-          "since_epoch": {
-            "functions": 116,
-            "original_bytes": 17376,
-            "generated_bytes": 17290
-          },
-          "cumulative_original_B_per_hour": 203.6725000337084,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 114,
-            "original_bytes": 16954,
-            "generated_bytes": 16954
-          },
-          "since_epoch": {
-            "functions": 114,
-            "original_bytes": 16954,
-            "generated_bytes": 16954
-          },
-          "cumulative_original_B_per_hour": 198.7260339302194,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "sol_c",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 29,
-            "original_bytes": 3510,
-            "generated_bytes": 3510
-          },
-          "since_epoch": {
-            "functions": 29,
-            "original_bytes": 3510,
-            "generated_bytes": 3510
-          },
-          "cumulative_original_B_per_hour": 41.14240763802466,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 29,
-            "original_bytes": 3510,
-            "generated_bytes": 3510
-          },
-          "since_epoch": {
-            "functions": 29,
-            "original_bytes": 3510,
-            "generated_bytes": 3510
-          },
-          "cumulative_original_B_per_hour": 41.14240763802466,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 28,
-            "original_bytes": 3370,
-            "generated_bytes": 3370
-          },
-          "since_epoch": {
-            "functions": 28,
-            "original_bytes": 3370,
-            "generated_bytes": 3370
-          },
-          "cumulative_original_B_per_hour": 39.501399925966695,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 28,
-            "original_bytes": 3370,
-            "generated_bytes": 3370
-          },
-          "since_epoch": {
-            "functions": 28,
-            "original_bytes": 3370,
-            "generated_bytes": 3370
-          },
-          "cumulative_original_B_per_hour": 39.501399925966695,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "astra_handoff",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "since_epoch": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "cumulative_original_B_per_hour": 113.46396180515062,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "since_epoch": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0
-          },
-          "cumulative_original_B_per_hour": 0.0,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "since_epoch": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "cumulative_original_B_per_hour": 113.46396180515062,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "since_epoch": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "cumulative_original_B_per_hour": 113.46396180515062,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "since_epoch": {
-            "functions": 30,
-            "original_bytes": 9680,
-            "generated_bytes": 9680
-          },
-          "cumulative_original_B_per_hour": 113.46396180515062,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        }
-      }
-    },
-    {
-      "id": "other",
-      "active_tasks": 0,
-      "delivery": {
-        "local_semantic": {
-          "retained": {
-            "functions": 4,
-            "original_bytes": 1064,
-            "generated_bytes": 1038
-          },
-          "since_epoch": {
-            "functions": 4,
-            "original_bytes": 1064,
-            "generated_bytes": 1038
-          },
-          "cumulative_original_B_per_hour": 12.471658611640523,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "local_exact": {
-          "retained": {
-            "functions": 434,
-            "original_bytes": 44600,
-            "generated_bytes": 44600
-          },
-          "since_epoch": {
-            "functions": 434,
-            "original_bytes": 44600,
-            "generated_bytes": 44600
-          },
-          "cumulative_original_B_per_hour": 522.778171127037,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
-          },
-          "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
-          }
-        },
-        "peer_semantic": {
-          "retained": {
-            "functions": 1,
-            "original_bytes": 36,
-            "generated_bytes": 32
-          },
-          "since_epoch": {
-            "functions": 1,
-            "original_bytes": 36,
-            "generated_bytes": 32
-          },
-          "cumulative_original_B_per_hour": 0.42197341167204777,
-          "last_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          },
-          "previous_hour": {
-            "functions": 0,
-            "original_bytes": 0,
-            "generated_bytes": 0,
-            "original_B_per_hour": 0.0
-          }
-        },
-        "peer_exact": {
-          "retained": {
-            "functions": 434,
-            "original_bytes": 44600,
-            "generated_bytes": 44600
-          },
-          "since_epoch": {
-            "functions": 434,
-            "original_bytes": 44600,
-            "generated_bytes": 44600
-          },
-          "cumulative_original_B_per_hour": 522.778171127037,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 232,
-            "generated_bytes": 232,
-            "original_B_per_hour": 232.0
-          },
-          "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
-          }
-        },
-        "integrated": {
-          "retained": {
-            "functions": 430,
-            "original_bytes": 44384,
-            "generated_bytes": 44384
-          },
-          "since_epoch": {
-            "functions": 430,
-            "original_bytes": 44384,
-            "generated_bytes": 44384
-          },
-          "cumulative_original_B_per_hour": 520.2463306570047,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 78,
-            "generated_bytes": 78,
-            "original_B_per_hour": 78.0
-          },
-          "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
-          }
-        },
-        "integrated_exact": {
-          "retained": {
-            "functions": 430,
-            "original_bytes": 44384,
-            "generated_bytes": 44384
-          },
-          "since_epoch": {
-            "functions": 430,
-            "original_bytes": 44384,
-            "generated_bytes": 44384
-          },
-          "cumulative_original_B_per_hour": 520.2463306570047,
-          "last_hour": {
-            "functions": 1,
-            "original_bytes": 78,
-            "generated_bytes": 78,
-            "original_B_per_hour": 78.0
-          },
-          "previous_hour": {
-            "functions": 1,
-            "original_bytes": 112,
-            "generated_bytes": 112,
-            "original_B_per_hour": 112.0
           }
         }
       }
@@ -10916,26 +9666,26 @@
   ],
   "rounds": {
     "last_hour": {
-      "rounds": 2,
-      "completed_decision_intervals": 0,
-      "median_seconds": null,
-      "p90_seconds": null,
-      "initial_preparations": 1,
+      "rounds": 50,
+      "completed_decision_intervals": 50,
+      "median_seconds": 75.54153,
+      "p90_seconds": 395.334523,
+      "initial_preparations": 0,
       "first_round_methods": 0,
       "first_round_exact": 0
     },
     "previous_hour": {
-      "rounds": 7,
-      "completed_decision_intervals": 1,
-      "median_seconds": 270.968155,
-      "p90_seconds": 270.968155,
-      "initial_preparations": 5,
+      "rounds": 76,
+      "completed_decision_intervals": 76,
+      "median_seconds": 126.0008685,
+      "p90_seconds": 254.369635,
+      "initial_preparations": 0,
       "first_round_methods": 0,
       "first_round_exact": 0
     }
   },
   "recording_gaps": {
-    "pending_peer_exact": 0,
+    "pending_peer_exact": 1,
     "pending_integration_exact": 24,
     "exact_rounds_without_local_credit": 3
   },
@@ -10951,116 +9701,39 @@
   ],
   "dashboard": {
     "schema_version": 2,
-    "as_of": "2026-10-25T15:55:53.451033+00:00",
+    "as_of": "2026-10-26T04:51:17.414204+00:00",
     "integrated_rom_sha256": "fe09f20f0639d3cf6e2a43cb318cc662bc7c2a4f869990929b7883bcc9cde2d7",
     "overview": {
       "integrated_c_bytes": 228680,
       "integrated_exact_bytes": 92296,
       "mixed_bytes": 11608,
-      "pending_exact_bytes": 119792,
-      "pending_peer_exact_bytes": 119792,
+      "pending_exact_bytes": 131852,
+      "pending_peer_exact_bytes": 130148,
       "pending_mixed_exact_bytes": 3136,
       "pending_peer_mixed_exact_bytes": 3136,
-      "exact_available_bytes": 216388,
-      "tasks": 2628,
+      "exact_available_bytes": 228448,
+      "tasks": 2764,
       "states": {
         "ready": 0,
-        "active": 0,
-        "frozen": 2038,
-        "blocked": 590
+        "active": 2,
+        "frozen": 2188,
+        "blocked": 574
       },
-      "pure_c_exact_available_bytes": 212088,
+      "pure_c_exact_available_bytes": 224148,
       "integrated_eligible_mixed_exact_bytes": 1164,
-      "completed_exact_original_bytes": 216388
+      "completed_exact_original_bytes": 228448
     },
     "performance": [
       {
         "id": "team",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 1,
-        "exact_B_per_completed_hour": 232.0,
-        "previous_completed_hour_exact_B_per_hour": 144.0,
-        "peer_exact_B_per_completed_hour": 264.0,
-        "integrated_exact_B_per_completed_hour": 110.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "main",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 32.0,
-        "peer_exact_B_per_completed_hour": 32.0,
-        "integrated_exact_B_per_completed_hour": 32.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "worker2",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
+        "active_tasks": 2,
+        "exact_methods_last_completed_hour": 127,
+        "exact_B_per_completed_hour": 6504.0,
+        "previous_completed_hour_exact_B_per_hour": 1704.0,
+        "peer_exact_B_per_completed_hour": 1010.0,
         "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "worker3",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "sol_a",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "sol_b",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "sol_c",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
-      },
-      {
-        "id": "astra_handoff",
-        "active_tasks": 0,
-        "exact_methods_last_completed_hour": 0,
-        "exact_B_per_completed_hour": 0.0,
-        "previous_completed_hour_exact_B_per_hour": 0.0,
-        "peer_exact_B_per_completed_hour": 0.0,
-        "integrated_exact_B_per_completed_hour": 0.0,
-        "median_seconds": null,
-        "p90_seconds": null
+        "median_seconds": 75.54153,
+        "p90_seconds": 395.334523
       }
     ],
     "systems": [
@@ -11070,17 +9743,17 @@
         "integrated_c_bytes": 79300,
         "integrated_exact_bytes": 20254,
         "mixed_bytes": 268,
-        "pending_exact_bytes": 1864,
-        "pending_peer_exact_bytes": 1864,
+        "pending_exact_bytes": 4600,
+        "pending_peer_exact_bytes": 2896,
         "pending_mixed_exact_bytes": 148,
         "pending_peer_mixed_exact_bytes": 148,
-        "exact_available_bytes": 22266,
+        "exact_available_bytes": 25002,
         "tasks": 185,
         "states": {
           "ready": 0,
-          "active": 0,
-          "frozen": 152,
-          "blocked": 33
+          "active": 2,
+          "frozen": 155,
+          "blocked": 28
         },
         "modules": [
           {
@@ -11189,9 +9862,9 @@
             "tasks": 2,
             "states": {
               "ready": 0,
-              "active": 0,
+              "active": 1,
               "frozen": 1,
-              "blocked": 1
+              "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 1290,
@@ -11297,8 +9970,8 @@
             "integrated_c_bytes": 4650,
             "integrated_exact_bytes": 3678,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 112,
-            "pending_peer_exact_bytes": 112,
+            "pending_exact_bytes": 182,
+            "pending_peer_exact_bytes": 182,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 16,
@@ -11309,8 +9982,8 @@
               "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 3790,
-            "pure_c_exact_available_bytes": 3790,
+            "exact_available_bytes": 3860,
+            "pure_c_exact_available_bytes": 3860,
             "integrated_eligible_mixed_exact_bytes": 0
           },
           {
@@ -11488,9 +10161,9 @@
             "tasks": 1,
             "states": {
               "ready": 0,
-              "active": 0,
+              "active": 1,
               "frozen": 0,
-              "blocked": 1
+              "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
             "exact_available_bytes": 196,
@@ -11527,24 +10200,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1062,
-            "pending_peer_exact_bytes": 1062,
+            "pending_exact_bytes": 3728,
+            "pending_peer_exact_bytes": 2024,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 121,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 93,
-              "blocked": 28
+              "frozen": 96,
+              "blocked": 25
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 1062,
-            "pure_c_exact_available_bytes": 1062,
+            "exact_available_bytes": 3728,
+            "pure_c_exact_available_bytes": 3728,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 22118,
+        "pure_c_exact_available_bytes": 24854,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -11553,17 +10226,17 @@
         "integrated_c_bytes": 23228,
         "integrated_exact_bytes": 5276,
         "mixed_bytes": 9996,
-        "pending_exact_bytes": 496,
-        "pending_peer_exact_bytes": 496,
+        "pending_exact_bytes": 572,
+        "pending_peer_exact_bytes": 572,
         "pending_mixed_exact_bytes": 806,
         "pending_peer_mixed_exact_bytes": 806,
-        "exact_available_bytes": 6578,
+        "exact_available_bytes": 6654,
         "tasks": 158,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 140,
-          "blocked": 18
+          "frozen": 138,
+          "blocked": 20
         },
         "modules": [
           {
@@ -11688,24 +10361,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 496,
-            "pending_peer_exact_bytes": 496,
+            "pending_exact_bytes": 572,
+            "pending_peer_exact_bytes": 572,
             "pending_mixed_exact_bytes": 806,
             "pending_peer_mixed_exact_bytes": 806,
             "tasks": 151,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 136,
-              "blocked": 15
+              "frozen": 134,
+              "blocked": 17
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 1302,
-            "pure_c_exact_available_bytes": 496,
+            "exact_available_bytes": 1378,
+            "pure_c_exact_available_bytes": 572,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 5772,
+        "pure_c_exact_available_bytes": 5848,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -11714,17 +10387,17 @@
         "integrated_c_bytes": 10064,
         "integrated_exact_bytes": 5624,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 780,
-        "pending_peer_exact_bytes": 780,
+        "pending_exact_bytes": 958,
+        "pending_peer_exact_bytes": 958,
         "pending_mixed_exact_bytes": 388,
         "pending_peer_mixed_exact_bytes": 388,
-        "exact_available_bytes": 6792,
+        "exact_available_bytes": 6970,
         "tasks": 162,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 120,
-          "blocked": 42
+          "frozen": 126,
+          "blocked": 36
         },
         "modules": [
           {
@@ -11826,24 +10499,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 780,
-            "pending_peer_exact_bytes": 780,
+            "pending_exact_bytes": 958,
+            "pending_peer_exact_bytes": 958,
             "pending_mixed_exact_bytes": 388,
             "pending_peer_mixed_exact_bytes": 388,
             "tasks": 150,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 111,
-              "blocked": 39
+              "frozen": 117,
+              "blocked": 33
             },
-            "last_completed_hour_exact_B_per_hour": 232.0,
-            "exact_available_bytes": 1168,
-            "pure_c_exact_available_bytes": 780,
+            "last_completed_hour_exact_B_per_hour": 0.0,
+            "exact_available_bytes": 1346,
+            "pure_c_exact_available_bytes": 958,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 6404,
+        "pure_c_exact_available_bytes": 6582,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -11852,17 +10525,17 @@
         "integrated_c_bytes": 15562,
         "integrated_exact_bytes": 1362,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 1484,
-        "pending_peer_exact_bytes": 1484,
+        "pending_exact_bytes": 1940,
+        "pending_peer_exact_bytes": 1940,
         "pending_mixed_exact_bytes": 0,
         "pending_peer_mixed_exact_bytes": 0,
-        "exact_available_bytes": 2846,
+        "exact_available_bytes": 3302,
         "tasks": 87,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 59,
-          "blocked": 28
+          "frozen": 61,
+          "blocked": 26
         },
         "modules": [
           {
@@ -11941,24 +10614,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 1484,
-            "pending_peer_exact_bytes": 1484,
+            "pending_exact_bytes": 1940,
+            "pending_peer_exact_bytes": 1940,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 81,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 57,
-              "blocked": 24
+              "frozen": 59,
+              "blocked": 22
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 1484,
-            "pure_c_exact_available_bytes": 1484,
+            "exact_available_bytes": 1940,
+            "pure_c_exact_available_bytes": 1940,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 2846,
+        "pure_c_exact_available_bytes": 3302,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -11967,17 +10640,17 @@
         "integrated_c_bytes": 8892,
         "integrated_exact_bytes": 1528,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 0,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 236,
+        "pending_peer_exact_bytes": 236,
         "pending_mixed_exact_bytes": 0,
         "pending_peer_mixed_exact_bytes": 0,
-        "exact_available_bytes": 1528,
+        "exact_available_bytes": 1764,
         "tasks": 54,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 34,
-          "blocked": 20
+          "frozen": 35,
+          "blocked": 19
         },
         "modules": [
           {
@@ -12033,24 +10706,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 236,
+            "pending_peer_exact_bytes": 236,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 47,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 30,
-              "blocked": 17
+              "frozen": 31,
+              "blocked": 16
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0,
-            "pure_c_exact_available_bytes": 0,
+            "exact_available_bytes": 236,
+            "pure_c_exact_available_bytes": 236,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 1528,
+        "pure_c_exact_available_bytes": 1764,
         "integrated_eligible_mixed_exact_bytes": 0
       },
       {
@@ -12220,11 +10893,11 @@
         "integrated_c_bytes": 84448,
         "integrated_exact_bytes": 56442,
         "mixed_bytes": 1344,
-        "pending_exact_bytes": 0,
-        "pending_peer_exact_bytes": 0,
+        "pending_exact_bytes": 332,
+        "pending_peer_exact_bytes": 332,
         "pending_mixed_exact_bytes": 0,
         "pending_peer_mixed_exact_bytes": 0,
-        "exact_available_bytes": 57606,
+        "exact_available_bytes": 57938,
         "tasks": 3,
         "states": {
           "ready": 0,
@@ -12263,8 +10936,8 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 0,
-            "pending_peer_exact_bytes": 0,
+            "pending_exact_bytes": 332,
+            "pending_peer_exact_bytes": 332,
             "pending_mixed_exact_bytes": 0,
             "pending_peer_mixed_exact_bytes": 0,
             "tasks": 3,
@@ -12275,12 +10948,12 @@
               "blocked": 0
             },
             "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 0,
-            "pure_c_exact_available_bytes": 0,
+            "exact_available_bytes": 332,
+            "pure_c_exact_available_bytes": 332,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 56442,
+        "pure_c_exact_available_bytes": 56774,
         "integrated_eligible_mixed_exact_bytes": 1164
       },
       {
@@ -12289,17 +10962,17 @@
         "integrated_c_bytes": 0,
         "integrated_exact_bytes": 0,
         "mixed_bytes": 0,
-        "pending_exact_bytes": 115168,
-        "pending_peer_exact_bytes": 115168,
+        "pending_exact_bytes": 123214,
+        "pending_peer_exact_bytes": 123214,
         "pending_mixed_exact_bytes": 1794,
         "pending_peer_mixed_exact_bytes": 1794,
-        "exact_available_bytes": 116962,
-        "tasks": 1979,
+        "exact_available_bytes": 125008,
+        "tasks": 2115,
         "states": {
           "ready": 0,
           "active": 0,
-          "frozen": 1530,
-          "blocked": 449
+          "frozen": 1670,
+          "blocked": 445
         },
         "modules": [
           {
@@ -12309,24 +10982,24 @@
             "integrated_c_bytes": 0,
             "integrated_exact_bytes": 0,
             "mixed_bytes": 0,
-            "pending_exact_bytes": 115168,
-            "pending_peer_exact_bytes": 115168,
+            "pending_exact_bytes": 123214,
+            "pending_peer_exact_bytes": 123214,
             "pending_mixed_exact_bytes": 1794,
             "pending_peer_mixed_exact_bytes": 1794,
-            "tasks": 1979,
+            "tasks": 2115,
             "states": {
               "ready": 0,
               "active": 0,
-              "frozen": 1530,
-              "blocked": 449
+              "frozen": 1670,
+              "blocked": 445
             },
-            "last_completed_hour_exact_B_per_hour": 0.0,
-            "exact_available_bytes": 116962,
-            "pure_c_exact_available_bytes": 115168,
+            "last_completed_hour_exact_B_per_hour": 6504.0,
+            "exact_available_bytes": 125008,
+            "pure_c_exact_available_bytes": 123214,
             "integrated_eligible_mixed_exact_bytes": 0
           }
         ],
-        "pure_c_exact_available_bytes": 115168,
+        "pure_c_exact_available_bytes": 123214,
         "integrated_eligible_mixed_exact_bytes": 0
       }
     ],
@@ -12335,17 +11008,17 @@
       "basis": "original_asm_spans",
       "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c_or_eligible_mixed",
       "completion_policy": "c-or-eligible-mixed-r72",
-      "rewritten_original_asm_bytes": 214974,
+      "rewritten_original_asm_bytes": 224114,
       "known_original_asm_bytes": 1159664,
       "integrated_original_asm_bytes": 93460,
       "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
       "total_asm_bytes": 1159664,
-      "matched_asm_bytes": 214974,
+      "matched_asm_bytes": 224114,
       "integrated_matched_asm_bytes": 93460,
-      "exact_bytes_outside_catalogue": 1414,
-      "percent": 18.537610894190042,
+      "exact_bytes_outside_catalogue": 4334,
+      "percent": 19.325770223099106,
       "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue.",
-      "pure_c_original_asm_bytes": 210674,
+      "pure_c_original_asm_bytes": 219814,
       "eligible_mixed_added_original_asm_bytes": 4300
     },
     "c_match": {
@@ -12353,23 +11026,23 @@
       "basis": "original_asm_spans",
       "numerator_basis": "deduplicated_original_asm_ranges_rewritten_as_whole_exact_c_or_eligible_mixed",
       "completion_policy": "c-or-eligible-mixed-r72",
-      "rewritten_original_asm_bytes": 214974,
+      "rewritten_original_asm_bytes": 224114,
       "known_original_asm_bytes": 1159664,
       "integrated_original_asm_bytes": 93460,
       "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
       "total_asm_bytes": 1159664,
-      "matched_asm_bytes": 214974,
+      "matched_asm_bytes": 224114,
       "integrated_matched_asm_bytes": 93460,
-      "exact_bytes_outside_catalogue": 1414,
-      "percent": 18.537610894190042,
+      "exact_bytes_outside_catalogue": 4334,
+      "percent": 19.325770223099106,
       "scope": "Known original ASM function/module spans, including internal literals and alignment; excludes resource ranges. Already migrated code remains in the denominator. Unclassified code is not yet in this catalogue.",
-      "pure_c_original_asm_bytes": 210674,
+      "pure_c_original_asm_bytes": 219814,
       "eligible_mixed_added_original_asm_bytes": 4300
     },
     "daily": {
       "schema_version": 1,
       "timezone": "Asia/Shanghai",
-      "as_of": "2026-10-25T15:55:53.451033+00:00",
+      "as_of": "2026-10-26T04:51:17.414204+00:00",
       "denominator_id": "7d8806c27d9fc99038380505c97d8f58a15b3823bdca74c9183d6bb4b02d15ab",
       "known_original_asm_bytes": 1159664,
       "current_exact_asm_bytes_without_local_date": 29258,
@@ -12413,7 +11086,7 @@
         },
         {
           "date": "2026-10-25",
-          "partial": true,
+          "partial": false,
           "new_exact_methods": 347,
           "new_exact_asm_bytes": 40638,
           "new_pure_c_asm_bytes": 40018,
@@ -12422,6 +11095,18 @@
           "cumulative_registered_exact_asm_bytes": 185716,
           "cumulative_registered_integrated_asm_bytes": 183090,
           "registered_percent": 16.01463872294044
+        },
+        {
+          "date": "2026-10-26",
+          "partial": true,
+          "new_exact_methods": 112,
+          "new_exact_asm_bytes": 9140,
+          "new_pure_c_asm_bytes": 9140,
+          "new_eligible_mixed_asm_bytes": 0,
+          "new_integrated_asm_bytes": 7436,
+          "cumulative_registered_exact_asm_bytes": 194856,
+          "cumulative_registered_integrated_asm_bytes": 190526,
+          "registered_percent": 16.8027980518495
         }
       ],
       "scope": "Calendar days in Asia/Shanghai, using original credit occurrence times and currently unrevoked receipts. Range unions deduplicate overlaps within each gate. Cumulative curves cover dated ledger receipts only; the current ROM baseline is never backdated. Missing historical receipts are unknown, not zero recovery. Integration is a separate gate and must not be added to local exact. Current day is partial; no projection. Eligible mixed and pure C remain separate."
@@ -12429,18 +11114,18 @@
     "classification": {
       "mapped": 96,
       "provisional": 553,
-      "unmapped": 1979
+      "unmapped": 2115
     },
     "unlocated_exact_records": 0,
     "windows": {
       "last_hour": {
         "timezone": "Asia/Shanghai",
         "basis": "completed_absolute_clock_hour",
-        "start_inclusive": "2026-10-25T14:00:00.000000+00:00",
-        "end_exclusive": "2026-10-25T15:00:00.000000+00:00",
-        "start_inclusive_local": "2026-10-25T22:00:00.000000+08:00",
-        "end_exclusive_local": "2026-10-25T23:00:00.000000+08:00",
-        "display": "2026-10-25 22:00:00–2026-10-25 22:59:59 Asia/Shanghai (UTC+08:00)",
+        "start_inclusive": "2026-10-26T03:00:00.000000+00:00",
+        "end_exclusive": "2026-10-26T04:00:00.000000+00:00",
+        "start_inclusive_local": "2026-10-26T11:00:00.000000+08:00",
+        "end_exclusive_local": "2026-10-26T12:00:00.000000+08:00",
+        "display": "2026-10-26 11:00:00–2026-10-26 11:59:59 Asia/Shanghai (UTC+08:00)",
         "observed_seconds": 3600.0,
         "partial": false,
         "partial_reason": null
@@ -12448,18 +11133,18 @@
       "previous_hour": {
         "timezone": "Asia/Shanghai",
         "basis": "completed_absolute_clock_hour",
-        "start_inclusive": "2026-10-25T13:00:00.000000+00:00",
-        "end_exclusive": "2026-10-25T14:00:00.000000+00:00",
-        "start_inclusive_local": "2026-10-25T21:00:00.000000+08:00",
-        "end_exclusive_local": "2026-10-25T22:00:00.000000+08:00",
-        "display": "2026-10-25 21:00:00–2026-10-25 21:59:59 Asia/Shanghai (UTC+08:00)",
+        "start_inclusive": "2026-10-26T02:00:00.000000+00:00",
+        "end_exclusive": "2026-10-26T03:00:00.000000+00:00",
+        "start_inclusive_local": "2026-10-26T10:00:00.000000+08:00",
+        "end_exclusive_local": "2026-10-26T11:00:00.000000+08:00",
+        "display": "2026-10-26 10:00:00–2026-10-26 10:59:59 Asia/Shanghai (UTC+08:00)",
         "observed_seconds": 3600.0,
         "partial": false,
         "partial_reason": null
       }
     },
     "recording_gaps": {
-      "pending_peer_exact": 0,
+      "pending_peer_exact": 1,
       "pending_integration_exact": 24,
       "exact_rounds_without_local_credit": 3
     }

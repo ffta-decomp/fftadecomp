@@ -4,12 +4,12 @@
 
 Daily reporting for Final Fantasy Tactics Advance (USA): delivery speed, daily decompilation history, and unified system and module progress.
 
-- [Unified progress](data/progress.json): `dashboard` is the single source for the page, including overview, lane efficiency and all module rows.
+- [Unified progress](data/progress.json): `dashboard` is the single source for the page, including overview, aggregate throughput and all module rows.
 - [Submodules](data/submodules.json): each `current` record uses the same accounting.
 - [Activity ledger aggregates](data/workflow.json): separate local, independent and integration gates.
 - [Resource spans](data/resource-addresses.csv).
 
-Exact C combines the validated ROM snapshot and registered local exact spans after range deduplication. Local results do not automatically become integrated C. Bytes include constants/alignment; they are not game-completion percentages. A dedicated scheduler publishes one consolidated snapshot daily at 23:55 Asia/Shanghai without an LLM. Worker submissions and administrator checks do not publish. Local ledger records remain immediate; updates may be delayed while the host is offline.
+Exact C combines the validated ROM snapshot and registered local exact spans after range deduplication. Local results do not automatically become integrated C. Bytes include constants/alignment; they are not game-completion percentages. A dedicated scheduler publishes one consolidated snapshot daily at 23:55 Asia/Shanghai without an LLM. Routine internal updates do not publish. Local ledger records remain immediate; updates may be delayed while the host is offline.
 
 This public repository contains aggregate metadata and presentation files, original portable tools and recovery guidance, not game implementation code, ROMs, extracted assets, private task records or evidence. Historical display artwork credits remain in [assets/ATTRIBUTION.md](assets/ATTRIBUTION.md). The project is unofficial. Original documentation and metadata are [CC BY 4.0](LICENSE).
 
@@ -33,3 +33,5 @@ The [pinned reference table](vendor/README.md), [47-resource collection](docs/gb
 ### Reproduction validation
 
 The release [validation summary](data/toolkit-validation.json) records two identical clean generated ASM trees: **4,240 paths**, including **4,236 native files reassembled byte-for-byte** and four interface-only files. The [executable walkthrough](docs/reproduce-recovery.md) covers setup, pinned-ROM unpacking, single-method compilation/preflight, independent gates and structured round records. This validates the reference/tool workflow and grants no new game-recovery credit.
+
+Public progress reports project-level output only; worker counts and per-worker performance are not published.

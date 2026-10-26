@@ -76,14 +76,14 @@ def _packets(ledger, repo):
         for pin in commit.get('evidence', []):
             if Path(pin['path']).suffix == '.json':
                 documents.append((pin, json_pin(pin)))
-        images = [(pin, doc) for pin, doc in documents if doc.get('schema') == IMAGE_SCHEMA]
+        images = [(pin, doc) for pin, doc in documents if isinstance(doc, dict) and doc.get('schema') == IMAGE_SCHEMA]
         image_named = [doc for pin, doc in documents if Path(pin['path']).name == 'actual-image-identity.json']
         require(not image_named or images, 'unsupported actual-image receipt schema')
         if not images:
             continue
         require(len(images) == 1, 'ambiguous actual-image evidence')
         pin, image = images[0]
-        receipts = [doc for _, doc in documents if doc.get('commit') == sha
+        receipts = [doc for _, doc in documents if isinstance(doc, dict) and doc.get('commit') == sha
                     and doc.get('actual_image_gate_sha256') == pin['sha256']]
         packets.append({'commit': commit, 'image': image, 'image_pin': pin,
                         'receipt': receipts[0] if len(receipts) == 1 else None})
