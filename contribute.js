@@ -9,7 +9,7 @@
     for(const f of rows.slice(page*100,page*100+100)){
       const tr=document.createElement('tr');for(const text of [`${f.name}\n${f.id}`,`${f.group} / ${f.semantic_group}`,f.address,`${f.original_bytes} (${f.entry_kind})`,f.recorded_state]){const td=document.createElement('td');td.textContent=text;tr.append(td)}
       const td=document.createElement('td');if(f.entry_kind==='declared_function'&&f.group===data.active_group&&['unassessed','queued_internal'].includes(f.recorded_state)){
-        const a=document.createElement('a');const url=new URL('https://github.com/hitsmaxft/fftadecomp/issues/new');url.searchParams.set('template','group-function-claim.yml');url.searchParams.set('title',`[Claim] ${f.group} / ${f.id}`);a.href=url.toString();a.textContent='Request';td.append(a)
+        const a=document.createElement('a');const url=new URL('https://github.com/ffta-decomp/fftadecomp/issues/new');url.searchParams.set('template','group-function-claim.yml');url.searchParams.set('title',`[Claim] ${f.group} / ${f.id}`);a.href=url.toString();a.textContent='Request';td.append(a)
       }else td.textContent='Check status';tr.append(td);body.append(tr)
     }
     document.getElementById('summary').textContent=`${rows.length} entries · page ${page+1} · snapshot ${data.as_of}`;document.getElementById('previous').disabled=page===0;document.getElementById('next').disabled=(page+1)*100>=rows.length
