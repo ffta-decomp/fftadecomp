@@ -41,9 +41,9 @@ async function start(){
  const o=d.overview,m=d.asm_rewrite||d.c_match;
  document.querySelector('#overview').innerHTML=[
   ['Ledger catalogue coverage',m?.percent == null ? 'Unknown' : m.percent.toFixed(3),'%',m?.percent == null ? 'Original ASM catalogue unavailable' : `${fmt(m.rewritten_original_asm_bytes??m.matched_asm_bytes)} / ${fmt(m.known_original_asm_bytes??m.total_asm_bytes)} known original ASM bytes`],
-  ['Ledger matched original ASM',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
+  ['Ledger matched original ASM',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in the pinned historical image; current ledger union shown here`],
   ['Pinned production C snapshot',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
-  ['Matched ASM awaiting integration',fmt(o.pending_exact_bytes),'B',`${fmt(o.pending_peer_exact_bytes)} independently accepted bytes`],
+  ['Matched beyond pinned image',fmt(o.pending_exact_bytes),'B','Historical image delta, not the current integration backlog'],
   ['Tasks in progress',fmt(o.states.active),'',`${fmt(o.states.ready)} ready · ${fmt(o.states.frozen)} frozen · ${fmt(o.states.blocked)} blocked`]
  ].map(([label,value,unit,note])=>`<article class="card"><div class="card-label">${label}</div><div class="card-value">${value}<small>${unit}</small></div><p>${note}</p></article>`).join('');
  document.querySelector('#inventory').textContent=`Reconstructed resources ${compact(payload.resource_inventory.resource_bytes_excluding_padding)} · Source ASM ${compact(payload.source_assembly.span_bytes)} · Original-byte dependencies ${compact(payload.original_byte_dependency.span_bytes)}`;
