@@ -1,0 +1,13 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef signed short s16;
+typedef unsigned int u32;
+typedef signed int s32;
+typedef struct {void *actor;void *target;void *affected;u8 unknown12[26];u16 flags;} EffectContext;
+typedef struct {void (*apply)(EffectContext*);u8 unknown[8];} EffectDescriptor;
+extern EffectDescriptor EffectDescriptors[] __asm__("0x083a87b0");
+u32 StateGate(void*) __asm__("EffectResolutionCall_080CD8FC");
+void ClearState(void*,u32) __asm__("SetUnitStateE8Bit4");
+u32 EvaluateEffect(void*,void*,u32,s16*) __asm__("EffectApplicationCall_0812D660");
+u32 RandomWord(void) __asm__("RetailCall_08002804");
+s32 Remainder(s32,s32) __asm__("RetailCall_08142950");

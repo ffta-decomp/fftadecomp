@@ -1,0 +1,10 @@
+typedef unsigned char u8;
+typedef unsigned int u32;
+typedef signed int s32;
+typedef struct {u8 unknown[3];u8 value_selector;} Descriptor;
+typedef struct {void *actor;void *target;u8 unknown8[40];Descriptor *descriptor;} EffectContext;
+typedef s32 (*ValueCallback)(EffectContext*);
+s32 EffectMultiplier(void) __asm__("RetailCall_08133988");
+u32 EffectKind(void) __asm__("RetailCall_0812f358");
+u32 PairGate(void*,void*) __asm__("RetailCall_08130868");
+extern ValueCallback EffectValueCallbacks[] __asm__("0x083a86f8");

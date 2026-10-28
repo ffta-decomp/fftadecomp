@@ -1,0 +1,17 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef signed short s16;
+typedef unsigned int u32;
+typedef signed int s32;
+typedef struct { u8 before_slots[0x1f3c]; u16 slots[20]; } SavedInventoryView;
+typedef char SavedSlotsOffset[((u32)&((SavedInventoryView*)0)->slots==0x1f3c)?1:-1];
+extern SavedInventoryView gSaveData;
+extern u32 NextRandom15(void);
+extern s32 SignedModulo(s32 dividend, s32 divisor);
+extern void ClearSavedInventorySlot(u32 slot);
+extern void CompactPendingHalfwordRecords(void);
+__asm__(".set gSaveData, 0x02000000");
+__asm__(".thumb_set NextRandom15, 0x08002805");
+__asm__(".thumb_set SignedModulo, 0x08142951");
+__asm__(".thumb_set ClearSavedInventorySlot, 0x08038679");
+__asm__(".thumb_set CompactPendingHalfwordRecords, 0x080cc2b5");

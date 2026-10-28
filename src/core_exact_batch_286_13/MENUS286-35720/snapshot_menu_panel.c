@@ -1,0 +1,4 @@
+typedef unsigned char u8;typedef struct __attribute__((packed)){u8 bit0:1;u8 rest:4;u8 bit5:1;u8 bit6:1;u8 last:1;} Flags;typedef struct __attribute__((packed)){u8 low:3;u8 rest:5;} Low3;extern u8 metadata[];
+#define W(p,n) (*(unsigned *)((p)+(n)))
+void CoreRegion_00035720(void){register u8 *root __asm__("r2")=*(u8**)0x03002810;register unsigned *first __asm__("r1")=(unsigned *)(root+0xF24);Flags *child;__asm__("" : "+r"(root));__asm__("" : "+r"(first));child=*(Flags **)(root+4);*first=child->bit0;{register unsigned *second __asm__("r3")=(unsigned *)(root+0xF28);register u8 *meta __asm__("r1");__asm__("" : "+r"(second));meta=metadata;__asm__("" : "+r"(meta));*second=((Low3*)(meta+154))->low;W(root,0xF2C)=((Low3*)(meta+230))->low;}W(root,0xF30)=child->bit5;W(root,0xF34)=child->bit6;}
+__asm__(".set metadata,0x030009E0");

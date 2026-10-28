@@ -1,0 +1,10 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef signed short s16;
+typedef unsigned int u32;
+struct RuleRosterState { u8 reserved[0x3c33]; u8 count; u16 ids[1]; };
+struct RuleDefinition { u8 field0; u8 parent; u8 remaining[14]; };
+extern struct RuleRosterState gRuleRoster;
+extern const struct RuleDefinition gRuleDefinitions[];
+extern u8 EvaluateDefinitionRule(void *actor, void *target, u16 selector, u8 mode, u8 zero, s16 adjustment, void *payload, const struct RuleDefinition *definition);
+__asm__(".global gRuleRoster\n.set gRuleRoster,0x02000000\n.global gRuleDefinitions\n.set gRuleDefinitions,0x08528f34\n.global EvaluateDefinitionRule\n.thumb_set EvaluateDefinitionRule,0x081343c9");

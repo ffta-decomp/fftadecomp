@@ -1,0 +1,84 @@
+/* Method-local interface declarations from the frozen build. */
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef unsigned int u32;
+typedef signed int s32;
+struct MenuDescriptor {u8 x,y,width,height;u16 unknown04;u16 format;u8 animation;u8 unknown09[3];u16 edge;u16 tile;};
+struct WindowState {u8 bytes[44];};
+struct ListRegion {u8 unknown00[8];u16 *display;u16 *buffer;u8 unknown10[3];u8 x,y,width,height;u8 unknown17[5];u16 tile;u8 stride;u8 unknown1f;};
+struct ParentState {u8 unknown00[4];u16 count;u8 unknown06[0x2a4-6];u8 window_content[0x424-0x2a4];u8 scratch[256];};
+struct MilestoneMenu {struct ParentState *parent;u8 unknown04[5];u8 task;u8 unknown0a[2];struct MenuDescriptor descriptor;struct WindowState window;struct ListRegion list;u8 unknown68[40];u8 *enabled;u16 *tiles;};
+struct DisplayState {u8 unknown00[20];u16 *tiles;};
+extern void (*const clear_bytes)(u8 *,s32);
+extern void (*const copy_bytes)(u8 *,const u8 *,s32);
+extern void (*const fill_bytes)(u8 *,s32,u32);
+extern const struct MenuDescriptor descriptor_template;
+extern const u16 milestone_ids[300];
+extern struct DisplayState display_state;
+extern u16 GetSelectedFlagMilestoneCount(void);
+extern void *AllocateBytes(u32 size);
+extern u8 GetGameFlag(u16 flag);
+extern u16 NormalizeMenuDescriptor(struct MenuDescriptor *);
+extern u16 GetTileOffset(u8 x,u8 y,u8 stride);
+extern void InitializeWindow(struct WindowState *,u8,u8,u8,u8,u16,u16,u16,u8);
+extern void ApplyWindowEdges(struct MenuDescriptor *,struct WindowState *,void *);
+extern void AnimateWindow(struct WindowState *,u8);
+extern u32 RegisterMenuTask(void (*)(void *),void *);
+extern void MilestoneMenuCallback(void *);
+typedef char DescriptorLayout[sizeof(struct MenuDescriptor)==16?1:-1];
+typedef char RegionLayout[sizeof(struct ListRegion)==32?1:-1];
+typedef char FrameLayout[sizeof(struct MilestoneMenu)==152?1:-1];
+asm(".global clear_bytes\n.set clear_bytes,0x0836d4b8");
+asm(".global copy_bytes\n.set copy_bytes,0x0836d4bc");
+asm(".global fill_bytes\n.set fill_bytes,0x0836d4c0");
+asm(".global descriptor_template\n.set descriptor_template,0x08393798");
+asm(".global milestone_ids\n.set milestone_ids,0x08529ee4");
+asm(".global display_state\n.set display_state,0x030008b0");
+asm(".global GetSelectedFlagMilestoneCount\n.thumb_set GetSelectedFlagMilestoneCount,0x080ced2d");
+asm(".global AllocateBytes\n.thumb_set AllocateBytes,0x08005b29");
+asm(".global GetGameFlag\n.thumb_set GetGameFlag,0x080c9541");
+asm(".global NormalizeMenuDescriptor\n.thumb_set NormalizeMenuDescriptor,0x08013b51");
+asm(".global GetTileOffset\n.thumb_set GetTileOffset,0x080161a1");
+asm(".global InitializeWindow\n.thumb_set InitializeWindow,0x08017491");
+asm(".global ApplyWindowEdges\n.thumb_set ApplyWindowEdges,0x08013b7d");
+asm(".global AnimateWindow\n.thumb_set AnimateWindow,0x08016c91");
+asm(".global RegisterMenuTask\n.thumb_set RegisterMenuTask,0x080098f5");
+asm(".global MilestoneMenuCallback\n.thumb_set MilestoneMenuCallback,0x0804f939");
+
+void InitializeMilestoneMenuWindow(struct MilestoneMenu *menu)
+{
+    struct MenuDescriptor *descriptor = &menu->descriptor;
+    struct ListRegion *list = &menu->list;
+    struct WindowState *window = &menu->window;
+    s32 index;
+    s32 tile_bytes;
+    u8 width;
+    copy_bytes((u8 *)descriptor,(const u8 *)&descriptor_template,16);
+    clear_bytes(menu->parent->scratch,256);
+    menu->parent->count = GetSelectedFlagMilestoneCount();
+    menu->enabled = AllocateBytes(menu->parent->count);
+    fill_bytes(menu->enabled,menu->parent->count,1);
+    for(index=0;index<menu->parent->count;index++) {
+        const u16 *table = milestone_ids;
+        const u16 *id = table + index;
+        if (*id == 26 && GetGameFlag(54)) continue;
+        if (!GetGameFlag((u16)(*id + 767))) menu->enabled[index] = 0;
+    }
+    NormalizeMenuDescriptor(descriptor);
+    list->x = descriptor->x;
+    list->y = descriptor->y + 2;
+    width = descriptor->width;
+    list->width = width;
+    list->height = descriptor->height - 3;
+    list->tile = descriptor->tile + 320;
+    list->stride = width;
+    tile_bytes = list->width * list->height * 2;
+    menu->tiles = AllocateBytes(tile_bytes);
+    clear_bytes((u8 *)menu->tiles,tile_bytes);
+    list->buffer = menu->tiles;
+    list->display = display_state.tiles + GetTileOffset(list->x,list->y,32);
+    InitializeWindow(window,descriptor->x,descriptor->y,descriptor->width,descriptor->height,descriptor->format,5,1,12);
+    ApplyWindowEdges(descriptor,window,menu->parent->window_content);
+    AnimateWindow(window,descriptor->animation);
+    menu->task = RegisterMenuTask(MilestoneMenuCallback,menu);
+}

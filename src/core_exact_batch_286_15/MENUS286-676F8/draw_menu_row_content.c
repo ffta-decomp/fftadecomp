@@ -1,0 +1,6 @@
+typedef unsigned char u8;typedef signed char s8;typedef unsigned short u16;typedef short s16;
+#define W(p,n) (*(u8 **)((p)+(n)))
+extern unsigned display[];
+extern unsigned row_position(void*,int);extern void clear(void*,unsigned);extern unsigned row_index(void*,int);extern unsigned row_value(void*,int);extern u8 *row_content(void*,void*,unsigned);extern void text(void*,void*,unsigned,unsigned,unsigned);extern void extra(void*,void*,void*,unsigned);
+void RemainingCore48_000676F8(u8 *panel,s8 row){u8 *list=panel+80;register unsigned style __asm__("r8")=0;u8 *buffer;unsigned index,value;u8 *content;__asm__("" : "+r"(style));buffer=(u8 *)display[4]+32*(u16)row_position(list,row);clear(buffer,2*list[21]);{register unsigned normalized __asm__("r0")=(u16)row_index(list,row);__asm__("" : "+r"(normalized));index=normalized;}if(*(s8 *)(W(panel,152)+index)==0)style=1;value=row_value(panel,(s16)index);content=row_content(panel,buffer,index);text(W(panel,0)+20,content,value,style,1);if(panel[8]==4)extra(panel,W(panel,0)+20,content,index);}
+__asm__(".set display,0x030008B0\n.thumb_set row_position,0x08017b9d\n.thumb_set clear,0x08013a89\n.thumb_set row_index,0x08017b69\n.thumb_set row_value,0x0806779d\n.thumb_set row_content,0x080678c5\n.thumb_set text,0x08015111\n.thumb_set extra,0x080675a1");

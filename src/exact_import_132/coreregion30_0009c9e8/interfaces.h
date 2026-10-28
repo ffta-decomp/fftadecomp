@@ -1,0 +1,11 @@
+typedef unsigned char u8; typedef unsigned short u16; typedef signed short s16; typedef unsigned int u32;
+struct Unit {u8 unknown00[24];u16 active;};
+struct MotionRecord {struct Unit *unit;u32 unknown04;s16 x,height,y,motion14,motion16;u8 unknown12[10];u8 flags,pending,unknown1E,identity;};
+struct VisitContext {struct MotionRecord *subject;u32 pending;};
+struct Bounds {int top,bottom,left,right;};
+typedef char AssertMotion[(unsigned long)&((struct MotionRecord*)0)->flags==28?1:-1];
+extern u8 RetailCall_080cdadc(struct Unit *);
+extern u8 RetailCall_080cdb24(struct Unit *);
+extern u8 RetailCall_080cd92c(struct Unit *);
+extern int RetailCall_0809c8c8(struct MotionRecord *,int);
+extern void RetailCall_0809c6b8(u8,struct MotionRecord *,int);

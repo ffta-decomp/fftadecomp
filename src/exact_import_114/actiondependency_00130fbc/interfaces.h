@@ -1,0 +1,11 @@
+typedef unsigned char u8;
+typedef unsigned int u32;
+typedef struct EffectContext {void *actor;void *target;u8 unknown08[40];u8 *descriptor;} EffectContext;
+typedef struct {u8 unknown00[96];EffectContext current;} BattleRuntime;
+typedef u32 (*EffectPredicate)(EffectContext*);
+extern BattleRuntime BattleState __asm__("0x0200f390");
+extern EffectPredicate const EffectPredicates[] __asm__("0x083a8604");
+u32 InitialStateGate(void*) __asm__("RetailCall_080c8298");
+u32 ChargeStateGate(void*) __asm__("RetailCall_080cdcec");
+typedef char CheckCurrent[(u32)&((BattleRuntime*)0)->current==96?1:-1];
+typedef char CheckDescriptor[(u32)&((EffectContext*)0)->descriptor==48?1:-1];

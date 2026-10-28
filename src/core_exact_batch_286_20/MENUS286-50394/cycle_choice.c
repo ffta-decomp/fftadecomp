@@ -1,0 +1,1 @@
+typedef unsigned char u8;typedef unsigned short u16;unsigned CoreRegion_00050394(u8 **p,u16 keys){u8 *root=*p;unsigned current=root[0x563],maximum=2;if(root[0x560]==16)maximum=1;if(keys&128){if(current<maximum)current=(u8)(current+1);else current=0;}else{if(current)current=(u8)(current-1);else current=maximum;}return current;}

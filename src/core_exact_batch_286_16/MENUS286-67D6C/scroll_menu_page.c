@@ -1,0 +1,6 @@
+typedef unsigned char u8;typedef signed char s8;typedef unsigned short u16;typedef short s16;
+#define W(p,n) (*(u8 **)((p)+(n)))
+#define H(p,n) (*(u16 *)((p)+(n)))
+extern unsigned last(void*);extern void sound(unsigned);extern void refresh_a(void*);extern void refresh_b(void*);extern void notify(void*);
+unsigned RemainingCore48_00067D6C(u8 *panel,u8 direction){u8 *list=panel+80;u8 *cursor=panel+112;u8 *save;int original,current,total,remaining;unsigned selected;if(panel[8]==4)save=W(panel,0)+0xA24+4*(s8)panel[11];else save=W(panel,0)+0xA04+4*panel[8];original=*(s16 *)(list+26);current=original;total=(s16)last(list)+1;selected=cursor[17];remaining=panel[10];while(remaining){remaining--;if(direction==128){int width=panel[10];if(current+width<total)current++;else{remaining=0;if(original==total-width)selected=width-1;}}else{if(current>0)current--;else{remaining=0;if(original==0)selected=0;}}}if(original!=current || cursor[17]!=selected){H(save,0)=current;H(save,2)=selected;sound(109);if(panel[8]==4)refresh_a(panel);else refresh_b(panel);if(W(panel,16))notify(panel);}return 0;}
+__asm__(".thumb_set last,0x08017be9\n.thumb_set sound,0x08141541\n.thumb_set refresh_a,0x080682e5\n.thumb_set refresh_b,0x08066ed9\n.thumb_set notify,0x08066c29");

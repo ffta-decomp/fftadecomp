@@ -1,0 +1,36 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef signed short s16;
+typedef signed int s32;
+typedef unsigned int u32;
+struct TurnUnit {
+    u8 unknown_prefix[208];
+    u16 charge_carry;
+    u8 unknown_d2[2];
+    u16 charge_time;
+    u8 unknown_tail[50];
+};
+struct TurnUnitRecord { struct TurnUnit *unit; };
+struct TurnContext {
+    s32 count;
+    struct TurnUnit units[13];
+    struct TurnUnitRecord *records[0];
+};
+typedef char TurnUnitSize[(sizeof(struct TurnUnit)==264)?1:-1];
+typedef char TimeOffset[((u32)&((struct TurnContext*)0)->units[0].charge_time==216)?1:-1];
+typedef char CarryOffset[((u32)&((struct TurnContext*)0)->units[0].charge_carry==212)?1:-1];
+typedef char RecordsOffset[((u32)&((struct TurnContext*)0)->records==0xd6c)?1:-1];
+extern u8 CanTargetUnitTakeTurn(const struct TurnUnit*);
+extern u8 TargetUnitStateEBBit2(const struct TurnUnit*);
+extern u8 TargetUnitStateEABit7(const struct TurnUnit*);
+extern struct TurnContext *AllocateTurnContext(u32);
+extern void FreeTurnContext(void*);
+extern void InitializeTargetTurnContext(struct TurnContext*,const void*);
+extern s32 RunTargetTurnManager(struct TurnContext*);
+__asm__(".global CanTargetUnitTakeTurn\n.thumb_set CanTargetUnitTakeTurn,0x812e4a9");
+__asm__(".global TargetUnitStateEBBit2\n.thumb_set TargetUnitStateEBBit2,0x80cdb25");
+__asm__(".global TargetUnitStateEABit7\n.thumb_set TargetUnitStateEABit7,0x80cdadd");
+__asm__(".global AllocateTurnContext\n.thumb_set AllocateTurnContext,0x8022841");
+__asm__(".global FreeTurnContext\n.thumb_set FreeTurnContext,0x8022855");
+__asm__(".global InitializeTargetTurnContext\n.thumb_set InitializeTargetTurnContext,0x809de95");
+__asm__(".global RunTargetTurnManager\n.thumb_set RunTargetTurnManager,0x809e1e1");

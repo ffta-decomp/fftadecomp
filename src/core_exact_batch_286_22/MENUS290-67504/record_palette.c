@@ -1,0 +1,2 @@
+typedef unsigned char u8;typedef unsigned short u16;extern unsigned palette(unsigned);unsigned RemainingCore48_00067504(u8 **p,unsigned index){register u8 *base __asm__("r0")=*p;register unsigned scaled __asm__("r1")=index<<2;u8 *record;__asm__("" : "+r"(scaled));base+=0x424;__asm__("" : "+r"(base));base+=scaled;__asm__("" : "+r"(base));record=*(u8**)base;return (u8)palette(*(u16*)record)+13;}
+__asm__(".thumb_set palette,0x080cb99d");

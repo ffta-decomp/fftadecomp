@@ -35,3 +35,7 @@ The [pinned reference table](vendor/README.md), [47-resource collection](docs/gb
 The release [validation summary](data/toolkit-validation.json) records two identical clean generated ASM trees: **4,240 paths**, including **4,236 native files reassembled byte-for-byte** and four interface-only files. The [executable walkthrough](docs/reproduce-recovery.md) covers setup, pinned-ROM unpacking, single-method compilation/preflight, independent gates and structured round records. This validates the reference/tool workflow and grants no new game-recovery credit.
 
 Public progress reports project-level output only; worker counts and per-worker performance are not published.
+
+## Recovered source code
+
+Completed C and eligible mixed modules are published in [`src/`](src/README.md), with ROM entries, original sizes and source hashes in [`src/completed-index.json`](src/completed-index.json). This is a source snapshot, not a complete standalone ROM build.

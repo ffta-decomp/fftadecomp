@@ -1,0 +1,15 @@
+typedef unsigned char u8;
+typedef signed short s16;
+typedef unsigned short u16;
+typedef unsigned int u32;
+typedef signed int s32;
+typedef struct {u8 unknown00[40];u16 flags28;u8 unknown2a[217];u8 counter103;u8 slot104;} EffectUnit;
+typedef struct {void *actor;EffectUnit *previous;u8 unknown08[30];u16 flags;} EffectContext;
+typedef struct {u8 unknown00[0x3c33];u8 choice_count;u8 choice_bytes[0];} EffectRuntime;
+extern EffectRuntime Runtime __asm__("0x02000000");
+u32 RandomWord(void) __asm__("IP03_RandomWord");
+s32 SignedRemainder(s32,s32) __asm__("IT03_SignedRemainder");
+void SetChoice(u32,u32,u32) __asm__("EffectApplicationCall_0802DC60");
+u32 ReadProgression(u32) __asm__("IP03_ReadProgressionField");
+typedef char CheckCounter[((u32)&((EffectUnit *)0)->counter103==259)?1:-1];
+typedef char CheckCount[((u32)&((EffectRuntime *)0)->choice_count==0x3c33)?1:-1];

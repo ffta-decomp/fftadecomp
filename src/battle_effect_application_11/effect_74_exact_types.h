@@ -1,0 +1,11 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef unsigned int u32;
+typedef struct {void *actor;void *target;void *affected;u8 unknown12[26];u16 flags;} EffectContext;
+u32 ActorInUnitPool(void*) __asm__("EffectApplicationCall_08131BB8");
+void *FindSnapshotDestination(void*) __asm__("EffectResolutionCall_0812F124");
+void EncodeUnitSnapshot(void*,void*) __asm__("EffectApplicationCall_0812EBD0");
+u32 ResolveUnitItem(void*) __asm__("EffectApplicationCall_0812EDF0");
+u32 RemoveItem(u32,u32) __asm__("RetailCall_080ca900");
+void SetFlag(u32,u32) __asm__("SetIndexedFlagState");
+typedef char CheckFlags[(u32)&((EffectContext*)0)->flags==38?1:-1];
