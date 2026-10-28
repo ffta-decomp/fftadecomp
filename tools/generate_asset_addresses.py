@@ -45,8 +45,9 @@ def generate(config):
     return "\n".join(lines), addresses
 
 
-def write(config, output):
-    if not output.resolve().is_relative_to(ROOT / "build"):
+def write(config, output, build_root=None):
+    selected_root = (ROOT / "build") if build_root is None else Path(build_root).resolve()
+    if not output.resolve().is_relative_to(selected_root):
         raise ValueError("generated build header must remain under root build/")
     source, addresses = generate(config)
     output.parent.mkdir(parents=True, exist_ok=True)

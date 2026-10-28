@@ -155,6 +155,7 @@ from ability_list_bank_codec import encode_ability_list_bank
 from consumer_bounded_tables_codec import encode_table as encode_consumer_bounded_table
 
 ROOT = Path(__file__).resolve().parents[1]
+BUILD_ROOT = ROOT / "build"
 MIXED_COMPONENTS = {"battle", "missions", "jobs", "abilities", "items",
                     "equipment", "menus", "audio", "graphics", "input",
                     "saves", "system"}
@@ -414,7 +415,7 @@ class AssetJsonCache:
 
 
 INPUT_SESSION = None
-ASSET_JSON_CACHE = AssetJsonCache(footprint_dir=ROOT / "build/json-footprints")
+ASSET_JSON_CACHE = AssetJsonCache(footprint_dir=BUILD_ROOT / "json-footprints")
 
 
 def input_sha_file(path):
@@ -469,7 +470,7 @@ def build_cache_context():
     # Asset serialization and padding do not invoke the C compiler or linker.
     # Preserve their serializer inputs without unrelated code-only dependencies.
     resource_inputs = dict(inputs)
-    add_file(ROOT / "build/generated/asset_addresses.h")
+    add_file(BUILD_ROOT / "generated/asset_addresses.h")
     for path in sorted((ROOT / "include").rglob("*")):
         if path.is_file():
             add_file(path)
@@ -479,7 +480,7 @@ def build_cache_context():
 
     tool_paths = {
         "clang": shutil.which("clang"),
-        "agbcc": str(ROOT / "build/toolchain/agbcc"),
+        "agbcc": str(BUILD_ROOT / "toolchain/agbcc"),
         "assembler": shutil.which("arm-none-eabi-as"),
         "linker": shutil.which("arm-none-eabi-ld"),
         "objcopy": shutil.which("arm-none-eabi-objcopy"),
@@ -1483,7 +1484,7 @@ def c_preprocessor_command(module, source):
                           if flag.startswith("-D") or flag.startswith("-U")]
     return ["clang", "-E", "-P", "-x", "c", "-nostdinc",
             "-I", str(ROOT / "include"),
-            "-I", str(ROOT / "build/generated"),
+            "-I", str(BUILD_ROOT / "generated"),
             *preprocessor_flags, str(source)]
 
 
@@ -2500,7 +2501,7 @@ def compile_module(module, work, base, assets_dir, reference=None,
         raise SystemExit("Install arm-none-eabi-binutils before building")
     asm = work / (name + ".s")
     if module["kind"] in ("c", "mixed"):
-        compiler = ROOT / "build/toolchain/agbcc"
+        compiler = BUILD_ROOT / "toolchain/agbcc"
         if not compiler.exists():
             raise SystemExit("Run python3 tools/bootstrap.py first")
         preprocessed = work / (name + ".i")
@@ -2660,8 +2661,22 @@ def check_linked_function_entries(module, work, rom_base):
     return len(expected)
 
 
+def dependency_revision(directory):
+    """Source exports can retain their immutable upstream revision without .git."""
+    marker = directory / "SOURCE_REVISION"
+    if marker.is_file():
+        revision = marker.read_text().strip()
+        if not re.fullmatch(r"[0-9a-f]{40}", revision):
+            raise ValueError("Invalid dependency source revision marker")
+        return revision
+    return subprocess.check_output(
+        ["git", "-C", str(directory), "rev-parse", "HEAD"], text=True).strip()
+
+
 def main():
-    global INPUT_SESSION
+    global INPUT_SESSION, ROOT, BUILD_ROOT
+    previous_root, previous_build_root = ROOT, BUILD_ROOT
+    previous_footprint_dir = ASSET_JSON_CACHE.footprint_dir
     previous_session = INPUT_SESSION
     session = BuildInputSession()
     INPUT_SESSION = session
@@ -2669,10 +2684,13 @@ def main():
         return _main_with_input_session()
     finally:
         INPUT_SESSION = previous_session
+        ROOT, BUILD_ROOT = previous_root, previous_build_root
+        ASSET_JSON_CACHE.footprint_dir = previous_footprint_dir
         session.close()
 
 
 def _main_with_input_session():
+    global ROOT, BUILD_ROOT
     build_started = time.perf_counter()
     stage_timings = {}
     p = argparse.ArgumentParser(description=__doc__)
@@ -2682,7 +2700,17 @@ def _main_with_input_session():
     p.add_argument("--report", required=True, type=Path, help="External JSON report path")
     p.add_argument("--assets-dir", type=Path, help="External decoded asset source directory")
     p.add_argument("--no-cache", action="store_true", help="Recompile all modules instead of using build/module-cache")
+    p.add_argument("--extension-config", type=Path,
+                   help="Explicit optional source/resource extension manifest (no recovery credit)")
+    p.add_argument("--project-root", type=Path, help="Explicit read-only source project using this toolkit")
+    p.add_argument("--build-dir", type=Path, help="External compiler/cache/generated-header directory")
     args = p.parse_args()
+    if args.project_root is not None:
+        ROOT = args.project_root.resolve()
+        if not (ROOT / "config/symbols.ld").is_file():
+            raise SystemExit("Project root has no config/symbols.ld")
+    BUILD_ROOT = args.build_dir.resolve() if args.build_dir is not None else ROOT / "build"
+    ASSET_JSON_CACHE.footprint_dir = BUILD_ROOT / "json-footprints"
     if not args.input.is_file() or len({args.input.resolve(), args.output.resolve(), args.report.resolve()}) != 3:
         raise SystemExit("Input must exist; input, output, and report must be distinct paths")
     if args.output.resolve().is_relative_to(ROOT) or args.report.resolve().is_relative_to(ROOT):
@@ -2710,11 +2738,11 @@ def _main_with_input_session():
     # asset generation or compilation of any otherwise-valid earlier module.
     for module in modules:
         validate_function_ranges(module, module["size"])
-    write_asset_addresses(config, ROOT / "build/generated/asset_addresses.h")
-    work = ROOT / "build/match"
+    write_asset_addresses(config, BUILD_ROOT / "generated/asset_addresses.h", build_root=BUILD_ROOT)
+    work = BUILD_ROOT / "match"
     work.mkdir(parents=True, exist_ok=True)
-    cache_dir = ROOT / "build/module-cache"
-    tool_cache_dir = ROOT / "build/local-tool-cache"
+    cache_dir = BUILD_ROOT / "module-cache"
+    tool_cache_dir = BUILD_ROOT / "local-tool-cache"
     cache_context = None if args.no_cache else build_cache_context()
     built = bytearray(reference)
     found = []
@@ -2816,8 +2844,7 @@ def _main_with_input_session():
     report = {"input_variant": config["id"], "input_sha256": config["sha256"],
               "output_sha256": sha(built), "size": len(built),
               "toolchain": {
-                  "agbcc_revision": subprocess.check_output(
-                      ["git", "-C", str(ROOT / "vendor/agbcc"), "rev-parse", "HEAD"], text=True).strip(),
+                  "agbcc_revision": dependency_revision(ROOT / "vendor/agbcc"),
                   "clang": version_line(["clang", "--version"]),
                   "assembler": version_line([shutil.which("arm-none-eabi-as"), "--version"]),
                   "linker": version_line([shutil.which("arm-none-eabi-ld"), "--version"]),
@@ -2876,9 +2903,28 @@ def _main_with_input_session():
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.report.parent.mkdir(parents=True, exist_ok=True)
+    if args.extension_config is not None:
+        from build_extensions import apply_extensions
+
+        def compile_extension(module):
+            work = args.report.parent / "extension-modules" / module["name"]
+            work.mkdir(parents=True, exist_ok=False)
+            data = compile_module(module, work, config["rom_base"], args.assets_dir,
+                                  reference=reference)
+            if module["kind"] in ("c", "mixed"):
+                check_linked_function_entries(module, work, config["rom_base"])
+            return data
+
+        baseline_report = report
+        built, extension_report = apply_extensions(
+            built, reference, config, args.extension_config, compile_extension)
+        report = {"build_mode": "optional-extension", "input_sha256": sha(reference),
+                  "output_sha256": sha(built), "size": len(built),
+                  "recovery_credit_eligible": False, "baseline_build": baseline_report,
+                  "extension": extension_report}
     args.output.write_bytes(built)
     args.report.write_text(json.dumps(report, indent=2) + "\n")
-    print(json.dumps({k: report[k] for k in ("output_sha256", "recovered_c_bytes", "nonmatching_c_bytes", "nonmatching_c_differing_bytes", "mixed_c_span_bytes", "mixed_c_functions", "mixed_inline_assembly_bytes", "assembly_fallback_bytes", "reconstructed_asset_bytes", "reconstructed_padding_bytes", "original_byte_inclusion_bytes", "recovered_c_functions", "nonmatching_c_functions", "reconstructed_asset_modules")}))
+    print(json.dumps({k: report[k] for k in ("output_sha256", "build_mode", "recovery_credit_eligible", "recovered_c_bytes", "nonmatching_c_bytes", "nonmatching_c_differing_bytes", "mixed_c_span_bytes", "mixed_c_functions", "mixed_inline_assembly_bytes", "assembly_fallback_bytes", "reconstructed_asset_bytes", "reconstructed_padding_bytes", "original_byte_inclusion_bytes", "recovered_c_functions", "nonmatching_c_functions", "reconstructed_asset_modules") if k in report}))
 
 
 if __name__ == "__main__":
