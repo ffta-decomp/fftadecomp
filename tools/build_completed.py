@@ -49,6 +49,8 @@ def main():
     p.add_argument('--output',required=True,type=Path)
     p.add_argument('--report',required=True,type=Path)
     p.add_argument('--jobs',type=int,default=2,choices=(1,2,3,4))
+    p.add_argument('--extension-config',type=Path,help='Explicit source/resource extension; output is not recovery credit')
+    p.add_argument('--build-dir',type=Path,help='External compiler and intermediate directory for read-only source exports')
     args=p.parse_args()
     paths=[x.resolve() for x in (args.input,args.output,args.report)]
     if len(set(paths))!=3 or any(x.is_relative_to(ROOT) for x in paths):
@@ -57,7 +59,9 @@ def main():
     config=json.loads((ROOT/'config/completed-build.json').read_text())
     index=json.loads((ROOT/'src/completed-index.json').read_text())
     reference=args.input.read_bytes();validate(reference,config,index)
-    started=time.monotonic();workroot=ROOT/'build/completed';workroot.mkdir(parents=True,exist_ok=True)
+    buildroot=args.build_dir.resolve() if args.build_dir else ROOT/'build'
+    build_rom.BUILD_ROOT=buildroot
+    started=time.monotonic();workroot=buildroot/'completed';workroot.mkdir(parents=True,exist_ok=True)
     # Invocation-owned temporary objects; no stale module cache can hide a source failure.
     with tempfile.TemporaryDirectory(prefix='run-',dir=workroot) as tmp:
         def compile_one(m):
@@ -84,6 +88,20 @@ def main():
         rows.sort(key=lambda row:row['rom_offset'])
     if bytes(built)!=reference:raise ValueError('Final whole-image comparison failed')
     report={'schema':'completed-source-build-v1','input_sha256':sha(reference),'output_sha256':sha(built),'whole_image_identical':True,'rom_bytes':len(built),'compiled_original_bytes':sum(r['original_bytes'] for r in rows),'retained_original_bytes':len(built)-sum(r['original_bytes'] for r in rows),'compiler_starts':len(rows),'module_cache_hits':0,'elapsed_seconds':time.monotonic()-started,'modules':rows,'scope':'Compiled published modules; unrecovered code and resources retained from private reference. Not full source recovery.'}
+    if args.extension_config:
+        from build_extensions import apply_extensions
+        with tempfile.TemporaryDirectory(prefix='extension-',dir=workroot) as tmp:
+            def compile_extension(module):
+                work=Path(tmp)/module['name'];work.mkdir()
+                build_rom.validate_source_mix(module)
+                data=build_rom.compile_module(module,work,config['rom_base'],None,reference)
+                if module['kind'] in ('c','mixed'):
+                    build_rom.check_linked_function_entries(module,work,config['rom_base'])
+                return data
+            built,extension=apply_extensions(built,reference,config,args.extension_config,compile_extension)
+        report={'schema':'extended-completed-source-build-v1','build_mode':'optional-extension',
+                'output_sha256':sha(built),'rom_bytes':len(built),'recovery_credit_eligible':False,
+                'baseline_build':report,'extension':extension}
     for path in (args.output,args.report):path.parent.mkdir(parents=True,exist_ok=True)
     with args.output.open('xb') as f:f.write(built)
     with args.report.open('x') as f:json.dump(report,f,indent=2);f.write('\n')

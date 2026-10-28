@@ -18,6 +18,9 @@ Daily history comes from `progress.json.dashboard.daily`. Dates use Asia/Shangha
 
 The workflow library preserves docs/ and tools/ paths. `data/functions.json` and `data/asm-layout.json` publish native identities and reconstruction layout only, with explicit snapshot scope. Use your own pinned ROM to generate the matching ASM directory privately. Public Issue claims require canonical maintainer confirmation. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+Consumers can explicitly select [optional source/resource build extensions](docs/optional-build-extensions.md)
+without editing vendored toolkit code. Extended outputs are separate from
+original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
