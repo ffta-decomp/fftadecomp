@@ -6,6 +6,6 @@ Only committed production source files with completed whole-module coverage are 
 
 `mixed` modules retain explicitly constrained assembly; they are not pure C. Fixed-register declarations and instruction-free constraints may appear in C to preserve the original compiler allocation. Names whose semantics are not established remain provisional.
 
-This is a readable source snapshot, **not a standalone or complete ROM build**. Original resources, private validation artifacts, ROM images, toolchain binaries and unfinished dependencies are not distributed. The sources target the project's pinned agbcc configuration, not a modern host compiler. Publication does not add new recovery credit.
+This is a readable source snapshot with a [verified private-ROM build](../docs/build-completed-sources.md), **not a complete source-only ROM reconstruction**. Original resources, private validation artifacts, ROM images, toolchain binaries and unfinished dependencies are not distributed. The sources target the project's pinned agbcc configuration, not a modern host compiler. Publication does not add new recovery credit.
 
 Use the contributor workflow in [CONTRIBUTING.md](../CONTRIBUTING.md) before claiming a remaining function. Existing project and upstream notices continue to apply; see [upstream references](../docs/upstream.md).
