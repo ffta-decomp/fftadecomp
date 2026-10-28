@@ -23,6 +23,8 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Prepare public site
         run: |
+          python3 tools/update_source_progress.py
+          git diff --exit-code -- data/published-source-progress.json
           node --check app.js
           node tests/daily.test.cjs
           node tests/source-progress.test.cjs

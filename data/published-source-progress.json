@@ -1,0 +1,18 @@
+{
+  "schema": "published-source-progress-v1",
+  "verified_date": "2026-10-28",
+  "scope": "Known original function envelopes, including internal literals/alignment; resources excluded. Published verified source spans extend this historical catalogue when outside it. Not whole-game content completion.",
+  "published_original_bytes": 468682,
+  "known_original_code_bytes": 1278650,
+  "percent": 36.65444022993,
+  "modules": 3694,
+  "historical_catalogue_bytes": 1203130,
+  "verified_source_extension_bytes": 75520,
+  "upstream_import_original_bytes": 161102,
+  "denominator_id": "60e97eea33a1aa16d9135bcefc6702c9e7b89276ee02b1966a4d04c2854fa957",
+  "inputs": {
+    "src/completed-index.json": "f03b5730eba1b48d2d0285be62f624e368b3783b06c326b7a66a784c90e6cfdc",
+    "data/completed-build-validation.json": "ff73d83c301ed415b30d8f15c2fde3d8890c1982c9b1022cfc2f4590f061bb9b",
+    "data/original-code-catalogue.json": "6be61d9dda97664e5ed98f8630728e93b6115a47f8f1bc569719ea4f26a48bd4"
+  }
+}

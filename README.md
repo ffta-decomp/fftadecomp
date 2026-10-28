@@ -4,7 +4,8 @@
 
 Recovered C/mixed source, reproducible private-ROM builds, and progress reporting for Final Fantasy Tactics Advance (USA).
 
-- [Unified progress](data/progress.json): `dashboard` is the single source for the page, including overview, aggregate throughput and all module rows.
+- [Published source progress](data/published-source-progress.json): verified source coverage, including attributed upstream imports.
+- [Recovery ledger](data/progress.json): dated local/peer/integration statistics, separate from source-release coverage.
 - [Submodules](data/submodules.json): each `current` record uses the same accounting.
 - [Activity ledger aggregates](data/workflow.json): separate local, independent and integration gates.
 - [Resource spans](data/resource-addresses.csv).
@@ -16,6 +17,15 @@ This public repository contains completed recovered C/mixed source, aggregate me
 Daily history comes from `progress.json.dashboard.daily`. Dates use Asia/Shanghai (UTC+8) and original receipt occurrence times. Range unions prevent duplicate recovery credit; pure C and eligible mixed remain separate, and integration is a separate gate. Cumulative curves include dated ledger receipts only. Current baseline bytes without a local delivery date remain explicitly undated rather than being assigned to a historical day. The current day is partial. Revoked receipts disappear on refresh. The percentage denominator is the pinned known original ASM catalogue, not ROM size or whole-game completion.
 
 The workflow library preserves docs/ and tools/ paths. `data/functions.json` and `data/asm-layout.json` publish native identities and reconstruction layout only, with explicit snapshot scope. Use your own pinned ROM to generate the matching ASM directory privately. Public Issue claims require canonical maintainer confirmation. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
+## Published source progress
+
+As of **2026-10-28**, the public build contains **3,694 completed modules / 468,682 original bytes**, covering **36.654% of 1,278,650 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
+
+Of the published total, **161,102 bytes / 1,072 functions** are attributed imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 75,520 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
+
+Browse the rewritten code in [`src/`](src/README.md), or use [`tools/build_completed.py`](tools/build_completed.py) and the [build guide](docs/build-completed-sources.md). No ROM, story/dialogue text or extracted game assets are supplied.
 
 ## Acknowledgements and references actually used
 

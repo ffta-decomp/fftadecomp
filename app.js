@@ -86,16 +86,17 @@ renderImports();
 async function renderSourceProgress(){
  const node=document.querySelector('#source-overview'),note=document.querySelector('#source-scope');
  try {
-  const responses=await Promise.all(['data/completed-build-validation.json','data/upstream-imports.json'].map(url=>fetch(url,{cache:'no-cache'})));
+  const responses=await Promise.all(['data/completed-build-validation.json','data/upstream-imports.json','data/published-source-progress.json'].map(url=>fetch(url,{cache:'no-cache'})));
   if(responses.some(r=>!r.ok))throw new Error('Source proof unavailable');
-  const [proof,imports]=await Promise.all(responses.map(r=>r.json()));
-  if(proof.whole_image_identical!==true || imports.whole_image_verified!==true || proof.output_sha256!==proof.input_sha256 || proof.compiled_original_bytes!==imports.published_completed_original_bytes || proof.source_module_count!==imports.published_completed_modules)throw new Error('Source proof mismatch');
+  const [proof,imports,coverage]=await Promise.all(responses.map(r=>r.json()));
+  if(proof.whole_image_identical!==true || imports.whole_image_verified!==true || proof.output_sha256!==proof.input_sha256 || proof.compiled_original_bytes!==imports.published_completed_original_bytes || proof.source_module_count!==imports.published_completed_modules || coverage.published_original_bytes!==proof.compiled_original_bytes || coverage.known_original_code_bytes<coverage.published_original_bytes || Math.abs(coverage.percent-100*coverage.published_original_bytes/coverage.known_original_code_bytes)>1e-9)throw new Error('Source proof mismatch');
   node.innerHTML=[
+   ['Published source coverage',coverage.percent.toFixed(3),'%',`${fmt(coverage.published_original_bytes)} / ${fmt(coverage.known_original_code_bytes)} known original code bytes`],
    ['Verified published source',fmt(proof.compiled_original_bytes),'B',`${fmt(proof.source_module_count)} distinct original modules`],
    ['Attributed upstream imports',fmt(imports.total_attributed_import_original_bytes),'B',`${fmt(imports.total_attributed_import_functions)} functions · included in the source total`],
    ['Full ROM comparison','Identical','',`Private US reference · verified ${proof.verified_date}`]
   ].map(([label,value,unit,detail])=>`<article class="card"><div class="card-label">${label}</div><div class="card-value">${value}<small>${unit}</small></div><p>${detail}</p></article>`).join('');
-  note.textContent=`Source release verified ${proof.verified_date}. Original function-envelope bytes, including literals/alignment; not generated C size or gameplay completion. Unrecovered code/resources are retained from the user's private ROM. The separate recovery ledger below excludes unregistered imports; do not add these totals.`;
+  note.textContent=`Source release verified ${proof.verified_date}. Original function-envelope bytes, including literals/alignment; not generated C size or gameplay completion. The denominator extends the historical catalogue with ${fmt(coverage.verified_source_extension_bytes)} verified original bytes from published modules. Unrecovered code/resources are retained from the user's private ROM. The separate recovery ledger below excludes unregistered imports; do not add these totals.`;
  } catch(error){node.innerHTML='';note.textContent='Verified source progress unavailable; no total inferred.';}
 }
 renderSourceProgress();
