@@ -33,4 +33,4 @@ Existing `tools/build_rom.py` is the shared compilation implementation. `build_c
 
 ## Verified release
 
-The [2026-10-28 validation](../data/completed-build-validation.json) compiled all 2,749 modules (314,084 original bytes), with zero module-cache hits. Every selected span matched; independent `cmp` confirmed that the resulting 16 MiB image is identical to the original US ROM. Seven focused builder tests passed. No ROM, extracted story text or translation resources are distributed.
+The [2026-10-28 validation](../data/completed-build-validation.json) compiled all 3,694 modules (468,682 original bytes), with zero module-cache hits. Every selected span matched; independent `cmp` confirmed that the resulting 16 MiB image is identical to the original US ROM. Eleven focused builder/provenance tests passed. No ROM, extracted story text or translation resources are distributed.

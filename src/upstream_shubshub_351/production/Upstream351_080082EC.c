@@ -1,3 +1,9 @@
+/* Upstream import provenance: https://github.com/shubshub/fftadecomp
+ * Commit: c9e042201cbff2afeb0108cda849e8eb036ee382
+ * Original file: src/080082EC.c
+ * Adapted to local symbol bindings; original authorship/notices retained.
+ * No additional license grant inferred. See data/upstream-imports.json.
+ */
 asm(".global __floatdidf\n.thumb_set __floatdidf,0x081428e5\n.global __subdf3\n.thumb_set __subdf3,0x081430b5\n.global __floatsidf\n.thumb_set __floatsidf,0x0814383d\n.global __divdf3\n.thumb_set __divdf3,0x0814339d");
 /* Byte-identical upstream C import: c9e042201cbff2afeb0108cda849e8eb036ee382.
  * Linkage aliases only; no emitted instructions or helper implementations. */

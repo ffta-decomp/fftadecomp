@@ -60,8 +60,12 @@ Supply your own original **16 MiB US AFXE ROM**, SHA-256 `43fc8204c6dceee58828ae
 
 **This is a partial decompilation build, not a fully source-reconstructed game.** Unrecovered code, graphics, audio and story/dialogue text remain in the private input ROM. No story text or translation pack is published or extracted by this build. Source publication and rebuilding do not create additional recovery credit.
 
-Verified on 2026-10-28: **2,749 modules / 314,084 original bytes** compiled with zero module-cache hits; the complete output matched the original US ROM. See the [build validation summary](data/completed-build-validation.json).
+Verified on 2026-10-28: **3,694 modules / 468,682 original bytes** compiled with zero module-cache hits; the complete output matched the original US ROM. See the [build validation summary](data/completed-build-validation.json).
 
 ## Recovered source code
 
 Completed C and eligible mixed modules are published in [`src/`](src/README.md), with ROM entries, original sizes and source hashes in [`src/completed-index.json`](src/completed-index.json). Use the [completed-source build instructions](docs/build-completed-sources.md) to compile these modules against your own private US ROM and verify byte-identical output. Unrecovered code/resources remain supplied by that ROM.
+
+## Upstream-imported implementations
+
+Locally verified imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp) are explicitly attributed in source headers and [progress JSON](data/upstream-imports.json)/[CSV](data/upstream-imports.csv). They are not counted as independent rewrites. See [provenance and validation](docs/upstream-imports.md); imported and existing spans are deduplicated within the published source build.

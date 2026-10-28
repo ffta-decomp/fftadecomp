@@ -4,20 +4,26 @@
   "output_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "whole_image_identical": true,
   "rom_bytes": 16777216,
-  "compiled_original_bytes": 314084,
-  "retained_original_bytes": 16463132,
-  "compiler_starts": 2749,
+  "compiled_original_bytes": 468682,
+  "retained_original_bytes": 16308534,
+  "compiler_starts": 3694,
   "module_cache_hits": 0,
-  "elapsed_seconds": 327.43756474996917,
+  "elapsed_seconds": 467.8732585409889,
   "scope": "Compiled published modules; unrecovered code and resources retained from private reference. Not full source recovery.",
   "verified_date": "2026-10-28",
-  "source_module_count": 2749,
+  "source_module_count": 3694,
   "independent_cmp_passed": true,
-  "tests_passed": 7,
+  "focused_tests_passed": 11,
+  "public_test_suite": {
+    "run": 22,
+    "skipped": 1,
+    "passed": 21
+  },
   "published_input_hashes": {
-    "src/completed-index.json": "9f3d0fbee298bb8bb4233172843e5d34f1d849c39fde2099acd7aedd28a3bfd1",
-    "config/completed-build.json": "1a1cda95c3cf5df12635e0158d2bc9d3ce57d812e4cba3bcd2600c30c9243f38",
+    "src/completed-index.json": "f03b5730eba1b48d2d0285be62f624e368b3783b06c326b7a66a784c90e6cfdc",
+    "config/completed-build.json": "fd02665d3207460e9cd186e9a1a447e50422e44d3de6d4dc9799841fcb88d7e4",
     "tools/build_completed.py": "851b2fb17a389bf84efbda3ed549f270485130bf27ff3927ccdf12542890e2d4",
-    "asm/external_thumb_symbols.s": "a6497cf853fe01ba286ac38a08a202958dd51da502f7ec39548e5492f3cf5f2a"
+    "asm/external_thumb_symbols.s": "eb679abd52a90212ea9744a5c00d3b161311c55d4f03b50dabb521da7da17f42",
+    "data/upstream-imports.json": "f86438efc7d43a711ad72bc414b462b645bc9c0b4cbe0fed09bfbcad31b06fde"
   }
 }

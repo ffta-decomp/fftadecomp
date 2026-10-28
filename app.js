@@ -69,3 +69,15 @@ async function start(){
  render();
 }
 start().catch(error=>{document.querySelector('#error').textContent=error.message;document.querySelector('#updated').textContent='Unavailable';});
+
+async function renderImports(){
+ const node=document.querySelector('#imports-summary');
+ try {
+  const response=await fetch('data/upstream-imports.json',{cache:'no-cache'});
+  if(!response.ok)throw new Error('Provenance unavailable');
+  const d=await response.json();
+  if(d.whole_image_verified!==true)throw new Error('Import validation pending');
+  node.textContent=`Imported from shubshub/fftadecomp: ${fmt(d.total_attributed_import_functions)} functions / ${fmt(d.total_attributed_import_original_bytes)} original bytes. Latest batch: ${fmt(d.new_import_functions)} functions / ${fmt(d.new_import_original_bytes)} bytes. The published source build contains ${fmt(d.published_completed_modules)} distinct modules / ${fmt(d.published_completed_original_bytes)} original bytes in total. Imports are credited to upstream, not independent rewrites. Source-build totals and the dated ledger above have different scopes and must not be added.`;
+ } catch(error){node.textContent='Import provenance unavailable or validation pending; no imported progress inferred.';}
+}
+renderImports();
