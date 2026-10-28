@@ -25,6 +25,7 @@ jobs:
         run: |
           node --check app.js
           node tests/daily.test.cjs
+          node tests/source-progress.test.cjs
           node tests/functions.test.cjs
           mkdir _site
           cp index.html style.css app.js contribute.html contribute.js _site/

@@ -40,9 +40,9 @@ async function start(){
  document.querySelector('#performance').innerHTML=d.performance.map(row=>`<tr class="${row.id==='team'?'team':''}"><td class="${row.id==='team'?'':'lane'}">${esc(names[row.id]||row.id)}</td><td>${fmt(row.exact_B_per_hour)}</td><td>${fmt(row.previous_exact_B_per_hour)}</td><td>${fmt(row.exact_methods_last_hour)}</td><td>${fmt(row.peer_exact_B_per_hour)}</td><td>${fmt(row.integrated_exact_B_per_hour)}</td><td>${fmt(row.median_seconds)} / ${fmt(row.p90_seconds)} s</td></tr>`).join('');
  const o=d.overview,m=d.asm_rewrite||d.c_match;
  document.querySelector('#overview').innerHTML=[
-  ['Original ASM rewritten',m?.percent == null ? 'Unknown' : m.percent.toFixed(3),'%',m?.percent == null ? 'Original ASM catalogue unavailable' : `${fmt(m.rewritten_original_asm_bytes??m.matched_asm_bytes)} / ${fmt(m.known_original_asm_bytes??m.total_asm_bytes)} known original ASM bytes`],
-  ['Original ASM matched',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
-  ['Generated C in ROM',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
+  ['Ledger catalogue coverage',m?.percent == null ? 'Unknown' : m.percent.toFixed(3),'%',m?.percent == null ? 'Original ASM catalogue unavailable' : `${fmt(m.rewritten_original_asm_bytes??m.matched_asm_bytes)} / ${fmt(m.known_original_asm_bytes??m.total_asm_bytes)} known original ASM bytes`],
+  ['Ledger matched original ASM',fmt(o.exact_available_bytes),'B',`${fmt(o.integrated_exact_bytes)} in ROM + ${fmt(o.pending_exact_bytes)} local`],
+  ['Pinned production C snapshot',fmt(o.integrated_c_bytes),'B',`${fmt(o.mixed_bytes)} mixed C / ASM bytes tracked separately`],
   ['Matched ASM awaiting integration',fmt(o.pending_exact_bytes),'B',`${fmt(o.pending_peer_exact_bytes)} independently accepted bytes`],
   ['Tasks in progress',fmt(o.states.active),'',`${fmt(o.states.ready)} ready · ${fmt(o.states.frozen)} frozen · ${fmt(o.states.blocked)} blocked`]
  ].map(([label,value,unit,note])=>`<article class="card"><div class="card-label">${label}</div><div class="card-value">${value}<small>${unit}</small></div><p>${note}</p></article>`).join('');
@@ -81,3 +81,21 @@ async function renderImports(){
  } catch(error){node.textContent='Import provenance unavailable or validation pending; no imported progress inferred.';}
 }
 renderImports();
+
+// The source release and native ledger have different scopes. Never add them.
+async function renderSourceProgress(){
+ const node=document.querySelector('#source-overview'),note=document.querySelector('#source-scope');
+ try {
+  const responses=await Promise.all(['data/completed-build-validation.json','data/upstream-imports.json'].map(url=>fetch(url,{cache:'no-cache'})));
+  if(responses.some(r=>!r.ok))throw new Error('Source proof unavailable');
+  const [proof,imports]=await Promise.all(responses.map(r=>r.json()));
+  if(proof.whole_image_identical!==true || imports.whole_image_verified!==true || proof.output_sha256!==proof.input_sha256 || proof.compiled_original_bytes!==imports.published_completed_original_bytes || proof.source_module_count!==imports.published_completed_modules)throw new Error('Source proof mismatch');
+  node.innerHTML=[
+   ['Verified published source',fmt(proof.compiled_original_bytes),'B',`${fmt(proof.source_module_count)} distinct original modules`],
+   ['Attributed upstream imports',fmt(imports.total_attributed_import_original_bytes),'B',`${fmt(imports.total_attributed_import_functions)} functions · included in the source total`],
+   ['Full ROM comparison','Identical','',`Private US reference · verified ${proof.verified_date}`]
+  ].map(([label,value,unit,detail])=>`<article class="card"><div class="card-label">${label}</div><div class="card-value">${value}<small>${unit}</small></div><p>${detail}</p></article>`).join('');
+  note.textContent=`Source release verified ${proof.verified_date}. Original function-envelope bytes, including literals/alignment; not generated C size or gameplay completion. Unrecovered code/resources are retained from the user's private ROM. The separate recovery ledger below excludes unregistered imports; do not add these totals.`;
+ } catch(error){node.innerHTML='';note.textContent='Verified source progress unavailable; no total inferred.';}
+}
+renderSourceProgress();
