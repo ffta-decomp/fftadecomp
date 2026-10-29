@@ -9,7 +9,7 @@
   "new_import_original_bytes": 154598,
   "total_attributed_import_functions": 1072,
   "total_attributed_import_original_bytes": 161102,
-  "published_completed_original_bytes": 497230,
+  "published_completed_original_bytes": 520056,
   "not_credited_candidates": 0,
   "whole_image_verified": true,
   "entries": [
@@ -14810,7 +14810,7 @@
       "binary_sha256": "327f512bf29c1afaabfc122295fee14899175d97f2eea68fcdb116501d915a19"
     }
   ],
-  "published_completed_modules": 3752,
+  "published_completed_modules": 3803,
   "whole_image_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "validation_report": "completed-build-validation.json"
 }

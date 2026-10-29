@@ -2,7 +2,7 @@
   "schema": "completed-source-publication-v1",
   "target": "FFTA USA AFXE",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-  "as_of": "2026-10-29T00:24:45.624981+00:00",
+  "as_of": "2026-10-29T15:20:29.525328+00:00",
   "scope": "Published completed source modules, including retained attributed imports; exact build against private US retail required. Not whole-game recovery.",
   "modules": [
     {
@@ -41022,6 +41022,465 @@
       "kind": "c",
       "source": "src/native_ui_362/advance_authored_masked_target_sequence.c",
       "source_sha256": "13b91ee9bf856a044f30f295c5c0de4c0cba3d4fc66016040040fddc95d9a06a"
+    },
+    {
+      "name": "Remaining38_00009A24",
+      "entry": "0x08009A24",
+      "rom_offset": 39460,
+      "original_bytes": 108,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/009a24/lookup_scene_relative_text.c",
+      "source_sha256": "3b04dc4b90833e350becd976f205cba9a5f94cefed3d05df7b348105f6868c3f"
+    },
+    {
+      "name": "Remaining38_00009A90",
+      "entry": "0x08009A90",
+      "rom_offset": 39568,
+      "original_bytes": 108,
+      "kind": "c",
+      "source": "src/native_ui_362/remap_scene_text_variant.c",
+      "source_sha256": "b5ec68a7a086005ba591eb2cd0d90efdad1e505de706e16a71972feb99125af3"
+    },
+    {
+      "name": "CoreFrontier_00011B30",
+      "entry": "0x08011B30",
+      "rom_offset": 72496,
+      "original_bytes": 304,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/011b30/present_dialog_message.c",
+      "source_sha256": "a61bcd7b79d208f5e237f5fc37ad6db0ec011c255c985c981405ff51460c8b7a"
+    },
+    {
+      "name": "Source52_00012014",
+      "entry": "0x08012014",
+      "rom_offset": 73748,
+      "original_bytes": 220,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/012014/load_optional_dialog_character_graphic.c",
+      "source_sha256": "b5c82ccf663acf0dd75df43ce28ad57fcc18a25556a52424d4933378f138a88e"
+    },
+    {
+      "name": "Frame54_000120F0",
+      "entry": "0x080120F0",
+      "rom_offset": 73968,
+      "original_bytes": 2080,
+      "kind": "c",
+      "source": "src/native_ui_362/dispatch_active_dialog_command.c",
+      "source_sha256": "c88a88a174970733e6733934ced5cdb589237c339fdd57dfe97cddaf99f574b3"
+    },
+    {
+      "name": "Source52_00012D3C",
+      "entry": "0x08012D3C",
+      "rom_offset": 77116,
+      "original_bytes": 668,
+      "kind": "c",
+      "source": "src/native_ui_362/process_leading_dialog_controls.c",
+      "source_sha256": "970675d5173c68564f65b9572e5a85517e32e05ec176c035654de8248d0e71f1"
+    },
+    {
+      "name": "Registered39_0001F438",
+      "entry": "0x0801F438",
+      "rom_offset": 128056,
+      "original_bytes": 272,
+      "kind": "c",
+      "source": "src/native_ui_362/load_authored_map_terrain_source.c",
+      "source_sha256": "59df53c4cfab0a1a303aa5f0c3f2bdfbcd539b7d8027899fbd225949bb46ee6b"
+    },
+    {
+      "name": "Source52_00025FDC",
+      "entry": "0x08025FDC",
+      "rom_offset": 155612,
+      "original_bytes": 260,
+      "kind": "c",
+      "source": "src/native_ui_362/025fdc/native_025fdc.c",
+      "source_sha256": "7bd3b38aa0abce9592d07a8d4c847c80075659b01e80e784d3f2c897c365d6d4"
+    },
+    {
+      "name": "Source52_000261D8",
+      "entry": "0x080261D8",
+      "rom_offset": 156120,
+      "original_bytes": 934,
+      "kind": "c",
+      "source": "src/native_ui_362/native_0261d8.c",
+      "source_sha256": "fbb43a7d81c48b772128f13a7b8156413424bdcf6ec9b6e6fdb9cea2af50fe2a"
+    },
+    {
+      "name": "Source52_00026580",
+      "entry": "0x08026580",
+      "rom_offset": 157056,
+      "original_bytes": 620,
+      "kind": "c",
+      "source": "src/native_ui_362/026580/native_026580.c",
+      "source_sha256": "abfc050b1144b281ee746861537aa25216615e39886fa706263cc769e3481e4d"
+    },
+    {
+      "name": "Source52_00026D44",
+      "entry": "0x08026D44",
+      "rom_offset": 159044,
+      "original_bytes": 600,
+      "kind": "c",
+      "source": "src/native_ui_362/026d44/native_026d44.c",
+      "source_sha256": "bca0ff415cf82593fa431e034898453d68346ac97931a06f0626f35d5dcde927"
+    },
+    {
+      "name": "Source52_00026F9C",
+      "entry": "0x08026F9C",
+      "rom_offset": 159644,
+      "original_bytes": 304,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/026f9c/collect_available_ability_rows.c",
+      "source_sha256": "239f9b0940b1be8ac0583fc9d7984aadc34c42b7a858efc07db736c843ecd252"
+    },
+    {
+      "name": "CoreContinuation_0002DE58",
+      "entry": "0x0802DE58",
+      "rom_offset": 187992,
+      "original_bytes": 184,
+      "kind": "c",
+      "source": "src/native_ui_362/02de58/native_02de58.c",
+      "source_sha256": "9c8260d58ad0e6b45a826b2a5298ecbf2d0b983f1af246e43473f204f3f066a7"
+    },
+    {
+      "name": "CoreRegion_00044D90",
+      "entry": "0x08044D90",
+      "rom_offset": 282000,
+      "original_bytes": 180,
+      "kind": "c",
+      "source": "src/native_ui_362/get_path_segment_orientation.c",
+      "source_sha256": "2d1b6c0077b46db92fcdc7e768f310522905d581cbaeceefde7b9a2c142788be"
+    },
+    {
+      "name": "CoreRegion_0004BB5C",
+      "entry": "0x0804BB5C",
+      "rom_offset": 310108,
+      "original_bytes": 100,
+      "kind": "c",
+      "source": "src/native_ui_362/build_world_path_route.c",
+      "source_sha256": "5fa0726d54b3159da838e37bbe944274b69873609d8eeef80c26d6c94350a646"
+    },
+    {
+      "name": "CoreRegion_0004C9E4",
+      "entry": "0x0804C9E4",
+      "rom_offset": 313828,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/native_ui_362/native_04c9e4.c",
+      "source_sha256": "600c9561b5403369d5c559a911d3d406d55c32adcccd93bb25368a041a66e0d8"
+    },
+    {
+      "name": "CoreRegion_0004EBD0",
+      "entry": "0x0804EBD0",
+      "rom_offset": 322512,
+      "original_bytes": 164,
+      "kind": "c",
+      "source": "src/native_ui_362/initialize_menu_overlay_window.c",
+      "source_sha256": "5c57eb5e5dcdc3cd2a6c7a4de80cdc0ec3bcd1ba395eca20a91711f5a4ffdfbd"
+    },
+    {
+      "name": "SceneTaskDependency_00053714",
+      "entry": "0x08053714",
+      "rom_offset": 341780,
+      "original_bytes": 148,
+      "kind": "c",
+      "source": "src/native_ui_362/initialize_item_selection_text_window_9x4.c",
+      "source_sha256": "8f6e0d3cf25785f03f3614e401e23f0df3059858758bfab06bd7db00ee2e5111"
+    },
+    {
+      "name": "CoreFrontier_0005DAA8",
+      "entry": "0x0805DAA8",
+      "rom_offset": 383656,
+      "original_bytes": 612,
+      "kind": "c",
+      "source": "src/native_ui_362/05daa8/advance_mission_interaction_choice.c",
+      "source_sha256": "a892da3153a211f6817258860b4dc506ece0987be5facaad892197548f732620"
+    },
+    {
+      "name": "RemainingCore48_00066048",
+      "entry": "0x08066048",
+      "rom_offset": 417864,
+      "original_bytes": 204,
+      "kind": "c",
+      "source": "src/native_ui_362/066048/select_generated_mission_record.c",
+      "source_sha256": "57ab4381dd024d711f40e533e9ac30b52e2e75d843f33acc4dc9150341a5c175"
+    },
+    {
+      "name": "RemainingCore48_00068660",
+      "entry": "0x08068660",
+      "rom_offset": 427616,
+      "original_bytes": 96,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/068660/build_available_inventory_categories.c",
+      "source_sha256": "3232a97d8f42a5bf13f40c7a7c2d07d9b1a4ce976637404225a9cc1aad3b9ff2"
+    },
+    {
+      "name": "CoreGlobal36_00071378",
+      "entry": "0x08071378",
+      "rom_offset": 463736,
+      "original_bytes": 908,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/071378/refresh_unit_roster_row_descriptors.c",
+      "source_sha256": "6f5db27f0895b7e46279bac95c81abe6eaf4b6605cb3926517453b4f516f54ae"
+    },
+    {
+      "name": "CoreGlobal36_00071888",
+      "entry": "0x08071888",
+      "rom_offset": 465032,
+      "original_bytes": 1344,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/071888/advance_roster_panel_transition.c",
+      "source_sha256": "e978d387f9da4e6e2505a3bac64b9685f3ef954d267309fd854a7219ad80e681"
+    },
+    {
+      "name": "Region27_00072130",
+      "entry": "0x08072130",
+      "rom_offset": 467248,
+      "original_bytes": 1160,
+      "kind": "c",
+      "source": "src/native_ui_362/build_roster_sort_order.c",
+      "source_sha256": "6d4bef6e5bacb1f3f6ae7314a4ed90aaae295ae3b62b7a277c4a5e57d1e803d1"
+    },
+    {
+      "name": "CoreScene34_0007478C",
+      "entry": "0x0807478C",
+      "rom_offset": 477068,
+      "original_bytes": 188,
+      "kind": "c",
+      "source": "src/native_ui_362/prepare_selected_roster_resources.c",
+      "source_sha256": "9d1ed6d80677f8a48c6ea811dcc1151c8465bb5439a1997876a3a46b526a84d1"
+    },
+    {
+      "name": "CoreScene34_00074DC4",
+      "entry": "0x08074DC4",
+      "rom_offset": 478660,
+      "original_bytes": 480,
+      "kind": "c",
+      "source": "src/native_ui_362/initialize_unit_four_row_panel.c",
+      "source_sha256": "06d64cd763d152755f01456b98e28ebcf74a4255d47321ce29d67ff1c2e79e38"
+    },
+    {
+      "name": "CoreScene34_00074FA4",
+      "entry": "0x08074FA4",
+      "rom_offset": 479140,
+      "original_bytes": 308,
+      "kind": "c",
+      "source": "src/native_ui_362/refresh_unit_query_label_style.c",
+      "source_sha256": "db4902c426f2dc89dc0e44ec13a5d5da0a3476e8e6a11ed939611dddc9e765bf"
+    },
+    {
+      "name": "CoreScene34_000750D8",
+      "entry": "0x080750D8",
+      "rom_offset": 479448,
+      "original_bytes": 212,
+      "kind": "c",
+      "source": "src/native_ui_362/refresh_unit_byte6_label_style.c",
+      "source_sha256": "385a314f39ec157bbe37bdf9a7e16f00a10c0c11f13613f0b84fc540af457866"
+    },
+    {
+      "name": "CoreScene34_000751AC",
+      "entry": "0x080751AC",
+      "rom_offset": 479660,
+      "original_bytes": 540,
+      "kind": "c",
+      "source": "src/native_ui_362/initialize_unit_three_row_panel.c",
+      "source_sha256": "b9c3588755df0d5497806c4cf44b0336fd269044c74d7d57dd8ed77abee1a126"
+    },
+    {
+      "name": "CoreScene34_000868D4",
+      "entry": "0x080868D4",
+      "rom_offset": 551124,
+      "original_bytes": 1836,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/0868d4/unit_removal_confirmation.c",
+      "source_sha256": "fe0fdc6ce26bd2584088d630e44fd502d4dc35a02aa61fe2f6373e5dc8892a87"
+    },
+    {
+      "name": "CoreGlobal36_00089540",
+      "entry": "0x08089540",
+      "rom_offset": 562496,
+      "original_bytes": 48,
+      "kind": "c",
+      "source": "src/native_ui_362/native_089540.c",
+      "source_sha256": "f7bcb420bf4c3aca3ca8e8f174234b157baeb598a3f7cbc9ae32acdedef4a66f"
+    },
+    {
+      "name": "CoreGlobal36_0008A084",
+      "entry": "0x0808A084",
+      "rom_offset": 565380,
+      "original_bytes": 20,
+      "kind": "c",
+      "source": "src/native_ui_362/native_08a084.c",
+      "source_sha256": "cf9483e242c18bb96a9a253aa58edbaec3c531d6b3bbb6a9f0fac99c158b9355"
+    },
+    {
+      "name": "CoreFrontier_000989AC",
+      "entry": "0x080989AC",
+      "rom_offset": 625068,
+      "original_bytes": 220,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/0989ac/select_usable_route_prefix.c",
+      "source_sha256": "81e458979d5bf2ad9454f41a71ad18b39b5f97b3b48c2f2007bd46411c15ad72"
+    },
+    {
+      "name": "CoreRegion30_000A0254",
+      "entry": "0x080A0254",
+      "rom_offset": 655956,
+      "original_bytes": 530,
+      "kind": "c",
+      "source": "src/native_ui_362/0a0254/native_0a0254.c",
+      "source_sha256": "2312de52e03e7b20ee37ff22a658c02f5a9634a340f400a5562bf164173e1bd8"
+    },
+    {
+      "name": "CoreFrontier_000B43EC",
+      "entry": "0x080B43EC",
+      "rom_offset": 738284,
+      "original_bytes": 160,
+      "kind": "c",
+      "source": "src/native_ui_362/0b43ec/native_0b43ec.c",
+      "source_sha256": "41866584e57f092d7bc01130f47a953540bae2826c6e15328fc5d25e24d8a059"
+    },
+    {
+      "name": "CoreFrontier_000BB5C4",
+      "entry": "0x080BB5C4",
+      "rom_offset": 767428,
+      "original_bytes": 488,
+      "kind": "c",
+      "source": "src/native_ui_362/0bb5c4/native_0bb5c4.c",
+      "source_sha256": "c6294ec3066ef63765079ecec812750b2adea1e25fd3399c5ae9e09315221f7f"
+    },
+    {
+      "name": "CoreFrontier_000C7078",
+      "entry": "0x080C7078",
+      "rom_offset": 815224,
+      "original_bytes": 314,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/0c7078/advance_battle_submission.c",
+      "source_sha256": "275f39a5bc5b16fb007684e5819171fcfb4aa5ccf154227d8a72151b037c356b"
+    },
+    {
+      "name": "CoreConsumer_000C9E00",
+      "entry": "0x080C9E00",
+      "rom_offset": 826880,
+      "original_bytes": 216,
+      "kind": "c",
+      "source": "src/native_ui_362/native_0c9e00.c",
+      "source_sha256": "112c6c89d789e0c5f9edbc6d816a721598e46c1b22d6230a6a3f7d39505b93fb"
+    },
+    {
+      "name": "RemainingBand43_000E6714",
+      "entry": "0x080E6714",
+      "rom_offset": 943892,
+      "original_bytes": 518,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/0e6714/authored_variant_background_sequence.c",
+      "source_sha256": "0d981b65a79731b5de2c956b993d6d4ff8ef2a0cfc80365439646760640c37ff"
+    },
+    {
+      "name": "OriginalActionCallback_000EB740",
+      "entry": "0x080EB740",
+      "rom_offset": 964416,
+      "original_bytes": 862,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/0eb740/authored_curved_owner_sequence.c",
+      "source_sha256": "84e8ba0219706d1f61de86e532d3a7a0f2a6bc74631ed113665fa1628f451eeb"
+    },
+    {
+      "name": "OriginalAuthoredAction_0010CDDC",
+      "entry": "0x0810CDDC",
+      "rom_offset": 1101276,
+      "original_bytes": 1392,
+      "kind": "c",
+      "source": "src/native_ui_362/action_target_list_controller.c",
+      "source_sha256": "131ee7e531b6339cf88c14359c767fd801e020e7c69386c49f25f67235267d66"
+    },
+    {
+      "name": "RemainingBand43_001141EC",
+      "entry": "0x081141EC",
+      "rom_offset": 1130988,
+      "original_bytes": 368,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/1141ec/authored_dual_sprite_entry.c",
+      "source_sha256": "6454ae0a914366332e86e8f821b0d5c83a47e85d5f60a8742bad61da8ed37e87"
+    },
+    {
+      "name": "CoreRegion_00121A48",
+      "entry": "0x08121A48",
+      "rom_offset": 1186376,
+      "original_bytes": 284,
+      "kind": "c",
+      "source": "src/native_ui_362/121a48/native_121a48.c",
+      "source_sha256": "b6890657906cdeda063fa3312117eb96fa50be24b814db57a123c1cba621256f"
+    },
+    {
+      "name": "ProcessSceneActionRecordSelection",
+      "entry": "0x08124480",
+      "rom_offset": 1197184,
+      "original_bytes": 224,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/124480/select_and_place_scene_unit.c",
+      "source_sha256": "5ca59380f3f3d886c59da4c6a549f4dd7fe4e52507cd537d4c03a7fb4de794ad"
+    },
+    {
+      "name": "SceneActionDependency_00124560",
+      "entry": "0x08124560",
+      "rom_offset": 1197408,
+      "original_bytes": 232,
+      "kind": "c",
+      "source": "src/native_ui_362/124560/native_124560.c",
+      "source_sha256": "be0d21f3a894a81686f2345b833f21e7575f347594dd877f75ce8e099781c50f"
+    },
+    {
+      "name": "CoreRegion_00125DE8",
+      "entry": "0x08125DE8",
+      "rom_offset": 1203688,
+      "original_bytes": 448,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/125de8/scene_modal_command.c",
+      "source_sha256": "d22dc42f909e3c6d687f269cf674a027048b67bc5be5660e890e890cfb833ade"
+    },
+    {
+      "name": "CoreRegion_00126118",
+      "entry": "0x08126118",
+      "rom_offset": 1204504,
+      "original_bytes": 628,
+      "kind": "mixed",
+      "source": "src/authored_mixed_363/126118/scene_transition_command.c",
+      "source_sha256": "8d058a6a11985aaedd808a5fecd45b79c8e797dab2c10b31284a1112ec1eadee"
+    },
+    {
+      "name": "Scene51_001286DC",
+      "entry": "0x081286DC",
+      "rom_offset": 1214172,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/scene_sequence_361/begin_selected_mission_notice.c",
+      "source_sha256": "31839750cb59ea443c8d41b6f75ab0c5651ba9265554953e01fa798afcb38761"
+    },
+    {
+      "name": "CoreContinuation_0012D474",
+      "entry": "0x0812D474",
+      "rom_offset": 1234036,
+      "original_bytes": 300,
+      "kind": "c",
+      "source": "src/native_ui_362/12d474/check_actor_target_state_rule.c",
+      "source_sha256": "0a65c21570f74ab8a1a35e2765ee96524b84463a6b31eac643c608fb1f3d1c68"
+    },
+    {
+      "name": "CoreContinuation_0012F48C",
+      "entry": "0x0812F48C",
+      "rom_offset": 1242252,
+      "original_bytes": 156,
+      "kind": "c",
+      "source": "src/native_ui_362/12f48c/native_12f48c.c",
+      "source_sha256": "b3a5745a9ad9205ce8e753350aafbaa56d1d83ff4642e431fbd0ec799f3abf4e"
+    },
+    {
+      "name": "EffectDirect_00132CB8",
+      "entry": "0x08132CB8",
+      "rom_offset": 1256632,
+      "original_bytes": 204,
+      "kind": "c",
+      "source": "src/native_ui_362/132cb8/native_132cb8.c",
+      "source_sha256": "631ea6b919234f760aa08cad04ce2a9f3a94eb651e5f3772e41c94ee167c02fe"
     }
   ],
   "files": [
@@ -41138,12 +41597,56 @@
       "sha256": "c18841c2e02701daeb1614f49ef90d0a93318683e3dc734ffbc37ce3f0e74825"
     },
     {
+      "path": "src/authored_mixed_363/009a24/lookup_scene_relative_text.c",
+      "sha256": "3b04dc4b90833e350becd976f205cba9a5f94cefed3d05df7b348105f6868c3f"
+    },
+    {
+      "path": "src/authored_mixed_363/011b30/present_dialog_message.c",
+      "sha256": "a61bcd7b79d208f5e237f5fc37ad6db0ec011c255c985c981405ff51460c8b7a"
+    },
+    {
+      "path": "src/authored_mixed_363/012014/load_optional_dialog_character_graphic.c",
+      "sha256": "b5c82ccf663acf0dd75df43ce28ad57fcc18a25556a52424d4933378f138a88e"
+    },
+    {
+      "path": "src/authored_mixed_363/026f9c/collect_available_ability_rows.c",
+      "sha256": "239f9b0940b1be8ac0583fc9d7984aadc34c42b7a858efc07db736c843ecd252"
+    },
+    {
+      "path": "src/authored_mixed_363/026f9c/interfaces.h",
+      "sha256": "0a59e1c8733090a746a4600051d4c8f43be52c2ddf9daddbeca48bab5d024732"
+    },
+    {
       "path": "src/authored_mixed_363/0670b4/render_selected_record_ability_panel.c",
       "sha256": "656df72f27da3c584cd2404b1a88a88d72619aff47e0df2b6ee5aa8dee7b5149"
     },
     {
+      "path": "src/authored_mixed_363/068660/build_available_inventory_categories.c",
+      "sha256": "3232a97d8f42a5bf13f40c7a7c2d07d9b1a4ce976637404225a9cc1aad3b9ff2"
+    },
+    {
+      "path": "src/authored_mixed_363/071378/refresh_unit_roster_row_descriptors.c",
+      "sha256": "6f5db27f0895b7e46279bac95c81abe6eaf4b6605cb3926517453b4f516f54ae"
+    },
+    {
+      "path": "src/authored_mixed_363/071888/advance_roster_panel_transition.c",
+      "sha256": "e978d387f9da4e6e2505a3bac64b9685f3ef954d267309fd854a7219ad80e681"
+    },
+    {
       "path": "src/authored_mixed_363/074a54/render_equipment_ability_labels.c",
       "sha256": "5cb3744b613bd6c7450d39bc0c7b8691fd8c3397a883f569bc57f97893692196"
+    },
+    {
+      "path": "src/authored_mixed_363/0868d4/unit_removal_confirmation.c",
+      "sha256": "fe0fdc6ce26bd2584088d630e44fd502d4dc35a02aa61fe2f6373e5dc8892a87"
+    },
+    {
+      "path": "src/authored_mixed_363/0989ac/select_usable_route_prefix.c",
+      "sha256": "81e458979d5bf2ad9454f41a71ad18b39b5f97b3b48c2f2007bd46411c15ad72"
+    },
+    {
+      "path": "src/authored_mixed_363/0c7078/advance_battle_submission.c",
+      "sha256": "275f39a5bc5b16fb007684e5819171fcfb4aa5ccf154227d8a72151b037c356b"
     },
     {
       "path": "src/authored_mixed_363/0ca4f0/.c",
@@ -41162,6 +41665,10 @@
       "sha256": "712e193ba3b3d0f21b7e97220efe21af83e133cc4f568ad5242fde6a85472944"
     },
     {
+      "path": "src/authored_mixed_363/0e6714/authored_variant_background_sequence.c",
+      "sha256": "0d981b65a79731b5de2c956b993d6d4ff8ef2a0cfc80365439646760640c37ff"
+    },
+    {
       "path": "src/authored_mixed_363/0e87c0/advance_authored_special_record_target_sequence.c",
       "sha256": "f7d4b96d20c85bb7cfa68f8384656e7f9bb01a607cc4024f9109344ca6e56d3a"
     },
@@ -41172,6 +41679,10 @@
     {
       "path": "src/authored_mixed_363/0e9e28/advance_authored_projected_target_sequence.c",
       "sha256": "61187b8741b7ed1acfbf8e0c39fae368136b3bb9cdd9b4e59cc3fe1beef29a10"
+    },
+    {
+      "path": "src/authored_mixed_363/0eb740/authored_curved_owner_sequence.c",
+      "sha256": "84e8ba0219706d1f61de86e532d3a7a0f2a6bc74631ed113665fa1628f451eeb"
     },
     {
       "path": "src/authored_mixed_363/10a134/mixed.c",
@@ -41214,12 +41725,32 @@
       "sha256": "c71e8041476eb769ea142f0ed46807efd0c81495b9461a769e16d987c8cea931"
     },
     {
+      "path": "src/authored_mixed_363/1141ec/authored_dual_sprite_entry.c",
+      "sha256": "6454ae0a914366332e86e8f821b0d5c83a47e85d5f60a8742bad61da8ed37e87"
+    },
+    {
       "path": "src/authored_mixed_363/114dbc/advance_authored_dual_axis_window.c",
       "sha256": "f68dccef93af8098e4a6b72674fd9ebd8affe1973dac2f3b180e5ade92f63a40"
     },
     {
       "path": "src/authored_mixed_363/118590/mnemonic_repair.c",
       "sha256": "e8b405e990f5af802cbabbc0fe676415a1db31934419f87db4c40e7e783de4f1"
+    },
+    {
+      "path": "src/authored_mixed_363/124480/interfaces.h",
+      "sha256": "6a8ad063df174ddfe151769be2dea78db386e3678027dcb485b778d669270968"
+    },
+    {
+      "path": "src/authored_mixed_363/124480/select_and_place_scene_unit.c",
+      "sha256": "5ca59380f3f3d886c59da4c6a549f4dd7fe4e52507cd537d4c03a7fb4de794ad"
+    },
+    {
+      "path": "src/authored_mixed_363/125de8/scene_modal_command.c",
+      "sha256": "d22dc42f909e3c6d687f269cf674a027048b67bc5be5660e890e890cfb833ade"
+    },
+    {
+      "path": "src/authored_mixed_363/126118/scene_transition_command.c",
+      "sha256": "8d058a6a11985aaedd808a5fecd45b79c8e797dab2c10b31284a1112ec1eadee"
     },
     {
       "path": "src/battle_action_calculation_08/add_unit_property_adjustment.c",
@@ -49746,12 +50277,52 @@
       "sha256": "b61e27399d015a9f8a3d4a72deebc2b51dc904c38efea0a2bd9b0d8c0fe40cd7"
     },
     {
+      "path": "src/native_ui_362/025fdc/interfaces.h",
+      "sha256": "b5c50351cf7699478e315c24f5fe799f5025b674b3ad04f77db1f368b250bda6"
+    },
+    {
+      "path": "src/native_ui_362/025fdc/native_025fdc.c",
+      "sha256": "7bd3b38aa0abce9592d07a8d4c847c80075659b01e80e784d3f2c897c365d6d4"
+    },
+    {
+      "path": "src/native_ui_362/026580/interfaces.h",
+      "sha256": "d3bfaa1b301c35c1f20b49615a122a68ba23cdeef6054d38623cf6a52d51e427"
+    },
+    {
+      "path": "src/native_ui_362/026580/native_026580.c",
+      "sha256": "abfc050b1144b281ee746861537aa25216615e39886fa706263cc769e3481e4d"
+    },
+    {
+      "path": "src/native_ui_362/026d44/interfaces.h",
+      "sha256": "11c22f6de1386c2ccc74b219239331ff468cffe1e09e882acf0101ad8c29b7ee"
+    },
+    {
+      "path": "src/native_ui_362/026d44/native_026d44.c",
+      "sha256": "bca0ff415cf82593fa431e034898453d68346ac97931a06f0626f35d5dcde927"
+    },
+    {
+      "path": "src/native_ui_362/02de58/interfaces.h",
+      "sha256": "2b543ff8321a65a296c4a48dd7b1e76dba03089403d19bc8f5d8a9b8e1025eee"
+    },
+    {
+      "path": "src/native_ui_362/02de58/native_02de58.c",
+      "sha256": "9c8260d58ad0e6b45a826b2a5298ecbf2d0b983f1af246e43473f204f3f066a7"
+    },
+    {
       "path": "src/native_ui_362/038cf0/concat.c",
       "sha256": "1c394fd5d41b7d7317765d2da1281013ff730672ec0aeae4c8e3ab6e2961e180"
     },
     {
       "path": "src/native_ui_362/038d10/concat.c",
       "sha256": "037601e99e60782b80fd5b21660535463abe0d7f41cec4b8dd4bfef465cbab52"
+    },
+    {
+      "path": "src/native_ui_362/05daa8/advance_mission_interaction_choice.c",
+      "sha256": "a892da3153a211f6817258860b4dc506ece0987be5facaad892197548f732620"
+    },
+    {
+      "path": "src/native_ui_362/05daa8/interfaces.h",
+      "sha256": "929533ff3569523aa34a2c14d6b275b293d978bf7d5a7f801cf7bbf887760360"
     },
     {
       "path": "src/native_ui_362/05e354/interfaces.h",
@@ -49770,6 +50341,14 @@
       "sha256": "3f2b963d80b7685ba35f3556d1d3cfbde5f9ae6e8cf3c2ccf6bfbd710371e119"
     },
     {
+      "path": "src/native_ui_362/066048/interfaces.h",
+      "sha256": "99835ba914e90750063a3acec8c5cfa8021d1d7346d373b8ee05e9c9cf6edffe"
+    },
+    {
+      "path": "src/native_ui_362/066048/select_generated_mission_record.c",
+      "sha256": "57ab4381dd024d711f40e533e9ac30b52e2e75d843f33acc4dc9150341a5c175"
+    },
+    {
       "path": "src/native_ui_362/070604/interfaces.h",
       "sha256": "acd0e0dc4dd24fd9abfad0f74854b5563df62879b86e4d189a10e6e7ff5d564f"
     },
@@ -49786,6 +50365,30 @@
       "sha256": "7818219dbd9b652b15066a506c24b0c277e294547daae9ad3fe2adceabac3a3f"
     },
     {
+      "path": "src/native_ui_362/0a0254/_captured_06c0b7aa19a41601_interfaces.h",
+      "sha256": "06c0b7aa19a416014c5c37c4664a8610e70bb94c43317daf7a24f9f186351eee"
+    },
+    {
+      "path": "src/native_ui_362/0a0254/native_0a0254.c",
+      "sha256": "2312de52e03e7b20ee37ff22a658c02f5a9634a340f400a5562bf164173e1bd8"
+    },
+    {
+      "path": "src/native_ui_362/0b43ec/interfaces.h",
+      "sha256": "92ade1123513c9624ff78cdd70b4f7c94480188134fde45551768e5bf9ade030"
+    },
+    {
+      "path": "src/native_ui_362/0b43ec/native_0b43ec.c",
+      "sha256": "41866584e57f092d7bc01130f47a953540bae2826c6e15328fc5d25e24d8a059"
+    },
+    {
+      "path": "src/native_ui_362/0bb5c4/interfaces.h",
+      "sha256": "607ef824fc37608ff3859b51e0a291691d2c363be639bbb1313cf19a52b7c2ed"
+    },
+    {
+      "path": "src/native_ui_362/0bb5c4/native_0bb5c4.c",
+      "sha256": "c6294ec3066ef63765079ecec812750b2adea1e25fd3399c5ae9e09315221f7f"
+    },
+    {
       "path": "src/native_ui_362/0e6e10/advance_authored_paired_target_sequence.c",
       "sha256": "4df7f5e6b90941b41b8db2a223a76d8f4550b26ee977bf8b1d7275fa51618e5e"
     },
@@ -49798,12 +50401,28 @@
       "sha256": "5628e052a04399915fa69763393d2e0419ff6db26cc960341b5e1e6cd715d450"
     },
     {
+      "path": "src/native_ui_362/121a48/interfaces.h",
+      "sha256": "ab0e348e0d680858008b17deb3ee4e02a7becfc740e7e6a1125154e61f4e671d"
+    },
+    {
+      "path": "src/native_ui_362/121a48/native_121a48.c",
+      "sha256": "b6890657906cdeda063fa3312117eb96fa50be24b814db57a123c1cba621256f"
+    },
+    {
       "path": "src/native_ui_362/1224b8/.c",
       "sha256": "8f0c7f4ee0c3be2fb95a5e160a7da36f715dbf3dac43542d1940c7aed9ecbd20"
     },
     {
       "path": "src/native_ui_362/1224b8/interfaces.h",
       "sha256": "4f0dea300c675acaf0b6da52076617abf334bbce4aa6ccecb6117fb6997d7474"
+    },
+    {
+      "path": "src/native_ui_362/124560/interfaces.h",
+      "sha256": "47d9aefc668e61e9e4bb074d2e73e60d78a08b92ad271cdeb29e293aeed42894"
+    },
+    {
+      "path": "src/native_ui_362/124560/native_124560.c",
+      "sha256": "be0d21f3a894a81686f2345b833f21e7575f347594dd877f75ce8e099781c50f"
     },
     {
       "path": "src/native_ui_362/12B2EC_cause03.c",
@@ -49816,6 +50435,30 @@
     {
       "path": "src/native_ui_362/12c510/scene_continuation.c",
       "sha256": "4d17153444eb868a7346fd3e91ac3861ef23112d4982f2dc5fce3f9bade27f34"
+    },
+    {
+      "path": "src/native_ui_362/12d474/check_actor_target_state_rule.c",
+      "sha256": "0a65c21570f74ab8a1a35e2765ee96524b84463a6b31eac643c608fb1f3d1c68"
+    },
+    {
+      "path": "src/native_ui_362/12d474/interfaces.h",
+      "sha256": "e799e4b00952d88082d8126297393041e0e07841586fb6d3dd7e49072ade9ea9"
+    },
+    {
+      "path": "src/native_ui_362/12f48c/interfaces.h",
+      "sha256": "ea3190199c5569e0ece848daa5e21d25fa4781842a363532db848671848f823b"
+    },
+    {
+      "path": "src/native_ui_362/12f48c/native_12f48c.c",
+      "sha256": "b3a5745a9ad9205ce8e753350aafbaa56d1d83ff4642e431fbd0ec799f3abf4e"
+    },
+    {
+      "path": "src/native_ui_362/132cb8/_captured_6cf5b3a2c41e749e_interfaces.h",
+      "sha256": "6cf5b3a2c41e749e0374aa8de313ead55b8326e20c485bf1dbe0dc809cf4d698"
+    },
+    {
+      "path": "src/native_ui_362/132cb8/native_132cb8.c",
+      "sha256": "631ea6b919234f760aa08cad04ce2a9f3a94eb651e5f3772e41c94ee167c02fe"
     },
     {
       "path": "src/native_ui_362/SetNativeShopBackdropParameter02.c",
@@ -49832,6 +50475,10 @@
     {
       "path": "src/native_ui_362/SetNativeShopStripParameter04.c",
       "sha256": "45af53eb38f4547b89516d80276f18428bc61dc91c846ddc5de18bb8e3174d99"
+    },
+    {
+      "path": "src/native_ui_362/action_target_list_controller.c",
+      "sha256": "131ee7e531b6339cf88c14359c767fd801e020e7c69386c49f25f67235267d66"
     },
     {
       "path": "src/native_ui_362/actor_normalization.c",
@@ -50214,8 +50861,16 @@
       "sha256": "164084a5277634772e470c228455d9c681d0ad42dc66e7491bde352d1ab646bb"
     },
     {
+      "path": "src/native_ui_362/build_roster_sort_order.c",
+      "sha256": "6d4bef6e5bacb1f3f6ae7314a4ed90aaae295ae3b62b7a277c4a5e57d1e803d1"
+    },
+    {
       "path": "src/native_ui_362/build_shop_categories.c",
       "sha256": "666d0df4251cae85e9acdf29e225cdd4e93c9cdf428c782bc0f98b7f787f503a"
+    },
+    {
+      "path": "src/native_ui_362/build_world_path_route.c",
+      "sha256": "5fa0726d54b3159da838e37bbe944274b69873609d8eeef80c26d6c94350a646"
     },
     {
       "path": "src/native_ui_362/category.c",
@@ -50298,6 +50953,10 @@
       "sha256": "c2ae80145d0d003a0ba6ccf19e25d8088cf46797f5301503ba888dfcaa0fc764"
     },
     {
+      "path": "src/native_ui_362/dispatch_active_dialog_command.c",
+      "sha256": "c88a88a174970733e6733934ced5cdb589237c339fdd57dfe97cddaf99f574b3"
+    },
+    {
       "path": "src/native_ui_362/dispatch_authored_sequence.c",
       "sha256": "7c070e6de6d7d953f3fdc5a01d49b31d16720f6bfb77f41f5255b42c52a2e228"
     },
@@ -50354,6 +51013,10 @@
       "sha256": "f0a22e49036e811b121f16605001ed1b4990b675369a55d54dd3f3f34015260e"
     },
     {
+      "path": "src/native_ui_362/get_path_segment_orientation.c",
+      "sha256": "2d1b6c0077b46db92fcdc7e768f310522905d581cbaeceefde7b9a2c142788be"
+    },
+    {
       "path": "src/native_ui_362/get_stored_selected_record.c",
       "sha256": "ebe2804a50859e0281598675966f30ca59f60c5d75642ee6b31402c961707a49"
     },
@@ -50374,8 +51037,16 @@
       "sha256": "375400a092bae49123490f2ba8f081d27799e9af2aa0c95be20abce1b8c8666a"
     },
     {
+      "path": "src/native_ui_362/initialize_item_selection_text_window_9x4.c",
+      "sha256": "8f6e0d3cf25785f03f3614e401e23f0df3059858758bfab06bd7db00ee2e5111"
+    },
+    {
       "path": "src/native_ui_362/initialize_job_selection_row.c",
       "sha256": "97cef0b478c0214570ac48f48c42ab1f5b63d8cfa062441cadb5dc53028e4e5a"
+    },
+    {
+      "path": "src/native_ui_362/initialize_menu_overlay_window.c",
+      "sha256": "5c57eb5e5dcdc3cd2a6c7a4de80cdc0ec3bcd1ba395eca20a91711f5a4ffdfbd"
     },
     {
       "path": "src/native_ui_362/initialize_name_editor_backgrounds.c",
@@ -50450,12 +51121,24 @@
       "sha256": "fb97c524be91bc26decb0f07ebd42c1175017f2ddb7e9fd73edfb54fe16dfb94"
     },
     {
+      "path": "src/native_ui_362/initialize_unit_four_row_panel.c",
+      "sha256": "06d64cd763d152755f01456b98e28ebcf74a4255d47321ce29d67ff1c2e79e38"
+    },
+    {
+      "path": "src/native_ui_362/initialize_unit_three_row_panel.c",
+      "sha256": "b9c3588755df0d5497806c4cf44b0336fd269044c74d7d57dd8ed77abee1a126"
+    },
+    {
       "path": "src/native_ui_362/initialized_wide_style_mask_before_test.c",
       "sha256": "1cb814782563250468e9e6e913e1b56aa82a39353935c7ea527d1e26fa78e7a9"
     },
     {
       "path": "src/native_ui_362/is_native_menu_callback_slot_available.c",
       "sha256": "3203ff59b2fd497c6bf411c2543781fa346b83172ad93c4a4fc18e811eef1551"
+    },
+    {
+      "path": "src/native_ui_362/load_authored_map_terrain_source.c",
+      "sha256": "59df53c4cfab0a1a303aa5f0c3f2bdfbcd539b7d8027899fbd225949bb46ee6b"
     },
     {
       "path": "src/native_ui_362/load_native_glyph_bitmap.c",
@@ -50482,8 +51165,28 @@
       "sha256": "5e1a2dc8ee2a5ff2bfcb8dc227939a57e107fc53e38128c295622f5e0ae924a7"
     },
     {
+      "path": "src/native_ui_362/native_0261d8.c",
+      "sha256": "fbb43a7d81c48b772128f13a7b8156413424bdcf6ec9b6e6fdb9cea2af50fe2a"
+    },
+    {
+      "path": "src/native_ui_362/native_04c9e4.c",
+      "sha256": "600c9561b5403369d5c559a911d3d406d55c32adcccd93bb25368a041a66e0d8"
+    },
+    {
+      "path": "src/native_ui_362/native_089540.c",
+      "sha256": "f7bcb420bf4c3aca3ca8e8f174234b157baeb598a3f7cbc9ae32acdedef4a66f"
+    },
+    {
+      "path": "src/native_ui_362/native_08a084.c",
+      "sha256": "cf9483e242c18bb96a9a253aa58edbaec3c531d6b3bbb6a9f0fac99c158b9355"
+    },
+    {
       "path": "src/native_ui_362/native_0c286c.c",
       "sha256": "c3dd8f9648f9a30f6c0bb3d23c28cd621188ef47d5015da4c54eca63e03095aa"
+    },
+    {
+      "path": "src/native_ui_362/native_0c9e00.c",
+      "sha256": "112c6c89d789e0c5f9edbc6d816a721598e46c1b22d6230a6a3f7d39505b93fb"
     },
     {
       "path": "src/native_ui_362/native_0d8708.c",
@@ -50706,8 +51409,16 @@
       "sha256": "7c5cff501f002996798d8d7b2c534723ef0030430e4a6b31b774ae7f93ee1d77"
     },
     {
+      "path": "src/native_ui_362/prepare_selected_roster_resources.c",
+      "sha256": "9d1ed6d80677f8a48c6ea811dcc1151c8465bb5439a1997876a3a46b526a84d1"
+    },
+    {
       "path": "src/native_ui_362/process_choice_input.c",
       "sha256": "f8ad1a2422b5f7596c588d508345b17f8218c732ee1a950171a58dde7fd8efa0"
+    },
+    {
+      "path": "src/native_ui_362/process_leading_dialog_controls.c",
+      "sha256": "970675d5173c68564f65b9572e5a85517e32e05ec176c035654de8248d0e71f1"
     },
     {
       "path": "src/native_ui_362/proven_window_address_phases.c",
@@ -50762,8 +51473,20 @@
       "sha256": "c44792526f56bd5e7316278bed6da6da93609509bd9c1f5a8b437f5c031891d8"
     },
     {
+      "path": "src/native_ui_362/refresh_unit_byte6_label_style.c",
+      "sha256": "385a314f39ec157bbe37bdf9a7e16f00a10c0c11f13613f0b84fc540af457866"
+    },
+    {
+      "path": "src/native_ui_362/refresh_unit_query_label_style.c",
+      "sha256": "db4902c426f2dc89dc0e44ec13a5d5da0a3476e8e6a11ed939611dddc9e765bf"
+    },
+    {
       "path": "src/native_ui_362/release_native_menu_panel.c",
       "sha256": "3ce1f52f60151dfcf03b4c2d667d392824390e07061f67fd839b2a0bafb1a306"
+    },
+    {
+      "path": "src/native_ui_362/remap_scene_text_variant.c",
+      "sha256": "b5ec68a7a086005ba591eb2cd0d90efdad1e505de706e16a71972feb99125af3"
     },
     {
       "path": "src/native_ui_362/render_equipment_item_labels.c",
@@ -51588,6 +52311,10 @@
     {
       "path": "src/scene_sequence_361/authored_timed_trajectory.c",
       "sha256": "811ee577cebdf72a9d2ed8298163c5df67c90f01f6ada29fd6b40dc257bf5444"
+    },
+    {
+      "path": "src/scene_sequence_361/begin_selected_mission_notice.c",
+      "sha256": "31839750cb59ea443c8d41b6f75ab0c5651ba9265554953e01fa798afcb38761"
     },
     {
       "path": "src/scene_sequence_361/launch_actor_definition391.c",

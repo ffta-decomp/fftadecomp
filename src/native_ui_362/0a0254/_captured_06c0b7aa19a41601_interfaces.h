@@ -1,0 +1,13 @@
+typedef unsigned char u8;
+typedef signed char s8;
+typedef unsigned short u16;
+typedef signed short s16;
+typedef unsigned int u32;
+extern int ReadValidatedGridHeight(s8,s8);
+extern u32 IsGridCellPopulated(u32,u32);
+extern u32 ReadGridFlags(u32,u32);
+extern u32 GetAbilityProperty(u16,u8);
+extern u32 CheckWeaponTargetRange(const void *,s8,s8,s8,s8,u16,u8);
+extern u32 ReadAbilityTargetShape(const void *,u16,u16,u8);
+extern u32 ReadGridHeight(u8,u8);
+__asm__(".global ReadValidatedGridHeight\n.thumb_set ReadValidatedGridHeight,0x0809d79d\n.global IsGridCellPopulated\n.thumb_set IsGridCellPopulated,0x0801cc7d\n.global ReadGridFlags\n.thumb_set ReadGridFlags,0x0801cd09\n.global GetAbilityProperty\n.thumb_set GetAbilityProperty,0x080ccd51\n.global CheckWeaponTargetRange\n.thumb_set CheckWeaponTargetRange,0x0809fef1\n.global ReadAbilityTargetShape\n.thumb_set ReadAbilityTargetShape,0x080b7c51\n.global ReadGridHeight\n.thumb_set ReadGridHeight,0x0801cc19");
