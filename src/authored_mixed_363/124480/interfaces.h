@@ -1,0 +1,37 @@
+typedef unsigned char u8;
+typedef signed char s8;
+typedef unsigned short u16;
+typedef unsigned int u32;
+struct SceneGameUnit {
+    u8 unknown_prefix[40];
+    u16 selection_flags;
+    u8 unknown_2a[246-42];
+    u8 position_x;
+    u8 position_y;
+    u8 direction;
+    u8 backup_x;
+    u8 backup_y;
+    u8 unknown_tail[13];
+};
+struct SceneGameEntity {
+    struct SceneGameUnit *unit;
+    u8 unknown_04[44];
+    u32 flags;
+};
+typedef char SceneGameUnitSize[(sizeof(struct SceneGameUnit)==264)?1:-1];
+typedef char SceneUnitXOffset[((u32)&((struct SceneGameUnit*)0)->position_x==246)?1:-1];
+typedef char SceneEntityFlagsOffset[((u32)&((struct SceneGameEntity*)0)->flags==48)?1:-1];
+extern struct SceneGameUnit gSceneSelectionUnits[24];
+extern u32 ResolveEncodedSceneUnit(u32);
+extern struct SceneGameUnit *FindSceneUnitById(u32);
+extern void *GetSceneSelectionContext(void);
+extern struct SceneGameEntity *ResolveSceneEntity(void*,const struct SceneGameUnit*);
+extern void SetSelectedScenePosition(struct SceneGameEntity*,s8,s8);
+extern void ApplySelectedSceneAction(struct SceneGameEntity*,u8,u8);
+__asm__(".global gSceneSelectionUnits\n.set gSceneSelectionUnits,0x02000080");
+__asm__(".global ResolveEncodedSceneUnit\n.thumb_set ResolveEncodedSceneUnit,0x8121cb5");
+__asm__(".global FindSceneUnitById\n.thumb_set FindSceneUnitById,0x80c83cd");
+__asm__(".global GetSceneSelectionContext\n.thumb_set GetSceneSelectionContext,0x8096d7d");
+__asm__(".global ResolveSceneEntity\n.thumb_set ResolveSceneEntity,0x8099561");
+__asm__(".global SetSelectedScenePosition\n.thumb_set SetSelectedScenePosition,0x8099e69");
+__asm__(".global ApplySelectedSceneAction\n.thumb_set ApplySelectedSceneAction,0x8124711");

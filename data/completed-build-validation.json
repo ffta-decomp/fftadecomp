@@ -4,31 +4,26 @@
   "output_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "whole_image_identical": true,
   "rom_bytes": 16777216,
-  "compiled_original_bytes": 497230,
-  "retained_original_bytes": 16279986,
-  "compiler_starts": 3752,
+  "compiled_original_bytes": 520056,
+  "retained_original_bytes": 16257160,
+  "compiler_starts": 3803,
   "module_cache_hits": 0,
-  "elapsed_seconds": 573.5006597919855,
+  "elapsed_seconds": 322.4204282920109,
   "scope": "Compiled published modules; unrecovered code and resources retained from private reference. Not full source recovery.",
-  "compilation_driver_sha256": "a8cdb08bb1c1ba97e838d7a11c095b7b6cf3854d404c851072042a67cf8c34ac",
   "final_file_verification": {
     "verified": true,
     "bytes": 16777216,
     "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19"
   },
-  "validation_note": "Single full compilation used the prior driver; new verification-only path independently checked the same on-disk output without recompilation. Compilation implementation unchanged.",
+  "compilation_driver_sha256": "974fd42e9bf0af1f797ade36d6189a44b7722b1bddb698e98088586dcc274083",
+  "validation_note": "One full compilation of the published source set; final on-disk ROM hash verified without a second build.",
   "verified_date": "2026-10-29",
-  "source_module_count": 3752,
+  "source_module_count": 3803,
   "independent_cmp_passed": true,
   "published_input_hashes": {
-    "src/completed-index.json": "a8e9dbadf0ab930ad4d53048e76869961f0bc3608a9296537ff8601fe87447cc",
-    "config/completed-build.json": "9719b56d92c7806b573bb83329a30cf51e98b96d583d0ce5e2c3bb4ac87fa93f",
+    "src/completed-index.json": "46c55ad3d4a6da2889f4638ecac56500e1b099645bdfb41a6d0a522b7d1b4f73",
+    "config/completed-build.json": "1ed9a0609a247076b116871af84349369bb15de58253f327f4bd6378f06faf9d",
     "tools/build_rom.py": "8d677e891c13cd07d916b988697e8d7ebffb36de2c12a9c4533b99820dea43b0",
     "tools/verify_completed_rom.py": "24ce6181dd7d0f47e8cf5f73f6aa3989aad84ba0e27b21d2afa692d95730565e"
-  },
-  "public_test_suite": {
-    "run": 46,
-    "skipped": 1,
-    "passed": 45
   }
 }

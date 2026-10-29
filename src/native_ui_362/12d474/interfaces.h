@@ -1,0 +1,16 @@
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef unsigned int u32;
+typedef signed int s32;
+struct RosterRuleState { u8 unknown_0000[0x1f64]; u32 value; };
+typedef char RuleOffsetCheck[(unsigned)&((struct RosterRuleState *)0)->value == 0x1f64 ? 1 : -1];
+extern struct RosterRuleState gRosterRuleState;
+extern u32 ReadUnitField(const u8 *unit, u8 selector);
+extern u8 IsPrimaryRosterUnit(const u8 *unit);
+extern u8 HasCompatibleActorTargetChoice(const u8 *actor, const u8 *target);
+extern u8 HasEquippedItemCategory(const u8 *unit, const u16 *categories, s32 count);
+__asm__(".global gRosterRuleState\n.set gRosterRuleState, 0x02000000");
+__asm__(".global ReadUnitField\n.thumb_set ReadUnitField, 0x080c7ea5");
+__asm__(".global IsPrimaryRosterUnit\n.thumb_set IsPrimaryRosterUnit, 0x08133bc5");
+__asm__(".global HasCompatibleActorTargetChoice\n.thumb_set HasCompatibleActorTargetChoice, 0x08132ea1");
+__asm__(".global HasEquippedItemCategory\n.thumb_set HasEquippedItemCategory, 0x0812d425");

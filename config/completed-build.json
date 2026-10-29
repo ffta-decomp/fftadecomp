@@ -102440,6 +102440,1344 @@
       "size": 388,
       "source": "src/native_ui_362/advance_authored_masked_target_sequence.c",
       "trailing_alignment_bytes": 0
+    },
+    {
+      "component": "menus",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Remaining38_00009A24",
+          "offset": 39460,
+          "size": 108
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 92,
+      "kind": "mixed",
+      "literal_bytes": 16,
+      "name": "Remaining38_00009A24",
+      "offset": 39460,
+      "padding_bytes": 0,
+      "size": 108,
+      "source": "src/authored_mixed_363/009a24/lookup_scene_relative_text.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Remaining38_00009A90",
+          "offset": 39568,
+          "size": 108
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Remaining38_00009A90",
+      "offset": 39568,
+      "size": 108,
+      "source": "src/native_ui_362/remap_scene_text_variant.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 94,
+      "literal_bytes": 12,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "component": "menus",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_00011B30",
+          "offset": 72496,
+          "size": 304
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 282,
+      "kind": "mixed",
+      "literal_bytes": 20,
+      "name": "CoreFrontier_00011B30",
+      "offset": 72496,
+      "padding_bytes": 2,
+      "size": 304,
+      "source": "src/authored_mixed_363/011b30/present_dialog_message.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "component": "menus",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Source52_00012014",
+          "offset": 73748,
+          "size": 220
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 190,
+      "kind": "mixed",
+      "literal_bytes": 28,
+      "name": "Source52_00012014",
+      "offset": 73748,
+      "padding_bytes": 2,
+      "size": 220,
+      "source": "src/authored_mixed_363/012014/load_optional_dialog_character_graphic.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Frame54_000120F0",
+          "offset": 73968,
+          "size": 2080
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Frame54_000120F0",
+      "offset": 73968,
+      "size": 2080,
+      "source": "src/native_ui_362/dispatch_active_dialog_command.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 1616,
+      "literal_bytes": 452,
+      "padding_bytes": 12,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Source52_00012D3C",
+          "offset": 77116,
+          "size": 668
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Source52_00012D3C",
+      "offset": 77116,
+      "size": 668,
+      "source": "src/native_ui_362/process_leading_dialog_controls.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 370,
+      "literal_bytes": 288,
+      "padding_bytes": 10,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Registered39_0001F438",
+          "offset": 128056,
+          "size": 272
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Registered39_0001F438",
+      "offset": 128056,
+      "size": 272,
+      "source": "src/native_ui_362/load_authored_map_terrain_source.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 216,
+      "literal_bytes": 44,
+      "padding_bytes": 12,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
+        "Source52_00025FDC"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "Source52_00025FDC",
+          "offset": 155612,
+          "size": 260
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Source52_00025FDC",
+      "offset": 155612,
+      "size": 260,
+      "source": "src/native_ui_362/025fdc/native_025fdc.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 246,
+      "literal_bytes": 12,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Source52_000261D8",
+          "offset": 156120,
+          "size": 934
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Source52_000261D8",
+      "offset": 156120,
+      "size": 934,
+      "source": "src/native_ui_362/native_0261d8.c",
+      "trailing_alignment_bytes": 2,
+      "instructions_bytes": 884,
+      "literal_bytes": 48,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Source52_00026580",
+          "offset": 157056,
+          "size": 620
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Source52_00026580",
+      "offset": 157056,
+      "size": 620,
+      "source": "src/native_ui_362/026580/native_026580.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 580,
+      "literal_bytes": 36,
+      "padding_bytes": 4,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Source52_00026D44",
+          "offset": 159044,
+          "size": 600
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Source52_00026D44",
+      "offset": 159044,
+      "size": 600,
+      "source": "src/native_ui_362/026d44/native_026d44.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 566,
+      "literal_bytes": 32,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "abilities",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Source52_00026F9C",
+          "offset": 159644,
+          "size": 304
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 286,
+      "kind": "mixed",
+      "literal_bytes": 16,
+      "name": "Source52_00026F9C",
+      "offset": 159644,
+      "padding_bytes": 2,
+      "size": 304,
+      "source": "src/authored_mixed_363/026f9c/collect_available_ability_rows.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreContinuation_0002DE58",
+          "offset": 187992,
+          "size": 184
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreContinuation_0002DE58",
+      "offset": 187992,
+      "size": 184,
+      "source": "src/native_ui_362/02de58/native_02de58.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 174,
+      "literal_bytes": 8,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_00044D90",
+          "offset": 282000,
+          "size": 180
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_00044D90",
+      "offset": 282000,
+      "size": 180,
+      "source": "src/native_ui_362/get_path_segment_orientation.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 172,
+      "literal_bytes": 8,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_0004BB5C",
+          "offset": 310108,
+          "size": 100
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_0004BB5C",
+      "offset": 310108,
+      "size": 100,
+      "source": "src/native_ui_362/build_world_path_route.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 100,
+      "literal_bytes": 0,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_0004C9E4",
+          "offset": 313828,
+          "size": 28
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_0004C9E4",
+      "offset": 313828,
+      "size": 28,
+      "source": "src/native_ui_362/native_04c9e4.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 20,
+      "literal_bytes": 8,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_0004EBD0",
+          "offset": 322512,
+          "size": 164
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_0004EBD0",
+      "offset": 322512,
+      "size": 164,
+      "source": "src/native_ui_362/initialize_menu_overlay_window.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 136,
+      "literal_bytes": 28,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "SceneTaskDependency_00053714",
+          "offset": 341780,
+          "size": 148
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "SceneTaskDependency_00053714",
+      "offset": 341780,
+      "size": 148,
+      "source": "src/native_ui_362/initialize_item_selection_text_window_9x4.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 138,
+      "literal_bytes": 8,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_0005DAA8",
+          "offset": 383656,
+          "size": 612
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_0005DAA8",
+      "offset": 383656,
+      "size": 612,
+      "source": "src/native_ui_362/05daa8/advance_mission_interaction_choice.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 494,
+      "literal_bytes": 112,
+      "padding_bytes": 6,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingCore48_00066048",
+          "offset": 417864,
+          "size": 204
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingCore48_00066048",
+      "offset": 417864,
+      "size": 204,
+      "source": "src/native_ui_362/066048/select_generated_mission_record.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 184,
+      "literal_bytes": 20,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "component": "items",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingCore48_00068660",
+          "offset": 427616,
+          "size": 96
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 82,
+      "kind": "mixed",
+      "literal_bytes": 12,
+      "name": "RemainingCore48_00068660",
+      "offset": 427616,
+      "padding_bytes": 2,
+      "size": 96,
+      "source": "src/authored_mixed_363/068660/build_available_inventory_categories.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "component": "menus",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreGlobal36_00071378",
+          "offset": 463736,
+          "size": 908
+        }
+      ],
+      "inline_assembly_bytes": 26,
+      "instructions_bytes": 760,
+      "kind": "mixed",
+      "literal_bytes": 136,
+      "name": "CoreGlobal36_00071378",
+      "offset": 463736,
+      "padding_bytes": 12,
+      "size": 908,
+      "source": "src/authored_mixed_363/071378/refresh_unit_roster_row_descriptors.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "component": "menus",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreGlobal36_00071888",
+          "offset": 465032,
+          "size": 1344
+        }
+      ],
+      "inline_assembly_bytes": 16,
+      "instructions_bytes": 1084,
+      "kind": "mixed",
+      "literal_bytes": 248,
+      "name": "CoreGlobal36_00071888",
+      "offset": 465032,
+      "padding_bytes": 12,
+      "size": 1344,
+      "source": "src/authored_mixed_363/071888/advance_roster_panel_transition.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Region27_00072130",
+          "offset": 467248,
+          "size": 1160
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Region27_00072130",
+      "offset": 467248,
+      "size": 1160,
+      "source": "src/native_ui_362/build_roster_sort_order.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 1026,
+      "literal_bytes": 120,
+      "padding_bytes": 14,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreScene34_0007478C",
+          "offset": 477068,
+          "size": 188
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreScene34_0007478C",
+      "offset": 477068,
+      "size": 188,
+      "source": "src/native_ui_362/prepare_selected_roster_resources.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 156,
+      "literal_bytes": 32,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreScene34_00074DC4",
+          "offset": 478660,
+          "size": 480
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreScene34_00074DC4",
+      "offset": 478660,
+      "size": 480,
+      "source": "src/native_ui_362/initialize_unit_four_row_panel.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 418,
+      "literal_bytes": 60,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreScene34_00074FA4",
+          "offset": 479140,
+          "size": 308
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreScene34_00074FA4",
+      "offset": 479140,
+      "size": 308,
+      "source": "src/native_ui_362/refresh_unit_query_label_style.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 262,
+      "literal_bytes": 44,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreScene34_000750D8",
+          "offset": 479448,
+          "size": 212
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreScene34_000750D8",
+      "offset": 479448,
+      "size": 212,
+      "source": "src/native_ui_362/refresh_unit_byte6_label_style.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 166,
+      "literal_bytes": 44,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreScene34_000751AC",
+          "offset": 479660,
+          "size": 540
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreScene34_000751AC",
+      "offset": 479660,
+      "size": 540,
+      "source": "src/native_ui_362/initialize_unit_three_row_panel.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 462,
+      "literal_bytes": 76,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "jobs",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreScene34_000868D4",
+          "offset": 551124,
+          "size": 1836
+        }
+      ],
+      "inline_assembly_bytes": 4,
+      "instructions_bytes": 1436,
+      "kind": "mixed",
+      "literal_bytes": 384,
+      "name": "CoreScene34_000868D4",
+      "offset": 551124,
+      "padding_bytes": 16,
+      "size": 1836,
+      "source": "src/authored_mixed_363/0868d4/unit_removal_confirmation.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreGlobal36_00089540",
+          "offset": 562496,
+          "size": 48
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreGlobal36_00089540",
+      "offset": 562496,
+      "size": 48,
+      "source": "src/native_ui_362/native_089540.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 28,
+      "literal_bytes": 20,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreGlobal36_0008A084",
+          "offset": 565380,
+          "size": 20
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreGlobal36_0008A084",
+      "offset": 565380,
+      "size": 20,
+      "source": "src/native_ui_362/native_08a084.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 12,
+      "literal_bytes": 8,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "component": "battle",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_000989AC",
+          "offset": 625068,
+          "size": 220
+        }
+      ],
+      "inline_assembly_bytes": 8,
+      "instructions_bytes": 210,
+      "kind": "mixed",
+      "literal_bytes": 8,
+      "name": "CoreFrontier_000989AC",
+      "offset": 625068,
+      "padding_bytes": 2,
+      "size": 220,
+      "source": "src/authored_mixed_363/0989ac/select_usable_route_prefix.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion30_000A0254",
+          "offset": 655956,
+          "size": 530
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion30_000A0254",
+      "offset": 655956,
+      "size": 530,
+      "source": "src/native_ui_362/0a0254/native_0a0254.c",
+      "trailing_alignment_bytes": 2,
+      "instructions_bytes": 524,
+      "literal_bytes": 4,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_000B43EC",
+          "offset": 738284,
+          "size": 160
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_000B43EC",
+      "offset": 738284,
+      "size": 160,
+      "source": "src/native_ui_362/0b43ec/native_0b43ec.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 128,
+      "literal_bytes": 32,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_000BB5C4",
+          "offset": 767428,
+          "size": 488
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_000BB5C4",
+      "offset": 767428,
+      "size": 488,
+      "source": "src/native_ui_362/0bb5c4/native_0bb5c4.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 472,
+      "literal_bytes": 12,
+      "padding_bytes": 4,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "component": "battle",
+      "dispatch_table_bytes": 20,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_000C7078",
+          "offset": 815224,
+          "size": 314
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 272,
+      "kind": "mixed",
+      "literal_bytes": 40,
+      "name": "CoreFrontier_000C7078",
+      "offset": 815224,
+      "padding_bytes": 2,
+      "size": 314,
+      "source": "src/authored_mixed_363/0c7078/advance_battle_submission.c",
+      "trailing_alignment_bytes": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreConsumer_000C9E00",
+          "offset": 826880,
+          "size": 216
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreConsumer_000C9E00",
+      "offset": 826880,
+      "size": 216,
+      "source": "src/native_ui_362/native_0c9e00.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 198,
+      "literal_bytes": 16,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "missions",
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000E6714",
+          "offset": 943892,
+          "size": 518
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 458,
+      "kind": "mixed",
+      "literal_bytes": 56,
+      "name": "RemainingBand43_000E6714",
+      "offset": 943892,
+      "padding_bytes": 4,
+      "size": 518,
+      "source": "src/authored_mixed_363/0e6714/authored_variant_background_sequence.c",
+      "trailing_alignment_bytes": 2,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "missions",
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000EB740",
+          "offset": 964416,
+          "size": 862
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 810,
+      "kind": "mixed",
+      "literal_bytes": 44,
+      "name": "OriginalActionCallback_000EB740",
+      "offset": 964416,
+      "padding_bytes": 8,
+      "size": 862,
+      "source": "src/authored_mixed_363/0eb740/authored_curved_owner_sequence.c",
+      "trailing_alignment_bytes": 2,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalAuthoredAction_0010CDDC",
+          "offset": 1101276,
+          "size": 1392
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalAuthoredAction_0010CDDC",
+      "offset": 1101276,
+      "size": 1392,
+      "source": "src/native_ui_362/action_target_list_controller.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 1278,
+      "literal_bytes": 108,
+      "padding_bytes": 6,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "missions",
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_001141EC",
+          "offset": 1130988,
+          "size": 368
+        }
+      ],
+      "inline_assembly_bytes": 8,
+      "instructions_bytes": 330,
+      "kind": "mixed",
+      "literal_bytes": 32,
+      "name": "RemainingBand43_001141EC",
+      "offset": 1130988,
+      "padding_bytes": 6,
+      "size": 368,
+      "source": "src/authored_mixed_363/1141ec/authored_dual_sprite_entry.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_00121A48",
+          "offset": 1186376,
+          "size": 284
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_00121A48",
+      "offset": 1186376,
+      "size": 284,
+      "source": "src/native_ui_362/121a48/native_121a48.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 174,
+      "literal_bytes": 100,
+      "padding_bytes": 10,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "missions",
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "ProcessSceneActionRecordSelection",
+          "offset": 1197184,
+          "size": 224
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 220,
+      "kind": "mixed",
+      "literal_bytes": 4,
+      "name": "ProcessSceneActionRecordSelection",
+      "offset": 1197184,
+      "padding_bytes": 0,
+      "size": 224,
+      "source": "src/authored_mixed_363/124480/select_and_place_scene_unit.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "SceneActionDependency_00124560",
+          "offset": 1197408,
+          "size": 232
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "SceneActionDependency_00124560",
+      "offset": 1197408,
+      "size": 232,
+      "source": "src/native_ui_362/124560/native_124560.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 224,
+      "literal_bytes": 8,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "missions",
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_00125DE8",
+          "offset": 1203688,
+          "size": 448
+        }
+      ],
+      "inline_assembly_bytes": 32,
+      "instructions_bytes": 386,
+      "kind": "mixed",
+      "literal_bytes": 56,
+      "name": "CoreRegion_00125DE8",
+      "offset": 1203688,
+      "padding_bytes": 6,
+      "size": 448,
+      "source": "src/authored_mixed_363/125de8/scene_modal_command.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "missions",
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_00126118",
+          "offset": 1204504,
+          "size": 628
+        }
+      ],
+      "inline_assembly_bytes": 12,
+      "instructions_bytes": 548,
+      "kind": "mixed",
+      "literal_bytes": 76,
+      "name": "CoreRegion_00126118",
+      "offset": 1204504,
+      "padding_bytes": 4,
+      "size": 628,
+      "source": "src/authored_mixed_363/126118/scene_transition_command.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "Scene51_001286DC",
+          "offset": 1214172,
+          "size": 44
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Scene51_001286DC",
+      "offset": 1214172,
+      "size": 44,
+      "source": "src/scene_sequence_361/begin_selected_mission_notice.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 38,
+      "literal_bytes": 4,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreContinuation_0012D474",
+          "offset": 1234036,
+          "size": 300
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreContinuation_0012D474",
+      "offset": 1234036,
+      "size": 300,
+      "source": "src/native_ui_362/12d474/check_actor_target_state_rule.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 126,
+      "literal_bytes": 160,
+      "padding_bytes": 14,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreContinuation_0012F48C",
+          "offset": 1242252,
+          "size": 156
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreContinuation_0012F48C",
+      "offset": 1242252,
+      "size": 156,
+      "source": "src/native_ui_362/12f48c/native_12f48c.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 152,
+      "literal_bytes": 4,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "EffectDirect_00132CB8",
+          "offset": 1256632,
+          "size": 204
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "EffectDirect_00132CB8",
+      "offset": 1256632,
+      "size": 204,
+      "source": "src/native_ui_362/132cb8/native_132cb8.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 204,
+      "literal_bytes": 0,
+      "padding_bytes": 0,
+      "dispatch_table_bytes": 0
     }
   ]
 }

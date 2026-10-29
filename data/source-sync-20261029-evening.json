@@ -1,0 +1,45 @@
+{
+  "schema": "source-sync-delta-v1",
+  "date": "2026-10-29",
+  "basis": "Disjoint published original function envelopes; components are source directories, not gameplay completion denominators.",
+  "before_modules": 3752,
+  "before_original_bytes": 497230,
+  "added_modules": 51,
+  "added_original_bytes": 22826,
+  "total_modules": 3803,
+  "total_original_bytes": 520056,
+  "known_original_code_bytes": 1279288,
+  "percent": 40.6519876681404,
+  "components": [
+    {
+      "component": "authored_mixed_363",
+      "added_modules": 16,
+      "added_original_bytes": 8702,
+      "total_modules": 35,
+      "total_original_bytes": 18976,
+      "added_pure_c_bytes": 0,
+      "added_mixed_bytes": 8702
+    },
+    {
+      "component": "native_ui_362",
+      "added_modules": 34,
+      "added_original_bytes": 14080,
+      "total_modules": 331,
+      "total_original_bytes": 96008,
+      "added_pure_c_bytes": 14080,
+      "added_mixed_bytes": 0
+    },
+    {
+      "component": "scene_sequence_361",
+      "added_modules": 1,
+      "added_original_bytes": 44,
+      "total_modules": 37,
+      "total_original_bytes": 14134,
+      "added_pure_c_bytes": 44,
+      "added_mixed_bytes": 0
+    }
+  ],
+  "total_pure_c_original_bytes": 488728,
+  "total_mixed_original_bytes": 31328,
+  "new_upstream_import_bytes": 0
+}
