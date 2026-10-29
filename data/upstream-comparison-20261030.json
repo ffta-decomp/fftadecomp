@@ -1,0 +1,464 @@
+{
+  "as_of": "2026-10-30",
+  "scope": "Complete verified original function envelopes; union by ROM address. Source functions and local compiled modules have different granularity.",
+  "upstream_main": {
+    "functions": 2630,
+    "original_bytes": 272826
+  },
+  "upstream_pr20": {
+    "functions": 2722,
+    "original_bytes": 285742,
+    "additional_functions_over_main": 92,
+    "additional_original_bytes_over_main": 12916
+  },
+  "before": {
+    "our_published_modules": 3803,
+    "our_original_bytes": 520056,
+    "shared_original_bytes": 275950,
+    "upstream_only_original_bytes": 9792,
+    "our_only_original_bytes": 244106
+  },
+  "imported": {
+    "functions": 62,
+    "original_bytes": 9788,
+    "from_unmerged_PR20": 45,
+    "from_main": 17,
+    "deferred_remaining_upstream_only_bytes": 4
+  },
+  "entries": [
+    {
+      "entry": "08010160",
+      "size": 108,
+      "source": "src/08010160.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080111CC",
+      "size": 56,
+      "source": "src/080111CC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08011248",
+      "size": 56,
+      "source": "src/08011248.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0801DE20",
+      "size": 104,
+      "source": "src/0801DE20.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08029864",
+      "size": 248,
+      "source": "src/08029864.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08029C34",
+      "size": 164,
+      "source": "src/08029C34.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0802CA58",
+      "size": 100,
+      "source": "src/0802CA58.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0802F040",
+      "size": 192,
+      "source": "src/0802F040.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08037A30",
+      "size": 596,
+      "source": "src/08037A30.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080385A8",
+      "size": 60,
+      "source": "src/080385A8.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080387F4",
+      "size": 44,
+      "source": "src/080387F4.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08038820",
+      "size": 56,
+      "source": "src/08038820.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080415EC",
+      "size": 604,
+      "source": "src/080415EC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0804CA8C",
+      "size": 36,
+      "source": "src/0804CA8C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0804F8A4",
+      "size": 148,
+      "source": "src/0804F8A4.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0804FD60",
+      "size": 148,
+      "source": "src/0804FD60.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0805D948",
+      "size": 200,
+      "source": "src/0805D948.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08061350",
+      "size": 64,
+      "source": "src/08061350.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08061390",
+      "size": 64,
+      "source": "src/08061390.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0806617C",
+      "size": 840,
+      "source": "src/0806617C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080717CC",
+      "size": 188,
+      "source": "src/080717CC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08072B74",
+      "size": 260,
+      "source": "src/08072B74.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0807408C",
+      "size": 144,
+      "source": "src/0807408C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08079690",
+      "size": 188,
+      "source": "src/08079690.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08079838",
+      "size": 392,
+      "source": "src/08079838.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08080D38",
+      "size": 60,
+      "source": "src/08080D38.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08080E80",
+      "size": 56,
+      "source": "src/08080E80.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08085484",
+      "size": 132,
+      "source": "src/08085484.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08087000",
+      "size": 120,
+      "source": "src/08087000.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08087078",
+      "size": 48,
+      "source": "src/08087078.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080870A8",
+      "size": 56,
+      "source": "src/080870A8.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08089368",
+      "size": 152,
+      "source": "src/08089368.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08089400",
+      "size": 172,
+      "source": "src/08089400.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08089CE4",
+      "size": 128,
+      "source": "src/08089CE4.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0808A008",
+      "size": 124,
+      "source": "src/0808A008.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0808A1EC",
+      "size": 124,
+      "source": "src/0808A1EC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0808B890",
+      "size": 84,
+      "source": "src/0808B890.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0808B92C",
+      "size": 36,
+      "source": "src/0808B92C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080921C8",
+      "size": 72,
+      "source": "src/080921C8.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0809B544",
+      "size": 396,
+      "source": "src/0809B544.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0809D2F8",
+      "size": 176,
+      "source": "src/0809D2F8.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080A5994",
+      "size": 232,
+      "source": "src/080A5994.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080A82C0",
+      "size": 208,
+      "source": "src/080A82C0.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080A93FC",
+      "size": 36,
+      "source": "src/080A93FC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "080D2D54",
+      "size": 140,
+      "source": "src/080D2D54.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0813785C",
+      "size": 144,
+      "source": "src/0813785C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0813EAD4",
+      "size": 144,
+      "source": "src/0813EAD4.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "081456AC",
+      "size": 152,
+      "source": "src/081456AC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08146120",
+      "size": 104,
+      "source": "src/08146120.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08146188",
+      "size": 116,
+      "source": "src/08146188.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "081461FC",
+      "size": 104,
+      "source": "src/081461FC.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "081473E4",
+      "size": 216,
+      "source": "src/081473E4.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147A44",
+      "size": 56,
+      "source": "src/08147A44.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147B28",
+      "size": 124,
+      "source": "src/08147B28.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147BA4",
+      "size": 136,
+      "source": "src/08147BA4.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147C2C",
+      "size": 148,
+      "source": "src/08147C2C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147CC0",
+      "size": 108,
+      "source": "src/08147CC0.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147D94",
+      "size": 148,
+      "source": "src/08147D94.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147E28",
+      "size": 160,
+      "source": "src/08147E28.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147EC8",
+      "size": 136,
+      "source": "src/08147EC8.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "08147F50",
+      "size": 136,
+      "source": "src/08147F50.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    },
+    {
+      "entry": "0814846C",
+      "size": 44,
+      "source": "src/0814846C.c",
+      "new_since_previous": true,
+      "changed_since_previous": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "source-sync-delta-v1",
+  "date": "2026-10-30",
+  "basis": "Disjoint original function ranges; attributed imports are included once and separate from independent recovery throughput.",
+  "before_modules": 3803,
+  "before_original_bytes": 520056,
+  "added_modules": 62,
+  "added_original_bytes": 9788,
+  "total_modules": 3865,
+  "total_original_bytes": 529844,
+  "known_original_code_bytes": 1280908,
+  "percent": 41.36471940217408,
+  "new_upstream_import_bytes": 9788,
+  "total_pure_c_original_bytes": 498516,
+  "total_mixed_original_bytes": 31328,
+  "components": [
+    {
+      "component": "upstream_shubshub_20261030",
+      "added_modules": 62,
+      "added_original_bytes": 9788,
+      "added_pure_c_bytes": 9788,
+      "added_mixed_bytes": 0,
+      "total_modules": 62,
+      "total_original_bytes": 9788
+    }
+  ],
+  "upstream_main_import_functions": 17,
+  "upstream_PR20_import_functions": 45
+}

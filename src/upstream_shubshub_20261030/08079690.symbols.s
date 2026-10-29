@@ -1,0 +1,12 @@
+.global data_03002740
+.set data_03002740, 0x03002740
+.global data_03002818
+.set data_03002818, 0x03002818
+.global data_06005000
+.set data_06005000, 0x06005000
+.global data_06005800
+.set data_06005800, 0x06005800
+.global data_06006000
+.set data_06006000, 0x06006000
+.global data_06007000
+.set data_06007000, 0x06007000

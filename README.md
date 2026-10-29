@@ -24,11 +24,11 @@ original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
-Latest [source synchronization](data/source-sync-20261029-evening.json): **51 modules / 22,826 original bytes added**, with per-component deltas.
+Latest [source synchronization](data/source-sync-20261030.json): **62 verified upstream functions / 9,788 original bytes added**. The [comparison](data/upstream-comparison-20261030.json) includes main and PR #20; attribution is preserved per source and function.
 
-As of **2026-10-29**, the public build contains **3,803 completed modules / 520,056 original bytes**, covering **40.652% of 1,279,288 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
+As of **2026-10-30**, the public build contains **3,865 completed modules / 529,844 original bytes**, covering **41.365% of 1,280,908 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
 
-Of the published total, **161,102 bytes / 1,072 functions** are attributed imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 76,158 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
+Of the published total, **170,890 bytes / 1,134 functions** are attributed imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 77,778 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
 
 Browse the rewritten code in [`src/`](src/README.md), or use [`tools/build_completed.py`](tools/build_completed.py) and the [build guide](docs/build-completed-sources.md). No ROM, story/dialogue text or extracted game assets are supplied.
 
