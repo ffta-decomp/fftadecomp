@@ -12,6 +12,7 @@ from pathlib import Path
 import tempfile
 import time
 import build_rom
+from verify_completed_rom import verify as verify_written_rom
 
 ROOT = Path(__file__).resolve().parents[1]
 def sha(raw): return hashlib.sha256(raw).hexdigest()
@@ -104,6 +105,8 @@ def main():
                 'baseline_build':report,'extension':extension}
     for path in (args.output,args.report):path.parent.mkdir(parents=True,exist_ok=True)
     with args.output.open('xb') as f:f.write(built)
+    # Verify the one actual output file; never build/copy a second image.
+    report['final_file_verification'] = verify_written_rom(args.output, report['output_sha256'], len(built))
     with args.report.open('x') as f:json.dump(report,f,indent=2);f.write('\n')
     print(json.dumps({k:v for k,v in report.items() if k!='modules'},indent=2))
 if __name__=='__main__':main()

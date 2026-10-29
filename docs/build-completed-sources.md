@@ -22,15 +22,19 @@ All three paths must be distinct and outside this checkout. Output and report pa
 
 The source index and build manifest are a frozen release pair. Intentional source changes require updating their hashes and then passing the same retail comparison; they do not qualify merely because the index was edited.
 
-Each invocation compiles all selected modules, without module-result cache reuse. Invocation-owned object files are removed afterwards; the small bootstrapped compiler is retained. The JSON report records each compiled span, total compiled/retained bytes, elapsed time and both whole-image hashes. Check `whole_image_identical: true`; independently `cmp` or `shasum -a 256` the two ROMs if desired.
+Each invocation compiles all selected modules, without module-result cache reuse. Invocation-owned object files are removed afterwards; the small bootstrapped compiler is retained. The JSON report records each compiled span, total compiled/retained bytes, elapsed time and both whole-image hashes. The builder writes one output ROM and verifies its final on-disk SHA-256 before writing a success report. Check `whole_image_identical: true` and `final_file_verification.verified: true`. To recheck an existing ROM, use the verification-only command below; it does not compile or create another image.
 
 ```sh
 python3 tests/test_build_completed.py
-cmp /absolute/private/path/ffta-us.gba /absolute/private/output/rebuilt.gba
+python3 tools/verify_completed_rom.py --rom /absolute/private/output/rebuilt.gba
 ```
 
 Existing `tools/build_rom.py` is the shared compilation implementation. `build_completed.py` supplies the published completed-only selection and strict private-input composition. Do not use the broader historical `config/retail-us.json` as though every unfinished source and asset had been published.
 
 ## Verified release
 
-The [2026-10-28 validation](../data/completed-build-validation.json) compiled all 3,694 modules (468,682 original bytes), with zero module-cache hits. Every selected span matched; independent `cmp` confirmed that the resulting 16 MiB image is identical to the original US ROM. Eleven focused builder/provenance tests passed. No ROM, extracted story text or translation resources are distributed.
+The [current release validation](../data/completed-build-validation.json) records
+the exact module count, original-byte coverage and output hash. Unrecovered
+resources remain in the user's private input. The Pages workflow validates public
+metadata and scripts only: it does not have a ROM and does not repeat ROM builds.
+No ROM, extracted story text or translation resources are distributed.

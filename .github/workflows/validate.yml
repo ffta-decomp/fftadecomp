@@ -1,0 +1,26 @@
+name: Validate source and progress PR
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Validate public artifacts without a private ROM
+        run: |
+          python3 -m pip install --disable-pip-version-check -r tools/requirements-extract.txt
+          python3 tools/check_public_bundle.py
+          python3 tools/update_source_progress.py
+          git diff --exit-code -- data/published-source-progress.json
+          python3 -m unittest discover -s tests -p 'test_*.py'
+          node --check app.js
+          node --check contribute.js
+          node tests/daily.test.cjs
+          node tests/source-progress.test.cjs
+          node tests/functions.test.cjs
