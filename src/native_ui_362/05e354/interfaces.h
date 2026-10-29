@@ -1,0 +1,38 @@
+/* SelectPanelRow receives a full signed working word in R1; the retail callee itself consumes LOW16. */
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef short s16;
+typedef unsigned int u32;
+typedef signed int s32;
+struct Participant;
+struct MissionContext { u8 prefix[0x1199]; u8 state,continuation,second_continuation,stage; u8 gap119D[6]; u8 slot; u8 gap11A4[6]; u8 candidate_count; u8 gap11AB[157]; struct Participant *records[130];void *mission,*unit; };
+extern struct MissionContext *gMissionContext;
+extern u8 ReadPanelOutcome(void), ReadPanelSelection(u8);
+extern s16 ReadPanelIndex(void);
+extern void AssignMissionParticipant(u16), PopulatePanel(void*,int), SelectPanelRow(u8,s32), ClosePanel(u8,u8), ShowRootMessage(struct MissionContext*,u8), SetMessageAdvanceThreshold(u16), ResetParticipantTiles(void);
+extern u32 ResolveProgressChoiceCode(u8);
+__asm__(".global gMissionContext\n.set gMissionContext,0x0200F448");
+__asm__(".global ReadPanelOutcome\n.thumb_set ReadPanelOutcome,0x8060dd5");
+__asm__(".global ReadPanelSelection\n.thumb_set ReadPanelSelection,0x8060e0d");
+__asm__(".global ReadPanelIndex\n.thumb_set ReadPanelIndex,0x8060dc5");
+__asm__(".global AssignMissionParticipant\n.thumb_set AssignMissionParticipant,0x805de31");
+__asm__(".global PopulatePanel\n.thumb_set PopulatePanel,0x805f541");
+__asm__(".global SelectPanelRow\n.thumb_set SelectPanelRow,0x805f59d");
+__asm__(".global ClosePanel\n.thumb_set ClosePanel,0x805f4d9");
+__asm__(".global ShowRootMessage\n.thumb_set ShowRootMessage,0x8061029");
+__asm__(".global SetMessageAdvanceThreshold\n.thumb_set SetMessageAdvanceThreshold,0x80133b1");
+__asm__(".global ResetParticipantTiles\n.thumb_set ResetParticipantTiles,0x80613d1");
+__asm__(".global ResolveProgressChoiceCode\n.thumb_set ResolveProgressChoiceCode,0x805d1c1");
+
+struct GameContext {u8 prefix[16],cursor,count;};
+struct KeyState {u16 held,pressed;};
+extern struct GameContext gGameContext;
+extern struct KeyState gKeys;
+extern void CloseMessage(void),ShowMessage(u8),SetSlotDisplay(u8),SetParticipantSlot(u8),ClearParticipantSlot(u16);
+__asm__(".global gGameContext\n.set gGameContext,0x020020D0");
+__asm__(".global gKeys\n.set gKeys,0x03000000");
+__asm__(".global CloseMessage\n.thumb_set CloseMessage,0x8013365");
+__asm__(".global ShowMessage\n.thumb_set ShowMessage,0x80610f9");
+__asm__(".global SetSlotDisplay\n.thumb_set SetSlotDisplay,0x806144d");
+__asm__(".global SetParticipantSlot\n.thumb_set SetParticipantSlot,0x8060e25");
+__asm__(".global ClearParticipantSlot\n.thumb_set ClearParticipantSlot,0x805ddc9");

@@ -14,6 +14,7 @@ def check_text(content):
 
 def check(root=ROOT):
     checked=0
+    if (root/'private').exists():raise ValueError('private operations directory must never be published')
     shared=(root/'AGENTS.md').read_text()
     if any(x in shared for x in ('AGENTS.local.md','assignment.md','runtime-inputs.json','worker2-task-queue')):
         raise ValueError('private coordination belongs outside shared AGENTS')

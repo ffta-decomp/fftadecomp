@@ -24,9 +24,11 @@ original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
-As of **2026-10-28**, the public build contains **3,694 completed modules / 468,682 original bytes**, covering **36.654% of 1,278,650 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
+Latest [source synchronization](data/source-sync-20261029.json): **58 modules / 28,548 original bytes added**, with per-component deltas.
 
-Of the published total, **161,102 bytes / 1,072 functions** are attributed imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 75,520 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
+As of **2026-10-29**, the public build contains **3,752 completed modules / 497,230 original bytes**, covering **38.868% of 1,279,288 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
+
+Of the published total, **161,102 bytes / 1,072 functions** are attributed imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 76,158 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
 
 Browse the rewritten code in [`src/`](src/README.md), or use [`tools/build_completed.py`](tools/build_completed.py) and the [build guide](docs/build-completed-sources.md). No ROM, story/dialogue text or extracted game assets are supplied.
 
@@ -53,7 +55,8 @@ Public progress reports project-level output only; worker counts and per-worker 
 
 - [`src/`](src/README.md): completed recovered C and explicitly identified mixed modules.
 - [`src/completed-index.json`](src/completed-index.json): original ROM entries, sizes and source hashes.
-- [`tools/build_completed.py`](tools/build_completed.py): compile the published selection, validate every module, and compose a byte-identical private image.
+- [`tools/build_completed.py`](tools/build_completed.py): build one private ROM and verify its final on-disk SHA-256.
+- [`tools/verify_completed_rom.py`](tools/verify_completed_rom.py): verify an existing ROM without recompilation or a second output.
 - [`docs/build-completed-sources.md`](docs/build-completed-sources.md): prerequisites, verification and build scope.
 
 Install Python 3.10+, Clang, Make and `arm-none-eabi` binutils, then:

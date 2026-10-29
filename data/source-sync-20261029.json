@@ -1,0 +1,72 @@
+{
+  "schema": "source-sync-delta-v1",
+  "date": "2026-10-29",
+  "basis": "Disjoint published original function envelopes; components are source directories, not gameplay completion denominators.",
+  "before_modules": 3694,
+  "before_original_bytes": 468682,
+  "added_modules": 58,
+  "added_original_bytes": 28548,
+  "total_modules": 3752,
+  "total_original_bytes": 497230,
+  "known_original_code_bytes": 1279288,
+  "percent": 38.8677139158657,
+  "components": [
+    {
+      "component": "authored_mixed_363",
+      "added_modules": 4,
+      "added_original_bytes": 3132,
+      "total_modules": 19,
+      "total_original_bytes": 10274,
+      "added_pure_c_bytes": 0,
+      "added_mixed_bytes": 3132
+    },
+    {
+      "component": "native_ui_362",
+      "added_modules": 46,
+      "added_original_bytes": 23734,
+      "total_modules": 297,
+      "total_original_bytes": 81928,
+      "added_pure_c_bytes": 23734,
+      "added_mixed_bytes": 0
+    },
+    {
+      "component": "scene_sequence_361",
+      "added_modules": 3,
+      "added_original_bytes": 1448,
+      "total_modules": 36,
+      "total_original_bytes": 14090,
+      "added_pure_c_bytes": 1448,
+      "added_mixed_bytes": 0
+    },
+    {
+      "component": "text_context_value_callbacks",
+      "added_modules": 1,
+      "added_original_bytes": 20,
+      "total_modules": 1,
+      "total_original_bytes": 20,
+      "added_pure_c_bytes": 20,
+      "added_mixed_bytes": 0
+    },
+    {
+      "component": "text_count_callbacks",
+      "added_modules": 2,
+      "added_original_bytes": 130,
+      "total_modules": 2,
+      "total_original_bytes": 130,
+      "added_pure_c_bytes": 130,
+      "added_mixed_bytes": 0
+    },
+    {
+      "component": "utf16_buffer_helpers",
+      "added_modules": 2,
+      "added_original_bytes": 84,
+      "total_modules": 2,
+      "total_original_bytes": 84,
+      "added_pure_c_bytes": 84,
+      "added_mixed_bytes": 0
+    }
+  ],
+  "total_pure_c_original_bytes": 474604,
+  "total_mixed_original_bytes": 22626,
+  "new_upstream_import_bytes": 0
+}
