@@ -2,7 +2,6 @@ name: Build and verify source hashes
 
 on:
   push:
-    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -11,6 +10,7 @@ permissions:
 
 jobs:
   source-hashes:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:
@@ -25,6 +25,38 @@ jobs:
           git submodule update --init vendor/agbcc
           python3 tools/bootstrap.py
       - name: Test verifier
-        run: python3 -m unittest discover -s tests -p test_build_source_hashes.py
+        run: |
+          python3 -m unittest discover -s tests -p test_build_source_hashes.py
+          node --test tests/test_source_hash_comments.cjs
       - name: Build and verify selected source ranges
-        run: python3 tools/build_source_hashes.py --jobs 4
+        id: verify
+        env:
+          BASE_BRANCH: ${{ github.base_ref || 'main' }}
+          IS_MAIN: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+          REPORT: ${{ runner.temp }}/source-hash-summary.md
+        run: |
+          if [ "$IS_MAIN" = "true" ]; then
+            python3 tools/build_source_hashes.py --jobs 4
+          else
+            git fetch --no-tags --depth=1 origin "$BASE_BRANCH"
+            python3 tools/build_source_hashes.py --jobs 4 --base-ref FETCH_HEAD --summary "$REPORT"
+          fi
+
+      - name: Publish job summary
+        if: always() && (github.event_name == 'pull_request' || github.ref != 'refs/heads/main')
+        env:
+          REPORT: ${{ runner.temp }}/source-hash-summary.md
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+        run: |
+          if [ ! -s "$REPORT" ]; then
+            printf '## Source hash verification\n\nComparison did not produce a report (build step: %s). See the run logs.\n' "$VERIFY_OUTCOME" > "$REPORT"
+          fi
+          cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
+      - name: Make report available to the PR commenter
+        if: always() && (github.event_name == 'pull_request' || github.ref != 'refs/heads/main')
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-hash-summary
+          path: ${{ runner.temp }}/source-hash-summary.md
+          retention-days: 1
+          if-no-files-found: error
