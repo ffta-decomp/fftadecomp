@@ -1,0 +1,199 @@
+{
+  "schema": "matching-rule-index-v1",
+  "rules": [
+    {
+      "id": "width",
+      "keywords": [
+        "width",
+        "signed",
+        "unsigned",
+        "narrowing",
+        "宽度",
+        "符号",
+        "截断"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Widths and destructive arithmetic"
+    },
+    {
+      "id": "layout",
+      "keywords": [
+        "stride",
+        "struct",
+        "array",
+        "record",
+        "布局",
+        "步长",
+        "结构体"
+      ],
+      "document": "boundary-and-abi.md",
+      "heading": "Physical memory map"
+    },
+    {
+      "id": "stack",
+      "keywords": [
+        "stack",
+        "frame",
+        "OUT",
+        "scalar",
+        "栈",
+        "栈帧",
+        "输出对象"
+      ],
+      "document": "boundary-and-abi.md",
+      "heading": "Stack objects and helper contracts"
+    },
+    {
+      "id": "snapshot",
+      "keywords": [
+        "reload",
+        "alias",
+        "snapshot",
+        "volatile",
+        "重载",
+        "快照",
+        "别名"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Snapshots, reloads and ordered effects"
+    },
+    {
+      "id": "arithmetic",
+      "keywords": [
+        "multiply",
+        "shift",
+        "destructive",
+        "算术",
+        "乘法",
+        "移位"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Widths and destructive arithmetic"
+    },
+    {
+      "id": "blocks",
+      "keywords": [
+        "asmdiff",
+        "shifted",
+        "moved",
+        "blocks",
+        "tail",
+        "CFG",
+        "错位",
+        "偏移",
+        "共享尾",
+        "代码块",
+        "代码错位"
+      ],
+      "document": "mismatch-diagnosis.md",
+      "heading": "Code displacement and call setup"
+    },
+    {
+      "id": "loop",
+      "keywords": [
+        "loop",
+        "counter",
+        "induction",
+        "循环",
+        "计数器"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Control flow, phases and loops"
+    },
+    {
+      "id": "register",
+      "keywords": [
+        "register",
+        "allocation",
+        "lifetime",
+        "寄存器",
+        "生命周期"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Registers and truthful constraints"
+    },
+    {
+      "id": "constraint",
+      "keywords": [
+        "constraint",
+        "fixed",
+        "register",
+        "empty",
+        "asm",
+        "约束",
+        "空汇编",
+        "固定寄存器"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Registers and truthful constraints"
+    },
+    {
+      "id": "arguments",
+      "keywords": [
+        "ABI",
+        "arguments",
+        "parameter",
+        "order",
+        "call",
+        "参数",
+        "参数顺序",
+        "参数错位",
+        "调用"
+      ],
+      "document": "boundary-and-abi.md",
+      "heading": "Stack objects and helper contracts"
+    },
+    {
+      "id": "constants",
+      "keywords": [
+        "literal",
+        "pool",
+        "constant",
+        "常量",
+        "常量池"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Objects and address formation"
+    },
+    {
+      "id": "linkage",
+      "keywords": [
+        "link",
+        "branch",
+        "veneer",
+        "placement",
+        "链接",
+        "跳板",
+        "放置"
+      ],
+      "document": "patterns.md",
+      "heading": "Address definitions and linkage"
+    },
+    {
+      "id": "syntax",
+      "keywords": [
+        "syntax",
+        "error",
+        "operands",
+        "语法",
+        "操作数",
+        "编译错误"
+      ],
+      "document": "reconstruction.md",
+      "heading": "C89 and readable naming"
+    },
+    {
+      "id": "controller",
+      "keywords": [
+        "phase",
+        "switch",
+        "dispatcher",
+        "状态机",
+        "分派",
+        "阶段"
+      ],
+      "document": "reconstruction.md",
+      "heading": "Control flow, phases and loops"
+    }
+  ]
+}

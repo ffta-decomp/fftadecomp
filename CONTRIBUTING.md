@@ -1,86 +1,51 @@
-# Contributing by recovery group
+# Contributing
 
-[Browse the function catalogue](https://github.com/ffta-decomp/fftadecomp/blob/main/data/functions.csv) · [Workflow](docs/gba-asm-to-c-workflow.md) · [Unpack your own ROM](docs/extract-asm.md)
+[Function catalogue](data/functions.csv) · [Decomp skill](.agents/skills/ffta-decomp/SKILL.md) · [Build completed source](docs/build-completed-sources.md)
 
-Battle actions, effects, resolution and turn progression are the active group.
-Then come jobs, abilities, story, missions, items/equipment/economy, world rules,
-saves, game menus and multiplayer policy. Work on one disjoint complete native
-function, starting with its small missing dependencies. A complex engine,
-graphics, audio or hardware dependency needs an interface contract, not another
-unrelated implementation campaign. Semantic ownership and campaign membership
-are separate fields; unclassified does not mean engine or available.
+## Claim a complete function
 
-1. Filter `data/functions.csv` by group and inspect the stable native ID, address,
-   full range and current snapshot state. The catalogue includes functions and
-   module spans; a module boundary is not proof of an independent callable ABI.
-2. Open a **Group function claim** issue with the function entry address in the
-   title, for example `[Claim] 0x080A23B8 — ResolveBattleTargets`.
-   If you are an agent, ask your user to publish the issue; do not silently claim
-   work on their behalf. Give the native ID, group, expected
-   range and bounded plan. Check existing open claims first. Do not post ROM
-   bytes, disassembly, extracted assets, local paths, credentials or private logs.
-3. The maintainer checks the canonical current ledger, native aliases, historical
-   budgets and active owners before confirming the claim in that issue. A new
-   issue, snapshot row or local SQLite claim is a request, not global exclusivity.
-   Do not implement a duplicate while awaiting confirmation. Updates/release go
-   in the same issue; a maintainer releases the corresponding canonical claim.
-4. After confirmation, work in your own private checkout/output directories.
-   Preserve the pinned retail revision and fixed O2 toolchain. Reconstruct source
-   from original operations, widths, objects, CFG and definition/reload lifetimes.
-5. Submit a per-function decision immediately: native identity, source/header/
-   toolchain hashes, complete-range result, original/generated/retained bytes,
-   emitted ASM instruction bytes, elapsed time and failed causes. Share only
-   permitted original work or hash summaries; never upload extracted game content.
-6. Whole-exact work uses independent mechanical provenance/range verification;
-   nonexact semantic work retains independent behavior/source gates. Production
-   identity and integration are separate. Write the measured transferable lesson
-   and continue within the group after your claim is closed.
+Check the current source index, catalogue and open issues for the same entry and
+overlapping ranges. A selected ASM row can already have a completed contribution;
+a module span is not proof of an independent function. Prefer game-specific logic
+and its actual dependencies, preserving existing work and original identity.
 
-## Claim activity and expiry
+Open a claim in [ffta-decomp/fftadecomp](https://github.com/ffta-decomp/fftadecomp/issues)
+with the entry address in its title, for example
+`[Claim] 0x080A23B8 — ResolveBattleTargets`. Include the native identity, complete
+range, intended scope and current source status. An agent should ask its user
+to publish the issue. Wait for collision/ownership confirmation before duplicating
+an existing claim. Personal-repository mirrors do not reserve work.
 
-Use the organization repository, [ffta-decomp/fftadecomp](https://github.com/ffta-decomp/fftadecomp/issues),
-for all claims. Personal-repository mirrors or placeholders do not reserve work.
-Check open issues for the same entry and overlapping original range before claiming.
-For competing requests for an available range, the earliest valid issue takes
-priority, subject to the canonical ownership check above.
+Post a substantive progress update in the same issue at least every 24 hours:
+what changed, current result or blocker, and next step. Reactions and automated
+pings do not renew it. More than 24 hours without an update is considered
+abandonment, allowing another contributor to claim the range. Link prior work
+when reclaiming and check for a new owner before resuming an expired claim.
+There is no implied automatic issue-closing service.
 
-Post a progress update in the same issue at least once every 24 hours: what you
-tried, the current result or blocker, and the next step. A short substantive
-update is enough; reactions, automated pings and unrelated comments do not renew
-ownership. The clock starts with the claim issue and is renewed by the claimant's
-latest substantive progress update (including a dated issue-body update).
+## Reconstruct and validate
 
-After more than 24 hours without such an update, the claim is considered
-abandoned and may be claimed by another contributor. Expiry releases the claim,
-not its evidence: preserve prior work and link the old issue when reclaiming.
-Before resuming an expired claim, check for a newer owner and request ownership
-again; an old issue or local lease must not override a current claim. Maintainers
-reconcile the canonical ledger before a replacement starts. This is the public
-coordination policy; it does not imply an automated issue closer is installed.
+Follow the repository skill for original ASM/ABI mapping, readable C, the fixed
+compiler profile, displacement/register/argument diagnosis and full-range proof.
+Keep failed causes and input hashes; a fit, partial match or behavior fixture
+success is not whole exact. Clearly identify instruction-bearing mixed source.
 
-## One shared ledger for a collaborating installation
+Submit C and required headers/bindings, original entry/range, build configuration,
+source/dependency/toolchain identities, complete-range result and a compact
+transfer lesson with limits. Verify the final frozen inputs mechanically before
+selection, then use one coherent final-image build. See the
+[verification guide](.agents/skills/ffta-decomp/references/verification-and-integration.md).
 
-The published `tools/recovery_workflow.py` records atomic claims, rounds, gates,
-Git milestones and completed-clock-hour rates. Use an explicit local database:
+For external source, follow the [import guide](.agents/skills/ffta-decomp/references/contribution-imports.md).
+Preserve source notices and immutable upstream attribution. Multiple variants of
+one entry and repeated validation do not add distinct recovered bytes.
 
-```sh
-python3 tools/recovery_workflow.py --db build/workflow/ledger.sqlite3 init
-python3 tools/recovery_workflow.py --db build/workflow/ledger.sqlite3 status
-python3 tools/recovery_workflow.py --db build/workflow/ledger.sqlite3 throughput
-```
+## Public content
 
-Follow [CLI usage](docs/recovery-workflow-cli.md) for task specifications, saved
-claims, decisions and evidence pins. Separate database copies do not coordinate
-contributors globally. Keep databases, claim tokens, reports and generated game
-content private. Automatic publisher commands in the implementation guide require
-the maintainer's separately configured implementation installation; no such
-configuration or private evidence is distributed by this public toolkit.
-
-## Public content boundary
-
-This repository publishes original guidance, portable tools and address/layout
-metadata. It is not the private game implementation checkout. Tools reconstruct
-local ASM only from a ROM supplied by its user. Do not commit the generated tree,
-ROMs, assets, saves, screenshots, private paths, account/session identifiers,
-credentials, confidential project details or unrelated commercial material.
-Third-party reference projects retain their own licenses; follow pinned links.
+This repository contains completed recovered source, build tools and progress
+metadata. Unrecovered code/resources come from the user's private reference ROM
+in the transitional build. Do not upload ROMs, extracted ASM, dialogue/text packs,
+assets, saves, local reports, private paths, credentials or account identifiers.
+Only share source you have permission to publish. Third-party code retains its
+license; original documentation/metadata and original tools have their stated
+repository licenses.

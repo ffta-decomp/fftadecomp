@@ -1,22 +1,22 @@
 # FFTA Decompilation Sources and Toolkit
 
-[Open the dashboard](https://ffta-decomp.github.io/fftadecomp/) · [Contributor guide](CONTRIBUTING.md) · [Workflow library](docs/README.md) · [Function catalogue](data/functions.csv) · [Local unpacking](docs/extract-asm.md)
+[Open the dashboard](https://ffta-decomp.github.io/fftadecomp/) · [Contributor guide](CONTRIBUTING.md) · [Decomp skill](.agents/skills/ffta-decomp/SKILL.md) · [Function catalogue](data/functions.csv) · [Local unpacking](docs/extract-asm.md)
 
 Recovered C/mixed source, reproducible private-ROM builds, and progress reporting for Final Fantasy Tactics Advance (USA).
 
 - [Published source progress](data/published-source-progress.json): verified source coverage, including attributed upstream imports.
-- [Recovery ledger](data/progress.json): dated local/peer/integration statistics, separate from source-release coverage.
+- [Recovery progress](data/progress.json): dated validation and integration statistics, separate from source-release coverage.
 - [Submodules](data/submodules.json): each `current` record uses the same accounting.
-- [Activity ledger aggregates](data/workflow.json): separate local, independent and integration gates.
+- [Validation summaries](data/workflow.json): function validation and integration results.
 - [Resource spans](data/resource-addresses.csv).
 
-Exact C combines the validated ROM snapshot and registered local exact spans after range deduplication. Local results do not automatically become integrated C. Bytes include constants/alignment; they are not game-completion percentages. A dedicated scheduler publishes one consolidated snapshot daily at 23:55 Asia/Shanghai without an LLM. Routine internal updates do not publish. Local ledger records remain immediate; updates may be delayed while the host is offline.
+Progress uses deduplicated original code ranges, including function-owned constants/alignment. Source coverage, local validation and integration are distinct; none is a gameplay-completion percentage. See the linked machine-readable summaries for their exact scope and dates.
 
 This public repository contains completed recovered C/mixed source, aggregate metadata, portable build tools and recovery guidance. It does not distribute ROMs, story/dialogue text, translations, extracted game assets, private task records or private evidence. Historical display artwork credits remain in [assets/ATTRIBUTION.md](assets/ATTRIBUTION.md). The project is unofficial. Original documentation and metadata are [CC BY 4.0](LICENSE).
 
-Daily history comes from `progress.json.dashboard.daily`. Dates use Asia/Shanghai (UTC+8) and original receipt occurrence times. Range unions prevent duplicate recovery credit; pure C and eligible mixed remain separate, and integration is a separate gate. Cumulative curves include dated ledger receipts only. Current baseline bytes without a local delivery date remain explicitly undated rather than being assigned to a historical day. The current day is partial. Revoked receipts disappear on refresh. The percentage denominator is the pinned known original ASM catalogue, not ROM size or whole-game completion.
+Dashboard history and published-source coverage use their own dated metadata. Undated ranges remain undated, and each original range is counted once.
 
-The workflow library preserves docs/ and tools/ paths. `data/functions.json` and `data/asm-layout.json` publish native identities and reconstruction layout only, with explicit snapshot scope. Use your own pinned ROM to generate the matching ASM directory privately. Public Issue claims require canonical maintainer confirmation. See [CONTRIBUTING.md](CONTRIBUTING.md).
+The [repository-level skill](.agents/skills/ffta-decomp/SKILL.md) is the maintained ASM-to-C, diagnosis, verification and integration guide. It is included in the checkout and does not require a global skill installation. [Documentation](docs/README.md) links specialized setup and reference material.
 
 Consumers can explicitly select [optional source/resource build extensions](docs/optional-build-extensions.md)
 without editing vendored toolkit code. Extended outputs are separate from
@@ -43,13 +43,11 @@ Browse the rewritten code in [`src/`](src/README.md), or use [`tools/build_compl
 | [Tonc](https://gbadev.net/tonc/), [libtonc](https://github.com/devkitPro/libtonc), [libgba](https://github.com/devkitPro/libgba), [GBATEK](https://rust-console.github.io/gbatek-gbaonly/) | ARM7TDMI/ARMv4T, BIOS, memory-map and access-width reference checks. Historical FFTA ABI/layout still comes from the original target. |
 | [Capstone](https://github.com/capstone-engine/capstone), [GNU Binutils](https://www.gnu.org/software/binutils/), [Unicorn](https://github.com/unicorn-engine/unicorn), [mGBA](https://github.com/mgba-emu/mgba) | Decoding, native assembly/link/extraction, bounded CPU cases and emulator validation infrastructure; these provide different evidence gates. |
 
-The [pinned reference table](vendor/README.md), [47-resource collection](docs/gba-asm-to-c-resources.md), [pokeemerald study](docs/pokeemerald-reconstruction-reference.md) and [EDS study](docs/eds-matching-reference.md) record concrete examples, limitations and upstream links. Other indexed projects are optional references; a clone is not evidence of adoption or a measured gain. Upstream copyrights and licenses remain with their authors. Upstream source notices are preserved where applicable; this repository does not relicense upstream contributions or distribute ROMs or game assets.
+The [pinned reference table](vendor/README.md), [resource collection](docs/gba-asm-to-c-resources.md), [source-shape guide](.agents/skills/ffta-decomp/references/reconstruction.md) and [diagnosis guide](.agents/skills/ffta-decomp/references/mismatch-diagnosis.md) record concrete examples, limitations and upstream links. Other indexed projects are optional references; a clone is not evidence of adoption or a measured gain. Upstream copyrights and licenses remain with their authors. Upstream source notices are preserved where applicable; this repository does not relicense upstream contributions or distribute ROMs or game assets.
 
-### Reproduction validation
+### Recovery workflow
 
-The release [validation summary](data/toolkit-validation.json) records two identical clean generated ASM trees: **4,240 paths**, including **4,236 native files reassembled byte-for-byte** and four interface-only files. The [executable walkthrough](docs/reproduce-recovery.md) covers setup, pinned-ROM unpacking, single-method compilation/preflight, independent gates and structured round records. This validates the reference/tool workflow and grants no new game-recovery credit.
-
-Public progress reports project-level output only; worker counts and per-worker performance are not published.
+Use the [skill](.agents/skills/ffta-decomp/SKILL.md) for original boundaries and ABI, fixed-profile C, diagnostic rules, full-range proof, contribution imports and one-image integration. The [extraction validation](data/toolkit-validation.json) records the separately tested private-ROM unpacking tools.
 
 ## Source and build quick start
 

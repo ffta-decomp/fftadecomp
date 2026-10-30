@@ -1,5 +1,3 @@
-> Public toolkit edition. Local assignments, evidence and game implementations are not distributed. See [the contributor guide](../CONTRIBUTING.md).
-
 # GBA ASM-to-C resource collection
 
 The supplied collection contains **47 resource entries and 23 distinct GitHub repositories**. All 23 have local reference checkouts: 19 newly cloned, four preserved at their existing revisions. Duplicate links keep their original R01-R47 identities. Full revisions, notice-file locations and provenance are in the [docs/gba-asm-to-c-resources.json](gba-asm-to-c-resources.json).
