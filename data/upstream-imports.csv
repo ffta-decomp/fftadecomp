@@ -1133,3 +1133,5 @@ entry,original_bytes,origin,upstream_repository,upstream_commit,upstream_source,
 0x08147EC8,136,upstream_import,https://github.com/shubshub/fftadecomp,43f7f78cfe893ab4d99d2004e0740459589bfb5c,src/08147EC8.c,src/upstream_shubshub_20261030/08147EC8.c,local_whole_exact
 0x08147F50,136,upstream_import,https://github.com/shubshub/fftadecomp,43f7f78cfe893ab4d99d2004e0740459589bfb5c,src/08147F50.c,src/upstream_shubshub_20261030/08147F50.c,local_whole_exact
 0x0814846C,44,upstream_import,https://github.com/shubshub/fftadecomp,43f7f78cfe893ab4d99d2004e0740459589bfb5c,src/0814846C.c,src/upstream_shubshub_20261030/0814846C.c,local_whole_exact
+0x801e6d4,16,upstream_import,https://github.com/shubshub/fftadecomp,c9e042201cbff2afeb0108cda849e8eb036ee382,src/0801E610.c,src/contributed_gg_20261030/CoreFrontier_0001E6D4.c,local_whole_exact
+0x8a39770,4,upstream_import,https://github.com/shubshub/fftadecomp,c9e042201cbff2afeb0108cda849e8eb036ee382,src/08020FC8.c,src/contributed_gg_20261030/Embedded42_00A39770.c,local_whole_exact

@@ -105328,6 +105328,2247 @@
       "upstream_repository": "https://github.com/shubshub/fftadecomp",
       "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
       "upstream_source": "src/0814846C.c"
+    },
+    {
+      "name": "FormatSignedDecimalAscii6",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/FormatSignedDecimalAscii6.c",
+      "offset": 11752,
+      "size": 100,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "FormatSignedDecimalAscii6",
+          "link_symbol": "f_target",
+          "offset": 11752,
+          "size": 100
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreFrontier_0000A10C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreFrontier_0000A10C.c",
+      "offset": 41228,
+      "size": 72,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreFrontier_0000A10C",
+          "link_symbol": "f_target",
+          "offset": 41228,
+          "size": 72
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Source52_0000BC4C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Source52_0000BC4C.c",
+      "offset": 48204,
+      "size": 68,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Source52_0000BC4C",
+          "link_symbol": "f_target",
+          "offset": 48204,
+          "size": 68
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Buffer55_0000DDB0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Buffer55_0000DDB0.c",
+      "offset": 56752,
+      "size": 12,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Buffer55_0000DDB0",
+          "link_symbol": "f_target",
+          "offset": 56752,
+          "size": 12
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Buffer55_0000DE14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Buffer55_0000DE14.c",
+      "offset": 56852,
+      "size": 12,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Buffer55_0000DE14",
+          "link_symbol": "f_target",
+          "offset": 56852,
+          "size": 12
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Buffer55_0000DE64",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Buffer55_0000DE64.c",
+      "offset": 56932,
+      "size": 12,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Buffer55_0000DE64",
+          "link_symbol": "f_target",
+          "offset": 56932,
+          "size": 12
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreGlobal36_0001AE34",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_0001AE34.c",
+      "offset": 110132,
+      "size": 20,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreGlobal36_0001AE34",
+          "link_symbol": "f_target",
+          "offset": 110132,
+          "size": 20
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreGlobal36_0001AE48",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_0001AE48.c",
+      "offset": 110152,
+      "size": 16,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreGlobal36_0001AE48",
+          "link_symbol": "f_target",
+          "offset": 110152,
+          "size": 16
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreFrontier_0001E6D4",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreFrontier_0001E6D4.c",
+      "offset": 124628,
+      "size": 16,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreFrontier_0001E6D4",
+          "link_symbol": "f_target",
+          "offset": 124628,
+          "size": 16
+        }
+      ],
+      "contributor": "gg",
+      "origin": "upstream_import",
+      "upstream_provenance": {
+        "repository": "https://github.com/shubshub/fftadecomp",
+        "commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+        "original_file": "src/0801E610.c",
+        "upstream_source_sha256": "b308a482652fefeb16129f9e3350c72e95360800cc776ba6ce07030ec019ed19",
+        "adaptation": "The submitted version reads offsets 28 and 29 rather than upstream offsets 0 and 1.",
+        "provenance": "Original authorship retained; adapted contribution submitted by gg."
+      },
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+      "upstream_source": "src/0801E610.c"
+    },
+    {
+      "name": "CoreGlobal36_00022044",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_00022044.c",
+      "offset": 139332,
+      "size": 36,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreGlobal36_00022044",
+          "link_symbol": "f_target",
+          "offset": 139332,
+          "size": 36
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreGlobal36_00022E58",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_00022E58.c",
+      "offset": 142936,
+      "size": 56,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreGlobal36_00022E58",
+          "link_symbol": "f_target",
+          "offset": 142936,
+          "size": 56
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreDependency29_000231C0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreDependency29_000231C0.c",
+      "offset": 143808,
+      "size": 24,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreDependency29_000231C0",
+          "link_symbol": "f_target",
+          "offset": 143808,
+          "size": 24
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "SceneTaskDependency_0002ACD4",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_0002ACD4.c",
+      "offset": 175316,
+      "size": 128,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "SceneTaskDependency_0002ACD4",
+          "link_symbol": "f_target",
+          "offset": 175316,
+          "size": 128
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "TaskConstructor45_0002BAF8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/TaskConstructor45_0002BAF8.c",
+      "offset": 178936,
+      "size": 120,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "TaskConstructor45_0002BAF8",
+          "link_symbol": "f_target",
+          "offset": 178936,
+          "size": 120
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_000312A8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000312A8.c",
+      "offset": 201384,
+      "size": 36,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_000312A8",
+          "link_symbol": "f_target",
+          "offset": 201384,
+          "size": 36
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_000312F0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000312F0.c",
+      "offset": 201456,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_000312F0",
+          "link_symbol": "f_target",
+          "offset": 201456,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_000316D0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000316D0.c",
+      "offset": 202448,
+      "size": 56,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_000316D0",
+          "link_symbol": "f_target",
+          "offset": 202448,
+          "size": 56
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_000318D0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000318D0.c",
+      "offset": 202960,
+      "size": 12,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_000318D0",
+          "link_symbol": "RefreshEligibleMissionQueue",
+          "offset": 202960,
+          "size": 12
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_000318DC",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000318DC.c",
+      "offset": 202972,
+      "size": 12,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_000318DC",
+          "link_symbol": "RefreshEligibleMissionQueue",
+          "offset": 202972,
+          "size": 12
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_00031978",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_00031978.c",
+      "offset": 203128,
+      "size": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "CoreRegion_00031978",
+          "link_symbol": "f_target",
+          "offset": 203128,
+          "size": 2
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_0003FB50",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_0003FB50.c",
+      "offset": 260944,
+      "size": 208,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_0003FB50",
+          "link_symbol": "f_target",
+          "offset": 260944,
+          "size": 208
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_000412D0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000412D0.c",
+      "offset": 266960,
+      "size": 208,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_000412D0",
+          "link_symbol": "f_target",
+          "offset": 266960,
+          "size": 208
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_0004FB38",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_0004FB38.c",
+      "offset": 326456,
+      "size": 76,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_0004FB38",
+          "link_symbol": "f_target",
+          "offset": 326456,
+          "size": 76
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "SceneTaskDependency_00053648",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_00053648.c",
+      "offset": 341576,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "SceneTaskDependency_00053648",
+          "link_symbol": "f_target",
+          "offset": 341576,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "SceneTaskDependency_000537A8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_000537A8.c",
+      "offset": 341928,
+      "size": 372,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "SceneTaskDependency_000537A8",
+          "link_symbol": "f_target",
+          "offset": 341928,
+          "size": 372
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "SceneTaskDependency_000581AC",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_000581AC.c",
+      "offset": 360876,
+      "size": 412,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "SceneTaskDependency_000581AC",
+          "link_symbol": "f_target",
+          "offset": 360876,
+          "size": 412
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreClosure31_00058348",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_00058348.c",
+      "offset": 361288,
+      "size": 128,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreClosure31_00058348",
+          "link_symbol": "f_target",
+          "offset": 361288,
+          "size": 128
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreClosure31_000586E0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_000586E0.c",
+      "offset": 362208,
+      "size": 60,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreClosure31_000586E0",
+          "link_symbol": "f_target",
+          "offset": 362208,
+          "size": 60
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "SceneTaskDependency_0005C520",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_0005C520.c",
+      "offset": 378144,
+      "size": 72,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "SceneTaskDependency_0005C520",
+          "link_symbol": "f_target",
+          "offset": 378144,
+          "size": 72
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion30_0005F708",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion30_0005F708.c",
+      "offset": 390920,
+      "size": 106,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "CoreRegion30_0005F708",
+          "link_symbol": "f_target",
+          "offset": 390920,
+          "size": 106
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingCore48_000615C8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingCore48_000615C8.c",
+      "offset": 398792,
+      "size": 24,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingCore48_000615C8",
+          "link_symbol": "f_target",
+          "offset": 398792,
+          "size": 24
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "SceneRegisteredRoot_00061778",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneRegisteredRoot_00061778.c",
+      "offset": 399224,
+      "size": 76,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "SceneRegisteredRoot_00061778",
+          "link_symbol": "f_target",
+          "offset": 399224,
+          "size": 76
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreClosure31_0006B338",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_0006B338.c",
+      "offset": 439096,
+      "size": 296,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreClosure31_0006B338",
+          "link_symbol": "f_target",
+          "offset": 439096,
+          "size": 296
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreClosure31_0006B460",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_0006B460.c",
+      "offset": 439392,
+      "size": 100,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreClosure31_0006B460",
+          "link_symbol": "f_target",
+          "offset": 439392,
+          "size": 100
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Registered39_00071374",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Registered39_00071374.c",
+      "offset": 463732,
+      "size": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "Registered39_00071374",
+          "link_symbol": "f_target",
+          "offset": 463732,
+          "size": 2
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreScene34_000748A8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreScene34_000748A8.c",
+      "offset": 477352,
+      "size": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "CoreScene34_000748A8",
+          "link_symbol": "f_target",
+          "offset": 477352,
+          "size": 2
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "IsolatedCore57_00085378",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/IsolatedCore57_00085378.c",
+      "offset": 545656,
+      "size": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "IsolatedCore57_00085378",
+          "link_symbol": "f_target",
+          "offset": 545656,
+          "size": 2
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreGlobal36_000894AC",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_000894AC.c",
+      "offset": 562348,
+      "size": 146,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "CoreGlobal36_000894AC",
+          "link_symbol": "f_target",
+          "offset": 562348,
+          "size": 146
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegion_00089C4C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_00089C4C.c",
+      "offset": 564300,
+      "size": 56,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegion_00089C4C",
+          "link_symbol": "f_target",
+          "offset": 564300,
+          "size": 56
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RootedCore57_0008A1E8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RootedCore57_0008A1E8.c",
+      "offset": 565736,
+      "size": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "RootedCore57_0008A1E8",
+          "link_symbol": "f_target",
+          "offset": 565736,
+          "size": 2
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreGlobal36_0008EF4C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_0008EF4C.c",
+      "offset": 585548,
+      "size": 68,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreGlobal36_0008EF4C",
+          "link_symbol": "f_target",
+          "offset": 585548,
+          "size": 68
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "VisitContextTreePayloadsInOrderAt10",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt10.c",
+      "offset": 628884,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "VisitContextTreePayloadsInOrderAt10",
+          "link_symbol": "f_target",
+          "offset": 628884,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "VisitContextTreePayloadsInOrderAt14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt14.c",
+      "offset": 628912,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "VisitContextTreePayloadsInOrderAt14",
+          "link_symbol": "f_target",
+          "offset": 628912,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "VisitContextTreePayloadsInOrderAt18",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt18.c",
+      "offset": 628940,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "VisitContextTreePayloadsInOrderAt18",
+          "link_symbol": "f_target",
+          "offset": 628940,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "VisitContextTreePayloadsReverseAt10",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt10.c",
+      "offset": 628968,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "VisitContextTreePayloadsReverseAt10",
+          "link_symbol": "f_target",
+          "offset": 628968,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "VisitContextTreePayloadsReverseAt14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt14.c",
+      "offset": 628996,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "VisitContextTreePayloadsReverseAt14",
+          "link_symbol": "f_target",
+          "offset": 628996,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "VisitContextTreePayloadsReverseAt18",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt18.c",
+      "offset": 629024,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "VisitContextTreePayloadsReverseAt18",
+          "link_symbol": "f_target",
+          "offset": 629024,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CollectContextTreePayloadsInOrderAt10",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt10.c",
+      "offset": 630112,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CollectContextTreePayloadsInOrderAt10",
+          "link_symbol": "CollectBattleUnitRecordAddresses",
+          "offset": 630112,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CollectContextTreePayloadsReverseAt10",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt10.c",
+      "offset": 630156,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CollectContextTreePayloadsReverseAt10",
+          "link_symbol": "f_target",
+          "offset": 630156,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CollectContextTreePayloadsInOrderAt14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt14.c",
+      "offset": 630200,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CollectContextTreePayloadsInOrderAt14",
+          "link_symbol": "f_target",
+          "offset": 630200,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CollectContextTreePayloadsReverseAt14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt14.c",
+      "offset": 630244,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CollectContextTreePayloadsReverseAt14",
+          "link_symbol": "f_target",
+          "offset": 630244,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CollectContextTreePayloadsInOrderAt18",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt18.c",
+      "offset": 630288,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CollectContextTreePayloadsInOrderAt18",
+          "link_symbol": "f_target",
+          "offset": 630288,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CollectContextTreePayloadsReverseAt18",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt18.c",
+      "offset": 630332,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CollectContextTreePayloadsReverseAt18",
+          "link_symbol": "f_target",
+          "offset": 630332,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RefreshContextTreeKeysAt10",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RefreshContextTreeKeysAt10.c",
+      "offset": 630808,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RefreshContextTreeKeysAt10",
+          "link_symbol": "f_target",
+          "offset": 630808,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RefreshContextTreeKeysAt14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RefreshContextTreeKeysAt14.c",
+      "offset": 630852,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RefreshContextTreeKeysAt14",
+          "link_symbol": "f_target",
+          "offset": 630852,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RefreshContextTreeKeysAt18",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RefreshContextTreeKeysAt18.c",
+      "offset": 630896,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RefreshContextTreeKeysAt18",
+          "link_symbol": "f_target",
+          "offset": 630896,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "BattleStateDependency_0009A6C4",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/BattleStateDependency_0009A6C4.c",
+      "offset": 632516,
+      "size": 40,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "BattleStateDependency_0009A6C4",
+          "link_symbol": "VisitBattlePhaseOwnerList",
+          "offset": 632516,
+          "size": 40
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreFrontier_000BCA54",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreFrontier_000BCA54.c",
+      "offset": 772692,
+      "size": 32,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreFrontier_000BCA54",
+          "link_symbol": "f_target",
+          "offset": 772692,
+          "size": 32
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreClosure31_000C7560",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_000C7560.c",
+      "offset": 816480,
+      "size": 146,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "CoreClosure31_000C7560",
+          "link_symbol": "f_target",
+          "offset": 816480,
+          "size": 146
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D3904",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3904.c",
+      "offset": 866564,
+      "size": 20,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D3904",
+          "link_symbol": "f_target",
+          "offset": 866564,
+          "size": 20
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D3A14",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3A14.c",
+      "offset": 866836,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D3A14",
+          "link_symbol": "f_target",
+          "offset": 866836,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D3A30",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3A30.c",
+      "offset": 866864,
+      "size": 32,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D3A30",
+          "link_symbol": "f_target",
+          "offset": 866864,
+          "size": 32
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D3EC0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3EC0.c",
+      "offset": 868032,
+      "size": 40,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D3EC0",
+          "link_symbol": "f_target",
+          "offset": 868032,
+          "size": 40
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreClosure31_000D7150",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_000D7150.c",
+      "offset": 880976,
+      "size": 88,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreClosure31_000D7150",
+          "link_symbol": "f_target",
+          "offset": 880976,
+          "size": 88
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D979C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D979C.c",
+      "offset": 890780,
+      "size": 56,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D979C",
+          "link_symbol": "f_target",
+          "offset": 890780,
+          "size": 56
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D989C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D989C.c",
+      "offset": 891036,
+      "size": 56,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D989C",
+          "link_symbol": "f_target",
+          "offset": 891036,
+          "size": 56
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D9914",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9914.c",
+      "offset": 891156,
+      "size": 40,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D9914",
+          "link_symbol": "f_target",
+          "offset": 891156,
+          "size": 40
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D993C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D993C.c",
+      "offset": 891196,
+      "size": 48,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D993C",
+          "link_symbol": "f_target",
+          "offset": 891196,
+          "size": 48
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D99C0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D99C0.c",
+      "offset": 891328,
+      "size": 84,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D99C0",
+          "link_symbol": "f_target",
+          "offset": 891328,
+          "size": 84
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D9A24",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9A24.c",
+      "offset": 891428,
+      "size": 56,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D9A24",
+          "link_symbol": "f_target",
+          "offset": 891428,
+          "size": 56
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D9B18",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9B18.c",
+      "offset": 891672,
+      "size": 32,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D9B18",
+          "link_symbol": "f_target",
+          "offset": 891672,
+          "size": 32
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000D9BC0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9BC0.c",
+      "offset": 891840,
+      "size": 12,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000D9BC0",
+          "link_symbol": "f_target",
+          "offset": 891840,
+          "size": 12
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DAD94",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DAD94.c",
+      "offset": 896404,
+      "size": 40,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DAD94",
+          "link_symbol": "f_target",
+          "offset": 896404,
+          "size": 40
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DADFC",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DADFC.c",
+      "offset": 896508,
+      "size": 40,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DADFC",
+          "link_symbol": "f_target",
+          "offset": 896508,
+          "size": 40
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DC1E8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DC1E8.c",
+      "offset": 901608,
+      "size": 60,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DC1E8",
+          "link_symbol": "f_target",
+          "offset": 901608,
+          "size": 60
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DD1AC",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DD1AC.c",
+      "offset": 905644,
+      "size": 52,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DD1AC",
+          "link_symbol": "f_target",
+          "offset": 905644,
+          "size": 52
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DE0E0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DE0E0.c",
+      "offset": 909536,
+      "size": 44,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DE0E0",
+          "link_symbol": "f_target",
+          "offset": 909536,
+          "size": 44
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DF790",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DF790.c",
+      "offset": 915344,
+      "size": 16,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DF790",
+          "link_symbol": "RequestUnitTaskClose",
+          "offset": 915344,
+          "size": 16
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DF7F8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DF7F8.c",
+      "offset": 915448,
+      "size": 52,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DF7F8",
+          "link_symbol": "f_target",
+          "offset": 915448,
+          "size": 52
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DF92C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DF92C.c",
+      "offset": 915756,
+      "size": 36,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DF92C",
+          "link_symbol": "f_target",
+          "offset": 915756,
+          "size": 36
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DFA70",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DFA70.c",
+      "offset": 916080,
+      "size": 96,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DFA70",
+          "link_symbol": "f_target",
+          "offset": 916080,
+          "size": 96
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000DFD68",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DFD68.c",
+      "offset": 916840,
+      "size": 36,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000DFD68",
+          "link_symbol": "f_target",
+          "offset": 916840,
+          "size": 36
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000E5694",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000E5694.c",
+      "offset": 939668,
+      "size": 28,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000E5694",
+          "link_symbol": "f_target",
+          "offset": 939668,
+          "size": 28
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_000F1184",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000F1184.c",
+      "offset": 987524,
+      "size": 36,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_000F1184",
+          "link_symbol": "f_target",
+          "offset": 987524,
+          "size": 36
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "RemainingBand43_00116480",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_00116480.c",
+      "offset": 1139840,
+      "size": 72,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "RemainingBand43_00116480",
+          "link_symbol": "f_target",
+          "offset": 1139840,
+          "size": 72
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Remaining38_00126B6C",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Remaining38_00126B6C.c",
+      "offset": 1207148,
+      "size": 48,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Remaining38_00126B6C",
+          "link_symbol": "f_target",
+          "offset": 1207148,
+          "size": 48
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Scene51_00127B80",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Scene51_00127B80.c",
+      "offset": 1211264,
+      "size": 68,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Scene51_00127B80",
+          "link_symbol": "f_target",
+          "offset": 1211264,
+          "size": 68
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Remaining38_00128898",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Remaining38_00128898.c",
+      "offset": 1214616,
+      "size": 48,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Remaining38_00128898",
+          "link_symbol": "f_target",
+          "offset": 1214616,
+          "size": 48
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreRegistered40_0013FBB0",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegistered40_0013FBB0.c",
+      "offset": 1309616,
+      "size": 36,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreRegistered40_0013FBB0",
+          "link_symbol": "f_target",
+          "offset": 1309616,
+          "size": 36
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreLibrary42_00144314",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_00144314.c",
+      "offset": 1327892,
+      "size": 24,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreLibrary42_00144314",
+          "link_symbol": "f_target",
+          "offset": 1327892,
+          "size": 24
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreLibrary42_00145514",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_00145514.c",
+      "offset": 1332500,
+      "size": 20,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreLibrary42_00145514",
+          "link_symbol": "f_target",
+          "offset": 1332500,
+          "size": 20
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreLibrary42_00145528",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_00145528.c",
+      "offset": 1332520,
+      "size": 20,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "CoreLibrary42_00145528",
+          "link_symbol": "f_target",
+          "offset": 1332520,
+          "size": 20
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "CoreLibrary42_001465E4",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_001465E4.c",
+      "offset": 1336804,
+      "size": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "CoreLibrary42_001465E4",
+          "link_symbol": "f_target",
+          "offset": 1336804,
+          "size": 2
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Embedded42_00A39708",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Embedded42_00A39708.c",
+      "offset": 10721032,
+      "size": 22,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "Embedded42_00A39708",
+          "link_symbol": "f_target",
+          "offset": 10721032,
+          "size": 22
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
+    },
+    {
+      "name": "Embedded42_00A39770",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Embedded42_00A39770.c",
+      "offset": 10721136,
+      "size": 4,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "functions": [
+        {
+          "name": "Embedded42_00A39770",
+          "link_symbol": "f_target",
+          "offset": 10721136,
+          "size": 4
+        }
+      ],
+      "contributor": "gg",
+      "origin": "upstream_import",
+      "upstream_provenance": {
+        "repository": "https://github.com/shubshub/fftadecomp",
+        "commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+        "original_file": "src/08020FC8.c",
+        "upstream_source_sha256": "e43c7c35577e5b24e2ea2bc69f9bd988ed11013c526863c3104ca07f9f11ccc5",
+        "adaptation": "The submitted version writes offset 22 rather than upstream offset 5.",
+        "provenance": "Original authorship retained; adapted contribution submitted by gg."
+      },
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+      "upstream_source": "src/08020FC8.c"
+    },
+    {
+      "name": "Embedded42_00A398A8",
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Embedded42_00A398A8.c",
+      "offset": 10721448,
+      "size": 6,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "match_policy": "exact",
+      "trailing_alignment_bytes": 2,
+      "functions": [
+        {
+          "name": "Embedded42_00A398A8",
+          "link_symbol": "SetBattleContextControlBytes",
+          "offset": 10721448,
+          "size": 6
+        }
+      ],
+      "contributor": "gg",
+      "origin": "gg_contribution"
     }
   ]
 }

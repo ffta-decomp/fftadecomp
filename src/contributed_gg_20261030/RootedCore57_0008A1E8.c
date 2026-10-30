@@ -1,0 +1,16 @@
+/* Contributed by gg; original source and attribution follow. */
+/* RootedCore57_0008A1E8
+   entry 0x0808A1E8, 2 bytes, restored from the US retail ROM (AFXE).
+   Self-contained: headers inlined. Address-named targets (f_XXXXXXXX)
+   are bound by symbols/aliases.s. */
+/* Imported from https://github.com/shubshub/fftadecomp
+ * Upstream commit: ece7856b4816550174d46a7e6e9b246a5a70a54c
+ * Original file: src/08002800.c
+ * Original SHA-256: f99a1cccc3ddd6bda6499f74de070bb0a0705d7ab8ad9ddf19fed56b89eeb6f2
+ * Authorship: upstream contributors; existing notices retained.
+ * No additional license grant is inferred. Local verification recorded in data/upstream-imports.json.
+ */
+/* 08002800 .. 08002802: 2 bytes. */
+void f_target(void)
+{
+}

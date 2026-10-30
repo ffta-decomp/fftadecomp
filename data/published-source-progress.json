@@ -2,17 +2,17 @@
   "schema": "published-source-progress-v1",
   "verified_date": "2026-10-30",
   "scope": "Known original function envelopes, including internal literals/alignment; resources excluded. Published verified source spans extend this historical catalogue when outside it. Not whole-game content completion.",
-  "published_original_bytes": 529844,
+  "published_original_bytes": 535438,
   "known_original_code_bytes": 1280908,
-  "percent": 41.36471940217408,
-  "modules": 3865,
+  "percent": 41.80144085289498,
+  "modules": 3961,
   "historical_catalogue_bytes": 1203130,
   "verified_source_extension_bytes": 77778,
-  "upstream_import_original_bytes": 170890,
+  "upstream_import_original_bytes": 170910,
   "denominator_id": "e0b9bdba55d0faaf05b42e46f47d9b9fda8ef67e6f42eb68c70096e02ae4c123",
   "inputs": {
-    "src/completed-index.json": "ae55f053d7eb69980dc0238b3b2791be8e7aa23408e5020ff8b6f7b029f2fb15",
-    "data/completed-build-validation.json": "6a1fdea3d9499dd359c7beead0f2f10c8343db35613e48d28fa62a3f485ddc08",
+    "src/completed-index.json": "ba0416bef8840c44dacd6d7c1cad32fe028cd01e07ff27e1fdb32236f9fb35b8",
+    "data/completed-build-validation.json": "754ad5e9a4a569a84c4540b38f7bfbd8f54b1f045c004afbd5d27e1420f1c1b1",
     "data/original-code-catalogue.json": "6be61d9dda97664e5ed98f8630728e93b6115a47f8f1bc569719ea4f26a48bd4"
   }
 }

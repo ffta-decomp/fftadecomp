@@ -2,7 +2,7 @@
   "schema": "completed-source-publication-v1",
   "target": "FFTA USA AFXE",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-  "as_of": "2026-10-29T16:27:08.593777+00:00",
+  "as_of": "2026-10-30T06:43:21.744113+00:00",
   "scope": "Published completed source modules, including retained attributed imports; exact build against private US retail required. Not whole-game recovery.",
   "modules": [
     {
@@ -42411,6 +42411,1084 @@
       "upstream_source_sha256": "2d9ade82c6130cfba54d3c89712c698d00a5f3eaecac506e0ecb7cf94504d19f",
       "upstream_pr": "https://github.com/shubshub/fftadecomp/pull/20",
       "kind": "c"
+    },
+    {
+      "name": "FormatSignedDecimalAscii6",
+      "entry": "0x08002DE8",
+      "rom_offset": 11752,
+      "original_bytes": 100,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/FormatSignedDecimalAscii6.c",
+      "source_sha256": "e336862b8da77c0e4c86988dfa22bc034321e9ca693c12a3cac123fa7c315192",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreFrontier_0000A10C",
+      "entry": "0x0800A10C",
+      "rom_offset": 41228,
+      "original_bytes": 72,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreFrontier_0000A10C.c",
+      "source_sha256": "12191e33660b82dd0d68fa84fd02f72538cf84bfa1ab7150d0598d47729eae50",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Source52_0000BC4C",
+      "entry": "0x0800BC4C",
+      "rom_offset": 48204,
+      "original_bytes": 68,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Source52_0000BC4C.c",
+      "source_sha256": "8ce847fecef399da8f8d384c9e5aa7de36629535c571447b738752c22e393871",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Buffer55_0000DDB0",
+      "entry": "0x0800DDB0",
+      "rom_offset": 56752,
+      "original_bytes": 12,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Buffer55_0000DDB0.c",
+      "source_sha256": "1edb79b84151f0a6dddd5ced0099f0303147ebad744b35bf450a13b76ed2174d",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Buffer55_0000DE14",
+      "entry": "0x0800DE14",
+      "rom_offset": 56852,
+      "original_bytes": 12,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Buffer55_0000DE14.c",
+      "source_sha256": "458b729a977ef8d75d0a47678374012c5955ebce1540278bee9017c88d780e69",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Buffer55_0000DE64",
+      "entry": "0x0800DE64",
+      "rom_offset": 56932,
+      "original_bytes": 12,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Buffer55_0000DE64.c",
+      "source_sha256": "16c6a9d40422b021d432a7ec999f54bc26593ea7ce2905d183a3616b542fd8de",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreGlobal36_0001AE34",
+      "entry": "0x0801AE34",
+      "rom_offset": 110132,
+      "original_bytes": 20,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_0001AE34.c",
+      "source_sha256": "0382c44d387e36b0e7a3d46f36d091e82db4ad56a93f15032eca35c50e037293",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreGlobal36_0001AE48",
+      "entry": "0x0801AE48",
+      "rom_offset": 110152,
+      "original_bytes": 16,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_0001AE48.c",
+      "source_sha256": "42da324a29fdd44d6668d999125ea6988a57ae1ecbb8cd2df6f7733cb18ccd3a",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreFrontier_0001E6D4",
+      "entry": "0x0801E6D4",
+      "rom_offset": 124628,
+      "original_bytes": 16,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreFrontier_0001E6D4.c",
+      "source_sha256": "6b79042781b8ef68f44300dfe33257f3255b23a25899da3da4034d7e7903e27d",
+      "origin": "upstream_import",
+      "contributor": "gg",
+      "upstream_provenance": {
+        "repository": "https://github.com/shubshub/fftadecomp",
+        "commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+        "original_file": "src/0801E610.c",
+        "upstream_source_sha256": "b308a482652fefeb16129f9e3350c72e95360800cc776ba6ce07030ec019ed19",
+        "adaptation": "The submitted version reads offsets 28 and 29 rather than upstream offsets 0 and 1.",
+        "provenance": "Original authorship retained; adapted contribution submitted by gg."
+      },
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+      "upstream_source": "src/0801E610.c"
+    },
+    {
+      "name": "CoreGlobal36_00022044",
+      "entry": "0x08022044",
+      "rom_offset": 139332,
+      "original_bytes": 36,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_00022044.c",
+      "source_sha256": "bdf75de1cd2b85332b7f6a428260f1ed2f374310413a8f3d6b6cbe16c08b3a6b",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreGlobal36_00022E58",
+      "entry": "0x08022E58",
+      "rom_offset": 142936,
+      "original_bytes": 56,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_00022E58.c",
+      "source_sha256": "8f52dc2169e7544319e48393d87c9a10919833161a05f90f34fed41ad4c74397",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreDependency29_000231C0",
+      "entry": "0x080231C0",
+      "rom_offset": 143808,
+      "original_bytes": 24,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreDependency29_000231C0.c",
+      "source_sha256": "89cc45978f9b763d219a03746bdff9b8a72c7d3c7720d6385190fcca2c293c07",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "SceneTaskDependency_0002ACD4",
+      "entry": "0x0802ACD4",
+      "rom_offset": 175316,
+      "original_bytes": 128,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_0002ACD4.c",
+      "source_sha256": "b48ce2e91e042287d06d25d54c4d4a7a4e91b7dfb243a6ac47fb850fd7650a8f",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "TaskConstructor45_0002BAF8",
+      "entry": "0x0802BAF8",
+      "rom_offset": 178936,
+      "original_bytes": 120,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/TaskConstructor45_0002BAF8.c",
+      "source_sha256": "e81968371d7bb018dd8382e7bc2b421b3fbeb3f2b87c9a602130f670ddfe72fd",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_000312A8",
+      "entry": "0x080312A8",
+      "rom_offset": 201384,
+      "original_bytes": 36,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000312A8.c",
+      "source_sha256": "22de07625249243a005a1b6c505a8776358e09c25db47086103e0477a7ef7f9f",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_000312F0",
+      "entry": "0x080312F0",
+      "rom_offset": 201456,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000312F0.c",
+      "source_sha256": "8a0344e1addd238ccbd56779ef35671fc6e47b160be9435ac849d7a4c057143e",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_000316D0",
+      "entry": "0x080316D0",
+      "rom_offset": 202448,
+      "original_bytes": 56,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000316D0.c",
+      "source_sha256": "ffc2fa8c8512199f887ba5d29ed2e01166d167409a0d711e40aa2f554a8c90e5",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_000318D0",
+      "entry": "0x080318D0",
+      "rom_offset": 202960,
+      "original_bytes": 12,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000318D0.c",
+      "source_sha256": "48dfe90ed643f811b257b788e6d1096d3e856d31277a195b164a3bc8b2601e4a",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_000318DC",
+      "entry": "0x080318DC",
+      "rom_offset": 202972,
+      "original_bytes": 12,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000318DC.c",
+      "source_sha256": "85277507a1d3d3bd0b9b622100639a6bf712f33c0301a3e2c6408af7924e5cc8",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_00031978",
+      "entry": "0x08031978",
+      "rom_offset": 203128,
+      "original_bytes": 2,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_00031978.c",
+      "source_sha256": "79a5bd5c7959952600172f708922c19b5bab61947d87ac1cb48588512392f50c",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_0003FB50",
+      "entry": "0x0803FB50",
+      "rom_offset": 260944,
+      "original_bytes": 208,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_0003FB50.c",
+      "source_sha256": "7150fac1fdf7cccb00c38ac4591ca6cb7a9578feaf0c77d5cb3cb0c2f32ed6c4",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_000412D0",
+      "entry": "0x080412D0",
+      "rom_offset": 266960,
+      "original_bytes": 208,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_000412D0.c",
+      "source_sha256": "33adad2d881f94e7a7ce2ea35c3170acf1974404168daea9566a76dd1975e343",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_0004FB38",
+      "entry": "0x0804FB38",
+      "rom_offset": 326456,
+      "original_bytes": 76,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_0004FB38.c",
+      "source_sha256": "9487d1f6a200562d577ff770ac530bafa5a60221d4b4f397da7d47773f160ef7",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "SceneTaskDependency_00053648",
+      "entry": "0x08053648",
+      "rom_offset": 341576,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_00053648.c",
+      "source_sha256": "87d43dcc5f873dcdc276e92bddc40339385eb4f413d21eb694dadc1a56135e07",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "SceneTaskDependency_000537A8",
+      "entry": "0x080537A8",
+      "rom_offset": 341928,
+      "original_bytes": 372,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_000537A8.c",
+      "source_sha256": "a2f3194449b42bfb6e248392a0cfe22673fff10675f36564f7c614c5ee868f22",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "SceneTaskDependency_000581AC",
+      "entry": "0x080581AC",
+      "rom_offset": 360876,
+      "original_bytes": 412,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_000581AC.c",
+      "source_sha256": "105608a4eed2b79213dc3430509215ea1f1d003337db4ff26dcbca8f2625e6ff",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreClosure31_00058348",
+      "entry": "0x08058348",
+      "rom_offset": 361288,
+      "original_bytes": 128,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_00058348.c",
+      "source_sha256": "fc77cdaafd83f6da893fda8adddb8bcef21f061361dd75beeba48c66ffdc9c99",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreClosure31_000586E0",
+      "entry": "0x080586E0",
+      "rom_offset": 362208,
+      "original_bytes": 60,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_000586E0.c",
+      "source_sha256": "8cddf950d76121976234a6ec8f0fe2b38f23aec4fd129b357a14cedbdaf9b3bd",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "SceneTaskDependency_0005C520",
+      "entry": "0x0805C520",
+      "rom_offset": 378144,
+      "original_bytes": 72,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneTaskDependency_0005C520.c",
+      "source_sha256": "cfb9ff231009c0aa174c3c990769fb75f79d59d439181d6081d10a00eddeed40",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion30_0005F708",
+      "entry": "0x0805F708",
+      "rom_offset": 390920,
+      "original_bytes": 106,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion30_0005F708.c",
+      "source_sha256": "7e19330e563012df914d33600a834b853bd1d3cd4ff9747d99e458e922206004",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingCore48_000615C8",
+      "entry": "0x080615C8",
+      "rom_offset": 398792,
+      "original_bytes": 24,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingCore48_000615C8.c",
+      "source_sha256": "1172e6302f98f33474f9b21330e3dc0a15c790fd2850db6e9913571a097244e2",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "SceneRegisteredRoot_00061778",
+      "entry": "0x08061778",
+      "rom_offset": 399224,
+      "original_bytes": 76,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/SceneRegisteredRoot_00061778.c",
+      "source_sha256": "e6558dc811f03b60d0e1a7854f2a19f1d1771fde0b9e14e1c20cc92724e8da9d",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreClosure31_0006B338",
+      "entry": "0x0806B338",
+      "rom_offset": 439096,
+      "original_bytes": 296,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_0006B338.c",
+      "source_sha256": "74a664bbc23564a5822674c7b09016ba20ba3db7b24a4953ba943657a9f8d821",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreClosure31_0006B460",
+      "entry": "0x0806B460",
+      "rom_offset": 439392,
+      "original_bytes": 100,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_0006B460.c",
+      "source_sha256": "227d548443e9ba637f44e86bfc6df1fd839ca99099c1825a8d87397c8d79f5e8",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Registered39_00071374",
+      "entry": "0x08071374",
+      "rom_offset": 463732,
+      "original_bytes": 2,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Registered39_00071374.c",
+      "source_sha256": "4079af6a92c31435740df4bfd734f09700f410e64c9adeac6b93516314ea7920",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreScene34_000748A8",
+      "entry": "0x080748A8",
+      "rom_offset": 477352,
+      "original_bytes": 2,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreScene34_000748A8.c",
+      "source_sha256": "b6c5d7adf8be2b60aafcb3f0af10c714ff177b3ac5097234b4fbd52da81e1c3d",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "IsolatedCore57_00085378",
+      "entry": "0x08085378",
+      "rom_offset": 545656,
+      "original_bytes": 2,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/IsolatedCore57_00085378.c",
+      "source_sha256": "cb4e27f48aae9dd02dc2568e099a4ba817d0cf22f8821d057dab7ba7b2609a77",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreGlobal36_000894AC",
+      "entry": "0x080894AC",
+      "rom_offset": 562348,
+      "original_bytes": 146,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_000894AC.c",
+      "source_sha256": "a06d4d16c1e3ee77e01be141eb2c1f3840884abdb195384e449368cf9e77ca95",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegion_00089C4C",
+      "entry": "0x08089C4C",
+      "rom_offset": 564300,
+      "original_bytes": 56,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegion_00089C4C.c",
+      "source_sha256": "25acac2722c3a7f4fa1cb58f6e3c27a83492162c4e2e192abf71046243432914",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RootedCore57_0008A1E8",
+      "entry": "0x0808A1E8",
+      "rom_offset": 565736,
+      "original_bytes": 2,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RootedCore57_0008A1E8.c",
+      "source_sha256": "7880e6555b40b59f6a2fcaa2b30a02482188cd5e4bbf930eef0879572b4e2822",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreGlobal36_0008EF4C",
+      "entry": "0x0808EF4C",
+      "rom_offset": 585548,
+      "original_bytes": 68,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreGlobal36_0008EF4C.c",
+      "source_sha256": "3ae9c37a0ccf95c94e0736310768f40a052a8ed33cf8ed39bc920840aa56b141",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "VisitContextTreePayloadsInOrderAt10",
+      "entry": "0x08099894",
+      "rom_offset": 628884,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt10.c",
+      "source_sha256": "51c7c42e5f56e62e9b3eef5f02db3de580f531450b037c759920bb627784c26a",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "VisitContextTreePayloadsInOrderAt14",
+      "entry": "0x080998B0",
+      "rom_offset": 628912,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt14.c",
+      "source_sha256": "8e4b9f6f783fa55e9ebce5a45e1008a049298cef084eacd9b71110f3ed7abea4",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "VisitContextTreePayloadsInOrderAt18",
+      "entry": "0x080998CC",
+      "rom_offset": 628940,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt18.c",
+      "source_sha256": "414592e6852e142a360eb5de81301f2e3cd753a6068c0a8a3282ed322dff7877",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "VisitContextTreePayloadsReverseAt10",
+      "entry": "0x080998E8",
+      "rom_offset": 628968,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt10.c",
+      "source_sha256": "9f8ddc99c4772e10c03ac53c4e7987a94aaca0417f656e92c4c923b9624fc7eb",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "VisitContextTreePayloadsReverseAt14",
+      "entry": "0x08099904",
+      "rom_offset": 628996,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt14.c",
+      "source_sha256": "d448e7d331715fe00cc47951e873ccbd76142702676b7e631e60569759a09420",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "VisitContextTreePayloadsReverseAt18",
+      "entry": "0x08099920",
+      "rom_offset": 629024,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt18.c",
+      "source_sha256": "79ef022f46c1a31f54c7bb9f57bf2a333d7b47632414c17123cae8f2c5efb13c",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CollectContextTreePayloadsInOrderAt10",
+      "entry": "0x08099D60",
+      "rom_offset": 630112,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt10.c",
+      "source_sha256": "ae7beab7427993d9de479114238ccb7af766650be962661ae7d36c7209a84b67",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CollectContextTreePayloadsReverseAt10",
+      "entry": "0x08099D8C",
+      "rom_offset": 630156,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt10.c",
+      "source_sha256": "5bc04393a3737dd93d3701f1b156ebe9b904d5ea90bdc184bd433ad3916e41d1",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CollectContextTreePayloadsInOrderAt14",
+      "entry": "0x08099DB8",
+      "rom_offset": 630200,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt14.c",
+      "source_sha256": "d469e4eda7d7f4fbe35f32ee0291079f046d3a832e40a33197d0ce3c218d3037",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CollectContextTreePayloadsReverseAt14",
+      "entry": "0x08099DE4",
+      "rom_offset": 630244,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt14.c",
+      "source_sha256": "dddb921a75599219a8ebe23a3c95c69cde0b306c7fe4fdef6b9e7d8f3b8ff3f9",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CollectContextTreePayloadsInOrderAt18",
+      "entry": "0x08099E10",
+      "rom_offset": 630288,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt18.c",
+      "source_sha256": "1ef1177578b5ede2bacec181b7370bcf10e7ed3653f85d37ab71497ffe1a0a41",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CollectContextTreePayloadsReverseAt18",
+      "entry": "0x08099E3C",
+      "rom_offset": 630332,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt18.c",
+      "source_sha256": "cef70dbc5877c8c6bbe294ca6413512b34fd1a4559db981d998959c5564d07e1",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RefreshContextTreeKeysAt10",
+      "entry": "0x0809A018",
+      "rom_offset": 630808,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RefreshContextTreeKeysAt10.c",
+      "source_sha256": "c73944956360d8e3194e4ec8d33f874cdf451d63d78e146d74a1960cd92dba20",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RefreshContextTreeKeysAt14",
+      "entry": "0x0809A044",
+      "rom_offset": 630852,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RefreshContextTreeKeysAt14.c",
+      "source_sha256": "565efa2d0afbbf0e86855b9adcebe8cf398a6329bad20f554967ae4a9b0ea802",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RefreshContextTreeKeysAt18",
+      "entry": "0x0809A070",
+      "rom_offset": 630896,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RefreshContextTreeKeysAt18.c",
+      "source_sha256": "08b741a8fe00edac479b9ff6fb80116f6f434abd8ad795e61297b5f61993b9c3",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "BattleStateDependency_0009A6C4",
+      "entry": "0x0809A6C4",
+      "rom_offset": 632516,
+      "original_bytes": 40,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/BattleStateDependency_0009A6C4.c",
+      "source_sha256": "540bb8bb12f6ffc74dafdcc13fcf5a935bbf12b9f1c04c6f6047108b7f6550fb",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreFrontier_000BCA54",
+      "entry": "0x080BCA54",
+      "rom_offset": 772692,
+      "original_bytes": 32,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreFrontier_000BCA54.c",
+      "source_sha256": "d76195fb8d0f3a32ebe4dbdd88887b3b175e2f1ed45bfa3fb1bc9f5aed1a290a",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreClosure31_000C7560",
+      "entry": "0x080C7560",
+      "rom_offset": 816480,
+      "original_bytes": 146,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_000C7560.c",
+      "source_sha256": "f0916d2610f4f7433a89a910a86e82632d90cbaa89176da80509176399f23c25",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D3904",
+      "entry": "0x080D3904",
+      "rom_offset": 866564,
+      "original_bytes": 20,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3904.c",
+      "source_sha256": "7359f8ea69fa3a50e5816471915fb466490889ad0e7e68604641454c64ac812e",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D3A14",
+      "entry": "0x080D3A14",
+      "rom_offset": 866836,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3A14.c",
+      "source_sha256": "4e4fef1c3750e719217705476be72e62b301f275b4d76a8a091cc60c2a8c6e19",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D3A30",
+      "entry": "0x080D3A30",
+      "rom_offset": 866864,
+      "original_bytes": 32,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3A30.c",
+      "source_sha256": "d31178fd3b331549ea592bf3bc7e0c6449c31fba7095807292dfe23da5c887c2",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D3EC0",
+      "entry": "0x080D3EC0",
+      "rom_offset": 868032,
+      "original_bytes": 40,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D3EC0.c",
+      "source_sha256": "ab1b5830d511ffe5b5cbabc74ac8902dcc2e1125778f147d9d39c7ede8150772",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreClosure31_000D7150",
+      "entry": "0x080D7150",
+      "rom_offset": 880976,
+      "original_bytes": 88,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreClosure31_000D7150.c",
+      "source_sha256": "c33b3ef9881c995bd759905ae56e33f14c8130ca4768f0359dc40d39f48daa4e",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D979C",
+      "entry": "0x080D979C",
+      "rom_offset": 890780,
+      "original_bytes": 56,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D979C.c",
+      "source_sha256": "5b8169f9b6d931fbf749951eb795d87ad91429c70731624ba8b22ff3b361592b",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D989C",
+      "entry": "0x080D989C",
+      "rom_offset": 891036,
+      "original_bytes": 56,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D989C.c",
+      "source_sha256": "d54782028d25cde14d4930ff58c4f7d5438b7286f1a45d9500b9c59dcbca3644",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D9914",
+      "entry": "0x080D9914",
+      "rom_offset": 891156,
+      "original_bytes": 40,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9914.c",
+      "source_sha256": "6f75712bbe55337d46503dc591d178213cdea4429bf5e35f443ecb057b63896f",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D993C",
+      "entry": "0x080D993C",
+      "rom_offset": 891196,
+      "original_bytes": 48,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D993C.c",
+      "source_sha256": "aa2e125afefef200e596b164ab9595db9ee5a604a78cff873179f22a406879d3",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D99C0",
+      "entry": "0x080D99C0",
+      "rom_offset": 891328,
+      "original_bytes": 84,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D99C0.c",
+      "source_sha256": "79f950068c113a0db79e4daaf567629827f838451dbbbf84f7b46591d09c4ca6",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D9A24",
+      "entry": "0x080D9A24",
+      "rom_offset": 891428,
+      "original_bytes": 56,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9A24.c",
+      "source_sha256": "602444bb6da0c5b1292d2b028a986469571a78de16f768689fe76451855e0470",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D9B18",
+      "entry": "0x080D9B18",
+      "rom_offset": 891672,
+      "original_bytes": 32,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9B18.c",
+      "source_sha256": "c7fd8bed436bfe29284c59604d0afec4ad643b5d121460e594ec853045a82f4c",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000D9BC0",
+      "entry": "0x080D9BC0",
+      "rom_offset": 891840,
+      "original_bytes": 12,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000D9BC0.c",
+      "source_sha256": "183c1138c287fe9fd6eb73026e759a19bdee031238baaab91f5798188a3ae50b",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DAD94",
+      "entry": "0x080DAD94",
+      "rom_offset": 896404,
+      "original_bytes": 40,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DAD94.c",
+      "source_sha256": "7530736acfe25e61da8b9aab79156bb5c6f0cd4000d2a5461101812b459ceed4",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DADFC",
+      "entry": "0x080DADFC",
+      "rom_offset": 896508,
+      "original_bytes": 40,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DADFC.c",
+      "source_sha256": "61df0782fdc9f58b34ed2423bff9b66a65d03428ba299a110a723b7e9171dc41",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DC1E8",
+      "entry": "0x080DC1E8",
+      "rom_offset": 901608,
+      "original_bytes": 60,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DC1E8.c",
+      "source_sha256": "b0f0c0bdd1a50c6e2dd2b63f12649bb889626835915826eef99ae6602e7e5014",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DD1AC",
+      "entry": "0x080DD1AC",
+      "rom_offset": 905644,
+      "original_bytes": 52,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DD1AC.c",
+      "source_sha256": "1f61073f3a55e3c9fc310731bd2bd00326042ce8be454cfd421e25f438092aeb",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DE0E0",
+      "entry": "0x080DE0E0",
+      "rom_offset": 909536,
+      "original_bytes": 44,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DE0E0.c",
+      "source_sha256": "a784e3f9fee57e56456a5701bd698974bf9f1a75723920d4b7928e8d7e24c8e8",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DF790",
+      "entry": "0x080DF790",
+      "rom_offset": 915344,
+      "original_bytes": 16,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DF790.c",
+      "source_sha256": "8b11d9756cff0f2db43cb9efe612a94ea7c8eff9496c0e962d2eae56e12a46ae",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DF7F8",
+      "entry": "0x080DF7F8",
+      "rom_offset": 915448,
+      "original_bytes": 52,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DF7F8.c",
+      "source_sha256": "1e9fa2e2c68c18d7da7ee5eb0eb4a2ec36550d99bc0f4f5e557b75f03526ce81",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DF92C",
+      "entry": "0x080DF92C",
+      "rom_offset": 915756,
+      "original_bytes": 36,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DF92C.c",
+      "source_sha256": "2e9f276eb2d4021a09f41c0987e5f0dea2cdd2e4b9e4fab4f0b24021cd2fd3ac",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DFA70",
+      "entry": "0x080DFA70",
+      "rom_offset": 916080,
+      "original_bytes": 96,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DFA70.c",
+      "source_sha256": "e27225e0133549fd0961637322436eb2169f2c16e4c408bfb7ca5170a745d30d",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000DFD68",
+      "entry": "0x080DFD68",
+      "rom_offset": 916840,
+      "original_bytes": 36,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000DFD68.c",
+      "source_sha256": "38f8ea72abaefee6837630ebade9f25a40ce5a38ece4fbfe2e388e98352ab438",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000E5694",
+      "entry": "0x080E5694",
+      "rom_offset": 939668,
+      "original_bytes": 28,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000E5694.c",
+      "source_sha256": "2a29e4c0160fabd9c758c82d304cf588cf9d96ca38afccc77fa7e4fe5c5462cb",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_000F1184",
+      "entry": "0x080F1184",
+      "rom_offset": 987524,
+      "original_bytes": 36,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_000F1184.c",
+      "source_sha256": "5ca425215d6ab3c80667bcca61505bbe12233c73591f554e8f66b537ff9f02af",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "RemainingBand43_00116480",
+      "entry": "0x08116480",
+      "rom_offset": 1139840,
+      "original_bytes": 72,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/RemainingBand43_00116480.c",
+      "source_sha256": "a0e86745fd3a5ee9fdfac21d50bed1e6783ec5936248a128490bc264708d8e2d",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Remaining38_00126B6C",
+      "entry": "0x08126B6C",
+      "rom_offset": 1207148,
+      "original_bytes": 48,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Remaining38_00126B6C.c",
+      "source_sha256": "216062bac85b6cf14a2e7862099fba65a1b3cbfed26e45ad2586d44105c9ed9d",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Scene51_00127B80",
+      "entry": "0x08127B80",
+      "rom_offset": 1211264,
+      "original_bytes": 68,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Scene51_00127B80.c",
+      "source_sha256": "0fb336666aa6e32f5fc26ec5d3760041de9714295cf2a224abdb369f5dad503f",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Remaining38_00128898",
+      "entry": "0x08128898",
+      "rom_offset": 1214616,
+      "original_bytes": 48,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Remaining38_00128898.c",
+      "source_sha256": "10fab05a6a04dc1dba3020de8a73b0e94fca8de9c49d463011aee2f3432e9bab",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreRegistered40_0013FBB0",
+      "entry": "0x0813FBB0",
+      "rom_offset": 1309616,
+      "original_bytes": 36,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreRegistered40_0013FBB0.c",
+      "source_sha256": "bbe27dcaec43a6ced45bb4d545af24f7c5d08e60bcc49ee7d52a152c86fa36e0",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreLibrary42_00144314",
+      "entry": "0x08144314",
+      "rom_offset": 1327892,
+      "original_bytes": 24,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_00144314.c",
+      "source_sha256": "7fb47b54310126163cf3324b9f99b660347aae60f16fa2de3928df7961639742",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreLibrary42_00145514",
+      "entry": "0x08145514",
+      "rom_offset": 1332500,
+      "original_bytes": 20,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_00145514.c",
+      "source_sha256": "018d1405f79b78c0a49ed57f4109f611ac1c7d0e1e6186026bbc54e4df5de23f",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreLibrary42_00145528",
+      "entry": "0x08145528",
+      "rom_offset": 1332520,
+      "original_bytes": 20,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_00145528.c",
+      "source_sha256": "5a1250039e75cead2a26cac37579721fe24a6f6a4106d8496cdd58be9ae65b5b",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "CoreLibrary42_001465E4",
+      "entry": "0x081465E4",
+      "rom_offset": 1336804,
+      "original_bytes": 2,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/CoreLibrary42_001465E4.c",
+      "source_sha256": "fcda923b0b2bffb93674228449ccad3543302fcb0871c5eebfcbd51dbd64a84b",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Embedded42_00A39708",
+      "entry": "0x08A39708",
+      "rom_offset": 10721032,
+      "original_bytes": 22,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Embedded42_00A39708.c",
+      "source_sha256": "7c6a4018c1daf0171c3fff07d2903e5f8765b38ec8f14530ea5198f333be5f99",
+      "origin": "gg_contribution",
+      "contributor": "gg"
+    },
+    {
+      "name": "Embedded42_00A39770",
+      "entry": "0x08A39770",
+      "rom_offset": 10721136,
+      "original_bytes": 4,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Embedded42_00A39770.c",
+      "source_sha256": "f590ef40937d7136bf67e60eb894724a815cf00cd4d96d53e3ad22ca801ed5eb",
+      "origin": "upstream_import",
+      "contributor": "gg",
+      "upstream_provenance": {
+        "repository": "https://github.com/shubshub/fftadecomp",
+        "commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+        "original_file": "src/08020FC8.c",
+        "upstream_source_sha256": "e43c7c35577e5b24e2ea2bc69f9bd988ed11013c526863c3104ca07f9f11ccc5",
+        "adaptation": "The submitted version writes offset 22 rather than upstream offset 5.",
+        "provenance": "Original authorship retained; adapted contribution submitted by gg."
+      },
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+      "upstream_source": "src/08020FC8.c"
+    },
+    {
+      "name": "Embedded42_00A398A8",
+      "entry": "0x08A398A8",
+      "rom_offset": 10721448,
+      "original_bytes": 6,
+      "kind": "c",
+      "source": "src/contributed_gg_20261030/Embedded42_00A398A8.c",
+      "source_sha256": "5fa44747eef8cef25acb20aa863003fb78276fcb1113514a8bee713f95c4db27",
+      "origin": "gg_contribution",
+      "contributor": "gg"
     }
   ],
   "files": [
@@ -58637,6 +59715,390 @@
     {
       "path": "src/write_selected_record_halfword14_mode3.c",
       "sha256": "06032be259be14f2595e109e81abf4d770313bcabd453af2e34205c0477c0f45"
+    },
+    {
+      "path": "src/contributed_gg_20261030/FormatSignedDecimalAscii6.c",
+      "sha256": "e336862b8da77c0e4c86988dfa22bc034321e9ca693c12a3cac123fa7c315192"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreFrontier_0000A10C.c",
+      "sha256": "12191e33660b82dd0d68fa84fd02f72538cf84bfa1ab7150d0598d47729eae50"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Source52_0000BC4C.c",
+      "sha256": "8ce847fecef399da8f8d384c9e5aa7de36629535c571447b738752c22e393871"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Buffer55_0000DDB0.c",
+      "sha256": "1edb79b84151f0a6dddd5ced0099f0303147ebad744b35bf450a13b76ed2174d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Buffer55_0000DE14.c",
+      "sha256": "458b729a977ef8d75d0a47678374012c5955ebce1540278bee9017c88d780e69"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Buffer55_0000DE64.c",
+      "sha256": "16c6a9d40422b021d432a7ec999f54bc26593ea7ce2905d183a3616b542fd8de"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreGlobal36_0001AE34.c",
+      "sha256": "0382c44d387e36b0e7a3d46f36d091e82db4ad56a93f15032eca35c50e037293"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreGlobal36_0001AE48.c",
+      "sha256": "42da324a29fdd44d6668d999125ea6988a57ae1ecbb8cd2df6f7733cb18ccd3a"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreFrontier_0001E6D4.c",
+      "sha256": "6b79042781b8ef68f44300dfe33257f3255b23a25899da3da4034d7e7903e27d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreGlobal36_00022044.c",
+      "sha256": "bdf75de1cd2b85332b7f6a428260f1ed2f374310413a8f3d6b6cbe16c08b3a6b"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreGlobal36_00022E58.c",
+      "sha256": "8f52dc2169e7544319e48393d87c9a10919833161a05f90f34fed41ad4c74397"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreDependency29_000231C0.c",
+      "sha256": "89cc45978f9b763d219a03746bdff9b8a72c7d3c7720d6385190fcca2c293c07"
+    },
+    {
+      "path": "src/contributed_gg_20261030/SceneTaskDependency_0002ACD4.c",
+      "sha256": "b48ce2e91e042287d06d25d54c4d4a7a4e91b7dfb243a6ac47fb850fd7650a8f"
+    },
+    {
+      "path": "src/contributed_gg_20261030/TaskConstructor45_0002BAF8.c",
+      "sha256": "e81968371d7bb018dd8382e7bc2b421b3fbeb3f2b87c9a602130f670ddfe72fd"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_000312A8.c",
+      "sha256": "22de07625249243a005a1b6c505a8776358e09c25db47086103e0477a7ef7f9f"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_000312F0.c",
+      "sha256": "8a0344e1addd238ccbd56779ef35671fc6e47b160be9435ac849d7a4c057143e"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_000316D0.c",
+      "sha256": "ffc2fa8c8512199f887ba5d29ed2e01166d167409a0d711e40aa2f554a8c90e5"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_000318D0.c",
+      "sha256": "48dfe90ed643f811b257b788e6d1096d3e856d31277a195b164a3bc8b2601e4a"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_000318DC.c",
+      "sha256": "85277507a1d3d3bd0b9b622100639a6bf712f33c0301a3e2c6408af7924e5cc8"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_00031978.c",
+      "sha256": "79a5bd5c7959952600172f708922c19b5bab61947d87ac1cb48588512392f50c"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_0003FB50.c",
+      "sha256": "7150fac1fdf7cccb00c38ac4591ca6cb7a9578feaf0c77d5cb3cb0c2f32ed6c4"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_000412D0.c",
+      "sha256": "33adad2d881f94e7a7ce2ea35c3170acf1974404168daea9566a76dd1975e343"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_0004FB38.c",
+      "sha256": "9487d1f6a200562d577ff770ac530bafa5a60221d4b4f397da7d47773f160ef7"
+    },
+    {
+      "path": "src/contributed_gg_20261030/SceneTaskDependency_00053648.c",
+      "sha256": "87d43dcc5f873dcdc276e92bddc40339385eb4f413d21eb694dadc1a56135e07"
+    },
+    {
+      "path": "src/contributed_gg_20261030/SceneTaskDependency_000537A8.c",
+      "sha256": "a2f3194449b42bfb6e248392a0cfe22673fff10675f36564f7c614c5ee868f22"
+    },
+    {
+      "path": "src/contributed_gg_20261030/SceneTaskDependency_000581AC.c",
+      "sha256": "105608a4eed2b79213dc3430509215ea1f1d003337db4ff26dcbca8f2625e6ff"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreClosure31_00058348.c",
+      "sha256": "fc77cdaafd83f6da893fda8adddb8bcef21f061361dd75beeba48c66ffdc9c99"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreClosure31_000586E0.c",
+      "sha256": "8cddf950d76121976234a6ec8f0fe2b38f23aec4fd129b357a14cedbdaf9b3bd"
+    },
+    {
+      "path": "src/contributed_gg_20261030/SceneTaskDependency_0005C520.c",
+      "sha256": "cfb9ff231009c0aa174c3c990769fb75f79d59d439181d6081d10a00eddeed40"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion30_0005F708.c",
+      "sha256": "7e19330e563012df914d33600a834b853bd1d3cd4ff9747d99e458e922206004"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingCore48_000615C8.c",
+      "sha256": "1172e6302f98f33474f9b21330e3dc0a15c790fd2850db6e9913571a097244e2"
+    },
+    {
+      "path": "src/contributed_gg_20261030/SceneRegisteredRoot_00061778.c",
+      "sha256": "e6558dc811f03b60d0e1a7854f2a19f1d1771fde0b9e14e1c20cc92724e8da9d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreClosure31_0006B338.c",
+      "sha256": "74a664bbc23564a5822674c7b09016ba20ba3db7b24a4953ba943657a9f8d821"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreClosure31_0006B460.c",
+      "sha256": "227d548443e9ba637f44e86bfc6df1fd839ca99099c1825a8d87397c8d79f5e8"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Registered39_00071374.c",
+      "sha256": "4079af6a92c31435740df4bfd734f09700f410e64c9adeac6b93516314ea7920"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreScene34_000748A8.c",
+      "sha256": "b6c5d7adf8be2b60aafcb3f0af10c714ff177b3ac5097234b4fbd52da81e1c3d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/IsolatedCore57_00085378.c",
+      "sha256": "cb4e27f48aae9dd02dc2568e099a4ba817d0cf22f8821d057dab7ba7b2609a77"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreGlobal36_000894AC.c",
+      "sha256": "a06d4d16c1e3ee77e01be141eb2c1f3840884abdb195384e449368cf9e77ca95"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegion_00089C4C.c",
+      "sha256": "25acac2722c3a7f4fa1cb58f6e3c27a83492162c4e2e192abf71046243432914"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RootedCore57_0008A1E8.c",
+      "sha256": "7880e6555b40b59f6a2fcaa2b30a02482188cd5e4bbf930eef0879572b4e2822"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreGlobal36_0008EF4C.c",
+      "sha256": "3ae9c37a0ccf95c94e0736310768f40a052a8ed33cf8ed39bc920840aa56b141"
+    },
+    {
+      "path": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt10.c",
+      "sha256": "51c7c42e5f56e62e9b3eef5f02db3de580f531450b037c759920bb627784c26a"
+    },
+    {
+      "path": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt14.c",
+      "sha256": "8e4b9f6f783fa55e9ebce5a45e1008a049298cef084eacd9b71110f3ed7abea4"
+    },
+    {
+      "path": "src/contributed_gg_20261030/VisitContextTreePayloadsInOrderAt18.c",
+      "sha256": "414592e6852e142a360eb5de81301f2e3cd753a6068c0a8a3282ed322dff7877"
+    },
+    {
+      "path": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt10.c",
+      "sha256": "9f8ddc99c4772e10c03ac53c4e7987a94aaca0417f656e92c4c923b9624fc7eb"
+    },
+    {
+      "path": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt14.c",
+      "sha256": "d448e7d331715fe00cc47951e873ccbd76142702676b7e631e60569759a09420"
+    },
+    {
+      "path": "src/contributed_gg_20261030/VisitContextTreePayloadsReverseAt18.c",
+      "sha256": "79ef022f46c1a31f54c7bb9f57bf2a333d7b47632414c17123cae8f2c5efb13c"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt10.c",
+      "sha256": "ae7beab7427993d9de479114238ccb7af766650be962661ae7d36c7209a84b67"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt10.c",
+      "sha256": "5bc04393a3737dd93d3701f1b156ebe9b904d5ea90bdc184bd433ad3916e41d1"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt14.c",
+      "sha256": "d469e4eda7d7f4fbe35f32ee0291079f046d3a832e40a33197d0ce3c218d3037"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt14.c",
+      "sha256": "dddb921a75599219a8ebe23a3c95c69cde0b306c7fe4fdef6b9e7d8f3b8ff3f9"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CollectContextTreePayloadsInOrderAt18.c",
+      "sha256": "1ef1177578b5ede2bacec181b7370bcf10e7ed3653f85d37ab71497ffe1a0a41"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CollectContextTreePayloadsReverseAt18.c",
+      "sha256": "cef70dbc5877c8c6bbe294ca6413512b34fd1a4559db981d998959c5564d07e1"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RefreshContextTreeKeysAt10.c",
+      "sha256": "c73944956360d8e3194e4ec8d33f874cdf451d63d78e146d74a1960cd92dba20"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RefreshContextTreeKeysAt14.c",
+      "sha256": "565efa2d0afbbf0e86855b9adcebe8cf398a6329bad20f554967ae4a9b0ea802"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RefreshContextTreeKeysAt18.c",
+      "sha256": "08b741a8fe00edac479b9ff6fb80116f6f434abd8ad795e61297b5f61993b9c3"
+    },
+    {
+      "path": "src/contributed_gg_20261030/BattleStateDependency_0009A6C4.c",
+      "sha256": "540bb8bb12f6ffc74dafdcc13fcf5a935bbf12b9f1c04c6f6047108b7f6550fb"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreFrontier_000BCA54.c",
+      "sha256": "d76195fb8d0f3a32ebe4dbdd88887b3b175e2f1ed45bfa3fb1bc9f5aed1a290a"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreClosure31_000C7560.c",
+      "sha256": "f0916d2610f4f7433a89a910a86e82632d90cbaa89176da80509176399f23c25"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D3904.c",
+      "sha256": "7359f8ea69fa3a50e5816471915fb466490889ad0e7e68604641454c64ac812e"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D3A14.c",
+      "sha256": "4e4fef1c3750e719217705476be72e62b301f275b4d76a8a091cc60c2a8c6e19"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D3A30.c",
+      "sha256": "d31178fd3b331549ea592bf3bc7e0c6449c31fba7095807292dfe23da5c887c2"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D3EC0.c",
+      "sha256": "ab1b5830d511ffe5b5cbabc74ac8902dcc2e1125778f147d9d39c7ede8150772"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreClosure31_000D7150.c",
+      "sha256": "c33b3ef9881c995bd759905ae56e33f14c8130ca4768f0359dc40d39f48daa4e"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D979C.c",
+      "sha256": "5b8169f9b6d931fbf749951eb795d87ad91429c70731624ba8b22ff3b361592b"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D989C.c",
+      "sha256": "d54782028d25cde14d4930ff58c4f7d5438b7286f1a45d9500b9c59dcbca3644"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D9914.c",
+      "sha256": "6f75712bbe55337d46503dc591d178213cdea4429bf5e35f443ecb057b63896f"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D993C.c",
+      "sha256": "aa2e125afefef200e596b164ab9595db9ee5a604a78cff873179f22a406879d3"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D99C0.c",
+      "sha256": "79f950068c113a0db79e4daaf567629827f838451dbbbf84f7b46591d09c4ca6"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D9A24.c",
+      "sha256": "602444bb6da0c5b1292d2b028a986469571a78de16f768689fe76451855e0470"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D9B18.c",
+      "sha256": "c7fd8bed436bfe29284c59604d0afec4ad643b5d121460e594ec853045a82f4c"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000D9BC0.c",
+      "sha256": "183c1138c287fe9fd6eb73026e759a19bdee031238baaab91f5798188a3ae50b"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DAD94.c",
+      "sha256": "7530736acfe25e61da8b9aab79156bb5c6f0cd4000d2a5461101812b459ceed4"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DADFC.c",
+      "sha256": "61df0782fdc9f58b34ed2423bff9b66a65d03428ba299a110a723b7e9171dc41"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DC1E8.c",
+      "sha256": "b0f0c0bdd1a50c6e2dd2b63f12649bb889626835915826eef99ae6602e7e5014"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DD1AC.c",
+      "sha256": "1f61073f3a55e3c9fc310731bd2bd00326042ce8be454cfd421e25f438092aeb"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DE0E0.c",
+      "sha256": "a784e3f9fee57e56456a5701bd698974bf9f1a75723920d4b7928e8d7e24c8e8"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DF790.c",
+      "sha256": "8b11d9756cff0f2db43cb9efe612a94ea7c8eff9496c0e962d2eae56e12a46ae"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DF7F8.c",
+      "sha256": "1e9fa2e2c68c18d7da7ee5eb0eb4a2ec36550d99bc0f4f5e557b75f03526ce81"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DF92C.c",
+      "sha256": "2e9f276eb2d4021a09f41c0987e5f0dea2cdd2e4b9e4fab4f0b24021cd2fd3ac"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DFA70.c",
+      "sha256": "e27225e0133549fd0961637322436eb2169f2c16e4c408bfb7ca5170a745d30d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000DFD68.c",
+      "sha256": "38f8ea72abaefee6837630ebade9f25a40ce5a38ece4fbfe2e388e98352ab438"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000E5694.c",
+      "sha256": "2a29e4c0160fabd9c758c82d304cf588cf9d96ca38afccc77fa7e4fe5c5462cb"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_000F1184.c",
+      "sha256": "5ca425215d6ab3c80667bcca61505bbe12233c73591f554e8f66b537ff9f02af"
+    },
+    {
+      "path": "src/contributed_gg_20261030/RemainingBand43_00116480.c",
+      "sha256": "a0e86745fd3a5ee9fdfac21d50bed1e6783ec5936248a128490bc264708d8e2d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Remaining38_00126B6C.c",
+      "sha256": "216062bac85b6cf14a2e7862099fba65a1b3cbfed26e45ad2586d44105c9ed9d"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Scene51_00127B80.c",
+      "sha256": "0fb336666aa6e32f5fc26ec5d3760041de9714295cf2a224abdb369f5dad503f"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Remaining38_00128898.c",
+      "sha256": "10fab05a6a04dc1dba3020de8a73b0e94fca8de9c49d463011aee2f3432e9bab"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreRegistered40_0013FBB0.c",
+      "sha256": "bbe27dcaec43a6ced45bb4d545af24f7c5d08e60bcc49ee7d52a152c86fa36e0"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreLibrary42_00144314.c",
+      "sha256": "7fb47b54310126163cf3324b9f99b660347aae60f16fa2de3928df7961639742"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreLibrary42_00145514.c",
+      "sha256": "018d1405f79b78c0a49ed57f4109f611ac1c7d0e1e6186026bbc54e4df5de23f"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreLibrary42_00145528.c",
+      "sha256": "5a1250039e75cead2a26cac37579721fe24a6f6a4106d8496cdd58be9ae65b5b"
+    },
+    {
+      "path": "src/contributed_gg_20261030/CoreLibrary42_001465E4.c",
+      "sha256": "fcda923b0b2bffb93674228449ccad3543302fcb0871c5eebfcbd51dbd64a84b"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Embedded42_00A39708.c",
+      "sha256": "7c6a4018c1daf0171c3fff07d2903e5f8765b38ec8f14530ea5198f333be5f99"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Embedded42_00A39770.c",
+      "sha256": "f590ef40937d7136bf67e60eb894724a815cf00cd4d96d53e3ad22ca801ed5eb"
+    },
+    {
+      "path": "src/contributed_gg_20261030/Embedded42_00A398A8.c",
+      "sha256": "5fa44747eef8cef25acb20aa863003fb78276fcb1113514a8bee713f95c4db27"
     }
   ]
 }

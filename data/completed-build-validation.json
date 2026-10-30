@@ -4,25 +4,34 @@
   "output_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "whole_image_identical": true,
   "rom_bytes": 16777216,
-  "compiled_original_bytes": 529844,
-  "retained_original_bytes": 16247372,
-  "compiler_starts": 3865,
+  "compiled_original_bytes": 535438,
+  "retained_original_bytes": 16241778,
+  "compiler_starts": 3961,
   "module_cache_hits": 0,
-  "elapsed_seconds": 327.0260840000119,
+  "elapsed_seconds": 296.70709712500684,
   "scope": "Compiled published modules; unrecovered code and resources retained from private reference. Not full source recovery.",
   "final_file_verification": {
     "verified": true,
     "bytes": 16777216,
     "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19"
   },
+  "compilation_driver_sha256": "974fd42e9bf0af1f797ade36d6189a44b7722b1bddb698e98088586dcc274083",
+  "validation_note": "One full build of 3,961 modules and final on-disk ROM hash verified. Attribution and line-ending changes were verified to leave preprocessed C unchanged.",
   "verified_date": "2026-10-30",
-  "source_module_count": 3865,
-  "independent_cmp_passed": true,
+  "source_module_count": 3961,
+  "independent_cmp_passed": false,
   "published_input_hashes": {
-    "src/completed-index.json": "ae55f053d7eb69980dc0238b3b2791be8e7aa23408e5020ff8b6f7b029f2fb15",
-    "config/completed-build.json": "7f85d12616f2d8d1509a45dfd3ea0e9f60fc2a53fed3798252c3b6f9c3abfff8",
+    "src/completed-index.json": "ba0416bef8840c44dacd6d7c1cad32fe028cd01e07ff27e1fdb32236f9fb35b8",
+    "config/completed-build.json": "09f5b1a3634412058e1253c2c5eb5cf1fa5483c83979bc11df8000f61d3a99d7",
     "tools/build_rom.py": "36958a88552bd1eeb895a86ba555bc744e88ba008dfd86aafc6408a0945f167c",
     "tools/verify_completed_rom.py": "24ce6181dd7d0f47e8cf5f73f6aa3989aad84ba0e27b21d2afa692d95730565e"
   },
-  "validation_note": "One full compilation of all published modules; verified the final on-disk ROM without a second build."
+  "contribution": {
+    "contributor": "gg",
+    "submitted_archive_sha256": "1f88e00b8365cf86a64c0214225ddcf6039ad584bb1daa599b7a443aca779893",
+    "functions": 96,
+    "original_bytes": 5594,
+    "preprocessed_source_set_sha256": "2f87ab23f006eb10e566d426bc44102dbcc01157860bf3b9d1ebcad4f45d3883",
+    "preprocessed_source_set_hash_method": "SHA-256 of compact sorted JSON entries containing name and production-preprocessed source SHA-256."
+  }
 }
