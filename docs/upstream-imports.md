@@ -6,7 +6,7 @@ Import is not independent rewriting. Every accepted new source is compiled local
 
 Overlaps with previously published completed spans are skipped, so the new cohort adds distinct original bytes. Failed candidates and inline-assembly candidates awaiting a separate mixed audit are not counted or published as completed. Source comments carry attribution; address-only linker aliases adapt symbol names without importing ROM payloads. No story/dialogue text, translation packs or ROM is included.
 
-The import progress files describe the reproducible public completed-source build. Daily charts use the existing native ledger and its fixed catalogue, so these are separate scopes: do not add the two totals or infer new independent peer receipts, historical hourly throughput or private production integration. The `origin=upstream_import` marker remains attached when these spans are reconciled into other views.
+The import progress files describe the reproducible public completed-source build. Dashboard history and published-source coverage have separate scopes and dates; do not add their totals or infer unrecorded validation results. The `origin=upstream_import` marker remains attached when these spans are reconciled into other views.
 
 ## Accepted 2026-10-28 batch
 

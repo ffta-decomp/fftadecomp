@@ -1,3 +1,6 @@
 [submodule "vendor/agbcc"]
 	path = vendor/agbcc
 	url = https://github.com/pret/agbcc.git
+[submodule "vendor/asm-differ"]
+	path = vendor/asm-differ
+	url = https://github.com/simonlindholm/asm-differ.git

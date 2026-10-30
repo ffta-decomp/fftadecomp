@@ -39,7 +39,7 @@ def check(root=ROOT):
     # All public Markdown download links must resolve; optional implementation
     # references are rendered as code, not misleading broken links.
     broken=[]
-    for p in [root/'AGENTS.md',root/'CONTRIBUTING.md',root/'README.md',*(root/'docs').rglob('*.md')]:
+    for p in [root/'AGENTS.md',root/'CONTRIBUTING.md',root/'README.md',*(root/'docs').rglob('*.md'),*(root/'.agents').rglob('*.md')]:
         for target in re.findall(r'(?<!!)\[[^\]]+\]\(([^)]+)\)',p.read_text()):
             target=target.split('#')[0].strip('<>')
             if target and not re.match(r'[A-Za-z]+://',target) and not (p.parent/target).exists():broken.append((p.relative_to(root).as_posix(),target))

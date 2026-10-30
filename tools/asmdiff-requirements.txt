@@ -1,0 +1,6 @@
+# Compatible with pinned vendor/asm-differ 0dd09af8f8008f1f880327cf0aca3b26d2562ea2.
+colorama==0.4.6
+watchdog==6.0.0
+Levenshtein==0.27.1
+rapidfuzz==3.14.6
+cxxfilt==0.3.0

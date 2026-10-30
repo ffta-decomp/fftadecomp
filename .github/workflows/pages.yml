@@ -35,6 +35,8 @@ jobs:
           python3 tools/check_public_bundle.py
           node --check contribute.js
           python3 -m pip install --disable-pip-version-check -r tools/requirements-extract.txt
+          git submodule update --init vendor/asm-differ
+          python3 -m pip install --disable-pip-version-check -r tools/asmdiff-requirements.txt
           python3 -m unittest discover -s tests -p "test_*.py"
           python3 -m json.tool data/progress.json > /dev/null
           python3 -m json.tool data/workflow.json > /dev/null

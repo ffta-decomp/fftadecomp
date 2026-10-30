@@ -1,5 +1,3 @@
-> Public toolkit edition. Local assignments, evidence and game implementations are not distributed. See [the contributor guide](../CONTRIBUTING.md).
-
 # ARMv4T / Thumb-1 recovery lookup
 
 Adapted from the user-supplied GBA ASM-to-C resource pack. These are candidate
