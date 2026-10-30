@@ -84,6 +84,41 @@ class SourceHashTests(unittest.TestCase):
             with self.subTest(altered=altered), self.assertRaises(ValueError):
                 verifier.load_function_targets(self.config, expected, altered)
 
+    def test_mismatch_identifies_each_function_in_changed_module(self):
+        self.config['modules'][0]['functions'] = [
+            {'name': 'first', 'offset': 8, 'size': 2},
+            {'name': 'second', 'offset': 10, 'size': 2}]
+        spans = {'example': [(0, 2, verifier.sha256(self.native[:2]), 'first-id'),
+                             (2, 2, verifier.sha256(self.native[2:]), 'second-id')]}
+        outcomes = {}
+        original = verifier.validate_inputs
+        with mock.patch.object(verifier, 'validate_inputs', side_effect=lambda c, i, e: original(c, i, e, self.root)), \
+             mock.patch.object(verifier.build_rom, 'validate_source_mix'), \
+             mock.patch.object(verifier.build_rom, 'compile_module', return_value=b'\x01\x02\x03\x05'), \
+             mock.patch.object(verifier.build_rom, 'check_linked_function_entries', return_value=2):
+            with self.assertRaises(ValueError):
+                verifier.verify_build(self.config, self.index, self.expected, self.root, jobs=1,
+                                      function_targets=spans, outcomes=outcomes)
+        self.assertEqual(outcomes['example']['status'], 'mismatch')
+        self.assertEqual([row['status'] for row in outcomes['example']['functions']], ['match', 'mismatch'])
+
+    def test_delta_summary_distinguishes_match_mismatch_and_unbuilt(self):
+        summary = self.root / 'summary.md'
+        matched = {'example': {'status': 'match', 'functions': [
+            {'name': 'example', 'id': 'US-00000008-000004', 'status': 'match'}]}}
+        verifier.write_delta_summary(self.config, ['input.c', 'include/shared.h'], matched, None, summary)
+        text = summary.read_text()
+        self.assertIn('`example` (US-00000008-000004) | match', text)
+        self.assertIn('include/shared.h', text)
+        summary.unlink()
+        mismatch = {'example': {'status': 'mismatch', 'error': 'wrong hash', 'functions': [
+            {'name': 'example', 'id': 'US-00000008-000004', 'status': 'mismatch'}]}}
+        verifier.write_delta_summary(self.config, ['input.c'], mismatch, 'failed', summary)
+        self.assertIn('US-00000008-000004) | mismatch', summary.read_text())
+        summary.unlink()
+        verifier.write_delta_summary(self.config, ['input.c'], {}, 'preflight failed', summary)
+        self.assertIn('US-00000008-000004) | not built', summary.read_text())
+
     def test_tampered_index_source_is_rejected(self):
         self.source.write_bytes(b'int changed;\n')
         with self.assertRaisesRegex(ValueError, 'source/header hash mismatch'):

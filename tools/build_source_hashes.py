@@ -8,6 +8,8 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import subprocess
+import sys
 import tempfile
 import time
 
@@ -134,7 +136,13 @@ def verify_function_ranges(data, spans):
             raise ValueError(identity + ': function range SHA-256 mismatch')
 
 
-def verify_build(config, index, expected, build_dir, jobs=2, function_targets=None):
+class ModuleMismatch(ValueError):
+    def __init__(self, message, functions):
+        super().__init__(message)
+        self.functions = functions
+
+
+def verify_build(config, index, expected, build_dir, jobs=2, function_targets=None, outcomes=None):
     targets = validate_inputs(config, index, expected)
     build_rom.BUILD_ROOT = build_dir.resolve()
     workroot = build_rom.BUILD_ROOT / 'source-hash-validation'
@@ -150,23 +158,36 @@ def verify_build(config, index, expected, build_dir, jobs=2, function_targets=No
             entries = build_rom.check_linked_function_entries(module, work, config['rom_base'])
             target = targets[module['name']]
             actual = sha256(data)
-            if len(data) != target['original_bytes'] or actual != target['sha256']:
-                raise ValueError(f"{module['name']}: generated {len(data)} bytes, SHA-256 {actual}; "
-                                 f"expected {target['original_bytes']} bytes, SHA-256 {target['sha256']}")
+            function_results = []
             if function_targets is not None:
-                verify_function_ranges(data, function_targets[module['name']])
+                definitions = sorted(module.get('functions') or [dict(name=module['name'], offset=module['offset'], size=module['size'])], key=lambda x: x['offset'])
+                for definition, (offset, size, digest, identity) in zip(definitions, function_targets[module['name']]):
+                    valid = offset + size <= len(data) and sha256(data[offset:offset + size]) == digest
+                    function_results.append({'name': definition['name'], 'id': identity,
+                                             'status': 'match' if valid else 'mismatch'})
+            if (len(data) != target['original_bytes'] or actual != target['sha256']
+                    or any(row['status'] != 'match' for row in function_results)):
+                raise ModuleMismatch(f"{module['name']}: generated {len(data)} bytes, SHA-256 {actual}; "
+                                     f"expected {target['original_bytes']} bytes, SHA-256 {target['sha256']}", function_results)
             if entries < 1:
                 raise ValueError(module['name'] + ': no linked function entry')
             return {'name': module['name'], 'rom_offset': module['offset'],
-                    'original_bytes': len(data), 'sha256': actual}
+                    'original_bytes': len(data), 'sha256': actual}, function_results
         rows, failures = [], []
         with ThreadPoolExecutor(max_workers=jobs) as pool:
             futures = {pool.submit(compile_one, module): module['name'] for module in config['modules']}
             for future in as_completed(futures):
                 try:
-                    rows.append(future.result())
+                    row, function_results = future.result()
+                    rows.append(row)
+                    if outcomes is not None:
+                        outcomes[row['name']] = {'status': 'match', 'functions': function_results}
                 except (Exception, SystemExit) as error:
-                    failures.append({'module': futures[future], 'error': str(error)})
+                    name = futures[future]
+                    failures.append({'module': name, 'error': str(error)})
+                    if outcomes is not None:
+                        outcomes[name] = {'status': 'mismatch' if isinstance(error, ModuleMismatch) else 'build error',
+                                          'error': str(error), 'functions': getattr(error, 'functions', [])}
                 if (len(rows) + len(failures)) % 100 == 0:
                     print(f"Checked {len(rows) + len(failures)}/{len(futures)} modules", flush=True)
         if failures:
@@ -181,18 +202,74 @@ def verify_build(config, index, expected, build_dir, jobs=2, function_targets=No
             'elapsed_seconds': round(time.monotonic() - started, 2)}
 
 
+def changed_files(base):
+    result = subprocess.check_output(['git', 'diff', '--name-only', '--no-renames', '-z', base, 'HEAD', '--'], cwd=ROOT)
+    return sorted(path.decode('utf-8', errors='replace') for path in result.split(b'\0') if path)
+
+
+def write_delta_summary(config, paths, outcomes, error, destination):
+    """Report direct source changes, with unknown results distinct from mismatches."""
+    def safe(value):
+        return str(value).replace('&', '&amp;').replace('<', '&lt;').replace('|', '&#124;').replace('`', '&#96;').replace('\n', ' ')
+    lines = ['## Source hash verification', '',
+             'Whole selected build: ' + ('failed: ' + safe(error) if error else 'passed'), '',
+             '### Changed files and directly associated selected functions', '',
+             '| File | Function / range | Result |', '| --- | --- | --- |']
+    modules_by_source = {}
+    for module in config['modules']:
+        modules_by_source.setdefault(module['source'], []).append(module)
+    for path in paths:
+        modules = modules_by_source.get(path, [])
+        if not modules:
+            lines.append(f'| `{safe(path)}` | Not a selected source module | Not individually checked |')
+        for module in modules:
+            result = outcomes.get(module['name'], {})
+            by_id = {item['id']: item['status'] for item in result.get('functions', [])}
+            for item in module.get('functions') or [dict(name=module['name'], offset=module['offset'], size=module['size'])]:
+                ident = f"US-{item['offset']:08X}-{item['size']:06X}"
+                status = by_id.get(ident, 'not built')
+                lines.append(f"| `{safe(path)}` | `{safe(item['name'])}` ({ident}) | {status} |")
+    if not paths:
+        lines.append('| No changed files | — | — |')
+    lines.extend(['', 'Headers, build configuration and other non-module files can affect multiple sources; the full selected set is rebuilt, but per-file dependency attribution is not inferred.', '', '### All failed modules', ''])
+    failures = [(name, result) for name, result in sorted(outcomes.items()) if result['status'] != 'match']
+    if failures:
+        for name, result in failures:
+            lines.append(f"- `{safe(name)}`: {safe(result.get('error', result['status']))}")
+            for item in result.get('functions', []):
+                if item['status'] != 'match':
+                    lines.append(f"  - `{safe(item['name'])}` ({item['id']}): {item['status']}")
+    else:
+        lines.append('None reported.' if not error else 'No module result available; see the error above.')
+    with open(destination, 'a', encoding='utf-8') as output:
+        output.write('\n'.join(lines) + '\n')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--jobs', type=int, choices=range(1, 5), default=2)
     parser.add_argument('--build-dir', type=Path, default=ROOT / 'build')
+    parser.add_argument('--base-ref', help='Report changed source files against this Git revision')
+    parser.add_argument('--summary', type=Path, help='Append the delta report to this file')
     args = parser.parse_args()
     config = json.loads((ROOT / 'config/completed-build.json').read_text())
     index = json.loads((ROOT / 'src/completed-index.json').read_text())
     expected = json.loads((ROOT / 'data/completed-module-hashes.json').read_text())
-    functions = load_function_targets(config, expected, (ROOT / 'data/completed-function-hashes.csv').read_bytes())
-    result = verify_build(config, index, expected, args.build_dir, args.jobs, functions)
-    result['function_ranges'] = sum(len(rows) for rows in functions.values())
-    print(json.dumps(result, indent=2))
+    paths = changed_files(args.base_ref) if args.base_ref else []
+    outcomes, error = {}, None
+    try:
+        functions = load_function_targets(config, expected, (ROOT / 'data/completed-function-hashes.csv').read_bytes())
+        result = verify_build(config, index, expected, args.build_dir, args.jobs, functions, outcomes)
+        result['function_ranges'] = sum(len(rows) for rows in functions.values())
+        print(json.dumps(result, indent=2))
+    except (Exception, SystemExit) as exc:
+        error = str(exc)
+        print(error, file=sys.stderr)
+    finally:
+        if args.summary:
+            write_delta_summary(config, paths, outcomes, error, args.summary)
+    if error:
+        raise SystemExit(1)
 
 
 if __name__ == '__main__':
