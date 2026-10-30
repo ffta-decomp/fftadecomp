@@ -38,3 +38,13 @@ the exact module count, original-byte coverage and output hash. Unrecovered
 resources remain in the user's private input. The Pages workflow validates public
 metadata and scripts only: it does not have a ROM and does not repeat ROM builds.
 No ROM, extracted story text or translation resources are distributed.
+
+## Fixed-address function bindings
+
+Some imported functions use a source-local `.symbols.s` file to bind existing
+functions and data at their original addresses. The manifest selects this through
+`external_symbol_supplement`. The builder accepts only non-emitting `.global`,
+`.set`, `.thumb_set`, `.syntax unified` and `.thumb` directives; instructions,
+raw bytes, includes and paths outside the source root are rejected. The file hash
+participates in the module cache identity and the completed-source input index.
+These aliases do not implement or replace a function body.

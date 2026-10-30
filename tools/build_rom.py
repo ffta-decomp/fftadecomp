@@ -505,6 +505,9 @@ def build_cache_fingerprint(module, base, config, assets_dir, context):
     inputs = dict(context[context_key])
     if module["kind"] in ("c", "mixed"):
         inputs.update(context["source_headers"])
+    supplement = external_symbol_supplement(module)
+    if supplement is not None:
+        inputs[str(supplement)] = input_sha_file(supplement)
     if module["kind"] != "padding":
         if module["kind"] == "asset" and assets_dir is None:
             raise SystemExit(f"{module['name']}: pass --assets-dir to rebuild extracted assets")
@@ -1519,6 +1522,24 @@ def validate_function_ranges(module, generated_size):
     if cursor != offset + generated_size:
         raise SystemExit(f"{name}: function ranges do not cover module")
     return functions
+
+
+def external_symbol_supplement(module):
+    """Validate a per-module, non-emitting fixed-address symbol supplement."""
+    value = module.get("external_symbol_supplement")
+    if value is None:
+        return None
+    if module.get("kind") not in ("c", "mixed") or not isinstance(value, str):
+        raise ValueError("symbol supplement requires a C module and path")
+    path = (ROOT / value).resolve()
+    if not path.is_relative_to(ROOT.resolve()) or not path.is_file():
+        raise ValueError("symbol supplement is outside the source root or missing")
+    text = path.read_text()
+    allowed = re.compile(r"^\s*(?:(?:\.syntax\s+unified|\.thumb)|(?:\.global\s+[A-Za-z_][A-Za-z_0-9]*)|(?:\.(?:thumb_set|set)\s+[A-Za-z_][A-Za-z_0-9]*\s*,\s*0x[0-9a-fA-F]+))\s*$")
+    if any(line.strip() and not allowed.fullmatch(line) for line in text.splitlines()):
+        raise ValueError("symbol supplement contains an unsupported directive")
+    return path
+
 
 
 def assemble_external_symbols(assembler, source, output, flags, cache_dir=None):
@@ -2539,6 +2560,13 @@ def compile_module(module, work, base, assets_dir, reference=None,
             assembler, ROOT / "asm/external_thumb_symbols.s", external_obj,
             ["-mcpu=arm7tdmi", "-mthumb-interwork", *external_flags], tool_cache_dir))
         link_objects.append(str(external_obj))
+    supplement = external_symbol_supplement(module)
+    if supplement is not None:
+        supplement_obj = work / (name + "_supplement.o")
+        timed("external_supplement", lambda: assemble_external_symbols(
+            assembler, supplement, supplement_obj,
+            ["-mcpu=arm7tdmi", "-mthumb-interwork"], tool_cache_dir))
+        link_objects.append(str(supplement_obj))
     timed("linking", lambda: run(
         [linker, "-T", str(ROOT / "config/symbols.ld"), "-Ttext", hex(base + module["offset"]),
          *link_objects, "-o", str(elf)]))

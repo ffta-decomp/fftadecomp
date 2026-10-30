@@ -4,26 +4,25 @@
   "output_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "whole_image_identical": true,
   "rom_bytes": 16777216,
-  "compiled_original_bytes": 520056,
-  "retained_original_bytes": 16257160,
-  "compiler_starts": 3803,
+  "compiled_original_bytes": 529844,
+  "retained_original_bytes": 16247372,
+  "compiler_starts": 3865,
   "module_cache_hits": 0,
-  "elapsed_seconds": 322.4204282920109,
+  "elapsed_seconds": 327.0260840000119,
   "scope": "Compiled published modules; unrecovered code and resources retained from private reference. Not full source recovery.",
   "final_file_verification": {
     "verified": true,
     "bytes": 16777216,
     "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19"
   },
-  "compilation_driver_sha256": "974fd42e9bf0af1f797ade36d6189a44b7722b1bddb698e98088586dcc274083",
-  "validation_note": "One full compilation of the published source set; final on-disk ROM hash verified without a second build.",
-  "verified_date": "2026-10-29",
-  "source_module_count": 3803,
+  "verified_date": "2026-10-30",
+  "source_module_count": 3865,
   "independent_cmp_passed": true,
   "published_input_hashes": {
-    "src/completed-index.json": "46c55ad3d4a6da2889f4638ecac56500e1b099645bdfb41a6d0a522b7d1b4f73",
-    "config/completed-build.json": "1ed9a0609a247076b116871af84349369bb15de58253f327f4bd6378f06faf9d",
-    "tools/build_rom.py": "8d677e891c13cd07d916b988697e8d7ebffb36de2c12a9c4533b99820dea43b0",
+    "src/completed-index.json": "ae55f053d7eb69980dc0238b3b2791be8e7aa23408e5020ff8b6f7b029f2fb15",
+    "config/completed-build.json": "7f85d12616f2d8d1509a45dfd3ea0e9f60fc2a53fed3798252c3b6f9c3abfff8",
+    "tools/build_rom.py": "36958a88552bd1eeb895a86ba555bc744e88ba008dfd86aafc6408a0945f167c",
     "tools/verify_completed_rom.py": "24ce6181dd7d0f47e8cf5f73f6aa3989aad84ba0e27b21d2afa692d95730565e"
-  }
+  },
+  "validation_note": "One full compilation of all published modules; verified the final on-disk ROM without a second build."
 }

@@ -103778,6 +103778,1556 @@
       "literal_bytes": 0,
       "padding_bytes": 0,
       "dispatch_table_bytes": 0
+    },
+    {
+      "name": "Imported_08010160_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08010160.c",
+      "offset": 65888,
+      "size": 108,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08010160.symbols.s",
+      "functions": [
+        {
+          "name": "func_08010160",
+          "offset": 65888,
+          "size": 108
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08010160.c"
+    },
+    {
+      "name": "Imported_080111CC_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080111CC.c",
+      "offset": 70092,
+      "size": 56,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080111CC.symbols.s",
+      "functions": [
+        {
+          "name": "func_080111CC",
+          "offset": 70092,
+          "size": 56
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080111CC.c"
+    },
+    {
+      "name": "Imported_08011248_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08011248.c",
+      "offset": 70216,
+      "size": 56,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08011248.symbols.s",
+      "functions": [
+        {
+          "name": "func_08011248",
+          "offset": 70216,
+          "size": 56
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08011248.c"
+    },
+    {
+      "name": "Scene51_0001DE20",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0801DE20.c",
+      "offset": 122400,
+      "size": 104,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0801DE20.symbols.s",
+      "functions": [
+        {
+          "name": "func_0801DE20",
+          "offset": 122400,
+          "size": 104
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0801DE20.c"
+    },
+    {
+      "name": "CoreGlobal36_00029864",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08029864.c",
+      "offset": 170084,
+      "size": 248,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08029864.symbols.s",
+      "functions": [
+        {
+          "name": "func_08029864",
+          "offset": 170084,
+          "size": 248
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08029864.c"
+    },
+    {
+      "name": "CoreGlobal36_00029C34",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08029C34.c",
+      "offset": 171060,
+      "size": 164,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08029C34.symbols.s",
+      "functions": [
+        {
+          "name": "func_08029C34",
+          "offset": 171060,
+          "size": 164
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08029C34.c"
+    },
+    {
+      "name": "TaskConstructor45_0002CA58",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0802CA58.c",
+      "offset": 182872,
+      "size": 100,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0802CA58.symbols.s",
+      "functions": [
+        {
+          "name": "func_0802CA58",
+          "offset": 182872,
+          "size": 100
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0802CA58.c"
+    },
+    {
+      "name": "CoreFrontier_0002F040",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0802F040.c",
+      "offset": 192576,
+      "size": 192,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0802F040.symbols.s",
+      "functions": [
+        {
+          "name": "func_0802F040",
+          "offset": 192576,
+          "size": 192
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0802F040.c"
+    },
+    {
+      "name": "CoreRegion_00037A30",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08037A30.c",
+      "offset": 227888,
+      "size": 596,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08037A30.symbols.s",
+      "functions": [
+        {
+          "name": "func_08037A30",
+          "offset": 227888,
+          "size": 596
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08037A30.c"
+    },
+    {
+      "name": "CoreRegion_000385A8",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080385A8.c",
+      "offset": 230824,
+      "size": 60,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080385A8.symbols.s",
+      "functions": [
+        {
+          "name": "func_080385A8",
+          "offset": 230824,
+          "size": 60
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080385A8.c"
+    },
+    {
+      "name": "Imported_080387F4_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080387F4.c",
+      "offset": 231412,
+      "size": 44,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080387F4.symbols.s",
+      "functions": [
+        {
+          "name": "func_080387F4",
+          "offset": 231412,
+          "size": 44
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080387F4.c"
+    },
+    {
+      "name": "CoreRegion_00038820",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08038820.c",
+      "offset": 231456,
+      "size": 56,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08038820.symbols.s",
+      "functions": [
+        {
+          "name": "func_08038820",
+          "offset": 231456,
+          "size": 56
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08038820.c"
+    },
+    {
+      "name": "CoreRegion_000415EC",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080415EC.c",
+      "offset": 267756,
+      "size": 604,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080415EC.symbols.s",
+      "functions": [
+        {
+          "name": "func_080415EC",
+          "offset": 267756,
+          "size": 604
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080415EC.c"
+    },
+    {
+      "name": "CoreRegion_0004CA8C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0804CA8C.c",
+      "offset": 313996,
+      "size": 36,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0804CA8C.symbols.s",
+      "functions": [
+        {
+          "name": "func_0804CA8C",
+          "offset": 313996,
+          "size": 36
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0804CA8C.c"
+    },
+    {
+      "name": "CoreRegion_0004F8A4",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0804F8A4.c",
+      "offset": 325796,
+      "size": 148,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0804F8A4.symbols.s",
+      "functions": [
+        {
+          "name": "func_0804F8A4",
+          "offset": 325796,
+          "size": 148
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0804F8A4.c"
+    },
+    {
+      "name": "CoreRegion_0004FD60",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0804FD60.c",
+      "offset": 327008,
+      "size": 148,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0804FD60.symbols.s",
+      "functions": [
+        {
+          "name": "func_0804FD60",
+          "offset": 327008,
+          "size": 148
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0804FD60.c"
+    },
+    {
+      "name": "CoreFrontier_0005D948",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0805D948.c",
+      "offset": 383304,
+      "size": 200,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0805D948.symbols.s",
+      "functions": [
+        {
+          "name": "func_0805D948",
+          "offset": 383304,
+          "size": 200
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0805D948.c"
+    },
+    {
+      "name": "CoreRegion30_00061350",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08061350.c",
+      "offset": 398160,
+      "size": 64,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08061350.symbols.s",
+      "functions": [
+        {
+          "name": "func_08061350",
+          "offset": 398160,
+          "size": 64
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08061350.c"
+    },
+    {
+      "name": "RemainingCore48_00061390",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08061390.c",
+      "offset": 398224,
+      "size": 64,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08061390.symbols.s",
+      "functions": [
+        {
+          "name": "func_08061390",
+          "offset": 398224,
+          "size": 64
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08061390.c"
+    },
+    {
+      "name": "RemainingCore48_0006617C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0806617C.c",
+      "offset": 418172,
+      "size": 840,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0806617C.symbols.s",
+      "functions": [
+        {
+          "name": "func_0806617C",
+          "offset": 418172,
+          "size": 840
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0806617C.c"
+    },
+    {
+      "name": "CoreRegion_000717CC",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080717CC.c",
+      "offset": 464844,
+      "size": 188,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080717CC.symbols.s",
+      "functions": [
+        {
+          "name": "func_080717CC",
+          "offset": 464844,
+          "size": 188
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080717CC.c"
+    },
+    {
+      "name": "CoreScene34_00072B74",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08072B74.c",
+      "offset": 469876,
+      "size": 260,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08072B74.symbols.s",
+      "functions": [
+        {
+          "name": "func_08072B74",
+          "offset": 469876,
+          "size": 260
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08072B74.c"
+    },
+    {
+      "name": "CoreScene34_0007408C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0807408C.c",
+      "offset": 475276,
+      "size": 144,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0807408C.symbols.s",
+      "functions": [
+        {
+          "name": "func_0807408C",
+          "offset": 475276,
+          "size": 144
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0807408C.c"
+    },
+    {
+      "name": "CoreScene34_00079690",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08079690.c",
+      "offset": 497296,
+      "size": 188,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08079690.symbols.s",
+      "functions": [
+        {
+          "name": "func_08079690",
+          "offset": 497296,
+          "size": 188
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08079690.c"
+    },
+    {
+      "name": "CoreScene34_00079838",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08079838.c",
+      "offset": 497720,
+      "size": 392,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08079838.symbols.s",
+      "functions": [
+        {
+          "name": "func_08079838",
+          "offset": 497720,
+          "size": 392
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08079838.c"
+    },
+    {
+      "name": "Imported_08080D38_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08080D38.c",
+      "offset": 527672,
+      "size": 60,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08080D38.symbols.s",
+      "functions": [
+        {
+          "name": "func_08080D38",
+          "offset": 527672,
+          "size": 60
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08080D38.c"
+    },
+    {
+      "name": "Imported_08080E80_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08080E80.c",
+      "offset": 528000,
+      "size": 56,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08080E80.symbols.s",
+      "functions": [
+        {
+          "name": "func_08080E80",
+          "offset": 528000,
+          "size": 56
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08080E80.c"
+    },
+    {
+      "name": "Imported_08085484_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08085484.c",
+      "offset": 545924,
+      "size": 132,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08085484.symbols.s",
+      "functions": [
+        {
+          "name": "func_08085484",
+          "offset": 545924,
+          "size": 132
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08085484.c"
+    },
+    {
+      "name": "Imported_08087000_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08087000.c",
+      "offset": 552960,
+      "size": 120,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08087000.symbols.s",
+      "functions": [
+        {
+          "name": "func_08087000",
+          "offset": 552960,
+          "size": 120
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08087000.c"
+    },
+    {
+      "name": "Imported_08087078_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08087078.c",
+      "offset": 553080,
+      "size": 48,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08087078.symbols.s",
+      "functions": [
+        {
+          "name": "func_08087078",
+          "offset": 553080,
+          "size": 48
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08087078.c"
+    },
+    {
+      "name": "Imported_080870A8_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080870A8.c",
+      "offset": 553128,
+      "size": 56,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080870A8.symbols.s",
+      "functions": [
+        {
+          "name": "func_080870A8",
+          "offset": 553128,
+          "size": 56
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080870A8.c"
+    },
+    {
+      "name": "CoreRegion_00089368",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08089368.c",
+      "offset": 562024,
+      "size": 152,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08089368.symbols.s",
+      "functions": [
+        {
+          "name": "func_08089368",
+          "offset": 562024,
+          "size": 152
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08089368.c"
+    },
+    {
+      "name": "CoreRegion_00089400",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08089400.c",
+      "offset": 562176,
+      "size": 172,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08089400.symbols.s",
+      "functions": [
+        {
+          "name": "func_08089400",
+          "offset": 562176,
+          "size": 172
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08089400.c"
+    },
+    {
+      "name": "CoreGlobal36_00089CE4",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08089CE4.c",
+      "offset": 564452,
+      "size": 128,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08089CE4.symbols.s",
+      "functions": [
+        {
+          "name": "func_08089CE4",
+          "offset": 564452,
+          "size": 128
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08089CE4.c"
+    },
+    {
+      "name": "CoreRegion_0008A008",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0808A008.c",
+      "offset": 565256,
+      "size": 124,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0808A008.symbols.s",
+      "functions": [
+        {
+          "name": "func_0808A008",
+          "offset": 565256,
+          "size": 124
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0808A008.c"
+    },
+    {
+      "name": "CoreGlobal36_0008A1EC",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0808A1EC.c",
+      "offset": 565740,
+      "size": 124,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0808A1EC.symbols.s",
+      "functions": [
+        {
+          "name": "func_0808A1EC",
+          "offset": 565740,
+          "size": 124
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0808A1EC.c"
+    },
+    {
+      "name": "CoreGlobal36_0008B890",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0808B890.c",
+      "offset": 571536,
+      "size": 84,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0808B890.symbols.s",
+      "functions": [
+        {
+          "name": "func_0808B890",
+          "offset": 571536,
+          "size": 84
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0808B890.c"
+    },
+    {
+      "name": "CoreRegion_0008B92C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0808B92C.c",
+      "offset": 571692,
+      "size": 36,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0808B92C.symbols.s",
+      "functions": [
+        {
+          "name": "func_0808B92C",
+          "offset": 571692,
+          "size": 36
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0808B92C.c"
+    },
+    {
+      "name": "Imported_080921C8_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080921C8.c",
+      "offset": 598472,
+      "size": 72,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080921C8.symbols.s",
+      "functions": [
+        {
+          "name": "func_080921C8",
+          "offset": 598472,
+          "size": 72
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080921C8.c"
+    },
+    {
+      "name": "Imported_0809B544_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0809B544.c",
+      "offset": 636228,
+      "size": 396,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0809B544.symbols.s",
+      "functions": [
+        {
+          "name": "func_0809B544",
+          "offset": 636228,
+          "size": 396
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0809B544.c"
+    },
+    {
+      "name": "CoreDependency29_0009D2F8",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0809D2F8.c",
+      "offset": 643832,
+      "size": 176,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0809D2F8.symbols.s",
+      "functions": [
+        {
+          "name": "func_0809D2F8",
+          "offset": 643832,
+          "size": 176
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0809D2F8.c"
+    },
+    {
+      "name": "BattleStateDependency_000A5994",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080A5994.c",
+      "offset": 678292,
+      "size": 232,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080A5994.symbols.s",
+      "functions": [
+        {
+          "name": "func_080A5994",
+          "offset": 678292,
+          "size": 232
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080A5994.c"
+    },
+    {
+      "name": "CoreFrontier_000A82C0",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080A82C0.c",
+      "offset": 688832,
+      "size": 208,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080A82C0.symbols.s",
+      "functions": [
+        {
+          "name": "func_080A82C0",
+          "offset": 688832,
+          "size": 208
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080A82C0.c"
+    },
+    {
+      "name": "Imported_080A93FC_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080A93FC.c",
+      "offset": 693244,
+      "size": 36,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080A93FC.symbols.s",
+      "functions": [
+        {
+          "name": "func_080A93FC",
+          "offset": 693244,
+          "size": 36
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080A93FC.c"
+    },
+    {
+      "name": "CoreFrontier_000D2D54",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/080D2D54.c",
+      "offset": 863572,
+      "size": 140,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/080D2D54.symbols.s",
+      "functions": [
+        {
+          "name": "func_080D2D54",
+          "offset": 863572,
+          "size": 140
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/080D2D54.c"
+    },
+    {
+      "name": "Registered39_0013785C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0813785C.c",
+      "offset": 1275996,
+      "size": 144,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0813785C.symbols.s",
+      "functions": [
+        {
+          "name": "func_0813785C",
+          "offset": 1275996,
+          "size": 144
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0813785C.c"
+    },
+    {
+      "name": "CoreRegistered40_0013EAD4",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0813EAD4.c",
+      "offset": 1305300,
+      "size": 144,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0813EAD4.symbols.s",
+      "functions": [
+        {
+          "name": "func_0813EAD4",
+          "offset": 1305300,
+          "size": 144
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0813EAD4.c"
+    },
+    {
+      "name": "CoreLibrary42_001456AC",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/081456AC.c",
+      "offset": 1332908,
+      "size": 152,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/081456AC.symbols.s",
+      "functions": [
+        {
+          "name": "func_081456AC",
+          "offset": 1332908,
+          "size": 152
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/081456AC.c"
+    },
+    {
+      "name": "CoreLibrary42_00146120",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08146120.c",
+      "offset": 1335584,
+      "size": 104,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08146120.symbols.s",
+      "functions": [
+        {
+          "name": "func_08146120",
+          "offset": 1335584,
+          "size": 104
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08146120.c"
+    },
+    {
+      "name": "Imported_08146188_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08146188.c",
+      "offset": 1335688,
+      "size": 116,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08146188.symbols.s",
+      "functions": [
+        {
+          "name": "func_08146188",
+          "offset": 1335688,
+          "size": 116
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08146188.c"
+    },
+    {
+      "name": "Imported_081461FC_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/081461FC.c",
+      "offset": 1335804,
+      "size": 104,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/081461FC.symbols.s",
+      "functions": [
+        {
+          "name": "func_081461FC",
+          "offset": 1335804,
+          "size": 104
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/081461FC.c"
+    },
+    {
+      "name": "CoreFrontier_001473E4",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/081473E4.c",
+      "offset": 1340388,
+      "size": 216,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/081473E4.symbols.s",
+      "functions": [
+        {
+          "name": "func_081473E4",
+          "offset": 1340388,
+          "size": 216
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/081473E4.c"
+    },
+    {
+      "name": "CoreLibrary42_00147A44",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147A44.c",
+      "offset": 1342020,
+      "size": 56,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147A44.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147A44",
+          "offset": 1342020,
+          "size": 56
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147A44.c"
+    },
+    {
+      "name": "CoreLibrary42_00147B28",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147B28.c",
+      "offset": 1342248,
+      "size": 124,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147B28.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147B28",
+          "offset": 1342248,
+          "size": 124
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147B28.c"
+    },
+    {
+      "name": "CoreLibrary42_00147BA4",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147BA4.c",
+      "offset": 1342372,
+      "size": 136,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147BA4.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147BA4",
+          "offset": 1342372,
+          "size": 136
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147BA4.c"
+    },
+    {
+      "name": "CoreLibrary42_00147C2C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147C2C.c",
+      "offset": 1342508,
+      "size": 148,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147C2C.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147C2C",
+          "offset": 1342508,
+          "size": 148
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147C2C.c"
+    },
+    {
+      "name": "CoreLibrary42_00147CC0",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147CC0.c",
+      "offset": 1342656,
+      "size": 108,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147CC0.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147CC0",
+          "offset": 1342656,
+          "size": 108
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147CC0.c"
+    },
+    {
+      "name": "CoreLibrary42_00147D94",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147D94.c",
+      "offset": 1342868,
+      "size": 148,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147D94.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147D94",
+          "offset": 1342868,
+          "size": 148
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147D94.c"
+    },
+    {
+      "name": "Imported_08147E28_20261030",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147E28.c",
+      "offset": 1343016,
+      "size": 160,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147E28.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147E28",
+          "offset": 1343016,
+          "size": 160
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147E28.c"
+    },
+    {
+      "name": "CoreLibrary42_00147EC8",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147EC8.c",
+      "offset": 1343176,
+      "size": 136,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147EC8.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147EC8",
+          "offset": 1343176,
+          "size": 136
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147EC8.c"
+    },
+    {
+      "name": "CoreLibrary42_00147F50",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/08147F50.c",
+      "offset": 1343312,
+      "size": 136,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/08147F50.symbols.s",
+      "functions": [
+        {
+          "name": "func_08147F50",
+          "offset": 1343312,
+          "size": 136
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/08147F50.c"
+    },
+    {
+      "name": "Registered39_0014846C",
+      "kind": "c",
+      "source": "src/upstream_shubshub_20261030/0814846C.c",
+      "offset": 1344620,
+      "size": 44,
+      "match_policy": "exact",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_symbol_supplement": "src/upstream_shubshub_20261030/0814846C.symbols.s",
+      "functions": [
+        {
+          "name": "func_0814846C",
+          "offset": 1344620,
+          "size": 44
+        }
+      ],
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "43f7f78cfe893ab4d99d2004e0740459589bfb5c",
+      "upstream_source": "src/0814846C.c"
     }
   ]
 }
