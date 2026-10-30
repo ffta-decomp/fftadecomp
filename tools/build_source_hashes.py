@@ -233,9 +233,10 @@ def write_delta_summary(config, paths, outcomes, error, destination):
         lines.append('| No changed files | — | — |')
     lines.extend(['', 'Headers, build configuration and other non-module files can affect multiple sources; the full selected set is rebuilt, but per-file dependency attribution is not inferred.', '', '### All failed modules', ''])
     failures = [(name, result) for name, result in sorted(outcomes.items()) if result['status'] != 'match']
+    sources = {module['name']: module['source'] for module in config['modules']}
     if failures:
         for name, result in failures:
-            lines.append(f"- `{safe(name)}`: {safe(result.get('error', result['status']))}")
+            lines.append(f"- `{safe(sources.get(name, 'unknown'))}` / `{safe(name)}`: {safe(result.get('error', result['status']))}")
             for item in result.get('functions', []):
                 if item['status'] != 'match':
                     lines.append(f"  - `{safe(item['name'])}` ({item['id']}): {item['status']}")
