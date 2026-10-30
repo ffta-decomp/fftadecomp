@@ -7,9 +7,9 @@
   "scope": "Published completed-source build. Distinct original spans, excluding overlaps with previous published sources. Separate from daily native ledger receipt statistics.",
   "new_import_functions": 62,
   "new_import_original_bytes": 9788,
-  "total_attributed_import_functions": 1134,
-  "total_attributed_import_original_bytes": 170890,
-  "published_completed_original_bytes": 529844,
+  "total_attributed_import_functions": 1136,
+  "total_attributed_import_original_bytes": 170910,
+  "published_completed_original_bytes": 535438,
   "not_credited_candidates": 0,
   "whole_image_verified": true,
   "entries": [
@@ -15800,9 +15800,41 @@
       "upstream_source_sha256": "2d9ade82c6130cfba54d3c89712c698d00a5f3eaecac506e0ecb7cf94504d19f",
       "validation": "local_whole_exact",
       "binary_sha256": "33354cb4293285b3d74f35df9241fd89603b74f58090753e511c8a2528068e04"
+    },
+    {
+      "name": "CoreFrontier_0001E6D4",
+      "entry": "0x801e6d4",
+      "rom_offset": 124628,
+      "original_bytes": 16,
+      "source": "src/contributed_gg_20261030/CoreFrontier_0001E6D4.c",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+      "upstream_source": "src/0801E610.c",
+      "upstream_source_sha256": "b308a482652fefeb16129f9e3350c72e95360800cc776ba6ce07030ec019ed19",
+      "validation": "local_whole_exact",
+      "binary_sha256": "c2b7f45f980b7b5f2946e4db8ccf965f8491871187742c0b2c70aef1be3f6b97",
+      "contributor": "gg",
+      "adaptation": "The submitted version reads offsets 28 and 29 rather than upstream offsets 0 and 1."
+    },
+    {
+      "name": "Embedded42_00A39770",
+      "entry": "0x8a39770",
+      "rom_offset": 10721136,
+      "original_bytes": 4,
+      "source": "src/contributed_gg_20261030/Embedded42_00A39770.c",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "c9e042201cbff2afeb0108cda849e8eb036ee382",
+      "upstream_source": "src/08020FC8.c",
+      "upstream_source_sha256": "e43c7c35577e5b24e2ea2bc69f9bd988ed11013c526863c3104ca07f9f11ccc5",
+      "validation": "local_whole_exact",
+      "binary_sha256": "6515cdef1ed8aa656d53d81b6200b25eb3a3519175620327cd77f616abe6442b",
+      "contributor": "gg",
+      "adaptation": "The submitted version writes offset 22 rather than upstream offset 5."
     }
   ],
-  "published_completed_modules": 3865,
+  "published_completed_modules": 3961,
   "whole_image_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "validation_report": "completed-build-validation.json"
 }
