@@ -164,6 +164,32 @@
       "component": "battle",
       "inline_assembly_bytes": 4,
       "match_policy": "exact"
+    },
+    {
+      "kind": "c",
+      "source": "src/campaign_gameplay_50k/11f5e0.c",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": false,
+      "external_exclude_symbols": [],
+      "functions": [
+        {
+          "name": "RemainingBand43_0011F5E0",
+          "offset": 1177056,
+          "size": 892
+        }
+      ],
+      "trailing_alignment_bytes": 0,
+      "name": "RemainingBand43_0011F5E0",
+      "offset": 1177056,
+      "size": 892,
+      "match_policy": "exact",
+      "instructions_bytes": 810,
+      "literal_bytes": 76,
+      "padding_bytes": 6,
+      "dispatch_table_bytes": 0
     }
   ]
 }
