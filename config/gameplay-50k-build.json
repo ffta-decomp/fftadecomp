@@ -30,6 +30,32 @@
       "inline_assembly_bytes": 4,
       "component": "battle",
       "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceAuthoredTargetSequence",
+          "offset": 1124148,
+          "size": 812
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalAuthoredSequence_00112734",
+      "offset": 1124148,
+      "size": 812,
+      "source": "src/campaign_gameplay_50k/112734.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 740,
+      "literal_bytes": 56,
+      "padding_bytes": 16,
+      "dispatch_table_bytes": 0
     }
   ]
 }

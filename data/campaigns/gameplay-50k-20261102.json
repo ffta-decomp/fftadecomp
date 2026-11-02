@@ -1,7 +1,7 @@
 {
   "schema": "ffta-recovery-campaign-v1",
   "campaign": "gameplay-50k-20261102",
-  "as_of": "2026-11-02T17:34:02Z",
+  "as_of": "2026-11-02T18:23:34Z",
   "public_base_commit": "d9b605775f003761fe23ab23b9983cc9b08cfb9c",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "upstream_avoidance_checked_at": "2026-11-02T15:54:54.796313+00:00",
@@ -33,11 +33,11 @@
     }
   ],
   "progress": {
-    "local_whole_exact_bytes": 280,
-    "independently_verified_bytes": 280,
-    "integrated_bytes": 280,
-    "published_source_bytes": 280,
-    "pure_c_bytes": 0,
+    "local_whole_exact_bytes": 1092,
+    "independently_verified_bytes": 1092,
+    "integrated_bytes": 1092,
+    "published_source_bytes": 1092,
+    "pure_c_bytes": 812,
     "mixed_bytes": 280
   },
   "limits": [
@@ -384,8 +384,11 @@
       "priority": "P2",
       "role": "Game-authored action-state continuation",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_pure_c",
+      "scope_note": "Whole-span pure C independently verified and integrated.",
+      "source": "src/campaign_gameplay_50k/112734.c",
+      "inline_instruction_bytes": 0,
+      "span_sha256": "3bfbdf4302f3edba6581edb72a0170a549225dee3ad08466cd0888d5438ffb2a"
     },
     {
       "native_id": "US-001137BC-00015A",
