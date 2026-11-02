@@ -56,6 +56,32 @@
       "literal_bytes": 56,
       "padding_bytes": 16,
       "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_0011FFD8",
+          "offset": 1179608,
+          "size": 960
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_0011FFD8",
+      "offset": 1179608,
+      "size": 960,
+      "source": "src/campaign_gameplay_50k/11ffd8.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 880,
+      "literal_bytes": 72,
+      "padding_bytes": 8,
+      "dispatch_table_bytes": 0
     }
   ]
 }
