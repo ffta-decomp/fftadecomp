@@ -1,0 +1,35 @@
+{
+  "id": "retail-us-4ac05441",
+  "size": 16777216,
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "rom_base": 134217728,
+  "modules": [
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreClosure31_00097F04",
+          "offset": 622340,
+          "size": 280
+        }
+      ],
+      "instructions_bytes": 270,
+      "kind": "mixed",
+      "literal_bytes": 8,
+      "name": "CoreClosure31_00097F04",
+      "offset": 622340,
+      "padding_bytes": 2,
+      "size": 280,
+      "source": "src/campaign_gameplay_50k/097f04.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "inline_assembly_bytes": 4,
+      "component": "battle",
+      "match_policy": "exact"
+    }
+  ]
+}
