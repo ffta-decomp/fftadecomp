@@ -1,7 +1,7 @@
 {
   "schema": "ffta-recovery-campaign-v1",
   "campaign": "gameplay-50k-20261102",
-  "as_of": "2026-11-02T18:43:52Z",
+  "as_of": "2026-11-02T19:29:52Z",
   "public_base_commit": "d9b605775f003761fe23ab23b9983cc9b08cfb9c",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "upstream_avoidance_checked_at": "2026-11-02T15:54:54.796313+00:00",
@@ -33,12 +33,12 @@
     }
   ],
   "progress": {
-    "local_whole_exact_bytes": 2052,
-    "independently_verified_bytes": 2052,
-    "integrated_bytes": 2052,
-    "published_source_bytes": 2052,
+    "local_whole_exact_bytes": 2686,
+    "independently_verified_bytes": 2686,
+    "integrated_bytes": 2686,
+    "published_source_bytes": 2686,
     "pure_c_bytes": 1772,
-    "mixed_bytes": 280
+    "mixed_bytes": 914
   },
   "limits": [
     "Initial scope declaration, not recovered C or matching progress.",
@@ -600,8 +600,11 @@
       "priority": "P3",
       "role": "Story/scene state callback or timeline; specific scene naming provisional",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_mixed",
+      "scope_note": "Whole-span mixed source independently verified and integrated; four instruction bytes are inline assembly.",
+      "source": "src/campaign_gameplay_50k/1204a8.c",
+      "inline_instruction_bytes": 4,
+      "span_sha256": "71908df57a5717be13f7c82968289b35858b8c960a177056f089ae43a88b65b8"
     },
     {
       "native_id": "US-0012B7F0-000190",
