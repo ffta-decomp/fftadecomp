@@ -136,6 +136,34 @@
       "literal_bytes": 4,
       "padding_bytes": 2,
       "dispatch_table_bytes": 0
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "PrepareBattleActorTransfer",
+          "offset": 734060,
+          "size": 432
+        }
+      ],
+      "instructions_bytes": 390,
+      "kind": "mixed",
+      "literal_bytes": 40,
+      "name": "BattleCallbackProducer_000B336C",
+      "offset": 734060,
+      "padding_bytes": 2,
+      "size": 432,
+      "source": "src/campaign_gameplay_50k/b336c.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "component": "battle",
+      "inline_assembly_bytes": 4,
+      "match_policy": "exact"
     }
   ]
 }
