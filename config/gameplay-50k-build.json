@@ -218,6 +218,442 @@
       "inline_assembly_bytes": 12,
       "component": "story",
       "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_001120CC",
+          "offset": 1122508,
+          "size": 660
+        }
+      ],
+      "instructions_bytes": 628,
+      "kind": "mixed",
+      "literal_bytes": 28,
+      "name": "RemainingBand43_001120CC",
+      "offset": 1122508,
+      "padding_bytes": 4,
+      "size": 660,
+      "source": "src/campaign_gameplay_50k/1120cc.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 30,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_00090BBC",
+          "offset": 592828,
+          "size": 316
+        }
+      ],
+      "instructions_bytes": 250,
+      "kind": "mixed",
+      "literal_bytes": 64,
+      "name": "CoreFrontier_00090BBC",
+      "offset": 592828,
+      "padding_bytes": 2,
+      "size": 316,
+      "source": "src/campaign_gameplay_50k/090bbc.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 8,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_0011872C",
+          "offset": 1148716,
+          "size": 576
+        }
+      ],
+      "instructions_bytes": 530,
+      "kind": "mixed",
+      "literal_bytes": 44,
+      "name": "OriginalActionCallback_0011872C",
+      "offset": 1148716,
+      "padding_bytes": 2,
+      "size": 576,
+      "source": "src/campaign_gameplay_50k/11872c.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 28,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_001102F4",
+          "offset": 1114868,
+          "size": 486
+        }
+      ],
+      "instructions_bytes": 426,
+      "kind": "mixed",
+      "literal_bytes": 52,
+      "name": "RemainingBand43_001102F4",
+      "offset": 1114868,
+      "padding_bytes": 8,
+      "size": 486,
+      "source": "src/campaign_gameplay_50k/1102f4.c",
+      "trailing_alignment_bytes": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 14,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalAuthoredSequence_00110FE0",
+          "offset": 1118176,
+          "size": 704
+        }
+      ],
+      "instructions_bytes": 666,
+      "kind": "mixed",
+      "literal_bytes": 32,
+      "name": "OriginalAuthoredSequence_00110FE0",
+      "offset": 1118176,
+      "padding_bytes": 6,
+      "size": 704,
+      "source": "src/campaign_gameplay_50k/110fe0.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 26,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceAuthoredTransitionSequence",
+          "offset": 1112824,
+          "size": 256
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_0010FAF8",
+      "offset": 1112824,
+      "size": 256,
+      "source": "src/campaign_gameplay_50k/10faf8.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 236,
+      "literal_bytes": 16,
+      "padding_bytes": 4,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000F4A70",
+          "offset": 1002096,
+          "size": 508
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_000F4A70",
+      "offset": 1002096,
+      "size": 508,
+      "source": "src/campaign_gameplay_50k/0f4a70.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 484,
+      "literal_bytes": 20,
+      "padding_bytes": 4,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "SceneTaskDependency_0002995C",
+          "offset": 170332,
+          "size": 728
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "SceneTaskDependency_0002995C",
+      "offset": 170332,
+      "size": 728,
+      "source": "src/campaign_gameplay_50k/02995c.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 604,
+      "literal_bytes": 116,
+      "padding_bytes": 8,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "menus",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "EmitStreamCursor",
+          "offset": 77784,
+          "size": 136
+        }
+      ],
+      "inline_assembly_bytes": 4,
+      "instructions_bytes": 122,
+      "kind": "mixed",
+      "literal_bytes": 12,
+      "name": "Source52_00012FD8",
+      "offset": 77784,
+      "padding_bytes": 2,
+      "size": 136,
+      "source": "src/campaign_gameplay_50k/012fd8.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingCore48_00061C30",
+          "offset": 400432,
+          "size": 108
+        }
+      ],
+      "instructions_bytes": 100,
+      "kind": "mixed",
+      "literal_bytes": 8,
+      "name": "RemainingCore48_00061C30",
+      "offset": 400432,
+      "padding_bytes": 0,
+      "size": 108,
+      "source": "src/campaign_gameplay_50k/061c30.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 6,
+      "component": "story",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_00112AEC",
+          "offset": 1125100,
+          "size": 480
+        }
+      ],
+      "instructions_bytes": 424,
+      "kind": "mixed",
+      "literal_bytes": 48,
+      "name": "RemainingBand43_00112AEC",
+      "offset": 1125100,
+      "padding_bytes": 8,
+      "size": 480,
+      "source": "src/campaign_gameplay_50k/112aec.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 8,
+      "component": "story",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_000213DC",
+          "offset": 136156,
+          "size": 166
+        }
+      ],
+      "instructions_bytes": 148,
+      "kind": "mixed",
+      "literal_bytes": 16,
+      "name": "CoreFrontier_000213DC",
+      "offset": 136156,
+      "padding_bytes": 2,
+      "size": 166,
+      "source": "src/campaign_gameplay_50k/0213dc.c",
+      "trailing_alignment_bytes": 2,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 10,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_0002C72C",
+          "offset": 182060,
+          "size": 180
+        }
+      ],
+      "instructions_bytes": 156,
+      "kind": "mixed",
+      "literal_bytes": 24,
+      "name": "CoreFrontier_0002C72C",
+      "offset": 182060,
+      "padding_bytes": 0,
+      "size": 180,
+      "source": "src/campaign_gameplay_50k/02c72c.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 2,
+      "component": "battle",
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000E6B10",
+          "offset": 944912,
+          "size": 580
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_000E6B10",
+      "offset": 944912,
+      "size": 580,
+      "source": "src/campaign_gameplay_50k/0e6b10.c",
+      "trailing_alignment_bytes": 0,
+      "instructions_bytes": 548,
+      "literal_bytes": 28,
+      "padding_bytes": 4,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceBattleActorTransition",
+          "offset": 764132,
+          "size": 682
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_000BA8E4",
+      "offset": 764132,
+      "size": 682,
+      "source": "src/campaign_gameplay_50k/0ba8e4.c",
+      "trailing_alignment_bytes": 2,
+      "instructions_bytes": 620,
+      "literal_bytes": 60,
+      "padding_bytes": 2,
+      "dispatch_table_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "battle",
+      "dispatch_table_bytes": 20,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_00092638",
+          "offset": 599608,
+          "size": 332
+        }
+      ],
+      "inline_assembly_bytes": 4,
+      "instructions_bytes": 270,
+      "kind": "mixed",
+      "literal_bytes": 56,
+      "name": "CoreFrontier_00092638",
+      "offset": 599608,
+      "padding_bytes": 6,
+      "size": 332,
+      "source": "src/campaign_gameplay_50k/092638.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact"
     }
   ]
 }

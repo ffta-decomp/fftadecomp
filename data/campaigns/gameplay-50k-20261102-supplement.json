@@ -1,0 +1,311 @@
+{
+  "schema": "ffta-campaign-supplement-v1",
+  "as_of": "2026-11-03T07:32:13.094757+00:00",
+  "scope": "Integrated accompanying functions outside the 41-function declared tranche. Separate from its completion denominator.",
+  "functions": [
+    {
+      "function": "RemainingBand43_001120CC",
+      "entry": "0x081120CC",
+      "end_exclusive": "0x08112360",
+      "original_bytes": 660,
+      "kind": "mixed",
+      "inline_instruction_bytes": 30,
+      "source": "src/campaign_gameplay_50k/1120cc.c",
+      "source_sha256": "ddb828968689d594d5f8e33c5131f79cc6312bf5b00f1a302bf891bf2f026313",
+      "span_sha256": "c01caf0a36bcda7fecb883efa2e658736d79db54a8bb0dfd8e1e91961cde0aa1",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "CoreFrontier_00090BBC",
+      "entry": "0x08090BBC",
+      "end_exclusive": "0x08090CF8",
+      "original_bytes": 316,
+      "kind": "mixed",
+      "inline_instruction_bytes": 8,
+      "source": "src/campaign_gameplay_50k/090bbc.c",
+      "source_sha256": "0bdac317d1f9a4ffc3403d11c3983cbbb717bc8cc339de21bf0bd6424fe1e83a",
+      "span_sha256": "7c79a607c821b8a0d64beceb68e7bffebe9bc215f039aef9ba6478f317367202",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "OriginalActionCallback_0011872C",
+      "entry": "0x0811872C",
+      "end_exclusive": "0x0811896C",
+      "original_bytes": 576,
+      "kind": "mixed",
+      "inline_instruction_bytes": 28,
+      "source": "src/campaign_gameplay_50k/11872c.c",
+      "source_sha256": "65ba2ac36545b416aabf5df4adb8fb6da9b6926c8b2ecec3dbf75b20e2d81154",
+      "span_sha256": "72b7becdb8621e7266bb5daf4dc8ec9d4e6e67cbab99c61eaa54677d7ec633c8",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "RemainingBand43_001102F4",
+      "entry": "0x081102F4",
+      "end_exclusive": "0x081104DA",
+      "original_bytes": 486,
+      "kind": "mixed",
+      "inline_instruction_bytes": 14,
+      "source": "src/campaign_gameplay_50k/1102f4.c",
+      "source_sha256": "822fc888489123d9ceefec93259ad9f35c4fb1b1de51d38d5b110b26f5096ae3",
+      "span_sha256": "f3694f876ad932c8c19d8b4fb4df8d1cd6dc4b6c4dc7d0d4d4dfda91d96af009",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "OriginalAuthoredSequence_00110FE0",
+      "entry": "0x08110FE0",
+      "end_exclusive": "0x081112A0",
+      "original_bytes": 704,
+      "kind": "mixed",
+      "inline_instruction_bytes": 26,
+      "source": "src/campaign_gameplay_50k/110fe0.c",
+      "source_sha256": "c27d07abd2fd898bf5d28b62d09295a037da444e9ebb919e9fee9f9b1f891953",
+      "span_sha256": "53db90fb5be2208fc65c55c1cdb0047278b5c641e33960441a2e553b266b8766",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "RemainingBand43_0010FAF8",
+      "entry": "0x0810FAF8",
+      "end_exclusive": "0x0810FBF8",
+      "original_bytes": 256,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/campaign_gameplay_50k/10faf8.c",
+      "source_sha256": "b933b45430483a399640a97a41bab1dbb09eb728cb06b6352a31720dd34e4924",
+      "span_sha256": "ebc3560d4b3b0d80d4cccc7ea49fa7dc3c0b4b8855cf15e96d3489a31557459e",
+      "status": "published_whole_exact_pure_c"
+    },
+    {
+      "function": "RemainingBand43_000F4A70",
+      "entry": "0x080F4A70",
+      "end_exclusive": "0x080F4C6C",
+      "original_bytes": 508,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/campaign_gameplay_50k/0f4a70.c",
+      "source_sha256": "abb9c9f3a5b888f36205c265b80ee4fc209d7389d28aac12f18aed0b591b7586",
+      "span_sha256": "7682d8936c87aae81b51ecb86503b6651aedfa9e0e0d6ecea6c1717095476fa0",
+      "status": "published_whole_exact_pure_c"
+    },
+    {
+      "function": "SceneTaskDependency_0002995C",
+      "entry": "0x0802995C",
+      "end_exclusive": "0x08029C34",
+      "original_bytes": 728,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/campaign_gameplay_50k/02995c.c",
+      "source_sha256": "b6c70ccd4b09f8d25f500aceccba19af6ae41affc50adc147f6e55e6c1bb61d4",
+      "span_sha256": "d2eebe4fbdcdd5349033096b67bed012d935934023f9a62d4dee9c96f9fc8987",
+      "status": "published_whole_exact_pure_c"
+    },
+    {
+      "function": "Source52_00012FD8",
+      "entry": "0x08012FD8",
+      "end_exclusive": "0x08013060",
+      "original_bytes": 136,
+      "kind": "mixed",
+      "inline_instruction_bytes": 4,
+      "source": "src/campaign_gameplay_50k/012fd8.c",
+      "source_sha256": "478f223a24d5995f350524bd8309c26ba7034a0345588706485bd03ea79985ae",
+      "span_sha256": "7541b7eaf6110f8404226e074d20662da7a4f07968c9c9f2f466f22241d968f9",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "RemainingCore48_00061C30",
+      "entry": "0x08061C30",
+      "end_exclusive": "0x08061C9C",
+      "original_bytes": 108,
+      "kind": "mixed",
+      "inline_instruction_bytes": 6,
+      "source": "src/campaign_gameplay_50k/061c30.c",
+      "source_sha256": "17a16803da83677d9de5378d72244ca657970759bf602d122785144d44d3d819",
+      "span_sha256": "85b106206fdec15c5101911226646e926c264fc062fdd386af340c5daec300b8",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "RemainingBand43_00112AEC",
+      "entry": "0x08112AEC",
+      "end_exclusive": "0x08112CCC",
+      "original_bytes": 480,
+      "kind": "mixed",
+      "inline_instruction_bytes": 8,
+      "source": "src/campaign_gameplay_50k/112aec.c",
+      "source_sha256": "b6dfd1088c2d0e14db2ba6c039fe552c1a6386aed02467a9c6f27c86c744eb5f",
+      "span_sha256": "bf34057ffc780d34fa77ec19a7d0f04cbaf8c35275bc391123d03c883426a338",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "CoreFrontier_000213DC",
+      "entry": "0x080213DC",
+      "end_exclusive": "0x08021482",
+      "original_bytes": 166,
+      "kind": "mixed",
+      "inline_instruction_bytes": 10,
+      "source": "src/campaign_gameplay_50k/0213dc.c",
+      "source_sha256": "b68dea578f862f3990bd35c5e576a44f02abcd28d6ba37903d5f280f687b76a3",
+      "span_sha256": "633491d0e2e8a8e88af0a3b565898354a13b53b77295841a1c2c7338319a9350",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "CoreFrontier_0002C72C",
+      "entry": "0x0802C72C",
+      "end_exclusive": "0x0802C7E0",
+      "original_bytes": 180,
+      "kind": "mixed",
+      "inline_instruction_bytes": 2,
+      "source": "src/campaign_gameplay_50k/02c72c.c",
+      "source_sha256": "2d8eac1cfaab6aa371a5b97c171672c1892f3de874eef2b657fdb26bf867552b",
+      "span_sha256": "e932eaaac46c180ef898cebc651031ee48b1e3ce31443ad951e77c3f07168e1b",
+      "status": "published_whole_exact_mixed"
+    },
+    {
+      "function": "RemainingBand43_000E6B10",
+      "entry": "0x080E6B10",
+      "end_exclusive": "0x080E6D54",
+      "original_bytes": 580,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/campaign_gameplay_50k/0e6b10.c",
+      "source_sha256": "7d72b185f51c20c3b87504b7baff23dc840cf3ba7188771e8c6607cd202423c2",
+      "span_sha256": "2402a9d80ddc501c92ba5a9fb38e003868b4b7a2122db55b734997f029e2c374",
+      "status": "published_whole_exact_pure_c"
+    },
+    {
+      "function": "CoreFrontier_000BA8E4",
+      "entry": "0x080BA8E4",
+      "end_exclusive": "0x080BAB8E",
+      "original_bytes": 682,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/campaign_gameplay_50k/0ba8e4.c",
+      "source_sha256": "b2e41d168bc012fc4310e8ed847194b7d04ee4b5b2d1c5288b3a8ef2576d5d4f",
+      "span_sha256": "a534d056708101695f621460096c53a8229fdb7cbcc19757c5a9ab0c806e86b5",
+      "status": "published_whole_exact_pure_c"
+    },
+    {
+      "function": "CoreFrontier_00092638",
+      "entry": "0x08092638",
+      "end_exclusive": "0x08092784",
+      "original_bytes": 332,
+      "kind": "mixed",
+      "inline_instruction_bytes": 4,
+      "source": "src/campaign_gameplay_50k/092638.c",
+      "source_sha256": "5119ab9b0f44066c9f5db1a1c1106e9cbf978c69fcc7add32747385abd2165b7",
+      "span_sha256": "79c2e3e7929c4b273ec6e63411036e6f9ec4d6f2db7ce1514a728912e669d70a",
+      "status": "published_whole_exact_mixed"
+    }
+  ],
+  "progress": {
+    "functions": 16,
+    "original_bytes": 6898,
+    "pure_c_bytes": 2754,
+    "mixed_bytes": 4144,
+    "inline_instruction_bytes": 140
+  },
+  "validation": "All 16 added sources compiled with the public fixed-O2 driver, linked at original entries, and matched every byte of the authenticated US retail ranges. Existing 8 campaign checks retained; no new decomp credit or full-ROM build.",
+  "verification": {
+    "checked_at": "2026-11-03T07:32:34.338672+00:00",
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "public_driver_sha256": "b9e6d4bd7f97e54231587f13e6cb1aafcde028af9face632b6d2d78670a5557a",
+    "checks": [
+      {
+        "function": "RemainingBand43_001120CC",
+        "bytes": 660,
+        "source_sha256": "ddb828968689d594d5f8e33c5131f79cc6312bf5b00f1a302bf891bf2f026313",
+        "span_sha256": "c01caf0a36bcda7fecb883efa2e658736d79db54a8bb0dfd8e1e91961cde0aa1"
+      },
+      {
+        "function": "CoreFrontier_00090BBC",
+        "bytes": 316,
+        "source_sha256": "0bdac317d1f9a4ffc3403d11c3983cbbb717bc8cc339de21bf0bd6424fe1e83a",
+        "span_sha256": "7c79a607c821b8a0d64beceb68e7bffebe9bc215f039aef9ba6478f317367202"
+      },
+      {
+        "function": "OriginalActionCallback_0011872C",
+        "bytes": 576,
+        "source_sha256": "65ba2ac36545b416aabf5df4adb8fb6da9b6926c8b2ecec3dbf75b20e2d81154",
+        "span_sha256": "72b7becdb8621e7266bb5daf4dc8ec9d4e6e67cbab99c61eaa54677d7ec633c8"
+      },
+      {
+        "function": "RemainingBand43_001102F4",
+        "bytes": 486,
+        "source_sha256": "822fc888489123d9ceefec93259ad9f35c4fb1b1de51d38d5b110b26f5096ae3",
+        "span_sha256": "f3694f876ad932c8c19d8b4fb4df8d1cd6dc4b6c4dc7d0d4d4dfda91d96af009"
+      },
+      {
+        "function": "OriginalAuthoredSequence_00110FE0",
+        "bytes": 704,
+        "source_sha256": "c27d07abd2fd898bf5d28b62d09295a037da444e9ebb919e9fee9f9b1f891953",
+        "span_sha256": "53db90fb5be2208fc65c55c1cdb0047278b5c641e33960441a2e553b266b8766"
+      },
+      {
+        "function": "RemainingBand43_0010FAF8",
+        "bytes": 256,
+        "source_sha256": "b933b45430483a399640a97a41bab1dbb09eb728cb06b6352a31720dd34e4924",
+        "span_sha256": "ebc3560d4b3b0d80d4cccc7ea49fa7dc3c0b4b8855cf15e96d3489a31557459e"
+      },
+      {
+        "function": "RemainingBand43_000F4A70",
+        "bytes": 508,
+        "source_sha256": "abb9c9f3a5b888f36205c265b80ee4fc209d7389d28aac12f18aed0b591b7586",
+        "span_sha256": "7682d8936c87aae81b51ecb86503b6651aedfa9e0e0d6ecea6c1717095476fa0"
+      },
+      {
+        "function": "SceneTaskDependency_0002995C",
+        "bytes": 728,
+        "source_sha256": "b6c70ccd4b09f8d25f500aceccba19af6ae41affc50adc147f6e55e6c1bb61d4",
+        "span_sha256": "d2eebe4fbdcdd5349033096b67bed012d935934023f9a62d4dee9c96f9fc8987"
+      },
+      {
+        "function": "Source52_00012FD8",
+        "bytes": 136,
+        "source_sha256": "478f223a24d5995f350524bd8309c26ba7034a0345588706485bd03ea79985ae",
+        "span_sha256": "7541b7eaf6110f8404226e074d20662da7a4f07968c9c9f2f466f22241d968f9"
+      },
+      {
+        "function": "RemainingCore48_00061C30",
+        "bytes": 108,
+        "source_sha256": "17a16803da83677d9de5378d72244ca657970759bf602d122785144d44d3d819",
+        "span_sha256": "85b106206fdec15c5101911226646e926c264fc062fdd386af340c5daec300b8"
+      },
+      {
+        "function": "RemainingBand43_00112AEC",
+        "bytes": 480,
+        "source_sha256": "b6dfd1088c2d0e14db2ba6c039fe552c1a6386aed02467a9c6f27c86c744eb5f",
+        "span_sha256": "bf34057ffc780d34fa77ec19a7d0f04cbaf8c35275bc391123d03c883426a338"
+      },
+      {
+        "function": "CoreFrontier_000213DC",
+        "bytes": 166,
+        "source_sha256": "b68dea578f862f3990bd35c5e576a44f02abcd28d6ba37903d5f280f687b76a3",
+        "span_sha256": "633491d0e2e8a8e88af0a3b565898354a13b53b77295841a1c2c7338319a9350"
+      },
+      {
+        "function": "CoreFrontier_0002C72C",
+        "bytes": 180,
+        "source_sha256": "2d8eac1cfaab6aa371a5b97c171672c1892f3de874eef2b657fdb26bf867552b",
+        "span_sha256": "e932eaaac46c180ef898cebc651031ee48b1e3ce31443ad951e77c3f07168e1b"
+      },
+      {
+        "function": "RemainingBand43_000E6B10",
+        "bytes": 580,
+        "source_sha256": "7d72b185f51c20c3b87504b7baff23dc840cf3ba7188771e8c6607cd202423c2",
+        "span_sha256": "2402a9d80ddc501c92ba5a9fb38e003868b4b7a2122db55b734997f029e2c374"
+      },
+      {
+        "function": "CoreFrontier_000BA8E4",
+        "bytes": 682,
+        "source_sha256": "b2e41d168bc012fc4310e8ed847194b7d04ee4b5b2d1c5288b3a8ef2576d5d4f",
+        "span_sha256": "a534d056708101695f621460096c53a8229fdb7cbcc19757c5a9ab0c806e86b5"
+      },
+      {
+        "function": "CoreFrontier_00092638",
+        "bytes": 332,
+        "source_sha256": "5119ab9b0f44066c9f5db1a1c1106e9cbf978c69fcc7add32747385abd2165b7",
+        "span_sha256": "79c2e3e7929c4b273ec6e63411036e6f9ec4d6f2db7ce1514a728912e669d70a"
+      }
+    ],
+    "rom_written": false
+  }
+}
