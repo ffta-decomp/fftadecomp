@@ -33,12 +33,12 @@
     }
   ],
   "progress": {
-    "local_whole_exact_bytes": 4350,
-    "independently_verified_bytes": 4350,
-    "integrated_bytes": 4350,
-    "published_source_bytes": 4350,
+    "local_whole_exact_bytes": 5170,
+    "independently_verified_bytes": 5170,
+    "integrated_bytes": 5170,
+    "published_source_bytes": 5170,
     "pure_c_bytes": 3004,
-    "mixed_bytes": 1346
+    "mixed_bytes": 2166
   },
   "limits": [
     "Initial scope declaration, not recovered C or matching progress.",
@@ -533,8 +533,11 @@
       "priority": "P3",
       "role": "Story/scene state callback or timeline; specific scene naming provisional",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_mixed",
+      "scope_note": "Whole-span mixed C independently verified and integrated.",
+      "source": "src/campaign_gameplay_50k/11ef58.c",
+      "inline_instruction_bytes": 12,
+      "span_sha256": "12a0792d9109595c45128b51650d316bc5ce1dd0794ab738ae867d8cef49c3a2"
     },
     {
       "native_id": "US-0011F28C-000352",
