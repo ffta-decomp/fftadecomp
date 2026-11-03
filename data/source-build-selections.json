@@ -1,0 +1,9 @@
+{
+  "schema": "source-build-selections-v1",
+  "selections": [
+    {
+      "config": "config/gameplay-50k-build.json",
+      "proof": "data/campaigns/gameplay-50k-20261102-build-proof.json"
+    }
+  ]
+}

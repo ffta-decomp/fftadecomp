@@ -55,6 +55,7 @@ Use the [skill](.agents/skills/ffta-decomp/SKILL.md) for original boundaries and
 - [`src/completed-index.json`](src/completed-index.json): original ROM entries, sizes and source hashes.
 - [`tools/build_completed.py`](tools/build_completed.py): build one private ROM and verify its final on-disk SHA-256.
 - [`tools/build_source_hashes.py`](tools/build_source_hashes.py): build every selected source module without a ROM and verify its module and [function-range SHA-256 table](data/completed-function-hashes.csv). The table records original addresses and byte lengths; compiler data/alignment ranges are identified separately.
+- [`data/source-build-selections.json`](data/source-build-selections.json): incremental source publications checked by the same ROM-free verifier, in addition to the frozen completed-source release. Changed C sources outside these verified selections fail the PR check.
 - [`tools/verify_completed_rom.py`](tools/verify_completed_rom.py): verify an existing ROM without recompilation or a second output.
 - [`docs/build-completed-sources.md`](docs/build-completed-sources.md): prerequisites, verification and build scope.
 
