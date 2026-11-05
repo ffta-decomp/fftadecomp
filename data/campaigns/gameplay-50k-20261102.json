@@ -1,7 +1,7 @@
 {
   "schema": "ffta-recovery-campaign-v1",
   "campaign": "gameplay-50k-20261102",
-  "as_of": "2026-11-03T07:33:26.603705+00:00",
+  "as_of": "2026-11-05T01:26:10.857131+00:00",
   "public_base_commit": "d9b605775f003761fe23ab23b9983cc9b08cfb9c",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "upstream_avoidance_checked_at": "2026-11-02T15:54:54.796313+00:00",
@@ -33,12 +33,12 @@
     }
   ],
   "progress": {
-    "local_whole_exact_bytes": 5170,
-    "independently_verified_bytes": 5170,
-    "integrated_bytes": 5170,
-    "published_source_bytes": 5170,
+    "local_whole_exact_bytes": 5914,
+    "independently_verified_bytes": 5914,
+    "integrated_bytes": 5914,
+    "published_source_bytes": 5914,
     "pure_c_bytes": 3004,
-    "mixed_bytes": 2166
+    "mixed_bytes": 2910
   },
   "limits": [
     "Initial scope declaration, not recovered C or matching progress.",
@@ -194,8 +194,11 @@
       "priority": "P1",
       "role": "Unit-coordinate transition initialization",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_mixed",
+      "scope_note": "Whole original span independently verified and integrated; public fixed-O2 source validation recorded in the build proof.",
+      "source": "src/campaign_gameplay_50k/127458.c",
+      "inline_instruction_bytes": 14,
+      "span_sha256": "c8d47ef776f97a660c229e3e434970f94e2faeaebcaf5f127a56a10419eda0d3"
     },
     {
       "native_id": "US-001277C8-0001C8",
@@ -491,8 +494,11 @@
       "priority": "P3",
       "role": "Story/scene state callback or timeline; specific scene naming provisional",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_mixed",
+      "scope_note": "Whole original span independently verified and integrated; public fixed-O2 source validation recorded in the build proof.",
+      "source": "src/campaign_gameplay_50k/11c6b0.c",
+      "inline_instruction_bytes": 20,
+      "span_sha256": "0e808483f3e84035a90aee4feaa9e2facfb9da26b44e9afe63f99717c97f774d"
     },
     {
       "native_id": "US-0011CDCC-0003D0",
@@ -647,16 +653,15 @@
       "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
     }
   ],
-  "activity_status": "paused",
-  "pause_note": "Recovery paused at maintainer request after current functions were closed. Existing verified source and outstanding unmatched scope remain available for review.",
+  "activity_status": "published_checkpoint",
   "supplement": "data/campaigns/gameplay-50k-20261102-supplement.json",
   "publication_totals": {
-    "functions": 24,
-    "original_bytes": 12068,
-    "pure_c_bytes": 5758,
-    "mixed_bytes": 6310,
-    "inline_instruction_bytes": 164,
-    "declared_scope_original_bytes": 5170,
-    "additional_original_bytes": 6898
+    "functions": 39,
+    "original_bytes": 23424,
+    "pure_c_bytes": 12240,
+    "mixed_bytes": 11184,
+    "inline_instruction_bytes": 316,
+    "declared_scope_original_bytes": 5914,
+    "additional_original_bytes": 17510
   }
 }

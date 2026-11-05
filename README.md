@@ -24,6 +24,16 @@ original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
+The [gameplay recovery PR checkpoint](docs/campaigns/gameplay-50k-20261102.md),
+updated **2026-11-05**, additionally publishes **39 functions / 23,424 original
+bytes**: **12,240 B pure C** and **11,184 B mixed**, with **316 inline instruction
+bytes**. The latest increment is 15 functions / 11,356 B. Within the original
+41-function / 49,506 B tranche, 10 functions / 5,914 B (**11.95%**) are published;
+29 accompanying functions / 17,510 B are outside that denominator. Together with
+the frozen release below, ROM-free CI covers **4,000 disjoint modules / 558,862
+original bytes**. These incremental source checks do not replace the frozen
+full-ROM verification or imply complete gameplay recovery.
+
 Latest [source synchronization](data/source-sync-20261030.json): **62 verified upstream functions / 9,788 original bytes added**. The [comparison](data/upstream-comparison-20261030.json) includes main and PR #20; attribution is preserved per source and function.
 
 As of **2026-10-30**, the public build contains **3,961 completed modules / 535,438 original bytes**, covering **41.801% of 1,280,908 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
