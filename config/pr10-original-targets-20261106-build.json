@@ -5,6 +5,34 @@
   "rom_base": 134217728,
   "modules": [
     {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceAuthoredDualSpriteSequence",
+          "offset": 1135968,
+          "size": 748
+        }
+      ],
+      "instructions_bytes": 698,
+      "kind": "mixed",
+      "literal_bytes": 40,
+      "name": "OriginalAuthoredSequence_00115560",
+      "offset": 1135968,
+      "padding_bytes": 10,
+      "size": 748,
+      "source": "src/authored_sequence_115560/cause11_mixed.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 10,
+      "component": "graphics",
+      "match_policy": "exact"
+    },
+    {
       "compiler_flags": [
         "-O2",
         "-mthumb-interwork"

@@ -1,7 +1,7 @@
 {
   "schema": "ffta-recovery-campaign-v1",
   "campaign": "gameplay-50k-20261102",
-  "as_of": "2026-11-06T14:28:55.865904+00:00",
+  "as_of": "2026-11-06T16:06:28.551285+00:00",
   "public_base_commit": "d9b605775f003761fe23ab23b9983cc9b08cfb9c",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "upstream_avoidance_checked_at": "2026-11-02T15:54:54.796313+00:00",
@@ -33,12 +33,12 @@
     }
   ],
   "progress": {
-    "local_whole_exact_bytes": 7818,
-    "independently_verified_bytes": 7818,
-    "integrated_bytes": 7818,
-    "published_source_bytes": 7818,
+    "local_whole_exact_bytes": 8566,
+    "independently_verified_bytes": 8566,
+    "integrated_bytes": 8566,
+    "published_source_bytes": 8566,
     "pure_c_bytes": 4508,
-    "mixed_bytes": 3310,
+    "mixed_bytes": 4058,
     "attributed_upstream_pure_c_bytes": 456
   },
   "limits": [
@@ -431,8 +431,11 @@
       "priority": "P2",
       "role": "Game-authored action-state continuation",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_mixed",
+      "scope_note": "Whole 748-byte authored sequence independently verified and integrated; ten inline instruction bytes.",
+      "source": "src/authored_sequence_115560/cause11_mixed.c",
+      "span_sha256": "9a5360ddffa801b36267fc415054a6a989b7580b211ad896ffdf0350a2aee605",
+      "inline_instruction_bytes": 10
     },
     {
       "native_id": "US-001160E4-00039C",
@@ -669,21 +672,21 @@
   "activity_status": "published_checkpoint",
   "supplement": "data/campaigns/gameplay-50k-20261102-supplement.json",
   "publication_totals": {
-    "functions": 42,
-    "original_bytes": 25328,
+    "functions": 43,
+    "original_bytes": 26076,
     "pure_c_bytes": 13744,
-    "mixed_bytes": 11584,
-    "inline_instruction_bytes": 320,
-    "declared_scope_original_bytes": 7818,
+    "mixed_bytes": 12332,
+    "inline_instruction_bytes": 330,
+    "declared_scope_original_bytes": 8566,
     "additional_original_bytes": 17510,
     "attributed_upstream_pure_c_bytes": 456
   },
   "total_public_selected_sources": {
-    "functions": 4142,
-    "original_bytes": 615506,
+    "functions": 4143,
+    "original_bytes": 616254,
     "pure_c_bytes": 569542,
-    "mixed_bytes": 45964,
-    "inline_instruction_bytes": 1076,
+    "mixed_bytes": 46712,
+    "inline_instruction_bytes": 1086,
     "attributed_upstream_original_bytes": 200644,
     "deduplication": "disjoint whole native ranges across registered source selections"
   }
