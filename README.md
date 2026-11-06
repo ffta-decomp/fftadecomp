@@ -97,3 +97,5 @@ Completed C and eligible mixed modules are published in [`src/`](src/README.md),
 ## Upstream-imported implementations
 
 Locally verified imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp) are explicitly attributed in source headers and [progress JSON](data/upstream-imports.json)/[CSV](data/upstream-imports.csv). They are not counted as independent rewrites. See [provenance and validation](docs/upstream-imports.md); imported and existing spans are deduplicated within the published source build.
+
+Upstream source integration: [1194624 verified import](docs/campaigns/upstream-import-1194624.md) adds 92 complete pure-C functions (25,982 bytes); overlapping functions are counted once.

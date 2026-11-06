@@ -4,6 +4,10 @@
     {
       "config": "config/gameplay-50k-build.json",
       "proof": "data/campaigns/gameplay-50k-20261102-build-proof.json"
+    },
+    {
+      "config": "config/upstream-1194624-build.json",
+      "proof": "data/upstream-import-1194624-build-proof.json"
     }
   ]
 }
