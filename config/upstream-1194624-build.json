@@ -155,6 +155,64 @@
         "-mthumb-interwork"
       ],
       "external_exclude_symbols": [
+        "func_08009140"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_08009140",
+          "offset": 37184,
+          "size": 316
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_00009140",
+      "offset": 37184,
+      "size": 316,
+      "source": "src/upstream_recovered_20261106/func_08009140.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_08009140.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/08009140.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
+        "func_08009414"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_08009414",
+          "offset": 37908,
+          "size": 168
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_00009414",
+      "offset": 37908,
+      "size": 168,
+      "source": "src/upstream_recovered_20261106/func_08009414.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_08009414.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/08009414.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
         "func_0800AF04"
       ],
       "external_symbols": true,
@@ -293,6 +351,35 @@
       "upstream_repository": "https://github.com/shubshub/fftadecomp",
       "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
       "upstream_source": "src/0801DA10.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
+        "func_0801DE88"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_0801DE88",
+          "offset": 122504,
+          "size": 260
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Registered39_0001DE88",
+      "offset": 122504,
+      "size": 260,
+      "source": "src/upstream_recovered_20261106/func_0801DE88.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_0801DE88.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/0801DE88.c"
     },
     {
       "compiler_flags": [
@@ -967,6 +1054,35 @@
         "-mthumb-interwork"
       ],
       "external_exclude_symbols": [
+        "func_08049FB4"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_08049FB4",
+          "offset": 303028,
+          "size": 424
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_00049FB4",
+      "offset": 303028,
+      "size": 424,
+      "source": "src/upstream_recovered_20261106/func_08049FB4.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_08049FB4.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/08049FB4.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
         "func_0804A15C"
       ],
       "external_symbols": true,
@@ -1482,6 +1598,35 @@
       "upstream_repository": "https://github.com/shubshub/fftadecomp",
       "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
       "upstream_source": "src/0807109C.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
+        "func_08072C78"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_08072C78",
+          "offset": 470136,
+          "size": 1500
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreScene34_00072C78",
+      "offset": 470136,
+      "size": 1500,
+      "source": "src/upstream_recovered_20261106/func_08072C78.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_08072C78.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/08072C78.c"
     },
     {
       "compiler_flags": [
@@ -2446,6 +2591,35 @@
         "-mthumb-interwork"
       ],
       "external_exclude_symbols": [
+        "func_0813790C"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_0813790C",
+          "offset": 1276172,
+          "size": 188
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Registered39_0013790C",
+      "offset": 1276172,
+      "size": 188,
+      "source": "src/upstream_recovered_20261106/func_0813790C.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_0813790C.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/0813790C.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
         "func_08137B20"
       ],
       "external_symbols": true,
@@ -2497,6 +2671,35 @@
       "upstream_repository": "https://github.com/shubshub/fftadecomp",
       "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
       "upstream_source": "src/08137B50.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
+        "func_0813839C"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_0813839C",
+          "offset": 1278876,
+          "size": 276
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "Remaining38_0013839C",
+      "offset": 1278876,
+      "size": 276,
+      "source": "src/upstream_recovered_20261106/func_0813839C.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_0813839C.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/0813839C.c"
     },
     {
       "compiler_flags": [
@@ -2642,6 +2845,35 @@
       "upstream_repository": "https://github.com/shubshub/fftadecomp",
       "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
       "upstream_source": "src/081443FC.c"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [
+        "func_08145608"
+      ],
+      "external_symbols": true,
+      "functions": [
+        {
+          "name": "func_08145608",
+          "offset": 1332744,
+          "size": 164
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreLibrary42_00145608",
+      "offset": 1332744,
+      "size": 164,
+      "source": "src/upstream_recovered_20261106/func_08145608.c",
+      "trailing_alignment_bytes": 0,
+      "external_symbol_supplement": "src/upstream_recovered_20261106/func_08145608.retry-symbols.s",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "11946243ba373da48154ed04cb3bb31e52dad97b",
+      "upstream_source": "src/08145608.c"
     },
     {
       "compiler_flags": [
