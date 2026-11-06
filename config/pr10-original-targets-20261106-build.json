@@ -5,6 +5,28 @@
   "rom_base": 134217728,
   "modules": [
     {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_0011F95C",
+          "offset": 1177948,
+          "size": 1048
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_0011F95C",
+      "offset": 1177948,
+      "size": 1048,
+      "source": "src/authored_story_363/11f95c/advance_indexed_stage.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
       "name": "CoreRegion_001277C8",
       "kind": "c",
       "offset": 1210312,
