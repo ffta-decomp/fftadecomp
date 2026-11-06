@@ -8,6 +8,10 @@
     {
       "config": "config/upstream-1194624-build.json",
       "proof": "data/upstream-import-1194624-build-proof.json"
+    },
+    {
+      "config": "config/integrated-native-20261106-build.json",
+      "proof": "data/integrated-native-20261106-build-proof.json"
     }
   ]
 }
