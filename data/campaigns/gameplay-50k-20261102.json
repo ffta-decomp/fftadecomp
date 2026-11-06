@@ -1,7 +1,7 @@
 {
   "schema": "ffta-recovery-campaign-v1",
   "campaign": "gameplay-50k-20261102",
-  "as_of": "2026-11-05T01:26:10.857131+00:00",
+  "as_of": "2026-11-06T13:39:57.655878+00:00",
   "public_base_commit": "d9b605775f003761fe23ab23b9983cc9b08cfb9c",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
   "upstream_avoidance_checked_at": "2026-11-02T15:54:54.796313+00:00",
@@ -33,12 +33,13 @@
     }
   ],
   "progress": {
-    "local_whole_exact_bytes": 5914,
-    "independently_verified_bytes": 5914,
-    "integrated_bytes": 5914,
-    "published_source_bytes": 5914,
-    "pure_c_bytes": 3004,
-    "mixed_bytes": 2910
+    "local_whole_exact_bytes": 6770,
+    "independently_verified_bytes": 6770,
+    "integrated_bytes": 6770,
+    "published_source_bytes": 6770,
+    "pure_c_bytes": 3460,
+    "mixed_bytes": 3310,
+    "attributed_upstream_pure_c_bytes": 456
   },
   "limits": [
     "Initial scope declaration, not recovered C or matching progress.",
@@ -211,8 +212,14 @@
       "priority": "P1",
       "role": "Actor height/coordinate samples consumed by a unit transition",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_pure_c",
+      "scope_note": "Whole-span source independently verified and integrated; attributed upstream source, no independent rewrite credit.",
+      "source": "src/upstream_recovered_20261106/func_081277C8.c",
+      "span_sha256": "b5c243743efd9870fd71d0b259367d6644686d2e1e55d44d44cb2b62c2baa4d6",
+      "inline_instruction_bytes": 0,
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "1a8ef98ec0da7580594f2600c08727d82376610c"
     },
     {
       "native_id": "US-000902CC-0007B4",
@@ -635,8 +642,11 @@
       "priority": "P3",
       "role": "Story/scene state callback or timeline; specific scene naming provisional",
       "representation_at_scope": "retained_assembly",
-      "status": "planned_unmatched",
-      "scope_note": "Existing attempts retained; revalidate ABI, evidence and a distinct next cause before implementation."
+      "status": "published_whole_exact_mixed",
+      "scope_note": "Whole-span source independently verified and integrated; four instruction bytes are inline assembly.",
+      "source": "src/authored_mixed_363/12b7f0/ordered_capture.c",
+      "span_sha256": "c7eb073982b055a2f10ddb9388856cd1dee11b3821ae304bbad807a44ee3b2af",
+      "inline_instruction_bytes": 4
     },
     {
       "native_id": "US-0013C0EC-0013B4",
@@ -656,12 +666,22 @@
   "activity_status": "published_checkpoint",
   "supplement": "data/campaigns/gameplay-50k-20261102-supplement.json",
   "publication_totals": {
-    "functions": 39,
-    "original_bytes": 23424,
-    "pure_c_bytes": 12240,
-    "mixed_bytes": 11184,
-    "inline_instruction_bytes": 316,
-    "declared_scope_original_bytes": 5914,
-    "additional_original_bytes": 17510
+    "functions": 41,
+    "original_bytes": 24280,
+    "pure_c_bytes": 12696,
+    "mixed_bytes": 11584,
+    "inline_instruction_bytes": 320,
+    "declared_scope_original_bytes": 6770,
+    "additional_original_bytes": 17510,
+    "attributed_upstream_pure_c_bytes": 456
+  },
+  "total_public_selected_sources": {
+    "functions": 4141,
+    "original_bytes": 614458,
+    "pure_c_bytes": 568494,
+    "mixed_bytes": 45964,
+    "inline_instruction_bytes": 1076,
+    "attributed_upstream_original_bytes": 200644,
+    "deduplication": "disjoint whole native ranges across registered source selections"
   }
 }

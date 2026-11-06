@@ -12,6 +12,10 @@
     {
       "config": "config/integrated-native-20261106-build.json",
       "proof": "data/integrated-native-20261106-build-proof.json"
+    },
+    {
+      "config": "config/pr10-original-targets-20261106-build.json",
+      "proof": "data/pr10-original-targets-20261106-build-proof.json"
     }
   ]
 }
