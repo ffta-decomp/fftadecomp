@@ -156,7 +156,7 @@ from consumer_bounded_tables_codec import encode_table as encode_consumer_bounde
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD_ROOT = ROOT / "build"
-MIXED_COMPONENTS = {"battle", "missions", "jobs", "abilities", "items",
+MIXED_COMPONENTS = {"battle", "missions", "story", "jobs", "abilities", "items",
                     "equipment", "menus", "audio", "graphics", "input",
                     "saves", "system"}
 MIXED_EXCEPTION_COMPONENTS = {

@@ -1,6 +1,7 @@
 """ROM-free builds must verify the complete selected range set and inputs."""
 import copy
 import hashlib
+import json
 from pathlib import Path
 import sys
 import tempfile
@@ -119,10 +120,89 @@ class SourceHashTests(unittest.TestCase):
         verifier.write_delta_summary(self.config, ['input.c'], {}, 'preflight failed', summary)
         self.assertIn('US-00000008-000004) | not built', summary.read_text())
 
+    def test_summary_does_not_hide_build_error_or_overflow_behind_range_match(self):
+        summary = self.root / 'summary.md'
+        failed = {'example': {'status': 'build error', 'error': 'compiler failed'}}
+        verifier.write_delta_summary(self.config, ['input.c'], failed, 'failed', summary)
+        self.assertIn('US-00000008-000004) | build error', summary.read_text())
+        summary.unlink()
+        failed['example'] = {'status': 'mismatch', 'error': 'overflow', 'functions': [
+            {'name': 'example', 'id': 'US-00000008-000004', 'status': 'match'}]}
+        verifier.write_delta_summary(self.config, ['input.c'], failed, 'failed', summary)
+        self.assertIn('range hash matches; module mismatch', summary.read_text())
+
     def test_tampered_index_source_is_rejected(self):
         self.source.write_bytes(b'int changed;\n')
         with self.assertRaisesRegex(ValueError, 'source/header hash mismatch'):
             verifier.validate_inputs(self.config, self.index, self.expected, self.root)
+
+    def selection(self):
+        raw = ('id,address,original_bytes,sha256,kind,module,name\n'
+               'US-00000008-000004,0x08000008,4,' + verifier.sha256(self.native)
+               + ',function,example,example\n').encode()
+        expected = dict(self.expected, function_table_sha256=verifier.sha256(raw),
+                        function_range_count=1)
+        return self.config, self.index, expected, raw
+
+    def test_incremental_selections_are_merged_and_collisions_rejected(self):
+        first = self.selection()
+        second = copy.deepcopy(first)
+        config, index, expected, _ = second
+        config['modules'][0].update(name='extra', offset=16)
+        index['modules'][0].update(name='extra', rom_offset=16)
+        expected['modules'][0].update(name='extra', rom_offset=16)
+        expected['module_set_sha256'] = verifier.set_hash(expected['modules'])
+        raw = second[3].replace(b'00000008', b'00000010').replace(b'0x08000008', b'0x08000010')
+        raw = raw.replace(b'example,example', b'extra,extra')
+        expected['function_table_sha256'] = verifier.sha256(raw)
+        second = config, index, expected, raw
+        merged, _, _, functions = verifier.merge_build_selections([first, second], self.root)
+        self.assertEqual(len(merged['modules']), 2)
+        self.assertEqual(set(functions), {'example', 'extra'})
+        with self.assertRaisesRegex(ValueError, 'Duplicate module'):
+            verifier.merge_build_selections([first, first], self.root)
+        config['modules'][0]['offset'] = 10
+        index['modules'][0]['rom_offset'] = 10
+        expected['modules'][0]['rom_offset'] = 10
+        expected['module_set_sha256'] = verifier.set_hash(expected['modules'])
+        raw = raw.replace(b'00000010', b'0000000A').replace(b'0x08000010', b'0x0800000A')
+        expected['function_table_sha256'] = verifier.sha256(raw)
+        with self.assertRaisesRegex(ValueError, 'overlapping'):
+            verifier.merge_build_selections([first, (config, index, expected, raw)], self.root)
+
+    def test_changed_c_cannot_silently_escape_build_coverage(self):
+        source = self.root / 'src/new.c'
+        source.parent.mkdir()
+        source.write_text('int newly_published;')
+        with self.assertRaisesRegex(ValueError, 'no verified build selection'):
+            verifier.require_changed_source_coverage(self.config, ['src/new.c'], self.root)
+        verifier.require_changed_source_coverage(self.config, ['src/deleted.c', 'docs/progress.md'], self.root)
+        covered = copy.deepcopy(self.config)
+        covered['modules'][0]['source'] = 'src/new.c'
+        verifier.require_changed_source_coverage(covered, ['src/new.c'], self.root)
+
+    def test_registry_authenticates_additional_config_before_building(self):
+        config, index, expected, raw = self.selection()
+        for name, value in [('config/completed-build.json', config),
+                            ('src/completed-index.json', index),
+                            ('data/completed-module-hashes.json', expected)]:
+            path = self.root / name
+            path.parent.mkdir(exist_ok=True)
+            path.write_text(json.dumps(value))
+        (self.root / 'data/completed-function-hashes.csv').write_bytes(raw)
+        self.assertEqual(len(verifier.load_build_selections(self.root)[0]['modules']), 1)
+        registry = {'schema': 'source-build-selections-v1', 'selections': [
+            {'config': 'config/additional.json', 'proof': 'data/additional.json'}]}
+        (self.root / 'data/source-build-selections.json').write_text(json.dumps(registry))
+        (self.root / 'config/additional.json').write_text(json.dumps(config))
+        (self.root / 'data/additional.json').write_text(json.dumps({
+            'schema': 'source-build-selection-proof-v1', 'config_sha256': '0' * 64}))
+        with self.assertRaisesRegex(ValueError, 'configuration hash mismatch'):
+            verifier.load_build_selections(self.root)
+        registry['selections'][0]['config'] = '../outside.json'
+        (self.root / 'data/source-build-selections.json').write_text(json.dumps(registry))
+        with self.assertRaisesRegex(ValueError, 'escapes repository'):
+            verifier.load_build_selections(self.root)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,401 @@
+{
+  "schema": "integrated-native-source-increment-v1",
+  "functions": 39,
+  "original_bytes": 25462,
+  "pure_c_original_bytes": 22410,
+  "mixed_original_bytes": 3052,
+  "mixed_inline_instruction_bytes": 2,
+  "source_validation": "Fixed-O2 whole-range native checksum and linked entry verified; public header guards normalized without changing C bodies.",
+  "entries": [
+    {
+      "name": "CoreStateDirect_00007C84",
+      "rom_offset": 31876,
+      "original_bytes": 790,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/path_interpolation/advance_path_interpolation.c",
+      "source_sha256": "926de1a39b535c8ee2f1c6da714b76967b21e651abed982db1aa9ea096de529d",
+      "native_sha256": "14268a064aa1f5f462c753c7c61471aa47daa011d15c9c1dec9fbc3167739256"
+    },
+    {
+      "name": "CoreFrontier_0002E160",
+      "rom_offset": 188768,
+      "original_bytes": 472,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/core_frontier_26/core_frontier_0002e160.c",
+      "source_sha256": "e1290658596f30f5ced1c1bf6576b521588f70c78e29ad19de7f7076d22318f3",
+      "native_sha256": "0c4b6619e96816293bc3ab339db88daf8a79938ea268e50a25c2c064a019500f"
+    },
+    {
+      "name": "CoreRegion_0004BBC0",
+      "rom_offset": 310208,
+      "original_bytes": 396,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/progress_route_4bbc0/original_stop_current_comparison_cause10.c",
+      "source_sha256": "842e7cee66e54cd4ecb6423b3a2f00b8dede03d256cb63d2fa08458bbb07b54b",
+      "native_sha256": "6c53fa0b12f34f92d94533c7020dd3a7103c68fe863a306bbbb8ea66dd62c455"
+    },
+    {
+      "name": "BattleRuntimeDependency_000A7EC4",
+      "rom_offset": 687812,
+      "original_bytes": 256,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/battle_runtime_dependencies/select_item_category_cue.c",
+      "source_sha256": "c6449ebe2a418d7797ad56fc5ee33365bd4612e04be439074c4837201b6883d6",
+      "native_sha256": "308625fc40c3675aa836782c03ee2440c26f7349327a62feb32c2fcc23cb5d08"
+    },
+    {
+      "name": "RemainingBand43_000E3E84",
+      "rom_offset": 933508,
+      "original_bytes": 462,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/ability_definition_child_e3e84/conditional_value_flags_definition_cause07.c",
+      "source_sha256": "22fd20400c1d44120dcf71882ec11f1103deaa0d1fcb3e34f285a45a6247d705",
+      "native_sha256": "e0165ddd3edceaae3b42807045896d6e3fa668748d595408f62b52263cb6e6be"
+    },
+    {
+      "name": "DefinitionTargetSequence_000E4054",
+      "rom_offset": 933972,
+      "original_bytes": 400,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/definition_target_sequence/advance_definition_target_sequence.c",
+      "source_sha256": "7c48eaac926c08b51d3aa3db15494c912aa00432bd57ce2590fd79f189a75c9f",
+      "native_sha256": "edb777d0ea535fbb4c9162401350aec79577a7b0d195ed6dcb7f898ef13b4e6a"
+    },
+    {
+      "name": "RemainingBand43_000F0EF4",
+      "rom_offset": 986868,
+      "original_bytes": 654,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/action_target_effects_f0ef4/final_rolling_slot_object_cause14.c",
+      "source_sha256": "f38b74db1f4cb2489e1c3f877bcd0e0a3594c8e759edf58259b520a0c60ae77e",
+      "native_sha256": "0396db833a2618b1403223f0d085054cbe94211cf02cfe2bc7ea8a607627aee4"
+    },
+    {
+      "name": "OriginalActionCallback_000F38C4",
+      "rom_offset": 997572,
+      "original_bytes": 572,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_variant_actor_action_sequence.c",
+      "source_sha256": "3345f8177698e5ac2e32c3bc0ed057a683115c84065e9c4e361af0ae9f88d1eb",
+      "native_sha256": "767c583f6592c5ca01faf287819ff5c6ae94468c6f1f65a281f59143ad79e287"
+    },
+    {
+      "name": "OriginalActionCallback_000F3E7C",
+      "rom_offset": 999036,
+      "original_bytes": 256,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_notified_actor_action_child.c",
+      "source_sha256": "7fb7b7cfbd8fe293a8f52a25bf6d9da5b7649a16b73f98d16102b9e5c1757efe",
+      "native_sha256": "a40195b6a72d3cb870225e4fca89361ae7b8b287ff0654a8ba50cfb7e46ee934"
+    },
+    {
+      "name": "OriginalActionCallback_000F41C8",
+      "rom_offset": 999880,
+      "original_bytes": 648,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_opening_trio_and_target_children.c",
+      "source_sha256": "d47d9a8f54a724d027e5aca1b8431177b20be13e9ea5ac01d87cc6629f23c4b8",
+      "native_sha256": "58a340d00ca688b270389556122d0ba2265ca5014539895c9ff410063512d2b7"
+    },
+    {
+      "name": "OriginalActionCallback_000F5864",
+      "rom_offset": 1005668,
+      "original_bytes": 896,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_alternating_target_motion_sequence.c",
+      "source_sha256": "65c4cd7e05816f0459bce2cc2fc47f504699c8c2bb7199717550d23e57ff2c1a",
+      "native_sha256": "1785325df383ebba1f08e1459bc070e0a86493667f4cd54929d395e1c48b2b13"
+    },
+    {
+      "name": "OriginalActionCallback_000F6060",
+      "rom_offset": 1007712,
+      "original_bytes": 1072,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_two_stage_actor_target_sequence.c",
+      "source_sha256": "bffc95ad2c0d9337429db34d5416326a103b733a58f92588a9e92f12603a84bd",
+      "native_sha256": "6fb8d0c6c7887b39f6670d71e72ad3e58131d4d59ae4de19ed75eb79fa34062d"
+    },
+    {
+      "name": "OriginalActionCallback_000F6520",
+      "rom_offset": 1008928,
+      "original_bytes": 1084,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_descriptor_actor_target_sequence.c",
+      "source_sha256": "244e7a7a7605e99b62c2a086d3431376e78871c7cfad3700978d4de6cd485efb",
+      "native_sha256": "dbe405d576694eab44281b01ea587450d0e6010282e9db7035bf9d3fcb0d7886"
+    },
+    {
+      "name": "OriginalActionCallback_000F6A40",
+      "rom_offset": 1010240,
+      "original_bytes": 520,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_three_stage_actor_target_sequence.c",
+      "source_sha256": "cf362d660f40bd3d9767c5c6862b4da945a7330a0214556b98343547e7de6491",
+      "native_sha256": "e8afcb6ed6be617e2694613f1ffa9a5aed6d35e5da3475b61c2a8a5b39bf8327"
+    },
+    {
+      "name": "OriginalActionCallback_000F7160",
+      "rom_offset": 1012064,
+      "original_bytes": 336,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_actor_setup_and_child_sequence.c",
+      "source_sha256": "4de17e9e3d8fcd0c30d7cc149c66834746f08b85b3fa2a80201111f7fbc2ff3f",
+      "native_sha256": "375f2f014efbe2ed8168cc599835be480fbd119c75212f2c5d8929904074bec8"
+    },
+    {
+      "name": "OriginalActionCallback_000F86EC",
+      "rom_offset": 1017580,
+      "original_bytes": 656,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_positioned_cadenced_target_sequence.c",
+      "source_sha256": "3edc751fbeda13f1d8ad9221399f883b1622ec5975cb6207f9a6e79cf31657b9",
+      "native_sha256": "58f9e600234d7dbbbc3621ca1b4060f8f09cfa52d2ab2561dbd7c871e4d191db"
+    },
+    {
+      "name": "OriginalActionCallback_000F9168",
+      "rom_offset": 1020264,
+      "original_bytes": 632,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_actor_motion_gated_target_sequence.c",
+      "source_sha256": "70b84c2b7db01676a03f4eba1bb00ea244ba595090b588f5ccdf5332649249df",
+      "native_sha256": "22c6532036fc4fecc6e1847508e0f8c87663245a2d6fee5c852f35f90b8fae19"
+    },
+    {
+      "name": "OriginalActionCallback_000F93E0",
+      "rom_offset": 1020896,
+      "original_bytes": 324,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_first_target_projected_sequence.c",
+      "source_sha256": "3186bc8fe640c828bbcd5324c2be28925c154eb1f0101b8cc43258b455483344",
+      "native_sha256": "2a2dfd60dfaad9b8bb998b1092f8955f502ae419032b2364b7b222c935bf033f"
+    },
+    {
+      "name": "OriginalActionCallback_000F990C",
+      "rom_offset": 1022220,
+      "original_bytes": 520,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_primary_and_paired_target_sequence.c",
+      "source_sha256": "a5ee0ab8f07381477be54939b78b895f459b93ea32f69be1162133af3b00b2b7",
+      "native_sha256": "fd2fdbe06c40dd9512ba8462bbcb1231d675f9f1e0e7fd5d87fb977a1515c5af"
+    },
+    {
+      "name": "OriginalActionCallback_000FA614",
+      "rom_offset": 1025556,
+      "original_bytes": 344,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_actor_sequence_transition_to_followup122.c",
+      "source_sha256": "dc2d2e7ffc05a7d237e75a1951e22771f325241966f709b029d2c947c2f930ce",
+      "native_sha256": "1ab1c23a1c6f95590bf4ff5bb4b508fbc4b9d66590bf87e3ba122f14aa03c959"
+    },
+    {
+      "name": "OriginalActionCallback_000FB0B4",
+      "rom_offset": 1028276,
+      "original_bytes": 680,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_relative_direction_target_sequence.c",
+      "source_sha256": "8e144053b758d56259ec0848ad992535e9e776859a0277d87e8de2c7501daa4a",
+      "native_sha256": "a140807b176ba1be63cafae59c78562c59b2bb5c29ac1be8e47e2d1a35ed5ccb"
+    },
+    {
+      "name": "OriginalActionCallback_000FB4B8",
+      "rom_offset": 1029304,
+      "original_bytes": 676,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_resource_transition_target_sequence.c",
+      "source_sha256": "eb4077062379a73740d1d4dc7e9c2d499e81b6cc67a4fd25527ea834b585aef9",
+      "native_sha256": "39a6ac64160215b45cd7874dad3bf1dc90227d8aed02fdd7478c428cd66b7a7d"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_000FC800",
+      "rom_offset": 1034240,
+      "original_bytes": 910,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/fc800/cause05-ramp-preparation-and-loop-snapshots.c",
+      "source_sha256": "727c07077d9adbb0204a239c53937bd36eabfc93dc563ff8fe8233da6af42bd9",
+      "native_sha256": "81f2d9142d075aba81c02db13948c2e5ec2db6b75e619ce0e97f36a11686488b"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_000FDAB0",
+      "rom_offset": 1039024,
+      "original_bytes": 230,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/fdab0/cause01-complete-continuation.c",
+      "source_sha256": "93ff82c70b5d88126d662181696b27f3d4581b895718472f0cd24c8f5504fe94",
+      "native_sha256": "4d36fb5ed9a4c6a903615b2a569e969da7c94b8def732dcd5a8480d881f8d4ec"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_000FE2E8",
+      "rom_offset": 1041128,
+      "original_bytes": 682,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_registered_fe2e8/cause07-full-direction-return-before-low8.c",
+      "source_sha256": "29d346b7d7bdfec9998e50cefb365dd0b69770506899cf6183aa6c77410b60ea",
+      "native_sha256": "2ca2fb0a952ce0d6be79110cab1d2431ddb55eeac39be1320b79e89d616b2246"
+    },
+    {
+      "name": "OriginalActionCallback_000FF180",
+      "rom_offset": 1044864,
+      "original_bytes": 324,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_actor_positioned_secondary_sequence.c",
+      "source_sha256": "76b8fb33d36016915b08b7fe8713948c38f640670b216c950259f473ee7138dc",
+      "native_sha256": "3780ea31382d42598e49f5ce9aa8c88edfce916ff5cdb425faff89668f4da597"
+    },
+    {
+      "name": "OriginalActionCallback_000FF5C8",
+      "rom_offset": 1045960,
+      "original_bytes": 420,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_variant_delayed_target_child.c",
+      "source_sha256": "c9b0821729d9134913ad8d397a2277ccf0f7276379e1ba799a43d7049768a30c",
+      "native_sha256": "f62f12b70543cb7acc417d85d0d4bcc3f48181c6fd8da121fe4570dee2cff2e8"
+    },
+    {
+      "name": "OriginalActionCallback_000FF76C",
+      "rom_offset": 1046380,
+      "original_bytes": 516,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_target_flag_selected_resource_sequence.c",
+      "source_sha256": "9de7e6841d06ff988c7d801e44a1745d3a04908a65dab24951a5766660271c2a",
+      "native_sha256": "c8529761177ad66d5b46c97b64c15ab472c2ef51f2615c175f3ec8822080941d"
+    },
+    {
+      "name": "OriginalActionCallback_00100D00",
+      "rom_offset": 1051904,
+      "original_bytes": 344,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_positioned_actor_option_restore_sequence.c",
+      "source_sha256": "4f23b9055b2931fb2346ef520c43af1f5e4df67cedb0e768914ebb2a5eff3d88",
+      "native_sha256": "df46edea9232177bd93c83b6c8d866062609c1e350ad0e5fa8945067715497a9"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_00100E58",
+      "rom_offset": 1052248,
+      "original_bytes": 152,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/100e58/cause02-promoted-dispatch-working-value.c",
+      "source_sha256": "b189ee6b0b6fa96a8fd97315485aaf54b9d4cc646828ebf18dfcb8a59886e884",
+      "native_sha256": "e0925201df849b0717c324ce1ae0fe5668f8a377294b21fb1ee148ed69651282"
+    },
+    {
+      "name": "OriginalActionCallback_00101410",
+      "rom_offset": 1053712,
+      "original_bytes": 556,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_coordinated_actor_request_sequence.c",
+      "source_sha256": "2e9717b189c1aa432fb88f3ff4b9acc4641d72309df2b3acb0adf82f02ba6af4",
+      "native_sha256": "5aa5097d5cc38236a0a4f94833d9ba7c1ea3a89815f36011802125a6e26759c3"
+    },
+    {
+      "name": "OriginalActionCallback_00101A8C",
+      "rom_offset": 1055372,
+      "original_bytes": 576,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_directional_actor_resource_sequence.c",
+      "source_sha256": "39810058b71eacff345a3d76b966b0057770bbf41c957bb195bfd815338e6ce4",
+      "native_sha256": "97e5235dfb8f4a78ddcfc083eeefd5415b2f948e660bd3cd8dec2ee96f912852"
+    },
+    {
+      "name": "OriginalActionCallback_00103E14",
+      "rom_offset": 1064468,
+      "original_bytes": 1204,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_variant_actor_resource_handoff.c",
+      "source_sha256": "7a5d4e6e740477e2c26fd989422bf0cde01da1f7fa6482703e7140b046e6896a",
+      "native_sha256": "73504ceee1150b15b79329cd9aa43874a2962c723160ebf735f083554308e37b"
+    },
+    {
+      "name": "OriginalActionCallback_0010438C",
+      "rom_offset": 1065868,
+      "original_bytes": 496,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/advance_timed_triple_resource_effect_sequence.c",
+      "source_sha256": "eb0a45e3501a5a78165b894efa52d69053a4d122956cd28dd1dfff1c9e36fb2c",
+      "native_sha256": "98e23c991b59fe7f9de7db67edbe4425f35dfdb266f0c04a9dd9c0c4cb00de96"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_0010533C",
+      "rom_offset": 1069884,
+      "original_bytes": 838,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/10533c/cause04-real-shadow-result-store-carrier.c",
+      "source_sha256": "b45b49fe8d66549652f5efcf7c2944eb382d37728f55a4ab6b9d7338b132ac0f",
+      "native_sha256": "b741ebe1a5038b49253bd8a48516353f859fe9ed315bf1a9b5a9430b7fcc38c2"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_00105930",
+      "rom_offset": 1071408,
+      "original_bytes": 1040,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/105930/cause12-numeric-index-to-selector-address-consumer.c",
+      "source_sha256": "10485797e2ece9c30cd66322e7f3cd45a283b3ad38f650350e0eab615b0728fe",
+      "native_sha256": "25502e6d25662906a767e10f2d7d5eed47fb154f16ea5251bda3e967f4996afd"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_0010781C",
+      "rom_offset": 1079324,
+      "original_bytes": 644,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/original_authored_sequences/10781c/cause01-complete-handshake-actor-sequence.c",
+      "source_sha256": "5c6edc7b8f5d06a90f5c6641fe6ee94ebbbebda4cbcd97ddceb811a44614800b",
+      "native_sha256": "a1dc9ee93f2392c265274505c0fdbb7b00b74b7e8c36f679c6c1ca919fcd005d"
+    },
+    {
+      "name": "RemainingBand43_0010EF0C",
+      "rom_offset": 1109772,
+      "original_bytes": 3052,
+      "kind": "mixed",
+      "inline_instruction_bytes": 2,
+      "source": "src/authored_sequence_10ef0c/real_destructive_layer_load_cause59.c",
+      "source_sha256": "1973e5280842a5257f96552e9870bf5fa2a42a22227574f93291d695f8685339",
+      "native_sha256": "37866b92853768065e480e0d401f44dfd3d4f19916f36a9aa8a891802bcd771d"
+    },
+    {
+      "name": "OriginalActionCallback_0011802C",
+      "rom_offset": 1146924,
+      "original_bytes": 832,
+      "kind": "c",
+      "inline_instruction_bytes": 0,
+      "source": "src/authored_target_11802c/advance_cause21.c",
+      "source_sha256": "57684652f0604a445ece8ab684813b2490b55b41ebe8f321384b4eb7302ced74",
+      "native_sha256": "41c9928af63d768865ae8933ccc6a72d2805135cbc2d35033514fd8222d7b353"
+    }
+  ]
+}

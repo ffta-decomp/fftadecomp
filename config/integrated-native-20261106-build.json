@@ -1,0 +1,870 @@
+{
+  "id": "retail-us-4ac05441",
+  "size": 16777216,
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "rom_base": 134217728,
+  "modules": [
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvancePathInterpolation",
+          "offset": 31876,
+          "size": 790
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreStateDirect_00007C84",
+      "offset": 31876,
+      "size": 790,
+      "source": "src/path_interpolation/advance_path_interpolation.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_0002E160",
+          "offset": 188768,
+          "size": 472
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_0002E160",
+      "offset": 188768,
+      "size": 472,
+      "source": "src/core_frontier_26/core_frontier_0002e160.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_0004BBC0",
+          "offset": 310208,
+          "size": 396
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_0004BBC0",
+      "offset": 310208,
+      "size": 396,
+      "source": "src/progress_route_4bbc0/original_stop_current_comparison_cause10.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "BattleRuntimeDependency_000A7EC4",
+          "offset": 687812,
+          "size": 256
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "BattleRuntimeDependency_000A7EC4",
+      "offset": 687812,
+      "size": 256,
+      "source": "src/battle_runtime_dependencies/select_item_category_cue.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000E3E84",
+          "offset": 933508,
+          "size": 462
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_000E3E84",
+      "offset": 933508,
+      "size": 462,
+      "source": "src/ability_definition_child_e3e84/conditional_value_flags_definition_cause07.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceDefinitionTargetSequence",
+          "offset": 933972,
+          "size": 400
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "DefinitionTargetSequence_000E4054",
+      "offset": 933972,
+      "size": 400,
+      "source": "src/definition_target_sequence/advance_definition_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000F0EF4",
+          "offset": 986868,
+          "size": 654
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_000F0EF4",
+      "offset": 986868,
+      "size": 654,
+      "source": "src/action_target_effects_f0ef4/final_rolling_slot_object_cause14.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F38C4",
+          "offset": 997572,
+          "size": 572
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F38C4",
+      "offset": 997572,
+      "size": 572,
+      "source": "src/original_authored_sequences/advance_variant_actor_action_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F3E7C",
+          "offset": 999036,
+          "size": 256
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F3E7C",
+      "offset": 999036,
+      "size": 256,
+      "source": "src/original_authored_sequences/advance_notified_actor_action_child.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F41C8",
+          "offset": 999880,
+          "size": 648
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F41C8",
+      "offset": 999880,
+      "size": 648,
+      "source": "src/original_authored_sequences/advance_opening_trio_and_target_children.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F5864",
+          "offset": 1005668,
+          "size": 896
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F5864",
+      "offset": 1005668,
+      "size": 896,
+      "source": "src/original_authored_sequences/advance_alternating_target_motion_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6060",
+          "offset": 1007712,
+          "size": 1072
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F6060",
+      "offset": 1007712,
+      "size": 1072,
+      "source": "src/original_authored_sequences/advance_two_stage_actor_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6520",
+          "offset": 1008928,
+          "size": 1084
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F6520",
+      "offset": 1008928,
+      "size": 1084,
+      "source": "src/original_authored_sequences/advance_descriptor_actor_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6A40",
+          "offset": 1010240,
+          "size": 520
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F6A40",
+      "offset": 1010240,
+      "size": 520,
+      "source": "src/original_authored_sequences/advance_three_stage_actor_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F7160",
+          "offset": 1012064,
+          "size": 336
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F7160",
+      "offset": 1012064,
+      "size": 336,
+      "source": "src/original_authored_sequences/advance_actor_setup_and_child_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F86EC",
+          "offset": 1017580,
+          "size": 656
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F86EC",
+      "offset": 1017580,
+      "size": 656,
+      "source": "src/original_authored_sequences/advance_positioned_cadenced_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F9168",
+          "offset": 1020264,
+          "size": 632
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F9168",
+      "offset": 1020264,
+      "size": 632,
+      "source": "src/original_authored_sequences/advance_actor_motion_gated_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F93E0",
+          "offset": 1020896,
+          "size": 324
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F93E0",
+      "offset": 1020896,
+      "size": 324,
+      "source": "src/original_authored_sequences/advance_first_target_projected_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F990C",
+          "offset": 1022220,
+          "size": 520
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F990C",
+      "offset": 1022220,
+      "size": 520,
+      "source": "src/original_authored_sequences/advance_primary_and_paired_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FA614",
+          "offset": 1025556,
+          "size": 344
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FA614",
+      "offset": 1025556,
+      "size": 344,
+      "source": "src/original_authored_sequences/advance_actor_sequence_transition_to_followup122.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FB0B4",
+          "offset": 1028276,
+          "size": 680
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FB0B4",
+      "offset": 1028276,
+      "size": 680,
+      "source": "src/original_authored_sequences/advance_relative_direction_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FB4B8",
+          "offset": 1029304,
+          "size": 676
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FB4B8",
+      "offset": 1029304,
+      "size": 676,
+      "source": "src/original_authored_sequences/advance_resource_transition_target_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_000FC800",
+          "offset": 1034240,
+          "size": 910
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_000FC800",
+      "offset": 1034240,
+      "size": 910,
+      "source": "src/original_authored_sequences/fc800/cause05-ramp-preparation-and-loop-snapshots.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_000FDAB0",
+          "offset": 1039024,
+          "size": 230
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_000FDAB0",
+      "offset": 1039024,
+      "size": 230,
+      "source": "src/original_authored_sequences/fdab0/cause01-complete-continuation.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_000FE2E8",
+          "offset": 1041128,
+          "size": 682
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_000FE2E8",
+      "offset": 1041128,
+      "size": 682,
+      "source": "src/original_registered_fe2e8/cause07-full-direction-return-before-low8.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FF180",
+          "offset": 1044864,
+          "size": 324
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FF180",
+      "offset": 1044864,
+      "size": 324,
+      "source": "src/original_authored_sequences/advance_actor_positioned_secondary_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FF5C8",
+          "offset": 1045960,
+          "size": 420
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FF5C8",
+      "offset": 1045960,
+      "size": 420,
+      "source": "src/original_authored_sequences/advance_variant_delayed_target_child.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FF76C",
+          "offset": 1046380,
+          "size": 516
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FF76C",
+      "offset": 1046380,
+      "size": 516,
+      "source": "src/original_authored_sequences/advance_target_flag_selected_resource_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00100D00",
+          "offset": 1051904,
+          "size": 344
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00100D00",
+      "offset": 1051904,
+      "size": 344,
+      "source": "src/original_authored_sequences/advance_positioned_actor_option_restore_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_00100E58",
+          "offset": 1052248,
+          "size": 152
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_00100E58",
+      "offset": 1052248,
+      "size": 152,
+      "source": "src/original_authored_sequences/100e58/cause02-promoted-dispatch-working-value.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00101410",
+          "offset": 1053712,
+          "size": 556
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00101410",
+      "offset": 1053712,
+      "size": 556,
+      "source": "src/original_authored_sequences/advance_coordinated_actor_request_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00101A8C",
+          "offset": 1055372,
+          "size": 576
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00101A8C",
+      "offset": 1055372,
+      "size": 576,
+      "source": "src/original_authored_sequences/advance_directional_actor_resource_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00103E14",
+          "offset": 1064468,
+          "size": 1204
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00103E14",
+      "offset": 1064468,
+      "size": 1204,
+      "source": "src/original_authored_sequences/advance_variant_actor_resource_handoff.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_0010438C",
+          "offset": 1065868,
+          "size": 496
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_0010438C",
+      "offset": 1065868,
+      "size": 496,
+      "source": "src/original_authored_sequences/advance_timed_triple_resource_effect_sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_0010533C",
+          "offset": 1069884,
+          "size": 838
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_0010533C",
+      "offset": 1069884,
+      "size": 838,
+      "source": "src/original_authored_sequences/10533c/cause04-real-shadow-result-store-carrier.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_00105930",
+          "offset": 1071408,
+          "size": 1040
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_00105930",
+      "offset": 1071408,
+      "size": 1040,
+      "source": "src/original_authored_sequences/105930/cause12-numeric-index-to-selector-address-consumer.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_0010781C",
+          "offset": 1079324,
+          "size": 644
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_0010781C",
+      "offset": 1079324,
+      "size": 644,
+      "source": "src/original_authored_sequences/10781c/cause01-complete-handshake-actor-sequence.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "graphics",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_0010EF0C",
+          "offset": 1109772,
+          "size": 3052
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 2870,
+      "kind": "mixed",
+      "literal_bytes": 168,
+      "name": "RemainingBand43_0010EF0C",
+      "offset": 1109772,
+      "padding_bytes": 14,
+      "size": 3052,
+      "source": "src/authored_sequence_10ef0c/real_destructive_layer_load_cause59.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_0011802C",
+          "offset": 1146924,
+          "size": 832
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_0011802C",
+      "offset": 1146924,
+      "size": 832,
+      "source": "src/authored_target_11802c/advance_cause21.c",
+      "trailing_alignment_bytes": 0
+    }
+  ]
+}
