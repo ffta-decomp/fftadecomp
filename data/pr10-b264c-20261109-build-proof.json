@@ -1,0 +1,38 @@
+{
+  "schema": "source-build-selection-proof-v1",
+  "config_sha256": "386224bf889950edc919ed4737afe4697c97509b4855c2c6a2b62e661611e26f",
+  "source_index": {
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "CoreRegion_000B264C",
+        "rom_offset": 730700,
+        "original_bytes": 2258,
+        "kind": "mixed",
+        "source": "src/battle_action_particle_sequence_b264c.c"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/battle_action_particle_sequence_b264c.c",
+        "sha256": "489f0f94f02c4a450a4ea5beddf52040bfb4bb0815cf89b69ab99d069e9bfacc"
+      }
+    ]
+  },
+  "expected": {
+    "schema": "completed-module-sha256-v1",
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "CoreRegion_000B264C",
+        "rom_offset": 730700,
+        "original_bytes": 2258,
+        "sha256": "b0cd077db996b3b3eb752abfdd447817114ab2051684933cd387aa730f164dd4"
+      }
+    ],
+    "module_set_sha256": "5a0941b4f442dca83fd3accef1674c93d7d0d669a09ea0ee47039046fa7e698d",
+    "function_table_sha256": "1c22dafb6e34d738848cb9956dd314190ad90523b7b816ccb55bd57ac7a3bb3c",
+    "function_range_count": 1
+  },
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-000B264C-0008D2,0x080B264C,2258,b0cd077db996b3b3eb752abfdd447817114ab2051684933cd387aa730f164dd4,function,CoreRegion_000B264C,CoreRegion_000B264C\n"
+}
