@@ -1,0 +1,38 @@
+{
+  "schema": "source-build-selection-proof-v1",
+  "config_sha256": "c0236328a54cd271a3452c8383d687bd4a3c894186bdcdb15a9af9c1e5d429c7",
+  "source_index": {
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "CoreRegistered40_0013C0EC",
+        "rom_offset": 1294572,
+        "original_bytes": 5044,
+        "kind": "c",
+        "source": "src/authored_scene_timeline_13c0ec.c"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/authored_scene_timeline_13c0ec.c",
+        "sha256": "601b0deb434d441ddc6063fe75104dd4cfadabc81d0ca5338c708e9ef1f207df"
+      }
+    ]
+  },
+  "expected": {
+    "schema": "completed-module-sha256-v1",
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "CoreRegistered40_0013C0EC",
+        "rom_offset": 1294572,
+        "original_bytes": 5044,
+        "sha256": "0eb163daab454acc480f985e70e441fbf2cc5d989308ee83b1b3666961c6d7a7"
+      }
+    ],
+    "module_set_sha256": "6205c6dab01fa9b38f05e332f105dd4f5ebce15437fc552fbed9658bbecac809",
+    "function_table_sha256": "96be52129ae4cc816fe341cf18f220c179c9eb29b9ca0a41659a1a62fb98e6c4",
+    "function_range_count": 1
+  },
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-0013C0EC-0013B4,0x0813C0EC,5044,0eb163daab454acc480f985e70e441fbf2cc5d989308ee83b1b3666961c6d7a7,function,CoreRegistered40_0013C0EC,CoreRegistered40_0013C0EC\n"
+}
