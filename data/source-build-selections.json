@@ -24,6 +24,10 @@
     {
       "config": "config/pr10-b264c-20261109-build.json",
       "proof": "data/pr10-b264c-20261109-build-proof.json"
+    },
+    {
+      "config": "config/pr10-f6e74-20261109-build.json",
+      "proof": "data/pr10-f6e74-20261109-build-proof.json"
     }
   ]
 }

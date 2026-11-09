@@ -1,0 +1,38 @@
+{
+  "schema": "source-build-selection-proof-v1",
+  "config_sha256": "7d467459aeeee780a445b557206573ac0417c53854e1f2dc89ff919e52273e9f",
+  "source_index": {
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "OriginalActionCallback_000F6E74",
+        "rom_offset": 1011316,
+        "original_bytes": 748,
+        "kind": "mixed",
+        "source": "src/directional_target_sequence_f6e74.c"
+      }
+    ],
+    "files": [
+      {
+        "path": "src/directional_target_sequence_f6e74.c",
+        "sha256": "177d1f30ea908bcf6d90c3b9156b2fe55f33ed87b4e678bb24cc399f9bad7179"
+      }
+    ]
+  },
+  "expected": {
+    "schema": "completed-module-sha256-v1",
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "OriginalActionCallback_000F6E74",
+        "rom_offset": 1011316,
+        "original_bytes": 748,
+        "sha256": "7ca8399e6b24b94317fd13e883c47195c0af5e52a7e53abdc8a1a3db4a295a64"
+      }
+    ],
+    "module_set_sha256": "75570e449a99dcfc3b4ab2944aa9e35a9622e0a156b03e13236252092d23ec69",
+    "function_table_sha256": "bf7c83223d5e1f107e8f17b62c38c41d8038ea6f21651994eaa8811655aa5c0e",
+    "function_range_count": 1
+  },
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-000F6E74-0002EC,0x080F6E74,748,7ca8399e6b24b94317fd13e883c47195c0af5e52a7e53abdc8a1a3db4a295a64,function,OriginalActionCallback_000F6E74,OriginalActionCallback_000F6E74\n"
+}

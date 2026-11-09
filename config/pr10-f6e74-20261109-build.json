@@ -1,0 +1,35 @@
+{
+  "id": "retail-us-4ac05441",
+  "size": 16777216,
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "rom_base": 134217728,
+  "modules": [
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "graphics",
+      "dispatch_table_bytes": 0,
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6E74",
+          "offset": 1011316,
+          "size": 748
+        }
+      ],
+      "inline_assembly_bytes": 30,
+      "instructions_bytes": 694,
+      "kind": "mixed",
+      "literal_bytes": 48,
+      "name": "OriginalActionCallback_000F6E74",
+      "offset": 1011316,
+      "padding_bytes": 6,
+      "size": 748,
+      "source": "src/directional_target_sequence_f6e74.c",
+      "trailing_alignment_bytes": 0
+    }
+  ]
+}
