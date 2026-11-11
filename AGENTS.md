@@ -76,6 +76,11 @@ before implementing a proven core method. Never expose credentials.
 
 # Acceptance and delivery
 
+- Promote validated temporary work into stable subsystem source before publication,
+  following [source layout and promotion](docs/source-layout.md). Production paths
+  must not encode delivery batches, actors or trial numbers. Record local gates
+  immediately; path promotion preserves original identities and needs final-path
+  dependency/native verification before selecting and publishing the source.
 - **Whole exact:** complete original instructions, literals, jump tables and
   alignment match at original entry/placement with pinned retail, source/header
   and toolchain provenance. A different implementation actor mechanically checks

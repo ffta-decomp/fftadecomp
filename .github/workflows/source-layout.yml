@@ -1,0 +1,47 @@
+name: source-layout
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'config/**'
+      - 'tools/source_layout.py'
+      - 'tools/source_tree.py'
+      - 'tests/test_source_layout.py'
+      - 'tests/test_source_tree.py'
+      - 'include/**'
+      - 'asm/interfaces/**'
+      - '.github/workflows/source-layout.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate promotion safety
+        run: python3 -m unittest discover -s tests -p 'test_source*.py' -v
+      - name: Check completed-source selections
+        env:
+          LAYOUT_BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -eu
+          count=0
+          for manifest in config/*build*.json; do
+            if [ ! -f "$manifest" ]; then continue; fi
+            count=$((count + 1))
+            if [ -n "$LAYOUT_BASE" ] && git cat-file -e "$LAYOUT_BASE:$manifest" 2>/dev/null; then
+              python3 tools/source_layout.py audit --manifest "$manifest" --baseline-ref "$LAYOUT_BASE"
+            else
+              python3 tools/source_layout.py audit --manifest "$manifest"
+            fi
+          done
+          echo "Checked $count completed-source manifest(s). This is a layout gate, not native verification."
