@@ -21,7 +21,7 @@ def check(root=ROOT):
     for p in root.rglob('*'):
         rel=p.relative_to(root)
         if ('vendor' in rel.parts and len(rel.parts)>2) or any(x in ('.git','.venv','.local','build') for x in rel.parts) or 'assets' in rel.parts or '__pycache__' in rel.parts:continue
-        if p.is_file() and p.suffix in ('.md','.json','.csv','.py','.js','.html','.yml','.txt','.c'):
+        if p.is_file() and p.suffix in ('.md','.json','.csv','.py','.js','.html','.yml','.txt','.c','.h','.s'):
             check_text(p.read_text());checked+=1
     cat=json.loads((root/'data/functions.json').read_text());ids=set()
     for f in cat['functions']:
