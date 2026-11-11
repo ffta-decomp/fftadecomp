@@ -1,6 +1,6 @@
 {
   "schema": "source-build-selection-proof-v1",
-  "config_sha256": "e009650ab97c7fc6390bcdcb5de35fbc66e2e9967a538f4d9e062cbe836ee833",
+  "config_sha256": "9ff5cfb866293e561e39dc2725f46e34408090a5ae857786bedade9dd38b622b",
   "source_index": {
     "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
     "modules": [
@@ -9,54 +9,62 @@
         "rom_offset": 1135968,
         "original_bytes": 748,
         "kind": "mixed",
-        "source": "src/authored_sequence_115560/cause11_mixed.c"
+        "source": "src/graphics/08115560.c"
       },
       {
         "name": "RemainingBand43_0011F95C",
         "rom_offset": 1177948,
         "original_bytes": 1048,
         "kind": "c",
-        "source": "src/authored_story_363/11f95c/advance_indexed_stage.c"
+        "source": "src/unknown/0811f95c.c"
       },
       {
         "name": "CoreRegion_001277C8",
         "rom_offset": 1210312,
         "original_bytes": 456,
         "kind": "c",
-        "source": "src/upstream_recovered_20261106/func_081277C8.c"
+        "source": "src/unknown/081277c8.c"
       },
       {
         "name": "CoreRegion_0012B7F0",
         "rom_offset": 1226736,
         "original_bytes": 400,
         "kind": "mixed",
-        "source": "src/authored_mixed_363/12b7f0/ordered_capture.c"
+        "source": "src/story/0812b7f0.c"
       }
     ],
     "files": [
       {
-        "path": "src/authored_mixed_363/12b7f0/ordered_capture.c",
-        "sha256": "6c6a6542f14dd07d0390b4d931a670a9ad41541d8ba6d5645dc0e39965ed0256"
-      },
-      {
-        "path": "src/authored_sequence_115560/cause11_mixed.c",
-        "sha256": "a6fb6ddf2c3f0edd6360fd824de62f4f4fe5c4b8923150fd920ad669bb35e030"
-      },
-      {
-        "path": "src/authored_story_363/11f95c/advance_indexed_stage.c",
-        "sha256": "5b0c5565fc73b23ac3a8fc855ac87f26ccceab45ac0e13660b8f61b47f095ce0"
-      },
-      {
-        "path": "src/upstream_recovered_20261106/ffta.h",
-        "sha256": "0c7e3625daf34fe6f9521daf0e30924d91b83d5cd648e350136b132034205f73"
-      },
-      {
-        "path": "src/upstream_recovered_20261106/func_081277C8.c",
-        "sha256": "b4c7c2b59279663c75e88548a51db044c24e79e0b65bd1e3eb082ec3c57961c5"
-      },
-      {
-        "path": "src/upstream_recovered_20261106/func_081277C8.symbols.s",
+        "path": "asm/interfaces/081277c8.s",
         "sha256": "c1c520c17da4b7906240a5206bebe7f4d351006ecfa4a6d7c91a114835aba6b2"
+      },
+      {
+        "path": "include/abi/interfaces/080008e0_bindings.h",
+        "sha256": "4294fdfd480c8af7a1b375b56a0c804a2d517adc36f3c751b1c6eb78d1e4c8b7"
+      },
+      {
+        "path": "include/ffta/types.h",
+        "sha256": "7c523d4591f0a97b9c636a6932d03b4ac7f8ff05abedac174f475b5bd6f9f6a0"
+      },
+      {
+        "path": "include/ffta/unsigned_types.h",
+        "sha256": "ea78e0f580a58a2cad91b161483a92c2bff2daae9c96a09aca7af3909a4ed8de"
+      },
+      {
+        "path": "src/graphics/08115560.c",
+        "sha256": "80d3b2f386cb83a79e8fe0beca66a92109235d9f3b084794624377bba0b4d8a0"
+      },
+      {
+        "path": "src/story/0812b7f0.c",
+        "sha256": "b4bd6d5d89556d2b40c68450709d3f311d2fd85bbd6cdfa81e0d55bdc9d73265"
+      },
+      {
+        "path": "src/unknown/0811f95c.c",
+        "sha256": "56dfaa19019cfc7218c1458db91f5c6e45d2d86af5a0a2d95bd96b5b629d1be3"
+      },
+      {
+        "path": "src/unknown/081277c8.c",
+        "sha256": "66f31d0cb09b01f53cac83a30294346263fcf15bfd5d0e97e17a76a3bdecfbc9"
       }
     ]
   },
@@ -93,5 +101,13 @@
     "function_table_sha256": "0207a822aef56a726ec66057cb05194f4e0d496b15a6f0bf9ff0a992a091c17d",
     "function_range_count": 4
   },
-  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-00115560-0002EC,0x08115560,748,9a5360ddffa801b36267fc415054a6a989b7580b211ad896ffdf0350a2aee605,function,OriginalAuthoredSequence_00115560,AdvanceAuthoredDualSpriteSequence\nUS-0011F95C-000418,0x0811F95C,1048,1acd43b65ddd3dd709bb3007a770af7360c98e446a86237ee378a49e9aba45ee,function,RemainingBand43_0011F95C,RemainingBand43_0011F95C\nUS-001277C8-0001C8,0x081277C8,456,b5c243743efd9870fd71d0b259367d6644686d2e1e55d44d44cb2b62c2baa4d6,function,CoreRegion_001277C8,func_081277C8\nUS-0012B7F0-000190,0x0812B7F0,400,c7eb073982b055a2f10ddb9388856cd1dee11b3821ae304bbad807a44ee3b2af,function,CoreRegion_0012B7F0,CoreRegion_0012B7F0\n"
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-00115560-0002EC,0x08115560,748,9a5360ddffa801b36267fc415054a6a989b7580b211ad896ffdf0350a2aee605,function,OriginalAuthoredSequence_00115560,AdvanceAuthoredDualSpriteSequence\nUS-0011F95C-000418,0x0811F95C,1048,1acd43b65ddd3dd709bb3007a770af7360c98e446a86237ee378a49e9aba45ee,function,RemainingBand43_0011F95C,RemainingBand43_0011F95C\nUS-001277C8-0001C8,0x081277C8,456,b5c243743efd9870fd71d0b259367d6644686d2e1e55d44d44cb2b62c2baa4d6,function,CoreRegion_001277C8,func_081277C8\nUS-0012B7F0-000190,0x0812B7F0,400,c7eb073982b055a2f10ddb9388856cd1dee11b3821ae304bbad807a44ee3b2af,function,CoreRegion_0012B7F0,CoreRegion_0012B7F0\n",
+  "structural_revalidation": {
+    "previous_proof_git_commit": "bad1039b8181610fdea3f214ffdb73cbfb24ac40",
+    "previous_proof_path": "data/pr10-original-targets-20261106-build-proof.json",
+    "current_complete_build": "data/completed-build-validation.json",
+    "verified_at": "2026-11-11T05:43:28.148103+00:00",
+    "native_range_hashes_unchanged": true,
+    "limits": "Current final-path source selection rebound after complete retail verification. Previous proof remains in Git; no new native gate credit."
+  }
 }

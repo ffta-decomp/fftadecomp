@@ -21,7 +21,7 @@
       "offset": 1135968,
       "padding_bytes": 10,
       "size": 748,
-      "source": "src/authored_sequence_115560/cause11_mixed.c",
+      "source": "src/graphics/08115560.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -51,7 +51,7 @@
       "name": "RemainingBand43_0011F95C",
       "offset": 1177948,
       "size": 1048,
-      "source": "src/authored_story_363/11f95c/advance_indexed_stage.c",
+      "source": "src/unknown/0811f95c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -59,7 +59,7 @@
       "kind": "c",
       "offset": 1210312,
       "size": 456,
-      "source": "src/upstream_recovered_20261106/func_081277C8.c",
+      "source": "src/unknown/081277c8.c",
       "functions": [
         {
           "name": "func_081277C8",
@@ -75,7 +75,7 @@
       "external_exclude_symbols": [
         "func_081277C8"
       ],
-      "external_symbol_supplement": "src/upstream_recovered_20261106/func_081277C8.symbols.s",
+      "external_symbol_supplement": "asm/interfaces/081277c8.s",
       "trailing_alignment_bytes": 0,
       "match_policy": "exact",
       "origin": "upstream_import",
@@ -107,7 +107,7 @@
       "offset": 1226736,
       "padding_bytes": 4,
       "size": 400,
-      "source": "src/authored_mixed_363/12b7f0/ordered_capture.c",
+      "source": "src/story/0812b7f0.c",
       "trailing_alignment_bytes": 0,
       "match_policy": "exact",
       "external_exclude_symbols": []

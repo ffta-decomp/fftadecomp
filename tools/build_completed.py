@@ -61,6 +61,8 @@ def main():
     index=json.loads((ROOT/'src/completed-index.json').read_text())
     reference=args.input.read_bytes();validate(reference,config,index)
     buildroot=args.build_dir.resolve() if args.build_dir else ROOT/'build'
+    if not (buildroot/'toolchain/agbcc').is_file():
+        p.error('Pinned compiler missing from build directory; bootstrap the default build/toolchain or prepare toolchain/agbcc in the explicit --build-dir before building')
     build_rom.BUILD_ROOT=buildroot
     started=time.monotonic();workroot=buildroot/'completed';workroot.mkdir(parents=True,exist_ok=True)
     # Invocation-owned temporary objects; no stale module cache can hide a source failure.

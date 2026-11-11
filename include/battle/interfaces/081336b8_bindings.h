@@ -1,0 +1,8 @@
+#include "ffta/unsigned_types.h"
+typedef struct {void *actor;void *target;void *affected;u8 unknown12[26];u16 flags;} EffectContext;
+u32 StateGate(void*) __asm__("EffectResolutionCall_080CD8FC");
+void ClearState(void*,u32) __asm__("SetUnitStateE8Bit4");
+void ApplyFirst(EffectContext*) __asm__("EffectApplicationCall_081321B4");
+void ApplySecond(EffectContext*) __asm__("EffectApplicationCall_08132160");
+void WriteFirstCounter(void*,u32) __asm__("WriteUnitCounterE3");
+void WriteSecondCounter(void*,u32) __asm__("WriteUnitCounterE4");

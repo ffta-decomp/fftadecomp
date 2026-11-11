@@ -54,15 +54,21 @@ not launch a duplicate build; pushes to `main` and manual runs remain supported.
 The job summary and PR comment identify each changed selected function as
 `match`, `mismatch`, `build error` or `not built`. Headers, metadata and tooling
 have no standalone native-function result. These hash checks require no private
-ROM and do not establish a whole-ROM comparison. The completed-source private-ROM
-builder and its frozen release hashes remain unchanged.
+ROM and do not establish a whole-ROM comparison. Validated increments are consolidated into the master selection and its native
+hash tables; the registry then lists only subsequent increments. The same range
+must never occur in both the master and an active registry selection.
 
 ## Fixed-address function bindings
 
-Some imported functions use a source-local `.symbols.s` file to bind existing
+Some functions use an `asm/interfaces/<address>.s` file to bind existing
 functions and data at their original addresses. The manifest selects this through
 `external_symbol_supplement`. The builder accepts only non-emitting `.global`,
 `.set`, `.thumb_set`, `.syntax unified` and `.thumb` directives; instructions,
 raw bytes, includes and paths outside the source root are rejected. The file hash
 participates in the module cache identity and the completed-source input index.
 These aliases do not implement or replace a function body.
+
+For an explicit `--build-dir`, prepare its pinned `toolchain/agbcc` before the
+build. The default uses the compiler produced by `tools/bootstrap.py`. A missing
+compiler is rejected before scheduling module jobs. Do not duplicate bootstraps
+per function; reuse the same authenticated compiler.

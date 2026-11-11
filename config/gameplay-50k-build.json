@@ -21,7 +21,7 @@
       "offset": 622340,
       "padding_bytes": 2,
       "size": 280,
-      "source": "src/campaign_gameplay_50k/097f04.c",
+      "source": "src/battle/08097f04.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -50,7 +50,7 @@
       "name": "OriginalAuthoredSequence_00112734",
       "offset": 1124148,
       "size": 812,
-      "source": "src/campaign_gameplay_50k/112734.c",
+      "source": "src/unknown/08112734.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 740,
       "literal_bytes": 56,
@@ -76,7 +76,7 @@
       "name": "RemainingBand43_0011FFD8",
       "offset": 1179608,
       "size": 960,
-      "source": "src/campaign_gameplay_50k/11ffd8.c",
+      "source": "src/unknown/0811ffd8.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 880,
       "literal_bytes": 72,
@@ -100,7 +100,7 @@
       "offset": 1180840,
       "padding_bytes": 8,
       "size": 634,
-      "source": "src/campaign_gameplay_50k/1204a8.c",
+      "source": "src/graphics/081204a8.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -130,7 +130,7 @@
       "name": "BattleStateDependency_000A9D18",
       "offset": 695576,
       "size": 340,
-      "source": "src/campaign_gameplay_50k/a9d18.c",
+      "source": "src/unknown/080a9d18.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 334,
       "literal_bytes": 4,
@@ -154,7 +154,7 @@
       "offset": 734060,
       "padding_bytes": 2,
       "size": 432,
-      "source": "src/campaign_gameplay_50k/b336c.c",
+      "source": "src/battle/080b336c.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -167,7 +167,7 @@
     },
     {
       "kind": "c",
-      "source": "src/campaign_gameplay_50k/11f5e0.c",
+      "source": "src/unknown/0811f5e0.c",
       "compiler_flags": [
         "-O2",
         "-mthumb-interwork"
@@ -208,7 +208,7 @@
       "offset": 1175384,
       "padding_bytes": 8,
       "size": 820,
-      "source": "src/campaign_gameplay_50k/11ef58.c",
+      "source": "src/story/0811ef58.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -236,7 +236,7 @@
       "offset": 1122508,
       "padding_bytes": 4,
       "size": 660,
-      "source": "src/campaign_gameplay_50k/1120cc.c",
+      "source": "src/battle/081120cc.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -264,7 +264,7 @@
       "offset": 592828,
       "padding_bytes": 2,
       "size": 316,
-      "source": "src/campaign_gameplay_50k/090bbc.c",
+      "source": "src/battle/08090bbc.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -292,7 +292,7 @@
       "offset": 1148716,
       "padding_bytes": 2,
       "size": 576,
-      "source": "src/campaign_gameplay_50k/11872c.c",
+      "source": "src/battle/0811872c.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -320,7 +320,7 @@
       "offset": 1114868,
       "padding_bytes": 8,
       "size": 486,
-      "source": "src/campaign_gameplay_50k/1102f4.c",
+      "source": "src/battle/081102f4.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -348,7 +348,7 @@
       "offset": 1118176,
       "padding_bytes": 6,
       "size": 704,
-      "source": "src/campaign_gameplay_50k/110fe0.c",
+      "source": "src/battle/08110fe0.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -378,7 +378,7 @@
       "name": "RemainingBand43_0010FAF8",
       "offset": 1112824,
       "size": 256,
-      "source": "src/campaign_gameplay_50k/10faf8.c",
+      "source": "src/unknown/0810faf8.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 236,
       "literal_bytes": 16,
@@ -404,7 +404,7 @@
       "name": "RemainingBand43_000F4A70",
       "offset": 1002096,
       "size": 508,
-      "source": "src/campaign_gameplay_50k/0f4a70.c",
+      "source": "src/unknown/080f4a70.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 484,
       "literal_bytes": 20,
@@ -430,7 +430,7 @@
       "name": "SceneTaskDependency_0002995C",
       "offset": 170332,
       "size": 728,
-      "source": "src/campaign_gameplay_50k/02995c.c",
+      "source": "src/unknown/0802995c.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 604,
       "literal_bytes": 116,
@@ -460,7 +460,7 @@
       "offset": 77784,
       "padding_bytes": 2,
       "size": 136,
-      "source": "src/campaign_gameplay_50k/012fd8.c",
+      "source": "src/menus/08012fd8.c",
       "trailing_alignment_bytes": 0,
       "match_policy": "exact"
     },
@@ -481,7 +481,7 @@
       "offset": 400432,
       "padding_bytes": 0,
       "size": 108,
-      "source": "src/campaign_gameplay_50k/061c30.c",
+      "source": "src/story/08061c30.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -509,7 +509,7 @@
       "offset": 1125100,
       "padding_bytes": 8,
       "size": 480,
-      "source": "src/campaign_gameplay_50k/112aec.c",
+      "source": "src/story/08112aec.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -537,7 +537,7 @@
       "offset": 136156,
       "padding_bytes": 2,
       "size": 166,
-      "source": "src/campaign_gameplay_50k/0213dc.c",
+      "source": "src/battle/080213dc.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -565,7 +565,7 @@
       "offset": 182060,
       "padding_bytes": 0,
       "size": 180,
-      "source": "src/campaign_gameplay_50k/02c72c.c",
+      "source": "src/battle/0802c72c.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -595,7 +595,7 @@
       "name": "RemainingBand43_000E6B10",
       "offset": 944912,
       "size": 580,
-      "source": "src/campaign_gameplay_50k/0e6b10.c",
+      "source": "src/unknown/080e6b10.c",
       "trailing_alignment_bytes": 0,
       "instructions_bytes": 548,
       "literal_bytes": 28,
@@ -621,7 +621,7 @@
       "name": "CoreFrontier_000BA8E4",
       "offset": 764132,
       "size": 682,
-      "source": "src/campaign_gameplay_50k/0ba8e4.c",
+      "source": "src/unknown/080ba8e4.c",
       "trailing_alignment_bytes": 2,
       "instructions_bytes": 620,
       "literal_bytes": 60,
@@ -651,7 +651,7 @@
       "offset": 599608,
       "padding_bytes": 6,
       "size": 332,
-      "source": "src/campaign_gameplay_50k/092638.c",
+      "source": "src/battle/08092638.c",
       "trailing_alignment_bytes": 0,
       "match_policy": "exact"
     },
@@ -674,7 +674,7 @@
       "name": "BattleStateDependency_00021854",
       "offset": 137300,
       "size": 216,
-      "source": "src/campaign_gameplay_50k/021854.c",
+      "source": "src/unknown/08021854.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -696,7 +696,7 @@
       "name": "CoreGlobal36_00030200",
       "offset": 197120,
       "size": 3152,
-      "source": "src/campaign_gameplay_50k/030200.c",
+      "source": "src/story/08030200.c",
       "trailing_alignment_bytes": 0,
       "component": "story"
     },
@@ -719,7 +719,7 @@
       "name": "CoreRegion_000461D4",
       "offset": 287188,
       "size": 1664,
-      "source": "src/campaign_gameplay_50k/0461d4.c",
+      "source": "src/unknown/080461d4.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -741,7 +741,7 @@
       "name": "BattleCallbackProducer_000A8194",
       "offset": 688532,
       "size": 208,
-      "source": "src/campaign_gameplay_50k/0a8194.c",
+      "source": "src/unknown/080a8194.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -763,7 +763,7 @@
       "name": "RemainingBand43_000D8924",
       "offset": 887076,
       "size": 172,
-      "source": "src/campaign_gameplay_50k/0d8924.c",
+      "source": "src/unknown/080d8924.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -789,7 +789,7 @@
       "offset": 902164,
       "padding_bytes": 0,
       "size": 132,
-      "source": "src/campaign_gameplay_50k/0dc414.c",
+      "source": "src/battle/080dc414.c",
       "trailing_alignment_bytes": 0,
       "match_policy": "exact"
     },
@@ -810,7 +810,7 @@
       "offset": 972008,
       "padding_bytes": 2,
       "size": 710,
-      "source": "src/campaign_gameplay_50k/0ed4e8.c",
+      "source": "src/graphics/080ed4e8.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -838,7 +838,7 @@
       "offset": 980536,
       "padding_bytes": 8,
       "size": 822,
-      "source": "src/campaign_gameplay_50k/0ef638.c",
+      "source": "src/graphics/080ef638.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -866,7 +866,7 @@
       "offset": 1113464,
       "padding_bytes": 6,
       "size": 1122,
-      "source": "src/campaign_gameplay_50k/10fd78.c",
+      "source": "src/graphics/0810fd78.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -894,7 +894,7 @@
       "offset": 1118880,
       "padding_bytes": 10,
       "size": 970,
-      "source": "src/campaign_gameplay_50k/1112a0.c",
+      "source": "src/story/081112a0.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -924,7 +924,7 @@
       "name": "OriginalAuthoredSequence_00113CE0",
       "offset": 1129696,
       "size": 780,
-      "source": "src/campaign_gameplay_50k/113ce0.c",
+      "source": "src/unknown/08113ce0.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -944,7 +944,7 @@
       "offset": 1137516,
       "padding_bytes": 0,
       "size": 374,
-      "source": "src/campaign_gameplay_50k/115b6c.c",
+      "source": "src/graphics/08115b6c.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -972,7 +972,7 @@
       "offset": 1164976,
       "padding_bytes": 0,
       "size": 430,
-      "source": "src/campaign_gameplay_50k/11c6b0.c",
+      "source": "src/graphics/0811c6b0.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",
@@ -1002,7 +1002,7 @@
       "name": "FilterSceneEntitiesForTransition_08124850",
       "offset": 1198160,
       "size": 290,
-      "source": "src/campaign_gameplay_50k/124850.c",
+      "source": "src/story/entities/08124850.c",
       "trailing_alignment_bytes": 2,
       "component": "scene-entity"
     },
@@ -1023,7 +1023,7 @@
       "offset": 1209432,
       "padding_bytes": 0,
       "size": 314,
-      "source": "src/campaign_gameplay_50k/127458.c",
+      "source": "src/battle/08127458.c",
       "trailing_alignment_bytes": 2,
       "compiler_flags": [
         "-O2",

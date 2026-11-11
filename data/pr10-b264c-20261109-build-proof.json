@@ -1,6 +1,6 @@
 {
   "schema": "source-build-selection-proof-v1",
-  "config_sha256": "386224bf889950edc919ed4737afe4697c97509b4855c2c6a2b62e661611e26f",
+  "config_sha256": "5834ea4feb13a0f2290c8d76c82ded5e2d4da0f497ec04346fa948e162b46890",
   "source_index": {
     "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
     "modules": [
@@ -9,13 +9,17 @@
         "rom_offset": 730700,
         "original_bytes": 2258,
         "kind": "mixed",
-        "source": "src/battle_action_particle_sequence_b264c.c"
+        "source": "src/battle/080b264c.c"
       }
     ],
     "files": [
       {
-        "path": "src/battle_action_particle_sequence_b264c.c",
-        "sha256": "489f0f94f02c4a450a4ea5beddf52040bfb4bb0815cf89b69ab99d069e9bfacc"
+        "path": "include/ffta/unsigned_types.h",
+        "sha256": "ea78e0f580a58a2cad91b161483a92c2bff2daae9c96a09aca7af3909a4ed8de"
+      },
+      {
+        "path": "src/battle/080b264c.c",
+        "sha256": "197945ed193bed14df9a4564b8b4219d280ba85f46c4444f2714c89f5cc1cc15"
       }
     ]
   },
@@ -34,5 +38,13 @@
     "function_table_sha256": "1c22dafb6e34d738848cb9956dd314190ad90523b7b816ccb55bd57ac7a3bb3c",
     "function_range_count": 1
   },
-  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-000B264C-0008D2,0x080B264C,2258,b0cd077db996b3b3eb752abfdd447817114ab2051684933cd387aa730f164dd4,function,CoreRegion_000B264C,CoreRegion_000B264C\n"
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-000B264C-0008D2,0x080B264C,2258,b0cd077db996b3b3eb752abfdd447817114ab2051684933cd387aa730f164dd4,function,CoreRegion_000B264C,CoreRegion_000B264C\n",
+  "structural_revalidation": {
+    "previous_proof_git_commit": "bad1039b8181610fdea3f214ffdb73cbfb24ac40",
+    "previous_proof_path": "data/pr10-b264c-20261109-build-proof.json",
+    "current_complete_build": "data/completed-build-validation.json",
+    "verified_at": "2026-11-11T05:43:28.148103+00:00",
+    "native_range_hashes_unchanged": true,
+    "limits": "Current final-path source selection rebound after complete retail verification. Previous proof remains in Git; no new native gate credit."
+  }
 }

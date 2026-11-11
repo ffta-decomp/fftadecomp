@@ -1,6 +1,6 @@
 {
   "schema": "source-build-selection-proof-v1",
-  "config_sha256": "7d467459aeeee780a445b557206573ac0417c53854e1f2dc89ff919e52273e9f",
+  "config_sha256": "320e20a0dbd14c01abc8de493d27a4bb89ec95b7755556a8a1dc4a9e0fbbb09c",
   "source_index": {
     "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
     "modules": [
@@ -9,13 +9,21 @@
         "rom_offset": 1011316,
         "original_bytes": 748,
         "kind": "mixed",
-        "source": "src/directional_target_sequence_f6e74.c"
+        "source": "src/graphics/080f6e74.c"
       }
     ],
     "files": [
       {
-        "path": "src/directional_target_sequence_f6e74.c",
-        "sha256": "177d1f30ea908bcf6d90c3b9156b2fe55f33ed87b4e678bb24cc399f9bad7179"
+        "path": "include/ffta/types.h",
+        "sha256": "7c523d4591f0a97b9c636a6932d03b4ac7f8ff05abedac174f475b5bd6f9f6a0"
+      },
+      {
+        "path": "include/ffta/unsigned_types.h",
+        "sha256": "ea78e0f580a58a2cad91b161483a92c2bff2daae9c96a09aca7af3909a4ed8de"
+      },
+      {
+        "path": "src/graphics/080f6e74.c",
+        "sha256": "ab974c8b97564a39e32268ea492db178f364ebf5dce96c3bbc42acb218ee028e"
       }
     ]
   },
@@ -34,5 +42,13 @@
     "function_table_sha256": "bf7c83223d5e1f107e8f17b62c38c41d8038ea6f21651994eaa8811655aa5c0e",
     "function_range_count": 1
   },
-  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-000F6E74-0002EC,0x080F6E74,748,7ca8399e6b24b94317fd13e883c47195c0af5e52a7e53abdc8a1a3db4a295a64,function,OriginalActionCallback_000F6E74,OriginalActionCallback_000F6E74\n"
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-000F6E74-0002EC,0x080F6E74,748,7ca8399e6b24b94317fd13e883c47195c0af5e52a7e53abdc8a1a3db4a295a64,function,OriginalActionCallback_000F6E74,OriginalActionCallback_000F6E74\n",
+  "structural_revalidation": {
+    "previous_proof_git_commit": "bad1039b8181610fdea3f214ffdb73cbfb24ac40",
+    "previous_proof_path": "data/pr10-f6e74-20261109-build-proof.json",
+    "current_complete_build": "data/completed-build-validation.json",
+    "verified_at": "2026-11-11T05:43:28.148103+00:00",
+    "native_range_hashes_unchanged": true,
+    "limits": "Current final-path source selection rebound after complete retail verification. Previous proof remains in Git; no new native gate credit."
+  }
 }

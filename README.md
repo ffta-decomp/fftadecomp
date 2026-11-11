@@ -24,23 +24,25 @@ original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
-The [gameplay recovery PR checkpoint](docs/campaigns/gameplay-50k-20261102.md),
-updated **2026-11-05**, additionally publishes **39 functions / 23,424 original
-bytes**: **12,240 B pure C** and **11,184 B mixed**, with **316 inline instruction
-bytes**. The latest increment is 15 functions / 11,356 B. Within the original
-41-function / 49,506 B tranche, 10 functions / 5,914 B (**11.95%**) are published;
-29 accompanying functions / 17,510 B are outside that denominator. Together with
-the frozen release below, ROM-free CI covers **4,000 disjoint modules / 558,862
-original bytes**. These incremental source checks do not replace the frozen
-full-ROM verification or imply complete gameplay recovery.
+The [current verified build](data/completed-build-validation.json) contains
+**4,146 completed modules / 624,304 original bytes**,
+covering **48.043% of 1,299,456 known original code bytes**.
+Every selected module and the final output image match the original US ROM.
+This total includes the previously published increments; source relocation and
+selection consolidation add no newly recovered bytes.
 
-Latest [source synchronization](data/source-sync-20261030.json): **62 verified upstream functions / 9,788 original bytes added**. The [comparison](data/upstream-comparison-20261030.json) includes main and PR #20; attribution is preserved per source and function.
+Attributed upstream imports account for **200,644 original bytes**.
+Original source notices and per-range attribution are retained. Coverage includes
+owned literals/alignment and eligible mixed modules, excludes resources, and is
+not gameplay completion. See [machine-readable accounting](data/published-source-progress.json)
+for the dated denominator and [the gameplay checkpoint](docs/campaigns/gameplay-50k-20261102.md)
+for its separate original target scope.
 
-As of **2026-10-30**, the public build contains **3,961 completed modules / 535,438 original bytes**, covering **41.801% of 1,280,908 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
-
-Of the published total, **170,910 bytes / 1,136 functions** are attributed imports or adaptations from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 77,778 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
-
-Browse the rewritten code in [`src/`](src/README.md), or use [`tools/build_completed.py`](tools/build_completed.py) and the [build guide](docs/build-completed-sources.md). No ROM, story/dialogue text or extracted game assets are supplied.
+Browse code by purpose in [`src/`](src/README.md). Shared ABI headers live in
+`include/`, symbol-only bindings in `asm/interfaces/`; uncertain ownership stays
+explicit in `config/source-layout.json`. The [source-layout guide](docs/source-layout.md)
+describes promotion and validation. No ROM, dialogue text or extracted assets
+are included.
 
 ## Acknowledgements and references actually used
 
@@ -65,7 +67,7 @@ Use the [skill](.agents/skills/ffta-decomp/SKILL.md) for original boundaries and
 - [`src/completed-index.json`](src/completed-index.json): original ROM entries, sizes and source hashes.
 - [`tools/build_completed.py`](tools/build_completed.py): build one private ROM and verify its final on-disk SHA-256.
 - [`tools/build_source_hashes.py`](tools/build_source_hashes.py): build every selected source module without a ROM and verify its module and [function-range SHA-256 table](data/completed-function-hashes.csv). The table records original addresses and byte lengths; compiler data/alignment ranges are identified separately.
-- [`data/source-build-selections.json`](data/source-build-selections.json): incremental source publications checked by the same ROM-free verifier, in addition to the frozen completed-source release. Changed C sources outside these verified selections fail the PR check.
+- [`data/source-build-selections.json`](data/source-build-selections.json): new incremental source publications awaiting consolidation into the master selection, checked by the same ROM-free verifier. Changed C sources outside these verified selections fail the PR check.
 - [`tools/verify_completed_rom.py`](tools/verify_completed_rom.py): verify an existing ROM without recompilation or a second output.
 - [`docs/build-completed-sources.md`](docs/build-completed-sources.md): prerequisites, verification and build scope.
 

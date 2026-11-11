@@ -27,7 +27,7 @@
       "offset": 730700,
       "padding_bytes": 6,
       "size": 2258,
-      "source": "src/battle_action_particle_sequence_b264c.c",
+      "source": "src/battle/080b264c.c",
       "trailing_alignment_bytes": 2,
       "external_exclude_symbols": []
     }

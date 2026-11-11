@@ -90,7 +90,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole-span mixed source independently verified and integrated; four instruction bytes are inline assembly.",
-      "source": "src/campaign_gameplay_50k/097f04.c",
+      "source": "src/battle/08097f04.c",
       "inline_instruction_bytes": 4,
       "span_sha256": "56feb611cc3944958a5a1694eba9027486dd2ac6a7b436ba0021c23379fecb38"
     },
@@ -107,7 +107,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole-span pure C independently verified and integrated.",
-      "source": "src/campaign_gameplay_50k/a9d18.c",
+      "source": "src/unknown/080a9d18.c",
       "inline_instruction_bytes": 0,
       "span_sha256": "907ab6dfbd287d2b32ca6a322be56b0ba63f74503eaeda9b2a95b14cee672b63"
     },
@@ -124,7 +124,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole-span mixed C independently verified and integrated.",
-      "source": "src/campaign_gameplay_50k/b336c.c",
+      "source": "src/battle/080b336c.c",
       "inline_instruction_bytes": 4,
       "span_sha256": "b001e86484bf062ada2058c8aa5bbb66e7a047dd649a153bddbc500031189d00"
     },
@@ -197,7 +197,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole original span independently verified and integrated; public fixed-O2 source validation recorded in the build proof.",
-      "source": "src/campaign_gameplay_50k/127458.c",
+      "source": "src/battle/08127458.c",
       "inline_instruction_bytes": 14,
       "span_sha256": "c8d47ef776f97a660c229e3e434970f94e2faeaebcaf5f127a56a10419eda0d3"
     },
@@ -214,7 +214,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole-span source independently verified and integrated; attributed upstream source, no independent rewrite credit.",
-      "source": "src/upstream_recovered_20261106/func_081277C8.c",
+      "source": "src/unknown/081277c8.c",
       "span_sha256": "b5c243743efd9870fd71d0b259367d6644686d2e1e55d44d44cb2b62c2baa4d6",
       "inline_instruction_bytes": 0,
       "origin": "upstream_import",
@@ -290,7 +290,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Complete2258B fixed-O2 mixed source independently verified and integrated; public full-range source hash passed. Nine small instruction islands total24B; original histories preserved.",
-      "source": "src/battle_action_particle_sequence_b264c.c",
+      "source": "src/battle/080b264c.c",
       "span_sha256": "b0cd077db996b3b3eb752abfdd447817114ab2051684933cd387aa730f164dd4",
       "inline_instruction_bytes": 24
     },
@@ -349,8 +349,8 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Complete 748-byte fixed-O2 mixed source independently verified and coherently integrated; seven explicit islands include the original six-argument Thumb call and 30 inline instruction bytes.",
-      "source": "src/directional_target_sequence_f6e74.c",
-      "source_sha256": "177d1f30ea908bcf6d90c3b9156b2fe55f33ed87b4e678bb24cc399f9bad7179",
+      "source": "src/graphics/080f6e74.c",
+      "source_sha256": "ab974c8b97564a39e32268ea492db178f364ebf5dce96c3bbc42acb218ee028e",
       "span_sha256": "7ca8399e6b24b94317fd13e883c47195c0af5e52a7e53abdc8a1a3db4a295a64",
       "inline_instruction_bytes": 30
     },
@@ -409,7 +409,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole-span pure C independently verified and integrated.",
-      "source": "src/campaign_gameplay_50k/112734.c",
+      "source": "src/unknown/08112734.c",
       "inline_instruction_bytes": 0,
       "span_sha256": "3bfbdf4302f3edba6581edb72a0170a549225dee3ad08466cd0888d5438ffb2a"
     },
@@ -440,7 +440,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole 748-byte authored sequence independently verified and integrated; ten inline instruction bytes.",
-      "source": "src/authored_sequence_115560/cause11_mixed.c",
+      "source": "src/graphics/08115560.c",
       "span_sha256": "9a5360ddffa801b36267fc415054a6a989b7580b211ad896ffdf0350a2aee605",
       "inline_instruction_bytes": 10
     },
@@ -513,7 +513,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole original span independently verified and integrated; public fixed-O2 source validation recorded in the build proof.",
-      "source": "src/campaign_gameplay_50k/11c6b0.c",
+      "source": "src/graphics/0811c6b0.c",
       "inline_instruction_bytes": 20,
       "span_sha256": "0e808483f3e84035a90aee4feaa9e2facfb9da26b44e9afe63f99717c97f774d"
     },
@@ -558,7 +558,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole-span mixed C independently verified and integrated.",
-      "source": "src/campaign_gameplay_50k/11ef58.c",
+      "source": "src/story/0811ef58.c",
       "inline_instruction_bytes": 12,
       "span_sha256": "12a0792d9109595c45128b51650d316bc5ce1dd0794ab738ae867d8cef49c3a2"
     },
@@ -589,7 +589,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole-span pure C independently verified and integrated.",
-      "source": "src/campaign_gameplay_50k/11f5e0.c",
+      "source": "src/unknown/0811f5e0.c",
       "inline_instruction_bytes": 0,
       "span_sha256": "b50868c24de7150753317b58b118597b8c0c18f1eae9dffc0265941083fd5460"
     },
@@ -606,7 +606,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole 1,048-byte pure C source independently verified and integrated.",
-      "source": "src/authored_story_363/11f95c/advance_indexed_stage.c",
+      "source": "src/unknown/0811f95c.c",
       "span_sha256": "1acd43b65ddd3dd709bb3007a770af7360c98e446a86237ee378a49e9aba45ee",
       "inline_instruction_bytes": 0
     },
@@ -623,7 +623,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole-span pure C independently verified and integrated.",
-      "source": "src/campaign_gameplay_50k/11ffd8.c",
+      "source": "src/unknown/0811ffd8.c",
       "inline_instruction_bytes": 0,
       "span_sha256": "28d23dd38582090c9e662697caa4c120ee0ee76aef548073979a82eeb1ed4fc7"
     },
@@ -640,7 +640,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole-span mixed source independently verified and integrated; four instruction bytes are inline assembly.",
-      "source": "src/campaign_gameplay_50k/1204a8.c",
+      "source": "src/graphics/081204a8.c",
       "inline_instruction_bytes": 4,
       "span_sha256": "71908df57a5717be13f7c82968289b35858b8c960a177056f089ae43a88b65b8"
     },
@@ -657,7 +657,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_mixed",
       "scope_note": "Whole-span source independently verified and integrated; four instruction bytes are inline assembly.",
-      "source": "src/authored_mixed_363/12b7f0/ordered_capture.c",
+      "source": "src/story/0812b7f0.c",
       "span_sha256": "c7eb073982b055a2f10ddb9388856cd1dee11b3821ae304bbad807a44ee3b2af",
       "inline_instruction_bytes": 4
     },
@@ -674,7 +674,7 @@
       "representation_at_scope": "retained_assembly",
       "status": "published_whole_exact_pure_c",
       "scope_note": "Whole 5044-byte range independently verified and integrated; public fixed-O2 full-range hash passed. Original attempts remain retained.",
-      "source": "src/authored_scene_timeline_13c0ec.c",
+      "source": "src/unknown/0813c0ec.c",
       "span_sha256": "0eb163daab454acc480f985e70e441fbf2cc5d989308ee83b1b3666961c6d7a7",
       "inline_instruction_bytes": 0,
       "descriptive_c_identifier": "AdvanceAuthoredSceneTimeline"

@@ -23,7 +23,7 @@
       "name": "CoreStateDirect_00007C84",
       "offset": 31876,
       "size": 790,
-      "source": "src/path_interpolation/advance_path_interpolation.c",
+      "source": "src/unknown/08007c84.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -45,7 +45,7 @@
       "name": "CoreFrontier_0002E160",
       "offset": 188768,
       "size": 472,
-      "source": "src/core_frontier_26/core_frontier_0002e160.c",
+      "source": "src/unknown/0802e160.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -67,7 +67,7 @@
       "name": "CoreRegion_0004BBC0",
       "offset": 310208,
       "size": 396,
-      "source": "src/progress_route_4bbc0/original_stop_current_comparison_cause10.c",
+      "source": "src/unknown/0804bbc0.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -89,7 +89,7 @@
       "name": "BattleRuntimeDependency_000A7EC4",
       "offset": 687812,
       "size": 256,
-      "source": "src/battle_runtime_dependencies/select_item_category_cue.c",
+      "source": "src/items/080a7ec4.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -111,7 +111,7 @@
       "name": "RemainingBand43_000E3E84",
       "offset": 933508,
       "size": 462,
-      "source": "src/ability_definition_child_e3e84/conditional_value_flags_definition_cause07.c",
+      "source": "src/unknown/080e3e84.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -133,7 +133,7 @@
       "name": "DefinitionTargetSequence_000E4054",
       "offset": 933972,
       "size": 400,
-      "source": "src/definition_target_sequence/advance_definition_target_sequence.c",
+      "source": "src/unknown/080e4054.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -155,7 +155,7 @@
       "name": "RemainingBand43_000F0EF4",
       "offset": 986868,
       "size": 654,
-      "source": "src/action_target_effects_f0ef4/final_rolling_slot_object_cause14.c",
+      "source": "src/unknown/080f0ef4.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -177,7 +177,7 @@
       "name": "OriginalActionCallback_000F38C4",
       "offset": 997572,
       "size": 572,
-      "source": "src/original_authored_sequences/advance_variant_actor_action_sequence.c",
+      "source": "src/unknown/080f38c4.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -199,7 +199,7 @@
       "name": "OriginalActionCallback_000F3E7C",
       "offset": 999036,
       "size": 256,
-      "source": "src/original_authored_sequences/advance_notified_actor_action_child.c",
+      "source": "src/unknown/080f3e7c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -221,7 +221,7 @@
       "name": "OriginalActionCallback_000F41C8",
       "offset": 999880,
       "size": 648,
-      "source": "src/original_authored_sequences/advance_opening_trio_and_target_children.c",
+      "source": "src/unknown/080f41c8.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -243,7 +243,7 @@
       "name": "OriginalActionCallback_000F5864",
       "offset": 1005668,
       "size": 896,
-      "source": "src/original_authored_sequences/advance_alternating_target_motion_sequence.c",
+      "source": "src/unknown/080f5864.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -265,7 +265,7 @@
       "name": "OriginalActionCallback_000F6060",
       "offset": 1007712,
       "size": 1072,
-      "source": "src/original_authored_sequences/advance_two_stage_actor_target_sequence.c",
+      "source": "src/unknown/080f6060.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -287,7 +287,7 @@
       "name": "OriginalActionCallback_000F6520",
       "offset": 1008928,
       "size": 1084,
-      "source": "src/original_authored_sequences/advance_descriptor_actor_target_sequence.c",
+      "source": "src/unknown/080f6520.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -309,7 +309,7 @@
       "name": "OriginalActionCallback_000F6A40",
       "offset": 1010240,
       "size": 520,
-      "source": "src/original_authored_sequences/advance_three_stage_actor_target_sequence.c",
+      "source": "src/unknown/080f6a40.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -331,7 +331,7 @@
       "name": "OriginalActionCallback_000F7160",
       "offset": 1012064,
       "size": 336,
-      "source": "src/original_authored_sequences/advance_actor_setup_and_child_sequence.c",
+      "source": "src/unknown/080f7160.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -353,7 +353,7 @@
       "name": "OriginalActionCallback_000F86EC",
       "offset": 1017580,
       "size": 656,
-      "source": "src/original_authored_sequences/advance_positioned_cadenced_target_sequence.c",
+      "source": "src/unknown/080f86ec.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -375,7 +375,7 @@
       "name": "OriginalActionCallback_000F9168",
       "offset": 1020264,
       "size": 632,
-      "source": "src/original_authored_sequences/advance_actor_motion_gated_target_sequence.c",
+      "source": "src/unknown/080f9168.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -397,7 +397,7 @@
       "name": "OriginalActionCallback_000F93E0",
       "offset": 1020896,
       "size": 324,
-      "source": "src/original_authored_sequences/advance_first_target_projected_sequence.c",
+      "source": "src/unknown/080f93e0.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -419,7 +419,7 @@
       "name": "OriginalActionCallback_000F990C",
       "offset": 1022220,
       "size": 520,
-      "source": "src/original_authored_sequences/advance_primary_and_paired_target_sequence.c",
+      "source": "src/unknown/080f990c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -441,7 +441,7 @@
       "name": "OriginalActionCallback_000FA614",
       "offset": 1025556,
       "size": 344,
-      "source": "src/original_authored_sequences/advance_actor_sequence_transition_to_followup122.c",
+      "source": "src/unknown/080fa614.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -463,7 +463,7 @@
       "name": "OriginalActionCallback_000FB0B4",
       "offset": 1028276,
       "size": 680,
-      "source": "src/original_authored_sequences/advance_relative_direction_target_sequence.c",
+      "source": "src/unknown/080fb0b4.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -485,7 +485,7 @@
       "name": "OriginalActionCallback_000FB4B8",
       "offset": 1029304,
       "size": 676,
-      "source": "src/original_authored_sequences/advance_resource_transition_target_sequence.c",
+      "source": "src/unknown/080fb4b8.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -507,7 +507,7 @@
       "name": "OriginalRegisteredActionQuestion_000FC800",
       "offset": 1034240,
       "size": 910,
-      "source": "src/original_authored_sequences/fc800/cause05-ramp-preparation-and-loop-snapshots.c",
+      "source": "src/unknown/080fc800.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -529,7 +529,7 @@
       "name": "OriginalRegisteredActionQuestion_000FDAB0",
       "offset": 1039024,
       "size": 230,
-      "source": "src/original_authored_sequences/fdab0/cause01-complete-continuation.c",
+      "source": "src/unknown/080fdab0.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -551,7 +551,7 @@
       "name": "OriginalRegisteredActionQuestion_000FE2E8",
       "offset": 1041128,
       "size": 682,
-      "source": "src/original_registered_fe2e8/cause07-full-direction-return-before-low8.c",
+      "source": "src/unknown/080fe2e8.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -573,7 +573,7 @@
       "name": "OriginalActionCallback_000FF180",
       "offset": 1044864,
       "size": 324,
-      "source": "src/original_authored_sequences/advance_actor_positioned_secondary_sequence.c",
+      "source": "src/unknown/080ff180.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -595,7 +595,7 @@
       "name": "OriginalActionCallback_000FF5C8",
       "offset": 1045960,
       "size": 420,
-      "source": "src/original_authored_sequences/advance_variant_delayed_target_child.c",
+      "source": "src/unknown/080ff5c8.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -617,7 +617,7 @@
       "name": "OriginalActionCallback_000FF76C",
       "offset": 1046380,
       "size": 516,
-      "source": "src/original_authored_sequences/advance_target_flag_selected_resource_sequence.c",
+      "source": "src/unknown/080ff76c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -639,7 +639,7 @@
       "name": "OriginalActionCallback_00100D00",
       "offset": 1051904,
       "size": 344,
-      "source": "src/original_authored_sequences/advance_positioned_actor_option_restore_sequence.c",
+      "source": "src/unknown/08100d00.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -661,7 +661,7 @@
       "name": "OriginalRegisteredActionQuestion_00100E58",
       "offset": 1052248,
       "size": 152,
-      "source": "src/original_authored_sequences/100e58/cause02-promoted-dispatch-working-value.c",
+      "source": "src/unknown/08100e58.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -683,7 +683,7 @@
       "name": "OriginalActionCallback_00101410",
       "offset": 1053712,
       "size": 556,
-      "source": "src/original_authored_sequences/advance_coordinated_actor_request_sequence.c",
+      "source": "src/unknown/08101410.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -705,7 +705,7 @@
       "name": "OriginalActionCallback_00101A8C",
       "offset": 1055372,
       "size": 576,
-      "source": "src/original_authored_sequences/advance_directional_actor_resource_sequence.c",
+      "source": "src/unknown/08101a8c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -727,7 +727,7 @@
       "name": "OriginalActionCallback_00103E14",
       "offset": 1064468,
       "size": 1204,
-      "source": "src/original_authored_sequences/advance_variant_actor_resource_handoff.c",
+      "source": "src/unknown/08103e14.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -749,7 +749,7 @@
       "name": "OriginalActionCallback_0010438C",
       "offset": 1065868,
       "size": 496,
-      "source": "src/original_authored_sequences/advance_timed_triple_resource_effect_sequence.c",
+      "source": "src/unknown/0810438c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -771,7 +771,7 @@
       "name": "OriginalRegisteredActionQuestion_0010533C",
       "offset": 1069884,
       "size": 838,
-      "source": "src/original_authored_sequences/10533c/cause04-real-shadow-result-store-carrier.c",
+      "source": "src/unknown/0810533c.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -793,7 +793,7 @@
       "name": "OriginalRegisteredActionQuestion_00105930",
       "offset": 1071408,
       "size": 1040,
-      "source": "src/original_authored_sequences/105930/cause12-numeric-index-to-selector-address-consumer.c",
+      "source": "src/unknown/08105930.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -815,7 +815,7 @@
       "name": "OriginalRegisteredActionQuestion_0010781C",
       "offset": 1079324,
       "size": 644,
-      "source": "src/original_authored_sequences/10781c/cause01-complete-handshake-actor-sequence.c",
+      "source": "src/unknown/0810781c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -841,7 +841,7 @@
       "offset": 1109772,
       "padding_bytes": 14,
       "size": 3052,
-      "source": "src/authored_sequence_10ef0c/real_destructive_layer_load_cause59.c",
+      "source": "src/graphics/0810ef0c.c",
       "trailing_alignment_bytes": 0
     },
     {
@@ -863,7 +863,7 @@
       "name": "OriginalActionCallback_0011802C",
       "offset": 1146924,
       "size": 832,
-      "source": "src/authored_target_11802c/advance_cause21.c",
+      "source": "src/unknown/0811802c.c",
       "trailing_alignment_bytes": 0
     }
   ]
