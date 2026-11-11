@@ -14,6 +14,10 @@
     ],
     "files": [
       {
+        "path": "config/symbols.ld",
+        "sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf"
+      },
+      {
         "path": "include/ffta/types.h",
         "sha256": "7c523d4591f0a97b9c636a6932d03b4ac7f8ff05abedac174f475b5bd6f9f6a0"
       },

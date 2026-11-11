@@ -707,6 +707,10 @@
     ],
     "files": [
       {
+        "path": "asm/external_thumb_symbols.s",
+        "sha256": "eb679abd52a90212ea9744a5c00d3b161311c55d4f03b50dabb521da7da17f42"
+      },
+      {
         "path": "asm/interfaces/080023ec.s",
         "sha256": "f1a559ffce125559618297f6c71c9882a7863d132f498f817475ea2dc5aef711"
       },
@@ -1105,6 +1109,10 @@
       {
         "path": "asm/interfaces/08145798.s",
         "sha256": "8bde79e7a35c899d2cc002ed53c24e9af471abadc694541c853abdec51126eab"
+      },
+      {
+        "path": "config/symbols.ld",
+        "sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf"
       },
       {
         "path": "include/abi/interfaces/080008e0_bindings.h",

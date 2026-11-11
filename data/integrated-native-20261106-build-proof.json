@@ -280,6 +280,10 @@
     ],
     "files": [
       {
+        "path": "config/symbols.ld",
+        "sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf"
+      },
+      {
         "path": "include/abi/interfaces/080fc800_approach_sequence.h",
         "sha256": "4fe2cb596dbc440d36886fcb686b837b7a4722ae65e5b43e97cf0d7ebda6234a"
       },
