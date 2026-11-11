@@ -24,13 +24,30 @@ original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
-Latest [source synchronization](data/source-sync-20261030.json): **62 verified upstream functions / 9,788 original bytes added**. The [comparison](data/upstream-comparison-20261030.json) includes main and PR #20; attribution is preserved per source and function.
+The [current verified build](data/completed-build-validation.json) contains
+**4,146 completed modules / 624,304 original bytes**,
+covering **48.043% of 1,299,456 known original code bytes**.
+Every selected module and the final output image match the original US ROM.
+This total includes the previously published increments; source relocation and
+selection consolidation add no newly recovered bytes.
 
-As of **2026-10-30**, the public build contains **3,961 completed modules / 535,438 original bytes**, covering **41.801% of 1,280,908 known original code bytes**. The complete output matches the original US ROM byte-for-byte when built with your own private reference ROM.
+The current selection comprises **4,054 pure-C modules / 576,440 B** and
+**92 mixed modules / 47,864 B**, with **1,132 inline instruction B**.
+[Three existing mixed representations](docs/campaigns/mixed-to-pure-c-20261111.md)
+were converted to pure C without increasing the completed-byte total.
 
-Of the published total, **170,910 bytes / 1,136 functions** are attributed imports or adaptations from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp), not independent rewrites. The source index deduplicates all original ranges. Coverage includes function literals/alignment and eligible mixed modules, excludes resources, and is **not gameplay completion**. The denominator combines the historical 1,203,130-byte catalogue with 77,778 verified original bytes present in published modules but missing from that catalogue. See [machine-readable accounting](data/published-source-progress.json) and [build verification](data/completed-build-validation.json).
+Attributed upstream imports account for **200,644 original bytes**.
+Original source notices and per-range attribution are retained. Coverage includes
+owned literals/alignment and eligible mixed modules, excludes resources, and is
+not gameplay completion. See [machine-readable accounting](data/published-source-progress.json)
+for the dated denominator and [the gameplay checkpoint](docs/campaigns/gameplay-50k-20261102.md)
+for its separate original target scope.
 
-Browse the rewritten code in [`src/`](src/README.md), or use [`tools/build_completed.py`](tools/build_completed.py) and the [build guide](docs/build-completed-sources.md). No ROM, story/dialogue text or extracted game assets are supplied.
+Browse code by purpose in [`src/`](src/README.md). Shared ABI headers live in
+`include/`, symbol-only bindings in `asm/interfaces/`; uncertain ownership stays
+explicit in `config/source-layout.json`. The [source-layout guide](docs/source-layout.md)
+describes promotion and validation. No ROM, dialogue text or extracted assets
+are included.
 
 ## Acknowledgements and references actually used
 
@@ -55,6 +72,7 @@ Use the [skill](.agents/skills/ffta-decomp/SKILL.md) for original boundaries and
 - [`src/completed-index.json`](src/completed-index.json): original ROM entries, sizes and source hashes.
 - [`tools/build_completed.py`](tools/build_completed.py): build one private ROM and verify its final on-disk SHA-256.
 - [`tools/build_source_hashes.py`](tools/build_source_hashes.py): build every selected source module without a ROM and verify its module and [function-range SHA-256 table](data/completed-function-hashes.csv). The table records original addresses and byte lengths; compiler data/alignment ranges are identified separately.
+- [`data/source-build-selections.json`](data/source-build-selections.json): new incremental source publications awaiting consolidation into the master selection, checked by the same ROM-free verifier. Changed C sources outside these verified selections fail the PR check.
 - [`tools/verify_completed_rom.py`](tools/verify_completed_rom.py): verify an existing ROM without recompilation or a second output.
 - [`docs/build-completed-sources.md`](docs/build-completed-sources.md): prerequisites, verification and build scope.
 
@@ -86,3 +104,7 @@ Completed C and eligible mixed modules are published in [`src/`](src/README.md),
 ## Upstream-imported implementations
 
 Locally verified imports from [shubshub/fftadecomp](https://github.com/shubshub/fftadecomp) are explicitly attributed in source headers and [progress JSON](data/upstream-imports.json)/[CSV](data/upstream-imports.csv). They are not counted as independent rewrites. See [provenance and validation](docs/upstream-imports.md); imported and existing spans are deduplicated within the published source build.
+
+Upstream source integration: [1194624 verified import](docs/campaigns/upstream-import-1194624.md) adds 100 complete pure-C functions (29,278 bytes); overlapping functions are counted once.
+
+Integrated recovery: [39 verified native functions](docs/campaigns/integrated-native-20261106.md) add 25,462 bytes, including a separately measured mixed range.

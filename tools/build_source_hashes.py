@@ -207,12 +207,80 @@ def changed_files(base):
     return sorted(path.decode('utf-8', errors='replace') for path in result.split(b'\0') if path)
 
 
+def load_build_selections(root=ROOT):
+    """Include explicit incremental publications, without changing the frozen release."""
+    def read(path):
+        resolved = (root / path).resolve()
+        if not resolved.is_relative_to(root.resolve()):
+            raise ValueError('Selection path escapes repository')
+        return resolved.read_bytes()
+
+    config = json.loads(read('config/completed-build.json'))
+    index = json.loads(read('src/completed-index.json'))
+    expected = json.loads(read('data/completed-module-hashes.json'))
+    selections = [(config, index, expected, read('data/completed-function-hashes.csv'))]
+    registry = root / 'data/source-build-selections.json'
+    if registry.exists():
+        registered = json.loads(registry.read_text())
+        if registered.get('schema') != 'source-build-selections-v1':
+            raise ValueError('Unknown source build registry schema')
+        for entry in registered['selections']:
+            raw = read(entry['config'])
+            proof = json.loads(read(entry['proof']))
+            if (proof.get('schema') != 'source-build-selection-proof-v1'
+                    or proof.get('config_sha256') != sha256(raw)):
+                raise ValueError('Incremental build selection configuration hash mismatch')
+            selections.append((json.loads(raw), proof['source_index'], proof['expected'],
+                               proof['function_hash_csv'].encode('utf-8')))
+    return merge_build_selections(selections, root)
+
+
+def merge_build_selections(selections, root=ROOT):
+    """Authenticate each selection, then reject collisions across publications."""
+    merged = dict(selections[0][0], modules=[])
+    index = {'retail_sha256': RETAIL_SHA256, 'modules': [], 'files': []}
+    targets, functions, pins = [], {}, {}
+    for config, source_index, expected, table in selections:
+        validate_inputs(config, source_index, expected, root)
+        ranges = load_function_targets(config, expected, table)
+        if any(config.get(key) != merged.get(key) for key in ('rom_base', 'size', 'sha256')):
+            raise ValueError('Build selections target different ROM identities')
+        if functions.keys() & ranges.keys():
+            raise ValueError('Duplicate module across build selections')
+        functions.update(ranges)
+        merged['modules'].extend(config['modules'])
+        index['modules'].extend(source_index['modules'])
+        targets.extend(expected['modules'])
+        for pin in source_index['files']:
+            previous = pins.setdefault(pin['path'], pin['sha256'])
+            if previous != pin['sha256']:
+                raise ValueError('Conflicting source input pins across build selections')
+    targets.sort(key=lambda row: row['rom_offset'])
+    index['files'] = [{'path': path, 'sha256': digest} for path, digest in sorted(pins.items())]
+    expected = {'schema': 'completed-module-sha256-v1', 'retail_sha256': RETAIL_SHA256,
+                'modules': targets, 'module_set_sha256': set_hash(targets)}
+    validate_inputs(merged, index, expected, root)
+    return merged, index, expected, functions
+
+
+def require_changed_source_coverage(config, paths, root=ROOT):
+    """A green build must not silently ignore newly published C files."""
+    selected = {module['source'] for module in config['modules']}
+    missing = [path for path in paths if path.startswith('src/') and path.endswith('.c')
+               and (root / path).is_file() and path not in selected]
+    if missing:
+        raise ValueError('Changed C sources have no verified build selection: ' + ', '.join(missing))
+
+
 def write_delta_summary(config, paths, outcomes, error, destination):
     """Report direct source changes, with unknown results distinct from mismatches."""
     def safe(value):
         return str(value).replace('&', '&amp;').replace('<', '&lt;').replace('|', '&#124;').replace('`', '&#96;').replace('\n', ' ')
     lines = ['## Source hash verification', '',
              'Whole selected build: ' + ('failed: ' + safe(error) if error else 'passed'), '',
+             f"Selected coverage: {len(config['modules']):,} modules / "
+             f"{sum(module['size'] for module in config['modules']):,} original bytes. "
+             'Recorded native-range hashes are checked without a ROM; this is not full-ROM validation.', '',
              '### Changed files and directly associated selected functions', '',
              '| File | Function / range | Result |', '| --- | --- | --- |']
     modules_by_source = {}
@@ -221,13 +289,20 @@ def write_delta_summary(config, paths, outcomes, error, destination):
     for path in paths:
         modules = modules_by_source.get(path, [])
         if not modules:
-            lines.append(f'| `{safe(path)}` | Not a selected source module | Not individually checked |')
+            if path.startswith('src/') and path.endswith('.c') and (ROOT / path).is_file():
+                lines.append(f'| `{safe(path)}` | No selected source module | ERROR: no verified build coverage |')
+            elif path.startswith('src/') and path.endswith('.c'):
+                lines.append(f'| `{safe(path)}` | Deleted source | Not built |')
+            else:
+                lines.append(f'| `{safe(path)}` | Metadata, header or build tooling | See full-build and artifact checks |')
         for module in modules:
             result = outcomes.get(module['name'], {})
             by_id = {item['id']: item['status'] for item in result.get('functions', [])}
             for item in module.get('functions') or [dict(name=module['name'], offset=module['offset'], size=module['size'])]:
                 ident = f"US-{item['offset']:08X}-{item['size']:06X}"
-                status = by_id.get(ident, 'not built')
+                status = by_id.get(ident, result.get('status', 'not built'))
+                if status == 'match' and result.get('status') == 'mismatch':
+                    status = 'range hash matches; module mismatch'
                 lines.append(f"| `{safe(path)}` | `{safe(item['name'])}` ({ident}) | {status} |")
     if not paths:
         lines.append('| No changed files | — | — |')
@@ -253,13 +328,12 @@ def main():
     parser.add_argument('--base-ref', help='Report changed source files against this Git revision')
     parser.add_argument('--summary', type=Path, help='Append the delta report to this file')
     args = parser.parse_args()
-    config = json.loads((ROOT / 'config/completed-build.json').read_text())
-    index = json.loads((ROOT / 'src/completed-index.json').read_text())
-    expected = json.loads((ROOT / 'data/completed-module-hashes.json').read_text())
+    config = {'modules': []}
     paths = changed_files(args.base_ref) if args.base_ref else []
     outcomes, error = {}, None
     try:
-        functions = load_function_targets(config, expected, (ROOT / 'data/completed-function-hashes.csv').read_bytes())
+        config, index, expected, functions = load_build_selections()
+        require_changed_source_coverage(config, paths)
         result = verify_build(config, index, expected, args.build_dir, args.jobs, functions, outcomes)
         result['function_ranges'] = sum(len(rows) for rows in functions.values())
         print(json.dumps(result, indent=2))

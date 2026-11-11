@@ -150,6 +150,11 @@ class BuildExtensionTests(unittest.TestCase):
         argv=['build_completed.py','--input',str(input_path),'--output',str(output),
               '--report',str(report),'--extension-config',str(manifest),
               '--build-dir',str(self.root/'external-build')]
+        # Compilation is mocked below. Satisfy the real launch precondition
+        # without bootstrapping or invoking a compiler in this unit test.
+        compiler_path=self.root/'external-build/toolchain/agbcc'
+        compiler_path.parent.mkdir(parents=True)
+        compiler_path.write_bytes(b'unit-test placeholder; never executed\n')
         def compiler(selected,*args,**kwargs):
             return bytes.fromhex('01207047') if Path(selected['source']).is_absolute() else reference[:4]
         with mock.patch.object(build_completed,'ROOT',project), \

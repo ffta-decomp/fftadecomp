@@ -1,0 +1,12 @@
+#include "ffta/unsigned_types.h"
+typedef signed int s32;
+typedef struct EffectContext {
+    u8 reserved_0[8];
+    void *unit;
+    u8 reserved_12[26];
+    u16 flags;
+} EffectContext;
+extern void RecordEffectMetadata(EffectContext *context, s32 index);
+extern void SetUnitStateECBit6(void *unit, u32 value);
+__asm__(".thumb_set RecordEffectMetadata, 0x08131dd5\n"
+        ".thumb_set SetUnitStateECBit6, 0x080ce241\n");

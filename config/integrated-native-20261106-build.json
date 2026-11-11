@@ -1,0 +1,870 @@
+{
+  "id": "retail-us-4ac05441",
+  "size": 16777216,
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "rom_base": 134217728,
+  "modules": [
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvancePathInterpolation",
+          "offset": 31876,
+          "size": 790
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreStateDirect_00007C84",
+      "offset": 31876,
+      "size": 790,
+      "source": "src/unknown/08007c84.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreFrontier_0002E160",
+          "offset": 188768,
+          "size": 472
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreFrontier_0002E160",
+      "offset": 188768,
+      "size": 472,
+      "source": "src/unknown/0802e160.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_0004BBC0",
+          "offset": 310208,
+          "size": 396
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "CoreRegion_0004BBC0",
+      "offset": 310208,
+      "size": 396,
+      "source": "src/unknown/0804bbc0.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "BattleRuntimeDependency_000A7EC4",
+          "offset": 687812,
+          "size": 256
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "BattleRuntimeDependency_000A7EC4",
+      "offset": 687812,
+      "size": 256,
+      "source": "src/items/080a7ec4.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000E3E84",
+          "offset": 933508,
+          "size": 462
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_000E3E84",
+      "offset": 933508,
+      "size": 462,
+      "source": "src/unknown/080e3e84.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceDefinitionTargetSequence",
+          "offset": 933972,
+          "size": 400
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "DefinitionTargetSequence_000E4054",
+      "offset": 933972,
+      "size": 400,
+      "source": "src/unknown/080e4054.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_000F0EF4",
+          "offset": 986868,
+          "size": 654
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_000F0EF4",
+      "offset": 986868,
+      "size": 654,
+      "source": "src/unknown/080f0ef4.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F38C4",
+          "offset": 997572,
+          "size": 572
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F38C4",
+      "offset": 997572,
+      "size": 572,
+      "source": "src/unknown/080f38c4.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F3E7C",
+          "offset": 999036,
+          "size": 256
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F3E7C",
+      "offset": 999036,
+      "size": 256,
+      "source": "src/unknown/080f3e7c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F41C8",
+          "offset": 999880,
+          "size": 648
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F41C8",
+      "offset": 999880,
+      "size": 648,
+      "source": "src/unknown/080f41c8.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F5864",
+          "offset": 1005668,
+          "size": 896
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F5864",
+      "offset": 1005668,
+      "size": 896,
+      "source": "src/unknown/080f5864.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6060",
+          "offset": 1007712,
+          "size": 1072
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F6060",
+      "offset": 1007712,
+      "size": 1072,
+      "source": "src/unknown/080f6060.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6520",
+          "offset": 1008928,
+          "size": 1084
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F6520",
+      "offset": 1008928,
+      "size": 1084,
+      "source": "src/unknown/080f6520.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F6A40",
+          "offset": 1010240,
+          "size": 520
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F6A40",
+      "offset": 1010240,
+      "size": 520,
+      "source": "src/unknown/080f6a40.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F7160",
+          "offset": 1012064,
+          "size": 336
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F7160",
+      "offset": 1012064,
+      "size": 336,
+      "source": "src/unknown/080f7160.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F86EC",
+          "offset": 1017580,
+          "size": 656
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F86EC",
+      "offset": 1017580,
+      "size": 656,
+      "source": "src/unknown/080f86ec.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F9168",
+          "offset": 1020264,
+          "size": 632
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F9168",
+      "offset": 1020264,
+      "size": 632,
+      "source": "src/unknown/080f9168.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F93E0",
+          "offset": 1020896,
+          "size": 324
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F93E0",
+      "offset": 1020896,
+      "size": 324,
+      "source": "src/unknown/080f93e0.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000F990C",
+          "offset": 1022220,
+          "size": 520
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000F990C",
+      "offset": 1022220,
+      "size": 520,
+      "source": "src/unknown/080f990c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FA614",
+          "offset": 1025556,
+          "size": 344
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FA614",
+      "offset": 1025556,
+      "size": 344,
+      "source": "src/unknown/080fa614.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FB0B4",
+          "offset": 1028276,
+          "size": 680
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FB0B4",
+      "offset": 1028276,
+      "size": 680,
+      "source": "src/unknown/080fb0b4.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FB4B8",
+          "offset": 1029304,
+          "size": 676
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FB4B8",
+      "offset": 1029304,
+      "size": 676,
+      "source": "src/unknown/080fb4b8.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_000FC800",
+          "offset": 1034240,
+          "size": 910
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_000FC800",
+      "offset": 1034240,
+      "size": 910,
+      "source": "src/unknown/080fc800.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_000FDAB0",
+          "offset": 1039024,
+          "size": 230
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_000FDAB0",
+      "offset": 1039024,
+      "size": 230,
+      "source": "src/unknown/080fdab0.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_000FE2E8",
+          "offset": 1041128,
+          "size": 682
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_000FE2E8",
+      "offset": 1041128,
+      "size": 682,
+      "source": "src/unknown/080fe2e8.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FF180",
+          "offset": 1044864,
+          "size": 324
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FF180",
+      "offset": 1044864,
+      "size": 324,
+      "source": "src/unknown/080ff180.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FF5C8",
+          "offset": 1045960,
+          "size": 420
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FF5C8",
+      "offset": 1045960,
+      "size": 420,
+      "source": "src/unknown/080ff5c8.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_000FF76C",
+          "offset": 1046380,
+          "size": 516
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_000FF76C",
+      "offset": 1046380,
+      "size": 516,
+      "source": "src/unknown/080ff76c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00100D00",
+          "offset": 1051904,
+          "size": 344
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00100D00",
+      "offset": 1051904,
+      "size": 344,
+      "source": "src/unknown/08100d00.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_00100E58",
+          "offset": 1052248,
+          "size": 152
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_00100E58",
+      "offset": 1052248,
+      "size": 152,
+      "source": "src/unknown/08100e58.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00101410",
+          "offset": 1053712,
+          "size": 556
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00101410",
+      "offset": 1053712,
+      "size": 556,
+      "source": "src/unknown/08101410.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00101A8C",
+          "offset": 1055372,
+          "size": 576
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00101A8C",
+      "offset": 1055372,
+      "size": 576,
+      "source": "src/unknown/08101a8c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_00103E14",
+          "offset": 1064468,
+          "size": 1204
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_00103E14",
+      "offset": 1064468,
+      "size": 1204,
+      "source": "src/unknown/08103e14.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_0010438C",
+          "offset": 1065868,
+          "size": 496
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_0010438C",
+      "offset": 1065868,
+      "size": 496,
+      "source": "src/unknown/0810438c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_0010533C",
+          "offset": 1069884,
+          "size": 838
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_0010533C",
+      "offset": 1069884,
+      "size": 838,
+      "source": "src/unknown/0810533c.c",
+      "trailing_alignment_bytes": 2
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_00105930",
+          "offset": 1071408,
+          "size": 1040
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_00105930",
+      "offset": 1071408,
+      "size": 1040,
+      "source": "src/unknown/08105930.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalRegisteredActionQuestion_0010781C",
+          "offset": 1079324,
+          "size": 644
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalRegisteredActionQuestion_0010781C",
+      "offset": 1079324,
+      "size": 644,
+      "source": "src/unknown/0810781c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "graphics",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_0010EF0C",
+          "offset": 1109772,
+          "size": 3052
+        }
+      ],
+      "inline_assembly_bytes": 2,
+      "instructions_bytes": 2870,
+      "kind": "mixed",
+      "literal_bytes": 168,
+      "name": "RemainingBand43_0010EF0C",
+      "offset": 1109772,
+      "padding_bytes": 14,
+      "size": 3052,
+      "source": "src/graphics/0810ef0c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "OriginalActionCallback_0011802C",
+          "offset": 1146924,
+          "size": 832
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "OriginalActionCallback_0011802C",
+      "offset": 1146924,
+      "size": 832,
+      "source": "src/unknown/0811802c.c",
+      "trailing_alignment_bytes": 0
+    }
+  ]
+}

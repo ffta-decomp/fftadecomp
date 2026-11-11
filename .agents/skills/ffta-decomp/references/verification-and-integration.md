@@ -76,6 +76,13 @@ or whole-game behavior proof.
 
 ## Freeze readable source and select production
 
+Promote the validated temporary unit to a stable subsystem path before publication;
+follow [source layout and promotion](../../../../docs/source-layout.md) for the
+audit/preparation commands. Keep batch, actor and trial identity in metadata, not
+production paths. Preparation is not a gate: final-path dependencies and native
+proof must be validated, and selection/index/proof updated together. Preserve
+required old inputs and record the local gate before optional path cleanup.
+
 Complete evidence-backed naming and commit the final C, necessary headers and
 symbol-only bindings. Preserve original entry/module identity; do not add wrappers
 or executable veneers for a cosmetic rename. Source changes require new bound

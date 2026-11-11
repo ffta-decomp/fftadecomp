@@ -39,12 +39,36 @@ resources remain in the user's private input. The Pages workflow validates publi
 metadata and scripts only: it does not have a ROM and does not repeat ROM builds.
 No ROM, extracted story text or translation resources are distributed.
 
+## PR source-hash checks
+
+`python3 tools/build_source_hashes.py --jobs 4` compiles the frozen release plus
+the incremental selections explicitly registered in
+[`data/source-build-selections.json`](../data/source-build-selections.json).
+Each incremental proof pins its configuration, source files, original spans and
+native module/function hashes. Selections must have disjoint ranges and module
+identities. Adding source files without a verified selection fails the PR check;
+a successful old release build does not validate newly added source implicitly.
+
+Every PR runs this build once, including same-repository PRs. Branch pushes do
+not launch a duplicate build; pushes to `main` and manual runs remain supported.
+The job summary and PR comment identify each changed selected function as
+`match`, `mismatch`, `build error` or `not built`. Headers, metadata and tooling
+have no standalone native-function result. These hash checks require no private
+ROM and do not establish a whole-ROM comparison. Validated increments are consolidated into the master selection and its native
+hash tables; the registry then lists only subsequent increments. The same range
+must never occur in both the master and an active registry selection.
+
 ## Fixed-address function bindings
 
-Some imported functions use a source-local `.symbols.s` file to bind existing
+Some functions use an `asm/interfaces/<address>.s` file to bind existing
 functions and data at their original addresses. The manifest selects this through
 `external_symbol_supplement`. The builder accepts only non-emitting `.global`,
 `.set`, `.thumb_set`, `.syntax unified` and `.thumb` directives; instructions,
 raw bytes, includes and paths outside the source root are rejected. The file hash
 participates in the module cache identity and the completed-source input index.
 These aliases do not implement or replace a function body.
+
+For an explicit `--build-dir`, prepare its pinned `toolchain/agbcc` before the
+build. The default uses the compiler produced by `tools/bootstrap.py`. A missing
+compiler is rejected before scheduling module jobs. Do not duplicate bootstraps
+per function; reuse the same authenticated compiler.

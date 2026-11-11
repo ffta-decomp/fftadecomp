@@ -1,0 +1,6 @@
+#include "ffta/unsigned_types.h"
+typedef signed short s16;
+typedef signed int s32;
+typedef struct {u8 unknown00[38];s16 base_stat;u8 unknown40[2];u16 equipment[5];} UnitStatView;
+u32 ItemProperty(u32,u32) __asm__("GetItemProperty");
+typedef char CheckEquipment[(u32)&((UnitStatView*)0)->equipment==42?1:-1];

@@ -1,0 +1,5 @@
+{
+  "schema": "source-build-selections-v1",
+  "selections": [],
+  "note": "All previously published selections are consolidated in completed-build.json. Register only subsequent increments."
+}
