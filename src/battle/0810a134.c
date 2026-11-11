@@ -21,10 +21,10 @@ u32 RemainingBand43_0010A134(void *parent,Event *event,Work *work)
  work->aux=Aux((void*)0x083A1B30,1,4,0,parent);
  work->cadence=3;++event->phase;break;
  case 257:{u8 i=work->spawned;void **handles=work->objects;
- for(;i<=14;++i) {register const Spawn *table __asm__("r0")=SpawnTable;const Spawn *spawn;u32 offset;__asm__("" : "+r"(table));offset=(u32)i*4;__asm__("add %0, %1, %2" : "=l"(spawn) : "l"(offset),"l"(table) : "cc");
+ for(;i<=14;++i) {register const Spawn *table __asm__("r0")=SpawnTable;const Spawn *spawn;u32 offset,address;__asm__("" : "+r"(table));offset=(u32)i*4;address=offset+(u32)table;__asm__("" : "+l"(address));spawn=(const Spawn*)address;
  if(work->frame==spawn->frame) {
- void *created=Sprite((void*)0x085080A8,spawn->kind,spawn->x,8,1020,6,1,0);void **slot;
- __asm__("add %0, %1, %2" : "=l"(slot) : "l"(handles),"l"(offset) : "cc");*slot=created;
+ void *created=Sprite((void*)0x085080A8,spawn->kind,spawn->x,8,1020,6,1,0);void **slot;u32 address;
+ address=(u32)handles+offset;__asm__("" : "+l"(address));slot=(void**)address;*slot=created;
  ++work->spawned;
  }}
  if(--work->cadence) {u16 x,y,z;

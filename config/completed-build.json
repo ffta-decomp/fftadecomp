@@ -81483,8 +81483,11 @@
       "dispatch_table_bytes": 0
     },
     {
-      "component": "battle",
-      "dispatch_table_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
       "external_symbols": false,
       "functions": [
         {
@@ -81493,22 +81496,13 @@
           "size": 624
         }
       ],
-      "inline_assembly_bytes": 2,
-      "instructions_bytes": 564,
-      "kind": "mixed",
-      "literal_bytes": 52,
+      "kind": "c",
+      "match_policy": "exact",
       "name": "OriginalActionCallback_000E87C0",
       "offset": 952256,
-      "padding_bytes": 8,
       "size": 624,
       "source": "src/battle/080e87c0.c",
-      "trailing_alignment_bytes": 0,
-      "compiler_flags": [
-        "-O2",
-        "-mthumb-interwork"
-      ],
-      "external_exclude_symbols": [],
-      "match_policy": "exact"
+      "trailing_alignment_bytes": 0
     },
     {
       "compiler_flags": [
@@ -82135,7 +82129,6 @@
         "-O2",
         "-mthumb-interwork"
       ],
-      "component": "missions",
       "external_symbols": false,
       "functions": [
         {
@@ -82144,17 +82137,13 @@
           "size": 862
         }
       ],
-      "inline_assembly_bytes": 2,
-      "instructions_bytes": 810,
-      "kind": "mixed",
-      "literal_bytes": 44,
+      "kind": "c",
+      "match_policy": "exact",
       "name": "OriginalActionCallback_000EB740",
       "offset": 964416,
-      "padding_bytes": 8,
       "size": 862,
       "source": "src/missions/080eb740.c",
-      "trailing_alignment_bytes": 2,
-      "match_policy": "exact"
+      "trailing_alignment_bytes": 2
     },
     {
       "name": "func_080EBAA0",
@@ -86990,8 +86979,6 @@
         "-O2",
         "-mthumb-interwork"
       ],
-      "component": "battle",
-      "dispatch_table_bytes": 0,
       "external_symbols": false,
       "functions": [
         {
@@ -87000,17 +86987,13 @@
           "size": 368
         }
       ],
-      "inline_assembly_bytes": 4,
-      "instructions_bytes": 348,
-      "kind": "mixed",
-      "literal_bytes": 20,
+      "kind": "c",
+      "match_policy": "exact",
       "name": "RemainingBand43_0010A134",
       "offset": 1089844,
-      "padding_bytes": 0,
       "size": 368,
       "source": "src/battle/0810a134.c",
-      "trailing_alignment_bytes": 0,
-      "match_policy": "exact"
+      "trailing_alignment_bytes": 0
     },
     {
       "dispatch_table_bytes": 0,

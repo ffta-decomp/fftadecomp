@@ -695,10 +695,18 @@
   "total_public_selected_sources": {
     "functions": 4146,
     "original_bytes": 624304,
-    "pure_c_bytes": 574586,
-    "mixed_bytes": 49718,
-    "inline_instruction_bytes": 1140,
+    "pure_c_bytes": 576440,
+    "mixed_bytes": 47864,
+    "inline_instruction_bytes": 1132,
     "attributed_upstream_original_bytes": 200644,
     "deduplication": "disjoint whole native ranges across registered source selections"
+  },
+  "representation_refinement": {
+    "verified_date": "2026-11-11",
+    "validation": "data/campaigns/mixed-to-pure-c-20261111-validation.json",
+    "functions": 3,
+    "existing_original_bytes": 1854,
+    "removed_inline_instruction_bytes": 8,
+    "additional_recovered_original_bytes": 0
   }
 }

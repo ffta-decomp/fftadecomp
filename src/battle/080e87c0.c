@@ -124,9 +124,12 @@ s32 AdvanceAuthoredSpecialRecordTargetSequence(TaskNode *input_parent,struct Seq
    __asm__("" : "+r"(enable_mask));
    working=enable_mask;
    __asm__("" : "+r"(working));
-   /* Original E88C4 scratch clear: R2 is dead after the mask copy.
-    * Preserve this two-byte effect without inventing a C consumer. */
-   __asm__("mov r2,#0" : : : "r2", "cc");
+   /* E88C4 retires the actual R2 mask after its copy to working/R0.
+    * Express that original full-word definition in C.  The input-only
+    * annotation observes this initialized physical value; it neither
+    * creates a value nor invents a callee argument or memory consumer. */
+   enable_mask=0;
+   __asm__("" : : "r"(enable_mask));
    working|=shadow;*(u16 *)display=working;
   }
   if(work->special!=0) {

@@ -31,6 +31,11 @@ Every selected module and the final output image match the original US ROM.
 This total includes the previously published increments; source relocation and
 selection consolidation add no newly recovered bytes.
 
+The current selection comprises **4,054 pure-C modules / 576,440 B** and
+**92 mixed modules / 47,864 B**, with **1,132 inline instruction B**.
+[Three existing mixed representations](docs/campaigns/mixed-to-pure-c-20261111.md)
+were converted to pure C without increasing the completed-byte total.
+
 Attributed upstream imports account for **200,644 original bytes**.
 Original source notices and per-range attribution are retained. Coverage includes
 owned literals/alignment and eligible mixed modules, excludes resources, and is

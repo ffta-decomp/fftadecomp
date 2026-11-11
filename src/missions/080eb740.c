@@ -138,8 +138,12 @@ s32 AdvanceAuthoredCurvedOwnerFlagSequence(TaskNode *input_parent,struct Sequenc
   stage_cell=&work->stage;__asm__("" : "+r"(stage_cell));
   do{
    register u32 palette_address __asm__("r0")=(u32)index*4;
-   /* One native three-register address addition; memory access stays in C. */
-   __asm__("add %0, %1, %0" : "+l"(palette_address) : "l"(objects) : "cc");
+   /* The shifted ordinal is a real word before the base is added.  Keep
+    * that definition separate so combine cannot retain index*4 inside PLUS. */
+   __asm__("" : "+r"(palette_address));
+   palette_address=(u32)objects+palette_address;
+   /* The complete cell address is consumed by the following C load. */
+   __asm__("" : "+r"(palette_address));
    SetDefinitionPaletteMode(*(TaskNode **)palette_address,1);
    index=(u8)(index+1);
   }while(index<=2);
