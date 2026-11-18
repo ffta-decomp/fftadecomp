@@ -24,10 +24,10 @@ original-ROM recovery results and cannot earn matching credit.
 
 ## Published source progress
 
-The [current verified build](data/completed-build-validation.json) contains
+The [verified publication snapshot](data/completed-build-validation.json) contains
 **4,146 completed modules / 624,304 original bytes**,
 covering **48.043% of 1,299,456 known original code bytes**.
-Every selected module and the final output image match the original US ROM.
+That snapshot records matching selected module hashes and a matching final image.
 This total includes the previously published increments; source relocation and
 selection consolidation add no newly recovered bytes.
 
@@ -99,7 +99,7 @@ Verified on 2026-10-28: **3,694 modules / 468,682 original bytes** compiled with
 
 ## Recovered source code
 
-Completed C and eligible mixed modules are published in [`src/`](src/README.md), with ROM entries, original sizes and source hashes in [`src/completed-index.json`](src/completed-index.json). Use the [completed-source build instructions](docs/build-completed-sources.md) to compile these modules against your own private US ROM and verify byte-identical output. Unrecovered code/resources remain supplied by that ROM.
+Completed C and eligible mixed modules are published in [`src/`](src/README.md), with ROM entries, original sizes and source hashes in [`src/completed-index.json`](src/completed-index.json). The matching build selection is [`config/completed-build.json`](config/completed-build.json). The portable [retail input template](config/retail-us.json) contains no selected modules. See the [completed-source build instructions](docs/build-completed-sources.md) for the separate source-hash CI and private-image checks.
 
 ## Upstream-imported implementations
 

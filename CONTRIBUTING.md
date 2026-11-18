@@ -4,7 +4,8 @@
 
 ## Claim a complete function
 
-Check the current source index, catalogue and open issues for the same entry and
+Check the [published source index](src/completed-index.json),
+[completed build selection](config/completed-build.json), catalogue and open issues for the same entry and
 overlapping ranges. A selected ASM row can already have a completed contribution;
 a module span is not proof of an independent function. Prefer game-specific logic
 and its actual dependencies, preserving existing work and original identity.
@@ -46,6 +47,9 @@ This repository contains completed recovered source, build tools and progress
 metadata. Unrecovered code/resources come from the user's private reference ROM
 in the transitional build. Do not upload ROMs, extracted ASM, dialogue/text packs,
 assets, saves, local reports, private paths, credentials or account identifiers.
+The portable retail input template is empty. Compare changes against the
+completed selection and its source index when reporting newly published ranges,
+attributed imports or representation changes.
 Only share source you have permission to publish. Third-party code retains its
 license; original documentation/metadata and original tools have their stated
 repository licenses.
