@@ -1,10 +1,10 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
 
 struct MissionPackedId { u16 mission_id:10; u16 other_bits:6; } __attribute__((packed));
 typedef char MissionPackedIdSize[(sizeof(struct MissionPackedId)==2)?1:-1];
 
 extern u16 WriteUnsignedNumberText(u8 *output, u32 value);
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 
 typedef struct {
     const u8 *selected_record;

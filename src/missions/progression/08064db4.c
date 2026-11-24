@@ -1,10 +1,10 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
 
 struct SaveStatePrefix { u8 padding[0x3c28]; u16 active_mission_id; };
 struct EventState { u8 padding[4]; u32 selected_item_id; };
 extern struct SaveStatePrefix gSaveData;
 extern struct EventState gContentState;
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 extern u8 HasInventoryItem(u16 item_id);
 extern u8 ReadSaveByte(u16 index);
 extern void WriteSaveByte(u16 index, u8 value);

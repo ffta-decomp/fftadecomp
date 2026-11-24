@@ -26,7 +26,7 @@ typedef struct {
 extern SoundState *data_03007FF0;
 /* High byte of GBA SOUNDBIAS: bits 6-7 select PWM resolution. */
 extern u8 data_04000089;
-extern void func_08145798(void);
+#include "libraries/audio/dma.h"
 extern void func_08145608(u32 frequency);
 
 /* Complete [0x081456AC, 0x08145744): 152 bytes, including literal pools. */

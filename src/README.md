@@ -5,17 +5,21 @@ Completed C/mixed implementation units for the US AFXE source release. The maste
 | Directory | Compilation units |
 | --- | ---: |
 | `battle/` | 277 |
-| `engine/` | 11 |
-| `graphics/` | 17 |
+| `engine/` | 12 |
+| `graphics/` | 30 |
 | `items/` | 45 |
 | `jobs/` | 116 |
-| `menus/` | 13 |
-| `missions/` | 126 |
+| `libraries/` | 4 |
+| `link/` | 3 |
+| `menus/` | 14 |
+| `missions/` | 130 |
 | `saves/` | 38 |
 | `story/` | 33 |
 | `text/` | 36 |
-| `unknown/` | 3,259 |
+| `unknown/` | 3,233 |
 | `world/` | 4 |
+
+The counts are unique source files selected by the build manifest.
 
 Original addresses identify stable files; function and module identities stay in
 the build manifest. `unknown/` means subsystem ownership is unproved, not that

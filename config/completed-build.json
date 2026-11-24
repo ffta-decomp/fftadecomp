@@ -72,7 +72,7 @@
       "offset": 1744,
       "padding_bytes": 0,
       "size": 72,
-      "source": "src/unknown/080006d0.c"
+      "source": "src/graphics/display/080006d0.c"
     },
     {
       "compiler_data_policy": "agbcc-unreferenced-symbol-pointer-v1",
@@ -83,7 +83,7 @@
       "offset": 1816,
       "padding_bytes": 0,
       "size": 112,
-      "source": "src/unknown/08000718.c"
+      "source": "src/graphics/display/08000718.c"
     },
     {
       "compiler_data_policy": {
@@ -111,7 +111,7 @@
       "offset": 1928,
       "padding_bytes": 0,
       "size": 64,
-      "source": "src/unknown/08000788.c"
+      "source": "src/graphics/display/08000788.c"
     },
     {
       "compiler_flags": [
@@ -125,7 +125,7 @@
       "offset": 1992,
       "padding_bytes": 2,
       "size": 280,
-      "source": "src/unknown/080007c8.c"
+      "source": "src/graphics/dma/080007c8.c"
     },
     {
       "name": "func_080008E0",
@@ -169,7 +169,7 @@
       "offset": 2476,
       "padding_bytes": 2,
       "size": 156,
-      "source": "src/unknown/080009ac.c"
+      "source": "src/graphics/dma/080009ac.c"
     },
     {
       "compiler_flags": [
@@ -183,7 +183,7 @@
       "offset": 2632,
       "padding_bytes": 0,
       "size": 80,
-      "source": "src/unknown/08000a48.c"
+      "source": "src/graphics/dma/08000a48.c"
     },
     {
       "compiler_flags": [
@@ -259,7 +259,7 @@
       "offset": 3336,
       "padding_bytes": 2,
       "size": 64,
-      "source": "src/unknown/08000d08.c"
+      "source": "src/graphics/dma/08000d08.c"
     },
     {
       "compiler_flags": [
@@ -285,7 +285,7 @@
       "offset": 3400,
       "padding_bytes": 4,
       "size": 116,
-      "source": "src/unknown/08000d48.c"
+      "source": "src/graphics/dma/08000d48.c"
     },
     {
       "compiler_flags": [
@@ -317,7 +317,7 @@
       "offset": 3516,
       "padding_bytes": 2,
       "size": 132,
-      "source": "src/unknown/08000dbc.c"
+      "source": "src/graphics/dma/08000dbc.c"
     },
     {
       "compiler_flags": [
@@ -349,7 +349,7 @@
       "offset": 3648,
       "padding_bytes": 4,
       "size": 136,
-      "source": "src/unknown/08000e40.c"
+      "source": "src/graphics/dma/08000e40.c"
     },
     {
       "compiler_flags": [
@@ -363,7 +363,7 @@
       "offset": 3784,
       "padding_bytes": 4,
       "size": 128,
-      "source": "src/unknown/08000ec8.c"
+      "source": "src/graphics/dma/08000ec8.c"
     },
     {
       "compiler_flags": [
@@ -377,7 +377,7 @@
       "offset": 3912,
       "padding_bytes": 4,
       "size": 128,
-      "source": "src/unknown/08000f48.c"
+      "source": "src/graphics/dma/08000f48.c"
     },
     {
       "compiler_flags": [
@@ -2784,7 +2784,7 @@
       "name": "CoreGlobal36_00004B9C",
       "offset": 19356,
       "size": 164,
-      "source": "src/unknown/08004b9c.c",
+      "source": "src/link/serial/08004b9c.c",
       "trailing_alignment_bytes": 0,
       "external_symbol_supplement": "asm/interfaces/08004b9c.s",
       "origin": "upstream_import",
@@ -2813,7 +2813,7 @@
       "name": "SceneActionDependency_00004C40",
       "offset": 19520,
       "size": 148,
-      "source": "src/unknown/08004c40.c",
+      "source": "src/link/serial/08004c40.c",
       "trailing_alignment_bytes": 0,
       "external_symbol_supplement": "asm/interfaces/08004c40.s",
       "origin": "upstream_import",
@@ -2842,7 +2842,7 @@
       "name": "CoreFrontier_00004D68",
       "offset": 19816,
       "size": 166,
-      "source": "src/unknown/08004d68.c",
+      "source": "src/link/serial/08004d68.c",
       "trailing_alignment_bytes": 2,
       "external_symbol_supplement": "asm/interfaces/08004d68.s",
       "origin": "upstream_import",
@@ -35880,7 +35880,7 @@
       "offset": 344852,
       "padding_bytes": 0,
       "size": 184,
-      "source": "src/unknown/08054314.c",
+      "source": "src/menus/08054314.c",
       "trailing_alignment_bytes": 0,
       "compiler_flags": [
         "-O2",
@@ -41787,7 +41787,7 @@
       "name": "ProcessMissionItemGrant",
       "offset": 413108,
       "size": 120,
-      "source": "src/unknown/08064db4.c"
+      "source": "src/missions/progression/08064db4.c"
     },
     {
       "compiler_flags": [
@@ -41807,7 +41807,7 @@
       "name": "IsActiveMissionProperty18Zero",
       "offset": 413228,
       "size": 40,
-      "source": "src/unknown/08064e2c.c"
+      "source": "src/missions/progression/08064e2c.c"
     },
     {
       "compiler_flags": [
@@ -41827,7 +41827,7 @@
       "name": "IsActiveMissionProperty18Two",
       "offset": 413268,
       "size": 40,
-      "source": "src/unknown/08064e54.c"
+      "source": "src/missions/progression/08064e54.c"
     },
     {
       "compiler_flags": [
@@ -71007,7 +71007,7 @@
       "name": "GetMissionProperty",
       "offset": 845020,
       "size": 970,
-      "source": "src/unknown/080ce4dc.c",
+      "source": "src/missions/definitions/080ce4dc.c",
       "trailing_alignment_bytes": 2
     },
     {
@@ -109233,7 +109233,7 @@
       "name": "CoreLibrary42_001414BC",
       "offset": 1316028,
       "size": 52,
-      "source": "src/unknown/081414bc.c",
+      "source": "src/engine/audio/081414bc.c",
       "trailing_alignment_bytes": 0,
       "external_symbol_supplement": "asm/interfaces/081414bc.s",
       "origin": "upstream_import",
@@ -110209,7 +110209,7 @@
       "kind": "c",
       "offset": 1331352,
       "size": 100,
-      "source": "src/unknown/08145098.c",
+      "source": "src/libraries/audio/08145098.c",
       "compiler_flags": [
         "-O2",
         "-mthumb-interwork"
@@ -110390,7 +110390,7 @@
       "name": "CoreLibrary42_00145608",
       "offset": 1332744,
       "size": 164,
-      "source": "src/unknown/08145608.c",
+      "source": "src/libraries/audio/08145608.c",
       "trailing_alignment_bytes": 0,
       "external_symbol_supplement": "asm/interfaces/08145608.s",
       "origin": "upstream_import",
@@ -110401,7 +110401,7 @@
     {
       "name": "CoreLibrary42_001456AC",
       "kind": "c",
-      "source": "src/unknown/081456ac.c",
+      "source": "src/libraries/audio/081456ac.c",
       "offset": 1332908,
       "size": 152,
       "match_policy": "exact",
@@ -110444,7 +110444,7 @@
       "name": "CoreFrontier_00145798",
       "offset": 1333144,
       "size": 100,
-      "source": "src/unknown/08145798.c",
+      "source": "src/libraries/audio/08145798.c",
       "trailing_alignment_bytes": 0,
       "external_symbol_supplement": "asm/interfaces/08145798.s",
       "origin": "upstream_import",
@@ -110999,7 +110999,7 @@
     {
       "name": "CoreLibrary42_00147A44",
       "kind": "c",
-      "source": "src/unknown/08147a44.c",
+      "source": "src/graphics/palette/08147a44.c",
       "offset": 1342020,
       "size": 56,
       "match_policy": "exact",

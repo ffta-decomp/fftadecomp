@@ -40,38 +40,50 @@
     {
       "name": "SuspendDisplayRegisters",
       "entry": "0x080006D0",
-      "source": "src/unknown/080006d0.c",
-      "domain": "unknown",
+      "source": "src/graphics/display/080006d0.c",
+      "domain": "graphics/display",
       "basis": "ownership_not_established",
       "previous_source": "src/display_suspend.c",
-      "previous_source_sha256": "7e5f18895fb2da582812be3f39147716cbe927070485abe9d3e7633ee73fdd01"
+      "previous_source_sha256": "7e5f18895fb2da582812be3f39147716cbe927070485abe9d3e7633ee73fdd01",
+      "placement_evidence": "Display-shadow save, DMA copy and restore through the existing display contract",
+      "relocated_from": "src/unknown/080006d0.c",
+      "relocated_from_sha256": "76380a1b4b7b3ee12a8f2d9c43ce651187f8083dc554b50d02ba0656fcdb7b31"
     },
     {
       "name": "ApplyDisplayRegistersDma",
       "entry": "0x08000718",
-      "source": "src/unknown/08000718.c",
-      "domain": "unknown",
+      "source": "src/graphics/display/08000718.c",
+      "domain": "graphics/display",
       "basis": "ownership_not_established",
       "previous_source": "src/display_dma.c",
-      "previous_source_sha256": "183b361a0e1c28993cab5446b3bf4b6d3d8ff2b01f9d4f07ed1d55eb479729c3"
+      "previous_source_sha256": "183b361a0e1c28993cab5446b3bf4b6d3d8ff2b01f9d4f07ed1d55eb479729c3",
+      "placement_evidence": "Display-shadow save, DMA copy and restore through the existing display contract",
+      "relocated_from": "src/unknown/08000718.c",
+      "relocated_from_sha256": "4230ab0b92dcd980de8ffb724cf613030b8f5b5a9d30bcb6d4565ad05b26ed73"
     },
     {
       "name": "RestoreDisplayRegisters",
       "entry": "0x08000788",
-      "source": "src/unknown/08000788.c",
-      "domain": "unknown",
+      "source": "src/graphics/display/08000788.c",
+      "domain": "graphics/display",
       "basis": "ownership_not_established",
       "previous_source": "src/display_restore.c",
-      "previous_source_sha256": "ae9d4328549fad0a1a0d332d511807e85693b275c566f45941586a9e74d2c028"
+      "previous_source_sha256": "ae9d4328549fad0a1a0d332d511807e85693b275c566f45941586a9e74d2c028",
+      "placement_evidence": "Display-shadow save, DMA copy and restore through the existing display contract",
+      "relocated_from": "src/unknown/08000788.c",
+      "relocated_from_sha256": "175e92cef42fa8ec82607fd525409ba5d0f04b3460c17afe8316e5eb53f13957"
     },
     {
       "name": "ProcessDmaQueue",
       "entry": "0x080007C8",
-      "source": "src/unknown/080007c8.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/080007c8.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_queue_process.c",
-      "previous_source_sha256": "60e6616294bc2cdb35f6898a703765fd55c32d2911535978880e9742c622e0a9"
+      "previous_source_sha256": "60e6616294bc2cdb35f6898a703765fd55c32d2911535978880e9742c622e0a9",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/080007c8.c",
+      "relocated_from_sha256": "8566bbceefec87326422c8afc328f81d92dfccf0a5af988bbd689b1b211af552"
     },
     {
       "name": "func_080008E0",
@@ -85,20 +97,26 @@
     {
       "name": "TryStageDmaTransfer",
       "entry": "0x080009AC",
-      "source": "src/unknown/080009ac.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/080009ac.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_channel_alloc.c",
-      "previous_source_sha256": "740f1e62c263340df23585e6988eb5b00868f2712a493559601f962c388186cd"
+      "previous_source_sha256": "740f1e62c263340df23585e6988eb5b00868f2712a493559601f962c388186cd",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/080009ac.c",
+      "relocated_from_sha256": "dca4fa29883be14c4432adbf7d9c39f60d9171768f23e487fae65e1144004e9a"
     },
     {
       "name": "InitializeDmaChannels",
       "entry": "0x08000A48",
-      "source": "src/unknown/08000a48.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000a48.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_channel_init.c",
-      "previous_source_sha256": "b7e148d3fd04fc2672203e96d0da264755b58912401a3b08b1110dee9daa756a"
+      "previous_source_sha256": "b7e148d3fd04fc2672203e96d0da264755b58912401a3b08b1110dee9daa756a",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000a48.c",
+      "relocated_from_sha256": "b0cf13e3f921e8607be35d29bea6f9a9580a1decbc3e867dc9be87c63415140c"
     },
     {
       "name": "DmaQueueConstructors",
@@ -112,56 +130,74 @@
     {
       "name": "StopCompletedDmaChannels",
       "entry": "0x08000D08",
-      "source": "src/unknown/08000d08.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000d08.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_channel_stop.c",
-      "previous_source_sha256": "cad5c1718a380e7bc9c3a414d9e8095a7d9f2ef8e493503598c314241d5254a2"
+      "previous_source_sha256": "cad5c1718a380e7bc9c3a414d9e8095a7d9f2ef8e493503598c314241d5254a2",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000d08.c",
+      "relocated_from_sha256": "c60ac2b59942cc2efab7e0d715a4e49dff312dac120bae19e86f0079ca4d49ea"
     },
     {
       "name": "DmaChannelCommands",
       "entry": "0x08000D48",
-      "source": "src/unknown/08000d48.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000d48.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_channel.c",
-      "previous_source_sha256": "8b1f0859d52c64902bc2d1d2284a7ebd387b982b124c98a453a4cd7f910b00f3"
+      "previous_source_sha256": "8b1f0859d52c64902bc2d1d2284a7ebd387b982b124c98a453a4cd7f910b00f3",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000d48.c",
+      "relocated_from_sha256": "9807d8a4ce7e6a1c7305b10c0e0ccf856980c1a46d81b0fc23799aa512dd0fff"
     },
     {
       "name": "TryStartDmaFill32",
       "entry": "0x08000DBC",
-      "source": "src/unknown/08000dbc.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000dbc.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_immediate_fill32.c",
-      "previous_source_sha256": "6a0dd417fe5100df2970e8ba2f53116a6060f77e964241cb70fef1e618b3784f"
+      "previous_source_sha256": "6a0dd417fe5100df2970e8ba2f53116a6060f77e964241cb70fef1e618b3784f",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000dbc.c",
+      "relocated_from_sha256": "cd42bf8fbe90c908c54206cde9a400f54c40ecf0941e5d560f48465bd461422a"
     },
     {
       "name": "TryStartDmaFill16",
       "entry": "0x08000E40",
-      "source": "src/unknown/08000e40.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000e40.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_immediate_fill16.c",
-      "previous_source_sha256": "8475dbd731bf515d10a1a38ea666002e733ad6c37034021d453e9f2287a41968"
+      "previous_source_sha256": "8475dbd731bf515d10a1a38ea666002e733ad6c37034021d453e9f2287a41968",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000e40.c",
+      "relocated_from_sha256": "da7cc3785f84e9be34dc1943efc8cd35c18aa1d0b51a47798bd2ce664eb478d3"
     },
     {
       "name": "TryStartDmaCopy32",
       "entry": "0x08000EC8",
-      "source": "src/unknown/08000ec8.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000ec8.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_immediate_copy32.c",
-      "previous_source_sha256": "a47d683828593ab2d62d9a98f5ea3a98d6005142df5fd67466cd0404dc875cb8"
+      "previous_source_sha256": "a47d683828593ab2d62d9a98f5ea3a98d6005142df5fd67466cd0404dc875cb8",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000ec8.c",
+      "relocated_from_sha256": "6f8a5b4b6745b02a24b50ddf4ef250c7c522e6b754718bfcef89657580d73d12"
     },
     {
       "name": "TryStartDmaCopy16",
       "entry": "0x08000F48",
-      "source": "src/unknown/08000f48.c",
-      "domain": "unknown",
+      "source": "src/graphics/dma/08000f48.c",
+      "domain": "graphics/dma",
       "basis": "ownership_not_established",
       "previous_source": "src/dma_immediate_copy16.c",
-      "previous_source_sha256": "fc6b036b72d4e8c7ea2f9f99a923f46578c22b410f0c99f868e8f21b75982fa8"
+      "previous_source_sha256": "fc6b036b72d4e8c7ea2f9f99a923f46578c22b410f0c99f868e8f21b75982fa8",
+      "placement_evidence": "DMA queue and channel operations implemented against the shared DMA state",
+      "relocated_from": "src/unknown/08000f48.c",
+      "relocated_from_sha256": "bb6c5e8a9f14db3d125c87d42439b664ab4011dcd7998dc643c247c5bf0967cc"
     },
     {
       "name": "FindOrInsertRecord8",
@@ -10597,11 +10633,14 @@
     {
       "name": "CoreClosure31_00054314",
       "entry": "0x08054314",
-      "source": "src/unknown/08054314.c",
-      "domain": "unknown",
+      "source": "src/menus/08054314.c",
+      "domain": "menus",
       "basis": "ownership_not_established",
       "previous_source": "src/core_exact_batch_286_16/MENU286-54314/render_menu_category_text.c",
-      "previous_source_sha256": "fab68f88c74a527cab85f71244fe7a6c249a55131778f3e619c83bd6712b5763"
+      "previous_source_sha256": "fab68f88c74a527cab85f71244fe7a6c249a55131778f3e619c83bd6712b5763",
+      "placement_evidence": "Renders category text and icon tiles for the menu",
+      "relocated_from": "src/unknown/08054314.c",
+      "relocated_from_sha256": "52740816085c6ebe3a34e0180e07b838d591b99d5a8ec28d6359a85ee63c6857"
     },
     {
       "name": "CoreClosure31_000543CC",
@@ -12316,29 +12355,38 @@
     {
       "name": "ProcessMissionItemGrant",
       "entry": "0x08064DB4",
-      "source": "src/unknown/08064db4.c",
-      "domain": "unknown",
+      "source": "src/missions/progression/08064db4.c",
+      "domain": "missions/progression",
       "basis": "ownership_not_established",
       "previous_source": "src/event_item_grant.c",
-      "previous_source_sha256": "2ed84d4755478aa5d88578de499c717a488e03bf8bf734fed65c66e2500791c2"
+      "previous_source_sha256": "2ed84d4755478aa5d88578de499c717a488e03bf8bf734fed65c66e2500791c2",
+      "placement_evidence": "Active mission selectors used for progression and mission item awards",
+      "relocated_from": "src/unknown/08064db4.c",
+      "relocated_from_sha256": "39c410b9962bcbd3b92c0b6e9c95679e571128ee466d11a77dbc226b19c8ada7"
     },
     {
       "name": "IsActiveMissionProperty18Zero",
       "entry": "0x08064E2C",
-      "source": "src/unknown/08064e2c.c",
-      "domain": "unknown",
+      "source": "src/missions/progression/08064e2c.c",
+      "domain": "missions/progression",
       "basis": "ownership_not_established",
       "previous_source": "src/is_current_mission_property18_zero.c",
-      "previous_source_sha256": "916ce26ef7022e800b8de6aaa427d611db4d5d2b9d7ac7dc5ae36a86dbaf51bf"
+      "previous_source_sha256": "916ce26ef7022e800b8de6aaa427d611db4d5d2b9d7ac7dc5ae36a86dbaf51bf",
+      "placement_evidence": "Active mission selectors used for progression and mission item awards",
+      "relocated_from": "src/unknown/08064e2c.c",
+      "relocated_from_sha256": "5fd853f782d6c05fbd31c649d5fb7a65689c560ef4ce7c3620572ea54162760b"
     },
     {
       "name": "IsActiveMissionProperty18Two",
       "entry": "0x08064E54",
-      "source": "src/unknown/08064e54.c",
-      "domain": "unknown",
+      "source": "src/missions/progression/08064e54.c",
+      "domain": "missions/progression",
       "basis": "ownership_not_established",
       "previous_source": "src/is_active_mission_property18_two.c",
-      "previous_source_sha256": "078500cbdc920a2039217afa42cf3119a4b5bf600dd97b5683fbe4ec04144808"
+      "previous_source_sha256": "078500cbdc920a2039217afa42cf3119a4b5bf600dd97b5683fbe4ec04144808",
+      "placement_evidence": "Active mission selectors used for progression and mission item awards",
+      "relocated_from": "src/unknown/08064e54.c",
+      "relocated_from_sha256": "454471eb5f3556201393baa2ac24a61d65ff05c3c69e9271e3d5d8f6415b97e7"
     },
     {
       "name": "RemainingCore48_00064E7C",
@@ -20893,11 +20941,14 @@
     {
       "name": "GetMissionProperty",
       "entry": "0x080CE4DC",
-      "source": "src/unknown/080ce4dc.c",
-      "domain": "unknown",
+      "source": "src/missions/definitions/080ce4dc.c",
+      "domain": "missions/definitions",
       "basis": "ownership_not_established",
       "previous_source": "src/mission_property.c",
-      "previous_source_sha256": "c74926e5ca3863d469e06b22ce4dd3e0ce72d5fa021c2d5d81522201ab4ae9a7"
+      "previous_source_sha256": "c74926e5ca3863d469e06b22ce4dd3e0ce72d5fa021c2d5d81522201ab4ae9a7",
+      "placement_evidence": "Reads the packed mission definition table by mission ID and selector",
+      "relocated_from": "src/unknown/080ce4dc.c",
+      "relocated_from_sha256": "c7d2844110e0bf32e558b46fdd981e06cee78fbba6db67a6f713afb0af4e9006"
     },
     {
       "name": "CoreDependency29_000CEA80",
@@ -32704,11 +32755,14 @@
     {
       "name": "func_08145098",
       "entry": "0x08145098",
-      "source": "src/unknown/08145098.c",
-      "domain": "unknown",
+      "source": "src/libraries/audio/08145098.c",
+      "domain": "libraries/audio",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_shubshub_20261028/08145098.c",
-      "previous_source_sha256": "cfc728f32aba762ce72d418fde9e79a9cf3528ee00d831f93e3f216b4b5c3063"
+      "previous_source_sha256": "cfc728f32aba762ce72d418fde9e79a9cf3528ee00d831f93e3f216b4b5c3063",
+      "placement_evidence": "Existing sound-driver pitch, mixer, DMA and playback operations",
+      "relocated_from": "src/unknown/08145098.c",
+      "relocated_from_sha256": "9f26e71fcb7378db2ec392abf7dfac89f7dc4230bfd43c6e6f04436b8ef5c7f2"
     },
     {
       "name": "CoreLibrary42_001451B4",
@@ -34672,11 +34726,14 @@
     {
       "name": "CoreLibrary42_001456AC",
       "entry": "0x081456AC",
-      "source": "src/unknown/081456ac.c",
-      "domain": "unknown",
+      "source": "src/libraries/audio/081456ac.c",
+      "domain": "libraries/audio",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_shubshub_20261030/081456AC.c",
-      "previous_source_sha256": "a5e1cb2c2a612f8cf9543e0d001688f2af0e9255d4094435694b72bed58a4106"
+      "previous_source_sha256": "a5e1cb2c2a612f8cf9543e0d001688f2af0e9255d4094435694b72bed58a4106",
+      "placement_evidence": "Existing sound-driver pitch, mixer, DMA and playback operations",
+      "relocated_from": "src/unknown/081456ac.c",
+      "relocated_from_sha256": "a5e1cb2c2a612f8cf9543e0d001688f2af0e9255d4094435694b72bed58a4106"
     },
     {
       "name": "CoreLibrary42_00146120",
@@ -34717,11 +34774,14 @@
     {
       "name": "CoreLibrary42_00147A44",
       "entry": "0x08147A44",
-      "source": "src/unknown/08147a44.c",
-      "domain": "unknown",
+      "source": "src/graphics/palette/08147a44.c",
+      "domain": "graphics/palette",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_shubshub_20261030/08147A44.c",
-      "previous_source_sha256": "31c6d23c18766ece39ab133b0e64c7e8475e484b9a5dbdd4600e3ac51adda209"
+      "previous_source_sha256": "31c6d23c18766ece39ab133b0e64c7e8475e484b9a5dbdd4600e3ac51adda209",
+      "placement_evidence": "DMA0 transfer from the palette shadow to palette RAM at 0x05000000",
+      "relocated_from": "src/unknown/08147a44.c",
+      "relocated_from_sha256": "a1badd3c807eac8a0b11ae1ef8d8ef72c8a8ad8560689197fe7f5fbff3df6d30"
     },
     {
       "name": "CoreLibrary42_00147B28",
@@ -36454,29 +36514,38 @@
     {
       "name": "CoreGlobal36_00004B9C",
       "entry": "0x08004B9C",
-      "source": "src/unknown/08004b9c.c",
-      "domain": "unknown",
+      "source": "src/link/serial/08004b9c.c",
+      "domain": "link/serial",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_recovered_20261106/func_08004B9C.c",
-      "previous_source_sha256": "433194dd1f27fcabdaf5aa38b551be9748cf723e2fb02862a785e2da62eabb69"
+      "previous_source_sha256": "433194dd1f27fcabdaf5aa38b551be9748cf723e2fb02862a785e2da62eabb69",
+      "placement_evidence": "GBA SIOCNT/RCNT multiplayer transport, serial state and send-packet buffering",
+      "relocated_from": "src/unknown/08004b9c.c",
+      "relocated_from_sha256": "624c1b905c2c0d839f0dbda7f1ae98104966a6e85ad19ce6e675f668e9da867c"
     },
     {
       "name": "SceneActionDependency_00004C40",
       "entry": "0x08004C40",
-      "source": "src/unknown/08004c40.c",
-      "domain": "unknown",
+      "source": "src/link/serial/08004c40.c",
+      "domain": "link/serial",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_recovered_20261106/func_08004C40.c",
-      "previous_source_sha256": "77e50522d2d911028925fd22c5c3c0a48265c30b2c734ee89ed53c888be031a9"
+      "previous_source_sha256": "77e50522d2d911028925fd22c5c3c0a48265c30b2c734ee89ed53c888be031a9",
+      "placement_evidence": "GBA SIOCNT/RCNT multiplayer transport, serial state and send-packet buffering",
+      "relocated_from": "src/unknown/08004c40.c",
+      "relocated_from_sha256": "2b38614dc58f49a3b4f1cfd7e57a845297421ef2cb6297cdef7c4b912a68ac88"
     },
     {
       "name": "CoreFrontier_00004D68",
       "entry": "0x08004D68",
-      "source": "src/unknown/08004d68.c",
-      "domain": "unknown",
+      "source": "src/link/serial/08004d68.c",
+      "domain": "link/serial",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_recovered_20261106/func_08004D68.c",
-      "previous_source_sha256": "2f26de1241832437e2baebab6f9963b878f60c9d44db5f1e01a7b39ec657d71d"
+      "previous_source_sha256": "2f26de1241832437e2baebab6f9963b878f60c9d44db5f1e01a7b39ec657d71d",
+      "placement_evidence": "GBA SIOCNT/RCNT multiplayer transport, serial state and send-packet buffering",
+      "relocated_from": "src/unknown/08004d68.c",
+      "relocated_from_sha256": "70ae5e5b3fb1c6fe70c193d16300f1f48c9df2195539a5786e6c5095de202915"
     },
     {
       "name": "CoreFrontier_00009140",
@@ -37291,11 +37360,14 @@
     {
       "name": "CoreLibrary42_001414BC",
       "entry": "0x081414BC",
-      "source": "src/unknown/081414bc.c",
-      "domain": "unknown",
+      "source": "src/engine/audio/081414bc.c",
+      "domain": "engine/audio",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_recovered_20261106/func_081414BC.c",
-      "previous_source_sha256": "69dfccef0912b3f8e1433fb27fe9a0d3dbd4af07b5756846a600b74646a444e9"
+      "previous_source_sha256": "69dfccef0912b3f8e1433fb27fe9a0d3dbd4af07b5756846a600b74646a444e9",
+      "placement_evidence": "Game-owned sound setup calls the driver and initializes game state",
+      "relocated_from": "src/unknown/081414bc.c",
+      "relocated_from_sha256": "2b49806c79536840f8ff5fe04203ce57c5a228c5f231f9cc3f93f450bd552a7b"
     },
     {
       "name": "CoreLibrary42_00142148",
@@ -37318,20 +37390,26 @@
     {
       "name": "CoreLibrary42_00145608",
       "entry": "0x08145608",
-      "source": "src/unknown/08145608.c",
-      "domain": "unknown",
+      "source": "src/libraries/audio/08145608.c",
+      "domain": "libraries/audio",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_recovered_20261106/func_08145608.c",
-      "previous_source_sha256": "8e8db55d3cbba0e9c7a0fa4d2f98d6469b142a646d516185809ceabbd9a93048"
+      "previous_source_sha256": "8e8db55d3cbba0e9c7a0fa4d2f98d6469b142a646d516185809ceabbd9a93048",
+      "placement_evidence": "Existing sound-driver pitch, mixer, DMA and playback operations",
+      "relocated_from": "src/unknown/08145608.c",
+      "relocated_from_sha256": "6002a362a0f49b849cec7410797a0a21de3c5a60c68f3d879f6ef19dcdd92269"
     },
     {
       "name": "CoreFrontier_00145798",
       "entry": "0x08145798",
-      "source": "src/unknown/08145798.c",
-      "domain": "unknown",
+      "source": "src/libraries/audio/08145798.c",
+      "domain": "libraries/audio",
       "basis": "ownership_not_established",
       "previous_source": "src/upstream_recovered_20261106/func_08145798.c",
-      "previous_source_sha256": "9d1a33c790cac00604149edd74edb7bede17da5ebfaa19bf7016db5c0cde5330"
+      "previous_source_sha256": "9d1a33c790cac00604149edd74edb7bede17da5ebfaa19bf7016db5c0cde5330",
+      "placement_evidence": "Existing sound-driver pitch, mixer, DMA and playback operations",
+      "relocated_from": "src/unknown/08145798.c",
+      "relocated_from_sha256": "3d5eda28ee47cb26f4e85d2d2aafe9bb20eb2b47a628de2ef44238bbf773dd22"
     }
   ],
   "limits": "Existing qualified ownership only; unknown is not missing C or unavailability.",

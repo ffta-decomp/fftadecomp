@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
 
 typedef struct __attribute__((packed)) {
     u16 mission_id : 10;
@@ -19,7 +20,6 @@ typedef struct {
 #define DEFAULT_MISSION_TEXT (*(const u8 * volatile *)0x02006680)
 
 extern const u8 *const gJobContentPointers[];
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 /* Selectors 46 and 48 are packed in four and six bits respectively. */
 extern u8 GetMissionPropertyByte(u16 mission_id, u8 selector);
 extern const u8 *GetContentPointer123(u16 index);

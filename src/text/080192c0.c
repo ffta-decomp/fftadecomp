@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
 
 #define TEXT_CONTEXT ((volatile u8 *)0x020020d0)
 #define JOB_CONTENT_POINTERS ((const u32 *)0x085567f0)
@@ -15,7 +16,6 @@ typedef char MissionRecordSize[sizeof(PackedMissionRecord) == 2 ? 1 : -1];
 extern const volatile u32 MissionRequirementContentPointers[];
 __asm__(".global MissionRequirementContentPointers\n.set MissionRequirementContentPointers,0x085567f0\n");
 
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 extern u32 DecodeMissionItemId(u8 encoded_item_id);
 extern u32 GetContentPointer123(u16 content_index);
 extern u32 CopyEncodedTextToBuffer(u8 *output, const u8 *source);

@@ -35,13 +35,18 @@ jobs:
         run: |
           set -eu
           count=0
-          for manifest in config/*build*.json; do
-            if [ ! -f "$manifest" ]; then continue; fi
+          manifests=$(python3 -c '
+          import json
+          with open("data/source-build-selections.json") as registry:
+              selections = json.load(registry)["selections"]
+          print("\n".join(["config/completed-build.json", *(entry["config"] for entry in selections)]))
+          ')
+          while IFS= read -r manifest; do
             count=$((count + 1))
             if [ -n "$LAYOUT_BASE" ] && git cat-file -e "$LAYOUT_BASE:$manifest" 2>/dev/null; then
               python3 tools/source_layout.py audit --manifest "$manifest" --baseline-ref "$LAYOUT_BASE"
             else
               python3 tools/source_layout.py audit --manifest "$manifest"
             fi
-          done
+          done <<< "$manifests"
           echo "Checked $count completed-source manifest(s). This is a layout gate, not native verification."

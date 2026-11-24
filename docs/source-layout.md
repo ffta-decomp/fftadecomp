@@ -90,6 +90,20 @@ entry point for new deliveries. Use this promotion path and the existing build
 selection/proof writers. PRs describe subsystem changes and original ranges;
 batch identifiers remain historical metadata.
 
+## Subsystem boundaries
+
+| Layer | Published implementation and interfaces |
+| --- | --- |
+| GBA platform | [Basic ABI types](../include/ffta/) and the [BIOS transfer declaration](../include/platform/gba/bios.h). Original hardware entry bindings are selected by the build. |
+| Game logic | [Battle](../src/battle/), [missions](../src/missions/), [jobs](../src/jobs/), [story](../src/story/), and the other gameplay directories own game state and policy. [Mission definitions](../include/missions/definition.h) expose the selector contract to text consumers. |
+| Link communication | [Serial link](../src/link/serial/) owns the published GBA multiplayer serial initialization and control routines. |
+| Graphics | [Display](../src/graphics/display/), [DMA](../src/graphics/dma/), and [palette transfers](../src/graphics/palette/) have separate responsibilities. [DMA channel state](../include/graphics/dma_channel_state.h) is distinct from the [request interface](../include/graphics/dma.h). |
+| Audio | The [audio library](../src/libraries/audio/) owns the published driver code. [Engine audio](../src/engine/audio/) initializes the game-side state and calls the driver. |
+
+Use the current [ownership table](../config/source-layout.json) to locate a
+moved source referenced by an older report. Historical build configurations
+continue to refer to the source tree from the revision that recorded them.
+
 ## Header boundaries and a maintained tree
 
 Use `config/source-layout.json` to record each selected module's subsystem and

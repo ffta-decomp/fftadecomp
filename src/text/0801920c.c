@@ -1,4 +1,6 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
+
 struct MissionPackedId { u16 mission_id:10; u16 other_bits:6; } __attribute__((packed));
 typedef char MissionPackedIdSize[(sizeof(struct MissionPackedId)==2)?1:-1];
 
@@ -9,7 +11,6 @@ typedef char MissionPackedIdSize[(sizeof(struct MissionPackedId)==2)?1:-1];
 #define SELECTED_RECORD_ID(record) \
     ((u16)(((record)[0] | ((u16)((record)[1] & 3) << 8)) & 0x03ff))
 
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 extern u32 DecodeMissionItemId(u8 encoded_item_id);
 extern u32 GetContentPointer123(u16 content_index);
 extern u32 CopyEncodedTextToBuffer(u8 *output, const u8 *source);
