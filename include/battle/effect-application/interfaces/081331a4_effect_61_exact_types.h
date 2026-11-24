@@ -1,0 +1,7 @@
+#include "ffta/unsigned_types.h"
+typedef struct {void *actor;void *target;void *affected;u8 unknown12[26];u16 flags;} EffectContext;
+u32 StateGate(void*) __asm__("EffectResolutionCall_080CD8FC");
+void ClearState(void*,u32) __asm__("SetUnitStateE8Bit4");
+void SetState(void*,u32) __asm__("SetUnitStateE9Bit1");
+void ApplyKind(EffectContext*,u32) __asm__("EffectApplicationCall_08131DD4");
+typedef char CheckFlags[(u32)&((EffectContext*)0)->flags==38?1:-1];

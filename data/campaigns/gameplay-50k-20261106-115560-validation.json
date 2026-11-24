@@ -1,0 +1,11 @@
+{
+  "schema": "source-range-publication-validation-v1",
+  "scope": "One newly selected complete range; no ROM required for source validation.",
+  "modules": 1,
+  "original_bytes": 748,
+  "pure_c_bytes": 0,
+  "mixed_bytes": 748,
+  "inline_instruction_bytes": 10,
+  "module_set_sha256": "aaf49c6c2f5395ca1ed49ee7a3bfec86987e8e79f5f2535b1685727fad139627",
+  "checks": "Public source fixed-O2 compilation and full-range hash matched; independent mechanical check and coherent production image hash passed before publication."
+}

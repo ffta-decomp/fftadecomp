@@ -1,0 +1,54 @@
+{
+  "schema": "source-build-selection-proof-v1",
+  "config_sha256": "0eaa2898ec86b1496c3a44bcd383296d13a9a25e68aca20b10a6b5a90fbf1991",
+  "source_index": {
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "CoreRegistered40_0013C0EC",
+        "rom_offset": 1294572,
+        "original_bytes": 5044,
+        "kind": "c",
+        "source": "src/unknown/0813c0ec.c"
+      }
+    ],
+    "files": [
+      {
+        "path": "config/symbols.ld",
+        "sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf"
+      },
+      {
+        "path": "include/ffta/unsigned_types.h",
+        "sha256": "ea78e0f580a58a2cad91b161483a92c2bff2daae9c96a09aca7af3909a4ed8de"
+      },
+      {
+        "path": "src/unknown/0813c0ec.c",
+        "sha256": "010875c190093372090be20b93496b15b3c01bff24f2e38029903c7cd3990573"
+      }
+    ]
+  },
+  "expected": {
+    "schema": "completed-module-sha256-v1",
+    "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "modules": [
+      {
+        "name": "CoreRegistered40_0013C0EC",
+        "rom_offset": 1294572,
+        "original_bytes": 5044,
+        "sha256": "0eb163daab454acc480f985e70e441fbf2cc5d989308ee83b1b3666961c6d7a7"
+      }
+    ],
+    "module_set_sha256": "6205c6dab01fa9b38f05e332f105dd4f5ebce15437fc552fbed9658bbecac809",
+    "function_table_sha256": "96be52129ae4cc816fe341cf18f220c179c9eb29b9ca0a41659a1a62fb98e6c4",
+    "function_range_count": 1
+  },
+  "function_hash_csv": "id,address,original_bytes,sha256,kind,module,name\nUS-0013C0EC-0013B4,0x0813C0EC,5044,0eb163daab454acc480f985e70e441fbf2cc5d989308ee83b1b3666961c6d7a7,function,CoreRegistered40_0013C0EC,CoreRegistered40_0013C0EC\n",
+  "structural_revalidation": {
+    "previous_proof_git_commit": "bad1039b8181610fdea3f214ffdb73cbfb24ac40",
+    "previous_proof_path": "data/pr10-13c0ec-20261109-build-proof.json",
+    "current_complete_build": "data/completed-build-validation.json",
+    "verified_at": "2026-11-11T05:43:28.148103+00:00",
+    "native_range_hashes_unchanged": true,
+    "limits": "Current final-path source selection rebound after complete retail verification. Previous proof remains in Git; no new native gate credit."
+  }
+}

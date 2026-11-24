@@ -1,0 +1,16 @@
+#include "battle/interfaces/081328e0_bindings.h"
+void EffectCallback_001328E0(EffectContext *context)
+{
+ if ((u8)StateGate(context->affected) != 0) {
+  if ((context->flags & 16) != 0)
+   return;
+  ClearState(context->affected,0);
+  context->flags |= 256;
+ } else {
+  ApplyKind(context,26);
+  if ((context->flags & 16) == 0) {
+   SetState(context->affected,1);
+   WriteCounter(context->affected,3);
+  }
+ }
+}

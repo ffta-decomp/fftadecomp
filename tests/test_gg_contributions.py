@@ -16,7 +16,10 @@ class GgContributionTests(unittest.TestCase):
         files = {row['path']: row['sha256'] for row in index['files']}
         rows = [row for row in index['modules'] if row.get('contributor') == 'gg']
         self.assertEqual((len(rows), sum(row['original_bytes'] for row in rows)), (96, 5594))
-        self.assertEqual(proof['contribution']['contributor'], 'gg')
+        contribution = proof['historical_contribution']
+        self.assertEqual(contribution['contributor'], 'gg')
+        self.assertEqual((contribution['functions'], contribution['original_bytes']), (96, 5594))
+        self.assertNotIn('contribution', proof)
         for row in rows:
             module = modules[row['name']]
             self.assertEqual((module['offset'], module['size'], module['source']),

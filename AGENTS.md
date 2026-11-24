@@ -23,6 +23,11 @@ are loaded by task; do not require reading the whole documentation library.
 
 ## Contribution and publication
 
+Promote validated temporary deliveries into stable subsystem source before
+publication; follow [source layout and promotion](docs/source-layout.md). Preserve
+original module identities and validate final-path dependencies, selection and
+proof/index together. Batch and trial names belong in provenance metadata.
+
 Follow [CONTRIBUTING.md](CONTRIBUTING.md), including entry-address claim issues
 and the 24-hour progress-update policy. Check current source and overlapping
 claims before work; dated catalogue rows are not an availability guarantee.

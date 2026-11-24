@@ -1,4 +1,6 @@
-/asm/
+/asm/*
+!/asm/interfaces/
+!/asm/interfaces/*.s
 /build/
 /.local/
 /.venv/

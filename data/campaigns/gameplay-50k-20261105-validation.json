@@ -1,0 +1,27 @@
+{
+  "schema": "campaign-publication-validation-v1",
+  "verified_at": "2026-11-05T01:26:35.590296+00:00",
+  "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "selection": "config/gameplay-50k-build.json",
+  "selection_sha256": "671d02c5d665169a075ce01522640e2a9c828fe3df9d65aa33df816c74e3d661",
+  "source_proof": "data/campaigns/gameplay-50k-20261102-build-proof.json",
+  "source_proof_sha256": "ff6eb39f5651e09c5f4ad89b4ea045bcbf9c44423db78c24ff6ea81c56d318a0",
+  "compiler_profile": [
+    "-O2",
+    "-mthumb-interwork"
+  ],
+  "modules": 39,
+  "matched_original_bytes": 23424,
+  "pure_c_original_bytes": 12240,
+  "mixed_original_bytes": 11184,
+  "inline_instruction_bytes": 316,
+  "all_function_ranges_match": true,
+  "module_set_sha256": "55b950314e79ce5a48582385e2cd7226b0ca5a22c9500716a90bdc1fb6848e45",
+  "rom_written": false,
+  "full_rom_verified": false,
+  "limits": [
+    "Original complete envelope bytes include owned instructions, literals and alignment.",
+    "This publication check authenticates the source selection; it creates no new recovery credit.",
+    "The frozen completed-source full-ROM release remains separately verified."
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "retail-us-4ac05441",
+  "size": 16777216,
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "rom_base": 134217728,
+  "modules": [
+    {
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "AdvanceAuthoredDualSpriteSequence",
+          "offset": 1135968,
+          "size": 748
+        }
+      ],
+      "instructions_bytes": 698,
+      "kind": "mixed",
+      "literal_bytes": 40,
+      "name": "OriginalAuthoredSequence_00115560",
+      "offset": 1135968,
+      "padding_bytes": 10,
+      "size": 748,
+      "source": "src/graphics/08115560.c",
+      "trailing_alignment_bytes": 0,
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "inline_assembly_bytes": 10,
+      "component": "graphics",
+      "match_policy": "exact"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_exclude_symbols": [],
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "RemainingBand43_0011F95C",
+          "offset": 1177948,
+          "size": 1048
+        }
+      ],
+      "kind": "c",
+      "match_policy": "exact",
+      "name": "RemainingBand43_0011F95C",
+      "offset": 1177948,
+      "size": 1048,
+      "source": "src/unknown/0811f95c.c",
+      "trailing_alignment_bytes": 0
+    },
+    {
+      "name": "CoreRegion_001277C8",
+      "kind": "c",
+      "offset": 1210312,
+      "size": 456,
+      "source": "src/unknown/081277c8.c",
+      "functions": [
+        {
+          "name": "func_081277C8",
+          "offset": 1210312,
+          "size": 456
+        }
+      ],
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "external_symbols": true,
+      "external_exclude_symbols": [
+        "func_081277C8"
+      ],
+      "external_symbol_supplement": "asm/interfaces/081277c8.s",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact",
+      "origin": "upstream_import",
+      "upstream_repository": "https://github.com/shubshub/fftadecomp",
+      "upstream_commit": "1a8ef98ec0da7580594f2600c08727d82376610c",
+      "upstream_source": "src/081277C8.c",
+      "upstream_source_sha256": "82ab950c6990c6eb905b19278dd5e23e958b34d18f50745ccbd04fd2630382a2"
+    },
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "story",
+      "dispatch_table_bytes": 0,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_0012B7F0",
+          "offset": 1226736,
+          "size": 400
+        }
+      ],
+      "inline_assembly_bytes": 4,
+      "instructions_bytes": 376,
+      "kind": "mixed",
+      "literal_bytes": 20,
+      "name": "CoreRegion_0012B7F0",
+      "offset": 1226736,
+      "padding_bytes": 4,
+      "size": 400,
+      "source": "src/story/0812b7f0.c",
+      "trailing_alignment_bytes": 0,
+      "match_policy": "exact",
+      "external_exclude_symbols": []
+    }
+  ]
+}

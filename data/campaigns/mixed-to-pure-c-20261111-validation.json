@@ -1,0 +1,103 @@
+{
+  "schema": "pure-C-representation-publication-v1",
+  "verified_date": "2026-11-11",
+  "prior_verified_source_commit": "698eff4da6520c8901e0f12a8ef87a962e20a147",
+  "scope": "Three same-envelope, same-native-binary pure-C replacements of already verified mixed modules. No new original function or byte credit.",
+  "entries": [
+    {
+      "name": "OriginalActionCallback_000E87C0",
+      "source": "src/battle/080e87c0.c",
+      "source_sha256": "43c8c8a9e368ee32289e5b65b51680e748e975b0dca5b5b728e8dca3a0e79187",
+      "rom_offset": 952256,
+      "entry": "0x080E87C0",
+      "original_bytes": 624,
+      "previous_kind": "mixed",
+      "kind": "c",
+      "previous_inline_instruction_bytes": 2,
+      "inline_instruction_bytes": 0,
+      "native_sha256": "29b0ce28d7b3a60cf8b36c57eca6caae8577f5b53c109cb9386b5345a5733e68",
+      "whole_range_native_ELF_retail_input_checks": true,
+      "independent_mechanical_check": true,
+      "final_path_preprocessed_sha256": "9f6ae92409ba941553223440b0b9597f668cb5d5fc933cf34bc6c045d5f79c5b",
+      "final_path_equals_actual_compiler_input": true,
+      "native_report_sha256": "62d3186650061f937e31168bd8faabd19844c902e63d2e3680600e89552b7929",
+      "linker_input_sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "additional_recovered_original_bytes": 0
+    },
+    {
+      "name": "OriginalActionCallback_000EB740",
+      "source": "src/missions/080eb740.c",
+      "source_sha256": "1b42436b15293052c281217c8dc699c3ea03832a82b59da0115c3a7c1ede9cd9",
+      "rom_offset": 964416,
+      "entry": "0x080EB740",
+      "original_bytes": 862,
+      "previous_kind": "mixed",
+      "kind": "c",
+      "previous_inline_instruction_bytes": 2,
+      "inline_instruction_bytes": 0,
+      "native_sha256": "b9d847a0b31baa30a4802701894b29345915444e12f6843eed23bc0a3d0fc5fb",
+      "whole_range_native_ELF_retail_input_checks": true,
+      "independent_mechanical_check": true,
+      "final_path_preprocessed_sha256": "5295753d68a033c3cc43fd236b49d75318784da0589ba5e8ed37196c2488a841",
+      "final_path_equals_actual_compiler_input": true,
+      "native_report_sha256": "a254bdd3e561e2a298fda1569f014032a875df392f732bd8ab98d0352d44e298",
+      "linker_input_sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "additional_recovered_original_bytes": 0
+    },
+    {
+      "name": "RemainingBand43_0010A134",
+      "source": "src/battle/0810a134.c",
+      "source_sha256": "0ea310e5809381b11efcb3ef9e2bf445856d80c387db008f1d2d970c2a8cf5d2",
+      "rom_offset": 1089844,
+      "entry": "0x0810A134",
+      "original_bytes": 368,
+      "previous_kind": "mixed",
+      "kind": "c",
+      "previous_inline_instruction_bytes": 4,
+      "inline_instruction_bytes": 0,
+      "native_sha256": "19aeb4dfaf5ea3ab8c3d3f515320dc447cc45b87609829b7dea1dbec50e958bf",
+      "whole_range_native_ELF_retail_input_checks": true,
+      "independent_mechanical_check": true,
+      "final_path_preprocessed_sha256": "0ea310e5809381b11efcb3ef9e2bf445856d80c387db008f1d2d970c2a8cf5d2",
+      "final_path_equals_actual_compiler_input": true,
+      "native_report_sha256": "6920bfbfa07db038a4e07fb2f21073877749bc85d6d7a605a93ca4a14e20a1cd",
+      "linker_input_sha256": "de1f0065253e01f5e47e404ebeb51b3599ddf0abe0bec52835c3bde466b7bccf",
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "additional_recovered_original_bytes": 0
+    }
+  ],
+  "totals": {
+    "functions": 3,
+    "existing_original_bytes": 1854,
+    "removed_inline_instruction_bytes": 8,
+    "additional_recovered_original_bytes": 0
+  },
+  "verification": {
+    "fixed_profile": [
+      "-O2",
+      "-mthumb-interwork"
+    ],
+    "agbcc_revision": "da598c1d918402c42c0c0d7128ba14567f3175e9",
+    "compiler_sha256": "e3d0587078cf090b0e465e0b417c8ec9c73fdf88238e8fb3a8af62edd4d202a2",
+    "public_final_path_preprocessing_identical_to_frozen_native_inputs": true,
+    "unchanged_native_target_hashes": true,
+    "new_local_public_C_compilations": 0,
+    "prior_full_selected_modules": 4146,
+    "prior_full_selected_bytes": 624304,
+    "image_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+    "existing_verified_image_rehashed": true,
+    "new_ROM_builds": 0,
+    "limits": "Prior complete public build reused; only three representations changed, with identical compiler input and link dependencies to independently verified native results. The public CI checks the entire current selected source set without a ROM."
+  }
+}

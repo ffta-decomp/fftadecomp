@@ -1,0 +1,35 @@
+{
+  "id": "retail-us-4ac05441",
+  "size": 16777216,
+  "sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
+  "rom_base": 134217728,
+  "modules": [
+    {
+      "compiler_flags": [
+        "-O2",
+        "-mthumb-interwork"
+      ],
+      "component": "battle",
+      "dispatch_table_bytes": 40,
+      "external_symbols": false,
+      "functions": [
+        {
+          "name": "CoreRegion_000B264C",
+          "offset": 730700,
+          "size": 2258
+        }
+      ],
+      "inline_assembly_bytes": 24,
+      "instructions_bytes": 2176,
+      "kind": "mixed",
+      "literal_bytes": 76,
+      "name": "CoreRegion_000B264C",
+      "offset": 730700,
+      "padding_bytes": 6,
+      "size": 2258,
+      "source": "src/battle/080b264c.c",
+      "trailing_alignment_bytes": 2,
+      "external_exclude_symbols": []
+    }
+  ]
+}

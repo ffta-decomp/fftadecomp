@@ -1,0 +1,59 @@
+#ifndef FFTA_10781C_HANDSHAKE_ACTOR_H
+#define FFTA_10781C_HANDSHAKE_ACTOR_H
+#include "ffta/unsigned_types.h"
+typedef signed short s16;
+typedef signed int s32;
+typedef struct TaskNode TaskNode;
+typedef struct HandshakeEvent {
+ u16 state,unknown02;
+ void *source;
+ u8 *signal;
+ u32 flags,unknown10;
+ u16 selector,mode;
+ u32 unknown18;
+} HandshakeEvent;
+typedef struct HandshakeActorWork {
+ u16 unknown00,x,y;
+ u8 ready,unknown07,signal,variant,unknown0a,mode;
+ void *actor_context,*projection,*target,*positioned_output;
+ TaskNode *positioned;
+ void *resource;
+ TaskNode *authored,*initial,*handshake;
+ void *source;
+ TaskNode *ready_child;
+ void *target_sequence;
+ TaskNode *secondary;
+} HandshakeActorWork;
+typedef char Event28[sizeof(HandshakeEvent)==28?1:-1];
+typedef char Work64[sizeof(HandshakeActorWork)==64?1:-1];
+typedef char ReadyAt6[(u32)&((HandshakeActorWork *)0)->ready==6?1:-1];
+typedef u32 (*SequenceCallback)(TaskNode *,HandshakeEvent *,void *);
+extern TaskNode *CreateInitialSequence(void *,const void *,u32,u32,u32,TaskNode *);
+extern void AdvanceCurrentSequenceState(void);
+extern TaskNode *PollInitialSequence(TaskNode *);
+extern u32 ReadSourceUnavailable(void *);
+extern TaskNode *CreateSecondarySequence(const void *,u32,u32,u32,TaskNode *);
+extern TaskNode *CreateActorReadySequence(void *,void **,u32,u32,u8 *,const void *,u32,u32,TaskNode *);
+extern TaskNode *CreateOppositePhaseTask(SequenceCallback,u32,HandshakeEvent *,TaskNode *);
+extern u32 CheckSourceStage(void *,u32);
+extern void *ReadSequenceTarget(void *,u32);
+extern void *ProjectActorWithDefaultTransition(void *,u16 *,u16 *,u16 *);
+extern u32 QueryProjectedActorAdjustment(void);
+extern TaskNode *CreatePositionedDefinitionTask(s32,s32,s32,u32,u32,void *,const void *,TaskNode *);
+extern void ConfigureDefinitionCoordinates(u32,u32,u32,s32,s32);
+extern void *CreateDefinitionResource(u32,const void *,u32,u32);
+extern u32 ReadDisplayHighBitMask(u32);
+extern TaskNode *CreateAuthoredSequence(const void *,TaskNode *);
+extern void *CreateTargetSequence(void *,const void *,u32,u32,u32,TaskNode *,u32);
+extern TaskNode *PollAuthoredSequence(TaskNode *);
+extern void *PollDefinitionResource(void *,u32);
+extern TaskNode *PollAndReleaseChild(TaskNode *);
+extern TaskNode *PollPositionedDefinition(TaskNode *);
+extern void *PollTargetSequence(void *);
+extern const u8 InitialSequenceData[],SecondaryStartData[],ReadyParameters[];
+extern const void *const ReadySequences[];
+extern const u8 PositionedSequence[],DisplayResource[],AuthoredSequence[];
+extern const u8 TargetSequenceData[],SecondaryImpactData[];
+extern volatile u16 DisplayShadowControl;
+extern u32 HandshakeActorCallback(TaskNode *,HandshakeEvent *,void *);
+#endif

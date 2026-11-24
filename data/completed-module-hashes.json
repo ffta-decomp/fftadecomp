@@ -1,7 +1,6 @@
 {
   "schema": "completed-module-sha256-v1",
   "retail_sha256": "43fc8204c6dceee58828aebc7af0c72eb807e99f35ad641c8bb0a4fa8b6edc19",
-  "provenance": "Per-module hashes captured from the completed-source build that verified the final on-disk US retail image on 2026-10-30. Hashes contain no original bytes.",
   "modules": [
     {
       "name": "RunInitialTaskGroups",
@@ -254,6 +253,12 @@
       "rom_offset": 9168,
       "original_bytes": 26,
       "sha256": "521200934b721fe23c86357c84868f5b12b5860a10d8c7bf266ba3a9eef8b3d8"
+    },
+    {
+      "name": "Remaining38_000023EC",
+      "rom_offset": 9196,
+      "original_bytes": 148,
+      "sha256": "1ac7739106d3d917c40f7895e3ae75cf19381ee3a7b84b98519f728d12d5eb74"
     },
     {
       "name": "func_08002480",
@@ -628,6 +633,30 @@
       "sha256": "a6accc38a41c9e607075dec6d589ae41e7248d05949ececa68d5b75e8ceff8fc"
     },
     {
+      "name": "Remaining38_00003E88",
+      "rom_offset": 16008,
+      "original_bytes": 136,
+      "sha256": "65922cc303e542ca1f25c1b58511f0e5bc68b0eefdb4066cf9bf9ad195630f6a"
+    },
+    {
+      "name": "CoreGlobal36_00004B9C",
+      "rom_offset": 19356,
+      "original_bytes": 164,
+      "sha256": "71b9dac2de1c7652130b238b589fa743202a4ac41fbd54c47e8fd630adce625a"
+    },
+    {
+      "name": "SceneActionDependency_00004C40",
+      "rom_offset": 19520,
+      "original_bytes": 148,
+      "sha256": "dc709785fb5cdbcbf8001a34afd6ca19233dc5eae8a68d456e02a741546cafc7"
+    },
+    {
+      "name": "CoreFrontier_00004D68",
+      "rom_offset": 19816,
+      "original_bytes": 166,
+      "sha256": "87140ce84964969c01541c2a593eb5a4b16d796bcc8e59b69ae1fab8fe3d1fd6"
+    },
+    {
       "name": "func_08004FF4",
       "rom_offset": 20468,
       "original_bytes": 52,
@@ -994,6 +1023,12 @@
       "sha256": "95f477d485e0c14e133a9a121d308cbb8fe6359cf6ef8b6dccb80ef9f047870a"
     },
     {
+      "name": "CoreStateDirect_00007C84",
+      "rom_offset": 31876,
+      "original_bytes": 790,
+      "sha256": "14268a064aa1f5f462c753c7c61471aa47daa011d15c9c1dec9fbc3167739256"
+    },
+    {
       "name": "Upstream351_080082EC",
       "rom_offset": 33516,
       "original_bytes": 106,
@@ -1036,6 +1071,12 @@
       "sha256": "7507d0d0a8b4d02f310a4b99472bd2a8cb5fbb0f970a54a3e913b1484b9a6e1f"
     },
     {
+      "name": "CoreFrontier_00009140",
+      "rom_offset": 37184,
+      "original_bytes": 316,
+      "sha256": "c8495ae33bc775df99e279ee380bae35561276a81a416c4fa729825c691e86e4"
+    },
+    {
       "name": "CoreFrontier_0000927C",
       "rom_offset": 37500,
       "original_bytes": 278,
@@ -1046,6 +1087,12 @@
       "rom_offset": 37780,
       "original_bytes": 126,
       "sha256": "dd05564191773d4c70294fe1beb7d2676a068c8673e1b49188c055418ab82b7c"
+    },
+    {
+      "name": "CoreFrontier_00009414",
+      "rom_offset": 37908,
+      "original_bytes": 168,
+      "sha256": "94efaee8572a876488f163fde8743b28f88e3aa3210cb6f6b42dde0537acec65"
     },
     {
       "name": "CoreFrontier_000094BC",
@@ -1384,6 +1431,12 @@
       "sha256": "6ca6db339589ae582aa45dd6e672bd435db1ab62b262de13e15a4f0f4e3747d5"
     },
     {
+      "name": "CoreFrontier_0000AF04",
+      "rom_offset": 44804,
+      "original_bytes": 134,
+      "sha256": "bae52a7c0f1660492b42c8ebc34f38b98f85ad1ea522c9a704de8c157302988e"
+    },
+    {
       "name": "func_0800B2A4",
       "rom_offset": 45732,
       "original_bytes": 240,
@@ -1576,6 +1629,12 @@
       "sha256": "b083a7c6a0fae74263773964c6c2751a81f6bb7004e8dac2cf24ee20caaee48b"
     },
     {
+      "name": "CoreFrontier_0000C2C0",
+      "rom_offset": 49856,
+      "original_bytes": 60,
+      "sha256": "b31cdef42cc3734e10892359cf3b5ed0cd1c6873a695dc1484970d08c60f0c1b"
+    },
+    {
       "name": "func_0800C34C",
       "rom_offset": 49996,
       "original_bytes": 128,
@@ -1652,6 +1711,12 @@
       "rom_offset": 55544,
       "original_bytes": 100,
       "sha256": "a051d96ce477c308b549204cdd553e758531393f852e67e3c0b0ccf7a7d78ce6"
+    },
+    {
+      "name": "Source52_0000D95C",
+      "rom_offset": 55644,
+      "original_bytes": 132,
+      "sha256": "7a716b6e88c7a171e05c15427d78f5ce321cf8c5bf1e2281bdc60deab23157cb"
     },
     {
       "name": "func_0800DA48",
@@ -2252,6 +2317,12 @@
       "rom_offset": 77116,
       "original_bytes": 668,
       "sha256": "3ba97a32b6bf8b190764a4176e699f25ed2dd6fdda5575ee2f9c15cb1ab84b04"
+    },
+    {
+      "name": "Source52_00012FD8",
+      "rom_offset": 77784,
+      "original_bytes": 136,
+      "sha256": "7541b7eaf6110f8404226e074d20662da7a4f07968c9c9f2f466f22241d968f9"
     },
     {
       "name": "func_08013060",
@@ -3508,6 +3579,18 @@
       "sha256": "680538c770920efc964b5114d1c0ba38300a71ebb106caff65f6e6faa6f9b772"
     },
     {
+      "name": "CoreFrontier_0001D980",
+      "rom_offset": 121216,
+      "original_bytes": 144,
+      "sha256": "e6e1e83b33271715bb22604dee04de45f6b85a7658cd18fc0ea42bd7edf3460c"
+    },
+    {
+      "name": "BattleDependency_0001DA10",
+      "rom_offset": 121360,
+      "original_bytes": 284,
+      "sha256": "72512025e970ff89813c6c392cf594e2234829a02cdb4d671ffbbd82b8bb695f"
+    },
+    {
       "name": "func_0801DB2C",
       "rom_offset": 121644,
       "original_bytes": 16,
@@ -3566,6 +3649,12 @@
       "rom_offset": 122400,
       "original_bytes": 104,
       "sha256": "599850bd20cd8e98e840be75fc77a167e18394550f1e0560a9d3954c837b4d65"
+    },
+    {
+      "name": "Registered39_0001DE88",
+      "rom_offset": 122504,
+      "original_bytes": 260,
+      "sha256": "394e91bf4f340dd05f0d0cee8d98a6e2d40a20f93d3fa2eee197093fa0eeecb3"
     },
     {
       "name": "func_0801DF8C",
@@ -3934,6 +4023,12 @@
       "sha256": "120da4383662d1a26d9a790c533f9b43b4bd873e447fe6c14c9aa20b69cd5e78"
     },
     {
+      "name": "IsolatedCore57_000210E4",
+      "rom_offset": 135396,
+      "original_bytes": 428,
+      "sha256": "c542b4b0f768ef01b5bb86649f640a97a45fadfa6d3cffd41bae9bc1e7e18615"
+    },
+    {
       "name": "func_08021290",
       "rom_offset": 135824,
       "original_bytes": 232,
@@ -3946,10 +4041,22 @@
       "sha256": "d7e82d6ce6050e20295638acc51ae6091a496a3c2ec4a3963839d6b2b6b2ee22"
     },
     {
+      "name": "CoreFrontier_000213DC",
+      "rom_offset": 136156,
+      "original_bytes": 166,
+      "sha256": "633491d0e2e8a8e88af0a3b565898354a13b53b77295841a1c2c7338319a9350"
+    },
+    {
       "name": "func_0802158C",
       "rom_offset": 136588,
       "original_bytes": 140,
       "sha256": "ce279ff034449d200075da55338c5edeec6a17e37ea833699818bda001eb3c0d"
+    },
+    {
+      "name": "BattleStateDependency_00021854",
+      "rom_offset": 137300,
+      "original_bytes": 216,
+      "sha256": "783154711a854cea275a8ae00ac427a4c994436a78ad419fa37137849c80e267"
     },
     {
       "name": "SceneTaskDependency_00021A3C",
@@ -4312,6 +4419,12 @@
       "sha256": "cffd5c91637510b11f495c9244d116dae11eff9d4f0f813857091848e6c7c8f1"
     },
     {
+      "name": "CoreFrontier_00022BA4",
+      "rom_offset": 142244,
+      "original_bytes": 136,
+      "sha256": "6dc3c4d0ff802bf67d3e619a5f692d8379a8e03823267c237e992f250f45d015"
+    },
+    {
       "name": "func_08022C2C",
       "rom_offset": 142380,
       "original_bytes": 24,
@@ -4520,6 +4633,12 @@
       "rom_offset": 150204,
       "original_bytes": 26,
       "sha256": "6ce99903eb5c7be2c24f3a920094193740069ee9adb51602c228961e2f10d526"
+    },
+    {
+      "name": "BattleDependency_00025174",
+      "rom_offset": 151924,
+      "original_bytes": 194,
+      "sha256": "31e8475aff6c913d23403e2dc1367cd87bc00ecaec9ee2329015a4b02ea41fb1"
     },
     {
       "name": "CoreFrontier_00025238",
@@ -4744,6 +4863,12 @@
       "sha256": "616a8f4cd73e47389ef97ba691384dc4fc4be12dcbd073cf8980a937118f7efc"
     },
     {
+      "name": "Source52_00027750",
+      "rom_offset": 161616,
+      "original_bytes": 176,
+      "sha256": "f1b820cd222a197ef5dbe8f546c69a656a12603f5f1fa2689aa6118be95f1427"
+    },
+    {
       "name": "Source52_00027800",
       "rom_offset": 161792,
       "original_bytes": 280,
@@ -4784,6 +4909,12 @@
       "rom_offset": 164516,
       "original_bytes": 48,
       "sha256": "4c6efb657a9024286c57880ab7170a3d48e24a2377b3f28da0168aa929ac600b"
+    },
+    {
+      "name": "TaskConstructor45_000282D4",
+      "rom_offset": 164564,
+      "original_bytes": 124,
+      "sha256": "c4049ca50edcb5833c2571630052c8ea88a534787138c03a2d76e4b80ba08352"
     },
     {
       "name": "TaskConstructor45_00028350",
@@ -4996,10 +5127,22 @@
       "sha256": "5096dc6f16b5cdaf64c61323eb3ea504f738aa6b6f95f97136306cb0e30230d0"
     },
     {
+      "name": "CoreDependency29_00029730",
+      "rom_offset": 169776,
+      "original_bytes": 106,
+      "sha256": "2a4439337258638121725d568760b26121dfe065b345113d59bf354888782daa"
+    },
+    {
       "name": "CoreGlobal36_00029864",
       "rom_offset": 170084,
       "original_bytes": 248,
       "sha256": "cc08767e9a62dffd9764d1348a415e26a8834b024cb24fb99b69a5c6039affc9"
+    },
+    {
+      "name": "SceneTaskDependency_0002995C",
+      "rom_offset": 170332,
+      "original_bytes": 728,
+      "sha256": "d2eebe4fbdcdd5349033096b67bed012d935934023f9a62d4dee9c96f9fc8987"
     },
     {
       "name": "CoreGlobal36_00029C34",
@@ -5072,6 +5215,12 @@
       "rom_offset": 173364,
       "original_bytes": 152,
       "sha256": "80cb1c1966e894c93889dd8673c6c369d65bfb96a88a5d9722f5df8a9af23d7a"
+    },
+    {
+      "name": "SceneTaskDependency_0002A5CC",
+      "rom_offset": 173516,
+      "original_bytes": 212,
+      "sha256": "e924a8d5c02d0fe2f589fd5611c84de4eec482ad7b265718a988c192f32ce89b"
     },
     {
       "name": "SceneTaskDependency_0002AB4C",
@@ -5350,6 +5499,12 @@
       "sha256": "151c00cde9b30a4c23631159154bf3ad9f5edf9bb909d847f7145b990af28019"
     },
     {
+      "name": "TaskConstructor45_0002C168",
+      "rom_offset": 180584,
+      "original_bytes": 264,
+      "sha256": "cfb654ce2a62bc17085d9e20713fc5c6cc42886c65bef8011f99d15b7b6e775d"
+    },
+    {
       "name": "TaskConstructor45_0002C270",
       "rom_offset": 180848,
       "original_bytes": 296,
@@ -5360,6 +5515,12 @@
       "rom_offset": 181144,
       "original_bytes": 424,
       "sha256": "e65324f0b7698b0786c962f9a643e102472df243dfe40912ae6cbe0665119a30"
+    },
+    {
+      "name": "CoreFrontier_0002C72C",
+      "rom_offset": 182060,
+      "original_bytes": 180,
+      "sha256": "e932eaaac46c180ef898cebc651031ee48b1e3ce31443ad951e77c3f07168e1b"
     },
     {
       "name": "TaskConstructor45_0002C7E0",
@@ -5530,10 +5691,22 @@
       "sha256": "ad20da9e46320f26243c059d27cfe6e167d479f7e43d910ab0902e0a4523393f"
     },
     {
+      "name": "CoreFrontier_0002E160",
+      "rom_offset": 188768,
+      "original_bytes": 472,
+      "sha256": "0c4b6619e96816293bc3ab339db88daf8a79938ea268e50a25c2c064a019500f"
+    },
+    {
       "name": "CoreFrontier_0002E338",
       "rom_offset": 189240,
       "original_bytes": 168,
       "sha256": "98429670e4cde5b79d528ffb27400ce51bcc7d607313c2a7ccfea0d38bb42b33"
+    },
+    {
+      "name": "CoreFrontier_0002E3E0",
+      "rom_offset": 189408,
+      "original_bytes": 320,
+      "sha256": "982767eb7a017c37a388f59250f0d2da38a0cf5ebdc7fb345ba4c991fd2d816a"
     },
     {
       "name": "func_0802E520",
@@ -5668,6 +5841,12 @@
       "sha256": "68e7928ec70dd87a6f42caa8e360b3caeb479f39d90b24ceaea0dcd22b7f50af"
     },
     {
+      "name": "CoreGlobal36_00030200",
+      "rom_offset": 197120,
+      "original_bytes": 3152,
+      "sha256": "64f09341056b3e9eb65ef7508b6c31e279dc236025670a902b771bcedfe6962e"
+    },
+    {
       "name": "CoreRegion_00031060",
       "rom_offset": 200800,
       "original_bytes": 336,
@@ -5734,6 +5913,12 @@
       "sha256": "4c1b35bb3980a4f19e429d9f592886fa884d8788be9500b6cfa0b8b393a1396e"
     },
     {
+      "name": "CoreRegion_0003172C",
+      "rom_offset": 202540,
+      "original_bytes": 420,
+      "sha256": "91e7423e9db11b115281b1efb8da2595569941d19b53440fb4042ac01b9bbb7f"
+    },
+    {
       "name": "CoreRegion_000318D0",
       "rom_offset": 202960,
       "original_bytes": 12,
@@ -5774,6 +5959,12 @@
       "rom_offset": 216712,
       "original_bytes": 364,
       "sha256": "4103982c03be90373bf473d05c3222b3d36ffd978036d8be82fa80e61e053ea1"
+    },
+    {
+      "name": "CoreRegion_00035174",
+      "rom_offset": 217460,
+      "original_bytes": 824,
+      "sha256": "747449f1f61c3e189495b38b5687ed7bcfc7dc926dea352a042503c290937cb4"
     },
     {
       "name": "CoreRegion_000354AC",
@@ -6028,6 +6219,12 @@
       "sha256": "8eb707018f466c4c38865828200e9876f585c1f15d6dc7fd0796aea444c8f2cd"
     },
     {
+      "name": "CoreRegion_00036B18",
+      "rom_offset": 224024,
+      "original_bytes": 400,
+      "sha256": "8df7c9e3f9e90e167a92c5fe92df421def4c046d43b4f1fceac42f089a1f44b1"
+    },
+    {
       "name": "CoreRegion_00036CA8",
       "rom_offset": 224424,
       "original_bytes": 156,
@@ -6110,6 +6307,12 @@
       "rom_offset": 229412,
       "original_bytes": 2,
       "sha256": "c7dfbb7d02759eacb64dbc916c1bb6f21eabaff1c1032ea5c9176abf7fd28df8"
+    },
+    {
+      "name": "CoreRegion_00038324",
+      "rom_offset": 230180,
+      "original_bytes": 460,
+      "sha256": "ddcd7fbb1b134bc25ad204d7c05c880f3b1c16a51763254908b56fdf1777d370"
     },
     {
       "name": "CoreRegion_000384F0",
@@ -6298,6 +6501,12 @@
       "sha256": "f63a0046e80ab4d8e96a7fe3ab0dadd222ceebf1869e0b1c474f451d98980626"
     },
     {
+      "name": "CoreRegion_0003AD08",
+      "rom_offset": 240904,
+      "original_bytes": 376,
+      "sha256": "f43461ad3ee903fb1eaf762b02bc333217c0218fe16ee5d728ebf7f2cfbf4554"
+    },
+    {
       "name": "func_0803CA18",
       "rom_offset": 248344,
       "original_bytes": 916,
@@ -6334,6 +6543,12 @@
       "sha256": "f2cbb9aa125542367a870c8fb4521c9edf808e1d632eb2bd814a017446442e83"
     },
     {
+      "name": "CoreRegion_0003E078",
+      "rom_offset": 254072,
+      "original_bytes": 328,
+      "sha256": "65519cdfaf2d8269d688ccef6e740db5aa9fa4eadcc6b908f88e04da4c1c6b59"
+    },
+    {
       "name": "CoreRegion_0003E1C0",
       "rom_offset": 254400,
       "original_bytes": 288,
@@ -6358,6 +6573,12 @@
       "sha256": "31312702e6d0084dc208e493f7eff9b3650ba594b2291eb58a19be0582227f22"
     },
     {
+      "name": "CoreRegion_000401F4",
+      "rom_offset": 262644,
+      "original_bytes": 112,
+      "sha256": "64e6020818437739e68f120336e935942a55290d43f92554637c86ce49159a2a"
+    },
+    {
       "name": "CoreRegion_00040264",
       "rom_offset": 262756,
       "original_bytes": 28,
@@ -6368,6 +6589,12 @@
       "rom_offset": 262784,
       "original_bytes": 264,
       "sha256": "01acc89fde0644da0d4fc49bf1da256a3f07d409e2da81a01d45b8afa4472c96"
+    },
+    {
+      "name": "CoreRegion_00040628",
+      "rom_offset": 263720,
+      "original_bytes": 172,
+      "sha256": "be2fe6773ff22283f6f6fc78f7f5689860fbd407b3d2429d56f513420802125f"
     },
     {
       "name": "CoreRegion_000406D4",
@@ -6388,6 +6615,12 @@
       "sha256": "ba3619a40608a83b7250abcbfb7035ab9fac5273cc909a169577b070222b11e9"
     },
     {
+      "name": "CoreRegion_00040DA4",
+      "rom_offset": 265636,
+      "original_bytes": 112,
+      "sha256": "b1d8cc48b239d5d1d59444555f13bbb8900b63656986fb969d6ebd7c0b450889"
+    },
+    {
       "name": "CoreRegion_00040E14",
       "rom_offset": 265748,
       "original_bytes": 28,
@@ -6398,6 +6631,12 @@
       "rom_offset": 265776,
       "original_bytes": 264,
       "sha256": "ca467df68c7268f5143921c874abec6e03d3396be74b686fd57f26093e30be15"
+    },
+    {
+      "name": "CoreRegion_00041224",
+      "rom_offset": 266788,
+      "original_bytes": 172,
+      "sha256": "29b437d9ce60e75c58725531197e7f6e0ef5f4c1a31090198b432a02fbbedd1d"
     },
     {
       "name": "CoreRegion_000412D0",
@@ -6442,6 +6681,12 @@
       "sha256": "bf18f8d320fa9607dfd62ed2f91d0fb6be67945f0da58fb1cf6dcab72e914e8d"
     },
     {
+      "name": "CoreRegion_00041FB4",
+      "rom_offset": 270260,
+      "original_bytes": 112,
+      "sha256": "3cf04b57a23cbf1d0d5e8a34a62e3fcc17a35a120b11c74a667b570de72d6b76"
+    },
+    {
       "name": "func_08042024",
       "rom_offset": 270372,
       "original_bytes": 10,
@@ -6476,6 +6721,12 @@
       "rom_offset": 273424,
       "original_bytes": 162,
       "sha256": "38e11a2a7b2fc056991ca0ce9dbbc62799d9518e679b28ed0061e53a3be35b1b"
+    },
+    {
+      "name": "CoreRegion_00042E48",
+      "rom_offset": 273992,
+      "original_bytes": 112,
+      "sha256": "71531c9d95c601f2d3968c4b52fb1e60558545a3344c939530a08c662b1eff70"
     },
     {
       "name": "func_08042EB8",
@@ -6592,6 +6843,12 @@
       "sha256": "e39173e22f782dd46acda94640463d148cf8d347668a66657b5ff44b53e04851"
     },
     {
+      "name": "CoreRegion_000454A8",
+      "rom_offset": 283816,
+      "original_bytes": 448,
+      "sha256": "3db78bfcc1b810181adde3126024d63e876840a83488d9ea6b3b63352aeb5016"
+    },
+    {
       "name": "CoreRegion_000457B0",
       "rom_offset": 284592,
       "original_bytes": 244,
@@ -6622,16 +6879,40 @@
       "sha256": "e13c9497779c30d898856a3ab7c2182969bc60a43479a32d7293389ec5dfefbc"
     },
     {
+      "name": "CoreRegion_000461D4",
+      "rom_offset": 287188,
+      "original_bytes": 1664,
+      "sha256": "f598de92302b115badf75bbf20497d62e2ad4a53911aa0b2ff10032c08dd3f0f"
+    },
+    {
       "name": "CoreRegion_000469F8",
       "rom_offset": 289272,
       "original_bytes": 84,
       "sha256": "f0825dee03261e606344488e49d165d5378cf58200e67b48ac36794750e7d8bf"
     },
     {
+      "name": "CoreRegion_00049C24",
+      "rom_offset": 302116,
+      "original_bytes": 492,
+      "sha256": "3890253de6fcd7b8add0b6361db2a1ad87cc7bc2b380240d8a021991cde0f6b2"
+    },
+    {
       "name": "func_08049ED0",
       "rom_offset": 302800,
       "original_bytes": 226,
       "sha256": "cb4a0b17e145afe45c4cd6abdb09037dae6e1e8ecf146e317a4b974d1c9186cf"
+    },
+    {
+      "name": "CoreRegion_00049FB4",
+      "rom_offset": 303028,
+      "original_bytes": 424,
+      "sha256": "b687121fcebf5218539a5bf192a898eaae89d0e9f3773c839bde901eda396089"
+    },
+    {
+      "name": "CoreRegion_0004A15C",
+      "rom_offset": 303452,
+      "original_bytes": 392,
+      "sha256": "accc18ccff0f9e16150ef9e3457f91be2050c96a7eef246903eee8f40fb2e78f"
     },
     {
       "name": "CoreRegion_0004A2E4",
@@ -6668,6 +6949,12 @@
       "rom_offset": 310108,
       "original_bytes": 100,
       "sha256": "e66b5056cef906b28342f3ff199298b1a320af55ca52d25faa19b630e0b1ef24"
+    },
+    {
+      "name": "CoreRegion_0004BBC0",
+      "rom_offset": 310208,
+      "original_bytes": 396,
+      "sha256": "6c53fa0b12f34f92d94533c7020dd3a7103c68fe863a306bbbb8ea66dd62c455"
     },
     {
       "name": "func_0804BDB0",
@@ -6784,6 +7071,12 @@
       "sha256": "86b91de04c75489313b5c4ff52a8ddc9e5f83d0f9a2b55381143e636dd3b8898"
     },
     {
+      "name": "CoreRegion_0004C97C",
+      "rom_offset": 313724,
+      "original_bytes": 102,
+      "sha256": "4bd3400ad94271693acbb57df2404f3cea6db52f9abf1d4ef0bbf91adcb6b341"
+    },
+    {
       "name": "CoreRegion_0004C9E4",
       "rom_offset": 313828,
       "original_bytes": 28,
@@ -6862,6 +7155,12 @@
       "sha256": "999188956afc7d8e14eda8842f47e103d44c0ed0f98b58205737fc4dd6add8e1"
     },
     {
+      "name": "IsolatedCore57_0004D6B0",
+      "rom_offset": 317104,
+      "original_bytes": 312,
+      "sha256": "70f8bea72260b162b10a01661247c5416f3a4a2ddafb90a6b262d99acff974ad"
+    },
+    {
       "name": "IsolatedCore57_0004D7E8",
       "rom_offset": 317416,
       "original_bytes": 44,
@@ -6878,6 +7177,12 @@
       "rom_offset": 317504,
       "original_bytes": 44,
       "sha256": "a7cff51507c039f4b12aece9391ed727486e51bbb06faf9413bb43174aa86404"
+    },
+    {
+      "name": "CoreRegion_0004DBF8",
+      "rom_offset": 318456,
+      "original_bytes": 348,
+      "sha256": "60873d1defe852613a8077bbba3ed26397d864d5170ce156c6c59009738f5288"
     },
     {
       "name": "CoreRegion_0004DD54",
@@ -6950,6 +7255,12 @@
       "rom_offset": 320972,
       "original_bytes": 288,
       "sha256": "ffd04338f2f93b2b0fbe9705f739dc8c932336765ce6efe781723413e56f64ab"
+    },
+    {
+      "name": "CoreRegion_0004E6EC",
+      "rom_offset": 321260,
+      "original_bytes": 364,
+      "sha256": "cde3109ab553a97202bd7b1907b790c2744567e18307a56b4d7ca10642120918"
     },
     {
       "name": "CoreRegion_0004E858",
@@ -7360,10 +7671,22 @@
       "sha256": "a139c0e554e952c9a2e8c82b0205f5d7a6a58b5311a26cad4f6a497e6e22af1a"
     },
     {
+      "name": "CoreClosure31_000530A0",
+      "rom_offset": 340128,
+      "original_bytes": 336,
+      "sha256": "260506ecdd764478257c36e20b131fa9005e5b665a2ffb3c7a7f95892737eea6"
+    },
+    {
       "name": "func_080531F0",
       "rom_offset": 340464,
       "original_bytes": 344,
       "sha256": "609ff05a3282e0b823f02d445811f87bb601fa5cb6ca4bbcdd035cef5d5852d0"
+    },
+    {
+      "name": "CoreClosure31_00053348",
+      "rom_offset": 340808,
+      "original_bytes": 428,
+      "sha256": "bf90b97c5e6bc3b0749b986682d35ce92f216ab308ae92bede652f81ee492b3e"
     },
     {
       "name": "CoreClosure31_000534F4",
@@ -7522,6 +7845,12 @@
       "sha256": "e191c8d9009f9e775b7df3a92b8434ab21d57f2e3c1361a41a119550a1d35dc1"
     },
     {
+      "name": "SceneTaskDependency_00055C38",
+      "rom_offset": 351288,
+      "original_bytes": 396,
+      "sha256": "b0eb13a6c84efafb7977b57be6e411355914cd1af270ed69f4caba050114d623"
+    },
+    {
       "name": "func_08055DC4",
       "rom_offset": 351684,
       "original_bytes": 252,
@@ -7562,6 +7891,12 @@
       "rom_offset": 359312,
       "original_bytes": 92,
       "sha256": "73f331b417bcfa29f89e8d69871871d035d3d46fac3a8bb481fc7046b6fba7d9"
+    },
+    {
+      "name": "SceneTaskDependency_00057BEC",
+      "rom_offset": 359404,
+      "original_bytes": 156,
+      "sha256": "1e89270973f5dd7e0db8f0a26fb1c310de7639fb92cdc1f5f7b6d066e127f056"
     },
     {
       "name": "func_08057C88",
@@ -7616,6 +7951,12 @@
       "rom_offset": 362028,
       "original_bytes": 90,
       "sha256": "89d41ac54181e9627d07dcffb4ab20eba4ef6f2faa576d9de99e6cb5abcf3a9b"
+    },
+    {
+      "name": "CoreClosure31_0005868C",
+      "rom_offset": 362124,
+      "original_bytes": 84,
+      "sha256": "e071b3aadaffcf9aa1ed529c31271ba3b0a3da3c1b66f984379be538065e95a9"
     },
     {
       "name": "CoreClosure31_000586E0",
@@ -8152,6 +8493,12 @@
       "sha256": "2655647e903b63da11b555e003a793ab4053559f8ff1584b8bc7852b5957a679"
     },
     {
+      "name": "CoreRegion30_00060E30",
+      "rom_offset": 396848,
+      "original_bytes": 502,
+      "sha256": "79cc9a9c9e48e38c654cf2550a66188cfaa00452f0d8d0a8c1aeb55bda1ecfb5"
+    },
+    {
       "name": "CoreFrontier_00061028",
       "rom_offset": 397352,
       "original_bytes": 206,
@@ -8260,6 +8607,12 @@
       "sha256": "0d0829d76132dc3c7ee3fc6bcb4f5048ef2b597d84001e74518890dea0b167a6"
     },
     {
+      "name": "SceneRegisteredRoot_000615E0",
+      "rom_offset": 398816,
+      "original_bytes": 320,
+      "sha256": "e19cac6ab768625694ef2292fcb5860ba8973b3a17ee7f6605982c8bb826f97d"
+    },
+    {
       "name": "SceneRegisteredRoot_00061720",
       "rom_offset": 399136,
       "original_bytes": 88,
@@ -8288,6 +8641,12 @@
       "rom_offset": 400420,
       "original_bytes": 12,
       "sha256": "fa21660d95a1c83b1fdf121954115554c61cf825d36c3c201a683f22c73f5dc0"
+    },
+    {
+      "name": "RemainingCore48_00061C30",
+      "rom_offset": 400432,
+      "original_bytes": 108,
+      "sha256": "85b106206fdec15c5101911226646e926c264fc062fdd386af340c5daec300b8"
     },
     {
       "name": "func_08061C9C",
@@ -8764,6 +9123,12 @@
       "sha256": "853181285b734f7bd65eb38dde99797fe8b18a9a230d935661861918b6cd1a87"
     },
     {
+      "name": "RemainingCore48_000651FC",
+      "rom_offset": 414204,
+      "original_bytes": 1036,
+      "sha256": "5c952cb6932767e30979a40dc050c62098fcd7d98f6ecabe339e0255a3c7b5f7"
+    },
+    {
       "name": "RemainingCore48_000659AC",
       "rom_offset": 416172,
       "original_bytes": 428,
@@ -8774,6 +9139,12 @@
       "rom_offset": 416600,
       "original_bytes": 424,
       "sha256": "9f718546c8380c5fbe396082c8ddd3a4d57c31bb9868567c4a238381020e233e"
+    },
+    {
+      "name": "RemainingCore48_00065D00",
+      "rom_offset": 417024,
+      "original_bytes": 498,
+      "sha256": "8b91e368c45a8012097330c053df33d2f101e25c893bf299232dee94bd3033a6"
     },
     {
       "name": "func_08065EF4",
@@ -9292,6 +9663,12 @@
       "sha256": "3143ffd4189a47f01f5d42cdd77a2e57eff6ab5bd03b00da118c23c20dcc6e2a"
     },
     {
+      "name": "SceneTaskDependency_0006EE98",
+      "rom_offset": 454296,
+      "original_bytes": 272,
+      "sha256": "f9decf38fc625a0b7ac9ac09d596c2699b4768a11b0069e55d2c4380b6fa68a8"
+    },
+    {
       "name": "SceneTaskDependency_0006EFA8",
       "rom_offset": 454568,
       "original_bytes": 60,
@@ -9376,6 +9753,12 @@
       "sha256": "cb0e6b3b89174d560a26487e026f4753e943627d97a95e403598ac91dd2de392"
     },
     {
+      "name": "CoreRegion_0006F568",
+      "rom_offset": 456040,
+      "original_bytes": 148,
+      "sha256": "9f02cb3639aaa2431aeb96e34eec64a6c8a5bedb1c9836c57fe77b334bdcf725"
+    },
+    {
       "name": "func_0806F5FC",
       "rom_offset": 456188,
       "original_bytes": 126,
@@ -9386,6 +9769,12 @@
       "rom_offset": 456316,
       "original_bytes": 46,
       "sha256": "c06283a03d413a4b49921c366daad24a2a64c809e83c04110ad08975e0f09f5c"
+    },
+    {
+      "name": "SceneTaskDependency_0006F7B8",
+      "rom_offset": 456632,
+      "original_bytes": 292,
+      "sha256": "19561a6eb85705289c77f657c491952afa7e8f335ca5c2d8ac8d7168cd70cd82"
     },
     {
       "name": "SceneTaskDependency_0006F8DC",
@@ -9460,6 +9849,12 @@
       "sha256": "9995772ba9da9c9c4b9cdb579fa588aaafc1e97772ae713c175d1442353e6e3e"
     },
     {
+      "name": "CoreRegion_0007109C",
+      "rom_offset": 463004,
+      "original_bytes": 408,
+      "sha256": "71425f80bfd7caea0411e97db43834225697858317f1d57385cacf8486bcd53d"
+    },
+    {
       "name": "func_08071234",
       "rom_offset": 463412,
       "original_bytes": 156,
@@ -9520,10 +9915,22 @@
       "sha256": "46e28cde9817b4066970984dba6cdfc5a9d295877d3e0449e78dee0f325a2691"
     },
     {
+      "name": "CoreScene34_00072C78",
+      "rom_offset": 470136,
+      "original_bytes": 1500,
+      "sha256": "a09d694f5647d53c70b9de18d0d15f47a3bb4e05a0d86fd7b7d7dece782e68d0"
+    },
+    {
       "name": "CoreScene34_00073254",
       "rom_offset": 471636,
       "original_bytes": 300,
       "sha256": "933225bc29dc2d353ad179429de8ac41a9ca93b38ffb82f9f7cc248b62293845"
+    },
+    {
+      "name": "CoreScene34_00073380",
+      "rom_offset": 471936,
+      "original_bytes": 332,
+      "sha256": "415e44b3a193de288cee14c839f3e8225e5c1c8b4b61245d7ece08eab1272cb7"
     },
     {
       "name": "CoreScene34_000734CC",
@@ -9736,6 +10143,18 @@
       "sha256": "af56ac2fe26aa9e88472e0173f48545141e193cd44dbc8d7a336ad791408ba74"
     },
     {
+      "name": "CoreScene34_0008136C",
+      "rom_offset": 529260,
+      "original_bytes": 328,
+      "sha256": "f1326995a5e39369d37cc5ec93ff08ae2bf31c3cfae1dc6b11be66d03f093a3f"
+    },
+    {
+      "name": "CoreScene34_000818A0",
+      "rom_offset": 530592,
+      "original_bytes": 192,
+      "sha256": "1b0e7b2dd4b45e82610e9e97c342fd82cbf8ddaf5998fc72b58fc5c71ddc14bc"
+    },
+    {
       "name": "func_08081D28",
       "rom_offset": 531752,
       "original_bytes": 196,
@@ -9788,6 +10207,12 @@
       "rom_offset": 545924,
       "original_bytes": 132,
       "sha256": "6ee1c308c69c82e28dbfb338db12d028fd91ea3fa364684058d3341e108de5b1"
+    },
+    {
+      "name": "CoreScene34_00085558",
+      "rom_offset": 546136,
+      "original_bytes": 112,
+      "sha256": "32e7396cfcf5e7067a35d10b8cc904142fa86b463a515c6a0e37af7697509abf"
     },
     {
       "name": "CoreScene34_00085678",
@@ -9850,6 +10275,18 @@
       "sha256": "5c8601d2073f1fb16097f099dffaa8c13d6240610548369024927ebb65e7016e"
     },
     {
+      "name": "CoreScene34_00087554",
+      "rom_offset": 554324,
+      "original_bytes": 268,
+      "sha256": "b11a43e95e0064a4ad0a2f831f0636aa27d01e154b8a0ddff652810023862a84"
+    },
+    {
+      "name": "CoreRegistration33_000876F4",
+      "rom_offset": 554740,
+      "original_bytes": 1084,
+      "sha256": "53b29809e5177b579786d0318e0b2768896ada4cdd80d2beffa9b8097a841225"
+    },
+    {
       "name": "CoreScene34_00087B30",
       "rom_offset": 555824,
       "original_bytes": 300,
@@ -9878,6 +10315,18 @@
       "rom_offset": 560988,
       "original_bytes": 144,
       "sha256": "c9a2c99ea1daec9d3f4f3588467c31f106f66229f6b48cf652e3362d6768ad9a"
+    },
+    {
+      "name": "CoreGlobal36_00088FEC",
+      "rom_offset": 561132,
+      "original_bytes": 464,
+      "sha256": "a767908ae321cc18373c47d7c710a78e492fbee527b2c0c99aeec2e23266cf8a"
+    },
+    {
+      "name": "CoreRegion_000891BC",
+      "rom_offset": 561596,
+      "original_bytes": 138,
+      "sha256": "f9890ac44113e424864ed0779caee61fe69a31fe6a6b01c93dbe7d8a77086f79"
     },
     {
       "name": "func_08089248",
@@ -9934,6 +10383,12 @@
       "sha256": "ecaafb7507387a62bf6a1ae08778613a5b363a35acf6e5dba974d3888bf0524b"
     },
     {
+      "name": "CoreRegistration33_000899AC",
+      "rom_offset": 563628,
+      "original_bytes": 256,
+      "sha256": "9981d36966b3adc75ce000114af7d25e74e2f693a12efc44a164c2dc4c365f9e"
+    },
+    {
       "name": "CoreGlobal36_00089AAC",
       "rom_offset": 563884,
       "original_bytes": 96,
@@ -9956,6 +10411,12 @@
       "rom_offset": 564300,
       "original_bytes": 56,
       "sha256": "0f7d82405f40d91668989645dc8a6acc1e607e723131e1a58b38c4cb41ecaa14"
+    },
+    {
+      "name": "CoreRegion_00089C84",
+      "rom_offset": 564356,
+      "original_bytes": 40,
+      "sha256": "9fd27d02cee3d0b6cfa2980ef427c5be11b68980a70a4f92d0bffc5fd1692fe3"
     },
     {
       "name": "CoreGlobal36_00089CE4",
@@ -10028,6 +10489,12 @@
       "rom_offset": 567624,
       "original_bytes": 208,
       "sha256": "71474cffdc2f3f657643e3338e63366a61dac9c413d8b9a0aa98f24a50dac954"
+    },
+    {
+      "name": "CoreRegion_0008AC34",
+      "rom_offset": 568372,
+      "original_bytes": 416,
+      "sha256": "b621d09406bd3e8d43d77547199213c75c420c729238a5bcb7e4a42815e1b5fb"
     },
     {
       "name": "func_0808B4FC",
@@ -10106,6 +10573,12 @@
       "rom_offset": 575940,
       "original_bytes": 264,
       "sha256": "6f027efa6afcf0e078b976d2d196d7e924580306adacadadb5ad251f6bc8873a"
+    },
+    {
+      "name": "CoreGlobal36_0008CACC",
+      "rom_offset": 576204,
+      "original_bytes": 272,
+      "sha256": "d6e7cf1356d56998f144a3795260a3e753a4ce16967f0c1f40a7d92cead731ca"
     },
     {
       "name": "Source52_0008D554",
@@ -10202,6 +10675,12 @@
       "rom_offset": 590436,
       "original_bytes": 102,
       "sha256": "87f1db578de48f7e7a3eb4bac30e2d9f60f8fe6741efe68c8f6a8f89cb97ba86"
+    },
+    {
+      "name": "CoreFrontier_00090BBC",
+      "rom_offset": 592828,
+      "original_bytes": 316,
+      "sha256": "7c79a607c821b8a0d64beceb68e7bffebe9bc215f039aef9ba6478f317367202"
     },
     {
       "name": "CoreFrontier_000917F8",
@@ -10328,6 +10807,12 @@
       "rom_offset": 599460,
       "original_bytes": 148,
       "sha256": "bd3e43f44a30e3c6ff559bb07cd626477e5e463b7be4c486f03fa2dc6d3c77b1"
+    },
+    {
+      "name": "CoreFrontier_00092638",
+      "rom_offset": 599608,
+      "original_bytes": 332,
+      "sha256": "79c2e3e7929c4b273ec6e63411036e6f9ec4d6f2db7ce1514a728912e669d70a"
     },
     {
       "name": "OriginalBattlePhaseInitialization_00096B2C",
@@ -10478,6 +10963,12 @@
       "rom_offset": 620444,
       "original_bytes": 118,
       "sha256": "fd2b4cf56c508ce11d243a68b3fed3342ba50d313d6c32b5c5b67c924ebd74f3"
+    },
+    {
+      "name": "CoreClosure31_00097F04",
+      "rom_offset": 622340,
+      "original_bytes": 280,
+      "sha256": "56feb611cc3944958a5a1694eba9027486dd2ac6a7b436ba0021c23379fecb38"
     },
     {
       "name": "CoreConsumer_00098130",
@@ -11248,6 +11739,12 @@
       "sha256": "b7bbc3837cce9bc3259837e5761a32d972b396c7b7c4ff612f42ede6e8dfb265"
     },
     {
+      "name": "CoreStateDirect_0009B218",
+      "rom_offset": 635416,
+      "original_bytes": 600,
+      "sha256": "904a2e04e173affb2dd6b27b14e364e54108cd98de2d126c24421b0efdc4c6d6"
+    },
+    {
       "name": "CoreStateDirect_0009B470",
       "rom_offset": 636016,
       "original_bytes": 210,
@@ -11662,6 +12159,12 @@
       "sha256": "4762bc0f57ec6919b9ce7b86c464860b1c1ba9727f3cacbea2fa39af9f1a957b"
     },
     {
+      "name": "CoreFrontier_000A75BC",
+      "rom_offset": 685500,
+      "original_bytes": 592,
+      "sha256": "8dae6350950cb2c04042dc347b4b88211cc01b4d6bfae86b200e76be698bc02a"
+    },
+    {
       "name": "CoreFrontier_000A7D60",
       "rom_offset": 687456,
       "original_bytes": 128,
@@ -11674,6 +12177,12 @@
       "sha256": "6a5849cc30c367b803ec86439a35d134f73c780895d72695138a877cafa456f7"
     },
     {
+      "name": "BattleRuntimeDependency_000A7EC4",
+      "rom_offset": 687812,
+      "original_bytes": 256,
+      "sha256": "308625fc40c3675aa836782c03ee2440c26f7349327a62feb32c2fcc23cb5d08"
+    },
+    {
       "name": "CoreRegion30_000A7FC4",
       "rom_offset": 688068,
       "original_bytes": 36,
@@ -11684,6 +12193,12 @@
       "rom_offset": 688104,
       "original_bytes": 104,
       "sha256": "54921339dac296d7e962ac19285ff5cf7f7f92ff46b905d6bb604fda35411442"
+    },
+    {
+      "name": "BattleCallbackProducer_000A8194",
+      "rom_offset": 688532,
+      "original_bytes": 208,
+      "sha256": "b97a114f88c399d2fbb878ebc5497518c1cea0358df625fc7f5d1e788129d607"
     },
     {
       "name": "CoreFrontier_000A8264",
@@ -12040,6 +12555,12 @@
       "sha256": "cb921382ad3b25c5ef7546216cf755a9d6bafa90eecdfd832e6f1cd92da0832f"
     },
     {
+      "name": "BattleRuntimeCallback_000A9940",
+      "rom_offset": 694592,
+      "original_bytes": 264,
+      "sha256": "f09172bac5ec32b815e404b7e4b71e08094a66c0818c8b7ac0d705009803504e"
+    },
+    {
       "name": "BattleRuntimeDependency_000A9B00",
       "rom_offset": 695040,
       "original_bytes": 184,
@@ -12058,10 +12579,40 @@
       "sha256": "9cc3d56f113cbf8ff88e23fd340227c8f7c1891c8c641f839468a7dcb29410c0"
     },
     {
+      "name": "BattleStateDependency_000A9D18",
+      "rom_offset": 695576,
+      "original_bytes": 340,
+      "sha256": "907ab6dfbd287d2b32ca6a322be56b0ba63f74503eaeda9b2a95b14cee672b63"
+    },
+    {
       "name": "BattleRuntimeDependency_000A9E6C",
       "rom_offset": 695916,
       "original_bytes": 182,
       "sha256": "64224208579a8e6c8e0b8b165506622b9cfce0ffa8a9863d3020f76c60a6da1f"
+    },
+    {
+      "name": "BattleRuntimeCallback_000A9F24",
+      "rom_offset": 696100,
+      "original_bytes": 886,
+      "sha256": "1c96886bf0379beef4fb2b8180a24dbe698fc6c551d02c035f9ead9f94a01893"
+    },
+    {
+      "name": "BattleRuntimeCallback_000AB358",
+      "rom_offset": 701272,
+      "original_bytes": 794,
+      "sha256": "e064687590bc2797f61685db8142815f03c603fb30a97b142254f044ea7fe4b7"
+    },
+    {
+      "name": "CoreRegion_000B264C",
+      "rom_offset": 730700,
+      "original_bytes": 2258,
+      "sha256": "b0cd077db996b3b3eb752abfdd447817114ab2051684933cd387aa730f164dd4"
+    },
+    {
+      "name": "BattleCallbackProducer_000B336C",
+      "rom_offset": 734060,
+      "original_bytes": 432,
+      "sha256": "b001e86484bf062ada2058c8aa5bbb66e7a047dd649a153bddbc500031189d00"
     },
     {
       "name": "CoreRegion30_000B41CC",
@@ -12110,6 +12661,12 @@
       "rom_offset": 738552,
       "original_bytes": 384,
       "sha256": "34bce1125240e1450ae2d507c4dfc5567f2ec53609b14166bc0b5c69360d51bc"
+    },
+    {
+      "name": "CoreRegion30_000B479C",
+      "rom_offset": 739228,
+      "original_bytes": 304,
+      "sha256": "7333d6af4fe11c65474fe49c53b48a9fee5da0d7cee5333ae66ebea83b017991"
     },
     {
       "name": "CoreRegion30_000B4FF8",
@@ -12262,10 +12819,22 @@
       "sha256": "9b538e68f50cd51a27ebb9fbd4ed4d520457b5b80d35d66eafed8f6833b6735c"
     },
     {
+      "name": "CoreFrontier_000BA8E4",
+      "rom_offset": 764132,
+      "original_bytes": 682,
+      "sha256": "a534d056708101695f621460096c53a8229fdb7cbcc19757c5a9ab0c806e86b5"
+    },
+    {
       "name": "func_080BACF0",
       "rom_offset": 765168,
       "original_bytes": 504,
       "sha256": "cfc74a5259a02485488d029d19bb6efb963a5d69644e09f80640bf7f558e4e6d"
+    },
+    {
+      "name": "CoreFrontier_000BB424",
+      "rom_offset": 767012,
+      "original_bytes": 212,
+      "sha256": "7d637b895a03de6eb559ee012392ad93a6f795f9287aa07c77138fc1cf5f56e8"
     },
     {
       "name": "func_080BB4F8",
@@ -12446,6 +13015,12 @@
       "rom_offset": 772692,
       "original_bytes": 32,
       "sha256": "b46b5841cf6e97386457d9261a8e87f83cba4c829e743777a84801f77b04cf20"
+    },
+    {
+      "name": "Source52_000BCA74",
+      "rom_offset": 772724,
+      "original_bytes": 184,
+      "sha256": "1d17334cf4f0a11210b85ef38f1d3ffe2e8932bfa3a8cb1f8fb2f17c58fc3a70"
     },
     {
       "name": "Source52_000BCDF8",
@@ -12644,6 +13219,12 @@
       "rom_offset": 777584,
       "original_bytes": 12,
       "sha256": "36372d659b9bcc8b0de1491bc0909bda10e360838013f685c091289e20d7f8b2"
+    },
+    {
+      "name": "CoreRegion30_000BDF9C",
+      "rom_offset": 778140,
+      "original_bytes": 216,
+      "sha256": "4e5c09271e9cfa720a0cae0704fbbe65d85c15796ab7b7e8182ae8ee5a84099c"
     },
     {
       "name": "CoreRegion30_000BE3B8",
@@ -14090,6 +14671,12 @@
       "rom_offset": 837812,
       "original_bytes": 28,
       "sha256": "898d223c5b33322baa2d0bf2f4688fb82dbbc221a45602c4e3a43f19b663b3eb"
+    },
+    {
+      "name": "SceneTaskDependency_000CC8D0",
+      "rom_offset": 837840,
+      "original_bytes": 134,
+      "sha256": "e5824c29f206579888dcd112d49b9d1deb041aff8eab6a5593ee9686047979fa"
     },
     {
       "name": "ItemAmountAdjustmentApplies",
@@ -15694,16 +16281,34 @@
       "sha256": "3990fe4fde768d1ed04b56e5e63714303fc2d698a9ff581325c046deaf3d832a"
     },
     {
+      "name": "RemainingBand43_000D7220",
+      "rom_offset": 881184,
+      "original_bytes": 168,
+      "sha256": "9f22fc28ff34e46742594ac2d8d44f4e39a439eb119924c0cc855a5745f5c9c7"
+    },
+    {
       "name": "func_080D7468",
       "rom_offset": 881768,
       "original_bytes": 58,
       "sha256": "1e2ff0571ac12e75c40ad4c8c4e4d5c52d92eb35a22e54ad1b63d9396760e23a"
     },
     {
+      "name": "RemainingBand43_000D74A4",
+      "rom_offset": 881828,
+      "original_bytes": 60,
+      "sha256": "10d894b9a761b73d190505ed682278d4cd707f542d840e64eb41f227af336537"
+    },
+    {
       "name": "func_080D758C",
       "rom_offset": 882060,
       "original_bytes": 232,
       "sha256": "8f7041336c0595949f7e3fdd19e92f29249d46e852ede339cb08e5fe929f38e9"
+    },
+    {
+      "name": "CoreClosure31_000D7798",
+      "rom_offset": 882584,
+      "original_bytes": 202,
+      "sha256": "2c74047a6a7fca50b00ab2e895e94b91ed150fe267caf191b1f9fbf242d71a29"
     },
     {
       "name": "CoreClosure31_000D7A70",
@@ -15758,6 +16363,12 @@
       "rom_offset": 886536,
       "original_bytes": 336,
       "sha256": "adca198e03d67fba5fddaaa12f712e1469c4def5bc73e3c07179f97f1bf25820"
+    },
+    {
+      "name": "RemainingBand43_000D8924",
+      "rom_offset": 887076,
+      "original_bytes": 172,
+      "sha256": "3b92d5085d1b8c027f7dee874f84ec7a8fd99d91addf6a0e523644b117ae97c9"
     },
     {
       "name": "func_080D8AEC",
@@ -16240,6 +16851,12 @@
       "sha256": "91e4c584eedce6f6cbf28f618973c5c283969092807d00a755cbbf80e9dc897a"
     },
     {
+      "name": "RemainingBand43_000DC414",
+      "rom_offset": 902164,
+      "original_bytes": 132,
+      "sha256": "d1893bd740afecc0206e34c1282a1d341245233d1326b49d7ee325b78a7e572c"
+    },
+    {
       "name": "RemainingBand43_000DC498",
       "rom_offset": 902296,
       "original_bytes": 72,
@@ -16256,6 +16873,12 @@
       "rom_offset": 903892,
       "original_bytes": 232,
       "sha256": "66a2094ce841eefc89046e04d0601d60d8e642fe53fd0db2ee68ccf4e2cafc17"
+    },
+    {
+      "name": "RemainingBand43_000DCD08",
+      "rom_offset": 904456,
+      "original_bytes": 602,
+      "sha256": "a44d03e397ad1968247a68ef9975259da1e3930238eca6548c2d2f5a9eb1c356"
     },
     {
       "name": "RemainingBand43_000DD1AC",
@@ -16660,6 +17283,18 @@
       "sha256": "03134467b1147aee4be175c4487848e9574f2d4ba925e2e8a4117f10c78bde42"
     },
     {
+      "name": "RemainingBand43_000DE61C",
+      "rom_offset": 910876,
+      "original_bytes": 508,
+      "sha256": "31f69a0a8382a98d15f84f39767492230174839553359771bde33197f6065ed2"
+    },
+    {
+      "name": "RemainingBand43_000DE818",
+      "rom_offset": 911384,
+      "original_bytes": 256,
+      "sha256": "abd2c1422a3bbb3444ae18e8d6af5bb4c7e5f7947ef964306480cb2aa1c68ba3"
+    },
+    {
       "name": "RemainingBand43_000DE918",
       "rom_offset": 911640,
       "original_bytes": 198,
@@ -16796,6 +17431,12 @@
       "rom_offset": 916176,
       "original_bytes": 28,
       "sha256": "1a951e29b02ad66cf00f3c50121673a7149e511b97dfbc066dc6713566f0e0bf"
+    },
+    {
+      "name": "RemainingBand43_000DFCAC",
+      "rom_offset": 916652,
+      "original_bytes": 188,
+      "sha256": "34887878709e8d634a79f6b5fc52027c1743fc7c30c99dd29a0d2c1f68452bb1"
     },
     {
       "name": "RemainingBand43_000DFD68",
@@ -17050,6 +17691,18 @@
       "sha256": "08de766e8bd0a6c0c3774ee34ab63af2fe66c899cb2fccacadd51e4c7b2087b2"
     },
     {
+      "name": "RemainingBand43_000E3E84",
+      "rom_offset": 933508,
+      "original_bytes": 462,
+      "sha256": "e0165ddd3edceaae3b42807045896d6e3fa668748d595408f62b52263cb6e6be"
+    },
+    {
+      "name": "DefinitionTargetSequence_000E4054",
+      "rom_offset": 933972,
+      "original_bytes": 400,
+      "sha256": "edb777d0ea535fbb4c9162401350aec79577a7b0d195ed6dcb7f898ef13b4e6a"
+    },
+    {
       "name": "OriginalActionCallback_000E41E4",
       "rom_offset": 934372,
       "original_bytes": 1092,
@@ -17144,6 +17797,12 @@
       "rom_offset": 944712,
       "original_bytes": 198,
       "sha256": "babf85b8a93a90bd5829713d0c580056ab91716d5850d89f3287f1e2528ff477"
+    },
+    {
+      "name": "RemainingBand43_000E6B10",
+      "rom_offset": 944912,
+      "original_bytes": 580,
+      "sha256": "2402a9d80ddc501c92ba5a9fb38e003868b4b7a2122db55b734997f029e2c374"
     },
     {
       "name": "RemainingBand43_000E6D54",
@@ -17386,6 +18045,12 @@
       "sha256": "a2d1fac17469ca286e6904432b70302955302511a663ca90a65424281941fead"
     },
     {
+      "name": "RemainingBand43_000ED4E8",
+      "rom_offset": 972008,
+      "original_bytes": 710,
+      "sha256": "5ecaf621a7d76414238093eda266280365dadaabaeec38cc47bbfe6a9fe14b50"
+    },
+    {
       "name": "OriginalActionCallback_000ED7B0",
       "rom_offset": 972720,
       "original_bytes": 590,
@@ -17530,6 +18195,12 @@
       "sha256": "9ad81dbb4a276bab49a7afab1e2ce3fcbdbce360b7e0f2b24791adb125515fdb"
     },
     {
+      "name": "RemainingBand43_000EF638",
+      "rom_offset": 980536,
+      "original_bytes": 822,
+      "sha256": "c76908f7ac493554d38cd7c4f841a66ac368a4e0aa41426eb51002ce68899b0c"
+    },
+    {
       "name": "RemainingBand43_000EF970",
       "rom_offset": 981360,
       "original_bytes": 318,
@@ -17582,6 +18253,18 @@
       "rom_offset": 986108,
       "original_bytes": 348,
       "sha256": "8b0ce4247f5e26a08018e8f4d3e9b37c6dd961a93ea6a8b22ef41692fcc10d8f"
+    },
+    {
+      "name": "RemainingBand43_000F0D58",
+      "rom_offset": 986456,
+      "original_bytes": 410,
+      "sha256": "3f5e144083273e79ad5a39a852bf6b050a16992094daab6da47e1555b02052b9"
+    },
+    {
+      "name": "RemainingBand43_000F0EF4",
+      "rom_offset": 986868,
+      "original_bytes": 654,
+      "sha256": "0396db833a2618b1403223f0d085054cbe94211cf02cfe2bc7ea8a607627aee4"
     },
     {
       "name": "RemainingBand43_000F1184",
@@ -17710,6 +18393,12 @@
       "sha256": "bf3d137c40b3f4bdfa372c7c5d1f2d08106f95593ab7a0ce68975978f32c18c3"
     },
     {
+      "name": "OriginalActionCallback_000F38C4",
+      "rom_offset": 997572,
+      "original_bytes": 572,
+      "sha256": "767c583f6592c5ca01faf287819ff5c6ae94468c6f1f65a281f59143ad79e287"
+    },
+    {
       "name": "func_080F3B00",
       "rom_offset": 998144,
       "original_bytes": 460,
@@ -17722,6 +18411,12 @@
       "sha256": "07bb45507715a94b5cb86ab19519c6ad4f5a4615e6e726f43516d352d67d6e68"
     },
     {
+      "name": "OriginalActionCallback_000F3E7C",
+      "rom_offset": 999036,
+      "original_bytes": 256,
+      "sha256": "a40195b6a72d3cb870225e4fca89361ae7b8b287ff0654a8ba50cfb7e46ee934"
+    },
+    {
       "name": "RemainingBand43_000F3F7C",
       "rom_offset": 999292,
       "original_bytes": 350,
@@ -17732,6 +18427,12 @@
       "rom_offset": 999644,
       "original_bytes": 236,
       "sha256": "1f763a111003a73f7da5e2c7c60e41b115102ae9e976e431c1da7a1f6f8c1c64"
+    },
+    {
+      "name": "OriginalActionCallback_000F41C8",
+      "rom_offset": 999880,
+      "original_bytes": 648,
+      "sha256": "58a340d00ca688b270389556122d0ba2265ca5014539895c9ff410063512d2b7"
     },
     {
       "name": "func_080F4450",
@@ -17750,6 +18451,12 @@
       "rom_offset": 1001612,
       "original_bytes": 482,
       "sha256": "6b51312fab757053188d5e7d3f96e82bab0fec07cf2f03b2dee13b5aa1850cc5"
+    },
+    {
+      "name": "RemainingBand43_000F4A70",
+      "rom_offset": 1002096,
+      "original_bytes": 508,
+      "sha256": "7682d8936c87aae81b51ecb86503b6651aedfa9e0e0d6ecea6c1717095476fa0"
     },
     {
       "name": "RemainingBand43_000F4C6C",
@@ -17782,10 +18489,22 @@
       "sha256": "271c845b4baaa88db8d5a130bab602de50a067a20dd852bbf7ac4e49354aa99f"
     },
     {
+      "name": "OriginalActionCallback_000F5864",
+      "rom_offset": 1005668,
+      "original_bytes": 896,
+      "sha256": "1785325df383ebba1f08e1459bc070e0a86493667f4cd54929d395e1c48b2b13"
+    },
+    {
       "name": "RemainingBand43_000F5F7C",
       "rom_offset": 1007484,
       "original_bytes": 226,
       "sha256": "c77896fdd67d718e4c5ca49a7059668d1884f379f6f7baad02c8f0d5edcc9946"
+    },
+    {
+      "name": "OriginalActionCallback_000F6060",
+      "rom_offset": 1007712,
+      "original_bytes": 1072,
+      "sha256": "6fb8d0c6c7887b39f6670d71e72ad3e58131d4d59ae4de19ed75eb79fa34062d"
     },
     {
       "name": "RemainingBand43_000F6490",
@@ -17794,10 +18513,34 @@
       "sha256": "2dae5e0e770fd6d721169909a2b33a0026df9e54721e78ee5359a1958509bf7d"
     },
     {
+      "name": "OriginalActionCallback_000F6520",
+      "rom_offset": 1008928,
+      "original_bytes": 1084,
+      "sha256": "dbe405d576694eab44281b01ea587450d0e6010282e9db7035bf9d3fcb0d7886"
+    },
+    {
       "name": "RemainingBand43_000F695C",
       "rom_offset": 1010012,
       "original_bytes": 226,
       "sha256": "573e992bd983be9188f0c8e53824fdd3ef4cfe419390f5b4b851b188b6710fa5"
+    },
+    {
+      "name": "OriginalActionCallback_000F6A40",
+      "rom_offset": 1010240,
+      "original_bytes": 520,
+      "sha256": "e8afcb6ed6be617e2694613f1ffa9a5aed6d35e5da3475b61c2a8a5b39bf8327"
+    },
+    {
+      "name": "OriginalActionCallback_000F6E74",
+      "rom_offset": 1011316,
+      "original_bytes": 748,
+      "sha256": "7ca8399e6b24b94317fd13e883c47195c0af5e52a7e53abdc8a1a3db4a295a64"
+    },
+    {
+      "name": "OriginalActionCallback_000F7160",
+      "rom_offset": 1012064,
+      "original_bytes": 336,
+      "sha256": "375f2f014efbe2ed8168cc599835be480fbd119c75212f2c5d8929904074bec8"
     },
     {
       "name": "OriginalActionCallback_000F7B18",
@@ -17824,6 +18567,12 @@
       "sha256": "b8db77cf18dff77b86207a4041dc98c5e7fee4c72931fa537f840dcf82736111"
     },
     {
+      "name": "OriginalActionCallback_000F86EC",
+      "rom_offset": 1017580,
+      "original_bytes": 656,
+      "sha256": "58f9e600234d7dbbbc3621ca1b4060f8f09cfa52d2ab2561dbd7c871e4d191db"
+    },
+    {
       "name": "func_080F8C38",
       "rom_offset": 1018936,
       "original_bytes": 514,
@@ -17836,10 +18585,34 @@
       "sha256": "91f2c385222c9e769b10d400ff5d927bb909ea0714d565e4bbb87f810eed596e"
     },
     {
+      "name": "OriginalActionCallback_000F9168",
+      "rom_offset": 1020264,
+      "original_bytes": 632,
+      "sha256": "22c6532036fc4fecc6e1847508e0f8c87663245a2d6fee5c852f35f90b8fae19"
+    },
+    {
+      "name": "OriginalActionCallback_000F93E0",
+      "rom_offset": 1020896,
+      "original_bytes": 324,
+      "sha256": "2a2dfd60dfaad9b8bb998b1092f8955f502ae419032b2364b7b222c935bf033f"
+    },
+    {
       "name": "RemainingBand43_000F9838",
       "rom_offset": 1022008,
       "original_bytes": 210,
       "sha256": "a48f8e28070c6f5bbc378ebb2e84b8a91a9006e2f35dde0bb742f285b021743a"
+    },
+    {
+      "name": "OriginalActionCallback_000F990C",
+      "rom_offset": 1022220,
+      "original_bytes": 520,
+      "sha256": "fd2fdbe06c40dd9512ba8462bbcb1231d675f9f1e0e7fd5d87fb977a1515c5af"
+    },
+    {
+      "name": "OriginalActionCallback_000FA614",
+      "rom_offset": 1025556,
+      "original_bytes": 344,
+      "sha256": "1ab1c23a1c6f95590bf4ff5bb4b508fbc4b9d66590bf87e3ba122f14aa03c959"
     },
     {
       "name": "RemainingBand43_000FACF8",
@@ -17848,10 +18621,22 @@
       "sha256": "17bc5c733679340d770a16ee6f52ac4d2e3cbe785140bf60ff2dcb36646c2bf2"
     },
     {
+      "name": "OriginalActionCallback_000FB0B4",
+      "rom_offset": 1028276,
+      "original_bytes": 680,
+      "sha256": "a140807b176ba1be63cafae59c78562c59b2bb5c29ac1be8e47e2d1a35ed5ccb"
+    },
+    {
       "name": "func_080FB35C",
       "rom_offset": 1028956,
       "original_bytes": 348,
       "sha256": "52015ab080e7041deaef08eda9763b9a872fba30ffbb2eaa7e2ddd0de9964d57"
+    },
+    {
+      "name": "OriginalActionCallback_000FB4B8",
+      "rom_offset": 1029304,
+      "original_bytes": 676,
+      "sha256": "39a6ac64160215b45cd7874dad3bf1dc90227d8aed02fdd7478c428cd66b7a7d"
     },
     {
       "name": "func_080FB75C",
@@ -17896,6 +18681,12 @@
       "sha256": "b3f73a7dc2d05563f4b7c3538342634f8d8dda78d89eef2aa163aab453fb7ac9"
     },
     {
+      "name": "OriginalRegisteredActionQuestion_000FC800",
+      "rom_offset": 1034240,
+      "original_bytes": 910,
+      "sha256": "81f2d9142d075aba81c02db13948c2e5ec2db6b75e619ce0e97f36a11686488b"
+    },
+    {
       "name": "OriginalActionCallback_000FCB90",
       "rom_offset": 1035152,
       "original_bytes": 984,
@@ -17906,6 +18697,12 @@
       "rom_offset": 1037144,
       "original_bytes": 318,
       "sha256": "031e5e836c438dfa4e77d47e0b96df1bb6589c767a0593d8bbbfb1d6a3abc8ca"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_000FDAB0",
+      "rom_offset": 1039024,
+      "original_bytes": 230,
+      "sha256": "4d36fb5ed9a4c6a903615b2a569e969da7c94b8def732dcd5a8480d881f8d4ec"
     },
     {
       "name": "RemainingBand43_000FDE58",
@@ -17926,6 +18723,12 @@
       "sha256": "e8556c904c770d0596321191c686b671e8119761d765e84be66295e2df9a0281"
     },
     {
+      "name": "OriginalRegisteredActionQuestion_000FE2E8",
+      "rom_offset": 1041128,
+      "original_bytes": 682,
+      "sha256": "2ca2fb0a952ce0d6be79110cab1d2431ddb55eeac39be1320b79e89d616b2246"
+    },
+    {
       "name": "func_080FE7BC",
       "rom_offset": 1042364,
       "original_bytes": 354,
@@ -17944,10 +18747,28 @@
       "sha256": "5c8df8fb20c27cd422a10fbade5616b4d274acb382d44f17929f1d4511d7a664"
     },
     {
+      "name": "OriginalActionCallback_000FF180",
+      "rom_offset": 1044864,
+      "original_bytes": 324,
+      "sha256": "3780ea31382d42598e49f5ce9aa8c88edfce916ff5cdb425faff89668f4da597"
+    },
+    {
       "name": "func_080FF2C4",
       "rom_offset": 1045188,
       "original_bytes": 772,
       "sha256": "76729d006c1fa368412d2a5b926ede8d8d6484832dd7af0957fc097f6686af5a"
+    },
+    {
+      "name": "OriginalActionCallback_000FF5C8",
+      "rom_offset": 1045960,
+      "original_bytes": 420,
+      "sha256": "f62f12b70543cb7acc417d85d0d4bcc3f48181c6fd8da121fe4570dee2cff2e8"
+    },
+    {
+      "name": "OriginalActionCallback_000FF76C",
+      "rom_offset": 1046380,
+      "original_bytes": 516,
+      "sha256": "c8529761177ad66d5b46c97b64c15ab472c2ef51f2615c175f3ec8822080941d"
     },
     {
       "name": "func_080FFCC0",
@@ -17974,10 +18795,28 @@
       "sha256": "e4f5a40cb19fabdb3c5b6c9b715c5e82bf7e7f8125a943c236dcf435e4ded25b"
     },
     {
+      "name": "OriginalActionCallback_00100D00",
+      "rom_offset": 1051904,
+      "original_bytes": 344,
+      "sha256": "df46edea9232177bd93c83b6c8d866062609c1e350ad0e5fa8945067715497a9"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_00100E58",
+      "rom_offset": 1052248,
+      "original_bytes": 152,
+      "sha256": "e0925201df849b0717c324ce1ae0fe5668f8a377294b21fb1ee148ed69651282"
+    },
+    {
       "name": "RemainingBand43_00100EF0",
       "rom_offset": 1052400,
       "original_bytes": 1312,
       "sha256": "30cb30556cd8cc61fc29de9869783c86a5358f2998bbfb8e3dc4d4ee657fc436"
+    },
+    {
+      "name": "OriginalActionCallback_00101410",
+      "rom_offset": 1053712,
+      "original_bytes": 556,
+      "sha256": "5aa5097d5cc38236a0a4f94833d9ba7c1ea3a89815f36011802125a6e26759c3"
     },
     {
       "name": "func_0810163C",
@@ -17990,6 +18829,12 @@
       "rom_offset": 1054860,
       "original_bytes": 512,
       "sha256": "7287adea7090903394aeaa5e30568b7e1d87dad435555ad6c486ace9418d44c1"
+    },
+    {
+      "name": "OriginalActionCallback_00101A8C",
+      "rom_offset": 1055372,
+      "original_bytes": 576,
+      "sha256": "97e5235dfb8f4a78ddcfc083eeefd5415b2f948e660bd3cd8dec2ee96f912852"
     },
     {
       "name": "func_08101CCC",
@@ -18052,10 +18897,22 @@
       "sha256": "3268469ceecedf88c89d04928cdc6d0fbef3f15bee3ecea74f73df4661aab862"
     },
     {
+      "name": "OriginalActionCallback_00103E14",
+      "rom_offset": 1064468,
+      "original_bytes": 1204,
+      "sha256": "73504ceee1150b15b79329cd9aa43874a2962c723160ebf735f083554308e37b"
+    },
+    {
       "name": "func_081042C8",
       "rom_offset": 1065672,
       "original_bytes": 194,
       "sha256": "9921aa4bef7327f23ab7be3e8c063d1cf6f93ca68a660f6a18b8322367978ff9"
+    },
+    {
+      "name": "OriginalActionCallback_0010438C",
+      "rom_offset": 1065868,
+      "original_bytes": 496,
+      "sha256": "98e23c991b59fe7f9de7db67edbe4425f35dfdb266f0c04a9dd9c0c4cb00de96"
     },
     {
       "name": "func_0810457C",
@@ -18094,10 +18951,22 @@
       "sha256": "d6e65547f53920735ffd14269b9f9ff31e6340158ad91bdd1b43a3acaa93896b"
     },
     {
+      "name": "OriginalRegisteredActionQuestion_0010533C",
+      "rom_offset": 1069884,
+      "original_bytes": 838,
+      "sha256": "b741ebe1a5038b49253bd8a48516353f859fe9ed315bf1a9b5a9430b7fcc38c2"
+    },
+    {
       "name": "func_08105684",
       "rom_offset": 1070724,
       "original_bytes": 264,
       "sha256": "e9b8948c2d8cef6fa29f29bb3b38e3a50b17aeef4a961473a0530b36b3ccac46"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_00105930",
+      "rom_offset": 1071408,
+      "original_bytes": 1040,
+      "sha256": "25502e6d25662906a767e10f2d7d5eed47fb154f16ea5251bda3e967f4996afd"
     },
     {
       "name": "func_08105D40",
@@ -18176,6 +19045,12 @@
       "rom_offset": 1077936,
       "original_bytes": 552,
       "sha256": "2ec847fa825a5641565f59bff2911562e7954bf6fda6628bdc659fd8c30d1574"
+    },
+    {
+      "name": "OriginalRegisteredActionQuestion_0010781C",
+      "rom_offset": 1079324,
+      "original_bytes": 644,
+      "sha256": "a1dc9ee93f2392c265274505c0fdbb7b00b74b7e8c36f679c6c1ca919fcd005d"
     },
     {
       "name": "RemainingBand43_0010835C",
@@ -18358,16 +19233,52 @@
       "sha256": "90961e824ddeba754c56cbfb31075e126065a43310a1235d66cdcfa12b7a6373"
     },
     {
+      "name": "RemainingBand43_0010EF0C",
+      "rom_offset": 1109772,
+      "original_bytes": 3052,
+      "sha256": "37866b92853768065e480e0d401f44dfd3d4f19916f36a9aa8a891802bcd771d"
+    },
+    {
+      "name": "RemainingBand43_0010FAF8",
+      "rom_offset": 1112824,
+      "original_bytes": 256,
+      "sha256": "ebc3560d4b3b0d80d4cccc7ea49fa7dc3c0b4b8855cf15e96d3489a31557459e"
+    },
+    {
       "name": "OriginalAuthoredSequenceParent_0010FBF8",
       "rom_offset": 1113080,
       "original_bytes": 384,
       "sha256": "d38c0053b4fcfc7e365975f003e4b1367f6eca7a495c9f530f42d24c4a628582"
     },
     {
+      "name": "RemainingBand43_0010FD78",
+      "rom_offset": 1113464,
+      "original_bytes": 1122,
+      "sha256": "b739d649cc8e7a77964307dd6be3c1c508b0d11c524fff04c7eb35556aae06d4"
+    },
+    {
       "name": "RemainingBand43_001101DC",
       "rom_offset": 1114588,
       "original_bytes": 280,
       "sha256": "8f2896b297887a6c8135c4f6e284b2acb6b232de21cac065f4123eebce28d1cd"
+    },
+    {
+      "name": "RemainingBand43_001102F4",
+      "rom_offset": 1114868,
+      "original_bytes": 486,
+      "sha256": "f3694f876ad932c8c19d8b4fb4df8d1cd6dc4b6c4dc7d0d4d4dfda91d96af009"
+    },
+    {
+      "name": "OriginalAuthoredSequence_00110FE0",
+      "rom_offset": 1118176,
+      "original_bytes": 704,
+      "sha256": "53db90fb5be2208fc65c55c1cdb0047278b5c641e33960441a2e553b266b8766"
+    },
+    {
+      "name": "RemainingBand43_001112A0",
+      "rom_offset": 1118880,
+      "original_bytes": 970,
+      "sha256": "2f2c259689328242b83bd563f334a84395cceed91a0571e5ca2c054b57c7bcc4"
     },
     {
       "name": "RemainingBand43_00111A5C",
@@ -18400,6 +19311,12 @@
       "sha256": "5bc779caa2b187cd7c3ad07382fe19a3f86727962b72b011a9fdfb49c93e3037"
     },
     {
+      "name": "RemainingBand43_001120CC",
+      "rom_offset": 1122508,
+      "original_bytes": 660,
+      "sha256": "c01caf0a36bcda7fecb883efa2e658736d79db54a8bb0dfd8e1e91961cde0aa1"
+    },
+    {
       "name": "func_08112360",
       "rom_offset": 1123168,
       "original_bytes": 562,
@@ -18412,10 +19329,22 @@
       "sha256": "7944c9a143f998c4ac62dc5756e5e88b9b3fc20f5116eb04afac56326e3feccb"
     },
     {
+      "name": "OriginalAuthoredSequence_00112734",
+      "rom_offset": 1124148,
+      "original_bytes": 812,
+      "sha256": "3bfbdf4302f3edba6581edb72a0170a549225dee3ad08466cd0888d5438ffb2a"
+    },
+    {
       "name": "RemainingBand43_00112A60",
       "rom_offset": 1124960,
       "original_bytes": 138,
       "sha256": "489e1c8f950c212ec82ebec527454cdadf4838341af2f4fbdc28a2daedd8e2ec"
+    },
+    {
+      "name": "RemainingBand43_00112AEC",
+      "rom_offset": 1125100,
+      "original_bytes": 480,
+      "sha256": "bf34057ffc780d34fa77ec19a7d0f04cbaf8c35275bc391123d03c883426a338"
     },
     {
       "name": "func_08112CCC",
@@ -18454,6 +19383,12 @@
       "sha256": "1fbe2822e11d7e15fc34aea7ade7e6bc9fc1d0b62c80dec66506f1c4d5228264"
     },
     {
+      "name": "OriginalAuthoredSequence_00113CE0",
+      "rom_offset": 1129696,
+      "original_bytes": 780,
+      "sha256": "e2fa362cfc75d2e939982f32e91049dc2e51630741cd0d01e99748dd6588d86e"
+    },
+    {
       "name": "RemainingBand43_001141EC",
       "rom_offset": 1130988,
       "original_bytes": 368,
@@ -18470,6 +19405,12 @@
       "rom_offset": 1135832,
       "original_bytes": 136,
       "sha256": "64449d4394ad72a45d3506c69df38bcac28351d4262064239cd293871c808f2f"
+    },
+    {
+      "name": "OriginalAuthoredSequence_00115560",
+      "rom_offset": 1135968,
+      "original_bytes": 748,
+      "sha256": "9a5360ddffa801b36267fc415054a6a989b7580b211ad896ffdf0350a2aee605"
     },
     {
       "name": "RemainingBand43_0011584C",
@@ -18494,6 +19435,12 @@
       "rom_offset": 1137472,
       "original_bytes": 44,
       "sha256": "762dc25009b59cf494f618813c5ff08ee184e047a6c4a43b7cad7515ee69563c"
+    },
+    {
+      "name": "RemainingBand43_00115B6C",
+      "rom_offset": 1137516,
+      "original_bytes": 374,
+      "sha256": "57af493a8fc22ed735c8d0362d0c08b25da810bc3710ce0f647e842e61a438bc"
     },
     {
       "name": "RemainingBand43_00115CE4",
@@ -18574,6 +19521,12 @@
       "sha256": "fbaf5ade8b7f172a8f1045cb738cbb6819cefb476fac020011e5d6339aee9a36"
     },
     {
+      "name": "OriginalActionCallback_0011802C",
+      "rom_offset": 1146924,
+      "original_bytes": 832,
+      "sha256": "41c9928af63d768865ae8933ccc6a72d2805135cbc2d35033514fd8222d7b353"
+    },
+    {
       "name": "RemainingBand43_00118500",
       "rom_offset": 1148160,
       "original_bytes": 142,
@@ -18584,6 +19537,12 @@
       "rom_offset": 1148304,
       "original_bytes": 410,
       "sha256": "95487499155b1de90df96e995604328198608d742b6ced2397973bfdd6b9bc80"
+    },
+    {
+      "name": "OriginalActionCallback_0011872C",
+      "rom_offset": 1148716,
+      "original_bytes": 576,
+      "sha256": "72b7becdb8621e7266bb5daf4dc8ec9d4e6e67cbab99c61eaa54677d7ec633c8"
     },
     {
       "name": "OriginalActionCallback_0011896C",
@@ -18754,6 +19713,12 @@
       "sha256": "0689c5e1096e95e77b718809aa3e5e69f5522a2c973ce45d9a3a200bf4bc0452"
     },
     {
+      "name": "RemainingBand43_0011C6B0",
+      "rom_offset": 1164976,
+      "original_bytes": 430,
+      "sha256": "0e808483f3e84035a90aee4feaa9e2facfb9da26b44e9afe63f99717c97f774d"
+    },
+    {
       "name": "OriginalSceneDefinitionQuestion_0011C860",
       "rom_offset": 1165408,
       "original_bytes": 526,
@@ -18904,10 +19869,40 @@
       "sha256": "b1b53a50c85b5d9794c05e4d9600049a34848b019746c0395c71122c611a02de"
     },
     {
+      "name": "RemainingBand43_0011EF58",
+      "rom_offset": 1175384,
+      "original_bytes": 820,
+      "sha256": "12a0792d9109595c45128b51650d316bc5ce1dd0794ab738ae867d8cef49c3a2"
+    },
+    {
+      "name": "RemainingBand43_0011F5E0",
+      "rom_offset": 1177056,
+      "original_bytes": 892,
+      "sha256": "b50868c24de7150753317b58b118597b8c0c18f1eae9dffc0265941083fd5460"
+    },
+    {
+      "name": "RemainingBand43_0011F95C",
+      "rom_offset": 1177948,
+      "original_bytes": 1048,
+      "sha256": "1acd43b65ddd3dd709bb3007a770af7360c98e446a86237ee378a49e9aba45ee"
+    },
+    {
+      "name": "RemainingBand43_0011FFD8",
+      "rom_offset": 1179608,
+      "original_bytes": 960,
+      "sha256": "28d23dd38582090c9e662697caa4c120ee0ee76aef548073979a82eeb1ed4fc7"
+    },
+    {
       "name": "func_08120398",
       "rom_offset": 1180568,
       "original_bytes": 272,
       "sha256": "30b9221721dc06da099d433da19323ff8d311980d72daeb1b3aadc6b9009bbf1"
+    },
+    {
+      "name": "TaskConstructor45_001204A8",
+      "rom_offset": 1180840,
+      "original_bytes": 634,
+      "sha256": "71908df57a5717be13f7c82968289b35858b8c960a177056f089ae43a88b65b8"
     },
     {
       "name": "OriginalSceneDefinitionQuestion_00120724",
@@ -19852,6 +20847,12 @@
       "sha256": "7b34a4bffdb7d26a50b869f48defc05b2a74beadbeb6f04549bc62856f823751"
     },
     {
+      "name": "FilterSceneEntitiesForTransition_08124850",
+      "rom_offset": 1198160,
+      "original_bytes": 290,
+      "sha256": "e1890be5c97f57333e75147502fdb5b7f7ec50bdb7b6cad7f81528e2167f6d6f"
+    },
+    {
       "name": "BuildAxisAlignedScenePath_08124974",
       "rom_offset": 1198452,
       "original_bytes": 344,
@@ -19964,6 +20965,12 @@
       "rom_offset": 1202380,
       "original_bytes": 108,
       "sha256": "4791727477bdd52848808bb9b975feecb46a7d6fa5b004a85800759858b5c755"
+    },
+    {
+      "name": "Remaining38_00125938",
+      "rom_offset": 1202488,
+      "original_bytes": 92,
+      "sha256": "5aa205995b42ae53b3008594d1902feb87cb650480aeaa7bdd967f7f7899981e"
     },
     {
       "name": "CoreRegion_00125994",
@@ -20110,6 +21117,12 @@
       "sha256": "3b18ae0c2bcbfd04f152e634fdaea66059670f62c41edfee8b28d3b67fee6ca5"
     },
     {
+      "name": "CoreRegion_00127458",
+      "rom_offset": 1209432,
+      "original_bytes": 314,
+      "sha256": "c8d47ef776f97a660c229e3e434970f94e2faeaebcaf5f127a56a10419eda0d3"
+    },
+    {
       "name": "CoreRegion_00127594",
       "rom_offset": 1209748,
       "original_bytes": 322,
@@ -20120,6 +21133,12 @@
       "rom_offset": 1210072,
       "original_bytes": 240,
       "sha256": "5c1b9cf1d94d0c38b4525bc9323abc668a1510acdb90da9343bcdf7bc2e89cb0"
+    },
+    {
+      "name": "CoreRegion_001277C8",
+      "rom_offset": 1210312,
+      "original_bytes": 456,
+      "sha256": "b5c243743efd9870fd71d0b259367d6644686d2e1e55d44d44cb2b62c2baa4d6"
     },
     {
       "name": "func_08127990",
@@ -20386,6 +21405,12 @@
       "sha256": "b6b45d25ab9a3f81e597c71e331c5723b628f7e17ca7580457d9eab12f3f4588"
     },
     {
+      "name": "CoreRegion_0012B7F0",
+      "rom_offset": 1226736,
+      "original_bytes": 400,
+      "sha256": "c7eb073982b055a2f10ddb9388856cd1dee11b3821ae304bbad807a44ee3b2af"
+    },
+    {
       "name": "CoreRegion_0012B980",
       "rom_offset": 1227136,
       "original_bytes": 134,
@@ -20624,6 +21649,12 @@
       "rom_offset": 1237864,
       "original_bytes": 72,
       "sha256": "78b29ff5d27ffb91f9da6f269ef7fea8d0a62197d027c9cc464d6f7d04abc0ec"
+    },
+    {
+      "name": "CoreFrontier_0012E3B0",
+      "rom_offset": 1237936,
+      "original_bytes": 56,
+      "sha256": "3eb2293a49619afb3620fbdc45a5cb5e45b4e711e6a760eb226e5b5cfd754fa6"
     },
     {
       "name": "func_0812E3E8",
@@ -22570,6 +23601,12 @@
       "sha256": "58d7fbc3362718ddbd8162acc31138730a059fd78357d7c989af19c7ea51abb7"
     },
     {
+      "name": "Registered39_00135E88",
+      "rom_offset": 1269384,
+      "original_bytes": 184,
+      "sha256": "147b9d4c8c7714c2d718a0c58927f1dee022ab3299a1757745061585608aab2c"
+    },
+    {
       "name": "func_08135FA0",
       "rom_offset": 1269664,
       "original_bytes": 92,
@@ -22660,6 +23697,12 @@
       "sha256": "f5101eb066d05bea325c3e40658a6fc61ab1173acd6d5e8ecf5215aa273a529e"
     },
     {
+      "name": "Registered39_0013790C",
+      "rom_offset": 1276172,
+      "original_bytes": 188,
+      "sha256": "bc4fb13cf8d243ccbec444081bd20194e1a1f3f40b8c792acb3aa58a125a719b"
+    },
+    {
       "name": "Registered39_001379C8",
       "rom_offset": 1276360,
       "original_bytes": 38,
@@ -22702,6 +23745,18 @@
       "sha256": "9726bc4c78b64e0df53025985b1d194f3fb48cae08502aff9fb3f96a08431b8b"
     },
     {
+      "name": "CoreGlobal36_00137B20",
+      "rom_offset": 1276704,
+      "original_bytes": 48,
+      "sha256": "b432d103aa09f8c22f43d89be85dba40ec6294905ba6f5945e807f07b115ecb9"
+    },
+    {
+      "name": "Remaining38_00137B50",
+      "rom_offset": 1276752,
+      "original_bytes": 248,
+      "sha256": "767f1010c5ad6c0147c41ba235efc0e48788d09be4d80441bd364062765023a5"
+    },
+    {
       "name": "func_08137C48",
       "rom_offset": 1277000,
       "original_bytes": 4,
@@ -22736,6 +23791,12 @@
       "rom_offset": 1278804,
       "original_bytes": 72,
       "sha256": "dff396ee5bc95ba1eff82bee6f27500607e463aa15e712edb1339f086a6067dc"
+    },
+    {
+      "name": "Remaining38_0013839C",
+      "rom_offset": 1278876,
+      "original_bytes": 276,
+      "sha256": "20fe364d9d8cc18054d7f984daca9084472f79dd5881cc0fa7fb331f64f0362c"
     },
     {
       "name": "Remaining38_001384B0",
@@ -22894,6 +23955,12 @@
       "sha256": "d97deab82175e91009a907afea0895980451acf7eeb2d2db2a665b55a6596d13"
     },
     {
+      "name": "CoreRegistered40_0013C0EC",
+      "rom_offset": 1294572,
+      "original_bytes": 5044,
+      "sha256": "0eb163daab454acc480f985e70e441fbf2cc5d989308ee83b1b3666961c6d7a7"
+    },
+    {
       "name": "func_0813D4A0",
       "rom_offset": 1299616,
       "original_bytes": 120,
@@ -23050,6 +24117,12 @@
       "sha256": "f16d30c1f52f08e29bf33a73401e962e5244983e9a527123af31043d0a2a539e"
     },
     {
+      "name": "CoreRegistered40_0013F1D8",
+      "rom_offset": 1307096,
+      "original_bytes": 84,
+      "sha256": "3e3008f32cdd378627bd1758c23c3ecda8c186db2e2d132f8cd022ddecfb98dd"
+    },
+    {
       "name": "func_0813FB0C",
       "rom_offset": 1309452,
       "original_bytes": 92,
@@ -23068,6 +24141,12 @@
       "sha256": "d2a9798e9bb49ed2ea7e4da5d122ab810fe772682182f1ede0d1062d23413e2f"
     },
     {
+      "name": "CoreRegistered40_0013FC24",
+      "rom_offset": 1309732,
+      "original_bytes": 104,
+      "sha256": "69d0cea45de0162412e6d23efe6c45912113139705dcb0348493517cf5d47724"
+    },
+    {
       "name": "Registered39_0014011C",
       "rom_offset": 1311004,
       "original_bytes": 164,
@@ -23084,6 +24163,12 @@
       "rom_offset": 1315956,
       "original_bytes": 10,
       "sha256": "8b749b1d192013020b67b23028d8d7a3dc27bd4785e6f45e20fe1d47fc01a5e7"
+    },
+    {
+      "name": "CoreLibrary42_001414BC",
+      "rom_offset": 1316028,
+      "original_bytes": 52,
+      "sha256": "e47073f82e19b6e661aa549ca92b6ce4ebad0b40a48d323a0c9581bc15935014"
     },
     {
       "name": "BattleRuntimeDependency_00141520",
@@ -23182,6 +24267,12 @@
       "sha256": "548326bfc816720989b8bee58969bce1d484f8881d1051147fae57884c0a86e9"
     },
     {
+      "name": "CoreLibrary42_00142148",
+      "rom_offset": 1319240,
+      "original_bytes": 24,
+      "sha256": "0d0c2fea25072a78da01e25b53ea242124850a4708aa8a15f2567c418142b8b8"
+    },
+    {
       "name": "func_0814220C",
       "rom_offset": 1319436,
       "original_bytes": 54,
@@ -23260,6 +24351,12 @@
       "sha256": "4828c2792170a6e62ee6c484ca865379ee664f50a8487a46afbac0bd7dd7636c"
     },
     {
+      "name": "CoreFrontier_001443FC",
+      "rom_offset": 1328124,
+      "original_bytes": 98,
+      "sha256": "aa822d873bad381a62e3c3e07b06003a41beea59bc3edc791f7e316eb08b7ebb"
+    },
+    {
       "name": "CoreDependency29_00144460",
       "rom_offset": 1328224,
       "original_bytes": 86,
@@ -23308,10 +24405,22 @@
       "sha256": "640e5b777eab91fb50094bed70744fafa55046d2bf94026529fac10883d044da"
     },
     {
+      "name": "CoreLibrary42_00145608",
+      "rom_offset": 1332744,
+      "original_bytes": 164,
+      "sha256": "f71297e5bbf799c39b51e9a2531bcc45e15973b8d75369c0af48f6ce93758c66"
+    },
+    {
       "name": "CoreLibrary42_001456AC",
       "rom_offset": 1332908,
       "original_bytes": 152,
       "sha256": "5bc6c1b30b9ef6694b19f65e9cb4717464094575425fe9bb2696f51abb1615fa"
+    },
+    {
+      "name": "CoreFrontier_00145798",
+      "rom_offset": 1333144,
+      "original_bytes": 100,
+      "sha256": "542dfa1c6532cd5b907c12dd7d33a5309940032bbf9dec7abed4ec360ee1c73a"
     },
     {
       "name": "func_08145990",
@@ -23770,7 +24879,8 @@
       "sha256": "e61d6928eb8039a1fa6795a6d8f15d31a6c9dd7a69f754ff0008375fc65ab265"
     }
   ],
-  "module_set_sha256": "9610c08f0e69d2795750a9be32b36f8e8e379849753d6ef392a4c4ab76abdc69",
-  "function_table_sha256": "72be52261d94602b18cd5aa421a7e1f8a191374d9cfde87c512976cb06c5ed18",
-  "function_range_count": 4102
+  "module_set_sha256": "84994064cccf5927f10bfc8e2b82be9ac9cf7b778ae1131dae53556e9c3ddfa2",
+  "function_table_sha256": "4b02a97a5ed607791f19793982427e882898358f4ec45129e375371ac571358e",
+  "function_range_count": 4287,
+  "provenance": "Existing release and incremental native hashes consolidated; no new recovery credit."
 }

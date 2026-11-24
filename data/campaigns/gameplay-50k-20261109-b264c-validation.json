@@ -1,0 +1,11 @@
+{
+  "schema": "source-range-publication-validation-v1",
+  "scope": "One complete2258B mixed range, no ROM required for public-source validation.",
+  "modules": 1,
+  "original_bytes": 2258,
+  "pure_c_bytes": 0,
+  "mixed_bytes": 2258,
+  "inline_instruction_bytes": 24,
+  "module_set_sha256": "5a0941b4f442dca83fd3accef1674c93d7d0d669a09ea0ee47039046fa7e698d",
+  "checks": "Public fixed-O2 copy compiled and full-range hash matched; independent mechanical gate and coherent production image hash passed before publication."
+}
