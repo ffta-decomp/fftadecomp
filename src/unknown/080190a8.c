@@ -1,4 +1,6 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
+
 struct MissionPackedId { u16 mission_id:10; u16 other_bits:6; } __attribute__((packed));
 typedef char MissionPackedIdSize[(sizeof(struct MissionPackedId)==2)?1:-1];
 
@@ -18,7 +20,6 @@ typedef struct {
 #define CONTEXT_SELECTOR_ENABLED (*(volatile const u8 *)0x02002184)
 #define SCENE_SELECTOR_VALUE (*(volatile const u8 *)0x02001f69)
 
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 extern u16 WriteUnsignedNumberText(u8 *output, u32 value);
 extern u16 CopyEncodedTextToBuffer(u8 *output, const u8 *source);
 

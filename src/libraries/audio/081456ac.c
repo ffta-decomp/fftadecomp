@@ -5,6 +5,8 @@
  * Authorship: upstream contributors; existing notices retained.
  * No additional license grant is inferred. Validation: data/upstream-imports-20261030.json.
  */
+#include "libraries/audio/dma.h"
+
 typedef unsigned char u8;
 typedef unsigned int u32;
 
@@ -26,7 +28,6 @@ typedef struct {
 extern SoundState *data_03007FF0;
 /* High byte of GBA SOUNDBIAS: bits 6-7 select PWM resolution. */
 extern u8 data_04000089;
-extern void func_08145798(void);
 extern void func_08145608(u32 frequency);
 
 /* Complete [0x081456AC, 0x08145744): 152 bytes, including literal pools. */

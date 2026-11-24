@@ -1,7 +1,7 @@
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
 
 extern u16 WriteUnsignedNumberText(u8 *output, u32 value);
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 
 typedef struct {
     const u8 *selected_record;

@@ -1,8 +1,9 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "missions/definition.h"
+
 struct SelectedMissionSave { u8 unknown_0000[0x3c28]; u16 selected_mission; };
 extern struct SelectedMissionSave gSaveData;
-extern u32 GetMissionProperty(u16 mission_id, u8 selector);
 
 
 /* Mode 1 intentionally queries ID zero; mode 0 treats it as absent. */

@@ -1,4 +1,6 @@
 #include "ffta/unsigned_types.h"
+#include "platform/gba/bios.h"
+
 typedef signed char s8;
 struct MenuTileRows {
     u8 unknown_prefix[21];
@@ -17,7 +19,6 @@ extern void LoadItemIconGraphic(u16 *output, u16 entry_index);
 extern u32 QuerySelectionIndex(struct MenuTileRows *, int row);
 extern int SignedModulo(int value, int divisor);
 extern void ClearTileUnits(u8 *output, u16 count);
-extern void BiosCpuSet(const void *source, void *destination, u32 control);
 extern void ProcessText(void *context, u8 *destination, const u8 *text,
                         u8 glyph, u32 mode);
 void RenderMenuCategoryText(struct MenuTileRows *, void *, u16, u16, u32)
