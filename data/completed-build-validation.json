@@ -21,7 +21,7 @@
   "source_module_count": 4146,
   "independent_cmp_passed": true,
   "published_input_hashes": {
-    "src/completed-index.json": "7dcf58caabc755d4042979de5f9bd8aac28d158e441b97474b8477bf23a5cc84",
+    "src/completed-index.json": "291c26545103e70da6afcb004609a2dc3600b91dcc2fffb6b5df266bab5cd719",
     "config/completed-build.json": "90d255579a8f574432a82fc3f0a041f1c3a59a58ecf26e3557b942b04a4c47db",
     "tools/build_rom.py": "b9e6d4bd7f97e54231587f13e6cb1aafcde028af9face632b6d2d78670a5557a",
     "tools/build_completed.py": "557b3823cf44b438c4e5b53f8aa4ead9cc63378c8857724a05f77113220be0f2",
@@ -69,6 +69,10 @@
     "checked_module_set_sha256": "a4e9536f9345dc2e8250860aaa6116901625a2060b3969ebeb01a5da47e89d2a",
     "verified_at": "2026-11-24T07:06:55.825118+00:00",
     "additional_recovered_original_bytes": 0,
-    "scope": "Selected changed modules and header consumers matched existing module and function hashes at the final source paths. No ROM was produced."
+    "scope": "Selected changed modules and header consumers matched existing module and function hashes at the final source paths. No ROM was produced.",
+    "attribution_header_check": {
+      "modules": 2,
+      "module_set_sha256": "f459d726a6dedc4cc173d221e6fd5657275438077e46959b21cdccf5cec05e9e"
+    }
   }
 }
