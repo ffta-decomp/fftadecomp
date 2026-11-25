@@ -1,5 +1,6 @@
 /* Job-range mastery checks and ability-driven progression-flag updates. */
 #include "ffta/unsigned_types.h"
+#include "jobs/property_access.h"
 
 struct UnitFieldView {
     u32 word00;
@@ -25,8 +26,8 @@ extern void SetGameFlag(u16, u16);
 
 static inline const struct AbilityListEntry *JobList(u8 job, u8 list, u8 *first, u8 *last)
 {
-    u8 start = GetJobProperty(job, job, 37);
-    u8 end = GetJobProperty(job, job, 38);
+    u8 start = ReadJobFirstAbilityIndex(job, job);
+    u8 end = ReadJobLastAbilityIndex(job, job);
     if (first) *first = start;
     if (last) *last = end;
     return gAbilityLists[list];
@@ -63,8 +64,8 @@ void EnableJobFlagForAbility(const struct UnitFieldView *unit, u8 ability)
     case 5: first = 36; last = 43; break;
     }
     for (job = first; job <= last; job++) {
-        u8 start = GetJobProperty(job, job, 37);
-        u8 end = GetJobProperty(job, job, 38);
+        u8 start = ReadJobFirstAbilityIndex(job, job);
+        u8 end = ReadJobLastAbilityIndex(job, job);
         if (start <= ability && ability <= end) {
             SetGameFlag(job + 3, 1);
             return;

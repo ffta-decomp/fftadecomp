@@ -26310,7 +26310,7 @@
       "original_bytes": 1204,
       "kind": "c",
       "source": "src/unknown/080c8570.c",
-      "source_sha256": "480356f67924b1d736a58f807164d6cd4fb04dd5790bb9eb6b84742317ef7b9f"
+      "source_sha256": "d1f7efb68d3190a8e6ec3da6484ef5e31175bf5963517e7bd8947b14f5bbca01"
     },
     {
       "name": "func_080C8A24",
@@ -26389,7 +26389,7 @@
       "original_bytes": 512,
       "kind": "c",
       "source": "src/unknown/080c9340.c",
-      "source_sha256": "83625a859adefc555aa8bd9118359b758c2e1e192bf85618f2b97cb196eaf591"
+      "source_sha256": "94322b9d773ae7bb42cb8f28fae2ab8b2034a432b3c144c13587f33cf8fa9c58"
     },
     {
       "name": "GetGameFlag",
@@ -26958,7 +26958,7 @@
       "original_bytes": 140,
       "kind": "c",
       "source": "src/unknown/080cb5a8.c",
-      "source_sha256": "7d6733954fe3f90970279a96f1ec48b9d8515f367792b98a63fb25b668a65f44"
+      "source_sha256": "d4306e217a11f86e2a980c83dc11349a9d872e17f1600b69c43cc35bc64b58c1"
     },
     {
       "name": "ItemComparisonHelpers",
@@ -27451,7 +27451,7 @@
       "original_bytes": 228,
       "kind": "c",
       "source": "src/unknown/080cce60.c",
-      "source_sha256": "de5035f70e85278ff1ea7d1cdd8ef7c72b4e4331d3798dddfa8fbc29de8f18ef"
+      "source_sha256": "0fd73490b4e1472a5550d6fd00d5f01c0887aa231ce571fb0d727e4f78de024f"
     },
     {
       "name": "ApplyItemAbilityFlags",
@@ -27469,7 +27469,7 @@
       "original_bytes": 444,
       "kind": "c",
       "source": "src/unknown/080cd2c4.c",
-      "source_sha256": "cd01c2f56a5d5f849a90a2082d4080d140060762ec72c2bddcbe96344ace7621"
+      "source_sha256": "edc933171a7a13a769c1bc868e4fb1538cdd52eb3e3df87335e29ef5c3c6d750"
     },
     {
       "name": "AbilityStateAccessors",
@@ -47211,6 +47211,10 @@
       "sha256": "4dd5d86538e935cc4eee9cb202c6ab04253f13292cc93918ca87cde49ffa86c0"
     },
     {
+      "path": "include/jobs/property_access.h",
+      "sha256": "24382e667834dc2cc348859fda573461388c5af50563cf135d75e886d7de5b94"
+    },
+    {
       "path": "include/jobs/shared-unit-model/interfaces/080ca2e8_update_unit_derived_bytes_exact_types.h",
       "sha256": "4308a217a17f6c411c64da43c1415d7415f73e584f5b166246167de80cb3d27c"
     },
@@ -58112,7 +58116,7 @@
     },
     {
       "path": "src/unknown/080c8570.c",
-      "sha256": "480356f67924b1d736a58f807164d6cd4fb04dd5790bb9eb6b84742317ef7b9f"
+      "sha256": "d1f7efb68d3190a8e6ec3da6484ef5e31175bf5963517e7bd8947b14f5bbca01"
     },
     {
       "path": "src/unknown/080c9134.c",
@@ -58128,7 +58132,7 @@
     },
     {
       "path": "src/unknown/080c9340.c",
-      "sha256": "83625a859adefc555aa8bd9118359b758c2e1e192bf85618f2b97cb196eaf591"
+      "sha256": "94322b9d773ae7bb42cb8f28fae2ab8b2034a432b3c144c13587f33cf8fa9c58"
     },
     {
       "path": "src/unknown/080c9540.c",
@@ -58272,7 +58276,7 @@
     },
     {
       "path": "src/unknown/080cb5a8.c",
-      "sha256": "7d6733954fe3f90970279a96f1ec48b9d8515f367792b98a63fb25b668a65f44"
+      "sha256": "d4306e217a11f86e2a980c83dc11349a9d872e17f1600b69c43cc35bc64b58c1"
     },
     {
       "path": "src/unknown/080cb634.c",
@@ -58440,7 +58444,7 @@
     },
     {
       "path": "src/unknown/080cce60.c",
-      "sha256": "de5035f70e85278ff1ea7d1cdd8ef7c72b4e4331d3798dddfa8fbc29de8f18ef"
+      "sha256": "0fd73490b4e1472a5550d6fd00d5f01c0887aa231ce571fb0d727e4f78de024f"
     },
     {
       "path": "src/unknown/080ccf44.c",
@@ -58448,7 +58452,7 @@
     },
     {
       "path": "src/unknown/080cd2c4.c",
-      "sha256": "cd01c2f56a5d5f849a90a2082d4080d140060762ec72c2bddcbe96344ace7621"
+      "sha256": "edc933171a7a13a769c1bc868e4fb1538cdd52eb3e3df87335e29ef5c3c6d750"
     },
     {
       "path": "src/unknown/080cd480.c",

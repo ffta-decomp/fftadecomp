@@ -1,3 +1,4 @@
+#include "jobs/property_access.h"
 typedef unsigned char u8;
 typedef unsigned int u32;
 
@@ -22,20 +23,20 @@ const void *SelectUnitAbilityList(const u8 *unit, u8 slot,
         list_index = unit[6];
         break;
     case 2:
-        first = GetJobProperty(unit[8], unit[8], 37);
-        second = GetJobProperty(unit[8], unit[8], 38);
+        first = ReadJobFirstAbilityIndex(unit[8], unit[8]);
+        second = ReadJobLastAbilityIndex(unit[8], unit[8]);
         selected = unit[0x36];
         list_index = unit[6];
         break;
     case 3:
-        first = GetJobProperty(1, 1, 37);
-        second = GetJobProperty(1, 1, 38);
+        first = ReadJobFirstAbilityIndex(1, 1);
+        second = ReadJobLastAbilityIndex(1, 1);
         selected = unit[0x37];
         break;
     }
     if (slot != 3 && selected == 1) {
-        first = GetJobProperty(1, 1, 37);
-        second = GetJobProperty(1, 1, 38);
+        first = ReadJobFirstAbilityIndex(1, 1);
+        second = ReadJobLastAbilityIndex(1, 1);
         list_index = 0;
     }
     if (first_out)
