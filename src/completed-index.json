@@ -26310,7 +26310,7 @@
       "original_bytes": 1204,
       "kind": "c",
       "source": "src/unknown/080c8570.c",
-      "source_sha256": "d1f7efb68d3190a8e6ec3da6484ef5e31175bf5963517e7bd8947b14f5bbca01"
+      "source_sha256": "ef640d197d6f9e3997a63bd9fdd249ecf93948e1ed43222f707d40f2610a8f41"
     },
     {
       "name": "func_080C8A24",
@@ -26371,7 +26371,7 @@
       "original_bytes": 36,
       "kind": "c",
       "source": "src/unknown/080c92f0.c",
-      "source_sha256": "6d6c7c6b47131ebda3c2564abbd78b55424326fdefc872690d5513ccd371d42c"
+      "source_sha256": "a5a845d0f93a49ac5e5bd06e0bcb80b1efeb7cf932bba1b6164eac8b7f412ee8"
     },
     {
       "name": "GetUnitNameStringId",
@@ -26452,7 +26452,7 @@
       "original_bytes": 628,
       "kind": "c",
       "source": "src/jobs/shared-unit-model/080c9b8c.c",
-      "source_sha256": "b3db9e3ba6b536e761e98536a979ce4040199c9b2e51c9c7a8470d890ac0df15"
+      "source_sha256": "909fa0afec89798e1b3cb3356a0cc02f7a4db3cadd8c18935c217ebd61b7b40e"
     },
     {
       "name": "CoreConsumer_000C9E00",
@@ -26895,7 +26895,7 @@
       "original_bytes": 60,
       "kind": "c",
       "source": "src/unknown/080cb450.c",
-      "source_sha256": "edbd0a55ec1573aef0f26a88b7693ca7bbae4375883e6d2423c63f52e6f82f23"
+      "source_sha256": "e7198684b5b3851eac8a1a1b12bd6f877fd1d0d1be243d286ed7e38ca73f2971"
     },
     {
       "name": "InspectEquipmentMode0",
@@ -27451,7 +27451,7 @@
       "original_bytes": 228,
       "kind": "c",
       "source": "src/unknown/080cce60.c",
-      "source_sha256": "0fd73490b4e1472a5550d6fd00d5f01c0887aa231ce571fb0d727e4f78de024f"
+      "source_sha256": "b9d2c250a52d4709f4838d54837d141db63e54c251045a77a288d0546de7ce1c"
     },
     {
       "name": "ApplyItemAbilityFlags",
@@ -39010,7 +39010,7 @@
       "original_bytes": 514,
       "kind": "c",
       "source": "src/jobs/shared-unit-model/08128c3c.c",
-      "source_sha256": "5aca556b4b8f6497955509f95efe4540dd8fc9571c41925dc521057ceb479ac0"
+      "source_sha256": "782afaf34cfbb9ad8536e1b383c6a86010c5d3218b6ccc8513fe0d09415ff101"
     },
     {
       "name": "CoreRegion_00128E40",
@@ -47212,7 +47212,7 @@
     },
     {
       "path": "include/jobs/property_access.h",
-      "sha256": "24382e667834dc2cc348859fda573461388c5af50563cf135d75e886d7de5b94"
+      "sha256": "236cb8f18ffc269b2f17c8d81b4e5dddd3245cd3ec9988a808b576c325d29c97"
     },
     {
       "path": "include/jobs/shared-unit-model/interfaces/080ca2e8_update_unit_derived_bytes_exact_types.h",
@@ -47233,6 +47233,10 @@
     {
       "path": "include/jobs/unit_field_access.h",
       "sha256": "15040a939b770cd85020d4b7b7367e971d901d25a0888abf894851a372ab07ba"
+    },
+    {
+      "path": "include/jobs/unit_property_access.h",
+      "sha256": "daa2db4d05e244a6a5f0f0b9ff8492d34219331959d94bf8a1a3c54d4dd103e8"
     },
     {
       "path": "include/libraries/audio/dma.h",
@@ -49296,7 +49300,7 @@
     },
     {
       "path": "src/jobs/shared-unit-model/080c9b8c.c",
-      "sha256": "b3db9e3ba6b536e761e98536a979ce4040199c9b2e51c9c7a8470d890ac0df15"
+      "sha256": "909fa0afec89798e1b3cb3356a0cc02f7a4db3cadd8c18935c217ebd61b7b40e"
     },
     {
       "path": "src/jobs/shared-unit-model/080ca2e8.c",
@@ -49348,7 +49352,7 @@
     },
     {
       "path": "src/jobs/shared-unit-model/08128c3c.c",
-      "sha256": "5aca556b4b8f6497955509f95efe4540dd8fc9571c41925dc521057ceb479ac0"
+      "sha256": "782afaf34cfbb9ad8536e1b383c6a86010c5d3218b6ccc8513fe0d09415ff101"
     },
     {
       "path": "src/jobs/shared-unit-model/0812c56c.c",
@@ -58116,7 +58120,7 @@
     },
     {
       "path": "src/unknown/080c8570.c",
-      "sha256": "d1f7efb68d3190a8e6ec3da6484ef5e31175bf5963517e7bd8947b14f5bbca01"
+      "sha256": "ef640d197d6f9e3997a63bd9fdd249ecf93948e1ed43222f707d40f2610a8f41"
     },
     {
       "path": "src/unknown/080c9134.c",
@@ -58124,7 +58128,7 @@
     },
     {
       "path": "src/unknown/080c92f0.c",
-      "sha256": "6d6c7c6b47131ebda3c2564abbd78b55424326fdefc872690d5513ccd371d42c"
+      "sha256": "a5a845d0f93a49ac5e5bd06e0bcb80b1efeb7cf932bba1b6164eac8b7f412ee8"
     },
     {
       "path": "src/unknown/080c9314.c",
@@ -58248,7 +58252,7 @@
     },
     {
       "path": "src/unknown/080cb450.c",
-      "sha256": "edbd0a55ec1573aef0f26a88b7693ca7bbae4375883e6d2423c63f52e6f82f23"
+      "sha256": "e7198684b5b3851eac8a1a1b12bd6f877fd1d0d1be243d286ed7e38ca73f2971"
     },
     {
       "path": "src/unknown/080cb48c.c",
@@ -58444,7 +58448,7 @@
     },
     {
       "path": "src/unknown/080cce60.c",
-      "sha256": "0fd73490b4e1472a5550d6fd00d5f01c0887aa231ce571fb0d727e4f78de024f"
+      "sha256": "b9d2c250a52d4709f4838d54837d141db63e54c251045a77a288d0546de7ce1c"
     },
     {
       "path": "src/unknown/080ccf44.c",
