@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "jobs/property_access.h"
 
 /* Packed 52-byte record at 0x08521a14. Field names remain selector-based. */
 struct JobDefinition {
@@ -114,9 +115,9 @@ u32 GetJobProperty(u8 job_id, u8 fallback_job, u8 property)
         READ_JOB_PROPERTY(34, p34);
         READ_JOB_PROPERTY(35, p35);
         READ_JOB_PROPERTY(33, p33);
-        READ_JOB_PROPERTY(36, p36);
-        READ_JOB_PROPERTY(37, p37);
-        READ_JOB_PROPERTY(38, p38);
+        READ_JOB_PROPERTY(JOB_PROPERTY_EQUIPMENT_CLASS_MASK_INDEX, p36);
+        READ_JOB_PROPERTY(JOB_PROPERTY_FIRST_ABILITY_INDEX, p37);
+        READ_JOB_PROPERTY(JOB_PROPERTY_LAST_ABILITY_INDEX, p38);
         READ_JOB_PROPERTY(39, p39);
         READ_JOB_PROPERTY(40, p40);
         READ_JOB_PROPERTY(41, p41);

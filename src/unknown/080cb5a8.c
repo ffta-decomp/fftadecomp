@@ -1,5 +1,6 @@
 #include "ffta/unsigned_types.h"
 #include "items/property_access.h"
+#include "jobs/property_access.h"
 
 enum {
     SPECIAL_JOB_GROUP = 4,
@@ -21,7 +22,7 @@ extern const u32 gEquipmentClassMasks[];
 u8 JobAllowsItem(u8 job_id, u16 item_id)
 {
     u8 group = GetJobProperty(job_id, job_id, 1);
-    u32 category_mask = gEquipmentClassMasks[GetJobProperty(job_id, job_id, 36)];
+    u32 category_mask = gEquipmentClassMasks[ReadJobEquipmentClassMaskIndex(job_id, job_id)];
     u8 category = ReadItemEquipmentCategory(item_id);
 
     if (category == GROUP_ONLY_ITEM_CATEGORY)

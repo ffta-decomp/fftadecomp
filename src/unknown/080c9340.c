@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "jobs/property_access.h"
 
 typedef struct {
     u8 key;
@@ -109,8 +110,8 @@ u8 FindJobForAbilityRange(u8 category, u16 ability)
         const JobCategoryRecord *job = &gJobs[index];
         if (job->category == category) {
             u8 job_id = index;
-            u16 first = GetJobProperty(job_id, job_id, 37);
-            u16 last = GetJobProperty(job_id, job_id, 38);
+            u16 first = ReadJobFirstAbilityIndex(job_id, job_id);
+            u16 last = ReadJobLastAbilityIndex(job_id, job_id);
             if (first <= ability && last >= ability) return job_id;
         }
     }
