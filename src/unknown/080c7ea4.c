@@ -1,5 +1,6 @@
 /* Reads a value or an address from the observed battle-unit record layout. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 typedef signed short s16;
 
 struct BattleUnitFieldView {
@@ -24,8 +25,8 @@ u32 ReadUnitField(const struct BattleUnitFieldView *unit, u8 selector)
     case 3: return unit->bytes_04[2];
     case 4: return unit->bytes_04[3];
     case 5: return unit->bytes_04[4];
-    case 6: return unit->bytes_04[5];
-    case 7: return unit->bytes_04[6];
+    case UNIT_FIELD_LEVEL: return unit->bytes_04[5];
+    case UNIT_FIELD_EXPERIENCE: return unit->bytes_04[6];
     case 8: return unit->bytes_04[7];
     case 9: return (u32)&unit->bytes_04[8];
     case 10: return unit->bytes_04[8];
@@ -37,10 +38,10 @@ u32 ReadUnitField(const struct BattleUnitFieldView *unit, u8 selector)
     case 16: return unit->bytes_04[14];
     case 17: return unit->bytes_04[15];
     case 18: return unit->bytes_04[16];
-    case 19: return unit->halfwords_18[0];
-    case 20: return unit->halfwords_18[1];
-    case 21: return unit->halfwords_18[2];
-    case 22: return unit->halfwords_18[3];
+    case UNIT_FIELD_CURRENT_HP: return unit->halfwords_18[0];
+    case UNIT_FIELD_MAX_HP: return unit->halfwords_18[1];
+    case UNIT_FIELD_CURRENT_MP: return unit->halfwords_18[2];
+    case UNIT_FIELD_MAX_MP: return unit->halfwords_18[3];
     case 23: return unit->halfwords_18[4];
     case 24: return unit->halfwords_18[5];
     case 25: return unit->halfwords_18[6];

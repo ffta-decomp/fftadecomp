@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 typedef signed short s16;
 typedef struct ProgressUnit {
     u8 prefix[10];
@@ -74,7 +75,7 @@ ProgressResult *BuildUnitProgressResults(void *first, void *second)
         GatherProgress(result, second, entries);
     for (index = 0; index < 13 && entries[index].node != 0; index++) {
         entry = &entries[index];
-        progress = ReadUnitField(entry->node->unit, 7) + entry->increment;
+        progress = ReadUnitExperience(entry->node->unit) + entry->increment;
         if (progress <= 99) {
             entry->node->unit->progress = progress;
         } else {

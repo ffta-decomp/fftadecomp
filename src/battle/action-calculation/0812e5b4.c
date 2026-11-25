@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 typedef short s16;
 typedef int s32;
 struct Unit;
@@ -40,13 +41,13 @@ s16 CalculateProgressionValueAdjustment(const struct Unit *source, const struct 
     }
     if ((u8)ReadSaveByte(13) != 0)
         return 0;
-    other_level = ReadUnitField(other, 6);
-    adjustment = (other_level - ReadUnitField(source, 6)) * 2U + 10U;
+    other_level = ReadUnitLevel(other);
+    adjustment = (other_level - ReadUnitLevel(source)) * 2U + 10U;
     if (adjustment <= 0)
         adjustment = 1;
     if (adjustment > 100)
         adjustment = 100;
-    if (ReadUnitField(source, 6) > 49 && ReadUnitField(source, 7) + adjustment > 99U)
-        adjustment = 99U - ReadUnitField(source, 7);
+    if (ReadUnitLevel(source) > 49 && ReadUnitExperience(source) + adjustment > 99U)
+        adjustment = 99U - ReadUnitExperience(source);
     return adjustment;
 }

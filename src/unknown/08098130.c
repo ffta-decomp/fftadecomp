@@ -1,4 +1,5 @@
 #include "abi/interfaces/08098130_derived_flags.h"
+#include "jobs/unit_field_access.h"
 /* Refresh observed bits in source order, with original callback reloads. */
 void CoreConsumer_00098130(struct DerivedFlagNode *node)
 {
@@ -13,8 +14,8 @@ void CoreConsumer_00098130(struct DerivedFlagNode *node)
     else node->flags &= ~0x4000u;
     if (HasE9Bit0(node->unit)) node->flags |= 0x20;
     else node->flags &= ~0x20u;
-    first_value = ReadUnitField(node->unit,19);
-    second_value = ReadUnitField(node->unit,20);
+    first_value = ReadUnitCurrentHp(node->unit);
+    second_value = ReadUnitMaxHp(node->unit);
     if (first_value <= (second_value >> 2) || HasE9Bit7(node->unit)) node->flags |= 0x8;
     else node->flags &= ~0x8u;
     if (HasEABit2(node->unit)) node->flags |= 0x400;

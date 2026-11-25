@@ -1,6 +1,7 @@
 #ifndef SINGLE_UNIT_BATTLE_RESET_INTERFACES_H
 #define SINGLE_UNIT_BATTLE_RESET_INTERFACES_H
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 struct BattleUnitFieldView;
 typedef void (*UnitClearFunction)(void *,u32);
 extern UnitClearFunction const gUnitClearFunction;
@@ -23,12 +24,12 @@ void ResetSingleUnitBattleFields(struct BattleUnitFieldView *unit)
         register const struct BattleUnitFieldView *first_query_unit asm("r0") = unit;
         /* Both original pointer homes are defined before the first query. */
         asm("" : : "r"(unit_phase), "r"(first_query_unit));
-        value = ReadUnitField(first_query_unit,20);
+        value = ReadUnitMaxHp(first_query_unit);
     }
     zero_phase = 0;
     asm("" : "+r"(zero_phase));
     *(u16 *)(unit_phase + 24) = value;
-    value = ReadUnitField((const struct BattleUnitFieldView *)unit_phase,22);
+    value = ReadUnitMaxMp((const struct BattleUnitFieldView *)unit_phase);
     *(u16 *)(unit_phase + 28) = value;
     halfword_cursor = (u16 *)(unit_phase + 208);
     asm("" : "+r"(halfword_cursor));

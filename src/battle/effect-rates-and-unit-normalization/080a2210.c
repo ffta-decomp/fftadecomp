@@ -1,4 +1,5 @@
 #include "battle/effect-rates-and-unit-normalization/interfaces/080a2210_apply_unit_value_and_classify_exact_types.h"
+#include "jobs/unit_field_access.h"
 
 struct ValueUnit {
     u8 unknown_00[24];
@@ -18,8 +19,8 @@ static inline u32 ClassifyUnitValue(struct ValueUnit *unit)
             goto class_two;
         goto class_three;
     }
-    current = ReadUnitField(unit, 19);
-    if (current > (ReadUnitField(unit, 20) >> 2))
+    current = ReadUnitCurrentHp(unit);
+    if (current > (ReadUnitMaxHp(unit) >> 2))
         goto class_three;
 class_two:
     classification = 2;
@@ -41,14 +42,14 @@ u32 ApplyBattleUnitValueAndClassify(struct ValueUnit *unit, u16 delta)
     s32 delta_signed;
 
     previous_class = ClassifyUnitValue(unit);
-    current_signed = (s16)ReadUnitField(unit, 19);
+    current_signed = (s16)ReadUnitCurrentHp(unit);
     delta_signed = (s16)delta;
     remaining = current_signed - delta_signed;
     if ((s16)remaining < 0)
         remaining = 0;
     signed_remaining = (s16)remaining;
-    if ((u32)signed_remaining > ReadUnitField(unit, 20))
-        remaining = ReadUnitField(unit, 20);
+    if ((u32)signed_remaining > ReadUnitMaxHp(unit))
+        remaining = ReadUnitMaxHp(unit);
     unit->current_value = remaining;
     current_class = ClassifyUnitValue(unit);
     if (current_class == previous_class)

@@ -1,4 +1,5 @@
 #include "abi/interfaces/08105930_repeated_actor.h"
+#include "jobs/unit_field_access.h"
 u32 AdvanceRepeatedActorSequence(TaskNode *,ActorEvent *,RepeatedActorWork *)
  __asm__("OriginalRegisteredActionQuestion_00105930");
 u32 AdvanceRepeatedActorSequence(TaskNode *parent,ActorEvent *event,RepeatedActorWork *work)
@@ -104,7 +105,7 @@ u32 AdvanceRepeatedActorSequence(TaskNode *parent,ActorEvent *event,RepeatedActo
    variant=3;
    work->property_flag=1;
   }
-  value=ReadUnitField(ReadNestedUnitIndex(work->nested),21);
+  value=ReadUnitCurrentMp(ReadNestedUnitIndex(work->nested));
   descriptor=&work->descriptor;
   code=&work->descriptor.code;
   while(value>10) value-=10;

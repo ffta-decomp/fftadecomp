@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 typedef signed short s16;
 typedef signed int s32;
 typedef struct Actor { void *unit; } Actor;
@@ -29,7 +30,7 @@ u32 PrepareTargetGroupRecord(TargetGroups *targets, Selection *selection,
     u16 selected_index;
     u16 source_value;
     s32 processed;
-    source_value=ReadUnitField(selection->actor->unit,6);
+    source_value=ReadUnitLevel(selection->actor->unit);
     selected_index=selection->current;
     processed=0;
     for (;;) {
