@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/types.h"
+#include "jobs/unit_field_access.h"
 struct UnitTail { u8 mode; u8 category; u8 unknown; s8 amount; };
 extern u8 UnitPredicate_000CDA4C(const void *unit);
 extern u32 ReadUnitField(const void *unit, u8 selector);
@@ -21,7 +22,7 @@ s32 CalculateUnitTailThresholdValue(const void *unit, u16 threshold)
     signed_threshold = threshold;
     if (initial_magnitude >= signed_threshold || tail->mode == 2 || tail->category == 4)
         return 0;
-    factor = ReadUnitField(unit, 20);
+    factor = ReadUnitMaxHp(unit);
     current_magnitude = tail->amount;
     if (current_magnitude < 0)
         current_magnitude = -current_magnitude;

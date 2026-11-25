@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 typedef signed short s16;
 typedef signed int s32;
 extern u8 UnitStateECBit1(const u8 *unit);
@@ -27,7 +28,7 @@ s32 ComputeLimitedUnitEffectAmount(const u8 *unit, const u8 *target, u16 unused_
         return 0;
     variance_mask = 2;
     base_amount = ComputeBaseUnitEffect(unit, target, 0, item_id, 0, variance_mask, 0);
-    amount = ReadUnitField(unit, 6) / 10;
+    amount = ReadUnitLevel(unit) / 10;
     if (amount <= 0)
         amount = 1;
     if (base_amount == 0)

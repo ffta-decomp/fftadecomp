@@ -21093,7 +21093,7 @@
       "original_bytes": 572,
       "kind": "c",
       "source": "src/unknown/08098130.c",
-      "source_sha256": "236a01f46c1aa95bfa61e2bb1c9841238be3fe1456366efbfd24486970a5b9bf"
+      "source_sha256": "81fb6c17db0214a00eb48459475afa1b2de78299be43c29275025afd77dc33a5"
     },
     {
       "name": "CoreFrontier_000989AC",
@@ -22057,7 +22057,7 @@
       "original_bytes": 68,
       "kind": "c",
       "source": "src/unknown/0809a90c.c",
-      "source_sha256": "e980881afbacd982edaacd10c5fd9f0a4ba7ca93a416368714c4306653a5fd15"
+      "source_sha256": "bcd327902ce5306a8e67150ddb4389ed5c6964c096ed95390d90274227e3a3b2"
     },
     {
       "name": "func_0809A950",
@@ -22989,7 +22989,7 @@
       "original_bytes": 222,
       "kind": "c",
       "source": "src/battle/effect-rates-and-unit-normalization/080a2210.c",
-      "source_sha256": "97bc7febbb85c382805ed705db4265f4a8ea8208b722d83d8d3218be5b9f93b9"
+      "source_sha256": "23d6103270fe132d9fa2ada0ab46e5aae86a27e35953d3642304e7776a48bacc"
     },
     {
       "name": "CoreClosure31_000A3778",
@@ -23108,7 +23108,7 @@
       "original_bytes": 224,
       "kind": "c",
       "source": "src/jobs/shared-unit-model/080a7138.c",
-      "source_sha256": "73420fd628407f1a4619d2382ab303a822627b7cf07a7296ace98b6f1a64e59f"
+      "source_sha256": "f9210f667d787ea1e7a38057bf8f39abb443234834ab930bffef6d40828252ed"
     },
     {
       "name": "CoreFrontier_000A75BC",
@@ -24945,7 +24945,7 @@
       "original_bytes": 272,
       "kind": "c",
       "source": "src/saves/080c034c.c",
-      "source_sha256": "e8ee1cd7a27435e62228dfb74ae29bf4b628a8fc233af57aa41a0bfcb794a5d5"
+      "source_sha256": "e9cb48d1af93234aeecd863f9b526eeb90285cb9a010b03b32a88ec2db146f6d"
     },
     {
       "name": "CoreConsumer_000C13C8",
@@ -25269,7 +25269,7 @@
       "original_bytes": 382,
       "kind": "c",
       "source": "src/battle/action-result-consumption/080c26ec.c",
-      "source_sha256": "93b2ba840e61b23785802b0ecabd9071d21a4cd2739ec9142c86858c45bca61f"
+      "source_sha256": "5b19597f2c0be41623ee36af70176b8724b0bb796cc02b5cb1146b982c4c4dc5"
     },
     {
       "name": "CoreRegion30_000C286C",
@@ -26112,7 +26112,7 @@
       "original_bytes": 728,
       "kind": "c",
       "source": "src/unknown/080c7ea4.c",
-      "source_sha256": "ace61b2487fe4a85a03d01705b86ffb77f172f267c8e1d4511b25c42071fd4ca"
+      "source_sha256": "fdc883f47739cae3981973a9a364d75ada2a72c88dbdaf4a3d3e7f706716be69"
     },
     {
       "name": "UnitField01AboveOne",
@@ -35086,7 +35086,7 @@
       "original_bytes": 1040,
       "kind": "c",
       "source": "src/unknown/08105930.c",
-      "source_sha256": "36da967071b566c089350d2f2f9c5cf01d962926bdb1f022f2a25b5f8adf4b8b"
+      "source_sha256": "a78f0110b4af9361b7a0b6df248a9757c1be4f9f07607fb0504de50f45761395"
     },
     {
       "name": "func_08105D40",
@@ -39772,7 +39772,7 @@
       "original_bytes": 238,
       "kind": "c",
       "source": "src/battle/action-calculation/0812e5b4.c",
-      "source_sha256": "eddf7e734a3f4f4cedcc5dac84d436377ad762c65aea1746c06c3acd272bb871"
+      "source_sha256": "4bb7c03fed5e23a68bc68144b8cb638e9e8f94663869cf62db28d32dcb9788a7"
     },
     {
       "name": "func_0812E6A4",
@@ -39838,7 +39838,7 @@
       "original_bytes": 306,
       "kind": "c",
       "source": "src/battle/0812ebd0.c",
-      "source_sha256": "cca08d0361f8f653c61f1fa9a5c440f64d231bde50c1845f2a3db24ba58e3d3f"
+      "source_sha256": "310dd7cb11d1ccc4500d57a4889a02eedefd06e9fe45b1ca510ee8a9e651165c"
     },
     {
       "name": "CoreRegion_0012ED04",
@@ -40339,7 +40339,7 @@
       "original_bytes": 96,
       "kind": "c",
       "source": "src/battle/action-calculation/0813034c.c",
-      "source_sha256": "6bbda59a15eab638389135374e271a9c70a9c1b9ac8626ba308c5d66597737ad"
+      "source_sha256": "82944e75683d508f96cc5c6c45ccc1b165a7333984a199b5e5ef369fc2f35826"
     },
     {
       "name": "CoreRegion30_001303FC",
@@ -40366,7 +40366,7 @@
       "original_bytes": 212,
       "kind": "c",
       "source": "src/battle/0813054c.c",
-      "source_sha256": "02ce6b4d088af8e3f45bdc7d81d16cd2900dea675d0a7a70738e00cc66e07508"
+      "source_sha256": "72534b1bfeef835c5d0dd043b809d3c7df4d1b59d6d49b0b8035fa24567c584d"
     },
     {
       "name": "CoreClosure31_00130620",
@@ -47223,6 +47223,10 @@
       "sha256": "8b15b0d5549689a867ba7146443f4aabed4397047ee8780a84c8e61472b24f7c"
     },
     {
+      "path": "include/jobs/unit_field_access.h",
+      "sha256": "15040a939b770cd85020d4b7b7367e971d901d25a0888abf894851a372ab07ba"
+    },
+    {
       "path": "include/libraries/audio/dma.h",
       "sha256": "8d0a3639cbb896b200093e7adcee747adf760d757d056e960d1fc338e3635d5d"
     },
@@ -47832,7 +47836,7 @@
     },
     {
       "path": "src/battle/0812ebd0.c",
-      "sha256": "cca08d0361f8f653c61f1fa9a5c440f64d231bde50c1845f2a3db24ba58e3d3f"
+      "sha256": "310dd7cb11d1ccc4500d57a4889a02eedefd06e9fe45b1ca510ee8a9e651165c"
     },
     {
       "path": "src/battle/0812ed58.c",
@@ -47860,7 +47864,7 @@
     },
     {
       "path": "src/battle/0813054c.c",
-      "sha256": "02ce6b4d088af8e3f45bdc7d81d16cd2900dea675d0a7a70738e00cc66e07508"
+      "sha256": "72534b1bfeef835c5d0dd043b809d3c7df4d1b59d6d49b0b8035fa24567c584d"
     },
     {
       "path": "src/battle/081306e0.c",
@@ -47980,7 +47984,7 @@
     },
     {
       "path": "src/battle/action-calculation/0812e5b4.c",
-      "sha256": "eddf7e734a3f4f4cedcc5dac84d436377ad762c65aea1746c06c3acd272bb871"
+      "sha256": "4bb7c03fed5e23a68bc68144b8cb638e9e8f94663869cf62db28d32dcb9788a7"
     },
     {
       "path": "src/battle/action-calculation/0812edf0.c",
@@ -48040,7 +48044,7 @@
     },
     {
       "path": "src/battle/action-calculation/0813034c.c",
-      "sha256": "6bbda59a15eab638389135374e271a9c70a9c1b9ac8626ba308c5d66597737ad"
+      "sha256": "82944e75683d508f96cc5c6c45ccc1b165a7333984a199b5e5ef369fc2f35826"
     },
     {
       "path": "src/battle/action-calculation/081303fc.c",
@@ -48060,7 +48064,7 @@
     },
     {
       "path": "src/battle/action-result-consumption/080c26ec.c",
-      "sha256": "93b2ba840e61b23785802b0ecabd9071d21a4cd2739ec9142c86858c45bca61f"
+      "sha256": "5b19597f2c0be41623ee36af70176b8724b0bb796cc02b5cb1146b982c4c4dc5"
     },
     {
       "path": "src/battle/action-result-consumption/08134a10.c",
@@ -48440,7 +48444,7 @@
     },
     {
       "path": "src/battle/effect-rates-and-unit-normalization/080a2210.c",
-      "sha256": "97bc7febbb85c382805ed705db4265f4a8ea8208b722d83d8d3218be5b9f93b9"
+      "sha256": "23d6103270fe132d9fa2ada0ab46e5aae86a27e35953d3642304e7776a48bacc"
     },
     {
       "path": "src/battle/effect-rates-and-unit-normalization/0812e0fc.c",
@@ -49276,7 +49280,7 @@
     },
     {
       "path": "src/jobs/shared-unit-model/080a7138.c",
-      "sha256": "73420fd628407f1a4619d2382ab303a822627b7cf07a7296ace98b6f1a64e59f"
+      "sha256": "f9210f667d787ea1e7a38057bf8f39abb443234834ab930bffef6d40828252ed"
     },
     {
       "path": "src/jobs/shared-unit-model/080c9078.c",
@@ -50084,7 +50088,7 @@
     },
     {
       "path": "src/saves/080c034c.c",
-      "sha256": "e8ee1cd7a27435e62228dfb74ae29bf4b628a8fc233af57aa41a0bfcb794a5d5"
+      "sha256": "e9cb48d1af93234aeecd863f9b526eeb90285cb9a010b03b32a88ec2db146f6d"
     },
     {
       "path": "src/saves/080c1920.c",
@@ -56372,7 +56376,7 @@
     },
     {
       "path": "src/unknown/08098130.c",
-      "sha256": "236a01f46c1aa95bfa61e2bb1c9841238be3fe1456366efbfd24486970a5b9bf"
+      "sha256": "81fb6c17db0214a00eb48459475afa1b2de78299be43c29275025afd77dc33a5"
     },
     {
       "path": "src/unknown/08098c20.c",
@@ -56712,7 +56716,7 @@
     },
     {
       "path": "src/unknown/0809a90c.c",
-      "sha256": "e980881afbacd982edaacd10c5fd9f0a4ba7ca93a416368714c4306653a5fd15"
+      "sha256": "bcd327902ce5306a8e67150ddb4389ed5c6964c096ed95390d90274227e3a3b2"
     },
     {
       "path": "src/unknown/0809a9a8.c",
@@ -58048,7 +58052,7 @@
     },
     {
       "path": "src/unknown/080c7ea4.c",
-      "sha256": "ace61b2487fe4a85a03d01705b86ffb77f172f267c8e1d4511b25c42071fd4ca"
+      "sha256": "fdc883f47739cae3981973a9a364d75ada2a72c88dbdaf4a3d3e7f706716be69"
     },
     {
       "path": "src/unknown/080c817c.c",
@@ -60624,7 +60628,7 @@
     },
     {
       "path": "src/unknown/08105930.c",
-      "sha256": "36da967071b566c089350d2f2f9c5cf01d962926bdb1f022f2a25b5f8adf4b8b"
+      "sha256": "a78f0110b4af9361b7a0b6df248a9757c1be4f9f07607fb0504de50f45761395"
     },
     {
       "path": "src/unknown/08105d40.c",

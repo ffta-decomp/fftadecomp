@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 /* Retail stores this unaligned record byte by byte; field labels retain
  * the verified unit selector until their game meaning is established. */
 struct PackedUnitState {
@@ -24,9 +25,9 @@ void PackBattleUnitStateValues(struct PackedUnitState *output, const u8 *unit)
 {
     output->reference = ReadUnitField(unit, 0);
     output->present = 1;
-    output->unit_field_06 = ReadUnitField(unit, 6);
-    output->unit_field_20 = (u16)ReadUnitField(unit, 20);
-    output->unit_field_22 = (u16)ReadUnitField(unit, 22);
+    output->unit_field_06 = ReadUnitLevel(unit);
+    output->unit_field_20 = (u16)ReadUnitMaxHp(unit);
+    output->unit_field_22 = (u16)ReadUnitMaxMp(unit);
     output->unit_field_23 = (u16)ReadUnitField(unit, 23);
     output->unit_field_24 = (u16)ReadUnitField(unit, 24);
     output->unit_field_25 = (u16)ReadUnitField(unit, 25);

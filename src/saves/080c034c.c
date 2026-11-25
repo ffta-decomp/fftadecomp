@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_field_access.h"
 typedef signed int s32;
 struct Unit { u8 unknown00[246]; u8 x,y; };
 struct Actor { struct Unit *unit; u8 unknown04[124]; void *battle; };
@@ -46,7 +47,7 @@ void InitializeBattleSelection(struct BattleSelection *selection,struct Actor *a
     if ((u8)HasSelectionAbility(actor->unit)) selection->flags|=4;
     if ((u8)HasUnitStateEB6(actor->unit) || ReadMovementValue(actor->unit)/10u==0)
         selection->flags|=64;
-    selection->property21=ReadUnitField(actor->unit,21);
+    selection->property21=ReadUnitCurrentMp(actor->unit);
     {
         struct Unit *unit=actor->unit;
         u16 old_count;
