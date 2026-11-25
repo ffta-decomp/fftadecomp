@@ -1,20 +1,21 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "jobs/unit_property_access.h"
 typedef signed short s16;
 typedef signed int s32;
 
 typedef struct UnitValues {
     u8 prefix[24];
-    u16 current_first;
-    u16 maximum_first;
-    u16 current_second;
-    u16 maximum_second;
-    u16 value_32;
-    u16 value_34;
-    u16 value_36;
-    u16 value_38;
+    u16 current_hp;
+    u16 max_hp;
+    u16 current_mp;
+    u16 max_mp;
+    u16 base_weapon_attack;
+    u16 base_weapon_defense;
+    u16 base_magic_power;
+    u16 base_magic_resistance;
     u8 remaining[170];
-    s16 value_210;
+    s16 base_speed;
 } UnitValues;
 typedef struct RuleDescriptor {
     u8 prefix[2];
@@ -28,10 +29,10 @@ typedef struct ReductionContext {
     const RuleDescriptor *descriptor;
 } ReductionContext;
 #define OFFSET(T, M) ((u32)&(((T *)0)->M))
-typedef char UnitMaximumOffset[OFFSET(UnitValues, maximum_first) == 26 ? 1 : -1];
-typedef char UnitSecondOffset[OFFSET(UnitValues, maximum_second) == 30 ? 1 : -1];
-typedef char UnitLastStatOffset[OFFSET(UnitValues, value_38) == 38 ? 1 : -1];
-typedef char UnitSignedOffset[OFFSET(UnitValues, value_210) == 210 ? 1 : -1];
+typedef char UnitMaxHpOffset[OFFSET(UnitValues, max_hp) == 26 ? 1 : -1];
+typedef char UnitMaxMpOffset[OFFSET(UnitValues, max_mp) == 30 ? 1 : -1];
+typedef char UnitMagicResistanceOffset[OFFSET(UnitValues, base_magic_resistance) == 38 ? 1 : -1];
+typedef char UnitSpeedOffset[OFFSET(UnitValues, base_speed) == 210 ? 1 : -1];
 typedef char ContextUnitOffset[OFFSET(ReductionContext, unit) == 8 ? 1 : -1];
 typedef char ContextDescriptorOffset[OFFSET(ReductionContext, descriptor) == 12 ? 1 : -1];
 extern const u8 UnitReductionDivisors[8];
@@ -45,8 +46,7 @@ __asm__(".global DivideSigned\n.thumb_set DivideSigned, 0x081426b9");
 
 
 /* Apply one source-selected unit reduction; the return is only its low byte.
- * Quotients wrap to 16 bits before signed zero/upper-limit comparisons.
- * Unit field roles beyond the paired current/maximum relation are provisional. */
+ * Quotients wrap to 16 bits before signed zero/upper-limit comparisons. */
 u8 ApplyUnitValueReduction(ReductionContext *context, u8 selection)
 {
     UnitValues *unit = context->unit;
@@ -55,68 +55,68 @@ u8 ApplyUnitValueReduction(ReductionContext *context, u8 selection)
 
     switch (selection) {
     case 0:
-        amount = DivideUnsigned(GetUnitProperty(unit, 23), divisor);
+        amount = DivideUnsigned(ReadUnitJobBaseHp(unit), divisor);
         if (amount == 0)
             amount = 1;
         else if (amount > 99)
             amount = 99;
-        if (unit->maximum_first <= amount)
-            amount = unit->maximum_first - 1;
-        unit->maximum_first -= amount;
-        if (unit->current_first > unit->maximum_first)
-            unit->current_first = unit->maximum_first;
+        if (unit->max_hp <= amount)
+            amount = unit->max_hp - 1;
+        unit->max_hp -= amount;
+        if (unit->current_hp > unit->max_hp)
+            unit->current_hp = unit->max_hp;
         break;
     case 1:
-        amount = DivideUnsigned(GetUnitProperty(unit, 24), divisor);
+        amount = DivideUnsigned(ReadUnitJobBaseMp(unit), divisor);
         if (amount == 0)
             amount = 1;
         else if (amount > 99)
             amount = 99;
-        if (unit->maximum_second <= amount)
-            amount = unit->maximum_second - 1;
-        unit->maximum_second -= amount;
-        if (unit->current_second > unit->maximum_second)
-            unit->current_second = unit->maximum_second;
+        if (unit->max_mp <= amount)
+            amount = unit->max_mp - 1;
+        unit->max_mp -= amount;
+        if (unit->current_mp > unit->max_mp)
+            unit->current_mp = unit->max_mp;
         break;
     case 2:
-        amount = DivideUnsigned(GetUnitProperty(unit, 26), divisor);
+        amount = DivideUnsigned(ReadUnitJobBaseWeaponAttack(unit), divisor);
         if (amount == 0)
             amount = 1;
         else if (amount > 99)
             amount = 99;
-        if (unit->value_32 <= amount)
-            amount = unit->value_32 - 1;
-        unit->value_32 -= amount;
+        if (unit->base_weapon_attack <= amount)
+            amount = unit->base_weapon_attack - 1;
+        unit->base_weapon_attack -= amount;
         break;
     case 3:
-        amount = DivideUnsigned(GetUnitProperty(unit, 27), divisor);
+        amount = DivideUnsigned(ReadUnitJobBaseWeaponDefense(unit), divisor);
         if (amount == 0)
             amount = 1;
         else if (amount > 99)
             amount = 99;
-        if (unit->value_34 <= amount)
-            amount = unit->value_34 - 1;
-        unit->value_34 -= amount;
+        if (unit->base_weapon_defense <= amount)
+            amount = unit->base_weapon_defense - 1;
+        unit->base_weapon_defense -= amount;
         break;
     case 4:
-        amount = DivideUnsigned(GetUnitProperty(unit, 28), divisor);
+        amount = DivideUnsigned(ReadUnitJobBaseMagicPower(unit), divisor);
         if (amount == 0)
             amount = 1;
         else if (amount > 99)
             amount = 99;
-        if (unit->value_36 <= amount)
-            amount = unit->value_36 - 1;
-        unit->value_36 -= amount;
+        if (unit->base_magic_power <= amount)
+            amount = unit->base_magic_power - 1;
+        unit->base_magic_power -= amount;
         break;
     case 5:
-        amount = DivideUnsigned(GetUnitProperty(unit, 29), divisor);
+        amount = DivideUnsigned(ReadUnitJobBaseMagicResistance(unit), divisor);
         if (amount == 0)
             amount = 1;
         else if (amount > 99)
             amount = 99;
-        if (unit->value_38 <= amount)
-            amount = unit->value_38 - 1;
-        unit->value_38 -= amount;
+        if (unit->base_magic_resistance <= amount)
+            amount = unit->base_magic_resistance - 1;
+        unit->base_magic_resistance -= amount;
         break;
     case 6:
         amount = DivideSigned(10, divisor);
@@ -124,9 +124,9 @@ u8 ApplyUnitValueReduction(ReductionContext *context, u8 selection)
             amount = 1;
         else if (amount > 10)
             amount = 10;
-        if (unit->value_210 - amount <= 10)
-            amount = unit->value_210 - 10;
-        unit->value_210 -= amount;
+        if (unit->base_speed - amount <= 10)
+            amount = unit->base_speed - 10;
+        unit->base_speed -= amount;
         break;
     }
     return amount;

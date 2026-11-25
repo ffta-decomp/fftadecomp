@@ -1,4 +1,4 @@
-#include "jobs/property_access.h"
+#include "jobs/unit_property_access.h"
 typedef unsigned char u8;
 typedef unsigned int u32;
 
@@ -17,8 +17,8 @@ const void *SelectUnitAbilityList(const u8 *unit, u8 slot,
 
     switch (slot) {
     case 1:
-        first = GetUnitProperty(unit, 37);
-        second = GetUnitProperty(unit, 38);
+        first = ReadUnitJobFirstAbilityIndex(unit);
+        second = ReadUnitJobLastAbilityIndex(unit);
         selected = unit[0x35];
         list_index = unit[6];
         break;

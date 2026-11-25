@@ -1,7 +1,7 @@
 #include "ffta/unsigned_types.h"
 #include "jobs/property_access.h"
 
-/* Packed 52-byte record at 0x08521a14. Field names remain selector-based. */
+/* Packed 52-byte record at 0x08521a14. Unidentified fields use selector numbers. */
 struct JobDefinition {
     u16 p00;
     u8 unknown_at_02[2];
@@ -29,20 +29,20 @@ struct JobDefinition {
     u32 p21 : 3;
     u32 unknown_at_21 : 5;
     u8 p22;
-    u8 p23;
-    u8 p24;
+    u8 base_hp;
+    u8 base_mp;
     u8 p25;
-    u32 p26 : 12;
-    u32 p27 : 12;
-    u32 p28 : 12;
-    u32 p29 : 12;
-    u8 p41;
-    u8 p42;
-    u8 p43;
-    u8 p44;
-    u8 p45;
-    u8 p46;
-    u8 p47;
+    u32 base_weapon_attack : 12;
+    u32 base_weapon_defense : 12;
+    u32 base_magic_power : 12;
+    u32 base_magic_resistance : 12;
+    u8 hp_growth_tenths;
+    u8 mp_growth_tenths;
+    u8 speed_growth_tenths;
+    u8 weapon_attack_growth_tenths;
+    u8 weapon_defense_growth_tenths;
+    u8 magic_power_growth_tenths;
+    u8 magic_resistance_growth_tenths;
     u8 unknown_at_27;
     u8 p30;
     u8 p31;
@@ -50,9 +50,9 @@ struct JobDefinition {
     u32 p34 : 4;
     u32 p35 : 4;
     u8 p33;
-    u8 p36;
-    u8 p37;
-    u8 p38;
+    u8 equipment_class_mask_index;
+    u8 first_ability_index;
+    u8 last_ability_index;
     u8 p39;
     u8 p40;
     u8 unknown_at_32[2];
@@ -102,31 +102,31 @@ u32 GetJobProperty(u8 job_id, u8 fallback_job, u8 property)
         READ_JOB_PROPERTY(20, p20);
         READ_JOB_PROPERTY(21, p21);
         READ_JOB_PROPERTY(22, p22);
-        READ_JOB_PROPERTY(23, p23);
-        READ_JOB_PROPERTY(24, p24);
+        READ_JOB_PROPERTY(JOB_PROPERTY_BASE_HP, base_hp);
+        READ_JOB_PROPERTY(JOB_PROPERTY_BASE_MP, base_mp);
         READ_JOB_PROPERTY(25, p25);
-        READ_JOB_PROPERTY(26, p26);
-        READ_JOB_PROPERTY(27, p27);
-        READ_JOB_PROPERTY(28, p28);
-        READ_JOB_PROPERTY(29, p29);
+        READ_JOB_PROPERTY(JOB_PROPERTY_BASE_WEAPON_ATTACK, base_weapon_attack);
+        READ_JOB_PROPERTY(JOB_PROPERTY_BASE_WEAPON_DEFENSE, base_weapon_defense);
+        READ_JOB_PROPERTY(JOB_PROPERTY_BASE_MAGIC_POWER, base_magic_power);
+        READ_JOB_PROPERTY(JOB_PROPERTY_BASE_MAGIC_RESISTANCE, base_magic_resistance);
         READ_JOB_PROPERTY(30, p30);
         READ_JOB_PROPERTY(31, p31);
         READ_JOB_PROPERTY(32, p32);
         READ_JOB_PROPERTY(34, p34);
         READ_JOB_PROPERTY(35, p35);
         READ_JOB_PROPERTY(33, p33);
-        READ_JOB_PROPERTY(JOB_PROPERTY_EQUIPMENT_CLASS_MASK_INDEX, p36);
-        READ_JOB_PROPERTY(JOB_PROPERTY_FIRST_ABILITY_INDEX, p37);
-        READ_JOB_PROPERTY(JOB_PROPERTY_LAST_ABILITY_INDEX, p38);
+        READ_JOB_PROPERTY(JOB_PROPERTY_EQUIPMENT_CLASS_MASK_INDEX, equipment_class_mask_index);
+        READ_JOB_PROPERTY(JOB_PROPERTY_FIRST_ABILITY_INDEX, first_ability_index);
+        READ_JOB_PROPERTY(JOB_PROPERTY_LAST_ABILITY_INDEX, last_ability_index);
         READ_JOB_PROPERTY(39, p39);
         READ_JOB_PROPERTY(40, p40);
-        READ_JOB_PROPERTY(41, p41);
-        READ_JOB_PROPERTY(42, p42);
-        READ_JOB_PROPERTY(43, p43);
-        READ_JOB_PROPERTY(44, p44);
-        READ_JOB_PROPERTY(45, p45);
-        READ_JOB_PROPERTY(46, p46);
-        READ_JOB_PROPERTY(47, p47);
+        READ_JOB_PROPERTY(JOB_PROPERTY_HP_GROWTH_TENTHS, hp_growth_tenths);
+        READ_JOB_PROPERTY(JOB_PROPERTY_MP_GROWTH_TENTHS, mp_growth_tenths);
+        READ_JOB_PROPERTY(JOB_PROPERTY_SPEED_GROWTH_TENTHS, speed_growth_tenths);
+        READ_JOB_PROPERTY(JOB_PROPERTY_WEAPON_ATTACK_GROWTH_TENTHS, weapon_attack_growth_tenths);
+        READ_JOB_PROPERTY(JOB_PROPERTY_WEAPON_DEFENSE_GROWTH_TENTHS, weapon_defense_growth_tenths);
+        READ_JOB_PROPERTY(JOB_PROPERTY_MAGIC_POWER_GROWTH_TENTHS, magic_power_growth_tenths);
+        READ_JOB_PROPERTY(JOB_PROPERTY_MAGIC_RESISTANCE_GROWTH_TENTHS, magic_resistance_growth_tenths);
         }
     }
 }

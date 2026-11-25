@@ -21,7 +21,7 @@
   "source_module_count": 4146,
   "independent_cmp_passed": true,
   "published_input_hashes": {
-    "src/completed-index.json": "f2aff17cac53a6941d131074d5277d33477265f9237925b341a67c7855fa98ce",
+    "src/completed-index.json": "c4d26140268fca3aafd069aeb8b3864a36a29ad53155846a852637c323736373",
     "config/completed-build.json": "90d255579a8f574432a82fc3f0a041f1c3a59a58ecf26e3557b942b04a4c47db",
     "tools/build_rom.py": "b9e6d4bd7f97e54231587f13e6cb1aafcde028af9face632b6d2d78670a5557a",
     "tools/build_completed.py": "557b3823cf44b438c4e5b53f8aa4ead9cc63378c8857724a05f77113220be0f2",
@@ -113,5 +113,18 @@
     "verified_at": "2026-11-25T01:36:35.464419+00:00",
     "additional_recovered_original_bytes": 0,
     "scope": "Complete linked ranges and function entries for the edited source modules matched the recorded native hashes. The retained whole-image proof is historical."
+  },
+  "named_unit_job_stats": {
+    "parent_commit": "391d78dc6e28d54ec4933c6d8e239ebe7b31d69e",
+    "parent_validation_sha256": "19ee12e5165588a7682f97d9b57402e6a1857d8f3d3346740739ef1b6160ed23",
+    "named_call_sites": 16,
+    "growth_blocks_factored": 7,
+    "checked_native_modules": 6,
+    "checked_native_functions": 7,
+    "checked_original_bytes": 2670,
+    "checked_module_set_sha256": "8f2bc71c443ca0fce3070e0a2d9d5fd7b68e65fbd15a9047df649e8636922516",
+    "verified_at": "2026-11-25T12:47:36.473965+00:00",
+    "additional_recovered_original_bytes": 0,
+    "scope": "Complete linked ranges and function entries across the edited modules matched the recorded native hashes. The retained whole-image proof is historical."
   }
 }
