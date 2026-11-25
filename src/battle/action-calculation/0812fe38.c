@@ -2,6 +2,7 @@
 #ifndef FFTA_BATTLE_ACTION_CALCULATION_08_H
 #define FFTA_BATTLE_ACTION_CALCULATION_08_H
 #include "ffta/types.h"
+#include "items/property_access.h"
 
 s32 CalculateBattleActionAmount(void *actor, void *target, u16 action, u16 item, u16 tag, u8 scale_mode, u8 formula_mode);
 s32 ResolveBattleActionCalculation(void *actor, void *target, u16 action, u16 item, u16 tag, u16 scale_mode);
@@ -113,7 +114,7 @@ s32 CalculateBattleActionAmount(void *actor, void *target, u16 action, u16 item,
             physical_factor = definition->scale;
         }
         else
-            physical_factor = ReadBattleItemProperty(item, 10);
+            physical_factor = ReadItemPhysicalAttack(item);
         physical_factor = (s32)(((u32)physical_factor * 3) << 7);
         physical_factor >>= 8;
         weighted_amount = (s32)((u32)amount * (u32)physical_factor);
@@ -127,7 +128,7 @@ s32 CalculateBattleActionAmount(void *actor, void *target, u16 action, u16 item,
             randomized_factor = definition->scale;
         }
         else
-            randomized_factor = ReadBattleItemProperty(item, 10);
+            randomized_factor = ReadItemPhysicalAttack(item);
         if (scale_mode != 2) {
             s32 random_base = 256;
             variation = BattleSignedRemainder((s16)NextBattleCalculationRandom(), random_base + 1);

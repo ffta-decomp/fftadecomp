@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 typedef signed int s32;
 extern u32 ReadUnitField(const u8 *unit, u8 selector);
 extern u32 GetItemProperty(u16 item, u8 selector);
@@ -13,7 +14,7 @@ u32 HasEquippedItemCategory(const u8 *unit, const u16 *categories, s32 count)
     do {
         u32 item = ReadUnitField(unit, (u8)(slot + 29));
         if (item != 0) {
-            u32 category = GetItemProperty((u16)item, 3);
+            u32 category = ReadItemEquipmentCategory((u16)item);
             s32 index = 0;
             if (index < count) {
                 const u16 *cursor = categories;

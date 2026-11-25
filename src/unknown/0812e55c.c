@@ -1,4 +1,5 @@
 #include "abi/interfaces/0812e55c_retail_calls.h"
+#include "items/property_access.h"
 
 /* The helper initializes both halfwords before testing its eligibility gate. */
 u32 GetEquipmentItemsForUnit(const u8 *unit, u16 *equipment_items)
@@ -19,8 +20,8 @@ u32 GetEquipmentItemsForUnit(const u8 *unit, u16 *equipment_items)
     if ((s32)item_count <= 1)
         return item_count;
 
-    first_modifier = (s8)(u8)AiGetItemProperty(equipment_items[0], 10);
-    second_modifier = (s8)(u8)AiGetItemProperty(equipment_items[1], 10);
+    first_modifier = (s8)(u8)AiGetItemProperty(equipment_items[0], ITEM_PROPERTY_PHYSICAL_ATTACK);
+    second_modifier = (s8)(u8)AiGetItemProperty(equipment_items[1], ITEM_PROPERTY_PHYSICAL_ATTACK);
     if (first_modifier < second_modifier) {
         u16 first_item = equipment_items[0];
         equipment_items[0] = equipment_items[1];

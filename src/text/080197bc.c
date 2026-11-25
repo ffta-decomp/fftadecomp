@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 
 typedef struct MissionContentContext {
     u32 selected_record_address;
@@ -36,7 +37,7 @@ u32 WriteContextCategorySelectedText(u8 *output)
         break;
     default: {
         volatile const u32 *text_pointers = CONTEXT_TEXT_POINTERS_08526680;
-        u32 item_text_index = GetItemProperty(context_value, 0);
+        u32 item_text_index = ReadItemNameId(context_value);
         source = (const u8 *)text_pointers[item_text_index];
         break;
     }
