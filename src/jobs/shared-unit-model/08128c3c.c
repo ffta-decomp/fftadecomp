@@ -45,6 +45,29 @@ __asm__(".global DivideUnsigned\n.thumb_set DivideUnsigned, 0x08142ab1");
 __asm__(".global DivideSigned\n.thumb_set DivideSigned, 0x081426b9");
 
 
+#define STAT_REDUCTION_MAX_HP 0
+#define STAT_REDUCTION_MAX_MP 1
+#define STAT_REDUCTION_WEAPON_ATTACK 2
+#define STAT_REDUCTION_WEAPON_DEFENSE 3
+#define STAT_REDUCTION_MAGIC_POWER 4
+#define STAT_REDUCTION_MAGIC_RESISTANCE 5
+#define STAT_REDUCTION_SPEED 6
+
+#define MAX_UNSIGNED_STAT_REDUCTION 99
+#define SPEED_REDUCTION_LIMIT 10
+#define MIN_REDUCED_SPEED 10
+
+#define UNSIGNED_STAT_REDUCTION_CASE(selector, field, read_base) \
+    case selector: \
+        amount = DivideUnsigned(read_base(unit), divisor); \
+        if (amount == 0) \
+            amount = 1; \
+        else if (amount > MAX_UNSIGNED_STAT_REDUCTION) \
+            amount = MAX_UNSIGNED_STAT_REDUCTION; \
+        if (unit->field <= amount) \
+            amount = unit->field - 1; \
+        unit->field -= amount;
+
 /* Apply one source-selected unit reduction; the return is only its low byte.
  * Quotients wrap to 16 bits before signed zero/upper-limit comparisons. */
 u8 ApplyUnitValueReduction(ReductionContext *context, u8 selection)
@@ -54,80 +77,34 @@ u8 ApplyUnitValueReduction(ReductionContext *context, u8 selection)
     u8 divisor = UnitReductionDivisors[context->descriptor->divisor_selector];
 
     switch (selection) {
-    case 0:
-        amount = DivideUnsigned(ReadUnitJobBaseHp(unit), divisor);
-        if (amount == 0)
-            amount = 1;
-        else if (amount > 99)
-            amount = 99;
-        if (unit->max_hp <= amount)
-            amount = unit->max_hp - 1;
-        unit->max_hp -= amount;
+    UNSIGNED_STAT_REDUCTION_CASE(STAT_REDUCTION_MAX_HP, max_hp, ReadUnitJobBaseHp)
         if (unit->current_hp > unit->max_hp)
             unit->current_hp = unit->max_hp;
         break;
-    case 1:
-        amount = DivideUnsigned(ReadUnitJobBaseMp(unit), divisor);
-        if (amount == 0)
-            amount = 1;
-        else if (amount > 99)
-            amount = 99;
-        if (unit->max_mp <= amount)
-            amount = unit->max_mp - 1;
-        unit->max_mp -= amount;
+    UNSIGNED_STAT_REDUCTION_CASE(STAT_REDUCTION_MAX_MP, max_mp, ReadUnitJobBaseMp)
         if (unit->current_mp > unit->max_mp)
             unit->current_mp = unit->max_mp;
         break;
-    case 2:
-        amount = DivideUnsigned(ReadUnitJobBaseWeaponAttack(unit), divisor);
-        if (amount == 0)
-            amount = 1;
-        else if (amount > 99)
-            amount = 99;
-        if (unit->base_weapon_attack <= amount)
-            amount = unit->base_weapon_attack - 1;
-        unit->base_weapon_attack -= amount;
+    UNSIGNED_STAT_REDUCTION_CASE(STAT_REDUCTION_WEAPON_ATTACK, base_weapon_attack, ReadUnitJobBaseWeaponAttack)
         break;
-    case 3:
-        amount = DivideUnsigned(ReadUnitJobBaseWeaponDefense(unit), divisor);
-        if (amount == 0)
-            amount = 1;
-        else if (amount > 99)
-            amount = 99;
-        if (unit->base_weapon_defense <= amount)
-            amount = unit->base_weapon_defense - 1;
-        unit->base_weapon_defense -= amount;
+    UNSIGNED_STAT_REDUCTION_CASE(STAT_REDUCTION_WEAPON_DEFENSE, base_weapon_defense, ReadUnitJobBaseWeaponDefense)
         break;
-    case 4:
-        amount = DivideUnsigned(ReadUnitJobBaseMagicPower(unit), divisor);
-        if (amount == 0)
-            amount = 1;
-        else if (amount > 99)
-            amount = 99;
-        if (unit->base_magic_power <= amount)
-            amount = unit->base_magic_power - 1;
-        unit->base_magic_power -= amount;
+    UNSIGNED_STAT_REDUCTION_CASE(STAT_REDUCTION_MAGIC_POWER, base_magic_power, ReadUnitJobBaseMagicPower)
         break;
-    case 5:
-        amount = DivideUnsigned(ReadUnitJobBaseMagicResistance(unit), divisor);
-        if (amount == 0)
-            amount = 1;
-        else if (amount > 99)
-            amount = 99;
-        if (unit->base_magic_resistance <= amount)
-            amount = unit->base_magic_resistance - 1;
-        unit->base_magic_resistance -= amount;
+    UNSIGNED_STAT_REDUCTION_CASE(STAT_REDUCTION_MAGIC_RESISTANCE, base_magic_resistance, ReadUnitJobBaseMagicResistance)
         break;
-    case 6:
+    case STAT_REDUCTION_SPEED:
         amount = DivideSigned(10, divisor);
         if (amount == 0)
             amount = 1;
-        else if (amount > 10)
-            amount = 10;
-        if (unit->base_speed - amount <= 10)
-            amount = unit->base_speed - 10;
+        else if (amount > SPEED_REDUCTION_LIMIT)
+            amount = SPEED_REDUCTION_LIMIT;
+        if (unit->base_speed - amount <= MIN_REDUCED_SPEED)
+            amount = unit->base_speed - MIN_REDUCED_SPEED;
         unit->base_speed -= amount;
         break;
     }
     return amount;
 }
+
+#undef UNSIGNED_STAT_REDUCTION_CASE

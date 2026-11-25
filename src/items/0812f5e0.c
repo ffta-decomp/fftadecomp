@@ -36,7 +36,7 @@ u32 CoreRegion_0012F5E0(const void *unit, u16 initial_item_id, u16 property)
     if (excluded_count <= 0)
         excluded_count = 0;
 
-    if (property != 10) {
+    if (property != ITEM_PROPERTY_PHYSICAL_ATTACK) {
         excluded_count = 0;
     } else {
         u32 initial_value;

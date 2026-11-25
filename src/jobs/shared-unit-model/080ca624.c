@@ -1,3 +1,4 @@
+#include "items/property_access.h"
 #include "jobs/shared-unit-model/interfaces/080ca624_get_unit_equipped_stat20_exact_types.h"
 s32 GetUnitEquippedStat20(UnitStatView *unit,u8 include_equipment)
 {
@@ -10,7 +11,7 @@ s32 GetUnitEquippedStat20(UnitStatView *unit,u8 include_equipment)
   do {
    u32 item = *equipment;
    if (item != 0)
-    bonus += ItemProperty(item,10);
+    bonus += ItemProperty(item, ITEM_PROPERTY_PHYSICAL_ATTACK);
    equipment++;
    remaining--;
   } while (remaining >= 0);

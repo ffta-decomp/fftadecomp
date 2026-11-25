@@ -19,6 +19,17 @@ typedef char ItemDefinitionSizeMustBe32[(sizeof(struct ItemDefinition) == 32) ? 
 extern const struct ItemDefinition gItems[];
 extern u8 ReadSaveByte(u16 index);
 
+/* The bypass sign-extends the byte. The unsigned cap applies after any bonus. */
+#define ITEM_STAT_WITH_SAVE_BONUS_CASE(selector, index, bonus_item, bonus_save_byte) \
+    case selector: \
+        if (ReadSaveByte(13)) return item->modifiers[index]; \
+        else { \
+            u32 value = item->modifiers[index]; \
+            if (item_id == bonus_item) value += ReadSaveByte(bonus_save_byte); \
+            if (value > 255) value = 255; \
+            return value; \
+        }
+
 /* Selectors name only fields whose role is supported by callers or data use. */
 u32 GetItemProperty(u16 item_id, u8 property)
 {
@@ -35,39 +46,11 @@ u32 GetItemProperty(u16 item_id, u8 property)
     case 7: return item->properties_at_08[4];
     case 8: return item->properties_at_08[5];
     case 9: return item->unknown_at_0e;
-    case ITEM_PROPERTY_PHYSICAL_ATTACK:
-        if (ReadSaveByte(13)) return item->modifiers[0];
-        else {
-            u32 value = item->modifiers[0];
-            if (item_id == 51) value += ReadSaveByte(1);
-            if (value > 255) value = 255;
-            return value;
-        }
-    case 11:
-        if (ReadSaveByte(13)) return item->modifiers[1];
-        else {
-            u32 value = item->modifiers[1];
-            if (item_id == 302) value += ReadSaveByte(3);
-            if (value > 255) value = 255;
-            return value;
-        }
-    case 12:
-        if (ReadSaveByte(13)) return item->modifiers[2];
-        else {
-            u32 value = item->modifiers[2];
-            if (item_id == 148) value += ReadSaveByte(2);
-            if (value > 255) value = 255;
-            return value;
-        }
-    case 13:
-        if (ReadSaveByte(13)) return item->modifiers[3];
-        else {
-            u32 value = item->modifiers[3];
-            if (item_id == 286) value += ReadSaveByte(4);
-            if (value > 255) value = 255;
-            return value;
-        }
-    case 14: return item->modifiers[4];
+    ITEM_STAT_WITH_SAVE_BONUS_CASE(ITEM_PROPERTY_PHYSICAL_ATTACK, 0, 51, 1)
+    ITEM_STAT_WITH_SAVE_BONUS_CASE(ITEM_PROPERTY_PHYSICAL_DEFENSE, 1, 302, 3)
+    ITEM_STAT_WITH_SAVE_BONUS_CASE(ITEM_PROPERTY_MAGIC_POWER, 2, 148, 2)
+    ITEM_STAT_WITH_SAVE_BONUS_CASE(ITEM_PROPERTY_MAGIC_RESISTANCE, 3, 286, 4)
+    case ITEM_PROPERTY_SPEED_MODIFIER: return item->modifiers[4];
     case 15: return item->modifiers[5];
     case 16: return item->modifiers[6];
     case 17: return item->modifiers[7];
@@ -75,6 +58,8 @@ u32 GetItemProperty(u16 item_id, u8 property)
     default: return 0;
     }
 }
+
+#undef ITEM_STAT_WITH_SAVE_BONUS_CASE
 
 /* Keep the original zero-filled alignment after this independently built span. */
 asm(".align 2, 0");

@@ -3,12 +3,12 @@
 
 struct ValueUnit {
     u8 unknown_00[24];
-    u16 current_value;
+    u16 current_hp;
 };
 
 static inline u32 ClassifyUnitValue(struct ValueUnit *unit)
 {
-    u32 current;
+    u32 current_hp;
     u32 classification;
     if ((u8)UnitValueGate(unit) != 0) {
         classification = 1;
@@ -19,8 +19,9 @@ static inline u32 ClassifyUnitValue(struct ValueUnit *unit)
             goto class_two;
         goto class_three;
     }
-    current = ReadUnitCurrentHp(unit);
-    if (current > (ReadUnitMaxHp(unit) >> 2))
+    current_hp = ReadUnitCurrentHp(unit);
+    /* At or below a quarter of max HP takes the low-HP class. */
+    if (current_hp > (ReadUnitMaxHp(unit) >> 2))
         goto class_three;
 class_two:
     classification = 2;
@@ -31,26 +32,26 @@ classified:
     return classification;
 }
 
-u32 ApplyBattleUnitValueAndClassify(struct ValueUnit *unit, u16 delta);
-u32 ApplyBattleUnitValueAndClassify(struct ValueUnit *unit, u16 delta)
+u32 ApplyBattleUnitValueAndClassify(struct ValueUnit *unit, u16 hp_delta);
+u32 ApplyBattleUnitValueAndClassify(struct ValueUnit *unit, u16 hp_delta)
 {
     u32 previous_class;
     u32 current_class;
-    u16 remaining;
-    s32 signed_remaining;
-    s32 current_signed;
-    s32 delta_signed;
+    u16 remaining_hp;
+    s32 signed_remaining_hp;
+    s32 signed_current_hp;
+    s32 signed_hp_delta;
 
     previous_class = ClassifyUnitValue(unit);
-    current_signed = (s16)ReadUnitCurrentHp(unit);
-    delta_signed = (s16)delta;
-    remaining = current_signed - delta_signed;
-    if ((s16)remaining < 0)
-        remaining = 0;
-    signed_remaining = (s16)remaining;
-    if ((u32)signed_remaining > ReadUnitMaxHp(unit))
-        remaining = ReadUnitMaxHp(unit);
-    unit->current_value = remaining;
+    signed_current_hp = (s16)ReadUnitCurrentHp(unit);
+    signed_hp_delta = (s16)hp_delta;
+    remaining_hp = signed_current_hp - signed_hp_delta;
+    if ((s16)remaining_hp < 0)
+        remaining_hp = 0;
+    signed_remaining_hp = (s16)remaining_hp;
+    if ((u32)signed_remaining_hp > ReadUnitMaxHp(unit))
+        remaining_hp = ReadUnitMaxHp(unit);
+    unit->current_hp = remaining_hp;
     current_class = ClassifyUnitValue(unit);
     if (current_class == previous_class)
         return 0;
