@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ffta:scene-project:v1",
+  "title": "FFTA US scene project",
+  "type": "object",
+  "required": ["format", "profile", "baseSha256"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "ffta.scene-project/v1" },
+    "profile": { "enum": ["ffta-us-retail", "ffta-us-layout"] },
+    "baseSha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "openings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "first-act": { "$ref": "#/$defs/opening" } }
+    },
+    "battleEvents": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "snowball.goblin": { "$ref": "#/$defs/battleEvent" } }
+    },
+    "scenes": { "type": "object", "propertyNames": { "pattern": "^[1-9][0-9]*$" }, "additionalProperties": { "$ref": "#/$defs/scene" } },
+    "programs": { "type": "object", "propertyNames": { "pattern": "^[0-9]+/[0-9]+$" }, "additionalProperties": { "$ref": "#/$defs/program" } },
+    "pages": { "type": "object", "propertyNames": { "pattern": "^[0-9]+$" }, "additionalProperties": { "$ref": "#/$defs/page" } },
+    "dialogue": { "type": "object", "propertyNames": { "pattern": "^[0-9]+(/[0-9]+)?:[0-9]+$" }, "additionalProperties": { "$ref": "#/$defs/dialogue" } }
+  },
+  "$defs": {
+    "actor": { "enum": ["marche", "mewt", "ritz", "student", "instructor", "redCap", "goblin1", "goblin2", "goblin3"] },
+    "direction": { "enum": ["southwest", "northwest", "northeast", "southeast"] },
+    "column": { "type": "integer", "minimum": 0, "maximum": 11 },
+    "row": { "type": "integer", "minimum": 0, "maximum": 8 },
+    "opening": {
+      "type": "object",
+      "required": ["title", "cast", "steps", "battleIntro"],
+      "additionalProperties": false,
+      "properties": {
+        "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "battleIntro": { "type": "string", "maxLength": 160 },
+        "battleEnding": { "type": "string", "maxLength": 160 },
+        "victory": { "const": "defeatOpponents" },
+        "cast": {
+          "type": "array",
+          "maxItems": 9,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["actor", "x", "y", "facing"],
+            "properties": {
+              "actor": { "$ref": "#/$defs/actor" },
+              "x": { "$ref": "#/$defs/column" },
+              "y": { "$ref": "#/$defs/row" },
+              "facing": { "$ref": "#/$defs/direction" }
+            }
+          }
+        },
+        "steps": {
+          "type": "array",
+          "maxItems": 120,
+          "items": { "oneOf": [
+            {
+              "type": "object", "additionalProperties": false,
+              "required": ["type", "actor", "text"],
+              "properties": {
+                "type": { "const": "say" },
+                "actor": { "$ref": "#/$defs/actor" },
+                "text": { "type": "string", "minLength": 1, "maxLength": 160 }
+              }
+            },
+            {
+              "type": "object", "additionalProperties": false,
+              "required": ["type", "actor", "x", "y", "facing"],
+              "properties": {
+                "type": { "const": "walk" },
+                "actor": { "$ref": "#/$defs/actor" },
+                "x": { "$ref": "#/$defs/column" },
+                "y": { "$ref": "#/$defs/row" },
+                "facing": { "$ref": "#/$defs/direction" }
+              }
+            },
+            {
+              "type": "object", "additionalProperties": false,
+              "required": ["type", "actor", "facing"],
+              "properties": {
+                "type": { "const": "face" },
+                "actor": { "$ref": "#/$defs/actor" },
+                "facing": { "$ref": "#/$defs/direction" }
+              }
+            }
+          ] }
+        }
+      }
+    },
+    "battleEvent": {
+      "type": "object",
+      "required": ["scene", "trigger", "spawn", "dialogue", "victory"],
+      "additionalProperties": false,
+      "properties": {
+        "scene": { "const": 6 },
+        "trigger": {
+          "const": { "kind": "onDamageResolved", "target": "mewt", "once": "perBattle" }
+        },
+        "spawn": {
+          "type": "object",
+          "required": ["id", "template", "side", "hp", "attack"],
+          "additionalProperties": false,
+          "properties": {
+            "id": { "const": "goblin" },
+            "template": { "const": "goblin" },
+            "side": { "const": "opponent" },
+            "hp": { "type": "integer", "minimum": 1, "maximum": 255 },
+            "attack": { "$ref": "#/$defs/byte" }
+          }
+        },
+        "dialogue": {
+          "type": "object",
+          "required": ["speaker", "text"],
+          "additionalProperties": false,
+          "properties": {
+            "speaker": { "const": "goblin" },
+            "text": { "type": "string", "minLength": 1 }
+          }
+        },
+        "victory": { "const": { "kind": "defeatUnit", "target": "goblin" } }
+      }
+    },
+    "byte": { "type": "integer", "minimum": 0, "maximum": 255 },
+    "word": { "type": "integer", "minimum": 0, "maximum": 65535 },
+    "scene": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "script": {
+          "type": "object",
+          "required": ["group", "program"],
+          "additionalProperties": false,
+          "properties": {
+            "group": { "type": "integer", "minimum": 0, "maximum": 61 },
+            "program": { "$ref": "#/$defs/byte" }
+          }
+        },
+        "dialoguePage": { "$ref": "#/$defs/byte" }
+      }
+    },
+    "program": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cloneFrom": { "type": "string", "pattern": "^[0-9]+/[0-9]+$" },
+        "insertDialogue": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["anchorOffset", "textSelector"],
+            "additionalProperties": false,
+            "properties": {
+              "anchorOffset": { "type": "integer", "minimum": 0, "maximum": 32767 },
+              "textSelector": { "type": "integer", "minimum": 0, "maximum": 239 },
+              "speakerHandle": { "$ref": "#/$defs/byte" },
+              "presentationFlags": { "$ref": "#/$defs/byte" }
+            }
+          }
+        },
+        "instructions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["operation", "operands"],
+            "additionalProperties": false,
+            "properties": {
+              "operation": { "type": "string" },
+              "opcode": { "$ref": "#/$defs/byte" },
+              "operands": {
+                "oneOf": [
+                  { "type": "object", "additionalProperties": { "type": "integer" } },
+                  { "type": "array", "items": { "$ref": "#/$defs/byte" } }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cloneFrom": { "type": "string", "pattern": "^[0-9]+(/[0-9]+)?$" }
+      }
+    },
+    "dialogue": {
+      "type": "object",
+      "additionalProperties": false,
+      "oneOf": [{ "required": ["text"] }, { "required": ["tokens"] }],
+      "properties": {
+        "text": { "type": "string" },
+        "encoding": { "enum": ["standard", "alternate"] },
+        "flags": { "$ref": "#/$defs/word" },
+        "tokens": { "type": "array", "items": { "$ref": "#/$defs/token" } }
+      }
+    },
+    "token": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["kind", "code", "width"],
+          "additionalProperties": false,
+          "properties": { "kind": { "const": "glyph" }, "code": { "$ref": "#/$defs/word" }, "width": { "enum": ["full", "half"] } }
+        },
+        {
+          "type": "object",
+          "required": ["kind", "code", "args"],
+          "additionalProperties": false,
+          "properties": {
+            "kind": { "const": "control" },
+            "code": { "$ref": "#/$defs/byte" },
+            "args": { "type": "array", "items": { "$ref": "#/$defs/byte" }, "maxItems": 2 },
+            "side": { "enum": ["left", "right"] }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["kind"],
+          "additionalProperties": false,
+          "properties": { "kind": { "const": "separator" } }
+        }
+      ]
+    }
+  }
+}

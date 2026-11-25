@@ -2,6 +2,8 @@
 
 [Open the dashboard](https://ffta-decomp.github.io/fftadecomp/) · [Contributor guide](CONTRIBUTING.md) · [Decomp skill](.agents/skills/ffta-decomp/SKILL.md) · [Function catalogue](data/functions.csv) · [Local unpacking](docs/extract-asm.md)
 
+[Open the FFTA Scene Editor](https://ffta-decomp.github.io/fftadecomp/scene-editor/) · [Source and usage](tools/scene-editor/README.md)
+
 Recovered C/mixed source, reproducible private-ROM builds, and progress reporting for Final Fantasy Tactics Advance (USA).
 
 - [Published source progress](data/published-source-progress.json): verified source coverage, including attributed upstream imports.

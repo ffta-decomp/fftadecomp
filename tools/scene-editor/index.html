@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FFTA 剧情编辑器</title>
+<link rel="stylesheet" href="./style.css">
+<script type="module" src="./src/app.mjs"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="brand-icon" aria-hidden="true">◆</span><div><strong>FFTA 剧情编辑器</strong><small>FINAL FANTASY TACTICS ADVANCE · US</small></div></div>
+  <div class="project-lamp" id="rom-name">未载入 ROM</div>
+  <div class="top-actions">
+    <select id="language" aria-label="界面语言"><option value="zh-CN">简体中文</option><option value="en">English</option></select>
+    <button id="open-rom">打开 ROM</button>
+    <button id="import-project" data-needs-rom>导入项目</button>
+    <button id="save-project" data-needs-rom>保存项目</button>
+    <button id="export-rom" class="accent" data-needs-rom>导出 ROM</button>
+  </div>
+</header>
+<input type="file" id="rom-file" accept=".gba,application/octet-stream" hidden>
+<input type="file" id="project-file" accept=".json,application/json" hidden>
+<div id="notice" role="status" hidden></div>
+
+<main id="welcome">
+  <div class="welcome-content">
+    <span class="welcome-icon" aria-hidden="true">◆</span>
+    <h1>打开美版 ROM</h1>
+    <p>浏览剧情、台词和场景指令。在导出前查看每项改动。</p>
+    <button class="accent" id="welcome-open">选择本地 ROM</button>
+    <small>支持 US 原版及此编辑器导出的 ROM · 文件只在本机处理</small>
+  </div>
+</main>
+<main class="workspace" id="workspace" hidden>
+  <aside class="index" aria-label="剧情索引">
+    <div class="index-head"><div><h2>剧情索引</h2><small id="scene-count"></small></div><button id="new-scene" aria-label="新增场景">＋ 场景</button></div>
+    <div class="filters">
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="场景编号、对白" aria-label="搜索场景"></label>
+      <select id="filter" aria-label="筛选场景"><option value="all">全部场景</option><option value="changed">已修改</option><option value="unresolved">待补全</option></select>
+    </div>
+    <nav id="scene-list" aria-label="场景列表"></nav>
+  </aside>
+  <section class="detail" aria-label="场景内容">
+    <div class="detail-head">
+      <div class="crumb">剧情索引 <span aria-hidden="true">/</span> <span id="crumb-scene"></span></div>
+      <div class="scene-title"><h1 id="scene-title"></h1><span id="scene-status" class="badge"></span></div>
+      <p id="scene-meta"></p>
+    </div>
+    <div class="tabs" id="workspace-tabs" aria-label="工作区标签"></div>
+    <div id="detail-body"></div>
+  </section>
+  <footer class="workspace-footer"><span id="footer-status"></span><div><button id="undo">撤销</button><button id="redo">重做</button><button id="agent">Agent 数据</button></div></footer>
+</main>
+
+<dialog id="editor">
+  <form id="edit-form" method="dialog">
+    <div class="dialog-head"><h2 id="edit-title"></h2><button type="button" id="close-dialog" aria-label="关闭">×</button></div>
+    <div id="edit-fields"></div>
+    <p id="edit-error" role="alert" hidden></p>
+    <div class="dialog-actions"><button type="button" id="cancel-dialog">关闭</button><button class="accent" id="apply-edit" type="submit">应用</button></div>
+  </form>
+</dialog>
+</body>
+</html>

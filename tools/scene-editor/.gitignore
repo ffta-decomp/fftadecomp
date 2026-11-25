@@ -1,0 +1,12 @@
+.DS_Store
+dist/
+*.gba
+*.GBA
+*.bps
+*.ips
+*.mp4
+*.sav
+*.state*
+*.project.json
+*.catalog.json
+*.build.json
