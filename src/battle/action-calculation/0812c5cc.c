@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 extern u32 GetItemProperty(u16 item_id, u8 property);
 extern u32 BattleDependency_0012E6A4(const u8 *unit);
 asm(".global BattleDependency_0012E6A4\n.thumb_set BattleDependency_0012E6A4, 0x0812e6a5");
@@ -11,7 +12,7 @@ u32 UnitItemClassPassesRule(const u8 *unit, u16 item_id, u8 allow_class7)
     if (unit_class == 7 && !allow_class7)
         unit_class = 0;
     if (unit_class != 7 && unit_class != 5) {
-        if (unit_class != 6 || GetItemProperty(item_id, 3) - 13u > 1u)
+        if (unit_class != 6 || ReadItemEquipmentCategory(item_id) - 13u > 1u)
             return 0;
     }
     return 1;

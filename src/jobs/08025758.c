@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 typedef short s16;
 struct ListContext { u8 prefix[10]; u8 ability_list; u8 gap[137]; u32 *rows; u8 unknown[8]; const u8 *direct[0]; };
 struct SelectionRoot { u8 prefix[4]; u8 kind; u8 gap[1147]; u8 categories[0]; };
@@ -57,7 +58,7 @@ const u8 *ResolveSelectionRecordLabel(struct ListContext *context, s16 index)
         return ResolveEquipmentCategoryName(*(u16*)&context->rows[index]);
     case 13:
     case 14:
-        return gItemNames[GetItemProperty(*(u16*)&context->rows[index],0)];
+        return gItemNames[ReadItemNameId(*(u16*)&context->rows[index])];
     default:
         return gItemNames[context->rows[index]];
     }

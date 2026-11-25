@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 
 struct ItemAdjustmentDescriptor {
     u32 category_mask;
@@ -13,7 +14,7 @@ u8 ItemAmountAdjustmentApplies(u8 selector, u16 item_id)
     const struct ItemAdjustmentDescriptor *descriptor = GetItemAdjustmentRecord(selector);
 
     if (descriptor) {
-        u32 category = GetItemProperty(item_id, 3);
+        u32 category = ReadItemEquipmentCategory(item_id);
         if (descriptor->category_mask & (1u << (category - 1))) return 1;
     }
     return 0;

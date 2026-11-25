@@ -3,6 +3,7 @@
 #define WORKER3_CORE_REGION30_000B7C94_INTERFACES_H
 
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 
 extern u32 CheckAbilityItemOverride(u16 ability_id, u16 item_id);
 extern u32 GetItemProperty(u16 item_id, u8 selector);
@@ -31,7 +32,7 @@ u8 ClassifyAbilityItemPair(u16 ability_id, u16 item_id, u32 return_raw_code)
             if (item_id == 0) {
                 code = 1;
             } else {
-                u32 item_category = GetItemProperty(item_id, 3);
+                u32 item_category = ReadItemEquipmentCategory(item_id);
                 if ((u32)(item_category - 13) <= 1 || item_category == 19)
                     code = 1;
                 else
@@ -68,7 +69,7 @@ u8 ClassifyAbilityItemPair(u16 ability_id, u16 item_id, u32 return_raw_code)
         if (item_id == 0) {
             code = 1;
         } else {
-            u32 item_category = GetItemProperty(item_id, 3);
+            u32 item_category = ReadItemEquipmentCategory(item_id);
             if ((u32)(item_category - 13) <= 1 || item_category == 19)
                 code = 1;
             else

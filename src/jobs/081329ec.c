@@ -1,5 +1,6 @@
 /* Method-local interface declarations from the frozen build. */
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 typedef signed char s8;
 typedef signed int s32;
 struct BattleUnitFieldView;
@@ -15,7 +16,7 @@ s8 FindUnitEquipmentCategory24To26(const struct BattleUnitFieldView *unit)
     for (slot_index = 0; slot_index <= 4; slot_index++) {
         u16 item_id = (u16)ReadUnitField(unit, slot_index + 29);
         if (item_id != 0) {
-            u8 category = (u8)GetItemProperty(item_id, 3);
+            u8 category = (u8)ReadItemEquipmentCategory(item_id);
             if (category == 26 || category == 24 || category == 25)
                 return (s8)slot_index;
         }

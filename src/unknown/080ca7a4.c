@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 
 struct ItemDefinition {
     u16 name_id;
@@ -24,17 +25,17 @@ u32 GetItemProperty(u16 item_id, u8 property)
     const struct ItemDefinition *item = &gItems[item_id];
 
     switch (property) {
-    case 0: return item->name_id;
+    case ITEM_PROPERTY_NAME_ID: return item->name_id;
     case 1: return item->unknown_at_02;
     case 2: return item->unknown_at_04;
-    case 3: return item->properties_at_08[0];
+    case ITEM_PROPERTY_EQUIPMENT_CATEGORY: return item->properties_at_08[0];
     case 4: return item->properties_at_08[1];
     case 5: return item->properties_at_08[2];
     case 6: return item->properties_at_08[3];
     case 7: return item->properties_at_08[4];
     case 8: return item->properties_at_08[5];
     case 9: return item->unknown_at_0e;
-    case 10:
+    case ITEM_PROPERTY_PHYSICAL_ATTACK:
         if (ReadSaveByte(13)) return item->modifiers[0];
         else {
             u32 value = item->modifiers[0];
@@ -70,7 +71,7 @@ u32 GetItemProperty(u16 item_id, u8 property)
     case 15: return item->modifiers[5];
     case 16: return item->modifiers[6];
     case 17: return item->modifiers[7];
-    case 18: return item->ability_set;
+    case ITEM_PROPERTY_ABILITY_SET_INDEX: return item->ability_set;
     default: return 0;
     }
 }
