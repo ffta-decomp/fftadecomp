@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 
 struct ItemAbilitySet {
     u8 count;
@@ -32,7 +33,7 @@ void ApplyItemAbilityFlags(u8 *unit, u16 item)
     int i;
 
     if (item == 0) return;
-    set = &gItemAbilitySets[GetItemProperty(item, 18)];
+    set = &gItemAbilitySets[ReadItemAbilitySetIndex(item)];
     for (i = 0; i < set->count; i++) {
         if (unit[7] == set->entries[i][0]) {
             MarkAbilityAvailable(unit, set->entries[i][1]);

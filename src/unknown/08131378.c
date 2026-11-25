@@ -1,4 +1,5 @@
 #include "abi/interfaces/08131378_bindings.h"
+#include "items/property_access.h"
 
 u32 EvaluateBattleEffectResolutionRate(void)
 {
@@ -14,7 +15,7 @@ u32 EvaluateBattleEffectResolutionRate(void)
     if (!(u8)ResolutionCompatibilityGate(context->target,
                                          EffectByte(context->descriptor, 1))) return 0;
     if (context->item == 0) category = 17;
-    else category = EffectItemProperty(context->item, 3);
+    else category = ReadItemEquipmentCategory(context->item);
     if (ResolutionAbilityProperty(context->action, 3) == 1 && category - 13 <= 1) goto reaction_gate;
     /* The second property read is required even when the first returned 1. */
     if (ResolutionAbilityProperty(context->action, 3) != 3) goto dispatch_gate;

@@ -1,4 +1,5 @@
 #include "items/interfaces/08132cb8_bindings.h"
+#include "items/property_access.h"
 
 /* Field ownership is inferred from the observed callback and effect consumers. */
 struct EquipmentEffect {
@@ -25,7 +26,7 @@ u32 EffectDirect_00132CB8(struct EquipmentEffect *effect, u16 property)
     do {
         item = ReadUnitField(effect->affected_unit, selector_word >> 24);
         asm("" : "+r"(item));
-        if (item != 0 && GetItemProperty((u16)item, 3) == category) {
+        if (item != 0 && ReadItemEquipmentCategory((u16)item) == category) {
             matching_slots[match_count] = (u8)slot;
             ++match_count;
         }

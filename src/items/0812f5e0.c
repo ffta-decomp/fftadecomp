@@ -2,6 +2,7 @@
 #define WORKER3_CORE_REGION_0012F5E0_INTERFACES_H
 
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 typedef signed int s32;
 
 extern u8 UnitStateE9HasBit0(const void *unit);
@@ -40,7 +41,7 @@ u32 CoreRegion_0012F5E0(const void *unit, u16 initial_item_id, u16 property)
     } else {
         u32 initial_value;
         if (initial_item_id != 0)
-            initial_value = GetItemProperty(initial_item_id, 10);
+            initial_value = ReadItemPhysicalAttack(initial_item_id);
         else
             initial_value = GetUnitDefaultProperty10(unit);
         total = initial_value;

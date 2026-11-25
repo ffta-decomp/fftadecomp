@@ -1,4 +1,5 @@
 #include "ffta/unsigned_types.h"
+#include "items/property_access.h"
 typedef signed char s8;
 
 typedef struct {
@@ -46,7 +47,7 @@ u32 InspectEquipment(EquipmentView *unit, u16 replacement_item, u8 slot, u8 mode
     if (current_item == 0) {
         equipment[slot] = replacement_item;
     } else {
-        const ItemAbilitySet *ability_set = &gItemAbilitySets[GetItemProperty(current_item, 18)];
+        const ItemAbilitySet *ability_set = &gItemAbilitySets[ReadItemAbilitySetIndex(current_item)];
         u8 *selected = (u8 *)unit + 0x34;
         u16 previous = unit->equipment[slot];
         unit->equipment[slot] = 0;

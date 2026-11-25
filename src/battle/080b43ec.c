@@ -1,4 +1,5 @@
 #include "battle/interfaces/080b43ec_bindings.h"
+#include "items/property_access.h"
 static inline u32 ReadAbilityProperty16(u16 ability_id,u8 selector)
 {
     u32 value=(u16)ReadAbilityProperty(ability_id,selector);
@@ -11,7 +12,7 @@ u32 CoreFrontier_000B43EC(u16 ability_id, u16 item_id)
 {
     s16 item_class;
     if (ability_id==0) {
-        item_class=GetItemProperty(item_id,3);
+        item_class=ReadItemEquipmentCategory(item_id);
         if ((u16)(item_class-13)<=1 || item_class==19)
             return 450;
         return 434;
