@@ -1,4 +1,5 @@
 #include "abi/interfaces/080ca268_unit_model_c01.h"
+#include "items/property_access.h"
 
 u32 GetUnitEquippedStat24(const u8 *unit, u32 include_equipment_raw)
 {
@@ -13,7 +14,7 @@ u32 GetUnitEquippedStat24(const u8 *unit, u32 include_equipment_raw)
         do {
             u16 item_id = *equipment_slot;
             if (item_id != 0)
-                equipment_total += GetItemProperty(item_id, 12);
+                equipment_total += ReadItemMagicPower(item_id);
             equipment_slot++;
         } while (--slots_remaining >= 0);
 

@@ -1,4 +1,5 @@
-/* MIXED: actual2B itemaddress ADD only; signedbase/property14/clamp logic remains C. */
+/* MIXED: actual2B itemaddress ADD only; signedbase/item speed modifier/clamp logic remains C. */
+#include "items/property_access.h"
 #include "jobs/interfaces/080ca580_bindings.h"
 
 s32 CoreConsumer_000CA580(const struct UnitEquipmentValueView *unit)
@@ -14,7 +15,7 @@ s32 CoreConsumer_000CA580(const struct UnitEquipmentValueView *unit)
             : "+r"(first_item) : "r"(slot_byte_offset) : "cc");
         item_id = *first_item;
         if (item_id != 0)
-            equipment_total += GetItemProperty(item_id, 14);
+            equipment_total += GetItemProperty(item_id, ITEM_PROPERTY_SPEED_MODIFIER);
     }
     base_value = (s16)base_value + equipment_total;
     if ((s16)base_value < 0)
